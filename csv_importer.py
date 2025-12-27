@@ -8,7 +8,7 @@ import csv
 import sys
 import argparse
 from pathlib import Path
-from datetime import datetime, date
+from datetime import datetime, date, timedelta
 from typing import Optional, List, Dict, Any, Tuple
 
 from database import (
@@ -88,17 +88,22 @@ def parse_bool(value: Any) -> bool:
     return bool(value)
 
 
+# Philippine Time offset from UTC
+PHT_OFFSET = timedelta(hours=8)
+
+
 def parse_datetime(value: str) -> Optional[str]:
-    """Parse datetime string to ISO format."""
+    """Parse datetime string and convert UTC to Philippine Time (UTC+8)."""
     if not value or value == 'N/A':
         return None
 
-    # Common date formats from Meta exports
+    # Common date formats from Meta exports (all in UTC)
     formats = [
         '%Y-%m-%d %H:%M:%S',
         '%Y-%m-%dT%H:%M:%S',
         '%Y-%m-%dT%H:%M:%S%z',
         '%m/%d/%Y %H:%M:%S',
+        '%m/%d/%Y %H:%M',
         '%m/%d/%Y %I:%M %p',
         '%d/%m/%Y %H:%M:%S',
         '%Y-%m-%d',
@@ -107,7 +112,10 @@ def parse_datetime(value: str) -> Optional[str]:
     for fmt in formats:
         try:
             dt = datetime.strptime(value.strip(), fmt)
-            return dt.isoformat()
+            # Convert UTC to PHT (+8 hours)
+            dt_pht = dt + PHT_OFFSET
+            # Return in MM/DD/YYYY HH:MM format for consistency with existing data
+            return dt_pht.strftime('%m/%d/%Y %H:%M')
         except ValueError:
             continue
 
