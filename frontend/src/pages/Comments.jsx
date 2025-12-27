@@ -3,7 +3,7 @@ import {
   PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis, CartesianGrid,
   Tooltip, ResponsiveContainer, Legend
 } from 'recharts';
-import { getPageComparison, getPostTypeStats, getTopPosts, getCommentAnalysis } from '../services/api';
+import { getPages, getPostTypeStats, getTopPosts, getCommentAnalysis } from '../services/api';
 
 const COLORS = ['#6366f1', '#22c55e', '#f59e0b', '#ef4444', '#8b5cf6'];
 
@@ -18,7 +18,7 @@ export default function Comments() {
     async function fetchData() {
       try {
         const [pageData, postTypeData, topPostsData, analysisData] = await Promise.all([
-          getPageComparison(),
+          getPages(),
           getPostTypeStats(),
           getTopPosts(20, 'engagement'),
           getCommentAnalysis(),

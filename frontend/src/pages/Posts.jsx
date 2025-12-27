@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { getPosts, getPageComparison } from '../services/api';
+import { getPosts, getPages } from '../services/api';
 
 export default function Posts() {
   const [posts, setPosts] = useState([]);
@@ -14,7 +14,7 @@ export default function Posts() {
   // Load pages for filter dropdown
   useEffect(() => {
     async function fetchPages() {
-      const pageData = await getPageComparison();
+      const pageData = await getPages();
       setPages(pageData);
     }
     fetchPages();
