@@ -99,7 +99,7 @@ export default function Dashboard() {
       </div>
 
       {/* Stats Cards - Row 1 */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         <StatCard
           title="Total Posts"
           value={stats?.total_posts?.toLocaleString()}
@@ -126,13 +126,6 @@ export default function Dashboard() {
           subtitle={`Avg: ${stats?.avg_engagement?.toLocaleString()}`}
           icon="⚡"
           color="green"
-        />
-        <StatCard
-          title="Total PES"
-          value={stats?.total_pes?.toLocaleString()}
-          subtitle={`Avg: ${stats?.avg_pes?.toLocaleString()}`}
-          icon="📊"
-          color="orange"
         />
       </div>
 
@@ -203,7 +196,6 @@ export default function Dashboard() {
                 <th className="pb-3 font-medium text-right whitespace-nowrap">Comments</th>
                 <th className="pb-3 font-medium text-right whitespace-nowrap">Shares</th>
                 <th className="pb-3 font-medium text-right whitespace-nowrap">Engagement</th>
-                <th className="pb-3 font-medium text-right whitespace-nowrap">Avg PES</th>
               </tr>
             </thead>
             <tbody>
@@ -229,7 +221,6 @@ export default function Dashboard() {
                   <td className="py-3 text-right font-semibold text-indigo-600 whitespace-nowrap">
                     {page.total_engagement?.toLocaleString()}
                   </td>
-                  <td className="py-3 text-right whitespace-nowrap text-green-600">{page.avg_pes?.toLocaleString()}</td>
                 </tr>
               ))}
             </tbody>
@@ -258,14 +249,6 @@ export default function Dashboard() {
                 dataKey="engagement"
                 name="Engagement"
                 stroke="#6366f1"
-                strokeWidth={2}
-                dot={false}
-              />
-              <Line
-                type="monotone"
-                dataKey="pes"
-                name="PES"
-                stroke="#22c55e"
                 strokeWidth={2}
                 dot={false}
               />
@@ -465,7 +448,6 @@ export default function Dashboard() {
                 <th className="pb-3 font-medium text-right w-20">Comments</th>
                 <th className="pb-3 font-medium text-right w-16">Shares</th>
                 <th className="pb-3 font-medium text-right w-24">Engagement</th>
-                <th className="pb-3 font-medium text-right w-20">PES</th>
               </tr>
             </thead>
             <tbody>
@@ -496,9 +478,6 @@ export default function Dashboard() {
                   <td className="py-3 text-right font-semibold text-indigo-600">
                     {post.engagement?.toLocaleString()}
                   </td>
-                  <td className="py-3 text-right text-green-600 font-medium">
-                    {post.pes?.toLocaleString()}
-                  </td>
                 </tr>
               ))}
             </tbody>
@@ -517,7 +496,6 @@ export default function Dashboard() {
             <Tooltip formatter={(value) => value?.toLocaleString()} />
             <Legend />
             <Bar dataKey="avg_engagement" name="Avg Engagement" fill="#6366f1" />
-            <Bar dataKey="avg_pes" name="Avg PES" fill="#22c55e" />
           </BarChart>
         </ResponsiveContainer>
       </div>

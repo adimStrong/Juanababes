@@ -302,10 +302,6 @@ export default function Overlap() {
                     <span className="text-gray-500">Eng/Reach</span>
                     <span className="font-medium">{engPerReach}%</span>
                   </div>
-                  <div className="flex justify-between text-xs">
-                    <span className="text-gray-500">Avg PES</span>
-                    <span className="font-medium">{page.avg_pes?.toLocaleString()}</span>
-                  </div>
                 </div>
               </div>
             );

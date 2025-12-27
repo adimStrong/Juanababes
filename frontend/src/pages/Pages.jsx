@@ -179,12 +179,6 @@ export default function Pages() {
                   {page.avg_engagement?.toLocaleString()}
                 </p>
               </div>
-              <div className="bg-amber-50 rounded p-3">
-                <p className="text-xs text-gray-500 uppercase">Avg PES</p>
-                <p className="text-lg font-semibold text-amber-600">
-                  {page.avg_pes?.toLocaleString()}
-                </p>
-              </div>
               <div className="bg-gray-50 rounded p-3">
                 <p className="text-xs text-gray-500 uppercase">Fans</p>
                 <p className="text-lg font-semibold">
