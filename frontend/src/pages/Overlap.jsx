@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend,
-  RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar
+  RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, Cell
 } from 'recharts';
 import { getPageComparison } from '../services/api';
 
@@ -200,9 +200,9 @@ export default function Overlap() {
               <XAxis dataKey="name" fontSize={12} />
               <YAxis fontSize={12} />
               <Tooltip formatter={(value) => value?.toLocaleString()} />
-              <Bar dataKey={selectedMetric} fill="#6366f1">
-                {chartData.map((_, index) => (
-                  <Bar key={index} fill={COLORS[index % COLORS.length]} />
+              <Bar dataKey={selectedMetric}>
+                {chartData.map((entry, index) => (
+                  <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                 ))}
               </Bar>
             </BarChart>
