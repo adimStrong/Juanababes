@@ -29,13 +29,14 @@ export const getStats = async () => {
   return api.get('/stats/').then(res => res.data);
 };
 
-export const getDailyEngagement = async (days = 30, page = null) => {
+export const getDailyEngagement = async (days = 30, pageId = null) => {
   if (IS_PRODUCTION) {
     const data = await loadStaticData();
+    // Static data doesn't support page filtering - would need pre-computed per-page data
     return data.daily.slice(-days);
   }
   const params = new URLSearchParams({ days });
-  if (page) params.append('page', page);
+  if (pageId) params.append('page', pageId);
   return api.get(`/stats/daily/?${params}`).then(res => res.data);
 };
 

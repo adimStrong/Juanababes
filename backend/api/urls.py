@@ -8,7 +8,7 @@ from rest_framework.routers import DefaultRouter
 from .views import (
     PageViewSet, PostViewSet, CsvImportViewSet, AudienceOverlapViewSet,
     DashboardStatsView, DailyEngagementView, PostTypeStatsView, TopPostsView,
-    PageComparisonView
+    PageComparisonView, CsvImportView
 )
 
 router = DefaultRouter()
@@ -27,4 +27,7 @@ urlpatterns = [
     path('stats/post-types/', PostTypeStatsView.as_view(), name='post-type-stats'),
     path('stats/top-posts/', TopPostsView.as_view(), name='top-posts'),
     path('stats/pages/', PageComparisonView.as_view(), name='page-comparison'),
+
+    # Import endpoint
+    path('import/csv/', CsvImportView.as_view(), name='csv-import'),
 ]

@@ -136,7 +136,7 @@ export default function Dashboard() {
         />
         <StatCard
           title="Active Pages"
-          value={`${stats?.total_pages} / ${stats?.all_pages}`}
+          value={`${stats?.total_pages || 0} / ${stats?.all_pages || stats?.total_pages || 0}`}
           subtitle="Pages with engagement data"
           icon=""
           color="green"
@@ -170,17 +170,17 @@ export default function Dashboard() {
       <div className="bg-white rounded-lg shadow p-6">
         <h2 className="text-lg font-semibold mb-4">5 Pages Performance Summary</h2>
         <div className="overflow-x-auto">
-          <table className="w-full text-sm">
+          <table className="w-full text-sm min-w-[700px]">
             <thead>
               <tr className="text-left text-gray-500 border-b">
-                <th className="pb-3 font-medium">Page</th>
-                <th className="pb-3 font-medium text-right">Posts</th>
-                <th className="pb-3 font-medium text-right">Reactions</th>
-                <th className="pb-3 font-medium text-right">Comments</th>
-                <th className="pb-3 font-medium text-right">Shares</th>
-                <th className="pb-3 font-medium text-right">Engagement</th>
-                <th className="pb-3 font-medium text-right">Avg/Post</th>
-                <th className="pb-3 font-medium text-right">Avg PES</th>
+                <th className="pb-3 font-medium whitespace-nowrap">Page</th>
+                <th className="pb-3 font-medium text-right whitespace-nowrap">Posts</th>
+                <th className="pb-3 font-medium text-right whitespace-nowrap">Reactions</th>
+                <th className="pb-3 font-medium text-right whitespace-nowrap">Comments</th>
+                <th className="pb-3 font-medium text-right whitespace-nowrap">Shares</th>
+                <th className="pb-3 font-medium text-right whitespace-nowrap">Engagement</th>
+                <th className="pb-3 font-medium text-right whitespace-nowrap">Avg/Post</th>
+                <th className="pb-3 font-medium text-right whitespace-nowrap">Avg PES</th>
               </tr>
             </thead>
             <tbody>
@@ -189,7 +189,7 @@ export default function Dashboard() {
                   key={page.page_id}
                   className={`border-b hover:bg-gray-50 ${index === 0 ? 'bg-indigo-50' : ''}`}
                 >
-                  <td className="py-3 font-medium">
+                  <td className="py-3 font-medium whitespace-nowrap">
                     {page.page_name?.replace('Juana Babe ', '')}
                     {index === 0 && (
                       <span className="ml-2 px-2 py-0.5 bg-indigo-600 text-white text-xs rounded">
@@ -197,15 +197,15 @@ export default function Dashboard() {
                       </span>
                     )}
                   </td>
-                  <td className="py-3 text-right">{page.post_count?.toLocaleString()}</td>
-                  <td className="py-3 text-right">{page.total_reactions?.toLocaleString()}</td>
-                  <td className="py-3 text-right">{page.total_comments?.toLocaleString()}</td>
-                  <td className="py-3 text-right">{page.total_shares?.toLocaleString()}</td>
-                  <td className="py-3 text-right font-semibold text-indigo-600">
+                  <td className="py-3 text-right whitespace-nowrap">{page.post_count?.toLocaleString()}</td>
+                  <td className="py-3 text-right whitespace-nowrap">{page.total_reactions?.toLocaleString()}</td>
+                  <td className="py-3 text-right whitespace-nowrap">{page.total_comments?.toLocaleString()}</td>
+                  <td className="py-3 text-right whitespace-nowrap">{page.total_shares?.toLocaleString()}</td>
+                  <td className="py-3 text-right font-semibold text-indigo-600 whitespace-nowrap">
                     {page.total_engagement?.toLocaleString()}
                   </td>
-                  <td className="py-3 text-right">{page.avg_engagement?.toLocaleString()}</td>
-                  <td className="py-3 text-right">{page.avg_pes?.toLocaleString()}</td>
+                  <td className="py-3 text-right whitespace-nowrap">{page.avg_engagement?.toLocaleString()}</td>
+                  <td className="py-3 text-right whitespace-nowrap">{page.avg_pes?.toLocaleString()}</td>
                 </tr>
               ))}
             </tbody>
@@ -277,33 +277,34 @@ export default function Dashboard() {
       <div className="bg-white rounded-lg shadow p-6">
         <h2 className="text-lg font-semibold mb-4">Top Performing Posts</h2>
         <div className="overflow-x-auto">
-          <table className="w-full text-sm">
+          <table className="w-full text-sm table-fixed">
             <thead>
               <tr className="text-left text-gray-500 border-b">
-                <th className="pb-3 font-medium">Page</th>
-                <th className="pb-3 font-medium">Title</th>
-                <th className="pb-3 font-medium">Type</th>
-                <th className="pb-3 font-medium text-right">Reactions</th>
-                <th className="pb-3 font-medium text-right">Comments</th>
-                <th className="pb-3 font-medium text-right">Shares</th>
-                <th className="pb-3 font-medium text-right">Engagement</th>
-                <th className="pb-3 font-medium text-right">PES</th>
+                <th className="pb-3 font-medium w-16">Page</th>
+                <th className="pb-3 font-medium w-64">Title</th>
+                <th className="pb-3 font-medium w-20">Type</th>
+                <th className="pb-3 font-medium text-right w-20">Reactions</th>
+                <th className="pb-3 font-medium text-right w-20">Comments</th>
+                <th className="pb-3 font-medium text-right w-16">Shares</th>
+                <th className="pb-3 font-medium text-right w-24">Engagement</th>
+                <th className="pb-3 font-medium text-right w-20">PES</th>
               </tr>
             </thead>
             <tbody>
               {topPosts.map((post) => (
                 <tr key={post.post_id} className="border-b hover:bg-gray-50">
-                  <td className="py-3 text-xs text-gray-600">
+                  <td className="py-3 text-xs text-gray-600 truncate">
                     {post.page_name?.replace('Juana Babe ', '')}
                   </td>
-                  <td className="py-3 max-w-xs truncate">
+                  <td className="py-3 truncate">
                     <a
                       href={post.permalink}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-indigo-600 hover:underline"
+                      title={post.title}
                     >
-                      {post.title?.slice(0, 50) || 'Untitled'}...
+                      {post.title?.slice(0, 60) || 'Untitled'}...
                     </a>
                   </td>
                   <td className="py-3">
@@ -314,7 +315,7 @@ export default function Dashboard() {
                   <td className="py-3 text-right">{post.reactions?.toLocaleString()}</td>
                   <td className="py-3 text-right">{post.comments?.toLocaleString()}</td>
                   <td className="py-3 text-right">{post.shares?.toLocaleString()}</td>
-                  <td className="py-3 text-right font-semibold">
+                  <td className="py-3 text-right font-semibold text-indigo-600">
                     {post.engagement?.toLocaleString()}
                   </td>
                   <td className="py-3 text-right text-green-600 font-medium">

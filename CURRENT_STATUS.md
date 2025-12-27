@@ -6,6 +6,33 @@
 ## GitHub Repo
 https://github.com/adimStrong/Juanababes
 
+## Live Deployment
+**Vercel**: https://juanbabes-fb-analytics.vercel.app
+
+---
+
+## Data Update Options
+
+### Option 1: Manual CSV Import (via Web UI)
+1. Run backend locally: `cd backend && python manage.py runserver 8001`
+2. Go to http://localhost:5173/imports
+3. Drag & drop CSV from Meta Business Suite
+4. Re-export static data: `python export_static_data.py`
+5. Push to GitHub to update Vercel
+
+### Option 2: Scheduled Facebook API Sync
+1. Ensure `page_tokens.json` has valid tokens
+2. Run: `python scheduled_sync.py` (or schedule via Task Scheduler)
+3. Tokens expire after 60 days - refresh at Meta Business Suite
+
+### Update Vercel After New Data:
+```bash
+python export_static_data.py
+git add frontend/public/data/analytics.json
+git commit -m "Update analytics data"
+git push
+```
+
 ---
 
 ## What's Done

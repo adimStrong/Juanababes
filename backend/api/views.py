@@ -3,6 +3,8 @@ Django REST Framework views for JuanBabes Analytics API
 Updated for 5 pages with direct post metrics
 """
 
+import csv
+import io
 from datetime import datetime, timedelta
 from django.db.models import Sum, Avg, Count, Min, Max, F
 from django.db.models.functions import TruncDate
@@ -10,6 +12,7 @@ from rest_framework import viewsets, status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework.views import APIView
+from rest_framework.parsers import MultiPartParser, FormParser
 from django_filters import rest_framework as filters
 
 from .models import Page, Post, PostMetrics, CsvImport, AudienceOverlap
@@ -336,3 +339,100 @@ class PageComparisonView(APIView):
                 })
 
         return Response(result)
+
+
+class CsvImportView(APIView):
+    """Import CSV data from Meta Business Suite export."""
+    parser_classes = (MultiPartParser, FormParser)
+
+    def post(self, request):
+        from django.db import connection
+
+        file = request.FILES.get('file')
+        if not file:
+            return Response({'error': 'No file uploaded'}, status=400)
+
+        if not file.name.endswith('.csv'):
+            return Response({'error': 'File must be a CSV'}, status=400)
+
+        try:
+            # Read CSV content
+            content = file.read().decode('utf-8-sig')
+            reader = csv.DictReader(io.StringIO(content))
+
+            imported = 0
+            pages_seen = set()
+
+            with connection.cursor() as cursor:
+                for row in reader:
+                    page_id = row.get('Page ID', '')
+                    page_name = row.get('Page name', '')
+                    post_id = row.get('Post ID', '')
+
+                    if not post_id or not page_id:
+                        continue
+
+                    # Track pages
+                    if page_id not in pages_seen:
+                        pages_seen.add(page_id)
+                        cursor.execute("""
+                            INSERT OR IGNORE INTO pages (page_id, page_name, created_at, updated_at)
+                            VALUES (?, ?, ?, ?)
+                        """, (page_id, page_name, datetime.now().isoformat(), datetime.now().isoformat()))
+
+                    # Parse post data
+                    title = (row.get('Title', '') or '')[:200]
+                    permalink = row.get('Permalink', '') or ''
+                    post_type = row.get('Post type', 'TEXT') or 'TEXT'
+
+                    # Parse datetime
+                    publish_time_str = row.get('Publish time', '')
+                    try:
+                        publish_time = datetime.strptime(publish_time_str, "%m/%d/%Y %H:%M").isoformat() if publish_time_str else None
+                    except:
+                        publish_time = publish_time_str
+
+                    # Parse metrics
+                    def safe_int(val):
+                        try:
+                            return int(float(val)) if val else 0
+                        except:
+                            return 0
+
+                    reactions = safe_int(row.get('Reactions', 0))
+                    comments = safe_int(row.get('Comments', 0))
+                    shares = safe_int(row.get('Shares', 0))
+
+                    total_engagement = reactions + comments + shares
+                    pes = (reactions * 1.0) + (comments * 2.0) + (shares * 3.0)
+
+                    # Insert or update post
+                    cursor.execute("""
+                        INSERT OR REPLACE INTO posts
+                        (post_id, page_id, title, permalink, post_type, publish_time,
+                         reactions_total, comments_count, shares_count,
+                         pes, total_engagement, fetched_at)
+                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    """, (
+                        post_id, page_id, title, permalink, post_type, publish_time,
+                        reactions, comments, shares, pes, total_engagement,
+                        datetime.now().isoformat()
+                    ))
+                    imported += 1
+
+            # Log import
+            with connection.cursor() as cursor:
+                cursor.execute("""
+                    INSERT INTO csv_imports (filename, import_date, rows_imported, rows_updated, status)
+                    VALUES (?, ?, ?, ?, ?)
+                """, (file.name, datetime.now().isoformat(), imported, 0, 'completed'))
+
+            return Response({
+                'success': True,
+                'posts_imported': imported,
+                'pages_count': len(pages_seen),
+                'pages': list(pages_seen)
+            })
+
+        except Exception as e:
+            return Response({'error': str(e)}, status=500)
