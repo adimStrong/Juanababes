@@ -5,6 +5,10 @@ export default function StatCard({ title, value, subtitle, icon, color = 'indigo
     blue: 'bg-blue-500',
     purple: 'bg-purple-500',
     orange: 'bg-orange-500',
+    pink: 'bg-pink-500',
+    cyan: 'bg-cyan-500',
+    teal: 'bg-teal-500',
+    amber: 'bg-amber-500',
   };
 
   const formatNumber = (num) => {

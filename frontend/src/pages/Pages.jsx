@@ -91,7 +91,7 @@ export default function Pages() {
               fontSize={12}
               tickFormatter={(val) => val?.replace('Juana Babe ', '')}
             />
-            <YAxis fontSize={12} />
+            <YAxis fontSize={12} tickFormatter={(val) => val?.toLocaleString()} />
             <Tooltip
               labelFormatter={(val) => val}
               formatter={(value) => [value?.toLocaleString(), '']}

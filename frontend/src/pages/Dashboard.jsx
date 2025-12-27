@@ -93,35 +93,35 @@ export default function Dashboard() {
         <StatCard
           title="Total Posts"
           value={stats?.total_posts?.toLocaleString()}
-          icon=""
+          icon="📝"
           color="indigo"
         />
         <StatCard
           title="Total Views"
           value={stats?.total_views?.toLocaleString()}
           subtitle={`Avg: ${stats?.avg_views?.toLocaleString() || 0}/post`}
-          icon=""
+          icon="👁️"
           color="purple"
         />
         <StatCard
           title="Total Reach"
           value={stats?.total_reach?.toLocaleString()}
           subtitle={`Avg: ${stats?.avg_reach?.toLocaleString() || 0}/post`}
-          icon=""
+          icon="📡"
           color="cyan"
         />
         <StatCard
           title="Total Engagement"
           value={stats?.total_engagement?.toLocaleString()}
           subtitle={`Avg: ${stats?.avg_engagement?.toLocaleString()}`}
-          icon=""
+          icon="⚡"
           color="green"
         />
         <StatCard
           title="Total PES"
           value={stats?.total_pes?.toLocaleString()}
           subtitle={`Avg: ${stats?.avg_pes?.toLocaleString()}`}
-          icon=""
+          icon="📊"
           color="orange"
         />
       </div>
@@ -131,26 +131,26 @@ export default function Dashboard() {
         <StatCard
           title="Total Reactions"
           value={stats?.total_reactions?.toLocaleString()}
-          icon=""
+          icon="❤️"
           color="pink"
         />
         <StatCard
           title="Total Comments"
           value={stats?.total_comments?.toLocaleString()}
-          icon=""
+          icon="💬"
           color="blue"
         />
         <StatCard
           title="Total Shares"
           value={stats?.total_shares?.toLocaleString()}
-          icon=""
+          icon="🔄"
           color="amber"
         />
         <StatCard
           title="Active Pages"
           value={`${stats?.total_pages || 0} / ${stats?.all_pages || stats?.total_pages || 0}`}
           subtitle="Pages with engagement data"
-          icon=""
+          icon="📄"
           color="teal"
         />
       </div>
@@ -161,7 +161,7 @@ export default function Dashboard() {
         <ResponsiveContainer width="100%" height={300}>
           <BarChart data={pageComparison} layout="vertical">
             <CartesianGrid strokeDasharray="3 3" />
-            <XAxis type="number" fontSize={12} />
+            <XAxis type="number" fontSize={12} tickFormatter={(val) => val?.toLocaleString()} />
             <YAxis
               type="category"
               dataKey="page_name"
@@ -240,8 +240,8 @@ export default function Dashboard() {
                 tickFormatter={(val) => val?.slice(5) || ''}
                 fontSize={12}
               />
-              <YAxis fontSize={12} />
-              <Tooltip />
+              <YAxis fontSize={12} tickFormatter={(val) => val?.toLocaleString()} />
+              <Tooltip formatter={(value) => value?.toLocaleString()} />
               <Legend />
               <Line
                 type="monotone"
@@ -415,8 +415,8 @@ export default function Dashboard() {
               tickFormatter={(val) => val?.slice(5) || ''}
               fontSize={12}
             />
-            <YAxis fontSize={12} allowDecimals={false} />
-            <Tooltip />
+            <YAxis fontSize={12} allowDecimals={false} tickFormatter={(val) => val?.toLocaleString()} />
+            <Tooltip formatter={(value) => value?.toLocaleString()} />
             <Legend />
             <Bar dataKey="posts" name="Posts Published" fill="#6366f1" />
           </BarChart>
@@ -485,8 +485,8 @@ export default function Dashboard() {
           <BarChart data={postTypes}>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="post_type" fontSize={12} />
-            <YAxis fontSize={12} />
-            <Tooltip />
+            <YAxis fontSize={12} tickFormatter={(val) => val?.toLocaleString()} />
+            <Tooltip formatter={(value) => value?.toLocaleString()} />
             <Legend />
             <Bar dataKey="avg_engagement" name="Avg Engagement" fill="#6366f1" />
             <Bar dataKey="avg_pes" name="Avg PES" fill="#22c55e" />

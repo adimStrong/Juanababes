@@ -198,7 +198,7 @@ export default function Overlap() {
             <BarChart data={chartData}>
               <CartesianGrid strokeDasharray="3 3" />
               <XAxis dataKey="name" fontSize={12} />
-              <YAxis fontSize={12} />
+              <YAxis fontSize={12} tickFormatter={(val) => val?.toLocaleString()} />
               <Tooltip formatter={(value) => value?.toLocaleString()} />
               <Bar dataKey={selectedMetric}>
                 {chartData.map((entry, index) => (

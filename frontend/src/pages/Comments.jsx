@@ -134,7 +134,7 @@ export default function Comments() {
             <BarChart data={commentsByType}>
               <CartesianGrid strokeDasharray="3 3" />
               <XAxis dataKey="type" fontSize={12} />
-              <YAxis fontSize={12} />
+              <YAxis fontSize={12} tickFormatter={(val) => val?.toLocaleString()} />
               <Tooltip formatter={(value) => value?.toLocaleString()} />
               <Legend />
               <Bar dataKey="comments" name="Total Comments" fill="#3b82f6" />
