@@ -15364,5 +15364,255 @@
         "permalink": "https://www.facebook.com/reel/753687821089189/"
       }
     ]
+  },
+  "pageComparison": {
+    "pages": [
+      {
+        "page_id": "61580337497087",
+        "page_name": "Juana Babe Ashley",
+        "fan_count": 37376,
+        "posts": 119,
+        "engagement": 78396,
+        "avg_engagement": 658.8,
+        "views": 1109843,
+        "reach": 800249,
+        "reactions": 75223,
+        "comments": 1997,
+        "shares": 1176,
+        "avg_pes": 695.3,
+        "rank": 1,
+        "engagement_share": 53.4
+      },
+      {
+        "page_id": "61580361006776",
+        "page_name": "Juana Babe Sena",
+        "fan_count": 15503,
+        "posts": 247,
+        "engagement": 40890,
+        "avg_engagement": 165.5,
+        "views": 396694,
+        "reach": 279559,
+        "reactions": 35019,
+        "comments": 3846,
+        "shares": 2025,
+        "avg_pes": 197.5,
+        "rank": 2,
+        "engagement_share": 27.8
+      },
+      {
+        "page_id": "61580716220863",
+        "page_name": "Juana Babe Abi",
+        "fan_count": 875,
+        "posts": 107,
+        "engagement": 11257,
+        "avg_engagement": 105.2,
+        "views": 71814,
+        "reach": 36006,
+        "reactions": 6441,
+        "comments": 3193,
+        "shares": 1623,
+        "avg_pes": 165.4,
+        "rank": 3,
+        "engagement_share": 7.7
+      },
+      {
+        "page_id": "61580479407070",
+        "page_name": "Juana Babe Zell",
+        "fan_count": 2229,
+        "posts": 72,
+        "engagement": 9117,
+        "avg_engagement": 126.6,
+        "views": 45888,
+        "reach": 22989,
+        "reactions": 5128,
+        "comments": 2347,
+        "shares": 1642,
+        "avg_pes": 204.8,
+        "rank": 4,
+        "engagement_share": 6.2
+      },
+      {
+        "page_id": "61580395595183",
+        "page_name": "Juana Babe Jam",
+        "fan_count": 1964,
+        "posts": 63,
+        "engagement": 7199,
+        "avg_engagement": 114.3,
+        "views": 39398,
+        "reach": 22448,
+        "reactions": 4293,
+        "comments": 1927,
+        "shares": 979,
+        "avg_pes": 175.9,
+        "rank": 5,
+        "engagement_share": 4.9
+      }
+    ],
+    "postTypesByPage": {
+      "61580337497087": [
+        {
+          "type": "Photos",
+          "count": 51,
+          "engagement": 2606,
+          "avg_engagement": 51.1
+        },
+        {
+          "type": "Reels",
+          "count": 34,
+          "engagement": 70215,
+          "avg_engagement": 2065.1
+        },
+        {
+          "type": "Videos",
+          "count": 18,
+          "engagement": 5359,
+          "avg_engagement": 297.7
+        },
+        {
+          "type": "Text",
+          "count": 12,
+          "engagement": 120,
+          "avg_engagement": 10.0
+        },
+        {
+          "type": "Live",
+          "count": 4,
+          "engagement": 96,
+          "avg_engagement": 24.0
+        }
+      ],
+      "61580361006776": [
+        {
+          "type": "Videos",
+          "count": 125,
+          "engagement": 34218,
+          "avg_engagement": 273.7
+        },
+        {
+          "type": "Photos",
+          "count": 93,
+          "engagement": 6114,
+          "avg_engagement": 65.7
+        },
+        {
+          "type": "Text",
+          "count": 28,
+          "engagement": 551,
+          "avg_engagement": 19.7
+        },
+        {
+          "type": "Live",
+          "count": 1,
+          "engagement": 7,
+          "avg_engagement": 7.0
+        }
+      ],
+      "61580395595183": [
+        {
+          "type": "Videos",
+          "count": 39,
+          "engagement": 5455,
+          "avg_engagement": 139.9
+        },
+        {
+          "type": "Photos",
+          "count": 14,
+          "engagement": 1235,
+          "avg_engagement": 88.2
+        },
+        {
+          "type": "Text",
+          "count": 9,
+          "engagement": 477,
+          "avg_engagement": 53.0
+        },
+        {
+          "type": "Live",
+          "count": 1,
+          "engagement": 32,
+          "avg_engagement": 32.0
+        }
+      ],
+      "61580479407070": [
+        {
+          "type": "Videos",
+          "count": 34,
+          "engagement": 5575,
+          "avg_engagement": 164.0
+        },
+        {
+          "type": "Photos",
+          "count": 27,
+          "engagement": 2846,
+          "avg_engagement": 105.4
+        },
+        {
+          "type": "Text",
+          "count": 10,
+          "engagement": 664,
+          "avg_engagement": 66.4
+        },
+        {
+          "type": "Live",
+          "count": 1,
+          "engagement": 32,
+          "avg_engagement": 32.0
+        }
+      ],
+      "61580716220863": [
+        {
+          "type": "Videos",
+          "count": 54,
+          "engagement": 6477,
+          "avg_engagement": 119.9
+        },
+        {
+          "type": "Photos",
+          "count": 29,
+          "engagement": 3392,
+          "avg_engagement": 117.0
+        },
+        {
+          "type": "Text",
+          "count": 22,
+          "engagement": 1232,
+          "avg_engagement": 56.0
+        },
+        {
+          "type": "Reels",
+          "count": 1,
+          "engagement": 134,
+          "avg_engagement": 134.0
+        },
+        {
+          "type": "Live",
+          "count": 1,
+          "engagement": 22,
+          "avg_engagement": 22.0
+        }
+      ]
+    },
+    "dominantTypes": {
+      "61580337497087": {
+        "type": "Photos",
+        "percentage": 42.9
+      },
+      "61580361006776": {
+        "type": "Videos",
+        "percentage": 50.6
+      },
+      "61580395595183": {
+        "type": "Videos",
+        "percentage": 61.9
+      },
+      "61580479407070": {
+        "type": "Videos",
+        "percentage": 47.2
+      },
+      "61580716220863": {
+        "type": "Videos",
+        "percentage": 50.5
+      }
+    }
   }
 }

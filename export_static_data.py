@@ -627,6 +627,101 @@ def generate_insights(monthly, weekly, day_of_week, page_rankings, post_type_per
     return insights[:5]  # Limit to 5 insights
 
 
+def export_page_comparison():
+    """Export detailed page comparison data for the Overlap/Comparison page."""
+    conn = get_conn()
+    cursor = conn.cursor()
+
+    # Get comprehensive page stats
+    cursor.execute("""
+        SELECT
+            pg.page_id,
+            pg.page_name,
+            pg.fan_count,
+            COUNT(p.post_id) as posts,
+            COALESCE(SUM(p.total_engagement), 0) as engagement,
+            COALESCE(AVG(p.total_engagement), 0) as avg_engagement,
+            COALESCE(SUM(p.views_count), 0) as views,
+            COALESCE(SUM(p.reach_count), 0) as reach,
+            COALESCE(SUM(p.reactions_total), 0) as reactions,
+            COALESCE(SUM(p.comments_count), 0) as comments,
+            COALESCE(SUM(p.shares_count), 0) as shares,
+            COALESCE(AVG(p.pes), 0) as avg_pes
+        FROM pages pg
+        LEFT JOIN posts p ON pg.page_id = p.page_id
+        GROUP BY pg.page_id
+        ORDER BY engagement DESC
+    """)
+
+    pages = []
+    total_engagement = 0
+    for row in cursor.fetchall():
+        total_engagement += row[4]
+        pages.append({
+            "page_id": row[0],
+            "page_name": row[1],
+            "fan_count": row[2],
+            "posts": row[3],
+            "engagement": row[4],
+            "avg_engagement": round(row[5], 1),
+            "views": row[6],
+            "reach": row[7],
+            "reactions": row[8],
+            "comments": row[9],
+            "shares": row[10],
+            "avg_pes": round(row[11], 1)
+        })
+
+    # Add rankings and percentages
+    for i, page in enumerate(pages):
+        page["rank"] = i + 1
+        page["engagement_share"] = round((page["engagement"] / total_engagement) * 100, 1) if total_engagement > 0 else 0
+
+    # Get post type distribution by page
+    cursor.execute("""
+        SELECT
+            p.page_id,
+            COALESCE(p.post_type, 'Unknown') as post_type,
+            COUNT(*) as count,
+            COALESCE(SUM(p.total_engagement), 0) as engagement,
+            COALESCE(AVG(p.total_engagement), 0) as avg_engagement
+        FROM posts p
+        GROUP BY p.page_id, p.post_type
+        ORDER BY p.page_id, count DESC
+    """)
+
+    post_types_by_page = {}
+    for row in cursor.fetchall():
+        page_id = row[0]
+        if page_id not in post_types_by_page:
+            post_types_by_page[page_id] = []
+        post_types_by_page[page_id].append({
+            "type": row[1],
+            "count": row[2],
+            "engagement": row[3],
+            "avg_engagement": round(row[4], 1)
+        })
+
+    # Calculate content strategy similarity (which pages focus on same content types)
+    # Find dominant content type for each page
+    dominant_types = {}
+    for page_id, types in post_types_by_page.items():
+        if types:
+            total = sum(t["count"] for t in types)
+            dominant_types[page_id] = {
+                "type": types[0]["type"],
+                "percentage": round((types[0]["count"] / total) * 100, 1) if total > 0 else 0
+            }
+
+    conn.close()
+
+    return {
+        "pages": pages,
+        "postTypesByPage": post_types_by_page,
+        "dominantTypes": dominant_types
+    }
+
+
 def export_comment_analysis():
     """Export self-comment vs organic comment analysis data."""
     conn = get_conn()
@@ -917,6 +1012,7 @@ def main():
     all_posts_data = export_all_posts()
     time_series_data = export_time_series()
     comment_analysis_data = export_comment_analysis()
+    page_comparison_data = export_page_comparison()
 
     data = {
         "stats": stats_data,
@@ -927,7 +1023,8 @@ def main():
         "posts": all_posts_data,
         "overlaps": [],  # Empty for now, prevents errors
         "timeSeries": time_series_data,
-        "commentAnalysis": comment_analysis_data
+        "commentAnalysis": comment_analysis_data,
+        "pageComparison": page_comparison_data
     }
 
     # Pretty print summary

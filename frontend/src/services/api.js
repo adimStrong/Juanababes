@@ -139,14 +139,6 @@ export const getOverlaps = async () => {
   return api.get('/overlaps/').then(res => res.data);
 };
 
-export const getPageComparison = async () => {
-  if (IS_PRODUCTION) {
-    const data = await loadStaticData();
-    return data.pages;
-  }
-  return api.get('/stats/pages/').then(res => res.data);
-};
-
 export const getTimeSeries = async () => {
   if (IS_PRODUCTION) {
     const data = await loadStaticData();
@@ -174,6 +166,18 @@ export const getCommentAnalysis = async () => {
     };
   }
   return api.get('/stats/comment-analysis/').then(res => res.data);
+};
+
+export const getPageComparison = async () => {
+  if (IS_PRODUCTION) {
+    const data = await loadStaticData();
+    return data.pageComparison || {
+      pages: [],
+      postTypesByPage: {},
+      dominantTypes: {}
+    };
+  }
+  return api.get('/stats/page-comparison/').then(res => res.data);
 };
 
 export default api;
