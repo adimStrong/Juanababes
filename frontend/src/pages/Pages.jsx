@@ -33,11 +33,13 @@ export default function Pages() {
   // Calculate totals
   const totals = pages.reduce((acc, page) => ({
     posts: acc.posts + (page.post_count || 0),
+    views: acc.views + (page.total_views || 0),
+    reach: acc.reach + (page.total_reach || 0),
     reactions: acc.reactions + (page.total_reactions || 0),
     comments: acc.comments + (page.total_comments || 0),
     shares: acc.shares + (page.total_shares || 0),
     engagement: acc.engagement + (page.total_engagement || 0),
-  }), { posts: 0, reactions: 0, comments: 0, shares: 0, engagement: 0 });
+  }), { posts: 0, views: 0, reach: 0, reactions: 0, comments: 0, shares: 0, engagement: 0 });
 
   return (
     <div className="space-y-6">
@@ -47,10 +49,18 @@ export default function Pages() {
       </div>
 
       {/* Summary Stats */}
-      <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
         <div className="bg-white rounded-lg shadow p-4">
           <p className="text-sm text-gray-500">Total Posts</p>
           <p className="text-2xl font-bold text-indigo-600">{totals.posts.toLocaleString()}</p>
+        </div>
+        <div className="bg-white rounded-lg shadow p-4">
+          <p className="text-sm text-gray-500">Total Views</p>
+          <p className="text-2xl font-bold text-purple-600">{totals.views.toLocaleString()}</p>
+        </div>
+        <div className="bg-white rounded-lg shadow p-4">
+          <p className="text-sm text-gray-500">Total Reach</p>
+          <p className="text-2xl font-bold text-cyan-600">{totals.reach.toLocaleString()}</p>
         </div>
         <div className="bg-white rounded-lg shadow p-4">
           <p className="text-sm text-gray-500">Total Reactions</p>
@@ -122,10 +132,22 @@ export default function Pages() {
             </div>
 
             {/* Stats Grid */}
-            <div className="mt-6 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4">
+            <div className="mt-6 grid grid-cols-2 md:grid-cols-5 lg:grid-cols-10 gap-4">
               <div className="bg-gray-50 rounded p-3">
                 <p className="text-xs text-gray-500 uppercase">Posts</p>
                 <p className="text-lg font-semibold">{page.post_count?.toLocaleString()}</p>
+              </div>
+              <div className="bg-purple-50 rounded p-3">
+                <p className="text-xs text-gray-500 uppercase">Views</p>
+                <p className="text-lg font-semibold text-purple-600">
+                  {page.total_views?.toLocaleString() || 0}
+                </p>
+              </div>
+              <div className="bg-cyan-50 rounded p-3">
+                <p className="text-xs text-gray-500 uppercase">Reach</p>
+                <p className="text-lg font-semibold text-cyan-600">
+                  {page.total_reach?.toLocaleString() || 0}
+                </p>
               </div>
               <div className="bg-pink-50 rounded p-3">
                 <p className="text-xs text-gray-500 uppercase">Reactions</p>
@@ -157,9 +179,9 @@ export default function Pages() {
                   {page.avg_engagement?.toLocaleString()}
                 </p>
               </div>
-              <div className="bg-purple-50 rounded p-3">
+              <div className="bg-amber-50 rounded p-3">
                 <p className="text-xs text-gray-500 uppercase">Avg PES</p>
-                <p className="text-lg font-semibold text-purple-600">
+                <p className="text-lg font-semibold text-amber-600">
                   {page.avg_pes?.toLocaleString()}
                 </p>
               </div>

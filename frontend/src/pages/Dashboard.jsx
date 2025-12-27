@@ -17,6 +17,7 @@ export default function Dashboard() {
   const [timeSeries, setTimeSeries] = useState(null);
   const [selectedPage, setSelectedPage] = useState(null);
   const [distributionView, setDistributionView] = useState('type'); // 'type' or 'page'
+  const [pageMetric, setPageMetric] = useState('posts'); // posts, views, reach, engagement
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -264,31 +265,45 @@ export default function Dashboard() {
 
         {/* Post Type / Page Distribution */}
         <div className="bg-white rounded-lg shadow p-6">
-          <div className="flex justify-between items-center mb-4">
+          <div className="flex justify-between items-center mb-4 flex-wrap gap-2">
             <h2 className="text-lg font-semibold">
-              {distributionView === 'type' ? 'Post Type Distribution' : 'Distribution by Page'}
+              {distributionView === 'type' ? 'Post Type Distribution' : `Distribution by Page (${pageMetric.charAt(0).toUpperCase() + pageMetric.slice(1)})`}
             </h2>
-            <div className="flex bg-gray-100 rounded-lg p-1">
-              <button
-                onClick={() => setDistributionView('type')}
-                className={`px-3 py-1 text-sm rounded-md transition ${
-                  distributionView === 'type'
-                    ? 'bg-white shadow text-indigo-600 font-medium'
-                    : 'text-gray-600 hover:text-gray-900'
-                }`}
-              >
-                By Type
-              </button>
-              <button
-                onClick={() => setDistributionView('page')}
-                className={`px-3 py-1 text-sm rounded-md transition ${
-                  distributionView === 'page'
-                    ? 'bg-white shadow text-indigo-600 font-medium'
-                    : 'text-gray-600 hover:text-gray-900'
-                }`}
-              >
-                By Page
-              </button>
+            <div className="flex items-center gap-2">
+              {distributionView === 'page' && (
+                <select
+                  value={pageMetric}
+                  onChange={(e) => setPageMetric(e.target.value)}
+                  className="px-2 py-1 text-sm border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-500"
+                >
+                  <option value="posts">Posts</option>
+                  <option value="views">Views</option>
+                  <option value="reach">Reach</option>
+                  <option value="engagement">Engagement</option>
+                </select>
+              )}
+              <div className="flex bg-gray-100 rounded-lg p-1">
+                <button
+                  onClick={() => setDistributionView('type')}
+                  className={`px-3 py-1 text-sm rounded-md transition ${
+                    distributionView === 'type'
+                      ? 'bg-white shadow text-indigo-600 font-medium'
+                      : 'text-gray-600 hover:text-gray-900'
+                  }`}
+                >
+                  By Type
+                </button>
+                <button
+                  onClick={() => setDistributionView('page')}
+                  className={`px-3 py-1 text-sm rounded-md transition ${
+                    distributionView === 'page'
+                      ? 'bg-white shadow text-indigo-600 font-medium'
+                      : 'text-gray-600 hover:text-gray-900'
+                  }`}
+                >
+                  By Page
+                </button>
+              </div>
             </div>
           </div>
           <ResponsiveContainer width="100%" height={300}>
@@ -311,14 +326,17 @@ export default function Dashboard() {
                 <Pie
                   data={pageComparison.map(p => ({
                     ...p,
-                    short_name: p.page_name?.replace('Juana Babe ', '')
+                    short_name: p.page_name?.replace('Juana Babe ', ''),
+                    value: pageMetric === 'posts' ? p.post_count :
+                           pageMetric === 'views' ? p.total_views :
+                           pageMetric === 'reach' ? p.total_reach : p.total_engagement
                   }))}
-                  dataKey="post_count"
+                  dataKey="value"
                   nameKey="short_name"
                   cx="50%"
                   cy="50%"
                   outerRadius={100}
-                  label={({ short_name, post_count }) => `${short_name}: ${post_count}`}
+                  label={({ short_name, value }) => `${short_name}: ${value?.toLocaleString()}`}
                 >
                   {pageComparison.map((_, index) => (
                     <Cell key={index} fill={COLORS[index % COLORS.length]} />
