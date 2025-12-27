@@ -22,7 +22,7 @@ export default function Dashboard() {
     async function fetchData() {
       try {
         const [statsData, dailyData, postTypeData, topPostsData, pageData] = await Promise.all([
-          getStats(),
+          getStats(selectedPage),
           getDailyEngagement(60, selectedPage),
           getPostTypeStats(selectedPage),
           getTopPosts(5, 'engagement', selectedPage),

@@ -21,41 +21,63 @@ const api = axios.create({
   },
 });
 
-export const getStats = async () => {
+export const getStats = async (pageId = null) => {
   if (IS_PRODUCTION) {
     const data = await loadStaticData();
-    return data.stats;
+    // Support per-page stats filtering
+    if (pageId && data.stats.byPage && data.stats.byPage[pageId]) {
+      return data.stats.byPage[pageId];
+    }
+    return data.stats.all || data.stats;
   }
-  return api.get('/stats/').then(res => res.data);
+  const params = pageId ? `?page=${pageId}` : '';
+  return api.get(`/stats/${params}`).then(res => res.data);
 };
 
 export const getDailyEngagement = async (days = 30, pageId = null) => {
   if (IS_PRODUCTION) {
     const data = await loadStaticData();
-    // Static data doesn't support page filtering - would need pre-computed per-page data
-    return data.daily.slice(-days);
+    // Support per-page daily filtering
+    let dailyData;
+    if (pageId && data.daily.byPage && data.daily.byPage[pageId]) {
+      dailyData = data.daily.byPage[pageId];
+    } else {
+      dailyData = data.daily.all || data.daily;
+    }
+    return dailyData.slice(-days);
   }
   const params = new URLSearchParams({ days });
   if (pageId) params.append('page', pageId);
   return api.get(`/stats/daily/?${params}`).then(res => res.data);
 };
 
-export const getPostTypeStats = async (page = null) => {
+export const getPostTypeStats = async (pageId = null) => {
   if (IS_PRODUCTION) {
     const data = await loadStaticData();
-    return data.postTypes;
+    // Support per-page post type filtering
+    if (pageId && data.postTypes.byPage && data.postTypes.byPage[pageId]) {
+      return data.postTypes.byPage[pageId];
+    }
+    return data.postTypes.all || data.postTypes;
   }
-  const params = page ? `?page=${page}` : '';
+  const params = pageId ? `?page=${pageId}` : '';
   return api.get(`/stats/post-types/${params}`).then(res => res.data);
 };
 
-export const getTopPosts = async (limit = 10, metric = 'engagement', page = null) => {
+export const getTopPosts = async (limit = 10, metric = 'engagement', pageId = null) => {
   if (IS_PRODUCTION) {
     const data = await loadStaticData();
-    return data.topPosts.slice(0, limit);
+    // Support per-page top posts filtering
+    let posts;
+    if (pageId && data.topPosts.byPage && data.topPosts.byPage[pageId]) {
+      posts = data.topPosts.byPage[pageId];
+    } else {
+      posts = data.topPosts.all || data.topPosts;
+    }
+    return posts.slice(0, limit);
   }
   const params = new URLSearchParams({ limit, metric });
-  if (page) params.append('page', page);
+  if (pageId) params.append('page', pageId);
   return api.get(`/stats/top-posts/?${params}`).then(res => res.data);
 };
 
