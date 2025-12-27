@@ -3,7 +3,7 @@ import {
   PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis, CartesianGrid,
   Tooltip, ResponsiveContainer, Legend
 } from 'recharts';
-import { getPageComparison, getPostTypeStats, getTopPosts } from '../services/api';
+import { getPageComparison, getPostTypeStats, getTopPosts, getCommentAnalysis } from '../services/api';
 
 const COLORS = ['#6366f1', '#22c55e', '#f59e0b', '#ef4444', '#8b5cf6'];
 
@@ -11,21 +11,24 @@ export default function Comments() {
   const [pages, setPages] = useState([]);
   const [postTypes, setPostTypes] = useState([]);
   const [topCommented, setTopCommented] = useState([]);
+  const [commentAnalysis, setCommentAnalysis] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function fetchData() {
       try {
-        const [pageData, postTypeData, topPostsData] = await Promise.all([
+        const [pageData, postTypeData, topPostsData, analysisData] = await Promise.all([
           getPageComparison(),
           getPostTypeStats(),
-          getTopPosts(20, 'engagement'), // Get more posts for comment sorting
+          getTopPosts(20, 'engagement'),
+          getCommentAnalysis(),
         ]);
         setPages(pageData);
         setPostTypes(postTypeData);
         // Sort by comments
         const sorted = [...topPostsData].sort((a, b) => (b.comments || 0) - (a.comments || 0));
         setTopCommented(sorted.slice(0, 10));
+        setCommentAnalysis(analysisData);
       } catch (err) {
         console.error(err);
       } finally {
@@ -248,16 +251,207 @@ export default function Comments() {
         </div>
       </div>
 
-      {/* Comment Effectivity Section - Placeholder for API data */}
-      <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg shadow p-6">
-        <h2 className="text-lg font-semibold mb-4 text-blue-900">Comment Effectivity Analysis</h2>
-        <div className="bg-white/50 rounded-lg p-4 text-center">
-          <p className="text-gray-600 mb-2">Self-Comment vs Organic Comment analysis requires Facebook API data.</p>
-          <p className="text-sm text-gray-500">
-            Run <code className="bg-gray-100 px-2 py-1 rounded">python fetch_comments.py</code> to fetch comment details.
-          </p>
+      {/* Self-Comment Analysis Section */}
+      {commentAnalysis && commentAnalysis.summary && commentAnalysis.summary.posts_analyzed > 0 ? (
+        <div className="space-y-6">
+          {/* Self-Comment Summary Stats */}
+          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg shadow p-6">
+            <h2 className="text-lg font-semibold mb-4 text-blue-900">Self-Comment Analysis</h2>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <div className="bg-white rounded-lg p-4 shadow-sm">
+                <p className="text-sm text-gray-500">Posts Analyzed</p>
+                <p className="text-2xl font-bold text-indigo-600">
+                  {commentAnalysis.summary.posts_analyzed?.toLocaleString()}
+                </p>
+              </div>
+              <div className="bg-white rounded-lg p-4 shadow-sm">
+                <p className="text-sm text-gray-500">Self-Comments</p>
+                <p className="text-2xl font-bold text-orange-600">
+                  {commentAnalysis.summary.total_self_comments?.toLocaleString()}
+                </p>
+                <p className="text-xs text-gray-400">
+                  {commentAnalysis.summary.self_comment_rate}% of total
+                </p>
+              </div>
+              <div className="bg-white rounded-lg p-4 shadow-sm">
+                <p className="text-sm text-gray-500">Organic Comments</p>
+                <p className="text-2xl font-bold text-green-600">
+                  {commentAnalysis.summary.total_organic_comments?.toLocaleString()}
+                </p>
+              </div>
+              <div className="bg-white rounded-lg p-4 shadow-sm">
+                <p className="text-sm text-gray-500">Posts with Self-Comment</p>
+                <p className="text-2xl font-bold text-purple-600">
+                  {commentAnalysis.summary.posts_with_self_comment}
+                </p>
+                <p className="text-xs text-gray-400">
+                  {commentAnalysis.summary.posts_with_self_pct}% of posts
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Engagement Effectivity */}
+          {commentAnalysis.effectivity && (
+            <div className="bg-white rounded-lg shadow p-6">
+              <h2 className="text-lg font-semibold mb-4">Comment Effectivity</h2>
+              <p className="text-sm text-gray-500 mb-4">
+                Does self-commenting boost engagement?
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="text-center p-4 bg-orange-50 rounded-lg">
+                  <p className="text-sm text-gray-600">Avg Engagement</p>
+                  <p className="text-sm text-gray-500">WITH Self-Comment</p>
+                  <p className="text-3xl font-bold text-orange-600 mt-2">
+                    {Math.round(commentAnalysis.effectivity.avg_engagement_with_self)?.toLocaleString()}
+                  </p>
+                </div>
+                <div className="text-center p-4 bg-gray-50 rounded-lg">
+                  <p className="text-sm text-gray-600">Avg Engagement</p>
+                  <p className="text-sm text-gray-500">WITHOUT Self-Comment</p>
+                  <p className="text-3xl font-bold text-gray-600 mt-2">
+                    {Math.round(commentAnalysis.effectivity.avg_engagement_without_self)?.toLocaleString()}
+                  </p>
+                </div>
+                <div className={`text-center p-4 rounded-lg ${
+                  commentAnalysis.effectivity.engagement_boost_pct > 0
+                    ? 'bg-green-50'
+                    : 'bg-red-50'
+                }`}>
+                  <p className="text-sm text-gray-600">Engagement</p>
+                  <p className="text-sm text-gray-500">Boost/Drop</p>
+                  <p className={`text-3xl font-bold mt-2 ${
+                    commentAnalysis.effectivity.engagement_boost_pct > 0
+                      ? 'text-green-600'
+                      : 'text-red-600'
+                  }`}>
+                    {commentAnalysis.effectivity.engagement_boost_pct > 0 ? '+' : ''}
+                    {commentAnalysis.effectivity.engagement_boost_pct}%
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* Self-Comment by Page */}
+          {commentAnalysis.byPage && commentAnalysis.byPage.length > 0 && (
+            <div className="bg-white rounded-lg shadow p-6">
+              <h2 className="text-lg font-semibold mb-4">Self-Comments by Page</h2>
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="text-left text-gray-500 border-b">
+                      <th className="pb-3 font-medium">Page</th>
+                      <th className="pb-3 font-medium text-right">Posts</th>
+                      <th className="pb-3 font-medium text-right">Self</th>
+                      <th className="pb-3 font-medium text-right">Organic</th>
+                      <th className="pb-3 font-medium text-right">Self Rate</th>
+                      <th className="pb-3 font-medium">Distribution</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {commentAnalysis.byPage.map((page, index) => (
+                      <tr key={page.page_id} className="border-b">
+                        <td className="py-3 font-medium">
+                          {page.page_name?.replace('Juana Babe ', '')}
+                        </td>
+                        <td className="py-3 text-right">{page.posts_with_comments}</td>
+                        <td className="py-3 text-right text-orange-600 font-semibold">
+                          {page.self_comments}
+                        </td>
+                        <td className="py-3 text-right text-green-600">
+                          {page.organic_comments?.toLocaleString()}
+                        </td>
+                        <td className="py-3 text-right">{page.self_rate}%</td>
+                        <td className="py-3">
+                          <div className="w-full bg-gray-200 rounded-full h-2 flex">
+                            <div
+                              className="h-2 rounded-l-full bg-orange-500"
+                              style={{ width: `${page.self_rate}%` }}
+                            />
+                            <div
+                              className="h-2 rounded-r-full bg-green-500"
+                              style={{ width: `${100 - page.self_rate}%` }}
+                            />
+                          </div>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <div className="mt-3 flex gap-4 text-xs text-gray-500">
+                <span className="flex items-center gap-1">
+                  <span className="w-3 h-3 bg-orange-500 rounded" /> Self-Comments
+                </span>
+                <span className="flex items-center gap-1">
+                  <span className="w-3 h-3 bg-green-500 rounded" /> Organic Comments
+                </span>
+              </div>
+            </div>
+          )}
+
+          {/* Top Self-Commented Posts */}
+          {commentAnalysis.topSelfCommented && commentAnalysis.topSelfCommented.length > 0 && (
+            <div className="bg-white rounded-lg shadow p-6">
+              <h2 className="text-lg font-semibold mb-4">Posts with Most Self-Comments</h2>
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="text-left text-gray-500 border-b">
+                      <th className="pb-3 font-medium w-16">#</th>
+                      <th className="pb-3 font-medium w-24">Page</th>
+                      <th className="pb-3 font-medium">Title</th>
+                      <th className="pb-3 font-medium text-right w-20">Self</th>
+                      <th className="pb-3 font-medium text-right w-20">Total</th>
+                      <th className="pb-3 font-medium text-right w-24">Engagement</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {commentAnalysis.topSelfCommented.map((post, index) => (
+                      <tr key={post.post_id} className="border-b hover:bg-gray-50">
+                        <td className="py-3 text-gray-500">{index + 1}</td>
+                        <td className="py-3 text-xs">
+                          {post.page_name?.replace('Juana Babe ', '')}
+                        </td>
+                        <td className="py-3">
+                          <a
+                            href={post.permalink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-indigo-600 hover:underline"
+                          >
+                            {post.title || 'Untitled'}
+                          </a>
+                        </td>
+                        <td className="py-3 text-right font-semibold text-orange-600">
+                          {post.self_comments}
+                        </td>
+                        <td className="py-3 text-right text-gray-600">
+                          {post.total_comments}
+                        </td>
+                        <td className="py-3 text-right text-green-600">
+                          {post.engagement?.toLocaleString()}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          )}
         </div>
-      </div>
+      ) : (
+        <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg shadow p-6">
+          <h2 className="text-lg font-semibold mb-4 text-blue-900">Comment Effectivity Analysis</h2>
+          <div className="bg-white/50 rounded-lg p-4 text-center">
+            <p className="text-gray-600 mb-2">Self-Comment vs Organic Comment analysis requires Facebook API data.</p>
+            <p className="text-sm text-gray-500">
+              Run <code className="bg-gray-100 px-2 py-1 rounded">python fetch_comments.py</code> to fetch comment details.
+            </p>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

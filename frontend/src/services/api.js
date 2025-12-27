@@ -163,4 +163,17 @@ export const getTimeSeries = async () => {
   return api.get('/stats/time-series/').then(res => res.data);
 };
 
+export const getCommentAnalysis = async () => {
+  if (IS_PRODUCTION) {
+    const data = await loadStaticData();
+    return data.commentAnalysis || {
+      summary: {},
+      byPage: [],
+      effectivity: {},
+      topSelfCommented: []
+    };
+  }
+  return api.get('/stats/comment-analysis/').then(res => res.data);
+};
+
 export default api;

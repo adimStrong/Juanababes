@@ -627,8 +627,141 @@ def generate_insights(monthly, weekly, day_of_week, page_rankings, post_type_per
     return insights[:5]  # Limit to 5 insights
 
 
+def export_comment_analysis():
+    """Export self-comment vs organic comment analysis data."""
+    conn = get_conn()
+    cursor = conn.cursor()
+
+    # Overall self-comment stats
+    cursor.execute("""
+        SELECT
+            COUNT(*) as total_posts_with_comments,
+            COALESCE(SUM(page_comments), 0) as total_self_comments,
+            COALESCE(SUM(comments_count), 0) as total_comments_db,
+            COUNT(CASE WHEN has_page_comment = 1 THEN 1 END) as posts_with_self_comment,
+            COUNT(CASE WHEN page_comments IS NOT NULL AND page_comments >= 0 THEN 1 END) as posts_analyzed
+        FROM posts
+        WHERE comments_count > 0
+    """)
+    row = cursor.fetchone()
+
+    total_posts = row[0]
+    self_comments = row[1]
+    total_db_comments = row[2]
+    posts_with_self = row[3]
+    posts_analyzed = row[4]
+
+    # Estimate organic as total minus self (from analyzed posts)
+    cursor.execute("""
+        SELECT COALESCE(SUM(comments_count - page_comments), 0)
+        FROM posts
+        WHERE page_comments IS NOT NULL AND comments_count > 0
+    """)
+    organic_comments = cursor.fetchone()[0]
+
+    summary = {
+        "total_posts_with_comments": total_posts,
+        "posts_analyzed": posts_analyzed,
+        "posts_with_self_comment": posts_with_self,
+        "total_self_comments": self_comments,
+        "total_organic_comments": organic_comments,
+        "self_comment_rate": round((self_comments / (self_comments + organic_comments)) * 100, 1) if (self_comments + organic_comments) > 0 else 0,
+        "posts_with_self_pct": round((posts_with_self / posts_analyzed) * 100, 1) if posts_analyzed > 0 else 0
+    }
+
+    # Self-comment analysis by page
+    cursor.execute("""
+        SELECT
+            pg.page_name,
+            p.page_id,
+            COUNT(*) as posts_with_comments,
+            COALESCE(SUM(p.page_comments), 0) as self_comments,
+            COALESCE(SUM(p.comments_count - p.page_comments), 0) as organic_comments,
+            COUNT(CASE WHEN p.has_page_comment = 1 THEN 1 END) as posts_with_self
+        FROM posts p
+        LEFT JOIN pages pg ON p.page_id = pg.page_id
+        WHERE p.comments_count > 0 AND p.page_comments IS NOT NULL
+        GROUP BY p.page_id
+        ORDER BY self_comments DESC
+    """)
+
+    by_page = []
+    for row in cursor.fetchall():
+        total = row[3] + row[4]
+        by_page.append({
+            "page_name": row[0],
+            "page_id": row[1],
+            "posts_with_comments": row[2],
+            "self_comments": row[3],
+            "organic_comments": row[4],
+            "posts_with_self": row[5],
+            "self_rate": round((row[3] / total) * 100, 1) if total > 0 else 0
+        })
+
+    # Engagement comparison: posts WITH self-comment vs WITHOUT
+    cursor.execute("""
+        SELECT
+            AVG(CASE WHEN has_page_comment = 1 THEN total_engagement END) as avg_eng_with_self,
+            AVG(CASE WHEN has_page_comment = 0 OR has_page_comment IS NULL THEN total_engagement END) as avg_eng_without_self,
+            AVG(CASE WHEN has_page_comment = 1 THEN reactions_total END) as avg_react_with,
+            AVG(CASE WHEN has_page_comment = 0 OR has_page_comment IS NULL THEN reactions_total END) as avg_react_without
+        FROM posts
+        WHERE comments_count > 0 AND page_comments IS NOT NULL
+    """)
+    eng_row = cursor.fetchone()
+
+    avg_with = eng_row[0] or 0
+    avg_without = eng_row[1] or 0
+    engagement_boost = round(((avg_with - avg_without) / avg_without) * 100, 1) if avg_without > 0 else 0
+
+    effectivity = {
+        "avg_engagement_with_self": round(avg_with, 1),
+        "avg_engagement_without_self": round(avg_without, 1),
+        "engagement_boost_pct": engagement_boost,
+        "avg_reactions_with": round(eng_row[2] or 0, 1),
+        "avg_reactions_without": round(eng_row[3] or 0, 1)
+    }
+
+    # Top posts with most self-comments
+    cursor.execute("""
+        SELECT
+            p.post_id,
+            pg.page_name,
+            p.title,
+            p.page_comments,
+            p.comments_count,
+            p.total_engagement,
+            p.permalink
+        FROM posts p
+        LEFT JOIN pages pg ON p.page_id = pg.page_id
+        WHERE p.page_comments > 0
+        ORDER BY p.page_comments DESC
+        LIMIT 10
+    """)
+
+    top_self_commented = []
+    for row in cursor.fetchall():
+        top_self_commented.append({
+            "post_id": row[0],
+            "page_name": row[1],
+            "title": row[2][:50] if row[2] else "Untitled",
+            "self_comments": row[3],
+            "total_comments": row[4],
+            "engagement": row[5],
+            "permalink": row[6]
+        })
+
+    conn.close()
+
+    return {
+        "summary": summary,
+        "byPage": by_page,
+        "effectivity": effectivity,
+        "topSelfCommented": top_self_commented
+    }
+
+
 def export_all_posts():
-    """Export ALL posts for the Posts page with full metadata."""
     conn = get_conn()
     cursor = conn.cursor()
 
@@ -783,6 +916,7 @@ def main():
     top_posts_data = export_top_posts(10)
     all_posts_data = export_all_posts()
     time_series_data = export_time_series()
+    comment_analysis_data = export_comment_analysis()
 
     data = {
         "stats": stats_data,
@@ -792,7 +926,8 @@ def main():
         "topPosts": top_posts_data,
         "posts": all_posts_data,
         "overlaps": [],  # Empty for now, prevents errors
-        "timeSeries": time_series_data
+        "timeSeries": time_series_data,
+        "commentAnalysis": comment_analysis_data
     }
 
     # Pretty print summary
@@ -817,6 +952,15 @@ def main():
     print(f"  Monthly periods: {len(time_series_data['monthly'])}")
     print(f"  Weekly periods: {len(time_series_data['weekly'])}")
     print(f"  AI Insights: {len(time_series_data['insights'])}")
+
+    print(f"\nComment Analysis:")
+    ca = comment_analysis_data['summary']
+    print(f"  Posts analyzed: {ca['posts_analyzed']}")
+    print(f"  Self-comments: {ca['total_self_comments']}")
+    print(f"  Organic comments: {ca['total_organic_comments']}")
+    print(f"  Self-comment rate: {ca['self_comment_rate']}%")
+    eff = comment_analysis_data['effectivity']
+    print(f"  Engagement boost from self-comment: {eff['engagement_boost_pct']}%")
 
     # Save to file
     with open(OUTPUT_PATH, 'w') as f:
