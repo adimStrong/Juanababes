@@ -4,7 +4,7 @@ import {
   PieChart, Pie, Cell, BarChart, Bar, Legend
 } from 'recharts';
 import StatCard from '../components/StatCard';
-import { getStats, getDailyEngagement, getPostTypeStats, getTopPosts, getPageComparison } from '../services/api';
+import { getStats, getDailyEngagement, getPostTypeStats, getTopPosts, getPageComparison, getTimeSeries } from '../services/api';
 
 const COLORS = ['#6366f1', '#22c55e', '#f59e0b', '#ef4444', '#8b5cf6'];
 
@@ -14,6 +14,7 @@ export default function Dashboard() {
   const [postTypes, setPostTypes] = useState([]);
   const [topPosts, setTopPosts] = useState([]);
   const [pageComparison, setPageComparison] = useState([]);
+  const [timeSeries, setTimeSeries] = useState(null);
   const [selectedPage, setSelectedPage] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -21,18 +22,20 @@ export default function Dashboard() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const [statsData, dailyData, postTypeData, topPostsData, pageData] = await Promise.all([
+        const [statsData, dailyData, postTypeData, topPostsData, pageData, timeSeriesData] = await Promise.all([
           getStats(selectedPage),
           getDailyEngagement(60, selectedPage),
           getPostTypeStats(selectedPage),
           getTopPosts(5, 'engagement', selectedPage),
           getPageComparison(),
+          getTimeSeries(),
         ]);
         setStats(statsData);
         setDailyData(dailyData);
         setPostTypes(postTypeData);
         setTopPosts(topPostsData);
         setPageComparison(pageData);
+        setTimeSeries(timeSeriesData);
       } catch (err) {
         setError(err.message);
       } finally {
@@ -424,6 +427,153 @@ export default function Dashboard() {
           </BarChart>
         </ResponsiveContainer>
       </div>
+
+      {/* AI Insights Section */}
+      {timeSeries?.insights?.length > 0 && (
+        <div className="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-lg shadow p-6">
+          <h2 className="text-lg font-semibold mb-4 text-indigo-900">Performance Insights</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            {timeSeries.insights.map((insight, idx) => (
+              <div
+                key={idx}
+                className={`p-4 rounded-lg ${
+                  insight.type === 'trend_up' ? 'bg-green-100 border-l-4 border-green-500' :
+                  insight.type === 'trend_down' ? 'bg-red-100 border-l-4 border-red-500' :
+                  insight.type === 'best_day' ? 'bg-yellow-100 border-l-4 border-yellow-500' :
+                  insight.type === 'content_type' ? 'bg-purple-100 border-l-4 border-purple-500' :
+                  insight.type === 'top_page' ? 'bg-blue-100 border-l-4 border-blue-500' :
+                  'bg-indigo-100 border-l-4 border-indigo-500'
+                }`}
+              >
+                <h3 className="font-semibold text-sm mb-1">{insight.title}</h3>
+                <p className="text-xs text-gray-700">{insight.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Monthly Performance Cards */}
+      {timeSeries?.monthly?.length > 0 && (
+        <div className="bg-white rounded-lg shadow p-6">
+          <h2 className="text-lg font-semibold mb-4">Monthly Performance</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {timeSeries.monthly.slice(0, 3).map((month) => (
+              <div
+                key={month.month}
+                className="bg-gray-50 rounded-lg p-4 border"
+              >
+                <div className="flex justify-between items-center mb-3">
+                  <span className="font-bold text-lg">{month.month}</span>
+                  {month.mom_change !== null && (
+                    <span className={`text-sm px-2 py-1 rounded ${
+                      month.mom_change > 0 ? 'bg-green-100 text-green-700' :
+                      month.mom_change < 0 ? 'bg-red-100 text-red-700' :
+                      'bg-gray-100 text-gray-700'
+                    }`}>
+                      {month.mom_change > 0 ? '+' : ''}{month.mom_change}%
+                    </span>
+                  )}
+                </div>
+                <div className="grid grid-cols-2 gap-2 text-sm">
+                  <div>
+                    <span className="text-gray-500">Posts</span>
+                    <p className="font-semibold">{month.posts}</p>
+                  </div>
+                  <div>
+                    <span className="text-gray-500">Engagement</span>
+                    <p className="font-semibold text-indigo-600">{month.engagement?.toLocaleString()}</p>
+                  </div>
+                  <div>
+                    <span className="text-gray-500">Views</span>
+                    <p className="font-semibold text-purple-600">{month.views?.toLocaleString()}</p>
+                  </div>
+                  <div>
+                    <span className="text-gray-500">Reach</span>
+                    <p className="font-semibold text-cyan-600">{month.reach?.toLocaleString()}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Weekly Performance Table */}
+      {timeSeries?.weekly?.length > 0 && (
+        <div className="bg-white rounded-lg shadow p-6">
+          <h2 className="text-lg font-semibold mb-4">Weekly Performance (Last 4 Weeks)</h2>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="text-left text-gray-500 border-b">
+                  <th className="pb-3 font-medium">Week</th>
+                  <th className="pb-3 font-medium text-right">Posts</th>
+                  <th className="pb-3 font-medium text-right">Views</th>
+                  <th className="pb-3 font-medium text-right">Reach</th>
+                  <th className="pb-3 font-medium text-right">Engagement</th>
+                  <th className="pb-3 font-medium text-right">WoW Change</th>
+                </tr>
+              </thead>
+              <tbody>
+                {timeSeries.weekly.map((week, idx) => (
+                  <tr key={week.week} className={`border-b ${idx === 0 ? 'bg-indigo-50' : ''}`}>
+                    <td className="py-3">
+                      <span className="font-medium">{week.week_start}</span>
+                      <span className="text-gray-400 mx-1">-</span>
+                      <span className="font-medium">{week.week_end}</span>
+                    </td>
+                    <td className="py-3 text-right">{week.posts}</td>
+                    <td className="py-3 text-right text-purple-600">{week.views?.toLocaleString()}</td>
+                    <td className="py-3 text-right text-cyan-600">{week.reach?.toLocaleString()}</td>
+                    <td className="py-3 text-right font-semibold text-indigo-600">{week.engagement?.toLocaleString()}</td>
+                    <td className="py-3 text-right">
+                      {week.wow_change !== null ? (
+                        <span className={`px-2 py-1 rounded text-xs ${
+                          week.wow_change > 0 ? 'bg-green-100 text-green-700' :
+                          week.wow_change < 0 ? 'bg-red-100 text-red-700' :
+                          'bg-gray-100 text-gray-700'
+                        }`}>
+                          {week.wow_change > 0 ? '+' : ''}{week.wow_change}%
+                        </span>
+                      ) : (
+                        <span className="text-gray-400">-</span>
+                      )}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      )}
+
+      {/* Day of Week Analysis */}
+      {timeSeries?.dayOfWeek?.length > 0 && (
+        <div className="bg-white rounded-lg shadow p-6">
+          <h2 className="text-lg font-semibold mb-4">Best Days to Post</h2>
+          <div className="grid grid-cols-7 gap-2">
+            {timeSeries.dayOfWeek.map((day) => (
+              <div
+                key={day.day}
+                className={`text-center p-4 rounded-lg ${
+                  day.is_best ? 'bg-yellow-100 border-2 border-yellow-400' : 'bg-gray-50'
+                }`}
+              >
+                <div className={`text-sm font-bold ${day.is_best ? 'text-yellow-700' : 'text-gray-600'}`}>
+                  {day.day}
+                  {day.is_best && <span className="ml-1">⭐</span>}
+                </div>
+                <div className="text-xl font-bold mt-2 text-indigo-600">
+                  {day.avg_engagement?.toLocaleString()}
+                </div>
+                <div className="text-xs text-gray-500">avg eng</div>
+                <div className="text-xs text-gray-400 mt-1">{day.posts} posts</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 }

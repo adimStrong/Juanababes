@@ -81,7 +81,40 @@ export const getTopPosts = async (limit = 10, metric = 'engagement', pageId = nu
   return api.get(`/stats/top-posts/?${params}`).then(res => res.data);
 };
 
-export const getPosts = (params = {}) => {
+export const getPosts = async (params = {}) => {
+  if (IS_PRODUCTION) {
+    const data = await loadStaticData();
+    let posts = data.posts || [];
+
+    // Apply filters
+    if (params.post_type) {
+      posts = posts.filter(p => p.post_type === params.post_type);
+    }
+    if (params.page_id) {
+      posts = posts.filter(p => p.page_id === params.page_id);
+    }
+    if (params.search) {
+      const search = params.search.toLowerCase();
+      posts = posts.filter(p =>
+        (p.title || '').toLowerCase().includes(search) ||
+        (p.page_name || '').toLowerCase().includes(search)
+      );
+    }
+
+    // Pagination
+    const page = parseInt(params.page || 1);
+    const pageSize = 20;
+    const start = (page - 1) * pageSize;
+    const end = start + pageSize;
+    const paginatedPosts = posts.slice(start, end);
+
+    return {
+      results: paginatedPosts,
+      count: posts.length,
+      next: end < posts.length ? page + 1 : null,
+      previous: page > 1 ? page - 1 : null,
+    };
+  }
   const searchParams = new URLSearchParams(params);
   return api.get(`/posts/?${searchParams}`).then(res => res.data);
 };
@@ -98,7 +131,13 @@ export const getPages = async () => {
 
 export const getImports = () => api.get('/imports/').then(res => res.data);
 
-export const getOverlaps = () => api.get('/overlaps/').then(res => res.data);
+export const getOverlaps = async () => {
+  if (IS_PRODUCTION) {
+    const data = await loadStaticData();
+    return data.overlaps || [];
+  }
+  return api.get('/overlaps/').then(res => res.data);
+};
 
 export const getPageComparison = async () => {
   if (IS_PRODUCTION) {
@@ -106,6 +145,22 @@ export const getPageComparison = async () => {
     return data.pages;
   }
   return api.get('/stats/pages/').then(res => res.data);
+};
+
+export const getTimeSeries = async () => {
+  if (IS_PRODUCTION) {
+    const data = await loadStaticData();
+    return data.timeSeries || {
+      monthly: [],
+      weekly: [],
+      dayOfWeek: [],
+      pageRankings: [],
+      postTypePerf: [],
+      insights: []
+    };
+  }
+  // For dev, calculate from daily data (simplified)
+  return api.get('/stats/time-series/').then(res => res.data);
 };
 
 export default api;

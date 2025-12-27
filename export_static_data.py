@@ -343,6 +343,336 @@ def export_daily():
     return {"all": all_daily, "byPage": by_page}
 
 
+def export_time_series():
+    """Export time series data: monthly, weekly, and day-of-week analytics."""
+    conn = get_conn()
+    cursor = conn.cursor()
+
+    # Monthly data
+    cursor.execute("""
+        SELECT
+            strftime('%Y-%m', publish_time) as month,
+            COUNT(*) as post_count,
+            COALESCE(SUM(reactions_total), 0) as reactions,
+            COALESCE(SUM(comments_count), 0) as comments,
+            COALESCE(SUM(shares_count), 0) as shares,
+            COALESCE(SUM(views_count), 0) as views,
+            COALESCE(SUM(reach_count), 0) as reach,
+            COALESCE(SUM(total_engagement), 0) as engagement,
+            COALESCE(AVG(total_engagement), 0) as avg_engagement
+        FROM posts
+        WHERE publish_time IS NOT NULL
+            AND (reactions_total > 0 OR comments_count > 0 OR shares_count > 0)
+        GROUP BY strftime('%Y-%m', publish_time)
+        ORDER BY month DESC
+        LIMIT 6
+    """)
+
+    monthly = []
+    prev_engagement = None
+    rows = list(cursor.fetchall())
+    for row in reversed(rows):  # Oldest first for MoM calculation
+        engagement = row[7]
+        mom_change = None
+        if prev_engagement and prev_engagement > 0:
+            mom_change = round(((engagement - prev_engagement) / prev_engagement) * 100, 1)
+        monthly.append({
+            "month": row[0],
+            "posts": row[1],
+            "reactions": row[2],
+            "comments": row[3],
+            "shares": row[4],
+            "views": row[5],
+            "reach": row[6],
+            "engagement": engagement,
+            "avg_engagement": round(row[8], 1),
+            "mom_change": mom_change
+        })
+        prev_engagement = engagement
+
+    # Weekly data (last 4 weeks)
+    cursor.execute("""
+        SELECT
+            strftime('%Y-%W', publish_time) as week,
+            MIN(DATE(publish_time)) as week_start,
+            MAX(DATE(publish_time)) as week_end,
+            COUNT(*) as post_count,
+            COALESCE(SUM(reactions_total), 0) as reactions,
+            COALESCE(SUM(comments_count), 0) as comments,
+            COALESCE(SUM(shares_count), 0) as shares,
+            COALESCE(SUM(views_count), 0) as views,
+            COALESCE(SUM(reach_count), 0) as reach,
+            COALESCE(SUM(total_engagement), 0) as engagement,
+            COALESCE(AVG(total_engagement), 0) as avg_engagement
+        FROM posts
+        WHERE publish_time IS NOT NULL
+            AND DATE(publish_time) >= DATE('now', '-28 days')
+            AND (reactions_total > 0 OR comments_count > 0 OR shares_count > 0)
+        GROUP BY strftime('%Y-%W', publish_time)
+        ORDER BY week DESC
+        LIMIT 4
+    """)
+
+    weekly = []
+    prev_weekly_engagement = None
+    rows = list(cursor.fetchall())
+    for row in reversed(rows):  # Oldest first for WoW calculation
+        engagement = row[9]
+        wow_change = None
+        if prev_weekly_engagement and prev_weekly_engagement > 0:
+            wow_change = round(((engagement - prev_weekly_engagement) / prev_weekly_engagement) * 100, 1)
+        weekly.append({
+            "week": row[0],
+            "week_start": row[1],
+            "week_end": row[2],
+            "posts": row[3],
+            "reactions": row[4],
+            "comments": row[5],
+            "shares": row[6],
+            "views": row[7],
+            "reach": row[8],
+            "engagement": engagement,
+            "avg_engagement": round(row[10], 1),
+            "wow_change": wow_change
+        })
+        prev_weekly_engagement = engagement
+
+    # Day of week analysis
+    cursor.execute("""
+        SELECT
+            CASE CAST(strftime('%w', publish_time) AS INTEGER)
+                WHEN 0 THEN 'Sun'
+                WHEN 1 THEN 'Mon'
+                WHEN 2 THEN 'Tue'
+                WHEN 3 THEN 'Wed'
+                WHEN 4 THEN 'Thu'
+                WHEN 5 THEN 'Fri'
+                WHEN 6 THEN 'Sat'
+            END as day_name,
+            CAST(strftime('%w', publish_time) AS INTEGER) as day_num,
+            COUNT(*) as post_count,
+            COALESCE(SUM(total_engagement), 0) as total_engagement,
+            COALESCE(AVG(total_engagement), 0) as avg_engagement,
+            COALESCE(SUM(views_count), 0) as views,
+            COALESCE(SUM(reach_count), 0) as reach
+        FROM posts
+        WHERE publish_time IS NOT NULL
+            AND (reactions_total > 0 OR comments_count > 0 OR shares_count > 0)
+        GROUP BY day_num
+        ORDER BY day_num
+    """)
+
+    day_of_week = []
+    max_avg = 0
+    rows = list(cursor.fetchall())
+    for row in rows:
+        avg_eng = row[4]
+        if avg_eng > max_avg:
+            max_avg = avg_eng
+
+    for row in rows:
+        avg_eng = row[4]
+        day_of_week.append({
+            "day": row[0],
+            "day_num": row[1],
+            "posts": row[2],
+            "total_engagement": row[3],
+            "avg_engagement": round(avg_eng, 1),
+            "views": row[5],
+            "reach": row[6],
+            "is_best": avg_eng == max_avg
+        })
+
+    # Page rankings (sorted by engagement)
+    cursor.execute("""
+        SELECT
+            pg.page_id,
+            pg.page_name,
+            COUNT(p.post_id) as post_count,
+            COALESCE(SUM(p.views_count), 0) as views,
+            COALESCE(SUM(p.reach_count), 0) as reach,
+            COALESCE(SUM(p.total_engagement), 0) as engagement,
+            COALESCE(AVG(p.total_engagement), 0) as avg_engagement
+        FROM pages pg
+        LEFT JOIN posts p ON pg.page_id = p.page_id
+            AND (p.reactions_total > 0 OR p.comments_count > 0 OR p.shares_count > 0)
+        GROUP BY pg.page_id
+        HAVING COUNT(p.post_id) > 0
+        ORDER BY engagement DESC
+    """)
+
+    page_rankings = []
+    for i, row in enumerate(cursor.fetchall()):
+        page_rankings.append({
+            "rank": i + 1,
+            "page_id": row[0],
+            "page_name": row[1],
+            "posts": row[2],
+            "views": row[3],
+            "reach": row[4],
+            "engagement": row[5],
+            "avg_engagement": round(row[6], 1)
+        })
+
+    # Post type performance
+    cursor.execute("""
+        SELECT
+            COALESCE(post_type, 'Unknown') as post_type,
+            COUNT(*) as count,
+            COALESCE(SUM(views_count), 0) as views,
+            COALESCE(SUM(reach_count), 0) as reach,
+            COALESCE(SUM(total_engagement), 0) as engagement,
+            COALESCE(AVG(total_engagement), 0) as avg_engagement,
+            COALESCE(AVG(views_count), 0) as avg_views
+        FROM posts
+        WHERE reactions_total > 0 OR comments_count > 0 OR shares_count > 0
+        GROUP BY post_type
+        ORDER BY avg_engagement DESC
+    """)
+
+    post_type_perf = []
+    best_type = None
+    max_avg_eng = 0
+    for row in cursor.fetchall():
+        avg_eng = row[5]
+        if avg_eng > max_avg_eng:
+            max_avg_eng = avg_eng
+            best_type = row[0]
+        post_type_perf.append({
+            "type": row[0],
+            "count": row[1],
+            "views": row[2],
+            "reach": row[3],
+            "engagement": row[4],
+            "avg_engagement": round(avg_eng, 1),
+            "avg_views": round(row[6], 1)
+        })
+
+    conn.close()
+
+    return {
+        "monthly": list(reversed(monthly)),  # Most recent first
+        "weekly": list(reversed(weekly)),    # Most recent first
+        "dayOfWeek": day_of_week,
+        "pageRankings": page_rankings,
+        "postTypePerf": post_type_perf,
+        "insights": generate_insights(monthly, weekly, day_of_week, page_rankings, post_type_perf, best_type)
+    }
+
+
+def generate_insights(monthly, weekly, day_of_week, page_rankings, post_type_perf, best_type):
+    """Generate AI-style insights based on data."""
+    insights = []
+
+    # Monthly trend insight
+    if len(monthly) >= 2:
+        recent = monthly[-1]
+        prev = monthly[-2]
+        if recent['mom_change']:
+            if recent['mom_change'] > 0:
+                insights.append({
+                    "type": "trend_up",
+                    "title": "Engagement Growing",
+                    "text": f"Engagement increased {recent['mom_change']}% from {prev['month']} to {recent['month']}"
+                })
+            elif recent['mom_change'] < -10:
+                insights.append({
+                    "type": "trend_down",
+                    "title": "Engagement Declining",
+                    "text": f"Engagement dropped {abs(recent['mom_change'])}% - consider increasing content quality"
+                })
+
+    # Best performing day
+    best_day = next((d for d in day_of_week if d['is_best']), None)
+    if best_day:
+        insights.append({
+            "type": "best_day",
+            "title": f"{best_day['day']} is Best",
+            "text": f"{best_day['day']} generates {best_day['avg_engagement']:.0f} avg engagement - 📈 optimal for posting"
+        })
+
+    # Best content type
+    if best_type and post_type_perf:
+        best = next((p for p in post_type_perf if p['type'] == best_type), None)
+        if best:
+            insights.append({
+                "type": "content_type",
+                "title": f"{best_type} Perform Best",
+                "text": f"{best_type} average {best['avg_engagement']:.0f} engagement vs others"
+            })
+
+    # Top page insight
+    if page_rankings:
+        top_page = page_rankings[0]
+        insights.append({
+            "type": "top_page",
+            "title": f"{top_page['page_name'].replace('Juana Babe ', '')} Leads",
+            "text": f"Top performer with {top_page['engagement']:,} total engagement ({top_page['avg_engagement']:.0f}/post)"
+        })
+
+    # Weekly momentum
+    if len(weekly) >= 2:
+        recent_week = weekly[-1]
+        if recent_week.get('wow_change') and recent_week['wow_change'] > 5:
+            insights.append({
+                "type": "momentum",
+                "title": "Strong Week",
+                "text": f"This week up {recent_week['wow_change']}% vs last week - keep the momentum!"
+            })
+
+    return insights[:5]  # Limit to 5 insights
+
+
+def export_all_posts():
+    """Export ALL posts for the Posts page with full metadata."""
+    conn = get_conn()
+    cursor = conn.cursor()
+
+    cursor.execute("""
+        SELECT
+            p.post_id,
+            p.page_id,
+            pg.page_name,
+            p.title,
+            p.post_type,
+            p.publish_time,
+            p.permalink,
+            COALESCE(p.reactions_total, 0) as reactions,
+            COALESCE(p.comments_count, 0) as comments,
+            COALESCE(p.shares_count, 0) as shares,
+            COALESCE(p.views_count, 0) as views,
+            COALESCE(p.reach_count, 0) as reach,
+            COALESCE(p.total_engagement, 0) as engagement,
+            COALESCE(p.pes, 0) as pes
+        FROM posts p
+        LEFT JOIN pages pg ON p.page_id = pg.page_id
+        WHERE p.reactions_total > 0 OR p.comments_count > 0 OR p.shares_count > 0
+        ORDER BY p.publish_time DESC
+    """)
+
+    all_posts = []
+    for row in cursor.fetchall():
+        all_posts.append({
+            "post_id": row[0],
+            "page_id": row[1],
+            "page_name": row[2],
+            "title": row[3],
+            "post_type": row[4],
+            "publish_time": row[5],
+            "permalink": row[6],
+            "reactions": row[7],
+            "comments": row[8],
+            "shares": row[9],
+            "views": row[10],
+            "reach": row[11],
+            "engagement": row[12],
+            "pes": round(row[13], 1)
+        })
+
+    conn.close()
+    return all_posts
+
+
 def export_top_posts(limit=10):
     """Export top performing posts (all pages + per-page)."""
     conn = get_conn()
@@ -447,13 +777,18 @@ def main():
     post_types_data = export_post_types()
     daily_data = export_daily()
     top_posts_data = export_top_posts(10)
+    all_posts_data = export_all_posts()
+    time_series_data = export_time_series()
 
     data = {
         "stats": stats_data,
         "pages": pages_data,
         "postTypes": post_types_data,
         "daily": daily_data,
-        "topPosts": top_posts_data
+        "topPosts": top_posts_data,
+        "posts": all_posts_data,
+        "overlaps": [],  # Empty for now, prevents errors
+        "timeSeries": time_series_data
     }
 
     # Pretty print summary
@@ -471,7 +806,13 @@ def main():
     print(f"\nPost Types: {len(post_types_data['all'])}")
     print(f"Daily Data Points: {len(daily_data['all'])}")
     print(f"Top Posts: {len(top_posts_data['all'])}")
+    print(f"All Posts (for Posts page): {len(all_posts_data)}")
     print(f"Per-page data: {len(stats_data['byPage'])} pages")
+
+    print(f"\nTime Series Analytics:")
+    print(f"  Monthly periods: {len(time_series_data['monthly'])}")
+    print(f"  Weekly periods: {len(time_series_data['weekly'])}")
+    print(f"  AI Insights: {len(time_series_data['insights'])}")
 
     # Save to file
     with open(OUTPUT_PATH, 'w') as f:
