@@ -14,6 +14,54 @@ async function loadStaticData() {
   return staticData;
 }
 
+// Date filter helper
+function filterByDateRange(data, startDate, endDate, dateField = 'date') {
+  if (!startDate && !endDate) return data;
+  return data.filter(item => {
+    const itemDate = item[dateField];
+    if (!itemDate) return true;
+    if (startDate && itemDate < startDate) return false;
+    if (endDate && itemDate > endDate) return false;
+    return true;
+  });
+}
+
+// Merge Videos and Reels into a single category
+function mergeVideoReels(postTypes) {
+  if (!Array.isArray(postTypes)) return postTypes;
+
+  const videoIdx = postTypes.findIndex(p => p.post_type === 'Videos');
+  const reelIdx = postTypes.findIndex(p => p.post_type === 'Reels');
+
+  // If both don't exist, return as-is
+  if (videoIdx === -1 && reelIdx === -1) return postTypes;
+
+  const video = videoIdx !== -1 ? postTypes[videoIdx] : { count: 0, reactions: 0, comments: 0, shares: 0, total_engagement: 0 };
+  const reel = reelIdx !== -1 ? postTypes[reelIdx] : { count: 0, reactions: 0, comments: 0, shares: 0, total_engagement: 0 };
+
+  const combined = {
+    post_type: 'Videos/Reels',
+    count: (video.count || 0) + (reel.count || 0),
+    reactions: (video.reactions || 0) + (reel.reactions || 0),
+    comments: (video.comments || 0) + (reel.comments || 0),
+    shares: (video.shares || 0) + (reel.shares || 0),
+    total_engagement: (video.total_engagement || 0) + (reel.total_engagement || 0),
+  };
+  combined.avg_engagement = combined.count > 0 ? Math.round(combined.total_engagement / combined.count) : 0;
+
+  return postTypes
+    .filter(p => p.post_type !== 'Videos' && p.post_type !== 'Reels')
+    .concat(combined);
+}
+
+// Normalize post_type for individual posts
+function normalizePostType(post) {
+  if (post.post_type === 'Videos' || post.post_type === 'Reels') {
+    return { ...post, post_type: 'Videos/Reels' };
+  }
+  return post;
+}
+
 const api = axios.create({
   baseURL: API_URL,
   headers: {
@@ -21,9 +69,45 @@ const api = axios.create({
   },
 });
 
-export const getStats = async (pageId = null) => {
+export const getStats = async (pageId = null, dateRange = {}) => {
   if (IS_PRODUCTION) {
     const data = await loadStaticData();
+    const { startDate, endDate } = dateRange;
+
+    // If date range specified, calculate stats from filtered daily data
+    if (startDate || endDate) {
+      let dailyData;
+      if (pageId && data.daily.byPage && data.daily.byPage[pageId]) {
+        dailyData = data.daily.byPage[pageId];
+      } else {
+        dailyData = data.daily.all || data.daily;
+      }
+      const filtered = filterByDateRange(dailyData, startDate, endDate);
+
+      // Calculate totals from filtered daily data
+      const totals = filtered.reduce((acc, day) => ({
+        total_posts: acc.total_posts + (day.posts || 0),
+        total_views: acc.total_views + (day.views || 0),
+        total_reach: acc.total_reach + (day.reach || 0),
+        total_engagement: acc.total_engagement + (day.engagement || 0),
+        total_reactions: acc.total_reactions + (day.reactions || 0),
+        total_comments: acc.total_comments + (day.comments || 0),
+        total_shares: acc.total_shares + (day.shares || 0),
+      }), { total_posts: 0, total_views: 0, total_reach: 0, total_engagement: 0, total_reactions: 0, total_comments: 0, total_shares: 0 });
+
+      const postCount = totals.total_posts || 1;
+      return {
+        ...totals,
+        avg_views: Math.round(totals.total_views / postCount),
+        avg_reach: Math.round(totals.total_reach / postCount),
+        avg_engagement: Math.round(totals.total_engagement / postCount),
+        total_pages: data.pages?.length || 0,
+        all_pages: data.pages?.length || 0,
+        date_range_start: startDate || filtered[0]?.date,
+        date_range_end: endDate || filtered[filtered.length - 1]?.date,
+      };
+    }
+
     // Support per-page stats filtering
     if (pageId && data.stats.byPage && data.stats.byPage[pageId]) {
       return data.stats.byPage[pageId];
@@ -34,9 +118,11 @@ export const getStats = async (pageId = null) => {
   return api.get(`/stats/${params}`).then(res => res.data);
 };
 
-export const getDailyEngagement = async (days = 30, pageId = null) => {
+export const getDailyEngagement = async (days = 30, pageId = null, dateRange = {}) => {
   if (IS_PRODUCTION) {
     const data = await loadStaticData();
+    const { startDate, endDate } = dateRange;
+
     // Support per-page daily filtering
     let dailyData;
     if (pageId && data.daily.byPage && data.daily.byPage[pageId]) {
@@ -44,12 +130,14 @@ export const getDailyEngagement = async (days = 30, pageId = null) => {
     } else {
       dailyData = data.daily.all || data.daily;
     }
-    // Filter to show data up to today - 2 days (exclude incomplete recent data)
-    const cutoffDate = new Date();
-    cutoffDate.setDate(cutoffDate.getDate() - 2);
-    const cutoffStr = cutoffDate.toISOString().split('T')[0]; // YYYY-MM-DD
-    const filtered = dailyData.filter(d => d.date <= cutoffStr);
-    return filtered.slice(-days);
+
+    // If date range specified, use it
+    if (startDate || endDate) {
+      return filterByDateRange(dailyData, startDate, endDate);
+    }
+
+    // Return all data (no T+2 filter)
+    return dailyData.slice(-days);
   }
   const params = new URLSearchParams({ days });
   if (pageId) params.append('page', pageId);
@@ -60,10 +148,14 @@ export const getPostTypeStats = async (pageId = null) => {
   if (IS_PRODUCTION) {
     const data = await loadStaticData();
     // Support per-page post type filtering
+    let postTypes;
     if (pageId && data.postTypes.byPage && data.postTypes.byPage[pageId]) {
-      return data.postTypes.byPage[pageId];
+      postTypes = data.postTypes.byPage[pageId];
+    } else {
+      postTypes = data.postTypes.all || data.postTypes;
     }
-    return data.postTypes.all || data.postTypes;
+    // Merge Videos and Reels into single category
+    return mergeVideoReels(postTypes);
   }
   const params = pageId ? `?page=${pageId}` : '';
   return api.get(`/stats/post-types/${params}`).then(res => res.data);
@@ -79,7 +171,8 @@ export const getTopPosts = async (limit = 10, metric = 'engagement', pageId = nu
     } else {
       posts = data.topPosts.all || data.topPosts;
     }
-    return posts.slice(0, limit);
+    // Normalize post_type
+    return posts.slice(0, limit).map(normalizePostType);
   }
   const params = new URLSearchParams({ limit, metric });
   if (pageId) params.append('page', pageId);
@@ -89,19 +182,8 @@ export const getTopPosts = async (limit = 10, metric = 'engagement', pageId = nu
 export const getPosts = async (params = {}) => {
   if (IS_PRODUCTION) {
     const data = await loadStaticData();
-    let posts = data.posts || [];
-
-    // Filter to show posts up to today - 2 days (exclude incomplete recent data)
-    const cutoffDate = new Date();
-    cutoffDate.setDate(cutoffDate.getDate() - 2);
-    posts = posts.filter(p => {
-      if (!p.publish_time) return true;
-      // publish_time format: MM/DD/YYYY HH:MM
-      const parts = p.publish_time.split(' ')[0].split('/');
-      if (parts.length !== 3) return true;
-      const postDate = new Date(parts[2], parts[0] - 1, parts[1]); // year, month (0-based), day
-      return postDate <= cutoffDate;
-    });
+    // Normalize post_type (Videos/Reels -> Videos/Reels)
+    let posts = (data.posts || []).map(normalizePostType);
 
     // Apply filters
     if (params.post_type) {
@@ -162,15 +244,9 @@ export const getDailyByPage = async (days = 60) => {
   const byPage = data.daily.byPage || {};
   const allDaily = data.daily.all || [];
 
-  // Filter to show data up to today - 2 days (exclude incomplete recent data)
-  const cutoffDate = new Date();
-  cutoffDate.setDate(cutoffDate.getDate() - 2);
-  const cutoffStr = cutoffDate.toISOString().split('T')[0]; // YYYY-MM-DD
-  const filtered = allDaily.filter(d => d.date <= cutoffStr);
-
-  // Create a map of all dates from the last N days
+  // Create a map of all dates from the last N days (no T+2 filter)
   const dateMap = {};
-  filtered.slice(-days).forEach(entry => {
+  allDaily.slice(-days).forEach(entry => {
     dateMap[entry.date] = { date: entry.date };
   });
 

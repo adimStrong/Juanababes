@@ -4,6 +4,7 @@ import {
   PieChart, Pie, Cell, BarChart, Bar, Legend
 } from 'recharts';
 import StatCard from '../components/StatCard';
+import DateFilter from '../components/DateFilter';
 import { getStats, getDailyEngagement, getPostTypeStats, getTopPosts, getPages, getTimeSeries, getDailyByPage } from '../services/api';
 
 const COLORS = ['#6366f1', '#22c55e', '#f59e0b', '#ef4444', '#8b5cf6'];
@@ -19,6 +20,7 @@ export default function Dashboard() {
   const [selectedPage, setSelectedPage] = useState(null);
   const [distributionView, setDistributionView] = useState('type'); // 'type' or 'page'
   const [pageMetric, setPageMetric] = useState('posts'); // posts, views, reach, engagement
+  const [dateRange, setDateRange] = useState({ startDate: null, endDate: null });
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -26,8 +28,8 @@ export default function Dashboard() {
     async function fetchData() {
       try {
         const [statsData, dailyData, postTypeData, topPostsData, pageData, timeSeriesData, dailyByPageData] = await Promise.all([
-          getStats(selectedPage),
-          getDailyEngagement(60, selectedPage),
+          getStats(selectedPage, dateRange),
+          getDailyEngagement(60, selectedPage, dateRange),
           getPostTypeStats(selectedPage),
           getTopPosts(5, 'engagement', selectedPage),
           getPages(),
@@ -48,7 +50,7 @@ export default function Dashboard() {
       }
     }
     fetchData();
-  }, [selectedPage]);
+  }, [selectedPage, dateRange]);
 
   if (loading) {
     return (
@@ -89,6 +91,11 @@ export default function Dashboard() {
             ))}
           </select>
         </div>
+      </div>
+
+      {/* Date Filter */}
+      <div className="bg-white rounded-lg shadow p-4">
+        <DateFilter onDateChange={setDateRange} defaultDays={0} />
       </div>
 
       {/* Stats Cards - Row 1 */}
@@ -318,8 +325,11 @@ export default function Dashboard() {
                   nameKey="post_type"
                   cx="50%"
                   cy="50%"
-                  outerRadius={100}
-                  label={({ post_type, count }) => `${post_type}: ${count}`}
+                  innerRadius={40}
+                  outerRadius={80}
+                  paddingAngle={2}
+                  label={({ post_type, percent }) => `${post_type} ${(percent * 100).toFixed(0)}%`}
+                  labelLine={{ stroke: '#666', strokeWidth: 1 }}
                 >
                   {postTypes.map((_, index) => (
                     <Cell key={index} fill={COLORS[index % COLORS.length]} />
@@ -338,8 +348,11 @@ export default function Dashboard() {
                   nameKey="short_name"
                   cx="50%"
                   cy="50%"
-                  outerRadius={100}
-                  label={({ short_name, value }) => `${short_name}: ${value?.toLocaleString()}`}
+                  innerRadius={40}
+                  outerRadius={80}
+                  paddingAngle={2}
+                  label={({ short_name, percent }) => `${short_name} ${(percent * 100).toFixed(0)}%`}
+                  labelLine={{ stroke: '#666', strokeWidth: 1 }}
                 >
                   {pageComparison.map((_, index) => (
                     <Cell key={index} fill={COLORS[index % COLORS.length]} />
@@ -347,6 +360,7 @@ export default function Dashboard() {
                 </Pie>
               )}
               <Tooltip formatter={(value, name) => [value?.toLocaleString(), name]} />
+              <Legend />
             </PieChart>
           </ResponsiveContainer>
         </div>
