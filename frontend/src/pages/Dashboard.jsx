@@ -4,7 +4,7 @@ import {
   PieChart, Pie, Cell, BarChart, Bar, Legend
 } from 'recharts';
 import StatCard from '../components/StatCard';
-import { getStats, getDailyEngagement, getPostTypeStats, getTopPosts, getPageComparison, getTimeSeries } from '../services/api';
+import { getStats, getDailyEngagement, getPostTypeStats, getTopPosts, getPages, getTimeSeries } from '../services/api';
 
 const COLORS = ['#6366f1', '#22c55e', '#f59e0b', '#ef4444', '#8b5cf6'];
 
@@ -29,7 +29,7 @@ export default function Dashboard() {
           getDailyEngagement(60, selectedPage),
           getPostTypeStats(selectedPage),
           getTopPosts(5, 'engagement', selectedPage),
-          getPageComparison(),
+          getPages(),
           getTimeSeries(),
         ]);
         setStats(statsData);
