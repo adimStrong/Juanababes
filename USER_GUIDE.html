@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JuanBabes Analytics - User Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #6366f1;
+            border-bottom: 3px solid #6366f1;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #4f46e5;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e5e7eb;
+        }
+        h3 {
+            color: #6366f1;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 12px;
+        }
+        .highlight-box {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 25px 0;
+        }
+        .highlight-box h3 {
+            color: white;
+            margin-top: 0;
+        }
+        .info-box {
+            background: #f0f9ff;
+            border-left: 4px solid #0ea5e9;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .warning-box {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .success-box {
+            background: #d1fae5;
+            border-left: 4px solid #10b981;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        th {
+            background: #f8fafc;
+            font-weight: 600;
+            color: #4f46e5;
+        }
+        tr:hover {
+            background: #f8fafc;
+        }
+        code {
+            background: #f1f5f9;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-family: 'Consolas', monospace;
+            font-size: 0.9em;
+        }
+        pre {
+            background: #1e293b;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+        pre code {
+            background: none;
+            padding: 0;
+            color: inherit;
+        }
+        .step {
+            display: flex;
+            align-items: flex-start;
+            margin: 15px 0;
+            padding: 15px;
+            background: #f8fafc;
+            border-radius: 8px;
+        }
+        .step-number {
+            background: #6366f1;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        .metric-card {
+            display: inline-block;
+            background: #f8fafc;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 15px 20px;
+            margin: 5px;
+            min-width: 150px;
+        }
+        .metric-card .value {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #6366f1;
+        }
+        .metric-card .label {
+            font-size: 0.85em;
+            color: #6b7280;
+        }
+        .toc {
+            background: #f8fafc;
+            padding: 20px 30px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .toc h3 {
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        .toc ol {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .toc li {
+            margin: 8px 0;
+        }
+        .toc a {
+            color: #6366f1;
+            text-decoration: none;
+        }
+        .toc a:hover {
+            text-decoration: underline;
+        }
+        .page-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .page-card {
+            background: white;
+            border: 2px solid #e5e7eb;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .page-card.top {
+            border-color: #6366f1;
+            background: linear-gradient(135deg, #eef2ff 0%, #faf5ff 100%);
+        }
+        .page-card h4 {
+            color: #4f46e5;
+            margin-bottom: 10px;
+        }
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 20px;
+            }
+            pre {
+                background: #f1f5f9;
+                color: #333;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>JuanBabes Analytics Dashboard - User Guide</h1>
+
+        <div class="highlight-box">
+            <h3>What is JuanBabes Analytics?</h3>
+            <p>A comprehensive dashboard for tracking Facebook page performance across 5 Juana Babe pages. Import data from Meta Business Suite, view engagement metrics, and analyze content performance.</p>
+            <p><strong>Dashboard URL:</strong> <a href="https://juanababes-production.up.railway.app/" style="color: #fef3c7;">https://juanababes-production.up.railway.app/</a></p>
+        </div>
+
+        <div class="toc">
+            <h3>Table of Contents</h3>
+            <ol>
+                <li><a href="#getting-started">Getting Started</a></li>
+                <li><a href="#dashboard">Dashboard Overview</a></li>
+                <li><a href="#pages">Pages Being Tracked</a></li>
+                <li><a href="#metrics">Understanding Metrics</a></li>
+                <li><a href="#importing">Importing New Data</a></li>
+                <li><a href="#updating">Updating the Report</a></li>
+                <li><a href="#charts">Chart Guide</a></li>
+                <li><a href="#troubleshooting">Troubleshooting</a></li>
+            </ol>
+        </div>
+
+        <h2 id="getting-started">1. Getting Started</h2>
+
+        <p>The JuanBabes Analytics Dashboard automatically tracks performance data from 5 Facebook pages. Data is imported from Meta Business Suite CSV exports and displayed in an interactive dashboard.</p>
+
+        <div class="info-box">
+            <strong>Access the Dashboard:</strong><br>
+            Open your browser and go to: <code>https://juanababes-production.up.railway.app/</code>
+        </div>
+
+        <h2 id="dashboard">2. Dashboard Overview</h2>
+
+        <p>The dashboard displays several key sections:</p>
+
+        <h3>Top Statistics Cards</h3>
+        <p>At the top of the dashboard, you'll see summary cards showing:</p>
+        <ul>
+            <li><strong>Total Posts</strong> - Number of posts across all pages</li>
+            <li><strong>Total Views</strong> - Combined video/post views</li>
+            <li><strong>Total Reach</strong> - Unique users who saw content</li>
+            <li><strong>Total Engagement</strong> - Reactions + Comments + Shares</li>
+            <li><strong>Total PES</strong> - Post Engagement Score (same as engagement)</li>
+        </ul>
+
+        <h3>Page Selector</h3>
+        <p>Use the dropdown in the top-right corner to filter data by a specific page, or select "All Pages" to see combined data.</p>
+
+        <h2 id="pages">3. Pages Being Tracked</h2>
+
+        <div class="page-list">
+            <div class="page-card top">
+                <h4>Ashley</h4>
+                <div style="font-size: 1.3em; color: #6366f1; font-weight: bold;">81,191</div>
+                <div style="font-size: 0.85em; color: #6b7280;">Total Engagement</div>
+                <div style="margin-top: 5px; font-size: 0.85em;">116 posts</div>
+            </div>
+            <div class="page-card">
+                <h4>Sena</h4>
+                <div style="font-size: 1.3em; color: #6366f1; font-weight: bold;">41,161</div>
+                <div style="font-size: 0.85em; color: #6b7280;">Total Engagement</div>
+                <div style="margin-top: 5px; font-size: 0.85em;">244 posts</div>
+            </div>
+            <div class="page-card">
+                <h4>Abi</h4>
+                <div style="font-size: 1.3em; color: #6366f1; font-weight: bold;">11,402</div>
+                <div style="font-size: 0.85em; color: #6b7280;">Total Engagement</div>
+                <div style="margin-top: 5px; font-size: 0.85em;">108 posts</div>
+            </div>
+            <div class="page-card">
+                <h4>Zell</h4>
+                <div style="font-size: 1.3em; color: #6366f1; font-weight: bold;">9,162</div>
+                <div style="font-size: 0.85em; color: #6b7280;">Total Engagement</div>
+                <div style="margin-top: 5px; font-size: 0.85em;">72 posts</div>
+            </div>
+            <div class="page-card">
+                <h4>Jam</h4>
+                <div style="font-size: 1.3em; color: #6366f1; font-weight: bold;">7,231</div>
+                <div style="font-size: 0.85em; color: #6b7280;">Total Engagement</div>
+                <div style="margin-top: 5px; font-size: 0.85em;">64 posts</div>
+            </div>
+        </div>
+
+        <h2 id="metrics">4. Understanding Metrics</h2>
+
+        <table>
+            <tr>
+                <th>Metric</th>
+                <th>Description</th>
+                <th>Why It Matters</th>
+            </tr>
+            <tr>
+                <td><strong>Reactions</strong></td>
+                <td>Likes, loves, hahas, wows, sads, angrys</td>
+                <td>Shows emotional response to content</td>
+            </tr>
+            <tr>
+                <td><strong>Comments</strong></td>
+                <td>User replies on posts</td>
+                <td>Indicates conversation and interest</td>
+            </tr>
+            <tr>
+                <td><strong>Shares</strong></td>
+                <td>Users sharing content to their feed</td>
+                <td>Best indicator of viral potential</td>
+            </tr>
+            <tr>
+                <td><strong>Views</strong></td>
+                <td>Video/post view count</td>
+                <td>Shows content visibility</td>
+            </tr>
+            <tr>
+                <td><strong>Reach</strong></td>
+                <td>Unique users who saw the content</td>
+                <td>True audience size</td>
+            </tr>
+            <tr>
+                <td><strong>Engagement</strong></td>
+                <td>Reactions + Comments + Shares</td>
+                <td>Overall interaction level</td>
+            </tr>
+            <tr>
+                <td><strong>PES</strong></td>
+                <td>Post Engagement Score (= Engagement)</td>
+                <td>Performance benchmark</td>
+            </tr>
+        </table>
+
+        <h2 id="importing">5. Importing New Data</h2>
+
+        <h3>Step 1: Export from Meta Business Suite</h3>
+        <div class="step">
+            <div class="step-number">1</div>
+            <div>
+                <p>Go to <a href="https://business.facebook.com">Meta Business Suite</a></p>
+                <p>Navigate to <strong>Insights > Content</strong></p>
+            </div>
+        </div>
+        <div class="step">
+            <div class="step-number">2</div>
+            <div>
+                <p>Select date range (e.g., Dec 1-25, 2025)</p>
+                <p>Click <strong>Export</strong> and choose CSV format</p>
+            </div>
+        </div>
+        <div class="step">
+            <div class="step-number">3</div>
+            <div>
+                <p>Save the CSV file to:</p>
+                <code>C:\Users\us\Desktop\juanbabes_project\exports\from content manual Export\</code>
+            </div>
+        </div>
+
+        <div class="warning-box">
+            <strong>Important:</strong> Meta exports timestamps in UTC. The system automatically converts to Philippine Time (PHT = UTC+8) during import.
+        </div>
+
+        <h2 id="updating">6. Updating the Report</h2>
+
+        <h3>One-Click Update</h3>
+        <p>The easiest way to update the report is to run the batch file:</p>
+
+        <div class="step">
+            <div class="step-number">1</div>
+            <div>
+                <p>Double-click <code>update_report.bat</code> in the project folder</p>
+            </div>
+        </div>
+        <div class="step">
+            <div class="step-number">2</div>
+            <div>
+                <p>Wait for the script to complete (about 30 seconds)</p>
+                <p>It will: Import CSVs → Export analytics → Push to Railway</p>
+            </div>
+        </div>
+        <div class="step">
+            <div class="step-number">3</div>
+            <div>
+                <p>Railway auto-deploys in 1-2 minutes</p>
+                <p>Refresh the dashboard to see updated data</p>
+            </div>
+        </div>
+
+        <div class="success-box">
+            <strong>Pro Tip:</strong> The dashboard shows data up to "today - 2 days" to ensure metrics are complete. Today and yesterday's data are excluded as they may be incomplete.
+        </div>
+
+        <h3>Manual Commands (Advanced)</h3>
+        <pre><code># Import all CSVs
+python csv_importer.py import-all "exports/from content manual Export" --mode merge
+
+# Export analytics data
+python export_static_data.py
+
+# Push to Railway
+git add -A
+git commit -m "Update report"
+git push origin main</code></pre>
+
+        <h2 id="charts">7. Chart Guide</h2>
+
+        <table>
+            <tr>
+                <th>Chart</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><strong>Page Comparison</strong></td>
+                <td>Horizontal bar chart comparing total engagement across pages</td>
+            </tr>
+            <tr>
+                <td><strong>Daily Engagement</strong></td>
+                <td>Line chart showing engagement and PES over 60 days</td>
+            </tr>
+            <tr>
+                <td><strong>Post Type Distribution</strong></td>
+                <td>Pie chart showing breakdown by Photo, Video, Reel, etc.</td>
+            </tr>
+            <tr>
+                <td><strong>Daily Reach</strong></td>
+                <td>Line chart showing daily reach over 60 days</td>
+            </tr>
+            <tr>
+                <td><strong>Daily Views</strong></td>
+                <td>Line chart showing daily views over 60 days</td>
+            </tr>
+            <tr>
+                <td><strong>Daily Content by Page</strong></td>
+                <td>Stacked bar chart showing posts per page per day</td>
+            </tr>
+            <tr>
+                <td><strong>Monthly Performance</strong></td>
+                <td>Cards showing month-over-month comparison</td>
+            </tr>
+            <tr>
+                <td><strong>Weekly Performance</strong></td>
+                <td>Table with week-over-week changes</td>
+            </tr>
+            <tr>
+                <td><strong>Best Days to Post</strong></td>
+                <td>Day-of-week analysis with star on best day</td>
+            </tr>
+        </table>
+
+        <h2 id="troubleshooting">8. Troubleshooting</h2>
+
+        <h3>Data not showing on dashboard?</h3>
+        <div class="info-box">
+            <ol>
+                <li>Check that CSV files exist in <code>exports/from content manual Export/</code></li>
+                <li>Run <code>python csv_importer.py stats</code> to verify database has data</li>
+                <li>Run <code>python export_static_data.py</code> to regenerate analytics.json</li>
+                <li>Push changes to GitHub and wait for Railway deploy</li>
+            </ol>
+        </div>
+
+        <h3>Dates look wrong?</h3>
+        <div class="info-box">
+            <p>Meta exports in UTC. The system should convert to PHT (+8 hours).</p>
+            <p>If dates are still wrong, re-import all CSVs:</p>
+            <pre><code>python csv_importer.py import-all "exports/from content manual Export" --mode merge</code></pre>
+        </div>
+
+        <h3>Charts are empty?</h3>
+        <div class="info-box">
+            <p>Check the analytics.json file has data:</p>
+            <pre><code>python -c "import json; d=json.load(open('frontend/public/data/analytics.json')); print('Posts:', len(d.get('posts',[]))); print('Daily:', len(d.get('daily',{}).get('all',[])))"</code></pre>
+        </div>
+
+        <h3>Git push failed?</h3>
+        <div class="info-box">
+            <ol>
+                <li>Check internet connection</li>
+                <li>Verify GitHub credentials: <code>git config --global user.name</code></li>
+                <li>Try again: <code>git push origin main</code></li>
+            </ol>
+        </div>
+
+        <hr style="margin: 40px 0; border: none; border-top: 2px solid #e5e7eb;">
+
+        <div style="text-align: center; color: #6b7280; font-size: 0.9em;">
+            <p><strong>JuanBabes Analytics Dashboard</strong></p>
+            <p>Last Updated: December 27, 2025</p>
+            <p>Project Location: <code>C:\Users\us\Desktop\juanbabes_project</code></p>
+        </div>
+    </div>
+</body>
+</html>
