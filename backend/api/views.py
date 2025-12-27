@@ -86,7 +86,9 @@ class DashboardStatsView(APIView):
                     COALESCE(SUM(comments_count), 0) as total_comments,
                     COALESCE(SUM(shares_count), 0) as total_shares,
                     COALESCE(SUM(total_engagement), 0) as total_engagement,
-                    COALESCE(SUM(pes), 0) as total_pes
+                    COALESCE(SUM(pes), 0) as total_pes,
+                    COALESCE(SUM(views_count), 0) as total_views,
+                    COALESCE(SUM(reach_count), 0) as total_reach
                 FROM posts
                 WHERE reactions_total > 0 OR comments_count > 0 OR shares_count > 0
             """)
@@ -96,6 +98,8 @@ class DashboardStatsView(APIView):
             total_shares = row[2] or 0
             total_engagement = row[3] or 0
             total_pes = row[4] or 0
+            total_views = row[5] or 0
+            total_reach = row[6] or 0
 
             # Get date range
             cursor.execute("""
@@ -123,6 +127,8 @@ class DashboardStatsView(APIView):
 
         avg_engagement = total_engagement / post_count if post_count > 0 else 0
         avg_pes = total_pes / post_count if post_count > 0 else 0
+        avg_views = total_views / post_count if post_count > 0 else 0
+        avg_reach = total_reach / post_count if post_count > 0 else 0
 
         stats = {
             'total_posts': post_count,
@@ -133,8 +139,12 @@ class DashboardStatsView(APIView):
             'total_shares': total_shares,
             'total_engagement': total_engagement,
             'total_pes': round(total_pes, 1),
+            'total_views': total_views,
+            'total_reach': total_reach,
             'avg_engagement': round(avg_engagement, 1),
             'avg_pes': round(avg_pes, 1),
+            'avg_views': round(avg_views, 1),
+            'avg_reach': round(avg_reach, 1),
             'date_range_start': start_date,
             'date_range_end': end_date,
         }
@@ -162,7 +172,9 @@ class DailyEngagementView(APIView):
                     COALESCE(SUM(comments_count), 0) as comments,
                     COALESCE(SUM(shares_count), 0) as shares,
                     COALESCE(SUM(total_engagement), 0) as engagement,
-                    COALESCE(SUM(pes), 0) as pes
+                    COALESCE(SUM(pes), 0) as pes,
+                    COALESCE(SUM(views_count), 0) as views,
+                    COALESCE(SUM(reach_count), 0) as reach
                 FROM posts
                 WHERE publish_time IS NOT NULL
                     AND DATE(publish_time) >= DATE('now', '-{days} days')
@@ -181,7 +193,9 @@ class DailyEngagementView(APIView):
                     'comments': row[3],
                     'shares': row[4],
                     'engagement': row[5],
-                    'pes': round(row[6], 1)
+                    'pes': round(row[6], 1),
+                    'views': row[7],
+                    'reach': row[8]
                 })
 
         return Response(result)

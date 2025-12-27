@@ -86,9 +86,9 @@ def import_csv(filepath):
             cursor.execute("""
                 INSERT OR REPLACE INTO posts
                 (post_id, page_id, title, permalink, post_type, publish_time,
-                 reactions_total, comments_count, shares_count,
+                 reactions_total, comments_count, shares_count, views_count, reach_count,
                  pes, total_engagement, fetched_at)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             """, (
                 post_id,
                 page_id,
@@ -99,6 +99,8 @@ def import_csv(filepath):
                 reactions,
                 comments,
                 shares,
+                views,
+                reach,
                 pes,
                 total_engagement,
                 datetime.now().isoformat()
@@ -148,7 +150,9 @@ def main():
         SELECT p.page_name, COUNT(po.post_id) as post_count,
                SUM(po.reactions_total) as total_reactions,
                SUM(po.comments_count) as total_comments,
-               SUM(po.shares_count) as total_shares
+               SUM(po.shares_count) as total_shares,
+               SUM(po.views_count) as total_views,
+               SUM(po.reach_count) as total_reach
         FROM pages p
         LEFT JOIN posts po ON p.page_id = po.page_id
         GROUP BY p.page_id
@@ -157,8 +161,8 @@ def main():
 
     print("\nPage breakdown:")
     for row in cursor.fetchall():
-        name, posts, reactions, comments, shares = row
-        print(f"  {name}: {posts} posts, {reactions or 0} reactions, {comments or 0} comments, {shares or 0} shares")
+        name, posts, reactions, comments, shares, views, reach = row
+        print(f"  {name}: {posts} posts, {reactions or 0} reactions, {views or 0} views, {reach or 0} reach")
 
     conn.close()
 

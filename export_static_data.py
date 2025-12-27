@@ -38,7 +38,9 @@ def export_stats():
             COALESCE(SUM(shares_count), 0) as total_shares,
             COALESCE(SUM(total_engagement), 0) as total_engagement,
             COALESCE(SUM(pes), 0) as total_pes,
-            COUNT(*) as total_posts
+            COUNT(*) as total_posts,
+            COALESCE(SUM(views_count), 0) as total_views,
+            COALESCE(SUM(reach_count), 0) as total_reach
         FROM posts
         WHERE reactions_total > 0 OR comments_count > 0 OR shares_count > 0
     """)
@@ -59,6 +61,8 @@ def export_stats():
     post_count = row[5]
     total_engagement = row[3]
     total_pes = row[4]
+    total_views = row[6]
+    total_reach = row[7]
 
     all_stats = {
         "total_posts": post_count,
@@ -69,8 +73,12 @@ def export_stats():
         "total_shares": row[2],
         "total_engagement": total_engagement,
         "total_pes": round(total_pes, 1),
+        "total_views": total_views,
+        "total_reach": total_reach,
         "avg_engagement": round(total_engagement / post_count, 1) if post_count > 0 else 0,
         "avg_pes": round(total_pes / post_count, 1) if post_count > 0 else 0,
+        "avg_views": round(total_views / post_count, 1) if post_count > 0 else 0,
+        "avg_reach": round(total_reach / post_count, 1) if post_count > 0 else 0,
         "date_range_start": str(dates[0])[:10] if dates[0] else None,
         "date_range_end": str(dates[1])[:10] if dates[1] else None,
     }
@@ -85,7 +93,9 @@ def export_stats():
                 COALESCE(SUM(shares_count), 0) as total_shares,
                 COALESCE(SUM(total_engagement), 0) as total_engagement,
                 COALESCE(SUM(pes), 0) as total_pes,
-                COUNT(*) as total_posts
+                COUNT(*) as total_posts,
+                COALESCE(SUM(views_count), 0) as total_views,
+                COALESCE(SUM(reach_count), 0) as total_reach
             FROM posts
             WHERE page_id = ? AND (reactions_total > 0 OR comments_count > 0 OR shares_count > 0)
         """, (page_id,))
@@ -100,6 +110,8 @@ def export_stats():
         ppost_count = prow[5]
         ptotal_engagement = prow[3]
         ptotal_pes = prow[4]
+        ptotal_views = prow[6]
+        ptotal_reach = prow[7]
 
         by_page[page_id] = {
             "total_posts": ppost_count,
@@ -110,8 +122,12 @@ def export_stats():
             "total_shares": prow[2],
             "total_engagement": ptotal_engagement,
             "total_pes": round(ptotal_pes, 1),
+            "total_views": ptotal_views,
+            "total_reach": ptotal_reach,
             "avg_engagement": round(ptotal_engagement / ppost_count, 1) if ppost_count > 0 else 0,
             "avg_pes": round(ptotal_pes / ppost_count, 1) if ppost_count > 0 else 0,
+            "avg_views": round(ptotal_views / ppost_count, 1) if ppost_count > 0 else 0,
+            "avg_reach": round(ptotal_reach / ppost_count, 1) if ppost_count > 0 else 0,
             "date_range_start": str(pdates[0])[:10] if pdates[0] else None,
             "date_range_end": str(pdates[1])[:10] if pdates[1] else None,
         }
@@ -263,7 +279,9 @@ def export_daily():
             COALESCE(SUM(comments_count), 0) as comments,
             COALESCE(SUM(shares_count), 0) as shares,
             COALESCE(SUM(total_engagement), 0) as engagement,
-            COALESCE(SUM(pes), 0) as pes
+            COALESCE(SUM(pes), 0) as pes,
+            COALESCE(SUM(views_count), 0) as views,
+            COALESCE(SUM(reach_count), 0) as reach
         FROM posts
         WHERE publish_time IS NOT NULL
             AND (reactions_total > 0 OR comments_count > 0 OR shares_count > 0)
@@ -280,7 +298,9 @@ def export_daily():
             "comments": row[3],
             "shares": row[4],
             "engagement": row[5],
-            "pes": round(row[6], 1)
+            "pes": round(row[6], 1),
+            "views": row[7],
+            "reach": row[8]
         })
 
     # Per-page daily data
@@ -294,7 +314,9 @@ def export_daily():
                 COALESCE(SUM(comments_count), 0) as comments,
                 COALESCE(SUM(shares_count), 0) as shares,
                 COALESCE(SUM(total_engagement), 0) as engagement,
-                COALESCE(SUM(pes), 0) as pes
+                COALESCE(SUM(pes), 0) as pes,
+                COALESCE(SUM(views_count), 0) as views,
+                COALESCE(SUM(reach_count), 0) as reach
             FROM posts
             WHERE page_id = ? AND publish_time IS NOT NULL
                 AND (reactions_total > 0 OR comments_count > 0 OR shares_count > 0)
@@ -311,7 +333,9 @@ def export_daily():
                 "comments": row[3],
                 "shares": row[4],
                 "engagement": row[5],
-                "pes": round(row[6], 1)
+                "pes": round(row[6], 1),
+                "views": row[7],
+                "reach": row[8]
             })
         by_page[page_id] = page_daily
 

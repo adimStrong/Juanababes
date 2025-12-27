@@ -83,7 +83,7 @@ export default function Dashboard() {
         </div>
       </div>
 
-      {/* Stats Cards */}
+      {/* Stats Cards - Row 1 */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
         <StatCard
           title="Total Posts"
@@ -92,22 +92,18 @@ export default function Dashboard() {
           color="indigo"
         />
         <StatCard
-          title="Total Reactions"
-          value={stats?.total_reactions}
+          title="Total Views"
+          value={stats?.total_views?.toLocaleString()}
+          subtitle={`Avg: ${stats?.avg_views?.toLocaleString() || 0}/post`}
           icon=""
-          color="pink"
+          color="purple"
         />
         <StatCard
-          title="Total Comments"
-          value={stats?.total_comments}
+          title="Total Reach"
+          value={stats?.total_reach?.toLocaleString()}
+          subtitle={`Avg: ${stats?.avg_reach?.toLocaleString() || 0}/post`}
           icon=""
-          color="blue"
-        />
-        <StatCard
-          title="Total Shares"
-          value={stats?.total_shares}
-          icon=""
-          color="orange"
+          color="cyan"
         />
         <StatCard
           title="Total Engagement"
@@ -116,30 +112,41 @@ export default function Dashboard() {
           icon=""
           color="green"
         />
+        <StatCard
+          title="Total PES"
+          value={stats?.total_pes?.toLocaleString()}
+          subtitle={`Avg: ${stats?.avg_pes?.toLocaleString()}`}
+          icon=""
+          color="orange"
+        />
       </div>
 
-      {/* PES Stats */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      {/* Stats Cards - Row 2 */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         <StatCard
-          title="Total PES Score"
-          value={stats?.total_pes?.toLocaleString()}
-          subtitle="Primary Engagement Score"
+          title="Total Reactions"
+          value={stats?.total_reactions?.toLocaleString()}
           icon=""
-          color="purple"
+          color="pink"
         />
         <StatCard
-          title="Avg PES/Post"
-          value={stats?.avg_pes?.toLocaleString()}
-          subtitle="(Reactions x1) + (Comments x2) + (Shares x3)"
+          title="Total Comments"
+          value={stats?.total_comments?.toLocaleString()}
           icon=""
-          color="indigo"
+          color="blue"
+        />
+        <StatCard
+          title="Total Shares"
+          value={stats?.total_shares?.toLocaleString()}
+          icon=""
+          color="amber"
         />
         <StatCard
           title="Active Pages"
           value={`${stats?.total_pages || 0} / ${stats?.all_pages || stats?.total_pages || 0}`}
           subtitle="Pages with engagement data"
           icon=""
-          color="green"
+          color="teal"
         />
       </div>
 
@@ -271,6 +278,80 @@ export default function Dashboard() {
             </PieChart>
           </ResponsiveContainer>
         </div>
+      </div>
+
+      {/* Reach & Views Section */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        {/* Daily Reach Chart */}
+        <div className="bg-white rounded-lg shadow p-6">
+          <h2 className="text-lg font-semibold mb-4">Daily Reach (60 days)</h2>
+          <ResponsiveContainer width="100%" height={300}>
+            <LineChart data={dailyData}>
+              <CartesianGrid strokeDasharray="3 3" />
+              <XAxis
+                dataKey="date"
+                tickFormatter={(val) => val?.slice(5) || ''}
+                fontSize={12}
+              />
+              <YAxis fontSize={12} tickFormatter={(val) => val >= 1000 ? `${(val/1000).toFixed(0)}k` : val} />
+              <Tooltip formatter={(value) => value?.toLocaleString()} />
+              <Legend />
+              <Line
+                type="monotone"
+                dataKey="reach"
+                name="Reach"
+                stroke="#06b6d4"
+                strokeWidth={2}
+                dot={false}
+              />
+            </LineChart>
+          </ResponsiveContainer>
+        </div>
+
+        {/* Daily Views Chart */}
+        <div className="bg-white rounded-lg shadow p-6">
+          <h2 className="text-lg font-semibold mb-4">Daily Views (60 days)</h2>
+          <ResponsiveContainer width="100%" height={300}>
+            <LineChart data={dailyData}>
+              <CartesianGrid strokeDasharray="3 3" />
+              <XAxis
+                dataKey="date"
+                tickFormatter={(val) => val?.slice(5) || ''}
+                fontSize={12}
+              />
+              <YAxis fontSize={12} tickFormatter={(val) => val >= 1000 ? `${(val/1000).toFixed(0)}k` : val} />
+              <Tooltip formatter={(value) => value?.toLocaleString()} />
+              <Legend />
+              <Line
+                type="monotone"
+                dataKey="views"
+                name="Views"
+                stroke="#8b5cf6"
+                strokeWidth={2}
+                dot={false}
+              />
+            </LineChart>
+          </ResponsiveContainer>
+        </div>
+      </div>
+
+      {/* Daily Content Count */}
+      <div className="bg-white rounded-lg shadow p-6">
+        <h2 className="text-lg font-semibold mb-4">Daily Content Published (60 days)</h2>
+        <ResponsiveContainer width="100%" height={250}>
+          <BarChart data={dailyData}>
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis
+              dataKey="date"
+              tickFormatter={(val) => val?.slice(5) || ''}
+              fontSize={12}
+            />
+            <YAxis fontSize={12} allowDecimals={false} />
+            <Tooltip />
+            <Legend />
+            <Bar dataKey="posts" name="Posts Published" fill="#6366f1" />
+          </BarChart>
+        </ResponsiveContainer>
       </div>
 
       {/* Top Posts */}

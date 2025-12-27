@@ -9,8 +9,12 @@
       "total_shares": 7445,
       "total_engagement": 146859,
       "total_pes": 175059.0,
+      "total_views": 1663637,
+      "total_reach": 1161251,
       "avg_engagement": 247.2,
       "avg_pes": 294.7,
+      "avg_views": 2800.7,
+      "avg_reach": 1955.0,
       "date_range_start": "2025-10-01",
       "date_range_end": "2025-12-24"
     },
@@ -24,8 +28,12 @@
         "total_shares": 1176,
         "total_engagement": 78396,
         "total_pes": 82745.0,
+        "total_views": 1109843,
+        "total_reach": 800249,
         "avg_engagement": 681.7,
         "avg_pes": 719.5,
+        "avg_views": 9650.8,
+        "avg_reach": 6958.7,
         "date_range_start": "2025-10-09",
         "date_range_end": "2025-12-24"
       },
@@ -38,8 +46,12 @@
         "total_shares": 2025,
         "total_engagement": 40890,
         "total_pes": 48786.0,
+        "total_views": 396694,
+        "total_reach": 279559,
         "avg_engagement": 170.4,
         "avg_pes": 203.3,
+        "avg_views": 1652.9,
+        "avg_reach": 1164.8,
         "date_range_start": "2025-10-01",
         "date_range_end": "2025-12-24"
       },
@@ -52,8 +64,12 @@
         "total_shares": 979,
         "total_engagement": 7199,
         "total_pes": 11084.0,
+        "total_views": 39398,
+        "total_reach": 22448,
         "avg_engagement": 114.3,
         "avg_pes": 175.9,
+        "avg_views": 625.4,
+        "avg_reach": 356.3,
         "date_range_start": "2025-10-02",
         "date_range_end": "2025-12-24"
       },
@@ -66,8 +82,12 @@
         "total_shares": 1642,
         "total_engagement": 9117,
         "total_pes": 14748.0,
+        "total_views": 45888,
+        "total_reach": 22989,
         "avg_engagement": 128.4,
         "avg_pes": 207.7,
+        "avg_views": 646.3,
+        "avg_reach": 323.8,
         "date_range_start": "2025-10-02",
         "date_range_end": "2025-12-24"
       },
@@ -80,8 +100,12 @@
         "total_shares": 1623,
         "total_engagement": 11257,
         "total_pes": 17696.0,
+        "total_views": 71814,
+        "total_reach": 36006,
         "avg_engagement": 107.2,
         "avg_pes": 168.5,
+        "avg_views": 683.9,
+        "avg_reach": 342.9,
         "date_range_start": "2025-10-01",
         "date_range_end": "2025-12-24"
       }
@@ -449,7 +473,9 @@
         "comments": 64,
         "shares": 57,
         "engagement": 308,
-        "pes": 486.0
+        "pes": 486.0,
+        "views": 1313,
+        "reach": 924
       },
       {
         "date": "2025-10-02",
@@ -458,7 +484,9 @@
         "comments": 252,
         "shares": 212,
         "engagement": 877,
-        "pes": 1553.0
+        "pes": 1553.0,
+        "views": 3618,
+        "reach": 1669
       },
       {
         "date": "2025-10-03",
@@ -467,7 +495,9 @@
         "comments": 72,
         "shares": 52,
         "engagement": 360,
-        "pes": 536.0
+        "pes": 536.0,
+        "views": 2484,
+        "reach": 1302
       },
       {
         "date": "2025-10-04",
@@ -476,7 +506,9 @@
         "comments": 114,
         "shares": 48,
         "engagement": 418,
-        "pes": 628.0
+        "pes": 628.0,
+        "views": 2620,
+        "reach": 1281
       },
       {
         "date": "2025-10-05",
@@ -485,7 +517,9 @@
         "comments": 147,
         "shares": 112,
         "engagement": 568,
-        "pes": 939.0
+        "pes": 939.0,
+        "views": 2374,
+        "reach": 1803
       },
       {
         "date": "2025-10-06",
@@ -494,7 +528,9 @@
         "comments": 85,
         "shares": 66,
         "engagement": 390,
-        "pes": 607.0
+        "pes": 607.0,
+        "views": 2332,
+        "reach": 1391
       },
       {
         "date": "2025-10-07",
@@ -503,7 +539,9 @@
         "comments": 105,
         "shares": 41,
         "engagement": 359,
-        "pes": 546.0
+        "pes": 546.0,
+        "views": 1651,
+        "reach": 1108
       },
       {
         "date": "2025-10-08",
@@ -512,7 +550,9 @@
         "comments": 131,
         "shares": 105,
         "engagement": 535,
-        "pes": 876.0
+        "pes": 876.0,
+        "views": 3301,
+        "reach": 1490
       },
       {
         "date": "2025-10-09",
@@ -521,7 +561,9 @@
         "comments": 105,
         "shares": 83,
         "engagement": 468,
-        "pes": 739.0
+        "pes": 739.0,
+        "views": 3987,
+        "reach": 2168
       },
       {
         "date": "2025-10-10",
@@ -530,7 +572,9 @@
         "comments": 80,
         "shares": 44,
         "engagement": 314,
-        "pes": 482.0
+        "pes": 482.0,
+        "views": 1836,
+        "reach": 940
       },
       {
         "date": "2025-10-11",
@@ -539,7 +583,9 @@
         "comments": 235,
         "shares": 104,
         "engagement": 928,
-        "pes": 1371.0
+        "pes": 1371.0,
+        "views": 4482,
+        "reach": 2403
       },
       {
         "date": "2025-10-12",
@@ -548,7 +594,9 @@
         "comments": 135,
         "shares": 81,
         "engagement": 1065,
-        "pes": 1362.0
+        "pes": 1362.0,
+        "views": 8829,
+        "reach": 5383
       },
       {
         "date": "2025-10-13",
@@ -557,7 +605,9 @@
         "comments": 246,
         "shares": 137,
         "engagement": 1723,
-        "pes": 2243.0
+        "pes": 2243.0,
+        "views": 13862,
+        "reach": 8290
       },
       {
         "date": "2025-10-14",
@@ -566,7 +616,9 @@
         "comments": 253,
         "shares": 164,
         "engagement": 1134,
-        "pes": 1715.0
+        "pes": 1715.0,
+        "views": 5715,
+        "reach": 3216
       },
       {
         "date": "2025-10-15",
@@ -575,7 +627,9 @@
         "comments": 248,
         "shares": 134,
         "engagement": 966,
-        "pes": 1482.0
+        "pes": 1482.0,
+        "views": 5670,
+        "reach": 2646
       },
       {
         "date": "2025-10-16",
@@ -584,7 +638,9 @@
         "comments": 193,
         "shares": 119,
         "engagement": 976,
-        "pes": 1407.0
+        "pes": 1407.0,
+        "views": 7907,
+        "reach": 4117
       },
       {
         "date": "2025-10-17",
@@ -593,7 +649,9 @@
         "comments": 137,
         "shares": 38,
         "engagement": 565,
-        "pes": 778.0
+        "pes": 778.0,
+        "views": 1982,
+        "reach": 1931
       },
       {
         "date": "2025-10-18",
@@ -602,7 +660,9 @@
         "comments": 57,
         "shares": 35,
         "engagement": 293,
-        "pes": 420.0
+        "pes": 420.0,
+        "views": 2020,
+        "reach": 1204
       },
       {
         "date": "2025-10-19",
@@ -611,7 +671,9 @@
         "comments": 142,
         "shares": 95,
         "engagement": 613,
-        "pes": 945.0
+        "pes": 945.0,
+        "views": 2755,
+        "reach": 1639
       },
       {
         "date": "2025-10-20",
@@ -620,7 +682,9 @@
         "comments": 307,
         "shares": 188,
         "engagement": 1110,
-        "pes": 1793.0
+        "pes": 1793.0,
+        "views": 5866,
+        "reach": 2757
       },
       {
         "date": "2025-10-21",
@@ -629,7 +693,9 @@
         "comments": 273,
         "shares": 238,
         "engagement": 5798,
-        "pes": 6547.0
+        "pes": 6547.0,
+        "views": 125092,
+        "reach": 74335
       },
       {
         "date": "2025-10-22",
@@ -638,7 +704,9 @@
         "comments": 164,
         "shares": 98,
         "engagement": 604,
-        "pes": 964.0
+        "pes": 964.0,
+        "views": 2820,
+        "reach": 1445
       },
       {
         "date": "2025-10-23",
@@ -647,7 +715,9 @@
         "comments": 351,
         "shares": 264,
         "engagement": 1298,
-        "pes": 2177.0
+        "pes": 2177.0,
+        "views": 6665,
+        "reach": 2936
       },
       {
         "date": "2025-10-24",
@@ -656,7 +726,9 @@
         "comments": 151,
         "shares": 74,
         "engagement": 587,
-        "pes": 886.0
+        "pes": 886.0,
+        "views": 3459,
+        "reach": 1897
       },
       {
         "date": "2025-10-25",
@@ -665,7 +737,9 @@
         "comments": 67,
         "shares": 52,
         "engagement": 404,
-        "pes": 575.0
+        "pes": 575.0,
+        "views": 4081,
+        "reach": 2588
       },
       {
         "date": "2025-10-26",
@@ -674,7 +748,9 @@
         "comments": 51,
         "shares": 26,
         "engagement": 236,
-        "pes": 339.0
+        "pes": 339.0,
+        "views": 2364,
+        "reach": 1252
       },
       {
         "date": "2025-10-27",
@@ -683,7 +759,9 @@
         "comments": 44,
         "shares": 35,
         "engagement": 174,
-        "pes": 288.0
+        "pes": 288.0,
+        "views": 1147,
+        "reach": 603
       },
       {
         "date": "2025-10-28",
@@ -692,7 +770,9 @@
         "comments": 190,
         "shares": 110,
         "engagement": 639,
-        "pes": 1049.0
+        "pes": 1049.0,
+        "views": 3540,
+        "reach": 1561
       },
       {
         "date": "2025-10-29",
@@ -701,7 +781,9 @@
         "comments": 80,
         "shares": 34,
         "engagement": 342,
-        "pes": 490.0
+        "pes": 490.0,
+        "views": 3224,
+        "reach": 1463
       },
       {
         "date": "2025-10-30",
@@ -710,7 +792,9 @@
         "comments": 238,
         "shares": 132,
         "engagement": 925,
-        "pes": 1427.0
+        "pes": 1427.0,
+        "views": 6592,
+        "reach": 3442
       },
       {
         "date": "2025-10-31",
@@ -719,7 +803,9 @@
         "comments": 51,
         "shares": 15,
         "engagement": 239,
-        "pes": 320.0
+        "pes": 320.0,
+        "views": 1483,
+        "reach": 1094
       },
       {
         "date": "2025-11-01",
@@ -728,7 +814,9 @@
         "comments": 117,
         "shares": 78,
         "engagement": 470,
-        "pes": 743.0
+        "pes": 743.0,
+        "views": 4520,
+        "reach": 2398
       },
       {
         "date": "2025-11-02",
@@ -737,7 +825,9 @@
         "comments": 265,
         "shares": 159,
         "engagement": 986,
-        "pes": 1569.0
+        "pes": 1569.0,
+        "views": 8274,
+        "reach": 4166
       },
       {
         "date": "2025-11-03",
@@ -746,7 +836,9 @@
         "comments": 38,
         "shares": 24,
         "engagement": 138,
-        "pes": 224.0
+        "pes": 224.0,
+        "views": 1128,
+        "reach": 605
       },
       {
         "date": "2025-11-04",
@@ -755,7 +847,9 @@
         "comments": 97,
         "shares": 58,
         "engagement": 754,
-        "pes": 967.0
+        "pes": 967.0,
+        "views": 7466,
+        "reach": 4990
       },
       {
         "date": "2025-11-05",
@@ -764,7 +858,9 @@
         "comments": 119,
         "shares": 88,
         "engagement": 500,
-        "pes": 795.0
+        "pes": 795.0,
+        "views": 5029,
+        "reach": 2621
       },
       {
         "date": "2025-11-06",
@@ -773,7 +869,9 @@
         "comments": 170,
         "shares": 92,
         "engagement": 643,
-        "pes": 997.0
+        "pes": 997.0,
+        "views": 6291,
+        "reach": 3307
       },
       {
         "date": "2025-11-07",
@@ -782,7 +880,9 @@
         "comments": 127,
         "shares": 46,
         "engagement": 568,
-        "pes": 787.0
+        "pes": 787.0,
+        "views": 5683,
+        "reach": 3720
       },
       {
         "date": "2025-11-08",
@@ -791,7 +891,9 @@
         "comments": 84,
         "shares": 30,
         "engagement": 385,
-        "pes": 529.0
+        "pes": 529.0,
+        "views": 3459,
+        "reach": 1913
       },
       {
         "date": "2025-11-09",
@@ -800,7 +902,9 @@
         "comments": 174,
         "shares": 49,
         "engagement": 818,
-        "pes": 1090.0
+        "pes": 1090.0,
+        "views": 8680,
+        "reach": 5239
       },
       {
         "date": "2025-11-10",
@@ -809,7 +913,9 @@
         "comments": 54,
         "shares": 51,
         "engagement": 267,
-        "pes": 423.0
+        "pes": 423.0,
+        "views": 1812,
+        "reach": 1588
       },
       {
         "date": "2025-11-11",
@@ -818,7 +924,9 @@
         "comments": 113,
         "shares": 57,
         "engagement": 417,
-        "pes": 644.0
+        "pes": 644.0,
+        "views": 2909,
+        "reach": 2136
       },
       {
         "date": "2025-11-12",
@@ -827,7 +935,9 @@
         "comments": 215,
         "shares": 95,
         "engagement": 853,
-        "pes": 1258.0
+        "pes": 1258.0,
+        "views": 6186,
+        "reach": 3724
       },
       {
         "date": "2025-11-13",
@@ -836,7 +946,9 @@
         "comments": 92,
         "shares": 30,
         "engagement": 288,
-        "pes": 440.0
+        "pes": 440.0,
+        "views": 2681,
+        "reach": 1293
       },
       {
         "date": "2025-11-14",
@@ -845,7 +957,9 @@
         "comments": 116,
         "shares": 50,
         "engagement": 374,
-        "pes": 590.0
+        "pes": 590.0,
+        "views": 3433,
+        "reach": 1965
       },
       {
         "date": "2025-11-15",
@@ -854,7 +968,9 @@
         "comments": 79,
         "shares": 31,
         "engagement": 257,
-        "pes": 398.0
+        "pes": 398.0,
+        "views": 1699,
+        "reach": 1044
       },
       {
         "date": "2025-11-16",
@@ -863,7 +979,9 @@
         "comments": 48,
         "shares": 8,
         "engagement": 151,
-        "pes": 215.0
+        "pes": 215.0,
+        "views": 1541,
+        "reach": 1357
       },
       {
         "date": "2025-11-17",
@@ -872,7 +990,9 @@
         "comments": 131,
         "shares": 44,
         "engagement": 555,
-        "pes": 774.0
+        "pes": 774.0,
+        "views": 6725,
+        "reach": 4205
       },
       {
         "date": "2025-11-18",
@@ -881,7 +1001,9 @@
         "comments": 155,
         "shares": 65,
         "engagement": 560,
-        "pes": 845.0
+        "pes": 845.0,
+        "views": 4196,
+        "reach": 2592
       },
       {
         "date": "2025-11-19",
@@ -890,7 +1012,9 @@
         "comments": 123,
         "shares": 50,
         "engagement": 461,
-        "pes": 684.0
+        "pes": 684.0,
+        "views": 1898,
+        "reach": 1127
       },
       {
         "date": "2025-11-20",
@@ -899,7 +1023,9 @@
         "comments": 109,
         "shares": 46,
         "engagement": 516,
-        "pes": 717.0
+        "pes": 717.0,
+        "views": 5849,
+        "reach": 3653
       },
       {
         "date": "2025-11-21",
@@ -908,7 +1034,9 @@
         "comments": 123,
         "shares": 57,
         "engagement": 406,
-        "pes": 643.0
+        "pes": 643.0,
+        "views": 3012,
+        "reach": 1435
       },
       {
         "date": "2025-11-22",
@@ -917,7 +1045,9 @@
         "comments": 28,
         "shares": 11,
         "engagement": 99,
-        "pes": 149.0
+        "pes": 149.0,
+        "views": 1633,
+        "reach": 1054
       },
       {
         "date": "2025-11-23",
@@ -926,7 +1056,9 @@
         "comments": 56,
         "shares": 22,
         "engagement": 232,
-        "pes": 332.0
+        "pes": 332.0,
+        "views": 2318,
+        "reach": 1186
       },
       {
         "date": "2025-11-24",
@@ -935,7 +1067,9 @@
         "comments": 161,
         "shares": 103,
         "engagement": 816,
-        "pes": 1183.0
+        "pes": 1183.0,
+        "views": 9471,
+        "reach": 5753
       },
       {
         "date": "2025-11-25",
@@ -944,7 +1078,9 @@
         "comments": 117,
         "shares": 131,
         "engagement": 4707,
-        "pes": 5086.0
+        "pes": 5086.0,
+        "views": 72734,
+        "reach": 56072
       },
       {
         "date": "2025-11-26",
@@ -953,7 +1089,9 @@
         "comments": 105,
         "shares": 96,
         "engagement": 668,
-        "pes": 965.0
+        "pes": 965.0,
+        "views": 5832,
+        "reach": 3596
       },
       {
         "date": "2025-11-27",
@@ -962,7 +1100,9 @@
         "comments": 81,
         "shares": 45,
         "engagement": 604,
-        "pes": 775.0
+        "pes": 775.0,
+        "views": 8995,
+        "reach": 4831
       },
       {
         "date": "2025-11-28",
@@ -971,7 +1111,9 @@
         "comments": 277,
         "shares": 203,
         "engagement": 1648,
-        "pes": 2331.0
+        "pes": 2331.0,
+        "views": 14882,
+        "reach": 8984
       },
       {
         "date": "2025-11-29",
@@ -980,7 +1122,9 @@
         "comments": 320,
         "shares": 199,
         "engagement": 1481,
-        "pes": 2199.0
+        "pes": 2199.0,
+        "views": 17418,
+        "reach": 8488
       },
       {
         "date": "2025-11-30",
@@ -989,7 +1133,9 @@
         "comments": 191,
         "shares": 63,
         "engagement": 659,
-        "pes": 976.0
+        "pes": 976.0,
+        "views": 8361,
+        "reach": 3898
       },
       {
         "date": "2025-12-01",
@@ -998,7 +1144,9 @@
         "comments": 100,
         "shares": 46,
         "engagement": 475,
-        "pes": 667.0
+        "pes": 667.0,
+        "views": 4327,
+        "reach": 3385
       },
       {
         "date": "2025-12-02",
@@ -1007,7 +1155,9 @@
         "comments": 188,
         "shares": 96,
         "engagement": 1212,
-        "pes": 1592.0
+        "pes": 1592.0,
+        "views": 13258,
+        "reach": 9628
       },
       {
         "date": "2025-12-03",
@@ -1016,7 +1166,9 @@
         "comments": 146,
         "shares": 43,
         "engagement": 665,
-        "pes": 897.0
+        "pes": 897.0,
+        "views": 7704,
+        "reach": 4367
       },
       {
         "date": "2025-12-04",
@@ -1025,7 +1177,9 @@
         "comments": 41,
         "shares": 13,
         "engagement": 196,
-        "pes": 263.0
+        "pes": 263.0,
+        "views": 2191,
+        "reach": 1697
       },
       {
         "date": "2025-12-05",
@@ -1034,7 +1188,9 @@
         "comments": 202,
         "shares": 86,
         "engagement": 944,
-        "pes": 1318.0
+        "pes": 1318.0,
+        "views": 10363,
+        "reach": 7054
       },
       {
         "date": "2025-12-06",
@@ -1043,7 +1199,9 @@
         "comments": 317,
         "shares": 167,
         "engagement": 13766,
-        "pes": 14417.0
+        "pes": 14417.0,
+        "views": 124013,
+        "reach": 104215
       },
       {
         "date": "2025-12-07",
@@ -1052,7 +1210,9 @@
         "comments": 209,
         "shares": 114,
         "engagement": 1248,
-        "pes": 1685.0
+        "pes": 1685.0,
+        "views": 11906,
+        "reach": 7158
       },
       {
         "date": "2025-12-08",
@@ -1061,7 +1221,9 @@
         "comments": 191,
         "shares": 55,
         "engagement": 913,
-        "pes": 1214.0
+        "pes": 1214.0,
+        "views": 11192,
+        "reach": 7122
       },
       {
         "date": "2025-12-09",
@@ -1070,7 +1232,9 @@
         "comments": 153,
         "shares": 90,
         "engagement": 1232,
-        "pes": 1565.0
+        "pes": 1565.0,
+        "views": 13544,
+        "reach": 8453
       },
       {
         "date": "2025-12-10",
@@ -1079,7 +1243,9 @@
         "comments": 193,
         "shares": 167,
         "engagement": 10510,
-        "pes": 11037.0
+        "pes": 11037.0,
+        "views": 85474,
+        "reach": 63241
       },
       {
         "date": "2025-12-11",
@@ -1088,7 +1254,9 @@
         "comments": 198,
         "shares": 62,
         "engagement": 659,
-        "pes": 981.0
+        "pes": 981.0,
+        "views": 5780,
+        "reach": 3719
       },
       {
         "date": "2025-12-12",
@@ -1097,7 +1265,9 @@
         "comments": 84,
         "shares": 40,
         "engagement": 956,
-        "pes": 1120.0
+        "pes": 1120.0,
+        "views": 11421,
+        "reach": 8528
       },
       {
         "date": "2025-12-13",
@@ -1106,7 +1276,9 @@
         "comments": 71,
         "shares": 137,
         "engagement": 1198,
-        "pes": 1543.0
+        "pes": 1543.0,
+        "views": 14984,
+        "reach": 10699
       },
       {
         "date": "2025-12-14",
@@ -1115,7 +1287,9 @@
         "comments": 96,
         "shares": 36,
         "engagement": 863,
-        "pes": 1031.0
+        "pes": 1031.0,
+        "views": 11719,
+        "reach": 8735
       },
       {
         "date": "2025-12-15",
@@ -1124,7 +1298,9 @@
         "comments": 259,
         "shares": 93,
         "engagement": 911,
-        "pes": 1356.0
+        "pes": 1356.0,
+        "views": 12576,
+        "reach": 5722
       },
       {
         "date": "2025-12-16",
@@ -1133,7 +1309,9 @@
         "comments": 106,
         "shares": 50,
         "engagement": 1178,
-        "pes": 1384.0
+        "pes": 1384.0,
+        "views": 20359,
+        "reach": 15037
       },
       {
         "date": "2025-12-17",
@@ -1142,7 +1320,9 @@
         "comments": 75,
         "shares": 27,
         "engagement": 337,
-        "pes": 466.0
+        "pes": 466.0,
+        "views": 3193,
+        "reach": 1642
       },
       {
         "date": "2025-12-18",
@@ -1151,7 +1331,9 @@
         "comments": 314,
         "shares": 196,
         "engagement": 7264,
-        "pes": 7970.0
+        "pes": 7970.0,
+        "views": 128463,
+        "reach": 83108
       },
       {
         "date": "2025-12-19",
@@ -1160,7 +1342,9 @@
         "comments": 283,
         "shares": 126,
         "engagement": 3387,
-        "pes": 3922.0
+        "pes": 3922.0,
+        "views": 52082,
+        "reach": 39401
       },
       {
         "date": "2025-12-20",
@@ -1169,7 +1353,9 @@
         "comments": 285,
         "shares": 142,
         "engagement": 7061,
-        "pes": 7630.0
+        "pes": 7630.0,
+        "views": 100151,
+        "reach": 76251
       },
       {
         "date": "2025-12-21",
@@ -1178,7 +1364,9 @@
         "comments": 123,
         "shares": 44,
         "engagement": 1026,
-        "pes": 1237.0
+        "pes": 1237.0,
+        "views": 12489,
+        "reach": 8763
       },
       {
         "date": "2025-12-22",
@@ -1187,7 +1375,9 @@
         "comments": 292,
         "shares": 108,
         "engagement": 2734,
-        "pes": 3242.0
+        "pes": 3242.0,
+        "views": 38420,
+        "reach": 28762
       },
       {
         "date": "2025-12-23",
@@ -1196,7 +1386,9 @@
         "comments": 400,
         "shares": 228,
         "engagement": 19196,
-        "pes": 20052.0
+        "pes": 20052.0,
+        "views": 234101,
+        "reach": 160918
       },
       {
         "date": "2025-12-24",
@@ -1205,7 +1397,9 @@
         "comments": 331,
         "shares": 205,
         "engagement": 22431,
-        "pes": 23172.0
+        "pes": 23172.0,
+        "views": 254741,
+        "reach": 204428
       }
     ],
     "byPage": {
@@ -1217,7 +1411,9 @@
           "comments": 3,
           "shares": 0,
           "engagement": 18,
-          "pes": 21.0
+          "pes": 21.0,
+          "views": 321,
+          "reach": 135
         },
         {
           "date": "2025-10-10",
@@ -1226,7 +1422,9 @@
           "comments": 0,
           "shares": 0,
           "engagement": 8,
-          "pes": 8.0
+          "pes": 8.0,
+          "views": 340,
+          "reach": 127
         },
         {
           "date": "2025-10-12",
@@ -1235,7 +1433,9 @@
           "comments": 41,
           "shares": 10,
           "engagement": 641,
-          "pes": 702.0
+          "pes": 702.0,
+          "views": 6636,
+          "reach": 3936
         },
         {
           "date": "2025-10-13",
@@ -1244,7 +1444,9 @@
           "comments": 31,
           "shares": 9,
           "engagement": 837,
-          "pes": 886.0
+          "pes": 886.0,
+          "views": 8341,
+          "reach": 5148
         },
         {
           "date": "2025-10-14",
@@ -1253,7 +1455,9 @@
           "comments": 25,
           "shares": 8,
           "engagement": 129,
-          "pes": 170.0
+          "pes": 170.0,
+          "views": 1356,
+          "reach": 390
         },
         {
           "date": "2025-10-15",
@@ -1262,7 +1466,9 @@
           "comments": 7,
           "shares": 0,
           "engagement": 36,
-          "pes": 43.0
+          "pes": 43.0,
+          "views": 0,
+          "reach": 161
         },
         {
           "date": "2025-10-16",
@@ -1271,7 +1477,9 @@
           "comments": 8,
           "shares": 7,
           "engagement": 214,
-          "pes": 236.0
+          "pes": 236.0,
+          "views": 2199,
+          "reach": 1516
         },
         {
           "date": "2025-10-18",
@@ -1280,7 +1488,9 @@
           "comments": 2,
           "shares": 0,
           "engagement": 34,
-          "pes": 36.0
+          "pes": 36.0,
+          "views": 616,
+          "reach": 394
         },
         {
           "date": "2025-10-20",
@@ -1289,7 +1499,9 @@
           "comments": 23,
           "shares": 3,
           "engagement": 95,
-          "pes": 124.0
+          "pes": 124.0,
+          "views": 799,
+          "reach": 358
         },
         {
           "date": "2025-10-21",
@@ -1298,7 +1510,9 @@
           "comments": 71,
           "shares": 78,
           "engagement": 4936,
-          "pes": 5163.0
+          "pes": 5163.0,
+          "views": 123056,
+          "reach": 73012
         },
         {
           "date": "2025-10-22",
@@ -1307,7 +1521,9 @@
           "comments": 18,
           "shares": 7,
           "engagement": 83,
-          "pes": 115.0
+          "pes": 115.0,
+          "views": 1061,
+          "reach": 382
         },
         {
           "date": "2025-10-23",
@@ -1316,7 +1532,9 @@
           "comments": 12,
           "shares": 4,
           "engagement": 81,
-          "pes": 101.0
+          "pes": 101.0,
+          "views": 611,
+          "reach": 211
         },
         {
           "date": "2025-10-24",
@@ -1325,7 +1543,9 @@
           "comments": 4,
           "shares": 3,
           "engagement": 63,
-          "pes": 73.0
+          "pes": 73.0,
+          "views": 767,
+          "reach": 469
         },
         {
           "date": "2025-10-25",
@@ -1334,7 +1554,9 @@
           "comments": 6,
           "shares": 4,
           "engagement": 136,
-          "pes": 150.0
+          "pes": 150.0,
+          "views": 2101,
+          "reach": 1542
         },
         {
           "date": "2025-10-26",
@@ -1343,7 +1565,9 @@
           "comments": 10,
           "shares": 7,
           "engagement": 81,
-          "pes": 105.0
+          "pes": 105.0,
+          "views": 1160,
+          "reach": 451
         },
         {
           "date": "2025-10-29",
@@ -1352,7 +1576,9 @@
           "comments": 10,
           "shares": 7,
           "engagement": 62,
-          "pes": 86.0
+          "pes": 86.0,
+          "views": 654,
+          "reach": 285
         },
         {
           "date": "2025-10-30",
@@ -1361,7 +1587,9 @@
           "comments": 12,
           "shares": 5,
           "engagement": 83,
-          "pes": 105.0
+          "pes": 105.0,
+          "views": 1120,
+          "reach": 409
         },
         {
           "date": "2025-11-02",
@@ -1370,7 +1598,9 @@
           "comments": 9,
           "shares": 4,
           "engagement": 133,
-          "pes": 150.0
+          "pes": 150.0,
+          "views": 2203,
+          "reach": 1363
         },
         {
           "date": "2025-11-04",
@@ -1379,7 +1609,9 @@
           "comments": 25,
           "shares": 19,
           "engagement": 479,
-          "pes": 542.0
+          "pes": 542.0,
+          "views": 5368,
+          "reach": 3883
         },
         {
           "date": "2025-11-06",
@@ -1388,7 +1620,9 @@
           "comments": 2,
           "shares": 6,
           "engagement": 68,
-          "pes": 82.0
+          "pes": 82.0,
+          "views": 825,
+          "reach": 240
         },
         {
           "date": "2025-11-07",
@@ -1397,7 +1631,9 @@
           "comments": 12,
           "shares": 7,
           "engagement": 116,
-          "pes": 142.0
+          "pes": 142.0,
+          "views": 2185,
+          "reach": 1386
         },
         {
           "date": "2025-11-08",
@@ -1406,7 +1642,9 @@
           "comments": 17,
           "shares": 7,
           "engagement": 108,
-          "pes": 139.0
+          "pes": 139.0,
+          "views": 1915,
+          "reach": 812
         },
         {
           "date": "2025-11-09",
@@ -1415,7 +1653,9 @@
           "comments": 10,
           "shares": 4,
           "engagement": 253,
-          "pes": 271.0
+          "pes": 271.0,
+          "views": 2874,
+          "reach": 2167
         },
         {
           "date": "2025-11-12",
@@ -1424,7 +1664,9 @@
           "comments": 8,
           "shares": 8,
           "engagement": 223,
-          "pes": 247.0
+          "pes": 247.0,
+          "views": 2983,
+          "reach": 1828
         },
         {
           "date": "2025-11-16",
@@ -1433,7 +1675,9 @@
           "comments": 2,
           "shares": 0,
           "engagement": 12,
-          "pes": 14.0
+          "pes": 14.0,
+          "views": 0,
+          "reach": 150
         },
         {
           "date": "2025-11-17",
@@ -1442,7 +1686,9 @@
           "comments": 5,
           "shares": 3,
           "engagement": 112,
-          "pes": 123.0
+          "pes": 123.0,
+          "views": 1931,
+          "reach": 1370
         },
         {
           "date": "2025-11-20",
@@ -1451,7 +1697,9 @@
           "comments": 10,
           "shares": 5,
           "engagement": 140,
-          "pes": 160.0
+          "pes": 160.0,
+          "views": 2614,
+          "reach": 1682
         },
         {
           "date": "2025-11-24",
@@ -1460,7 +1708,9 @@
           "comments": 36,
           "shares": 12,
           "engagement": 230,
-          "pes": 290.0
+          "pes": 290.0,
+          "views": 3434,
+          "reach": 2616
         },
         {
           "date": "2025-11-25",
@@ -1469,7 +1719,9 @@
           "comments": 42,
           "shares": 53,
           "engagement": 4281,
-          "pes": 4429.0
+          "pes": 4429.0,
+          "views": 69220,
+          "reach": 54442
         },
         {
           "date": "2025-11-26",
@@ -1478,7 +1730,9 @@
           "comments": 10,
           "shares": 13,
           "engagement": 304,
-          "pes": 340.0
+          "pes": 340.0,
+          "views": 3244,
+          "reach": 2213
         },
         {
           "date": "2025-11-27",
@@ -1487,7 +1741,9 @@
           "comments": 9,
           "shares": 10,
           "engagement": 272,
-          "pes": 301.0
+          "pes": 301.0,
+          "views": 5582,
+          "reach": 2867
         },
         {
           "date": "2025-11-28",
@@ -1496,7 +1752,9 @@
           "comments": 24,
           "shares": 8,
           "engagement": 499,
-          "pes": 539.0
+          "pes": 539.0,
+          "views": 6057,
+          "reach": 4850
         },
         {
           "date": "2025-11-29",
@@ -1505,7 +1763,9 @@
           "comments": 37,
           "shares": 6,
           "engagement": 298,
-          "pes": 347.0
+          "pes": 347.0,
+          "views": 3378,
+          "reach": 2276
         },
         {
           "date": "2025-11-30",
@@ -1514,7 +1774,9 @@
           "comments": 1,
           "shares": 0,
           "engagement": 24,
-          "pes": 25.0
+          "pes": 25.0,
+          "views": 605,
+          "reach": 313
         },
         {
           "date": "2025-12-02",
@@ -1523,7 +1785,9 @@
           "comments": 65,
           "shares": 37,
           "engagement": 769,
-          "pes": 908.0
+          "pes": 908.0,
+          "views": 9462,
+          "reach": 6939
         },
         {
           "date": "2025-12-03",
@@ -1532,7 +1796,9 @@
           "comments": 35,
           "shares": 16,
           "engagement": 273,
-          "pes": 340.0
+          "pes": 340.0,
+          "views": 3407,
+          "reach": 2341
         },
         {
           "date": "2025-12-05",
@@ -1541,7 +1807,9 @@
           "comments": 41,
           "shares": 19,
           "engagement": 264,
-          "pes": 343.0
+          "pes": 343.0,
+          "views": 4111,
+          "reach": 3142
         },
         {
           "date": "2025-12-06",
@@ -1550,7 +1818,9 @@
           "comments": 71,
           "shares": 17,
           "engagement": 571,
-          "pes": 676.0
+          "pes": 676.0,
+          "views": 7849,
+          "reach": 6287
         },
         {
           "date": "2025-12-07",
@@ -1559,7 +1829,9 @@
           "comments": 42,
           "shares": 17,
           "engagement": 191,
-          "pes": 267.0
+          "pes": 267.0,
+          "views": 1959,
+          "reach": 859
         },
         {
           "date": "2025-12-08",
@@ -1568,7 +1840,9 @@
           "comments": 3,
           "shares": 0,
           "engagement": 19,
-          "pes": 22.0
+          "pes": 22.0,
+          "views": 0,
+          "reach": 312
         },
         {
           "date": "2025-12-09",
@@ -1577,7 +1851,9 @@
           "comments": 49,
           "shares": 16,
           "engagement": 486,
-          "pes": 567.0
+          "pes": 567.0,
+          "views": 4943,
+          "reach": 3642
         },
         {
           "date": "2025-12-11",
@@ -1586,7 +1862,9 @@
           "comments": 4,
           "shares": 4,
           "engagement": 39,
-          "pes": 51.0
+          "pes": 51.0,
+          "views": 647,
+          "reach": 298
         },
         {
           "date": "2025-12-12",
@@ -1595,7 +1873,9 @@
           "comments": 19,
           "shares": 17,
           "engagement": 478,
-          "pes": 531.0
+          "pes": 531.0,
+          "views": 4788,
+          "reach": 3893
         },
         {
           "date": "2025-12-13",
@@ -1604,7 +1884,9 @@
           "comments": 31,
           "shares": 45,
           "engagement": 697,
-          "pes": 818.0
+          "pes": 818.0,
+          "views": 9497,
+          "reach": 7685
         },
         {
           "date": "2025-12-14",
@@ -1613,7 +1895,9 @@
           "comments": 25,
           "shares": 11,
           "engagement": 350,
-          "pes": 397.0
+          "pes": 397.0,
+          "views": 5151,
+          "reach": 4157
         },
         {
           "date": "2025-12-16",
@@ -1622,7 +1906,9 @@
           "comments": 76,
           "shares": 34,
           "engagement": 1059,
-          "pes": 1203.0
+          "pes": 1203.0,
+          "views": 17292,
+          "reach": 13696
         },
         {
           "date": "2025-12-18",
@@ -1631,7 +1917,9 @@
           "comments": 137,
           "shares": 96,
           "engagement": 6472,
-          "pes": 6801.0
+          "pes": 6801.0,
+          "views": 120318,
+          "reach": 78945
         },
         {
           "date": "2025-12-19",
@@ -1640,7 +1928,9 @@
           "comments": 72,
           "shares": 56,
           "engagement": 2617,
-          "pes": 2801.0
+          "pes": 2801.0,
+          "views": 44546,
+          "reach": 35424
         },
         {
           "date": "2025-12-20",
@@ -1649,7 +1939,9 @@
           "comments": 143,
           "shares": 83,
           "engagement": 6419,
-          "pes": 6728.0
+          "pes": 6728.0,
+          "views": 94207,
+          "reach": 72375
         },
         {
           "date": "2025-12-21",
@@ -1658,7 +1950,9 @@
           "comments": 15,
           "shares": 8,
           "engagement": 87,
-          "pes": 118.0
+          "pes": 118.0,
+          "views": 2963,
+          "reach": 1374
         },
         {
           "date": "2025-12-22",
@@ -1667,7 +1961,9 @@
           "comments": 146,
           "shares": 44,
           "engagement": 2128,
-          "pes": 2362.0
+          "pes": 2362.0,
+          "views": 33698,
+          "reach": 25885
         },
         {
           "date": "2025-12-23",
@@ -1676,7 +1972,9 @@
           "comments": 241,
           "shares": 169,
           "engagement": 18397,
-          "pes": 18976.0
+          "pes": 18976.0,
+          "views": 228125,
+          "reach": 157454
         },
         {
           "date": "2025-12-24",
@@ -1685,7 +1983,9 @@
           "comments": 240,
           "shares": 170,
           "engagement": 21991,
-          "pes": 22571.0
+          "pes": 22571.0,
+          "views": 251324,
+          "reach": 202157
         }
       ],
       "61580361006776": [
@@ -1696,7 +1996,9 @@
           "comments": 32,
           "shares": 22,
           "engagement": 131,
-          "pes": 207.0
+          "pes": 207.0,
+          "views": 461,
+          "reach": 407
         },
         {
           "date": "2025-10-02",
@@ -1705,7 +2007,9 @@
           "comments": 9,
           "shares": 15,
           "engagement": 64,
-          "pes": 103.0
+          "pes": 103.0,
+          "views": 343,
+          "reach": 176
         },
         {
           "date": "2025-10-03",
@@ -1714,7 +2018,9 @@
           "comments": 33,
           "shares": 22,
           "engagement": 173,
-          "pes": 250.0
+          "pes": 250.0,
+          "views": 1565,
+          "reach": 817
         },
         {
           "date": "2025-10-04",
@@ -1723,7 +2029,9 @@
           "comments": 42,
           "shares": 17,
           "engagement": 150,
-          "pes": 226.0
+          "pes": 226.0,
+          "views": 1106,
+          "reach": 509
         },
         {
           "date": "2025-10-05",
@@ -1732,7 +2040,9 @@
           "comments": 27,
           "shares": 22,
           "engagement": 119,
-          "pes": 190.0
+          "pes": 190.0,
+          "views": 1157,
+          "reach": 588
         },
         {
           "date": "2025-10-06",
@@ -1741,7 +2051,9 @@
           "comments": 58,
           "shares": 41,
           "engagement": 260,
-          "pes": 400.0
+          "pes": 400.0,
+          "views": 2317,
+          "reach": 1141
         },
         {
           "date": "2025-10-07",
@@ -1750,7 +2062,9 @@
           "comments": 28,
           "shares": 13,
           "engagement": 118,
-          "pes": 172.0
+          "pes": 172.0,
+          "views": 989,
+          "reach": 532
         },
         {
           "date": "2025-10-08",
@@ -1759,7 +2073,9 @@
           "comments": 65,
           "shares": 46,
           "engagement": 301,
-          "pes": 458.0
+          "pes": 458.0,
+          "views": 2170,
+          "reach": 929
         },
         {
           "date": "2025-10-09",
@@ -1768,7 +2084,9 @@
           "comments": 56,
           "shares": 47,
           "engagement": 279,
-          "pes": 429.0
+          "pes": 429.0,
+          "views": 3046,
+          "reach": 1750
         },
         {
           "date": "2025-10-10",
@@ -1777,7 +2095,9 @@
           "comments": 24,
           "shares": 18,
           "engagement": 111,
-          "pes": 171.0
+          "pes": 171.0,
+          "views": 574,
+          "reach": 298
         },
         {
           "date": "2025-10-11",
@@ -1786,7 +2106,9 @@
           "comments": 48,
           "shares": 27,
           "engagement": 221,
-          "pes": 323.0
+          "pes": 323.0,
+          "views": 2214,
+          "reach": 928
         },
         {
           "date": "2025-10-12",
@@ -1795,7 +2117,9 @@
           "comments": 45,
           "shares": 26,
           "engagement": 196,
-          "pes": 293.0
+          "pes": 293.0,
+          "views": 1705,
+          "reach": 974
         },
         {
           "date": "2025-10-13",
@@ -1804,7 +2128,9 @@
           "comments": 88,
           "shares": 43,
           "engagement": 324,
-          "pes": 498.0
+          "pes": 498.0,
+          "views": 3327,
+          "reach": 1813
         },
         {
           "date": "2025-10-14",
@@ -1813,7 +2139,9 @@
           "comments": 57,
           "shares": 32,
           "engagement": 233,
-          "pes": 354.0
+          "pes": 354.0,
+          "views": 1427,
+          "reach": 942
         },
         {
           "date": "2025-10-15",
@@ -1822,7 +2150,9 @@
           "comments": 69,
           "shares": 30,
           "engagement": 278,
-          "pes": 407.0
+          "pes": 407.0,
+          "views": 3132,
+          "reach": 1269
         },
         {
           "date": "2025-10-16",
@@ -1831,7 +2161,9 @@
           "comments": 50,
           "shares": 26,
           "engagement": 231,
-          "pes": 333.0
+          "pes": 333.0,
+          "views": 2065,
+          "reach": 1200
         },
         {
           "date": "2025-10-17",
@@ -1840,7 +2172,9 @@
           "comments": 65,
           "shares": 38,
           "engagement": 304,
-          "pes": 445.0
+          "pes": 445.0,
+          "views": 1982,
+          "reach": 1163
         },
         {
           "date": "2025-10-18",
@@ -1849,7 +2183,9 @@
           "comments": 31,
           "shares": 24,
           "engagement": 155,
-          "pes": 234.0
+          "pes": 234.0,
+          "views": 817,
+          "reach": 475
         },
         {
           "date": "2025-10-19",
@@ -1858,7 +2194,9 @@
           "comments": 30,
           "shares": 25,
           "engagement": 193,
-          "pes": 273.0
+          "pes": 273.0,
+          "views": 1503,
+          "reach": 780
         },
         {
           "date": "2025-10-20",
@@ -1867,7 +2205,9 @@
           "comments": 64,
           "shares": 53,
           "engagement": 294,
-          "pes": 464.0
+          "pes": 464.0,
+          "views": 1754,
+          "reach": 896
         },
         {
           "date": "2025-10-21",
@@ -1876,7 +2216,9 @@
           "comments": 49,
           "shares": 34,
           "engagement": 213,
-          "pes": 330.0
+          "pes": 330.0,
+          "views": 1222,
+          "reach": 512
         },
         {
           "date": "2025-10-22",
@@ -1885,7 +2227,9 @@
           "comments": 55,
           "shares": 32,
           "engagement": 240,
-          "pes": 359.0
+          "pes": 359.0,
+          "views": 919,
+          "reach": 728
         },
         {
           "date": "2025-10-23",
@@ -1894,7 +2238,9 @@
           "comments": 72,
           "shares": 53,
           "engagement": 303,
-          "pes": 481.0
+          "pes": 481.0,
+          "views": 1660,
+          "reach": 783
         },
         {
           "date": "2025-10-24",
@@ -1903,7 +2249,9 @@
           "comments": 15,
           "shares": 0,
           "engagement": 57,
-          "pes": 72.0
+          "pes": 72.0,
+          "views": 0,
+          "reach": 151
         },
         {
           "date": "2025-10-25",
@@ -1912,7 +2260,9 @@
           "comments": 26,
           "shares": 21,
           "engagement": 150,
-          "pes": 218.0
+          "pes": 218.0,
+          "views": 1443,
+          "reach": 840
         },
         {
           "date": "2025-10-26",
@@ -1921,7 +2271,9 @@
           "comments": 41,
           "shares": 19,
           "engagement": 155,
-          "pes": 234.0
+          "pes": 234.0,
+          "views": 1204,
+          "reach": 801
         },
         {
           "date": "2025-10-27",
@@ -1930,7 +2282,9 @@
           "comments": 34,
           "shares": 25,
           "engagement": 115,
-          "pes": 199.0
+          "pes": 199.0,
+          "views": 773,
+          "reach": 424
         },
         {
           "date": "2025-10-28",
@@ -1939,7 +2293,9 @@
           "comments": 22,
           "shares": 20,
           "engagement": 92,
-          "pes": 154.0
+          "pes": 154.0,
+          "views": 917,
+          "reach": 470
         },
         {
           "date": "2025-10-29",
@@ -1948,7 +2304,9 @@
           "comments": 31,
           "shares": 15,
           "engagement": 132,
-          "pes": 193.0
+          "pes": 193.0,
+          "views": 1516,
+          "reach": 675
         },
         {
           "date": "2025-10-30",
@@ -1957,7 +2315,9 @@
           "comments": 60,
           "shares": 32,
           "engagement": 283,
-          "pes": 407.0
+          "pes": 407.0,
+          "views": 3038,
+          "reach": 1303
         },
         {
           "date": "2025-10-31",
@@ -1966,7 +2326,9 @@
           "comments": 15,
           "shares": 7,
           "engagement": 121,
-          "pes": 150.0
+          "pes": 150.0,
+          "views": 921,
+          "reach": 672
         },
         {
           "date": "2025-11-01",
@@ -1975,7 +2337,9 @@
           "comments": 62,
           "shares": 38,
           "engagement": 294,
-          "pes": 432.0
+          "pes": 432.0,
+          "views": 3493,
+          "reach": 1887
         },
         {
           "date": "2025-11-02",
@@ -1984,7 +2348,9 @@
           "comments": 71,
           "shares": 52,
           "engagement": 265,
-          "pes": 440.0
+          "pes": 440.0,
+          "views": 2630,
+          "reach": 1354
         },
         {
           "date": "2025-11-03",
@@ -1993,7 +2359,9 @@
           "comments": 38,
           "shares": 24,
           "engagement": 138,
-          "pes": 224.0
+          "pes": 224.0,
+          "views": 1128,
+          "reach": 605
         },
         {
           "date": "2025-11-04",
@@ -2002,7 +2370,9 @@
           "comments": 24,
           "shares": 18,
           "engagement": 100,
-          "pes": 160.0
+          "pes": 160.0,
+          "views": 882,
+          "reach": 429
         },
         {
           "date": "2025-11-05",
@@ -2011,7 +2381,9 @@
           "comments": 30,
           "shares": 9,
           "engagement": 147,
-          "pes": 195.0
+          "pes": 195.0,
+          "views": 1987,
+          "reach": 1017
         },
         {
           "date": "2025-11-06",
@@ -2020,7 +2392,9 @@
           "comments": 45,
           "shares": 18,
           "engagement": 171,
-          "pes": 252.0
+          "pes": 252.0,
+          "views": 3000,
+          "reach": 1895
         },
         {
           "date": "2025-11-07",
@@ -2029,7 +2403,9 @@
           "comments": 54,
           "shares": 19,
           "engagement": 236,
-          "pes": 328.0
+          "pes": 328.0,
+          "views": 2494,
+          "reach": 1679
         },
         {
           "date": "2025-11-08",
@@ -2038,7 +2414,9 @@
           "comments": 4,
           "shares": 1,
           "engagement": 22,
-          "pes": 28.0
+          "pes": 28.0,
+          "views": 255,
+          "reach": 131
         },
         {
           "date": "2025-11-09",
@@ -2047,7 +2425,9 @@
           "comments": 44,
           "shares": 15,
           "engagement": 220,
-          "pes": 294.0
+          "pes": 294.0,
+          "views": 4141,
+          "reach": 2053
         },
         {
           "date": "2025-11-10",
@@ -2056,7 +2436,9 @@
           "comments": 30,
           "shares": 13,
           "engagement": 93,
-          "pes": 149.0
+          "pes": 149.0,
+          "views": 1257,
+          "reach": 667
         },
         {
           "date": "2025-11-11",
@@ -2065,7 +2447,9 @@
           "comments": 49,
           "shares": 29,
           "engagement": 208,
-          "pes": 315.0
+          "pes": 315.0,
+          "views": 2071,
+          "reach": 1439
         },
         {
           "date": "2025-11-12",
@@ -2074,7 +2458,9 @@
           "comments": 33,
           "shares": 13,
           "engagement": 110,
-          "pes": 169.0
+          "pes": 169.0,
+          "views": 1213,
+          "reach": 764
         },
         {
           "date": "2025-11-13",
@@ -2083,7 +2469,9 @@
           "comments": 29,
           "shares": 13,
           "engagement": 103,
-          "pes": 158.0
+          "pes": 158.0,
+          "views": 1069,
+          "reach": 569
         },
         {
           "date": "2025-11-14",
@@ -2092,7 +2480,9 @@
           "comments": 39,
           "shares": 13,
           "engagement": 156,
-          "pes": 221.0
+          "pes": 221.0,
+          "views": 2479,
+          "reach": 1441
         },
         {
           "date": "2025-11-15",
@@ -2101,7 +2491,9 @@
           "comments": 30,
           "shares": 14,
           "engagement": 109,
-          "pes": 167.0
+          "pes": 167.0,
+          "views": 967,
+          "reach": 665
         },
         {
           "date": "2025-11-16",
@@ -2110,7 +2502,9 @@
           "comments": 46,
           "shares": 8,
           "engagement": 139,
-          "pes": 201.0
+          "pes": 201.0,
+          "views": 1541,
+          "reach": 1207
         },
         {
           "date": "2025-11-17",
@@ -2119,7 +2513,9 @@
           "comments": 34,
           "shares": 11,
           "engagement": 166,
-          "pes": 222.0
+          "pes": 222.0,
+          "views": 3321,
+          "reach": 1974
         },
         {
           "date": "2025-11-18",
@@ -2128,7 +2524,9 @@
           "comments": 41,
           "shares": 11,
           "engagement": 180,
-          "pes": 243.0
+          "pes": 243.0,
+          "views": 2117,
+          "reach": 1746
         },
         {
           "date": "2025-11-19",
@@ -2137,7 +2535,9 @@
           "comments": 1,
           "shares": 1,
           "engagement": 9,
-          "pes": 12.0
+          "pes": 12.0,
+          "views": 0,
+          "reach": 1
         },
         {
           "date": "2025-11-20",
@@ -2146,7 +2546,9 @@
           "comments": 65,
           "shares": 27,
           "engagement": 256,
-          "pes": 375.0
+          "pes": 375.0,
+          "views": 2187,
+          "reach": 1451
         },
         {
           "date": "2025-11-21",
@@ -2155,7 +2557,9 @@
           "comments": 7,
           "shares": 7,
           "engagement": 47,
-          "pes": 68.0
+          "pes": 68.0,
+          "views": 477,
+          "reach": 244
         },
         {
           "date": "2025-11-22",
@@ -2164,7 +2568,9 @@
           "comments": 28,
           "shares": 11,
           "engagement": 99,
-          "pes": 149.0
+          "pes": 149.0,
+          "views": 1633,
+          "reach": 1054
         },
         {
           "date": "2025-11-23",
@@ -2173,7 +2579,9 @@
           "comments": 56,
           "shares": 22,
           "engagement": 232,
-          "pes": 332.0
+          "pes": 332.0,
+          "views": 2318,
+          "reach": 1186
         },
         {
           "date": "2025-11-24",
@@ -2182,7 +2590,9 @@
           "comments": 45,
           "shares": 24,
           "engagement": 263,
-          "pes": 356.0
+          "pes": 356.0,
+          "views": 4554,
+          "reach": 2426
         },
         {
           "date": "2025-11-25",
@@ -2191,7 +2601,9 @@
           "comments": 20,
           "shares": 12,
           "engagement": 139,
-          "pes": 183.0
+          "pes": 183.0,
+          "views": 1510,
+          "reach": 916
         },
         {
           "date": "2025-11-26",
@@ -2200,7 +2612,9 @@
           "comments": 23,
           "shares": 11,
           "engagement": 102,
-          "pes": 147.0
+          "pes": 147.0,
+          "views": 1415,
+          "reach": 825
         },
         {
           "date": "2025-11-27",
@@ -2209,7 +2623,9 @@
           "comments": 31,
           "shares": 13,
           "engagement": 166,
-          "pes": 223.0
+          "pes": 223.0,
+          "views": 1746,
+          "reach": 1257
         },
         {
           "date": "2025-11-28",
@@ -2218,7 +2634,9 @@
           "comments": 89,
           "shares": 37,
           "engagement": 427,
-          "pes": 590.0
+          "pes": 590.0,
+          "views": 4302,
+          "reach": 2075
         },
         {
           "date": "2025-11-29",
@@ -2227,7 +2645,9 @@
           "comments": 34,
           "shares": 18,
           "engagement": 199,
-          "pes": 269.0
+          "pes": 269.0,
+          "views": 3643,
+          "reach": 2065
         },
         {
           "date": "2025-11-30",
@@ -2236,7 +2656,9 @@
           "comments": 58,
           "shares": 24,
           "engagement": 277,
-          "pes": 383.0
+          "pes": 383.0,
+          "views": 4410,
+          "reach": 2351
         },
         {
           "date": "2025-12-01",
@@ -2245,7 +2667,9 @@
           "comments": 48,
           "shares": 22,
           "engagement": 323,
-          "pes": 415.0
+          "pes": 415.0,
+          "views": 3331,
+          "reach": 2851
         },
         {
           "date": "2025-12-02",
@@ -2254,7 +2678,9 @@
           "comments": 33,
           "shares": 20,
           "engagement": 186,
-          "pes": 259.0
+          "pes": 259.0,
+          "views": 2528,
+          "reach": 1847
         },
         {
           "date": "2025-12-03",
@@ -2263,7 +2689,9 @@
           "comments": 111,
           "shares": 27,
           "engagement": 392,
-          "pes": 557.0
+          "pes": 557.0,
+          "views": 4297,
+          "reach": 2026
         },
         {
           "date": "2025-12-04",
@@ -2272,7 +2700,9 @@
           "comments": 41,
           "shares": 13,
           "engagement": 196,
-          "pes": 263.0
+          "pes": 263.0,
+          "views": 2191,
+          "reach": 1697
         },
         {
           "date": "2025-12-05",
@@ -2281,7 +2711,9 @@
           "comments": 34,
           "shares": 10,
           "engagement": 168,
-          "pes": 222.0
+          "pes": 222.0,
+          "views": 1695,
+          "reach": 1405
         },
         {
           "date": "2025-12-06",
@@ -2290,7 +2722,9 @@
           "comments": 96,
           "shares": 100,
           "engagement": 12759,
-          "pes": 13055.0
+          "pes": 13055.0,
+          "views": 112623,
+          "reach": 96152
         },
         {
           "date": "2025-12-07",
@@ -2299,7 +2733,9 @@
           "comments": 41,
           "shares": 26,
           "engagement": 379,
-          "pes": 472.0
+          "pes": 472.0,
+          "views": 5961,
+          "reach": 4468
         },
         {
           "date": "2025-12-08",
@@ -2308,7 +2744,9 @@
           "comments": 78,
           "shares": 24,
           "engagement": 542,
-          "pes": 668.0
+          "pes": 668.0,
+          "views": 8653,
+          "reach": 5780
         },
         {
           "date": "2025-12-09",
@@ -2317,7 +2755,9 @@
           "comments": 67,
           "shares": 37,
           "engagement": 573,
-          "pes": 714.0
+          "pes": 714.0,
+          "views": 7400,
+          "reach": 4251
         },
         {
           "date": "2025-12-10",
@@ -2326,7 +2766,9 @@
           "comments": 71,
           "shares": 49,
           "engagement": 9974,
-          "pes": 10143.0
+          "pes": 10143.0,
+          "views": 82715,
+          "reach": 61993
         },
         {
           "date": "2025-12-11",
@@ -2335,7 +2777,9 @@
           "comments": 194,
           "shares": 58,
           "engagement": 620,
-          "pes": 930.0
+          "pes": 930.0,
+          "views": 5133,
+          "reach": 3421
         },
         {
           "date": "2025-12-12",
@@ -2344,7 +2788,9 @@
           "comments": 65,
           "shares": 23,
           "engagement": 478,
-          "pes": 589.0
+          "pes": 589.0,
+          "views": 6633,
+          "reach": 4635
         },
         {
           "date": "2025-12-13",
@@ -2353,7 +2799,9 @@
           "comments": 33,
           "shares": 71,
           "engagement": 406,
-          "pes": 581.0
+          "pes": 581.0,
+          "views": 4770,
+          "reach": 2743
         },
         {
           "date": "2025-12-14",
@@ -2362,7 +2810,9 @@
           "comments": 38,
           "shares": 14,
           "engagement": 375,
-          "pes": 441.0
+          "pes": 441.0,
+          "views": 4363,
+          "reach": 3482
         },
         {
           "date": "2025-12-15",
@@ -2371,7 +2821,9 @@
           "comments": 31,
           "shares": 17,
           "engagement": 162,
-          "pes": 227.0
+          "pes": 227.0,
+          "views": 5104,
+          "reach": 2143
         },
         {
           "date": "2025-12-16",
@@ -2380,7 +2832,9 @@
           "comments": 30,
           "shares": 16,
           "engagement": 119,
-          "pes": 181.0
+          "pes": 181.0,
+          "views": 3067,
+          "reach": 1341
         },
         {
           "date": "2025-12-17",
@@ -2389,7 +2843,9 @@
           "comments": 17,
           "shares": 9,
           "engagement": 113,
-          "pes": 148.0
+          "pes": 148.0,
+          "views": 1204,
+          "reach": 845
         },
         {
           "date": "2025-12-18",
@@ -2398,7 +2854,9 @@
           "comments": 37,
           "shares": 13,
           "engagement": 192,
-          "pes": 255.0
+          "pes": 255.0,
+          "views": 3674,
+          "reach": 1775
         },
         {
           "date": "2025-12-19",
@@ -2407,7 +2865,9 @@
           "comments": 54,
           "shares": 17,
           "engagement": 251,
-          "pes": 339.0
+          "pes": 339.0,
+          "views": 3684,
+          "reach": 2055
         },
         {
           "date": "2025-12-20",
@@ -2416,7 +2876,9 @@
           "comments": 64,
           "shares": 31,
           "engagement": 327,
-          "pes": 453.0
+          "pes": 453.0,
+          "views": 3466,
+          "reach": 2669
         },
         {
           "date": "2025-12-21",
@@ -2425,7 +2887,9 @@
           "comments": 42,
           "shares": 19,
           "engagement": 657,
-          "pes": 737.0
+          "pes": 737.0,
+          "views": 7349,
+          "reach": 6051
         },
         {
           "date": "2025-12-22",
@@ -2434,7 +2898,9 @@
           "comments": 58,
           "shares": 22,
           "engagement": 238,
-          "pes": 340.0
+          "pes": 340.0,
+          "views": 2183,
+          "reach": 1570
         },
         {
           "date": "2025-12-23",
@@ -2443,7 +2909,9 @@
           "comments": 54,
           "shares": 13,
           "engagement": 292,
-          "pes": 372.0
+          "pes": 372.0,
+          "views": 2417,
+          "reach": 1401
         },
         {
           "date": "2025-12-24",
@@ -2452,7 +2920,9 @@
           "comments": 8,
           "shares": 3,
           "engagement": 99,
-          "pes": 113.0
+          "pes": 113.0,
+          "views": 746,
+          "reach": 639
         }
       ],
       "61580395595183": [
@@ -2463,7 +2933,9 @@
           "comments": 90,
           "shares": 85,
           "engagement": 319,
-          "pes": 579.0
+          "pes": 579.0,
+          "views": 926,
+          "reach": 560
         },
         {
           "date": "2025-10-05",
@@ -2472,7 +2944,9 @@
           "comments": 22,
           "shares": 24,
           "engagement": 95,
-          "pes": 165.0
+          "pes": 165.0,
+          "views": 2,
+          "reach": 251
         },
         {
           "date": "2025-10-09",
@@ -2481,7 +2955,9 @@
           "comments": 46,
           "shares": 36,
           "engagement": 171,
-          "pes": 289.0
+          "pes": 289.0,
+          "views": 620,
+          "reach": 283
         },
         {
           "date": "2025-10-10",
@@ -2490,7 +2966,9 @@
           "comments": 44,
           "shares": 22,
           "engagement": 145,
-          "pes": 233.0
+          "pes": 233.0,
+          "views": 596,
+          "reach": 357
         },
         {
           "date": "2025-10-11",
@@ -2499,7 +2977,9 @@
           "comments": 33,
           "shares": 22,
           "engagement": 147,
-          "pes": 224.0
+          "pes": 224.0,
+          "views": 690,
+          "reach": 366
         },
         {
           "date": "2025-10-13",
@@ -2508,7 +2988,9 @@
           "comments": 72,
           "shares": 51,
           "engagement": 327,
-          "pes": 501.0
+          "pes": 501.0,
+          "views": 1441,
+          "reach": 802
         },
         {
           "date": "2025-10-14",
@@ -2517,7 +2999,9 @@
           "comments": 31,
           "shares": 22,
           "engagement": 141,
-          "pes": 216.0
+          "pes": 216.0,
+          "views": 385,
+          "reach": 498
         },
         {
           "date": "2025-10-15",
@@ -2526,7 +3010,9 @@
           "comments": 16,
           "shares": 6,
           "engagement": 84,
-          "pes": 112.0
+          "pes": 112.0,
+          "views": 513,
+          "reach": 302
         },
         {
           "date": "2025-10-16",
@@ -2535,7 +3021,9 @@
           "comments": 40,
           "shares": 22,
           "engagement": 150,
-          "pes": 234.0
+          "pes": 234.0,
+          "views": 1686,
+          "reach": 685
         },
         {
           "date": "2025-10-17",
@@ -2544,7 +3032,9 @@
           "comments": 35,
           "shares": 0,
           "engagement": 154,
-          "pes": 189.0
+          "pes": 189.0,
+          "views": 0,
+          "reach": 554
         },
         {
           "date": "2025-10-18",
@@ -2553,7 +3043,9 @@
           "comments": 24,
           "shares": 11,
           "engagement": 104,
-          "pes": 150.0
+          "pes": 150.0,
+          "views": 587,
+          "reach": 335
         },
         {
           "date": "2025-10-19",
@@ -2562,7 +3054,9 @@
           "comments": 34,
           "shares": 27,
           "engagement": 140,
-          "pes": 228.0
+          "pes": 228.0,
+          "views": 651,
+          "reach": 356
         },
         {
           "date": "2025-10-20",
@@ -2571,7 +3065,9 @@
           "comments": 38,
           "shares": 24,
           "engagement": 141,
-          "pes": 227.0
+          "pes": 227.0,
+          "views": 562,
+          "reach": 338
         },
         {
           "date": "2025-10-21",
@@ -2580,7 +3076,9 @@
           "comments": 24,
           "shares": 26,
           "engagement": 114,
-          "pes": 190.0
+          "pes": 190.0,
+          "views": 42,
+          "reach": 215
         },
         {
           "date": "2025-10-23",
@@ -2589,7 +3087,9 @@
           "comments": 113,
           "shares": 77,
           "engagement": 381,
-          "pes": 648.0
+          "pes": 648.0,
+          "views": 1521,
+          "reach": 706
         },
         {
           "date": "2025-10-24",
@@ -2598,7 +3098,9 @@
           "comments": 85,
           "shares": 48,
           "engagement": 304,
-          "pes": 485.0
+          "pes": 485.0,
+          "views": 1776,
+          "reach": 842
         },
         {
           "date": "2025-10-29",
@@ -2607,7 +3109,9 @@
           "comments": 22,
           "shares": 8,
           "engagement": 82,
-          "pes": 120.0
+          "pes": 120.0,
+          "views": 675,
+          "reach": 301
         },
         {
           "date": "2025-10-30",
@@ -2616,7 +3120,9 @@
           "comments": 105,
           "shares": 53,
           "engagement": 303,
-          "pes": 514.0
+          "pes": 514.0,
+          "views": 867,
+          "reach": 673
         },
         {
           "date": "2025-11-02",
@@ -2625,7 +3131,9 @@
           "comments": 26,
           "shares": 0,
           "engagement": 70,
-          "pes": 96.0
+          "pes": 96.0,
+          "views": 0,
+          "reach": 224
         },
         {
           "date": "2025-11-07",
@@ -2634,7 +3142,9 @@
           "comments": 61,
           "shares": 20,
           "engagement": 216,
-          "pes": 317.0
+          "pes": 317.0,
+          "views": 1004,
+          "reach": 655
         },
         {
           "date": "2025-11-08",
@@ -2643,7 +3153,9 @@
           "comments": 32,
           "shares": 3,
           "engagement": 135,
-          "pes": 173.0
+          "pes": 173.0,
+          "views": 439,
+          "reach": 561
         },
         {
           "date": "2025-11-09",
@@ -2652,7 +3164,9 @@
           "comments": 33,
           "shares": 2,
           "engagement": 114,
-          "pes": 151.0
+          "pes": 151.0,
+          "views": 517,
+          "reach": 419
         },
         {
           "date": "2025-11-10",
@@ -2661,7 +3175,9 @@
           "comments": 3,
           "shares": 11,
           "engagement": 41,
-          "pes": 66.0
+          "pes": 66.0,
+          "views": 1,
+          "reach": 215
         },
         {
           "date": "2025-11-11",
@@ -2670,7 +3186,9 @@
           "comments": 61,
           "shares": 26,
           "engagement": 180,
-          "pes": 293.0
+          "pes": 293.0,
+          "views": 838,
+          "reach": 518
         },
         {
           "date": "2025-11-12",
@@ -2679,7 +3197,9 @@
           "comments": 54,
           "shares": 24,
           "engagement": 168,
-          "pes": 270.0
+          "pes": 270.0,
+          "views": 565,
+          "reach": 397
         },
         {
           "date": "2025-11-15",
@@ -2688,7 +3208,9 @@
           "comments": 49,
           "shares": 17,
           "engagement": 148,
-          "pes": 231.0
+          "pes": 231.0,
+          "views": 732,
+          "reach": 379
         },
         {
           "date": "2025-11-17",
@@ -2697,7 +3219,9 @@
           "comments": 39,
           "shares": 14,
           "engagement": 127,
-          "pes": 194.0
+          "pes": 194.0,
+          "views": 783,
+          "reach": 468
         },
         {
           "date": "2025-11-19",
@@ -2706,7 +3230,9 @@
           "comments": 48,
           "shares": 22,
           "engagement": 177,
-          "pes": 269.0
+          "pes": 269.0,
+          "views": 925,
+          "reach": 540
         },
         {
           "date": "2025-11-20",
@@ -2715,7 +3241,9 @@
           "comments": 34,
           "shares": 14,
           "engagement": 120,
-          "pes": 182.0
+          "pes": 182.0,
+          "views": 1048,
+          "reach": 520
         },
         {
           "date": "2025-11-21",
@@ -2724,7 +3252,9 @@
           "comments": 62,
           "shares": 24,
           "engagement": 188,
-          "pes": 298.0
+          "pes": 298.0,
+          "views": 877,
+          "reach": 403
         },
         {
           "date": "2025-11-24",
@@ -2733,7 +3263,9 @@
           "comments": 54,
           "shares": 25,
           "engagement": 183,
-          "pes": 287.0
+          "pes": 287.0,
+          "views": 877,
+          "reach": 438
         },
         {
           "date": "2025-11-28",
@@ -2742,7 +3274,9 @@
           "comments": 45,
           "shares": 21,
           "engagement": 147,
-          "pes": 234.0
+          "pes": 234.0,
+          "views": 903,
+          "reach": 543
         },
         {
           "date": "2025-11-29",
@@ -2751,7 +3285,9 @@
           "comments": 124,
           "shares": 45,
           "engagement": 458,
-          "pes": 672.0
+          "pes": 672.0,
+          "views": 6488,
+          "reach": 2306
         },
         {
           "date": "2025-12-05",
@@ -2760,7 +3296,9 @@
           "comments": 4,
           "shares": 0,
           "engagement": 32,
-          "pes": 36.0
+          "pes": 36.0,
+          "views": 0,
+          "reach": 276
         },
         {
           "date": "2025-12-06",
@@ -2769,7 +3307,9 @@
           "comments": 48,
           "shares": 14,
           "engagement": 142,
-          "pes": 218.0
+          "pes": 218.0,
+          "views": 931,
+          "reach": 546
         },
         {
           "date": "2025-12-07",
@@ -2778,7 +3318,9 @@
           "comments": 113,
           "shares": 66,
           "engagement": 562,
-          "pes": 807.0
+          "pes": 807.0,
+          "views": 3562,
+          "reach": 1620
         },
         {
           "date": "2025-12-18",
@@ -2787,7 +3329,9 @@
           "comments": 29,
           "shares": 16,
           "engagement": 144,
-          "pes": 205.0
+          "pes": 205.0,
+          "views": 1163,
+          "reach": 604
         },
         {
           "date": "2025-12-19",
@@ -2796,7 +3340,9 @@
           "comments": 43,
           "shares": 16,
           "engagement": 155,
-          "pes": 230.0
+          "pes": 230.0,
+          "views": 949,
+          "reach": 532
         },
         {
           "date": "2025-12-20",
@@ -2805,7 +3351,9 @@
           "comments": 28,
           "shares": 10,
           "engagement": 91,
-          "pes": 139.0
+          "pes": 139.0,
+          "views": 551,
+          "reach": 330
         },
         {
           "date": "2025-12-22",
@@ -2814,7 +3362,9 @@
           "comments": 7,
           "shares": 7,
           "engagement": 43,
-          "pes": 64.0
+          "pes": 64.0,
+          "views": 464,
+          "reach": 221
         },
         {
           "date": "2025-12-23",
@@ -2823,7 +3373,9 @@
           "comments": 23,
           "shares": 4,
           "engagement": 121,
-          "pes": 152.0
+          "pes": 152.0,
+          "views": 1046,
+          "reach": 675
         },
         {
           "date": "2025-12-24",
@@ -2832,7 +3384,9 @@
           "comments": 33,
           "shares": 14,
           "engagement": 135,
-          "pes": 196.0
+          "pes": 196.0,
+          "views": 1195,
+          "reach": 634
         }
       ],
       "61580479407070": [
@@ -2843,7 +3397,9 @@
           "comments": 153,
           "shares": 112,
           "engagement": 494,
-          "pes": 871.0
+          "pes": 871.0,
+          "views": 2349,
+          "reach": 933
         },
         {
           "date": "2025-10-03",
@@ -2852,7 +3408,9 @@
           "comments": 20,
           "shares": 11,
           "engagement": 88,
-          "pes": 130.0
+          "pes": 130.0,
+          "views": 561,
+          "reach": 291
         },
         {
           "date": "2025-10-05",
@@ -2861,7 +3419,9 @@
           "comments": 16,
           "shares": 16,
           "engagement": 84,
-          "pes": 132.0
+          "pes": 132.0,
+          "views": 15,
+          "reach": 223
         },
         {
           "date": "2025-10-06",
@@ -2870,7 +3430,9 @@
           "comments": 27,
           "shares": 25,
           "engagement": 130,
-          "pes": 207.0
+          "pes": 207.0,
+          "views": 15,
+          "reach": 250
         },
         {
           "date": "2025-10-11",
@@ -2879,7 +3441,9 @@
           "comments": 120,
           "shares": 33,
           "engagement": 413,
-          "pes": 599.0
+          "pes": 599.0,
+          "views": 1195,
+          "reach": 747
         },
         {
           "date": "2025-10-12",
@@ -2888,7 +3452,9 @@
           "comments": 9,
           "shares": 13,
           "engagement": 77,
-          "pes": 112.0
+          "pes": 112.0,
+          "views": 15,
+          "reach": 198
         },
         {
           "date": "2025-10-13",
@@ -2897,7 +3463,9 @@
           "comments": 21,
           "shares": 21,
           "engagement": 102,
-          "pes": 165.0
+          "pes": 165.0,
+          "views": 392,
+          "reach": 187
         },
         {
           "date": "2025-10-14",
@@ -2906,7 +3474,9 @@
           "comments": 39,
           "shares": 26,
           "engagement": 156,
-          "pes": 247.0
+          "pes": 247.0,
+          "views": 439,
+          "reach": 260
         },
         {
           "date": "2025-10-15",
@@ -2915,7 +3485,9 @@
           "comments": 136,
           "shares": 96,
           "engagement": 498,
-          "pes": 826.0
+          "pes": 826.0,
+          "views": 1459,
+          "reach": 660
         },
         {
           "date": "2025-10-19",
@@ -2924,7 +3496,9 @@
           "comments": 60,
           "shares": 43,
           "engagement": 221,
-          "pes": 367.0
+          "pes": 367.0,
+          "views": 601,
+          "reach": 331
         },
         {
           "date": "2025-10-21",
@@ -2933,7 +3507,9 @@
           "comments": 98,
           "shares": 79,
           "engagement": 419,
-          "pes": 675.0
+          "pes": 675.0,
+          "views": 731,
+          "reach": 568
         },
         {
           "date": "2025-10-22",
@@ -2942,7 +3518,9 @@
           "comments": 91,
           "shares": 59,
           "engagement": 281,
-          "pes": 490.0
+          "pes": 490.0,
+          "views": 840,
+          "reach": 335
         },
         {
           "date": "2025-10-23",
@@ -2951,7 +3529,9 @@
           "comments": 96,
           "shares": 81,
           "engagement": 317,
-          "pes": 575.0
+          "pes": 575.0,
+          "views": 1097,
+          "reach": 414
         },
         {
           "date": "2025-10-28",
@@ -2960,7 +3540,9 @@
           "comments": 98,
           "shares": 58,
           "engagement": 280,
-          "pes": 494.0
+          "pes": 494.0,
+          "views": 842,
+          "reach": 316
         },
         {
           "date": "2025-10-30",
@@ -2969,7 +3551,9 @@
           "comments": 16,
           "shares": 11,
           "engagement": 62,
-          "pes": 100.0
+          "pes": 100.0,
+          "views": 11,
+          "reach": 203
         },
         {
           "date": "2025-11-02",
@@ -2978,7 +3562,9 @@
           "comments": 100,
           "shares": 71,
           "engagement": 321,
-          "pes": 563.0
+          "pes": 563.0,
+          "views": 2329,
+          "reach": 749
         },
         {
           "date": "2025-11-06",
@@ -2987,7 +3573,9 @@
           "comments": 81,
           "shares": 49,
           "engagement": 264,
-          "pes": 443.0
+          "pes": 443.0,
+          "views": 1927,
+          "reach": 822
         },
         {
           "date": "2025-11-08",
@@ -2996,7 +3584,9 @@
           "comments": 12,
           "shares": 9,
           "engagement": 52,
-          "pes": 82.0
+          "pes": 82.0,
+          "views": 406,
+          "reach": 176
         },
         {
           "date": "2025-11-10",
@@ -3005,7 +3595,9 @@
           "comments": 17,
           "shares": 6,
           "engagement": 83,
-          "pes": 112.0
+          "pes": 112.0,
+          "views": 554,
+          "reach": 474
         },
         {
           "date": "2025-11-11",
@@ -3014,7 +3606,9 @@
           "comments": 3,
           "shares": 2,
           "engagement": 29,
-          "pes": 36.0
+          "pes": 36.0,
+          "views": 0,
+          "reach": 179
         },
         {
           "date": "2025-11-13",
@@ -3023,7 +3617,9 @@
           "comments": 63,
           "shares": 17,
           "engagement": 185,
-          "pes": 282.0
+          "pes": 282.0,
+          "views": 1612,
+          "reach": 724
         },
         {
           "date": "2025-11-18",
@@ -3032,7 +3628,9 @@
           "comments": 114,
           "shares": 54,
           "engagement": 380,
-          "pes": 602.0
+          "pes": 602.0,
+          "views": 2079,
+          "reach": 846
         },
         {
           "date": "2025-11-19",
@@ -3041,7 +3639,9 @@
           "comments": 4,
           "shares": 2,
           "engagement": 43,
-          "pes": 51.0
+          "pes": 51.0,
+          "views": 2,
+          "reach": 2
         },
         {
           "date": "2025-11-24",
@@ -3050,7 +3650,9 @@
           "comments": 26,
           "shares": 42,
           "engagement": 140,
-          "pes": 250.0
+          "pes": 250.0,
+          "views": 606,
+          "reach": 273
         },
         {
           "date": "2025-11-25",
@@ -3059,7 +3661,9 @@
           "comments": 24,
           "shares": 37,
           "engagement": 136,
-          "pes": 234.0
+          "pes": 234.0,
+          "views": 750,
+          "reach": 285
         },
         {
           "date": "2025-11-26",
@@ -3068,7 +3672,9 @@
           "comments": 72,
           "shares": 72,
           "engagement": 262,
-          "pes": 478.0
+          "pes": 478.0,
+          "views": 1173,
+          "reach": 558
         },
         {
           "date": "2025-11-27",
@@ -3077,7 +3683,9 @@
           "comments": 6,
           "shares": 2,
           "engagement": 33,
-          "pes": 43.0
+          "pes": 43.0,
+          "views": 449,
+          "reach": 199
         },
         {
           "date": "2025-11-28",
@@ -3086,7 +3694,9 @@
           "comments": 68,
           "shares": 106,
           "engagement": 364,
-          "pes": 644.0
+          "pes": 644.0,
+          "views": 2018,
+          "reach": 800
         },
         {
           "date": "2025-11-29",
@@ -3095,7 +3705,9 @@
           "comments": 55,
           "shares": 68,
           "engagement": 229,
-          "pes": 420.0
+          "pes": 420.0,
+          "views": 1013,
+          "reach": 408
         },
         {
           "date": "2025-12-02",
@@ -3104,7 +3716,9 @@
           "comments": 90,
           "shares": 39,
           "engagement": 257,
-          "pes": 425.0
+          "pes": 425.0,
+          "views": 1268,
+          "reach": 842
         },
         {
           "date": "2025-12-05",
@@ -3113,7 +3727,9 @@
           "comments": 51,
           "shares": 34,
           "engagement": 242,
-          "pes": 361.0
+          "pes": 361.0,
+          "views": 1751,
+          "reach": 915
         },
         {
           "date": "2025-12-07",
@@ -3122,7 +3738,9 @@
           "comments": 8,
           "shares": 2,
           "engagement": 73,
-          "pes": 85.0
+          "pes": 85.0,
+          "views": 416,
+          "reach": 206
         },
         {
           "date": "2025-12-08",
@@ -3131,7 +3749,9 @@
           "comments": 78,
           "shares": 24,
           "engagement": 259,
-          "pes": 385.0
+          "pes": 385.0,
+          "views": 1689,
+          "reach": 694
         },
         {
           "date": "2025-12-09",
@@ -3140,7 +3760,9 @@
           "comments": 37,
           "shares": 37,
           "engagement": 173,
-          "pes": 284.0
+          "pes": 284.0,
+          "views": 1201,
+          "reach": 560
         },
         {
           "date": "2025-12-10",
@@ -3149,7 +3771,9 @@
           "comments": 61,
           "shares": 89,
           "engagement": 359,
-          "pes": 598.0
+          "pes": 598.0,
+          "views": 1744,
+          "reach": 770
         },
         {
           "date": "2025-12-13",
@@ -3158,7 +3782,9 @@
           "comments": 7,
           "shares": 21,
           "engagement": 95,
-          "pes": 144.0
+          "pes": 144.0,
+          "views": 717,
+          "reach": 271
         },
         {
           "date": "2025-12-14",
@@ -3167,7 +3793,9 @@
           "comments": 33,
           "shares": 11,
           "engagement": 138,
-          "pes": 193.0
+          "pes": 193.0,
+          "views": 2205,
+          "reach": 1096
         },
         {
           "date": "2025-12-15",
@@ -3176,7 +3804,9 @@
           "comments": 31,
           "shares": 12,
           "engagement": 133,
-          "pes": 188.0
+          "pes": 188.0,
+          "views": 710,
+          "reach": 511
         },
         {
           "date": "2025-12-17",
@@ -3185,7 +3815,9 @@
           "comments": 27,
           "shares": 6,
           "engagement": 105,
-          "pes": 144.0
+          "pes": 144.0,
+          "views": 1054,
+          "reach": 383
         },
         {
           "date": "2025-12-18",
@@ -3194,7 +3826,9 @@
           "comments": 90,
           "shares": 60,
           "engagement": 374,
-          "pes": 584.0
+          "pes": 584.0,
+          "views": 2398,
+          "reach": 1275
         },
         {
           "date": "2025-12-19",
@@ -3203,7 +3837,9 @@
           "comments": 35,
           "shares": 15,
           "engagement": 109,
-          "pes": 174.0
+          "pes": 174.0,
+          "views": 934,
+          "reach": 538
         },
         {
           "date": "2025-12-20",
@@ -3212,7 +3848,9 @@
           "comments": 20,
           "shares": 4,
           "engagement": 79,
-          "pes": 107.0
+          "pes": 107.0,
+          "views": 509,
+          "reach": 307
         },
         {
           "date": "2025-12-21",
@@ -3221,7 +3859,9 @@
           "comments": 40,
           "shares": 9,
           "engagement": 161,
-          "pes": 219.0
+          "pes": 219.0,
+          "views": 1276,
+          "reach": 745
         },
         {
           "date": "2025-12-22",
@@ -3230,7 +3870,9 @@
           "comments": 27,
           "shares": 13,
           "engagement": 124,
-          "pes": 177.0
+          "pes": 177.0,
+          "views": 740,
+          "reach": 396
         },
         {
           "date": "2025-12-23",
@@ -3239,7 +3881,9 @@
           "comments": 40,
           "shares": 29,
           "engagement": 189,
-          "pes": 287.0
+          "pes": 287.0,
+          "views": 1311,
+          "reach": 736
         },
         {
           "date": "2025-12-24",
@@ -3248,7 +3892,9 @@
           "comments": 27,
           "shares": 16,
           "engagement": 104,
-          "pes": 163.0
+          "pes": 163.0,
+          "views": 485,
+          "reach": 333
         }
       ],
       "61580716220863": [
@@ -3259,7 +3905,9 @@
           "comments": 32,
           "shares": 35,
           "engagement": 177,
-          "pes": 279.0
+          "pes": 279.0,
+          "views": 852,
+          "reach": 517
         },
         {
           "date": "2025-10-03",
@@ -3268,7 +3916,9 @@
           "comments": 19,
           "shares": 19,
           "engagement": 99,
-          "pes": 156.0
+          "pes": 156.0,
+          "views": 358,
+          "reach": 194
         },
         {
           "date": "2025-10-04",
@@ -3277,7 +3927,9 @@
           "comments": 72,
           "shares": 31,
           "engagement": 268,
-          "pes": 402.0
+          "pes": 402.0,
+          "views": 1514,
+          "reach": 772
         },
         {
           "date": "2025-10-05",
@@ -3286,7 +3938,9 @@
           "comments": 82,
           "shares": 50,
           "engagement": 270,
-          "pes": 452.0
+          "pes": 452.0,
+          "views": 1200,
+          "reach": 741
         },
         {
           "date": "2025-10-07",
@@ -3295,7 +3949,9 @@
           "comments": 77,
           "shares": 28,
           "engagement": 241,
-          "pes": 374.0
+          "pes": 374.0,
+          "views": 662,
+          "reach": 576
         },
         {
           "date": "2025-10-08",
@@ -3304,7 +3960,9 @@
           "comments": 66,
           "shares": 59,
           "engagement": 234,
-          "pes": 418.0
+          "pes": 418.0,
+          "views": 1131,
+          "reach": 561
         },
         {
           "date": "2025-10-10",
@@ -3313,7 +3971,9 @@
           "comments": 12,
           "shares": 4,
           "engagement": 50,
-          "pes": 70.0
+          "pes": 70.0,
+          "views": 326,
+          "reach": 158
         },
         {
           "date": "2025-10-11",
@@ -3322,7 +3982,9 @@
           "comments": 34,
           "shares": 22,
           "engagement": 147,
-          "pes": 225.0
+          "pes": 225.0,
+          "views": 383,
+          "reach": 362
         },
         {
           "date": "2025-10-12",
@@ -3331,7 +3993,9 @@
           "comments": 40,
           "shares": 32,
           "engagement": 151,
-          "pes": 255.0
+          "pes": 255.0,
+          "views": 473,
+          "reach": 275
         },
         {
           "date": "2025-10-13",
@@ -3340,7 +4004,9 @@
           "comments": 34,
           "shares": 13,
           "engagement": 133,
-          "pes": 193.0
+          "pes": 193.0,
+          "views": 361,
+          "reach": 340
         },
         {
           "date": "2025-10-14",
@@ -3349,7 +4015,9 @@
           "comments": 101,
           "shares": 76,
           "engagement": 475,
-          "pes": 728.0
+          "pes": 728.0,
+          "views": 2108,
+          "reach": 1126
         },
         {
           "date": "2025-10-15",
@@ -3358,7 +4026,9 @@
           "comments": 20,
           "shares": 2,
           "engagement": 70,
-          "pes": 94.0
+          "pes": 94.0,
+          "views": 566,
+          "reach": 254
         },
         {
           "date": "2025-10-16",
@@ -3367,7 +4037,9 @@
           "comments": 95,
           "shares": 64,
           "engagement": 381,
-          "pes": 604.0
+          "pes": 604.0,
+          "views": 1957,
+          "reach": 716
         },
         {
           "date": "2025-10-17",
@@ -3376,7 +4048,9 @@
           "comments": 37,
           "shares": 0,
           "engagement": 107,
-          "pes": 144.0
+          "pes": 144.0,
+          "views": 0,
+          "reach": 214
         },
         {
           "date": "2025-10-19",
@@ -3385,7 +4059,9 @@
           "comments": 18,
           "shares": 0,
           "engagement": 59,
-          "pes": 77.0
+          "pes": 77.0,
+          "views": 0,
+          "reach": 172
         },
         {
           "date": "2025-10-20",
@@ -3394,7 +4070,9 @@
           "comments": 182,
           "shares": 108,
           "engagement": 580,
-          "pes": 978.0
+          "pes": 978.0,
+          "views": 2751,
+          "reach": 1165
         },
         {
           "date": "2025-10-21",
@@ -3403,7 +4081,9 @@
           "comments": 31,
           "shares": 21,
           "engagement": 116,
-          "pes": 189.0
+          "pes": 189.0,
+          "views": 41,
+          "reach": 28
         },
         {
           "date": "2025-10-23",
@@ -3412,7 +4092,9 @@
           "comments": 58,
           "shares": 49,
           "engagement": 216,
-          "pes": 372.0
+          "pes": 372.0,
+          "views": 1776,
+          "reach": 822
         },
         {
           "date": "2025-10-24",
@@ -3421,7 +4103,9 @@
           "comments": 47,
           "shares": 23,
           "engagement": 163,
-          "pes": 256.0
+          "pes": 256.0,
+          "views": 916,
+          "reach": 435
         },
         {
           "date": "2025-10-25",
@@ -3430,7 +4114,9 @@
           "comments": 35,
           "shares": 27,
           "engagement": 118,
-          "pes": 207.0
+          "pes": 207.0,
+          "views": 537,
+          "reach": 206
         },
         {
           "date": "2025-10-27",
@@ -3439,7 +4125,9 @@
           "comments": 10,
           "shares": 10,
           "engagement": 59,
-          "pes": 89.0
+          "pes": 89.0,
+          "views": 374,
+          "reach": 179
         },
         {
           "date": "2025-10-28",
@@ -3448,7 +4136,9 @@
           "comments": 70,
           "shares": 32,
           "engagement": 267,
-          "pes": 401.0
+          "pes": 401.0,
+          "views": 1781,
+          "reach": 775
         },
         {
           "date": "2025-10-29",
@@ -3457,7 +4147,9 @@
           "comments": 17,
           "shares": 4,
           "engagement": 66,
-          "pes": 91.0
+          "pes": 91.0,
+          "views": 379,
+          "reach": 202
         },
         {
           "date": "2025-10-30",
@@ -3466,7 +4158,9 @@
           "comments": 45,
           "shares": 31,
           "engagement": 194,
-          "pes": 301.0
+          "pes": 301.0,
+          "views": 1556,
+          "reach": 854
         },
         {
           "date": "2025-10-31",
@@ -3475,7 +4169,9 @@
           "comments": 36,
           "shares": 8,
           "engagement": 118,
-          "pes": 170.0
+          "pes": 170.0,
+          "views": 562,
+          "reach": 422
         },
         {
           "date": "2025-11-01",
@@ -3484,7 +4180,9 @@
           "comments": 55,
           "shares": 40,
           "engagement": 176,
-          "pes": 311.0
+          "pes": 311.0,
+          "views": 1027,
+          "reach": 511
         },
         {
           "date": "2025-11-02",
@@ -3493,7 +4191,9 @@
           "comments": 59,
           "shares": 32,
           "engagement": 197,
-          "pes": 320.0
+          "pes": 320.0,
+          "views": 1112,
+          "reach": 476
         },
         {
           "date": "2025-11-04",
@@ -3502,7 +4202,9 @@
           "comments": 48,
           "shares": 21,
           "engagement": 175,
-          "pes": 265.0
+          "pes": 265.0,
+          "views": 1216,
+          "reach": 678
         },
         {
           "date": "2025-11-05",
@@ -3511,7 +4213,9 @@
           "comments": 89,
           "shares": 79,
           "engagement": 353,
-          "pes": 600.0
+          "pes": 600.0,
+          "views": 3042,
+          "reach": 1604
         },
         {
           "date": "2025-11-06",
@@ -3520,7 +4224,9 @@
           "comments": 42,
           "shares": 19,
           "engagement": 140,
-          "pes": 220.0
+          "pes": 220.0,
+          "views": 539,
+          "reach": 350
         },
         {
           "date": "2025-11-08",
@@ -3529,7 +4235,9 @@
           "comments": 19,
           "shares": 10,
           "engagement": 68,
-          "pes": 107.0
+          "pes": 107.0,
+          "views": 444,
+          "reach": 233
         },
         {
           "date": "2025-11-09",
@@ -3538,7 +4246,9 @@
           "comments": 87,
           "shares": 28,
           "engagement": 231,
-          "pes": 374.0
+          "pes": 374.0,
+          "views": 1148,
+          "reach": 600
         },
         {
           "date": "2025-11-10",
@@ -3547,7 +4257,9 @@
           "comments": 4,
           "shares": 21,
           "engagement": 50,
-          "pes": 96.0
+          "pes": 96.0,
+          "views": 0,
+          "reach": 232
         },
         {
           "date": "2025-11-12",
@@ -3556,7 +4268,9 @@
           "comments": 120,
           "shares": 50,
           "engagement": 352,
-          "pes": 572.0
+          "pes": 572.0,
+          "views": 1425,
+          "reach": 735
         },
         {
           "date": "2025-11-14",
@@ -3565,7 +4279,9 @@
           "comments": 77,
           "shares": 37,
           "engagement": 218,
-          "pes": 369.0
+          "pes": 369.0,
+          "views": 954,
+          "reach": 524
         },
         {
           "date": "2025-11-17",
@@ -3574,7 +4290,9 @@
           "comments": 53,
           "shares": 16,
           "engagement": 150,
-          "pes": 235.0
+          "pes": 235.0,
+          "views": 690,
+          "reach": 393
         },
         {
           "date": "2025-11-19",
@@ -3583,7 +4301,9 @@
           "comments": 70,
           "shares": 25,
           "engagement": 232,
-          "pes": 352.0
+          "pes": 352.0,
+          "views": 971,
+          "reach": 584
         },
         {
           "date": "2025-11-21",
@@ -3592,7 +4312,9 @@
           "comments": 54,
           "shares": 26,
           "engagement": 171,
-          "pes": 277.0
+          "pes": 277.0,
+          "views": 1658,
+          "reach": 788
         },
         {
           "date": "2025-11-25",
@@ -3601,7 +4323,9 @@
           "comments": 31,
           "shares": 29,
           "engagement": 151,
-          "pes": 240.0
+          "pes": 240.0,
+          "views": 1254,
+          "reach": 429
         },
         {
           "date": "2025-11-27",
@@ -3610,7 +4334,9 @@
           "comments": 35,
           "shares": 20,
           "engagement": 133,
-          "pes": 208.0
+          "pes": 208.0,
+          "views": 1218,
+          "reach": 508
         },
         {
           "date": "2025-11-28",
@@ -3619,7 +4345,9 @@
           "comments": 51,
           "shares": 31,
           "engagement": 211,
-          "pes": 324.0
+          "pes": 324.0,
+          "views": 1602,
+          "reach": 716
         },
         {
           "date": "2025-11-29",
@@ -3628,7 +4356,9 @@
           "comments": 70,
           "shares": 62,
           "engagement": 297,
-          "pes": 491.0
+          "pes": 491.0,
+          "views": 2896,
+          "reach": 1433
         },
         {
           "date": "2025-11-30",
@@ -3637,7 +4367,9 @@
           "comments": 132,
           "shares": 39,
           "engagement": 358,
-          "pes": 568.0
+          "pes": 568.0,
+          "views": 3346,
+          "reach": 1234
         },
         {
           "date": "2025-12-01",
@@ -3646,7 +4378,9 @@
           "comments": 52,
           "shares": 24,
           "engagement": 152,
-          "pes": 252.0
+          "pes": 252.0,
+          "views": 996,
+          "reach": 534
         },
         {
           "date": "2025-12-05",
@@ -3655,7 +4389,9 @@
           "comments": 72,
           "shares": 23,
           "engagement": 238,
-          "pes": 356.0
+          "pes": 356.0,
+          "views": 2806,
+          "reach": 1316
         },
         {
           "date": "2025-12-06",
@@ -3664,7 +4400,9 @@
           "comments": 102,
           "shares": 36,
           "engagement": 294,
-          "pes": 468.0
+          "pes": 468.0,
+          "views": 2610,
+          "reach": 1230
         },
         {
           "date": "2025-12-07",
@@ -3673,7 +4411,9 @@
           "comments": 5,
           "shares": 3,
           "engagement": 43,
-          "pes": 54.0
+          "pes": 54.0,
+          "views": 8,
+          "reach": 5
         },
         {
           "date": "2025-12-08",
@@ -3682,7 +4422,9 @@
           "comments": 32,
           "shares": 7,
           "engagement": 93,
-          "pes": 139.0
+          "pes": 139.0,
+          "views": 850,
+          "reach": 336
         },
         {
           "date": "2025-12-10",
@@ -3691,7 +4433,9 @@
           "comments": 61,
           "shares": 29,
           "engagement": 177,
-          "pes": 296.0
+          "pes": 296.0,
+          "views": 1015,
+          "reach": 478
         },
         {
           "date": "2025-12-15",
@@ -3700,7 +4444,9 @@
           "comments": 197,
           "shares": 64,
           "engagement": 616,
-          "pes": 941.0
+          "pes": 941.0,
+          "views": 6762,
+          "reach": 3068
         },
         {
           "date": "2025-12-17",
@@ -3709,7 +4455,9 @@
           "comments": 31,
           "shares": 12,
           "engagement": 119,
-          "pes": 174.0
+          "pes": 174.0,
+          "views": 935,
+          "reach": 414
         },
         {
           "date": "2025-12-18",
@@ -3718,7 +4466,9 @@
           "comments": 21,
           "shares": 11,
           "engagement": 82,
-          "pes": 125.0
+          "pes": 125.0,
+          "views": 910,
+          "reach": 509
         },
         {
           "date": "2025-12-19",
@@ -3727,7 +4477,9 @@
           "comments": 79,
           "shares": 22,
           "engagement": 255,
-          "pes": 378.0
+          "pes": 378.0,
+          "views": 1969,
+          "reach": 852
         },
         {
           "date": "2025-12-20",
@@ -3736,7 +4488,9 @@
           "comments": 30,
           "shares": 14,
           "engagement": 145,
-          "pes": 203.0
+          "pes": 203.0,
+          "views": 1418,
+          "reach": 570
         },
         {
           "date": "2025-12-21",
@@ -3745,7 +4499,9 @@
           "comments": 26,
           "shares": 8,
           "engagement": 121,
-          "pes": 163.0
+          "pes": 163.0,
+          "views": 901,
+          "reach": 593
         },
         {
           "date": "2025-12-22",
@@ -3754,7 +4510,9 @@
           "comments": 54,
           "shares": 22,
           "engagement": 201,
-          "pes": 299.0
+          "pes": 299.0,
+          "views": 1335,
+          "reach": 690
         },
         {
           "date": "2025-12-23",
@@ -3763,7 +4521,9 @@
           "comments": 42,
           "shares": 13,
           "engagement": 197,
-          "pes": 265.0
+          "pes": 265.0,
+          "views": 1202,
+          "reach": 652
         },
         {
           "date": "2025-12-24",
@@ -3772,7 +4532,9 @@
           "comments": 23,
           "shares": 2,
           "engagement": 102,
-          "pes": 129.0
+          "pes": 129.0,
+          "views": 991,
+          "reach": 665
         }
       ]
     }
