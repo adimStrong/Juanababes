@@ -44,9 +44,12 @@ export const getDailyEngagement = async (days = 30, pageId = null) => {
     } else {
       dailyData = data.daily.all || data.daily;
     }
-    // Exclude last 2 days (today and yesterday - incomplete data)
-    const excludeRecent = dailyData.slice(0, -2);
-    return excludeRecent.slice(-days);
+    // Filter to show data up to today - 2 days (exclude incomplete recent data)
+    const cutoffDate = new Date();
+    cutoffDate.setDate(cutoffDate.getDate() - 2);
+    const cutoffStr = cutoffDate.toISOString().split('T')[0]; // YYYY-MM-DD
+    const filtered = dailyData.filter(d => d.date <= cutoffStr);
+    return filtered.slice(-days);
   }
   const params = new URLSearchParams({ days });
   if (pageId) params.append('page', pageId);
@@ -87,6 +90,18 @@ export const getPosts = async (params = {}) => {
   if (IS_PRODUCTION) {
     const data = await loadStaticData();
     let posts = data.posts || [];
+
+    // Filter to show posts up to today - 2 days (exclude incomplete recent data)
+    const cutoffDate = new Date();
+    cutoffDate.setDate(cutoffDate.getDate() - 2);
+    posts = posts.filter(p => {
+      if (!p.publish_time) return true;
+      // publish_time format: MM/DD/YYYY HH:MM
+      const parts = p.publish_time.split(' ')[0].split('/');
+      if (parts.length !== 3) return true;
+      const postDate = new Date(parts[2], parts[0] - 1, parts[1]); // year, month (0-based), day
+      return postDate <= cutoffDate;
+    });
 
     // Apply filters
     if (params.post_type) {
@@ -147,12 +162,15 @@ export const getDailyByPage = async (days = 60) => {
   const byPage = data.daily.byPage || {};
   const allDaily = data.daily.all || [];
 
-  // Exclude last 2 days (today and yesterday - incomplete data)
-  const excludeRecent = allDaily.slice(0, -2);
+  // Filter to show data up to today - 2 days (exclude incomplete recent data)
+  const cutoffDate = new Date();
+  cutoffDate.setDate(cutoffDate.getDate() - 2);
+  const cutoffStr = cutoffDate.toISOString().split('T')[0]; // YYYY-MM-DD
+  const filtered = allDaily.filter(d => d.date <= cutoffStr);
 
   // Create a map of all dates from the last N days
   const dateMap = {};
-  excludeRecent.slice(-days).forEach(entry => {
+  filtered.slice(-days).forEach(entry => {
     dateMap[entry.date] = { date: entry.date };
   });
 
