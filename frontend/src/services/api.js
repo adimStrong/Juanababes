@@ -44,7 +44,9 @@ export const getDailyEngagement = async (days = 30, pageId = null) => {
     } else {
       dailyData = data.daily.all || data.daily;
     }
-    return dailyData.slice(-days);
+    // Exclude last 2 days (today and yesterday - incomplete data)
+    const excludeRecent = dailyData.slice(0, -2);
+    return excludeRecent.slice(-days);
   }
   const params = new URLSearchParams({ days });
   if (pageId) params.append('page', pageId);
@@ -145,9 +147,12 @@ export const getDailyByPage = async (days = 60) => {
   const byPage = data.daily.byPage || {};
   const allDaily = data.daily.all || [];
 
+  // Exclude last 2 days (today and yesterday - incomplete data)
+  const excludeRecent = allDaily.slice(0, -2);
+
   // Create a map of all dates from the last N days
   const dateMap = {};
-  allDaily.slice(-days).forEach(entry => {
+  excludeRecent.slice(-days).forEach(entry => {
     dateMap[entry.date] = { date: entry.date };
   });
 
