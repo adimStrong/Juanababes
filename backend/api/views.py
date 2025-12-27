@@ -325,7 +325,9 @@ class PageComparisonView(APIView):
                     COALESCE(SUM(p.comments_count), 0) as total_comments,
                     COALESCE(SUM(p.shares_count), 0) as total_shares,
                     COALESCE(SUM(p.total_engagement), 0) as total_engagement,
-                    COALESCE(AVG(p.pes), 0) as avg_pes
+                    COALESCE(AVG(p.pes), 0) as avg_pes,
+                    COALESCE(SUM(p.views_count), 0) as total_views,
+                    COALESCE(SUM(p.reach_count), 0) as total_reach
                 FROM pages pg
                 LEFT JOIN posts p ON pg.page_id = p.page_id
                     AND (p.reactions_total > 0 OR p.comments_count > 0 OR p.shares_count > 0)
@@ -349,7 +351,9 @@ class PageComparisonView(APIView):
                     'total_shares': row[7],
                     'total_engagement': total_engagement,
                     'avg_engagement': round(total_engagement / post_count, 1) if post_count > 0 else 0,
-                    'avg_pes': round(row[9], 1)
+                    'avg_pes': round(row[9], 1),
+                    'total_views': row[10],
+                    'total_reach': row[11]
                 })
 
         return Response(result)

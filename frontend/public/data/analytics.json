@@ -123,7 +123,9 @@
       "total_shares": 1176,
       "total_engagement": 78396,
       "avg_engagement": 681.7,
-      "avg_pes": 719.5
+      "avg_pes": 719.5,
+      "total_views": 1109843,
+      "total_reach": 800249
     },
     {
       "page_id": "61580361006776",
@@ -136,7 +138,9 @@
       "total_shares": 2025,
       "total_engagement": 40890,
       "avg_engagement": 170.4,
-      "avg_pes": 203.3
+      "avg_pes": 203.3,
+      "total_views": 396694,
+      "total_reach": 279559
     },
     {
       "page_id": "61580716220863",
@@ -149,7 +153,9 @@
       "total_shares": 1623,
       "total_engagement": 11257,
       "avg_engagement": 107.2,
-      "avg_pes": 168.5
+      "avg_pes": 168.5,
+      "total_views": 71814,
+      "total_reach": 36006
     },
     {
       "page_id": "61580479407070",
@@ -162,7 +168,9 @@
       "total_shares": 1642,
       "total_engagement": 9117,
       "avg_engagement": 128.4,
-      "avg_pes": 207.7
+      "avg_pes": 207.7,
+      "total_views": 45888,
+      "total_reach": 22989
     },
     {
       "page_id": "61580395595183",
@@ -175,7 +183,9 @@
       "total_shares": 979,
       "total_engagement": 7199,
       "avg_engagement": 114.3,
-      "avg_pes": 175.9
+      "avg_pes": 175.9,
+      "total_views": 39398,
+      "total_reach": 22448
     }
   ],
   "postTypes": {

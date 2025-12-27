@@ -180,16 +180,17 @@ export default function Dashboard() {
       <div className="bg-white rounded-lg shadow p-6">
         <h2 className="text-lg font-semibold mb-4">5 Pages Performance Summary</h2>
         <div className="overflow-x-auto">
-          <table className="w-full text-sm min-w-[700px]">
+          <table className="w-full text-sm min-w-[900px]">
             <thead>
               <tr className="text-left text-gray-500 border-b">
                 <th className="pb-3 font-medium whitespace-nowrap">Page</th>
                 <th className="pb-3 font-medium text-right whitespace-nowrap">Posts</th>
+                <th className="pb-3 font-medium text-right whitespace-nowrap">Views</th>
+                <th className="pb-3 font-medium text-right whitespace-nowrap">Reach</th>
                 <th className="pb-3 font-medium text-right whitespace-nowrap">Reactions</th>
                 <th className="pb-3 font-medium text-right whitespace-nowrap">Comments</th>
                 <th className="pb-3 font-medium text-right whitespace-nowrap">Shares</th>
                 <th className="pb-3 font-medium text-right whitespace-nowrap">Engagement</th>
-                <th className="pb-3 font-medium text-right whitespace-nowrap">Avg/Post</th>
                 <th className="pb-3 font-medium text-right whitespace-nowrap">Avg PES</th>
               </tr>
             </thead>
@@ -208,14 +209,15 @@ export default function Dashboard() {
                     )}
                   </td>
                   <td className="py-3 text-right whitespace-nowrap">{page.post_count?.toLocaleString()}</td>
+                  <td className="py-3 text-right whitespace-nowrap text-purple-600">{page.total_views?.toLocaleString()}</td>
+                  <td className="py-3 text-right whitespace-nowrap text-cyan-600">{page.total_reach?.toLocaleString()}</td>
                   <td className="py-3 text-right whitespace-nowrap">{page.total_reactions?.toLocaleString()}</td>
                   <td className="py-3 text-right whitespace-nowrap">{page.total_comments?.toLocaleString()}</td>
                   <td className="py-3 text-right whitespace-nowrap">{page.total_shares?.toLocaleString()}</td>
                   <td className="py-3 text-right font-semibold text-indigo-600 whitespace-nowrap">
                     {page.total_engagement?.toLocaleString()}
                   </td>
-                  <td className="py-3 text-right whitespace-nowrap">{page.avg_engagement?.toLocaleString()}</td>
-                  <td className="py-3 text-right whitespace-nowrap">{page.avg_pes?.toLocaleString()}</td>
+                  <td className="py-3 text-right whitespace-nowrap text-green-600">{page.avg_pes?.toLocaleString()}</td>
                 </tr>
               ))}
             </tbody>
