@@ -12,6 +12,7 @@ Usage:
 import json
 import sqlite3
 from datetime import datetime
+from database import sync_metrics_to_posts
 
 DATABASE_PATH = "data/juanbabes_analytics.db"
 OUTPUT_PATH = "frontend/public/data/analytics.json"
@@ -1015,6 +1016,10 @@ def main():
     print("=" * 60)
     print("Exporting Static Data for Vercel")
     print("=" * 60)
+
+    # Sync latest metrics from post_metrics to posts table
+    print("\nSyncing metrics...")
+    sync_metrics_to_posts()
 
     stats_data = export_stats()
     pages_data = export_pages()

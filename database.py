@@ -349,6 +349,59 @@ def insert_metrics(
 
 
 # =============================================================================
+# Sync Metrics to Posts
+# =============================================================================
+
+def sync_metrics_to_posts():
+    """
+    Update posts table with latest metrics from post_metrics.
+    This ensures the posts table has up-to-date engagement data.
+    """
+    sql = """
+        UPDATE posts
+        SET
+            reactions_total = COALESCE((
+                SELECT pm.reactions FROM post_metrics pm
+                WHERE pm.post_id = posts.post_id
+                ORDER BY pm.metric_date DESC LIMIT 1
+            ), reactions_total, 0),
+            comments_count = COALESCE((
+                SELECT pm.comments FROM post_metrics pm
+                WHERE pm.post_id = posts.post_id
+                ORDER BY pm.metric_date DESC LIMIT 1
+            ), comments_count, 0),
+            shares_count = COALESCE((
+                SELECT pm.shares FROM post_metrics pm
+                WHERE pm.post_id = posts.post_id
+                ORDER BY pm.metric_date DESC LIMIT 1
+            ), shares_count, 0),
+            views_count = COALESCE((
+                SELECT pm.views FROM post_metrics pm
+                WHERE pm.post_id = posts.post_id
+                ORDER BY pm.metric_date DESC LIMIT 1
+            ), views_count, 0),
+            reach_count = COALESCE((
+                SELECT pm.reach FROM post_metrics pm
+                WHERE pm.post_id = posts.post_id
+                ORDER BY pm.metric_date DESC LIMIT 1
+            ), reach_count, 0),
+            total_engagement = COALESCE((
+                SELECT pm.reactions + pm.comments + pm.shares FROM post_metrics pm
+                WHERE pm.post_id = posts.post_id
+                ORDER BY pm.metric_date DESC LIMIT 1
+            ), total_engagement, 0)
+        WHERE EXISTS (
+            SELECT 1 FROM post_metrics pm WHERE pm.post_id = posts.post_id
+        )
+    """
+    with db_connection() as conn:
+        cursor = conn.execute(sql)
+        updated = cursor.rowcount
+        print(f"Synced metrics to {updated} posts")
+        return updated
+
+
+# =============================================================================
 # Import History Operations
 # =============================================================================
 
