@@ -273,7 +273,7 @@ def main():
     with open(OUTPUT_PATH, 'w') as f:
         json.dump(data, f, indent=2)
 
-    print(f"\n✅ Exported to: {OUTPUT_PATH}")
+    print(f"\n[OK] Exported to: {OUTPUT_PATH}")
     print("\nTo update Vercel:")
     print("  git add frontend/public/data/analytics.json")
     print("  git commit -m 'Update analytics data'")
