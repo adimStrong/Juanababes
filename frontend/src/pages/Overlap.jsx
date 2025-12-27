@@ -145,7 +145,7 @@ export default function Overlap() {
                   <td className="py-3 text-right font-semibold text-indigo-600">
                     {page.engagement?.toLocaleString()}
                   </td>
-                  <td className="py-3 text-right text-green-600">{page.avg_engagement}</td>
+                  <td className="py-3 text-right text-green-600">{page.avg_engagement?.toLocaleString()}</td>
                   <td className="py-3 text-right text-purple-600">
                     {page.views?.toLocaleString()}
                   </td>
@@ -304,7 +304,7 @@ export default function Overlap() {
                   </div>
                   <div className="flex justify-between text-xs">
                     <span className="text-gray-500">Avg PES</span>
-                    <span className="font-medium">{page.avg_pes}</span>
+                    <span className="font-medium">{page.avg_pes?.toLocaleString()}</span>
                   </div>
                 </div>
               </div>

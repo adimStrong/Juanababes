@@ -92,7 +92,7 @@ export default function Dashboard() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
         <StatCard
           title="Total Posts"
-          value={stats?.total_posts}
+          value={stats?.total_posts?.toLocaleString()}
           icon=""
           color="indigo"
         />
@@ -112,7 +112,7 @@ export default function Dashboard() {
         />
         <StatCard
           title="Total Engagement"
-          value={stats?.total_engagement}
+          value={stats?.total_engagement?.toLocaleString()}
           subtitle={`Avg: ${stats?.avg_engagement?.toLocaleString()}`}
           icon=""
           color="green"
