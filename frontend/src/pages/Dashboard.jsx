@@ -4,13 +4,14 @@ import {
   PieChart, Pie, Cell, BarChart, Bar, Legend
 } from 'recharts';
 import StatCard from '../components/StatCard';
-import { getStats, getDailyEngagement, getPostTypeStats, getTopPosts, getPages, getTimeSeries } from '../services/api';
+import { getStats, getDailyEngagement, getPostTypeStats, getTopPosts, getPages, getTimeSeries, getDailyByPage } from '../services/api';
 
 const COLORS = ['#6366f1', '#22c55e', '#f59e0b', '#ef4444', '#8b5cf6'];
 
 export default function Dashboard() {
   const [stats, setStats] = useState(null);
   const [dailyData, setDailyData] = useState([]);
+  const [dailyByPage, setDailyByPage] = useState({ data: [], pageNames: [] });
   const [postTypes, setPostTypes] = useState([]);
   const [topPosts, setTopPosts] = useState([]);
   const [pageComparison, setPageComparison] = useState([]);
@@ -24,13 +25,14 @@ export default function Dashboard() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const [statsData, dailyData, postTypeData, topPostsData, pageData, timeSeriesData] = await Promise.all([
+        const [statsData, dailyData, postTypeData, topPostsData, pageData, timeSeriesData, dailyByPageData] = await Promise.all([
           getStats(selectedPage),
           getDailyEngagement(60, selectedPage),
           getPostTypeStats(selectedPage),
           getTopPosts(5, 'engagement', selectedPage),
           getPages(),
           getTimeSeries(),
+          getDailyByPage(60),
         ]);
         setStats(statsData);
         setDailyData(dailyData);
@@ -38,6 +40,7 @@ export default function Dashboard() {
         setTopPosts(topPostsData);
         setPageComparison(pageData);
         setTimeSeries(timeSeriesData);
+        setDailyByPage(dailyByPageData);
       } catch (err) {
         setError(err.message);
       } finally {
@@ -404,21 +407,32 @@ export default function Dashboard() {
         </div>
       </div>
 
-      {/* Daily Content Count */}
+      {/* Daily Content Count - Stacked by Page */}
       <div className="bg-white rounded-lg shadow p-6">
-        <h2 className="text-lg font-semibold mb-4">Daily Content Published (60 days)</h2>
-        <ResponsiveContainer width="100%" height={250}>
-          <BarChart data={dailyData}>
+        <h2 className="text-lg font-semibold mb-4">Daily Content Published by Page (60 days)</h2>
+        <ResponsiveContainer width="100%" height={300}>
+          <BarChart data={dailyByPage.data}>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis
               dataKey="date"
               tickFormatter={(val) => val?.slice(5) || ''}
               fontSize={12}
             />
-            <YAxis fontSize={12} allowDecimals={false} tickFormatter={(val) => val?.toLocaleString()} />
-            <Tooltip formatter={(value) => value?.toLocaleString()} />
+            <YAxis fontSize={12} allowDecimals={false} />
+            <Tooltip
+              formatter={(value, name) => [value || 0, name]}
+              labelFormatter={(label) => `Date: ${label}`}
+            />
             <Legend />
-            <Bar dataKey="posts" name="Posts Published" fill="#6366f1" />
+            {dailyByPage.pageNames.map((pageName, index) => (
+              <Bar
+                key={pageName}
+                dataKey={pageName}
+                name={pageName}
+                stackId="a"
+                fill={COLORS[index % COLORS.length]}
+              />
+            ))}
           </BarChart>
         </ResponsiveContainer>
       </div>

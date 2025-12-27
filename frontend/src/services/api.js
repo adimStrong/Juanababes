@@ -139,6 +139,39 @@ export const getOverlaps = async () => {
   return api.get('/overlaps/').then(res => res.data);
 };
 
+export const getDailyByPage = async (days = 60) => {
+  const data = await loadStaticData();
+  const pages = data.pages || [];
+  const byPage = data.daily.byPage || {};
+  const allDaily = data.daily.all || [];
+
+  // Create a map of all dates from the last N days
+  const dateMap = {};
+  allDaily.slice(-days).forEach(entry => {
+    dateMap[entry.date] = { date: entry.date };
+  });
+
+  // Add each page's posts to the date map
+  pages.forEach(page => {
+    const pageDaily = byPage[page.page_id] || [];
+    pageDaily.forEach(entry => {
+      if (dateMap[entry.date]) {
+        // Use short page name (e.g., "Ashley" instead of "Juana Babe Ashley")
+        const shortName = page.page_name.replace('Juana Babe ', '');
+        dateMap[entry.date][shortName] = entry.posts;
+      }
+    });
+  });
+
+  // Convert to array and sort by date
+  const result = Object.values(dateMap).sort((a, b) => a.date.localeCompare(b.date));
+
+  // Get page names for the chart
+  const pageNames = pages.map(p => p.page_name.replace('Juana Babe ', ''));
+
+  return { data: result, pageNames };
+};
+
 export const getTimeSeries = async () => {
   if (IS_PRODUCTION) {
     const data = await loadStaticData();
