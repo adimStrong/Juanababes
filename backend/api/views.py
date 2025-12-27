@@ -355,6 +355,163 @@ class PageComparisonView(APIView):
         return Response(result)
 
 
+class TimeSeriesView(APIView):
+    """Time series analytics: monthly, weekly, day-of-week."""
+
+    def get(self, request):
+        from django.db import connection
+
+        with connection.cursor() as cursor:
+            # Monthly data
+            cursor.execute("""
+                SELECT
+                    strftime('%Y-%m', publish_time) as month,
+                    COUNT(*) as post_count,
+                    COALESCE(SUM(reactions_total), 0) as reactions,
+                    COALESCE(SUM(comments_count), 0) as comments,
+                    COALESCE(SUM(shares_count), 0) as shares,
+                    COALESCE(SUM(views_count), 0) as views,
+                    COALESCE(SUM(reach_count), 0) as reach,
+                    COALESCE(SUM(total_engagement), 0) as engagement,
+                    COALESCE(AVG(total_engagement), 0) as avg_engagement
+                FROM posts
+                WHERE publish_time IS NOT NULL
+                    AND (reactions_total > 0 OR comments_count > 0 OR shares_count > 0)
+                GROUP BY strftime('%Y-%m', publish_time)
+                ORDER BY month DESC
+                LIMIT 6
+            """)
+
+            monthly = []
+            prev_engagement = None
+            rows = list(cursor.fetchall())
+            for row in reversed(rows):
+                engagement = row[7]
+                mom_change = None
+                if prev_engagement and prev_engagement > 0:
+                    mom_change = round(((engagement - prev_engagement) / prev_engagement) * 100, 1)
+                monthly.append({
+                    "month": row[0],
+                    "posts": row[1],
+                    "reactions": row[2],
+                    "comments": row[3],
+                    "shares": row[4],
+                    "views": row[5],
+                    "reach": row[6],
+                    "engagement": engagement,
+                    "avg_engagement": round(row[8], 1),
+                    "mom_change": mom_change
+                })
+                prev_engagement = engagement
+
+            # Weekly data
+            cursor.execute("""
+                SELECT
+                    strftime('%Y-%W', publish_time) as week,
+                    MIN(DATE(publish_time)) as week_start,
+                    MAX(DATE(publish_time)) as week_end,
+                    COUNT(*) as post_count,
+                    COALESCE(SUM(views_count), 0) as views,
+                    COALESCE(SUM(reach_count), 0) as reach,
+                    COALESCE(SUM(total_engagement), 0) as engagement,
+                    COALESCE(AVG(total_engagement), 0) as avg_engagement
+                FROM posts
+                WHERE publish_time IS NOT NULL
+                    AND DATE(publish_time) >= DATE('now', '-28 days')
+                    AND (reactions_total > 0 OR comments_count > 0 OR shares_count > 0)
+                GROUP BY strftime('%Y-%W', publish_time)
+                ORDER BY week DESC
+                LIMIT 4
+            """)
+
+            weekly = []
+            prev_weekly = None
+            rows = list(cursor.fetchall())
+            for row in reversed(rows):
+                engagement = row[6]
+                wow_change = None
+                if prev_weekly and prev_weekly > 0:
+                    wow_change = round(((engagement - prev_weekly) / prev_weekly) * 100, 1)
+                weekly.append({
+                    "week": row[0],
+                    "week_start": row[1],
+                    "week_end": row[2],
+                    "posts": row[3],
+                    "views": row[4],
+                    "reach": row[5],
+                    "engagement": engagement,
+                    "avg_engagement": round(row[7], 1),
+                    "wow_change": wow_change
+                })
+                prev_weekly = engagement
+
+            # Day of week
+            cursor.execute("""
+                SELECT
+                    CASE CAST(strftime('%w', publish_time) AS INTEGER)
+                        WHEN 0 THEN 'Sun'
+                        WHEN 1 THEN 'Mon'
+                        WHEN 2 THEN 'Tue'
+                        WHEN 3 THEN 'Wed'
+                        WHEN 4 THEN 'Thu'
+                        WHEN 5 THEN 'Fri'
+                        WHEN 6 THEN 'Sat'
+                    END as day_name,
+                    CAST(strftime('%w', publish_time) AS INTEGER) as day_num,
+                    COUNT(*) as post_count,
+                    COALESCE(SUM(total_engagement), 0) as total_engagement,
+                    COALESCE(AVG(total_engagement), 0) as avg_engagement
+                FROM posts
+                WHERE publish_time IS NOT NULL
+                    AND (reactions_total > 0 OR comments_count > 0 OR shares_count > 0)
+                GROUP BY day_num
+                ORDER BY day_num
+            """)
+
+            day_of_week = []
+            max_avg = 0
+            rows = list(cursor.fetchall())
+            for row in rows:
+                if row[4] > max_avg:
+                    max_avg = row[4]
+
+            for row in rows:
+                day_of_week.append({
+                    "day": row[0],
+                    "day_num": row[1],
+                    "posts": row[2],
+                    "total_engagement": row[3],
+                    "avg_engagement": round(row[4], 1),
+                    "is_best": row[4] == max_avg
+                })
+
+        # Generate insights
+        insights = []
+        if len(monthly) >= 2:
+            recent = monthly[-1]
+            if recent.get('mom_change') and recent['mom_change'] > 0:
+                insights.append({
+                    "type": "trend_up",
+                    "title": "Engagement Growing",
+                    "text": f"Engagement up {recent['mom_change']}% this month"
+                })
+
+        best_day = next((d for d in day_of_week if d['is_best']), None)
+        if best_day:
+            insights.append({
+                "type": "best_day",
+                "title": f"{best_day['day']} is Best",
+                "text": f"{best_day['day']} generates {best_day['avg_engagement']:.0f} avg engagement"
+            })
+
+        return Response({
+            "monthly": list(reversed(monthly)),
+            "weekly": list(reversed(weekly)),
+            "dayOfWeek": day_of_week,
+            "insights": insights
+        })
+
+
 class CsvImportView(APIView):
     """Import CSV data from Meta Business Suite export."""
     parser_classes = (MultiPartParser, FormParser)
