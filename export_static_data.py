@@ -274,10 +274,14 @@ def export_daily():
     cursor.execute("SELECT DISTINCT page_id FROM posts WHERE reactions_total > 0")
     page_ids = [row[0] for row in cursor.fetchall()]
 
+    # Convert MM/DD/YYYY to YYYY-MM-DD for proper sorting
+    # publish_time format: "10/01/2025 00:01" -> "2025-10-01"
+    date_expr = "substr(publish_time, 7, 4) || '-' || substr(publish_time, 1, 2) || '-' || substr(publish_time, 4, 2)"
+
     # Aggregate daily data
-    cursor.execute("""
+    cursor.execute(f"""
         SELECT
-            DATE(publish_time) as post_date,
+            {date_expr} as post_date,
             COUNT(*) as post_count,
             COALESCE(SUM(reactions_total), 0) as reactions,
             COALESCE(SUM(comments_count), 0) as comments,
@@ -289,7 +293,7 @@ def export_daily():
         FROM posts
         WHERE publish_time IS NOT NULL
             AND (reactions_total > 0 OR comments_count > 0 OR shares_count > 0)
-        GROUP BY DATE(publish_time)
+        GROUP BY {date_expr}
         ORDER BY post_date
     """)
 
@@ -310,9 +314,9 @@ def export_daily():
     # Per-page daily data
     by_page = {}
     for page_id in page_ids:
-        cursor.execute("""
+        cursor.execute(f"""
             SELECT
-                DATE(publish_time) as post_date,
+                {date_expr} as post_date,
                 COUNT(*) as post_count,
                 COALESCE(SUM(reactions_total), 0) as reactions,
                 COALESCE(SUM(comments_count), 0) as comments,
@@ -324,7 +328,7 @@ def export_daily():
             FROM posts
             WHERE page_id = ? AND publish_time IS NOT NULL
                 AND (reactions_total > 0 OR comments_count > 0 OR shares_count > 0)
-            GROUP BY DATE(publish_time)
+            GROUP BY {date_expr}
             ORDER BY post_date
         """, (page_id,))
 
@@ -352,10 +356,15 @@ def export_time_series():
     conn = get_conn()
     cursor = conn.cursor()
 
+    # Convert MM/DD/YYYY to YYYY-MM-DD for proper date handling
+    # publish_time format: "10/01/2025 00:01" -> "2025-10-01"
+    date_expr = "substr(publish_time, 7, 4) || '-' || substr(publish_time, 1, 2) || '-' || substr(publish_time, 4, 2)"
+    month_expr = "substr(publish_time, 7, 4) || '-' || substr(publish_time, 1, 2)"
+
     # Monthly data
-    cursor.execute("""
+    cursor.execute(f"""
         SELECT
-            strftime('%Y-%m', publish_time) as month,
+            {month_expr} as month,
             COUNT(*) as post_count,
             COALESCE(SUM(reactions_total), 0) as reactions,
             COALESCE(SUM(comments_count), 0) as comments,
@@ -367,7 +376,7 @@ def export_time_series():
         FROM posts
         WHERE publish_time IS NOT NULL
             AND (reactions_total > 0 OR comments_count > 0 OR shares_count > 0)
-        GROUP BY strftime('%Y-%m', publish_time)
+        GROUP BY {month_expr}
         ORDER BY month DESC
         LIMIT 6
     """)
@@ -395,11 +404,13 @@ def export_time_series():
         prev_engagement = engagement
 
     # Weekly data (last 4 weeks)
-    cursor.execute("""
+    # Week expression: use strftime on the converted ISO date
+    week_expr = f"strftime('%Y-%W', {date_expr})"
+    cursor.execute(f"""
         SELECT
-            strftime('%Y-%W', publish_time) as week,
-            MIN(DATE(publish_time)) as week_start,
-            MAX(DATE(publish_time)) as week_end,
+            {week_expr} as week,
+            MIN({date_expr}) as week_start,
+            MAX({date_expr}) as week_end,
             COUNT(*) as post_count,
             COALESCE(SUM(reactions_total), 0) as reactions,
             COALESCE(SUM(comments_count), 0) as comments,
@@ -410,9 +421,9 @@ def export_time_series():
             COALESCE(AVG(total_engagement), 0) as avg_engagement
         FROM posts
         WHERE publish_time IS NOT NULL
-            AND DATE(publish_time) >= DATE('now', '-28 days')
+            AND {date_expr} >= DATE('now', '-28 days')
             AND (reactions_total > 0 OR comments_count > 0 OR shares_count > 0)
-        GROUP BY strftime('%Y-%W', publish_time)
+        GROUP BY {week_expr}
         ORDER BY week DESC
         LIMIT 4
     """)
@@ -442,9 +453,10 @@ def export_time_series():
         prev_weekly_engagement = engagement
 
     # Day of week analysis
-    cursor.execute("""
+    dow_expr = f"CAST(strftime('%w', {date_expr}) AS INTEGER)"
+    cursor.execute(f"""
         SELECT
-            CASE CAST(strftime('%w', publish_time) AS INTEGER)
+            CASE {dow_expr}
                 WHEN 0 THEN 'Sun'
                 WHEN 1 THEN 'Mon'
                 WHEN 2 THEN 'Tue'
@@ -453,7 +465,7 @@ def export_time_series():
                 WHEN 5 THEN 'Fri'
                 WHEN 6 THEN 'Sat'
             END as day_name,
-            CAST(strftime('%w', publish_time) AS INTEGER) as day_num,
+            {dow_expr} as day_num,
             COUNT(*) as post_count,
             COALESCE(SUM(total_engagement), 0) as total_engagement,
             COALESCE(AVG(total_engagement), 0) as avg_engagement,
