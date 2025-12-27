@@ -16,6 +16,7 @@ export default function Dashboard() {
   const [pageComparison, setPageComparison] = useState([]);
   const [timeSeries, setTimeSeries] = useState(null);
   const [selectedPage, setSelectedPage] = useState(null);
+  const [distributionView, setDistributionView] = useState('type'); // 'type' or 'page'
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -261,25 +262,70 @@ export default function Dashboard() {
           </ResponsiveContainer>
         </div>
 
-        {/* Post Type Distribution */}
+        {/* Post Type / Page Distribution */}
         <div className="bg-white rounded-lg shadow p-6">
-          <h2 className="text-lg font-semibold mb-4">Post Type Distribution</h2>
+          <div className="flex justify-between items-center mb-4">
+            <h2 className="text-lg font-semibold">
+              {distributionView === 'type' ? 'Post Type Distribution' : 'Distribution by Page'}
+            </h2>
+            <div className="flex bg-gray-100 rounded-lg p-1">
+              <button
+                onClick={() => setDistributionView('type')}
+                className={`px-3 py-1 text-sm rounded-md transition ${
+                  distributionView === 'type'
+                    ? 'bg-white shadow text-indigo-600 font-medium'
+                    : 'text-gray-600 hover:text-gray-900'
+                }`}
+              >
+                By Type
+              </button>
+              <button
+                onClick={() => setDistributionView('page')}
+                className={`px-3 py-1 text-sm rounded-md transition ${
+                  distributionView === 'page'
+                    ? 'bg-white shadow text-indigo-600 font-medium'
+                    : 'text-gray-600 hover:text-gray-900'
+                }`}
+              >
+                By Page
+              </button>
+            </div>
+          </div>
           <ResponsiveContainer width="100%" height={300}>
             <PieChart>
-              <Pie
-                data={postTypes}
-                dataKey="count"
-                nameKey="post_type"
-                cx="50%"
-                cy="50%"
-                outerRadius={100}
-                label={({ post_type, count }) => `${post_type}: ${count}`}
-              >
-                {postTypes.map((_, index) => (
-                  <Cell key={index} fill={COLORS[index % COLORS.length]} />
-                ))}
-              </Pie>
-              <Tooltip />
+              {distributionView === 'type' ? (
+                <Pie
+                  data={postTypes}
+                  dataKey="count"
+                  nameKey="post_type"
+                  cx="50%"
+                  cy="50%"
+                  outerRadius={100}
+                  label={({ post_type, count }) => `${post_type}: ${count}`}
+                >
+                  {postTypes.map((_, index) => (
+                    <Cell key={index} fill={COLORS[index % COLORS.length]} />
+                  ))}
+                </Pie>
+              ) : (
+                <Pie
+                  data={pageComparison.map(p => ({
+                    ...p,
+                    short_name: p.page_name?.replace('Juana Babe ', '')
+                  }))}
+                  dataKey="post_count"
+                  nameKey="short_name"
+                  cx="50%"
+                  cy="50%"
+                  outerRadius={100}
+                  label={({ short_name, post_count }) => `${short_name}: ${post_count}`}
+                >
+                  {pageComparison.map((_, index) => (
+                    <Cell key={index} fill={COLORS[index % COLORS.length]} />
+                  ))}
+                </Pie>
+              )}
+              <Tooltip formatter={(value, name) => [value?.toLocaleString(), name]} />
             </PieChart>
           </ResponsiveContainer>
         </div>
