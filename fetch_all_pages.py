@@ -94,8 +94,8 @@ def init_database():
 def fetch_page_posts(token, page_id, days_back=90):
     """Fetch all posts from a page."""
     since_date = datetime.now() - timedelta(days=days_back)
-    # Note: 'shares' is deprecated, we get it separately in process_post
-    fields = "id,message,created_time,permalink_url,type,status_type"
+    # Only basic fields - type/status_type/shares are deprecated
+    fields = "id,message,created_time,permalink_url"
 
     all_posts = []
     url = f"https://graph.facebook.com/v21.0/{page_id}/posts"
@@ -135,27 +135,42 @@ def fetch_page_posts(token, page_id, days_back=90):
 
 
 def process_post(token, post, page_id):
-    """Process a single post to get reactions/comments/shares."""
+    """Process a single post to get reactions/comments/shares/type."""
     post_id = post["id"]
 
     try:
         url = f"https://graph.facebook.com/v21.0/{post_id}"
         params = {
             "access_token": token,
-            "fields": "reactions.summary(total_count),comments.summary(total_count),shares"
+            "fields": "reactions.summary(total_count),comments.summary(total_count),shares,attachments{media_type}"
         }
         resp = requests.get(url, params=params)
         data = resp.json()
         total_reactions = data.get("reactions", {}).get("summary", {}).get("total_count", 0)
         comments_count = data.get("comments", {}).get("summary", {}).get("total_count", 0)
         shares_count = data.get("shares", {}).get("count", 0)
+
+        # Get post type from attachments
+        attachments = data.get("attachments", {}).get("data", [])
+        if attachments:
+            media_type = attachments[0].get("media_type", "").lower()
+            if media_type == "video":
+                post_type = "VIDEO"
+            elif media_type == "photo":
+                post_type = "IMAGE"
+            elif media_type == "album":
+                post_type = "IMAGE"
+            else:
+                post_type = "TEXT"
+        else:
+            post_type = "TEXT"
     except:
         total_reactions = 0
         comments_count = 0
         shares_count = 0
+        post_type = "TEXT"
 
     reactions = {"like": total_reactions, "love": 0, "haha": 0, "wow": 0, "sad": 0, "angry": 0}
-    post_type = classify_post_type(post)
 
     metrics = calculate_engagement_metrics({
         "reactions": reactions,
