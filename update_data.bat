@@ -13,7 +13,7 @@ if "%~1"=="" (
     echo.
     echo Looking for recent CSVs in Downloads folder...
     echo.
-    dir /b /o-d "%USERPROFILE%\Downloads\*.csv" 2>nul | head -5
+    for /f "tokens=*" %%i in ('dir /b /o-d "%USERPROFILE%\Downloads\*.csv" 2^>nul') do @echo %%i
     echo.
     pause
     exit /b 1
