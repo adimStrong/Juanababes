@@ -21,31 +21,24 @@ from datetime import datetime
 
 DATABASE_PATH = "data/juanbabes_analytics.db"
 
-# Page tokens from .env
+# Load tokens from page_tokens.json
+import json
+with open("page_tokens.json", "r") as f:
+    _tokens = json.load(f)
+
+# Page tokens - map page_id to token
 PAGE_TOKENS = {
-    "748765068327821": "EAAMdFdBzw7sBQSIriBg6oFVl5OjNFimTcrXoZB960BSx5xyrV4NKmepHknBErmUXlzJDRZBZBzJihVRddYEgYBlnCo7Wt18HkCweEZCv0rsQGtHUQaq7SFFUGV5cLHuwhZC7YwDgGQ8HQ8GoDhlu5QS0ydSMknRBzKH5MUVGsO4LgEHsGKgGq3VazxOlLoYz5PV71jl1PyrKRJZAhMbRhaPewt",  # Ashley
-    "679225045126482": "EAAMdFdBzw7sBQaZAzzDqehFuONRDlrCQ7XPPEmfHfwgKI0EgOpN6gspIdSEC5fbinC324WbExMnpsSmSXxyEk9yHx6HLt1QM7fhl7L5rd2PePJ03siffTG0JSIaLJ79AsGEv3CGgiw6baYaEgPn5AkhYwcL4AzeEI3UTF6ssDC9wAuVMAOVZA7RXHho7EZBsoJhO58VTKsRF4OAl7UZA",  # Jam
-    "580596361807116": "EAAMdFdBzw7sBQTti7nzopntIviMoA8BWisuukiiSSHt4SoB6mEc1hMgv5gCiZBpdsEI27QLqXzHYmouyEbawrvgP2Tqxtcs52UyIwoiiGtxL5cveovdbW4yFxSL1ZAVZCbPOE6CgmP0jTmZBHDEERGMJZCcGdTgjqZBBVGN8THMNYEcBoI48VqbMHtkLyl6ZAaIcIER9ZCKZAUyHJAnMk8RYxaYun",  # Abi
-    "1188691322622526": "EAAMdFdBzw7sBQXVRBdhePPRhmiL7eZBpA0Jfe4A1USkU4xDsTWZCkQrsO6v4TmWwmahpZAC1MmCHDAsUnPh25MdlTQzjyjQbelzQhqyz4LigBr5bCRAPm2uVn4arJoYfsXo17x2A4NUmLRHJamtr5gi2OiRe6ntWs7gYcYf7EBH6vh8i14YZCYKZAYP3tpZCkacsQjIS9KZBFEmwBSURtbQChFB",  # Sena
-    "754416584427163": "EAAMdFdBzw7sBQSBNZBnhRkjNlIoDXZAtL8XRU1bZAy2fbsZBCEHpMZCgK4kA3wGoPAXSB4B7W0irDPD6XfYgeAjkFipoH8SL2WlsNAnNW6AXvconV7WjQgfPwj0ikj1yZAVqqyQ5TZBnma67rdB1FeGBN1aVtJ3OfZCTKc91SD73ZAjZCgZCkZAf1dY1B2BZC5CPXVMAlSJ7hNXleU2PJNsfb1rdH",  # Zell
-}
-
-# Map database page_id to API page_id
-# The database has different IDs (from CSV import) than the actual Facebook page IDs
-PAGE_ID_MAP = {
-    "61580337497087": "748765068327821",  # Ashley
-    "61580395595183": "679225045126482",  # Jam
-    "61580716220863": "580596361807116",  # Abi
-    "61580361006776": "1188691322622526", # Sena
-    "61580479407070": "754416584427163",  # Zell
+    data["page_id"]: data["page_access_token"]
+    for data in _tokens.values()
+    if "page_id" in data and "page_access_token" in data
 }
 
 
-def get_token_for_page(db_page_id):
-    """Get the API token for a page based on database page_id."""
-    api_page_id = PAGE_ID_MAP.get(db_page_id)
-    if api_page_id:
-        return PAGE_TOKENS.get(api_page_id), api_page_id
+def get_token_for_page(page_id):
+    """Get the API token for a page."""
+    token = PAGE_TOKENS.get(page_id)
+    if token:
+        return token, page_id
     return None, None
 
 
@@ -136,11 +129,11 @@ def main():
     total_self = 0
     total_organic = 0
 
-    for i, (post_id, db_page_id, comments_count) in enumerate(posts):
-        token, api_page_id = get_token_for_page(db_page_id)
+    for i, (post_id, page_id, comments_count) in enumerate(posts):
+        token, api_page_id = get_token_for_page(page_id)
 
         if not token:
-            print(f"[{i+1}/{len(posts)}] No token for page {db_page_id}, skipping")
+            print(f"[{i+1}/{len(posts)}] No token for page {page_id}, skipping")
             errors += 1
             continue
 
