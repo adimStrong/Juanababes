@@ -60,9 +60,10 @@ echo Done.
 echo.
 
 echo [3/3] Committing and pushing to GitHub...
-git add frontend/public/data/analytics.json
-git commit -m "Update analytics data - %date%"
-git push origin main
+set GIT="C:\Users\us\AppData\Local\Programs\Git\bin\git.exe"
+%GIT% add frontend/public/data/analytics.json
+%GIT% commit -m "Update analytics data - %date%"
+%GIT% push origin main
 echo Done.
 echo.
 
