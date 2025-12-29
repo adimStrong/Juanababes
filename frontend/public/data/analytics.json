@@ -1,22 +1,22 @@
 {
   "stats": {
     "all": {
-      "total_posts": 630,
-      "total_pages": 5,
+      "total_posts": 713,
+      "total_pages": 10,
       "all_pages": 5,
-      "total_reactions": 142889,
-      "total_comments": 13996,
-      "total_shares": 7768,
-      "total_engagement": 164653,
-      "total_pes": 194185.0,
+      "total_reactions": 146530,
+      "total_comments": 14923,
+      "total_shares": 8196,
+      "total_engagement": 169649,
+      "total_pes": 201218.0,
       "total_views": 1864110,
       "total_reach": 1314702,
-      "avg_engagement": 261.4,
-      "avg_pes": 308.2,
-      "avg_views": 2958.9,
-      "avg_reach": 2086.8,
+      "avg_engagement": 237.9,
+      "avg_pes": 282.2,
+      "avg_views": 2614.5,
+      "avg_reach": 1843.9,
       "date_range_start": "2025-10-01",
-      "date_range_end": "2025-12-27"
+      "date_range_end": "2025-12-29"
     },
     "byPage": {
       "61580337497087": {
@@ -27,11 +27,11 @@
         "total_comments": 2286,
         "total_shares": 1337,
         "total_engagement": 93863,
-        "total_pes": 98823.0,
+        "total_pes": 99044.0,
         "total_views": 1286423,
         "total_reach": 938952,
         "avg_engagement": 763.1,
-        "avg_pes": 803.4,
+        "avg_pes": 805.2,
         "avg_views": 10458.7,
         "avg_reach": 7633.8,
         "date_range_start": "2025-10-09",
@@ -45,11 +45,11 @@
         "total_comments": 4003,
         "total_shares": 2073,
         "total_engagement": 42181,
-        "total_pes": 50330.0,
+        "total_pes": 50360.0,
         "total_views": 409622,
         "total_reach": 288627,
         "avg_engagement": 166.7,
-        "avg_pes": 198.9,
+        "avg_pes": 199.1,
         "avg_views": 1619.1,
         "avg_reach": 1140.8,
         "date_range_start": "2025-10-01",
@@ -99,15 +99,105 @@
         "total_comments": 3332,
         "total_shares": 1680,
         "total_engagement": 11872,
-        "total_pes": 18564.0,
+        "total_pes": 18567.0,
         "total_views": 79040,
         "total_reach": 39305,
         "avg_engagement": 104.1,
-        "avg_pes": 162.8,
+        "avg_pes": 162.9,
         "avg_views": 693.3,
         "avg_reach": 344.8,
         "date_range_start": "2025-10-01",
         "date_range_end": "2025-12-27"
+      },
+      "731608473377029": {
+        "total_posts": 10,
+        "total_pages": 1,
+        "all_pages": 1,
+        "total_reactions": 335,
+        "total_comments": 102,
+        "total_shares": 57,
+        "total_engagement": 494,
+        "total_pes": 710.0,
+        "total_views": 0,
+        "total_reach": 0,
+        "avg_engagement": 49.4,
+        "avg_pes": 71.0,
+        "avg_views": 0.0,
+        "avg_reach": 0.0,
+        "date_range_start": "2025-12-22",
+        "date_range_end": "2025-12-28"
+      },
+      "747721128429855": {
+        "total_posts": 23,
+        "total_pages": 1,
+        "all_pages": 1,
+        "total_reactions": 729,
+        "total_comments": 250,
+        "total_shares": 113,
+        "total_engagement": 1092,
+        "total_pes": 1568.0,
+        "total_views": 0,
+        "total_reach": 0,
+        "avg_engagement": 47.5,
+        "avg_pes": 68.2,
+        "avg_views": 0.0,
+        "avg_reach": 0.0,
+        "date_range_start": "2025-12-22",
+        "date_range_end": "2025-12-28"
+      },
+      "748765068327821": {
+        "total_posts": 8,
+        "total_pages": 1,
+        "all_pages": 1,
+        "total_reactions": 1080,
+        "total_comments": 206,
+        "total_shares": 65,
+        "total_engagement": 1351,
+        "total_pes": 1687.0,
+        "total_views": 0,
+        "total_reach": 0,
+        "avg_engagement": 168.9,
+        "avg_pes": 210.9,
+        "avg_views": 0.0,
+        "avg_reach": 0.0,
+        "date_range_start": "2025-12-22",
+        "date_range_end": "2025-12-28"
+      },
+      "754416584427163": {
+        "total_posts": 12,
+        "total_pages": 1,
+        "all_pages": 1,
+        "total_reactions": 463,
+        "total_comments": 139,
+        "total_shares": 96,
+        "total_engagement": 698,
+        "total_pes": 1029.0,
+        "total_views": 0,
+        "total_reach": 0,
+        "avg_engagement": 58.2,
+        "avg_pes": 85.8,
+        "avg_views": 0.0,
+        "avg_reach": 0.0,
+        "date_range_start": "2025-12-22",
+        "date_range_end": "2025-12-27"
+      },
+      "807965705726273": {
+        "total_posts": 30,
+        "total_pages": 1,
+        "all_pages": 1,
+        "total_reactions": 1034,
+        "total_comments": 230,
+        "total_shares": 97,
+        "total_engagement": 1361,
+        "total_pes": 1785.0,
+        "total_views": 0,
+        "total_reach": 0,
+        "avg_engagement": 45.4,
+        "avg_pes": 59.5,
+        "avg_views": 0.0,
+        "avg_reach": 0.0,
+        "date_range_start": "2025-12-22",
+        "date_range_end": "2025-12-29"
       }
     }
   },
@@ -123,7 +213,7 @@
       "total_shares": 1337,
       "total_engagement": 93863,
       "avg_engagement": 763.1,
-      "avg_pes": 803.4,
+      "avg_pes": 805.2,
       "total_views": 1286423,
       "total_reach": 938952
     },
@@ -138,7 +228,7 @@
       "total_shares": 2073,
       "total_engagement": 42181,
       "avg_engagement": 166.7,
-      "avg_pes": 198.9,
+      "avg_pes": 199.1,
       "total_views": 409622,
       "total_reach": 288627
     },
@@ -153,7 +243,7 @@
       "total_shares": 1680,
       "total_engagement": 11872,
       "avg_engagement": 104.1,
-      "avg_pes": 162.8,
+      "avg_pes": 162.9,
       "total_views": 79040,
       "total_reach": 39305
     },
@@ -192,33 +282,33 @@
     "all": [
       {
         "post_type": "Videos",
-        "count": 296,
-        "reactions": 48721,
-        "comments": 7947,
-        "shares": 4351,
-        "total_engagement": 61019,
-        "avg_engagement": 206.1,
-        "avg_pes": 262.4
+        "count": 354,
+        "reactions": 51121,
+        "comments": 8503,
+        "shares": 4639,
+        "total_engagement": 64263,
+        "avg_engagement": 181.5,
+        "avg_pes": 232.0
       },
       {
         "post_type": "Photos",
-        "count": 217,
-        "reactions": 10423,
-        "comments": 3918,
-        "shares": 2158,
-        "total_engagement": 16499,
-        "avg_engagement": 76.0,
-        "avg_pes": 114.0
+        "count": 233,
+        "reactions": 11490,
+        "comments": 4237,
+        "shares": 2265,
+        "total_engagement": 17992,
+        "avg_engagement": 77.2,
+        "avg_pes": 114.8
       },
       {
         "post_type": "Text",
-        "count": 68,
-        "reactions": 2041,
-        "comments": 743,
-        "shares": 300,
-        "total_engagement": 3084,
-        "avg_engagement": 45.4,
-        "avg_pes": 65.1
+        "count": 77,
+        "reactions": 2215,
+        "comments": 795,
+        "shares": 333,
+        "total_engagement": 3343,
+        "avg_engagement": 43.4,
+        "avg_pes": 62.4
       },
       {
         "post_type": "Reels",
@@ -228,7 +318,7 @@
         "shares": 959,
         "total_engagement": 83861,
         "avg_engagement": 2045.4,
-        "avg_pes": 2125.2
+        "avg_pes": 2129.2
       },
       {
         "post_type": "Live",
@@ -261,7 +351,7 @@
           "shares": 934,
           "total_engagement": 83727,
           "avg_engagement": 2093.2,
-          "avg_pes": 2173.0
+          "avg_pes": 2177.2
         },
         {
           "post_type": "Videos",
@@ -271,7 +361,7 @@
           "shares": 217,
           "total_engagement": 7119,
           "avg_engagement": 374.7,
-          "avg_pes": 419.6
+          "avg_pes": 422.6
         },
         {
           "post_type": "Text",
@@ -303,7 +393,7 @@
           "shares": 1250,
           "total_engagement": 35440,
           "avg_engagement": 260.6,
-          "avg_pes": 296.8
+          "avg_pes": 297.0
         },
         {
           "post_type": "Photos",
@@ -470,6 +560,166 @@
           "total_engagement": 22,
           "avg_engagement": 22.0,
           "avg_pes": 25.0
+        }
+      ],
+      "731608473377029": [
+        {
+          "post_type": "Videos",
+          "count": 7,
+          "reactions": 209,
+          "comments": 64,
+          "shares": 35,
+          "total_engagement": 308,
+          "avg_engagement": 44.0,
+          "avg_pes": 63.1
+        },
+        {
+          "post_type": "Photos",
+          "count": 2,
+          "reactions": 78,
+          "comments": 20,
+          "shares": 9,
+          "total_engagement": 107,
+          "avg_engagement": 53.5,
+          "avg_pes": 72.5
+        },
+        {
+          "post_type": "Text",
+          "count": 1,
+          "reactions": 48,
+          "comments": 18,
+          "shares": 13,
+          "total_engagement": 79,
+          "avg_engagement": 79.0,
+          "avg_pes": 123.0
+        }
+      ],
+      "747721128429855": [
+        {
+          "post_type": "Videos",
+          "count": 19,
+          "reactions": 596,
+          "comments": 200,
+          "shares": 90,
+          "total_engagement": 886,
+          "avg_engagement": 46.6,
+          "avg_pes": 66.6
+        },
+        {
+          "post_type": "Photos",
+          "count": 3,
+          "reactions": 123,
+          "comments": 50,
+          "shares": 23,
+          "total_engagement": 196,
+          "avg_engagement": 65.3,
+          "avg_pes": 97.3
+        },
+        {
+          "post_type": "Text",
+          "count": 1,
+          "reactions": 10,
+          "comments": 0,
+          "shares": 0,
+          "total_engagement": 10,
+          "avg_engagement": 10.0,
+          "avg_pes": 10.0
+        }
+      ],
+      "748765068327821": [
+        {
+          "post_type": "Photos",
+          "count": 6,
+          "reactions": 673,
+          "comments": 191,
+          "shares": 54,
+          "total_engagement": 918,
+          "avg_engagement": 153.0,
+          "avg_pes": 202.8
+        },
+        {
+          "post_type": "Videos",
+          "count": 1,
+          "reactions": 394,
+          "comments": 13,
+          "shares": 10,
+          "total_engagement": 417,
+          "avg_engagement": 417.0,
+          "avg_pes": 450.0
+        },
+        {
+          "post_type": "Text",
+          "count": 1,
+          "reactions": 13,
+          "comments": 2,
+          "shares": 1,
+          "total_engagement": 16,
+          "avg_engagement": 16.0,
+          "avg_pes": 20.0
+        }
+      ],
+      "754416584427163": [
+        {
+          "post_type": "Videos",
+          "count": 8,
+          "reactions": 321,
+          "comments": 98,
+          "shares": 76,
+          "total_engagement": 495,
+          "avg_engagement": 61.9,
+          "avg_pes": 93.1
+        },
+        {
+          "post_type": "Text",
+          "count": 2,
+          "reactions": 42,
+          "comments": 16,
+          "shares": 8,
+          "total_engagement": 66,
+          "avg_engagement": 33.0,
+          "avg_pes": 49.0
+        },
+        {
+          "post_type": "Photos",
+          "count": 2,
+          "reactions": 100,
+          "comments": 25,
+          "shares": 12,
+          "total_engagement": 137,
+          "avg_engagement": 68.5,
+          "avg_pes": 93.0
+        }
+      ],
+      "807965705726273": [
+        {
+          "post_type": "Videos",
+          "count": 23,
+          "reactions": 880,
+          "comments": 181,
+          "shares": 77,
+          "total_engagement": 1138,
+          "avg_engagement": 49.5,
+          "avg_pes": 64.0
+        },
+        {
+          "post_type": "Text",
+          "count": 4,
+          "reactions": 61,
+          "comments": 16,
+          "shares": 11,
+          "total_engagement": 88,
+          "avg_engagement": 22.0,
+          "avg_pes": 31.5
+        },
+        {
+          "post_type": "Photos",
+          "count": 3,
+          "reactions": 93,
+          "comments": 33,
+          "shares": 9,
+          "total_engagement": 135,
+          "avg_engagement": 45.0,
+          "avg_pes": 62.0
         }
       ]
     }
@@ -1165,7 +1415,7 @@
         "comments": 194,
         "shares": 98,
         "engagement": 1548,
-        "pes": 1938.0,
+        "pes": 1951.0,
         "views": 16542,
         "reach": 12056
       },
@@ -1176,7 +1426,7 @@
         "comments": 147,
         "shares": 43,
         "engagement": 759,
-        "pes": 992.0,
+        "pes": 994.0,
         "views": 8342,
         "reach": 4818
       },
@@ -1209,7 +1459,7 @@
         "comments": 331,
         "shares": 173,
         "engagement": 13963,
-        "pes": 14640.0,
+        "pes": 14645.0,
         "views": 125673,
         "reach": 105289
       },
@@ -1242,7 +1492,7 @@
         "comments": 155,
         "shares": 90,
         "engagement": 1339,
-        "pes": 1674.0,
+        "pes": 1682.0,
         "views": 14482,
         "reach": 9030
       },
@@ -1253,7 +1503,7 @@
         "comments": 193,
         "shares": 167,
         "engagement": 10565,
-        "pes": 11092.0,
+        "pes": 11096.0,
         "views": 85816,
         "reach": 63462
       },
@@ -1264,7 +1514,7 @@
         "comments": 198,
         "shares": 62,
         "engagement": 661,
-        "pes": 983.0,
+        "pes": 984.0,
         "views": 5853,
         "reach": 3770
       },
@@ -1275,7 +1525,7 @@
         "comments": 91,
         "shares": 43,
         "engagement": 1200,
-        "pes": 1377.0,
+        "pes": 1383.0,
         "views": 13543,
         "reach": 10316
       },
@@ -1286,7 +1536,7 @@
         "comments": 73,
         "shares": 137,
         "engagement": 1366,
-        "pes": 1713.0,
+        "pes": 1715.0,
         "views": 16264,
         "reach": 11883
       },
@@ -1297,7 +1547,7 @@
         "comments": 101,
         "shares": 38,
         "engagement": 950,
-        "pes": 1127.0,
+        "pes": 1131.0,
         "views": 12476,
         "reach": 9280
       },
@@ -1308,7 +1558,7 @@
         "comments": 259,
         "shares": 93,
         "engagement": 913,
-        "pes": 1358.0,
+        "pes": 1359.0,
         "views": 12808,
         "reach": 5803
       },
@@ -1319,7 +1569,7 @@
         "comments": 107,
         "shares": 50,
         "engagement": 1407,
-        "pes": 1614.0,
+        "pes": 1617.0,
         "views": 22227,
         "reach": 16732
       },
@@ -1341,7 +1591,7 @@
         "comments": 319,
         "shares": 200,
         "engagement": 7707,
-        "pes": 8426.0,
+        "pes": 8435.0,
         "views": 133206,
         "reach": 85897
       },
@@ -1352,7 +1602,7 @@
         "comments": 289,
         "shares": 127,
         "engagement": 3856,
-        "pes": 4399.0,
+        "pes": 4414.0,
         "views": 59923,
         "reach": 46811
       },
@@ -1363,7 +1613,7 @@
         "comments": 288,
         "shares": 144,
         "engagement": 7462,
-        "pes": 8038.0,
+        "pes": 8053.0,
         "views": 104998,
         "reach": 79461
       },
@@ -1374,75 +1624,97 @@
         "comments": 129,
         "shares": 45,
         "engagement": 1395,
-        "pes": 1614.0,
+        "pes": 1634.0,
         "views": 17073,
         "reach": 12289
       },
       {
         "date": "2025-12-22",
-        "posts": 15,
-        "reactions": 2591,
-        "comments": 294,
-        "shares": 109,
-        "engagement": 2994,
-        "pes": 3506.0,
+        "posts": 29,
+        "reactions": 3115,
+        "comments": 497,
+        "shares": 190,
+        "engagement": 3802,
+        "pes": 4687.0,
         "views": 42381,
         "reach": 32041
       },
       {
         "date": "2025-12-23",
-        "posts": 22,
-        "reactions": 20311,
-        "comments": 417,
-        "shares": 254,
-        "engagement": 20982,
-        "pes": 21907.0,
+        "posts": 34,
+        "reactions": 20875,
+        "comments": 582,
+        "shares": 316,
+        "engagement": 21773,
+        "pes": 23008.0,
         "views": 264281,
         "reach": 186100
       },
       {
         "date": "2025-12-24",
-        "posts": 15,
-        "reactions": 23177,
-        "comments": 354,
-        "shares": 221,
-        "engagement": 23752,
-        "pes": 24548.0,
+        "posts": 31,
+        "reactions": 23871,
+        "comments": 502,
+        "shares": 275,
+        "engagement": 24648,
+        "pes": 25719.0,
         "views": 270971,
         "reach": 216439
       },
       {
         "date": "2025-12-25",
-        "posts": 10,
-        "reactions": 2509,
-        "comments": 121,
-        "shares": 58,
-        "engagement": 2688,
-        "pes": 2925.0,
+        "posts": 18,
+        "reactions": 2778,
+        "comments": 176,
+        "shares": 90,
+        "engagement": 3044,
+        "pes": 3411.0,
         "views": 33705,
         "reach": 26695
       },
       {
         "date": "2025-12-26",
-        "posts": 14,
-        "reactions": 3122,
-        "comments": 274,
-        "shares": 119,
-        "engagement": 3515,
-        "pes": 4027.0,
+        "posts": 26,
+        "reactions": 3630,
+        "comments": 408,
+        "shares": 186,
+        "engagement": 4224,
+        "pes": 5018.0,
         "views": 34562,
         "reach": 23548
       },
       {
         "date": "2025-12-27",
-        "posts": 12,
-        "reactions": 4724,
-        "comments": 190,
-        "shares": 83,
-        "engagement": 4997,
-        "pes": 5353.0,
+        "posts": 20,
+        "reactions": 5077,
+        "comments": 313,
+        "shares": 151,
+        "engagement": 5541,
+        "pes": 6229.0,
         "views": 45740,
         "reach": 35229
+      },
+      {
+        "date": "2025-12-28",
+        "posts": 12,
+        "reactions": 723,
+        "comments": 96,
+        "shares": 64,
+        "engagement": 883,
+        "pes": 1107.0,
+        "views": 0,
+        "reach": 0
+      },
+      {
+        "date": "2025-12-29",
+        "posts": 1,
+        "reactions": 6,
+        "comments": 3,
+        "shares": 0,
+        "engagement": 9,
+        "pes": 12.0,
+        "views": 0,
+        "reach": 0
       }
     ],
     "byPage": {
@@ -1828,7 +2100,7 @@
           "comments": 71,
           "shares": 39,
           "engagement": 1105,
-          "pes": 1254.0,
+          "pes": 1267.0,
           "views": 12729,
           "reach": 9359
         },
@@ -1839,7 +2111,7 @@
           "comments": 36,
           "shares": 16,
           "engagement": 366,
-          "pes": 434.0,
+          "pes": 436.0,
           "views": 4036,
           "reach": 2788
         },
@@ -1861,7 +2133,7 @@
           "comments": 73,
           "shares": 17,
           "engagement": 679,
-          "pes": 786.0,
+          "pes": 789.0,
           "views": 8830,
           "reach": 7016
         },
@@ -1894,7 +2166,7 @@
           "comments": 50,
           "shares": 16,
           "engagement": 589,
-          "pes": 671.0,
+          "pes": 679.0,
           "views": 5604,
           "reach": 4157
         },
@@ -1916,7 +2188,7 @@
           "comments": 26,
           "shares": 20,
           "engagement": 721,
-          "pes": 787.0,
+          "pes": 793.0,
           "views": 6860,
           "reach": 5648
         },
@@ -1927,7 +2199,7 @@
           "comments": 33,
           "shares": 46,
           "engagement": 865,
-          "pes": 990.0,
+          "pes": 992.0,
           "views": 10707,
           "reach": 8821
         },
@@ -1938,7 +2210,7 @@
           "comments": 27,
           "shares": 12,
           "engagement": 422,
-          "pes": 473.0,
+          "pes": 477.0,
           "views": 5750,
           "reach": 4607
         },
@@ -1949,7 +2221,7 @@
           "comments": 77,
           "shares": 34,
           "engagement": 1288,
-          "pes": 1433.0,
+          "pes": 1436.0,
           "views": 19157,
           "reach": 15391
         },
@@ -1960,7 +2232,7 @@
           "comments": 142,
           "shares": 98,
           "engagement": 6912,
-          "pes": 7250.0,
+          "pes": 7259.0,
           "views": 124939,
           "reach": 81707
         },
@@ -1971,7 +2243,7 @@
           "comments": 78,
           "shares": 57,
           "engagement": 3083,
-          "pes": 3275.0,
+          "pes": 3290.0,
           "views": 52215,
           "reach": 42749
         },
@@ -1982,7 +2254,7 @@
           "comments": 146,
           "shares": 85,
           "engagement": 6818,
-          "pes": 7134.0,
+          "pes": 7149.0,
           "views": 98779,
           "reach": 75435
         },
@@ -2004,7 +2276,7 @@
           "comments": 148,
           "shares": 45,
           "engagement": 2383,
-          "pes": 2621.0,
+          "pes": 2629.0,
           "views": 37371,
           "reach": 28955
         },
@@ -2015,7 +2287,7 @@
           "comments": 256,
           "shares": 195,
           "engagement": 20157,
-          "pes": 20803.0,
+          "pes": 20824.0,
           "views": 257819,
           "reach": 182289
         },
@@ -2026,7 +2298,7 @@
           "comments": 249,
           "shares": 184,
           "engagement": 23270,
-          "pes": 23887.0,
+          "pes": 23906.0,
           "views": 266929,
           "reach": 213813
         },
@@ -2037,7 +2309,7 @@
           "comments": 21,
           "shares": 18,
           "engagement": 2168,
-          "pes": 2225.0,
+          "pes": 2236.0,
           "views": 28823,
           "reach": 23338
         },
@@ -2048,7 +2320,7 @@
           "comments": 102,
           "shares": 45,
           "engagement": 2723,
-          "pes": 2915.0,
+          "pes": 2929.0,
           "views": 27353,
           "reach": 19711
         },
@@ -2059,7 +2331,7 @@
           "comments": 104,
           "shares": 45,
           "engagement": 4608,
-          "pes": 4802.0,
+          "pes": 4870.0,
           "views": 42887,
           "reach": 33534
         }
@@ -2798,7 +3070,7 @@
           "comments": 108,
           "shares": 106,
           "engagement": 12848,
-          "pes": 13168.0,
+          "pes": 13170.0,
           "views": 113222,
           "reach": 96457
         },
@@ -2842,7 +3114,7 @@
           "comments": 71,
           "shares": 49,
           "engagement": 10029,
-          "pes": 10198.0,
+          "pes": 10202.0,
           "views": 83033,
           "reach": 62200
         },
@@ -2853,7 +3125,7 @@
           "comments": 194,
           "shares": 58,
           "engagement": 622,
-          "pes": 932.0,
+          "pes": 933.0,
           "views": 5192,
           "reach": 3467
         },
@@ -2963,7 +3235,7 @@
           "comments": 48,
           "shares": 20,
           "engagement": 1025,
-          "pes": 1113.0,
+          "pes": 1133.0,
           "views": 11817,
           "reach": 9517
         },
@@ -3029,7 +3301,7 @@
           "comments": 56,
           "shares": 20,
           "engagement": 250,
-          "pes": 346.0,
+          "pes": 349.0,
           "views": 1896,
           "reach": 1158
         }
@@ -4608,7 +4880,7 @@
           "comments": 197,
           "shares": 64,
           "engagement": 617,
-          "pes": 942.0,
+          "pes": 943.0,
           "views": 6961,
           "reach": 3135
         },
@@ -4729,9 +5001,393 @@
           "comments": 24,
           "shares": 12,
           "engagement": 104,
-          "pes": 152.0,
+          "pes": 154.0,
           "views": 749,
           "reach": 353
+        }
+      ],
+      "731608473377029": [
+        {
+          "date": "2025-12-22",
+          "posts": 1,
+          "reactions": 28,
+          "comments": 7,
+          "shares": 7,
+          "engagement": 42,
+          "pes": 63.0,
+          "views": 0,
+          "reach": 0
+        },
+        {
+          "date": "2025-12-23",
+          "posts": 1,
+          "reactions": 50,
+          "comments": 13,
+          "shares": 2,
+          "engagement": 65,
+          "pes": 82.0,
+          "views": 0,
+          "reach": 0
+        },
+        {
+          "date": "2025-12-24",
+          "posts": 3,
+          "reactions": 87,
+          "comments": 24,
+          "shares": 5,
+          "engagement": 116,
+          "pes": 150.0,
+          "views": 0,
+          "reach": 0
+        },
+        {
+          "date": "2025-12-25",
+          "posts": 1,
+          "reactions": 48,
+          "comments": 18,
+          "shares": 13,
+          "engagement": 79,
+          "pes": 123.0,
+          "views": 0,
+          "reach": 0
+        },
+        {
+          "date": "2025-12-26",
+          "posts": 1,
+          "reactions": 35,
+          "comments": 14,
+          "shares": 8,
+          "engagement": 57,
+          "pes": 87.0,
+          "views": 0,
+          "reach": 0
+        },
+        {
+          "date": "2025-12-27",
+          "posts": 1,
+          "reactions": 50,
+          "comments": 17,
+          "shares": 15,
+          "engagement": 82,
+          "pes": 129.0,
+          "views": 0,
+          "reach": 0
+        },
+        {
+          "date": "2025-12-28",
+          "posts": 2,
+          "reactions": 37,
+          "comments": 9,
+          "shares": 7,
+          "engagement": 53,
+          "pes": 76.0,
+          "views": 0,
+          "reach": 0
+        }
+      ],
+      "747721128429855": [
+        {
+          "date": "2025-12-22",
+          "posts": 4,
+          "reactions": 128,
+          "comments": 46,
+          "shares": 19,
+          "engagement": 193,
+          "pes": 277.0,
+          "views": 0,
+          "reach": 0
+        },
+        {
+          "date": "2025-12-23",
+          "posts": 3,
+          "reactions": 117,
+          "comments": 50,
+          "shares": 17,
+          "engagement": 184,
+          "pes": 268.0,
+          "views": 0,
+          "reach": 0
+        },
+        {
+          "date": "2025-12-24",
+          "posts": 4,
+          "reactions": 107,
+          "comments": 32,
+          "shares": 4,
+          "engagement": 143,
+          "pes": 183.0,
+          "views": 0,
+          "reach": 0
+        },
+        {
+          "date": "2025-12-25",
+          "posts": 2,
+          "reactions": 45,
+          "comments": 11,
+          "shares": 5,
+          "engagement": 61,
+          "pes": 82.0,
+          "views": 0,
+          "reach": 0
+        },
+        {
+          "date": "2025-12-26",
+          "posts": 4,
+          "reactions": 118,
+          "comments": 37,
+          "shares": 21,
+          "engagement": 176,
+          "pes": 255.0,
+          "views": 0,
+          "reach": 0
+        },
+        {
+          "date": "2025-12-27",
+          "posts": 2,
+          "reactions": 121,
+          "comments": 46,
+          "shares": 22,
+          "engagement": 189,
+          "pes": 279.0,
+          "views": 0,
+          "reach": 0
+        },
+        {
+          "date": "2025-12-28",
+          "posts": 4,
+          "reactions": 93,
+          "comments": 28,
+          "shares": 25,
+          "engagement": 146,
+          "pes": 224.0,
+          "views": 0,
+          "reach": 0
+        }
+      ],
+      "748765068327821": [
+        {
+          "date": "2025-12-22",
+          "posts": 2,
+          "reactions": 143,
+          "comments": 85,
+          "shares": 19,
+          "engagement": 247,
+          "pes": 370.0,
+          "views": 0,
+          "reach": 0
+        },
+        {
+          "date": "2025-12-23",
+          "posts": 1,
+          "reactions": 95,
+          "comments": 14,
+          "shares": 3,
+          "engagement": 112,
+          "pes": 132.0,
+          "views": 0,
+          "reach": 0
+        },
+        {
+          "date": "2025-12-24",
+          "posts": 1,
+          "reactions": 271,
+          "comments": 40,
+          "shares": 4,
+          "engagement": 315,
+          "pes": 363.0,
+          "views": 0,
+          "reach": 0
+        },
+        {
+          "date": "2025-12-25",
+          "posts": 1,
+          "reactions": 13,
+          "comments": 2,
+          "shares": 1,
+          "engagement": 16,
+          "pes": 20.0,
+          "views": 0,
+          "reach": 0
+        },
+        {
+          "date": "2025-12-26",
+          "posts": 1,
+          "reactions": 86,
+          "comments": 37,
+          "shares": 18,
+          "engagement": 141,
+          "pes": 214.0,
+          "views": 0,
+          "reach": 0
+        },
+        {
+          "date": "2025-12-28",
+          "posts": 2,
+          "reactions": 472,
+          "comments": 28,
+          "shares": 20,
+          "engagement": 520,
+          "pes": 588.0,
+          "views": 0,
+          "reach": 0
+        }
+      ],
+      "754416584427163": [
+        {
+          "date": "2025-12-22",
+          "posts": 3,
+          "reactions": 108,
+          "comments": 34,
+          "shares": 20,
+          "engagement": 162,
+          "pes": 236.0,
+          "views": 0,
+          "reach": 0
+        },
+        {
+          "date": "2025-12-23",
+          "posts": 3,
+          "reactions": 129,
+          "comments": 32,
+          "shares": 21,
+          "engagement": 182,
+          "pes": 256.0,
+          "views": 0,
+          "reach": 0
+        },
+        {
+          "date": "2025-12-24",
+          "posts": 3,
+          "reactions": 95,
+          "comments": 33,
+          "shares": 29,
+          "engagement": 157,
+          "pes": 248.0,
+          "views": 0,
+          "reach": 0
+        },
+        {
+          "date": "2025-12-25",
+          "posts": 1,
+          "reactions": 44,
+          "comments": 15,
+          "shares": 9,
+          "engagement": 68,
+          "pes": 101.0,
+          "views": 0,
+          "reach": 0
+        },
+        {
+          "date": "2025-12-26",
+          "posts": 1,
+          "reactions": 35,
+          "comments": 10,
+          "shares": 7,
+          "engagement": 52,
+          "pes": 76.0,
+          "views": 0,
+          "reach": 0
+        },
+        {
+          "date": "2025-12-27",
+          "posts": 1,
+          "reactions": 52,
+          "comments": 15,
+          "shares": 10,
+          "engagement": 77,
+          "pes": 112.0,
+          "views": 0,
+          "reach": 0
+        }
+      ],
+      "807965705726273": [
+        {
+          "date": "2025-12-22",
+          "posts": 4,
+          "reactions": 117,
+          "comments": 31,
+          "shares": 16,
+          "engagement": 164,
+          "pes": 227.0,
+          "views": 0,
+          "reach": 0
+        },
+        {
+          "date": "2025-12-23",
+          "posts": 4,
+          "reactions": 173,
+          "comments": 56,
+          "shares": 19,
+          "engagement": 248,
+          "pes": 342.0,
+          "views": 0,
+          "reach": 0
+        },
+        {
+          "date": "2025-12-24",
+          "posts": 5,
+          "reactions": 134,
+          "comments": 19,
+          "shares": 12,
+          "engagement": 165,
+          "pes": 208.0,
+          "views": 0,
+          "reach": 0
+        },
+        {
+          "date": "2025-12-25",
+          "posts": 3,
+          "reactions": 119,
+          "comments": 9,
+          "shares": 4,
+          "engagement": 132,
+          "pes": 149.0,
+          "views": 0,
+          "reach": 0
+        },
+        {
+          "date": "2025-12-26",
+          "posts": 5,
+          "reactions": 234,
+          "comments": 36,
+          "shares": 13,
+          "engagement": 283,
+          "pes": 345.0,
+          "views": 0,
+          "reach": 0
+        },
+        {
+          "date": "2025-12-27",
+          "posts": 4,
+          "reactions": 130,
+          "comments": 45,
+          "shares": 21,
+          "engagement": 196,
+          "pes": 283.0,
+          "views": 0,
+          "reach": 0
+        },
+        {
+          "date": "2025-12-28",
+          "posts": 4,
+          "reactions": 121,
+          "comments": 31,
+          "shares": 12,
+          "engagement": 164,
+          "pes": 219.0,
+          "views": 0,
+          "reach": 0
+        },
+        {
+          "date": "2025-12-29",
+          "posts": 1,
+          "reactions": 6,
+          "comments": 3,
+          "shares": 0,
+          "engagement": 9,
+          "pes": 12.0,
+          "views": 0,
+          "reach": 0
         }
       ]
     }
@@ -4750,7 +5406,7 @@
         "comments": 98,
         "shares": 94,
         "engagement": 14694,
-        "pes": 14980.0
+        "pes": 14985.0
       },
       {
         "post_id": "122114528937012033",
@@ -4778,7 +5434,7 @@
         "comments": 43,
         "shares": 39,
         "engagement": 9739,
-        "pes": 9860.0
+        "pes": 9864.0
       },
       {
         "post_id": "122125205307011249",
@@ -4792,7 +5448,7 @@
         "comments": 70,
         "shares": 60,
         "engagement": 8636,
-        "pes": 8826.0
+        "pes": 8832.0
       },
       {
         "post_id": "122125355439011249",
@@ -4806,7 +5462,7 @@
         "comments": 103,
         "shares": 85,
         "engagement": 8227,
-        "pes": 8500.0
+        "pes": 8514.0
       },
       {
         "post_id": "122124028143011249",
@@ -4820,7 +5476,7 @@
         "comments": 142,
         "shares": 98,
         "engagement": 6912,
-        "pes": 7250.0
+        "pes": 7259.0
       },
       {
         "post_id": "122124319449011249",
@@ -4834,7 +5490,7 @@
         "comments": 81,
         "shares": 59,
         "engagement": 5412,
-        "pes": 5611.0
+        "pes": 5616.0
       },
       {
         "post_id": "122111951949011249",
@@ -4862,7 +5518,7 @@
         "comments": 42,
         "shares": 70,
         "engagement": 4393,
-        "pes": 4575.0
+        "pes": 4576.0
       },
       {
         "post_id": "122118422757011249",
@@ -4893,7 +5549,7 @@
           "comments": 98,
           "shares": 94,
           "engagement": 14694,
-          "pes": 14980.0
+          "pes": 14985.0
         },
         {
           "post_id": "122125205307011249",
@@ -4907,7 +5563,7 @@
           "comments": 70,
           "shares": 60,
           "engagement": 8636,
-          "pes": 8826.0
+          "pes": 8832.0
         },
         {
           "post_id": "122125355439011249",
@@ -4921,7 +5577,7 @@
           "comments": 103,
           "shares": 85,
           "engagement": 8227,
-          "pes": 8500.0
+          "pes": 8514.0
         },
         {
           "post_id": "122124028143011249",
@@ -4935,7 +5591,7 @@
           "comments": 142,
           "shares": 98,
           "engagement": 6912,
-          "pes": 7250.0
+          "pes": 7259.0
         },
         {
           "post_id": "122124319449011249",
@@ -4949,7 +5605,7 @@
           "comments": 81,
           "shares": 59,
           "engagement": 5412,
-          "pes": 5611.0
+          "pes": 5616.0
         },
         {
           "post_id": "122111951949011249",
@@ -4977,7 +5633,7 @@
           "comments": 42,
           "shares": 70,
           "engagement": 4393,
-          "pes": 4575.0
+          "pes": 4576.0
         },
         {
           "post_id": "122118422757011249",
@@ -5005,7 +5661,7 @@
           "comments": 64,
           "shares": 28,
           "engagement": 3967,
-          "pes": 4087.0
+          "pes": 4094.0
         },
         {
           "post_id": "122125578957011249",
@@ -5019,7 +5675,7 @@
           "comments": 21,
           "shares": 18,
           "engagement": 2168,
-          "pes": 2225.0
+          "pes": 2236.0
         }
       ],
       "61580361006776": [
@@ -5049,7 +5705,7 @@
           "comments": 43,
           "shares": 39,
           "engagement": 9739,
-          "pes": 9860.0
+          "pes": 9864.0
         },
         {
           "post_id": "122116249551012033",
@@ -5063,7 +5719,7 @@
           "comments": 26,
           "shares": 12,
           "engagement": 898,
-          "pes": 948.0
+          "pes": 968.0
         },
         {
           "post_id": "122114529057012033",
@@ -5077,7 +5733,7 @@
           "comments": 20,
           "shares": 8,
           "engagement": 884,
-          "pes": 920.0
+          "pes": 922.0
         },
         {
           "post_id": "122114237133012033",
@@ -5105,7 +5761,7 @@
           "comments": 102,
           "shares": 28,
           "engagement": 251,
-          "pes": 409.0
+          "pes": 410.0
         },
         {
           "post_id": "122115358473012033",
@@ -5461,7 +6117,7 @@
           "comments": 131,
           "shares": 48,
           "engagement": 417,
-          "pes": 644.0
+          "pes": 645.0
         },
         {
           "post_id": "122107116969023874",
@@ -5589,10 +6245,900 @@
           "engagement": 201,
           "pes": 305.0
         }
+      ],
+      "731608473377029": [
+        {
+          "post_id": "731608473377029_122117242779013186",
+          "page_id": "731608473377029",
+          "page_name": null,
+          "title": "Good morning Juankada! Attendance check muna tayo!\ud83e\udd70\n\nIsang \u2764\ufe0f react at ingay naman ng mga solid Juankada dyan!\ud83e\udd73\n\n#JuanaBabeJam #Juanababes\n#Juan365 #AllInJuanSaSaya #Juan365livestream",
+          "post_type": "Videos",
+          "publish_time": "2025-12-27T01:33:37+0000",
+          "permalink": "https://www.facebook.com/reel/843268438584561/",
+          "reactions": 50,
+          "comments": 17,
+          "shares": 15,
+          "engagement": 82,
+          "pes": 129.0
+        },
+        {
+          "post_id": "731608473377029_122117054757013186",
+          "page_id": "731608473377029",
+          "page_name": null,
+          "title": "Good morning juankada! \u2764\ufe0f     \n     MERRY CHRISTMAS\n\n Kung nabusog ka kagabi, comment \u201cBlessed\u201d\ud83d\ude07\n\n#JuanaBabeJam #Juanababes\n#Juan365 #AllInJuanSaSaya #Juan365livestream",
+          "post_type": "Text",
+          "publish_time": "2025-12-25T03:26:30+0000",
+          "permalink": "https://www.facebook.com/122117157621013186/posts/122117054757013186",
+          "reactions": 48,
+          "comments": 18,
+          "shares": 13,
+          "engagement": 79,
+          "pes": 123.0
+        },
+        {
+          "post_id": "731608473377029_122116902117013186",
+          "page_id": "731608473377029",
+          "page_name": null,
+          "title": "Sending Christmas cheer your way, Juankada \ud83c\udf81",
+          "post_type": "Photos",
+          "publish_time": "2025-12-23T14:23:03+0000",
+          "permalink": "https://www.facebook.com/122117157621013186/posts/122116902117013186?substory_index=1200069855384493",
+          "reactions": 50,
+          "comments": 13,
+          "shares": 2,
+          "engagement": 65,
+          "pes": 82.0
+        },
+        {
+          "post_id": "731608473377029_122116992615013186",
+          "page_id": "731608473377029",
+          "page_name": null,
+          "title": "Ngayong Pasko, kahit simpleng gift, may meaning. Ano ang pinaka-heartwarming na natanggap mong pamasko \ud83e\udd70\n\n#JuanaBabeJam#Juanababes\n#Juan365#AllInJuanSaSaya#Juan365live",
+          "post_type": "Videos",
+          "publish_time": "2025-12-24T13:36:51+0000",
+          "permalink": "https://www.facebook.com/reel/2146179399242349/",
+          "reactions": 43,
+          "comments": 16,
+          "shares": 3,
+          "engagement": 62,
+          "pes": 84.0
+        },
+        {
+          "post_id": "731608473377029_122117165301013186",
+          "page_id": "731608473377029",
+          "page_name": null,
+          "title": "TGIF feels, ready na ulit mag weekends kahit kaka-holiday lang \u2764\ufe0f\n\nTag mo yung Friend mo Excited Pag Friday \ud83d\ude01\n\n#JuanaBabeJam #Juanababes\n#Juan365 #AllInJuanSaSaya #Juan365livestream",
+          "post_type": "Videos",
+          "publish_time": "2025-12-26T07:18:26+0000",
+          "permalink": "https://www.facebook.com/reel/718058334367823/",
+          "reactions": 35,
+          "comments": 14,
+          "shares": 8,
+          "engagement": 57,
+          "pes": 87.0
+        },
+        {
+          "post_id": "731608473377029_122116797885013186",
+          "page_id": "731608473377029",
+          "page_name": null,
+          "title": "Ready ka na, Juankada?\nRoll the dice, trust the color! \ud83c\udfb2\ud83c\udfa8\nMasaya, easy, at siguradong may panalo!\n\n\u23f0 LIVE mamayang 2AM na to'\n#Juan365 #Juan365livestream #Juan365Studio #AllInJuanSaSaya #Juankada",
+          "post_type": "Photos",
+          "publish_time": "2025-12-22T13:00:09+0000",
+          "permalink": "https://www.facebook.com/122117157621013186/posts/122116797885013186",
+          "reactions": 28,
+          "comments": 7,
+          "shares": 7,
+          "engagement": 42,
+          "pes": 63.0
+        },
+        {
+          "post_id": "731608473377029_122117372901013186",
+          "page_id": "731608473377029",
+          "page_name": null,
+          "title": "Ready to catch your hearts Jammies! \nBaka meron na nahulog dyaan ah \ud83d\udc40\n\nDrop \u2764\ufe0f below bago ako madrop sayo \ud83e\udd2d\n\n#JuanaBabeJam #Juanababes #Juan365 #AllInJuanSaSaya #Juan365livestream",
+          "post_type": "Videos",
+          "publish_time": "2025-12-28T07:49:36+0000",
+          "permalink": "https://www.facebook.com/reel/799908513106227/",
+          "reactions": 23,
+          "comments": 6,
+          "shares": 6,
+          "engagement": 35,
+          "pes": 53.0
+        },
+        {
+          "post_id": "731608473377029_122116949595013186",
+          "page_id": "731608473377029",
+          "page_name": null,
+          "title": "Grabe ang mga hablutan, \nBardagulan na may konting exchange gift ahahahah \ud83c\udf81\n\nNakapag exchange gifts na ba ang lahat???\ud83e\udd70\n\n#JuanaBabeJam#Juanababes\n#Juan365#AllInJuanSaSaya#Juan365livestream",
+          "post_type": "Videos",
+          "publish_time": "2025-12-24T03:03:21+0000",
+          "permalink": "https://www.facebook.com/reel/801426342945921/",
+          "reactions": 24,
+          "comments": 3,
+          "shares": 1,
+          "engagement": 28,
+          "pes": 33.0
+        },
+        {
+          "post_id": "731608473377029_122116947165013186",
+          "page_id": "731608473377029",
+          "page_name": null,
+          "title": "Grabe talaga ang lakas ng dating ng isang Juana Babe Jam \ud83e\udd29\n\nMention mo yung kaibigan mong mas malakas yun dating \ud83d\ude01\n\n#JuanaBabeJam#Juanababes\n#Juan365#AllInJuanSaSaya#Juan365livestream",
+          "post_type": "Videos",
+          "publish_time": "2025-12-24T02:17:30+0000",
+          "permalink": "https://www.facebook.com/reel/2064304141091091/",
+          "reactions": 20,
+          "comments": 5,
+          "shares": 1,
+          "engagement": 26,
+          "pes": 33.0
+        },
+        {
+          "post_id": "731608473377029_122117447805013186",
+          "page_id": "731608473377029",
+          "page_name": null,
+          "title": "Let's Hit the Floor Jammies, \nReady for more? Comment mo lang request mo dyan \ud83d\udc8b\n\n#JuanaBabeJam #Juanababes #Juan365 #AllInJuanSaSaya #Juan365livestream",
+          "post_type": "Videos",
+          "publish_time": "2025-12-28T23:52:03+0000",
+          "permalink": "https://www.facebook.com/reel/1585906775900636/",
+          "reactions": 14,
+          "comments": 3,
+          "shares": 1,
+          "engagement": 18,
+          "pes": 23.0
+        }
+      ],
+      "747721128429855": [
+        {
+          "post_id": "747721128429855_122117775075023874",
+          "page_id": "747721128429855",
+          "page_name": null,
+          "title": "Araw naman ng bigayan hindi pa pinag bigyan eh!\ud83e\udd79\n\nAnong pamagat nitong episode?\ud83d\ude06\n\nheart and follow for more content like this! \ud83e\udd70\n\n#juanababe #juanbabeabi #Juan365 #Juan365livestream #lasthug #trending",
+          "post_type": "Videos",
+          "publish_time": "2025-12-27T04:15:50+0000",
+          "permalink": "https://www.facebook.com/reel/25393647486945051/",
+          "reactions": 80,
+          "comments": 30,
+          "shares": 13,
+          "engagement": 123,
+          "pes": 179.0
+        },
+        {
+          "post_id": "747721128429855_122117263473023874",
+          "page_id": "747721128429855",
+          "page_name": null,
+          "title": "Juankada!! game ka na ba? \ud83d\ude0f\ud83c\udfb2\nRoll the dice, follow your color at maging next winner! plus konting kilig sa side! \ud83d\udc96\n\n\u23f0 LIVE mamayang 2AM!\n\n#Juan365 #Juan365livestream #Juan365Studio #AllInJuanSaSaya #J",
+          "post_type": "Photos",
+          "publish_time": "2025-12-22T13:00:13+0000",
+          "permalink": "https://www.facebook.com/122117663979023874/posts/122117263473023874",
+          "reactions": 43,
+          "comments": 18,
+          "shares": 9,
+          "engagement": 70,
+          "pes": 106.0
+        },
+        {
+          "post_id": "747721128429855_122117330181023874",
+          "page_id": "747721128429855",
+          "page_name": null,
+          "title": "Lakwatsera yan sya! tara sumama ka samin\ud83d\ude06\n\nSaan tayo next pupunta Juankada?\n\n#juanababe #juanbabeabi #Juan365 #juan365livestrea #CommentYourThoughts #tagafriend #followme #AllInJuanSaSaya \n#fypviral\u30b7 ",
+          "post_type": "Videos",
+          "publish_time": "2025-12-23T04:43:43+0000",
+          "permalink": "https://www.facebook.com/reel/851150837893563/",
+          "reactions": 40,
+          "comments": 21,
+          "shares": 7,
+          "engagement": 68,
+          "pes": 103.0
+        },
+        {
+          "post_id": "747721128429855_122117758437023874",
+          "page_id": "747721128429855",
+          "page_name": null,
+          "title": "1k and counting na tayo mga Tinga!\ud83e\udd73\nSalamat sa patuloy na suporta, sana hindi kayo mag sawang sumama hanggang sa mga susunod na taon pa! \ud83d\ude0d\n\nFollow, Share and invite more friends\n\n#juanababe #juanbabea",
+          "post_type": "Photos",
+          "publish_time": "2025-12-27T03:00:12+0000",
+          "permalink": "https://www.facebook.com/122117663979023874/posts/122117758437023874",
+          "reactions": 41,
+          "comments": 16,
+          "shares": 9,
+          "engagement": 66,
+          "pes": 100.0
+        },
+        {
+          "post_id": "747721128429855_122117871813023874",
+          "page_id": "747721128429855",
+          "page_name": null,
+          "title": "I ain't tryna play! \npereng ang shikip shikip nyan\ud83d\ude01\n\nPusuan mo na Follow mo pa\n\n#juanababe #juanbabeabi #Juan365 #Juan365livestream #trendingreelsvideo #surprisegift  #fypviral\u30b7 #trendingvideo #trendi",
+          "post_type": "Videos",
+          "publish_time": "2025-12-28T02:19:37+0000",
+          "permalink": "https://www.facebook.com/reel/1879893705944937/",
+          "reactions": 42,
+          "comments": 11,
+          "shares": 7,
+          "engagement": 60,
+          "pes": 85.0
+        },
+        {
+          "post_id": "747721128429855_122117375685023874",
+          "page_id": "747721128429855",
+          "page_name": null,
+          "title": "Enjoy the season of joy ,Merry Christmas Juankada!\ud83e\udd73\n\n#Juanbabes #Juan365livestream #JuanababeAbi",
+          "post_type": "Photos",
+          "publish_time": "2025-12-23T14:34:45+0000",
+          "permalink": "https://www.facebook.com/122117663979023874/posts/122117375685023874?substory_index=2357660148067615",
+          "reactions": 39,
+          "comments": 16,
+          "shares": 5,
+          "engagement": 60,
+          "pes": 86.0
+        },
+        {
+          "post_id": "747721128429855_122117215407023874",
+          "page_id": "747721128429855",
+          "page_name": null,
+          "title": "Nag away yung nag sabing \"Walang sila\"\ud83d\udc40\nLuh? parang dapat Pop Corn hawak namin\ud83e\udd23\n\nAnong kwentong marites mo ka tinga?\n\n#juanababe #juanbabeabi #Juan365 #Juan365livestream #CommentYourThoughts #tagafrie",
+          "post_type": "Videos",
+          "publish_time": "2025-12-22T04:19:11+0000",
+          "permalink": "https://www.facebook.com/reel/4412477322317238/",
+          "reactions": 40,
+          "comments": 15,
+          "shares": 4,
+          "engagement": 59,
+          "pes": 82.0
+        },
+        {
+          "post_id": "747721128429855_122117342307023874",
+          "page_id": "747721128429855",
+          "page_name": null,
+          "title": "Let me show you what you're missing\ud83d\ude1c\n\nReact \u2764\ufe0f at ishare ang thoughts mo Juankada\n\n#juanababe #juanbabeabi #Juan365 #Juan365livestream #CommentYourThoughts #TagAFriend #Followme #AllInJuanSaSaya #sexy",
+          "post_type": "Videos",
+          "publish_time": "2025-12-23T08:00:34+0000",
+          "permalink": "https://www.facebook.com/reel/837910092546991/",
+          "reactions": 38,
+          "comments": 13,
+          "shares": 5,
+          "engagement": 56,
+          "pes": 79.0
+        },
+        {
+          "post_id": "747721128429855_122117644959023874",
+          "page_id": "747721128429855",
+          "page_name": null,
+          "title": "Mowie wowie na pauwi sa sobrang traffic! sinusubok talaga ako nito eh\ud83d\ude06\n\nPauwi na ba ang lahat\ud83d\ude06 san ka manggagaling Juankada?\n\n#juanababe #juanbabeabi #Juan365 #Juan365livestream #Christmasiscoming #Ta",
+          "post_type": "Videos",
+          "publish_time": "2025-12-26T00:40:52+0000",
+          "permalink": "https://www.facebook.com/reel/25499687206309515/",
+          "reactions": 35,
+          "comments": 12,
+          "shares": 7,
+          "engagement": 54,
+          "pes": 80.0
+        },
+        {
+          "post_id": "747721128429855_122117249097023874",
+          "page_id": "747721128429855",
+          "page_name": null,
+          "title": "Sarreh na Bhiee! hatian na lang kita sa 10M \ud83d\ude02\n\nIkaw Juankada 10M o Friendship?\ud83d\ude06\n\n#juanababe #juanbabeabi #Juan365 #Juan365livestream #CommentYourThoughts #tagafriend #followmeonfacebook #AllInJuanSaSa",
+          "post_type": "Videos",
+          "publish_time": "2025-12-22T10:00:22+0000",
+          "permalink": "https://www.facebook.com/reel/1226447649405369/",
+          "reactions": 35,
+          "comments": 13,
+          "shares": 6,
+          "engagement": 54,
+          "pes": 79.0
+        }
+      ],
+      "748765068327821": [
+        {
+          "post_id": "748765068327821_122126008869011249",
+          "page_id": "748765068327821",
+          "page_name": null,
+          "title": "Kulitan tayo sa live mga babes \ud83e\udd17 make sure na kasama ko kayo ha December 28, 2025 3:30pm \u23f1\ufe0f\n\nHit \u2665\ufe0f and don't forget to share para makasama ko kayong lahat Live sa Juan365 Live Stream Page\ud83e\udd73\ud83e\udef6\ud83c\udffb\n\n#WatchM",
+          "post_type": "Videos",
+          "publish_time": "2025-12-28T07:31:54+0000",
+          "permalink": "https://www.facebook.com/122125581543011249/videos/3787346854735137",
+          "reactions": 394,
+          "comments": 13,
+          "shares": 10,
+          "engagement": 417,
+          "pes": 450.0
+        },
+        {
+          "post_id": "748765068327821_122125257519011249",
+          "page_id": "748765068327821",
+          "page_name": null,
+          "title": "Magpapaskong _?\ud83e\udee3\n\nHit \u2665\ufe0f and hulaan nyo sa comment mga babes kung magpapasko akong what?\ud83e\udd23\ud83d\udc9e\n\n#Charming #Cute #Simple #JuanaBabeAshley #CommentYourThoughts #TagAFriend #Followme #Juanababes #Juan365 #Al",
+          "post_type": "Photos",
+          "publish_time": "2025-12-24T12:26:05+0000",
+          "permalink": "https://www.facebook.com/122125581543011249/posts/122125257519011249",
+          "reactions": 271,
+          "comments": 40,
+          "shares": 4,
+          "engagement": 315,
+          "pes": 363.0
+        },
+        {
+          "post_id": "748765068327821_122124864699011249",
+          "page_id": "748765068327821",
+          "page_name": null,
+          "title": "\ud83c\udf89 10K followers na tayo mga babes!\ud83c\udf89\n\nThank you so muchie sa lahat ng sumusuporta at non-stop na love mga babes\ud83d\ude2d\ud83e\udef6\ud83c\udffb\n\nDon't forget to share and comment para sa tuloy-tuloy na pag grow\ud83d\udc99\n\n#Juan365Studios\n#",
+          "post_type": "Photos",
+          "publish_time": "2025-12-22T21:17:37+0000",
+          "permalink": "https://www.facebook.com/122125581543011249/posts/122124864699011249",
+          "reactions": 117,
+          "comments": 79,
+          "shares": 13,
+          "engagement": 209,
+          "pes": 314.0
+        },
+        {
+          "post_id": "748765068327821_122125633209011249",
+          "page_id": "748765068327821",
+          "page_name": null,
+          "title": "OMG! Mga babes, we reached 35K right after Christmas Day\ud83e\udd79\ud83e\udef6\ud83c\udffb\n\nPress \u2665\ufe0f and share mo sa hindi pa natin ka-babes then comment done para aking mapusuan \ud83e\udee0\ud83e\udd2d\n\n#GrowingFam #MoreFollowers #35K #Beauty #JuanaBa",
+          "post_type": "Photos",
+          "publish_time": "2025-12-26T09:31:54+0000",
+          "permalink": "https://www.facebook.com/122125581543011249/posts/122125633209011249",
+          "reactions": 86,
+          "comments": 37,
+          "shares": 18,
+          "engagement": 141,
+          "pes": 214.0
+        },
+        {
+          "post_id": "748765068327821_122125038939011249",
+          "page_id": "748765068327821",
+          "page_name": null,
+          "title": "Merry Christmas mga babes\ud83d\udcab   Hope your holidays are bright\n\n#Juanbabes #Juan365livestream #JuanababeAshley",
+          "post_type": "Photos",
+          "publish_time": "2025-12-23T14:31:26+0000",
+          "permalink": "https://www.facebook.com/122125581543011249/posts/122125038939011249?substory_index=1283930990417929",
+          "reactions": 95,
+          "comments": 14,
+          "shares": 3,
+          "engagement": 112,
+          "pes": 132.0
+        },
+        {
+          "post_id": "748765068327821_122126086533011249",
+          "page_id": "748765068327821",
+          "page_name": null,
+          "title": "Your support means the world to me mga babes \ud83d\ude2d\ud83d\udc9e\n\n40K na tayo\ud83e\udd73 kaya don't forget to \u2665\ufe0f, comment, and share para mas mag grow pa tayo mga babes\ud83d\udc96\n\n#40K #LoveAndSupport #Appreciated #GrowingFam #JuanaBabe",
+          "post_type": "Photos",
+          "publish_time": "2025-12-28T14:11:03+0000",
+          "permalink": "https://www.facebook.com/122125581543011249/posts/122126086533011249",
+          "reactions": 78,
+          "comments": 15,
+          "shares": 10,
+          "engagement": 103,
+          "pes": 138.0
+        },
+        {
+          "post_id": "748765068327821_122124783429011249",
+          "page_id": "748765068327821",
+          "page_name": null,
+          "title": "Lights on, colors ready! \ud83c\udfa8\nabangan Live mamayang 2AM! \ud83d\udd25\n\nLike and follow Juan365 Studios and don't miss the fun\ud83e\udd29\n\n#Juan365Studios #ColorsAndFun  #JuanaBabeAshley #CommentYourThoughts #TagAFriend #Foll",
+          "post_type": "Photos",
+          "publish_time": "2025-12-22T13:00:09+0000",
+          "permalink": "https://www.facebook.com/122125581543011249/posts/122124783429011249",
+          "reactions": 26,
+          "comments": 6,
+          "shares": 6,
+          "engagement": 38,
+          "pes": 56.0
+        },
+        {
+          "post_id": "748765068327821_122125354827011249",
+          "page_id": "748765068327821",
+          "page_name": null,
+          "title": "",
+          "post_type": "Text",
+          "publish_time": "2025-12-25T01:19:21+0000",
+          "permalink": "https://www.facebook.com/122125581543011249/posts/122125354827011249",
+          "reactions": 13,
+          "comments": 2,
+          "shares": 1,
+          "engagement": 16,
+          "pes": 20.0
+        }
+      ],
+      "754416584427163": [
+        {
+          "post_id": "754416584427163_122117330637015980",
+          "page_id": "754416584427163",
+          "page_name": null,
+          "title": "City of Dreams by day, your dreams by night \ud83d\udc96\n\n Dreams or reality? Follow and Comment \"Catch\" to make your dreams real babes \ud83d\udc8b\n\n#juanababezell #juanababes #Juan365livestream #AllInJuanSaSaya #Juan365P",
+          "post_type": "Videos",
+          "publish_time": "2025-12-27T02:01:16+0000",
+          "permalink": "https://www.facebook.com/reel/1163607459273000/",
+          "reactions": 52,
+          "comments": 15,
+          "shares": 10,
+          "engagement": 77,
+          "pes": 112.0
+        },
+        {
+          "post_id": "754416584427163_122116906965015980",
+          "page_id": "754416584427163",
+          "page_name": null,
+          "title": "Sending Christmas cheer your way, Juanababies\u2728\n\n#juanbabes #Juan365livestream #juanababeszell",
+          "post_type": "Photos",
+          "publish_time": "2025-12-23T14:21:20+0000",
+          "permalink": "https://www.facebook.com/122117576505015980/posts/122116906965015980?substory_index=1251644906790960",
+          "reactions": 54,
+          "comments": 13,
+          "shares": 3,
+          "engagement": 70,
+          "pes": 89.0
+        },
+        {
+          "post_id": "754416584427163_122116728243015980",
+          "page_id": "754416584427163",
+          "page_name": null,
+          "title": "Good Aftieee Juankada! \ud83d\ude18\n\nSaan nyo ako gusto makita sa susunod? Comment mo lang \ud83d\udc40\ud83d\ude0d \n\n#juanababezell #juanababes #Juan365livestream #AllInJuanSaSaya #Juan365PH #JuanKada #Juan365 #seeyousoon",
+          "post_type": "Videos",
+          "publish_time": "2025-12-22T04:28:08+0000",
+          "permalink": "https://www.facebook.com/reel/1226721996004133/",
+          "reactions": 46,
+          "comments": 17,
+          "shares": 7,
+          "engagement": 70,
+          "pes": 101.0
+        },
+        {
+          "post_id": "754416584427163_122117116995015980",
+          "page_id": "754416584427163",
+          "page_name": null,
+          "title": "Soft start, strong finish \ud83d\ude0f \n\nStay till the end! You ready? Watch this and tell me what you think \ud83d\udc47\n\n#juanababezell #juanababes #Juan365livestream #AllInJuanSaSaya #Juan365PH #JuanKada #Juan365 #juana",
+          "post_type": "Videos",
+          "publish_time": "2025-12-25T08:53:11+0000",
+          "permalink": "https://www.facebook.com/reel/1377964980737584/",
+          "reactions": 44,
+          "comments": 15,
+          "shares": 9,
+          "engagement": 68,
+          "pes": 101.0
+        },
+        {
+          "post_id": "754416584427163_122116769547015980",
+          "page_id": "754416584427163",
+          "page_name": null,
+          "title": "LIVE na LIVE ang saya! \nClassic game na pwede mo na laruin everytime and everywhere \ud83d\ude0d\n\nAbang abang na Jaunkada mamayang 2AM na yan \ud83e\udd29\n\nI-like at i-follow ang Juan365 Studios, huwag palampasin ang lahat",
+          "post_type": "Photos",
+          "publish_time": "2025-12-22T13:00:47+0000",
+          "permalink": "https://www.facebook.com/122117576505015980/posts/122116769547015980",
+          "reactions": 46,
+          "comments": 12,
+          "shares": 9,
+          "engagement": 67,
+          "pes": 97.0
+        },
+        {
+          "post_id": "754416584427163_122116999041015980",
+          "page_id": "754416584427163",
+          "page_name": null,
+          "title": "Let\u2019s start the countdown, babes! \nMerry Christmas everyJuan \ud83d\udc9d\n\nShare this with someone who loves Christmas as much as you do \ud83c\udf84\n\n#juanababezell #juanababes #Juan365livestream #AllInJuanSaSaya #Juan365",
+          "post_type": "Videos",
+          "publish_time": "2025-12-24T12:29:35+0000",
+          "permalink": "https://www.facebook.com/reel/1218499400190755/",
+          "reactions": 39,
+          "comments": 14,
+          "shares": 12,
+          "engagement": 65,
+          "pes": 103.0
+        },
+        {
+          "post_id": "754416584427163_122116944435015980",
+          "page_id": "754416584427163",
+          "page_name": null,
+          "title": "Christimas vibe is giving, but in my hot snz era \ud83d\udd25\n\nChristmas season? Or Hot Season? Comment your vibes now \ud83d\udc47\ud83d\udc96\n\n#juanababezell #juanababes #Juan365livestream #AllInJuanSaSaya #Juan365PH #JuanKada #Jua",
+          "post_type": "Videos",
+          "publish_time": "2025-12-23T23:55:34+0000",
+          "permalink": "https://www.facebook.com/reel/2105155870257516/",
+          "reactions": 39,
+          "comments": 7,
+          "shares": 14,
+          "engagement": 60,
+          "pes": 95.0
+        },
+        {
+          "post_id": "754416584427163_122117297271015980",
+          "page_id": "754416584427163",
+          "page_name": null,
+          "title": "She has that kind of magic \u2728\nOne look at her, and it\u2019s game over\n\nDon\u2019t just scroll, follow now, discover and  Tap \"\u2764\ufe0f\" to find out why \ud83d\ude09\n\n#juanababezell #juanababes #Juan365livestream #AllInJuanSaSay",
+          "post_type": "Videos",
+          "publish_time": "2025-12-26T18:11:24+0000",
+          "permalink": "https://www.facebook.com/reel/1528348351618244/",
+          "reactions": 35,
+          "comments": 10,
+          "shares": 7,
+          "engagement": 52,
+          "pes": 76.0
+        },
+        {
+          "post_id": "754416584427163_122116860951015980",
+          "page_id": "754416584427163",
+          "page_name": null,
+          "title": "kamusta kayo today juanababies?\ud83e\udd7a\n\nnot at my best today pero ang gaan ng pakiramdam ko dahil sainyo \n\nmag-comment lang kayo para alam ko kung okay kayo \ud83e\udd0d\n\n#juanababezell #juanababes #Juan365livestream ",
+          "post_type": "Videos",
+          "publish_time": "2025-12-23T06:44:38+0000",
+          "permalink": "https://www.facebook.com/reel/788107600953748/",
+          "reactions": 36,
+          "comments": 12,
+          "shares": 4,
+          "engagement": 52,
+          "pes": 72.0
+        },
+        {
+          "post_id": "754416584427163_122116960419015980",
+          "page_id": "754416584427163",
+          "page_name": null,
+          "title": "Need pa ba magpakilala babes? \nYou know me more than I do \ud83d\ude09\n\nReact \ud83d\udc96 , Follow and invite your friends to know more about me\n\n#juanababezell #juanababes #Juan365livestream #AllInJuanSaSaya #Juan365PH #",
+          "post_type": "Videos",
+          "publish_time": "2025-12-24T04:00:38+0000",
+          "permalink": "https://www.facebook.com/reel/1211597861039328/",
+          "reactions": 30,
+          "comments": 8,
+          "shares": 13,
+          "engagement": 51,
+          "pes": 85.0
+        }
+      ],
+      "807965705726273": [
+        {
+          "post_id": "807965705726273_122116868973012033",
+          "page_id": "807965705726273",
+          "page_name": null,
+          "title": "Ang laki ng bibig!! \ud83d\ude33\ud83d\ude02\n\nDouble tap \u2665\ufe0f, comment \u2018HAHA' at follow for more laughs!\n\n#Juanabies #LaughTrip #FunnyPH #DoubleTap #FollowForMore #ViralReels #Juanabies #Juan365 #AllInJuanSaSaya #Juan365live",
+          "post_type": "Videos",
+          "publish_time": "2025-12-27T09:01:28+0000",
+          "permalink": "https://www.facebook.com/reel/1518703562725403/",
+          "reactions": 50,
+          "comments": 20,
+          "shares": 6,
+          "engagement": 76,
+          "pes": 108.0
+        },
+        {
+          "post_id": "807965705726273_122116715277012033",
+          "page_id": "807965705726273",
+          "page_name": null,
+          "title": "Hi Juanabies! \ud83d\udc96\nMas bagay ba may filter o wala? \ud83d\udc40\nComment down below \u2b07\ufe0f at follow the page \u2728\n\n#JuanababeSena #JuanaBies #FBReelsPH #ForYouPH #TrendingNow #ViralPH #PinoyVibes #FYP #EngagementPost #Ree",
+          "post_type": "Videos",
+          "publish_time": "2025-12-26T04:00:27+0000",
+          "permalink": "https://www.facebook.com/reel/1412370173942556/",
+          "reactions": 57,
+          "comments": 12,
+          "shares": 5,
+          "engagement": 74,
+          "pes": 96.0
+        },
+        {
+          "post_id": "807965705726273_122116715235012033",
+          "page_id": "807965705726273",
+          "page_name": null,
+          "title": "Need your love, JuanaBies \ud83e\udd0d\nDrop a \u2764\ufe0f, follow the page, and stay with me \u2728\n\n#JuanababeSena #JuanaBies #FBReelsPH #ForYouPH #TrendingNow #ViralPH #SoftVibes #FYP",
+          "post_type": "Videos",
+          "publish_time": "2025-12-26T01:27:05+0000",
+          "permalink": "https://www.facebook.com/reel/25016338688048543/",
+          "reactions": 68,
+          "comments": 4,
+          "shares": 0,
+          "engagement": 72,
+          "pes": 76.0
+        },
+        {
+          "post_id": "807965705726273_122116726341012033",
+          "page_id": "807965705726273",
+          "page_name": null,
+          "title": "Juanabies \ud83e\udd0d Let\u2019s dance, slow and easy \u2728\nStay, follow, and vibe with me \ud83d\udc96\n\n#JuanababeSena #JuanaBies #SoftVibes #FBReelsPH #ForYouPH #ViralPH #FYP",
+          "post_type": "Videos",
+          "publish_time": "2025-12-26T12:00:56+0000",
+          "permalink": "https://www.facebook.com/reel/1941162723474894/",
+          "reactions": 60,
+          "comments": 8,
+          "shares": 3,
+          "engagement": 71,
+          "pes": 85.0
+        },
+        {
+          "post_id": "807965705726273_122116465149012033",
+          "page_id": "807965705726273",
+          "page_name": null,
+          "title": "Flirty, classy, at konting sassy \ud83d\ude0e\ud83d\udc96 \n\n\u2665\ufe0f me and Follow, let\u2019s make your feed more fun \ud83d\udc81\ud83c\udffb\u200d\u2640\ufe0f\n\n#Juanababes #Juan365 #AllInJuanSaSaya #Juan365livestream #JuanaBabeSena #JuanabiesVibes #FlirtyMood #FBReel",
+          "post_type": "Videos",
+          "publish_time": "2025-12-23T10:00:53+0000",
+          "permalink": "https://www.facebook.com/reel/762421609481554/",
+          "reactions": 55,
+          "comments": 13,
+          "shares": 3,
+          "engagement": 71,
+          "pes": 90.0
+        },
+        {
+          "post_id": "807965705726273_122116493349012033",
+          "page_id": "807965705726273",
+          "page_name": null,
+          "title": "Warm Christmas wishes to you, Juanabies! \ud83c\udf81 Enjoy the festive season!\n\n#Juanababes #Juan365 #Juan365livestream #JuanaBabeSena",
+          "post_type": "Photos",
+          "publish_time": "2025-12-23T14:25:55+0000",
+          "permalink": "https://www.facebook.com/122117062443012033/posts/122116493349012033?substory_index=1383894653370510",
+          "reactions": 49,
+          "comments": 17,
+          "shares": 2,
+          "engagement": 68,
+          "pes": 89.0
+        },
+        {
+          "post_id": "807965705726273_122116528563012033",
+          "page_id": "807965705726273",
+          "page_name": null,
+          "title": "Ilang oras na lang bago ang Pasko\u2026\nAno ang wish mo, JuanaBies? \ud83e\udd0d\u2728\n\n#JuanaBies #ChristmasCountdown #SoftVibes #ReelsPH #Juankadasena",
+          "post_type": "Videos",
+          "publish_time": "2025-12-24T05:00:02+0000",
+          "permalink": "https://www.facebook.com/reel/2024573701669067/",
+          "reactions": 48,
+          "comments": 6,
+          "shares": 6,
+          "engagement": 60,
+          "pes": 78.0
+        },
+        {
+          "post_id": "807965705726273_122116442055012033",
+          "page_id": "807965705726273",
+          "page_name": null,
+          "title": "Serving looks and food \ud83d\ude18\ud83c\udf73\n\nShow some love \u2665\ufe0f and Follow for your daily dose of sweetness! \ud83d\udc95\n\n#CookingVlog #MiniVlogLife #FlirtyFun #TastyTreats #FoodieVibes #fbreels #reelsph #thirsttrapph #genzvibes ",
+          "post_type": "Videos",
+          "publish_time": "2025-12-23T04:00:09+0000",
+          "permalink": "https://www.facebook.com/reel/1173777101593952/",
+          "reactions": 39,
+          "comments": 16,
+          "shares": 5,
+          "engagement": 60,
+          "pes": 86.0
+        },
+        {
+          "post_id": "807965705726273_122116976277012033",
+          "page_id": "807965705726273",
+          "page_name": null,
+          "title": "Doing my first crime\u2026 it\u2019s amazing \ud83d\ude0b How about you Juanabies!\n\nSmash that \u2665\ufe0f Comment mo na rin ang first crime mo!\ud83d\ude0f Follow me for more Videos! \ud83d\udc96\n\n#FlirtyVibes #SweetTrouble #SmileCheck #TapTheHeart #G",
+          "post_type": "Videos",
+          "publish_time": "2025-12-28T04:27:25+0000",
+          "permalink": "https://www.facebook.com/reel/945499368048022/",
+          "reactions": 42,
+          "comments": 9,
+          "shares": 7,
+          "engagement": 58,
+          "pes": 81.0
+        },
+        {
+          "post_id": "807965705726273_122116631493012033",
+          "page_id": "807965705726273",
+          "page_name": null,
+          "title": "Let's dance Juanabies! kaya mo ba!? \ud83d\ude09\ud83d\udcab \n\nLeave a \u2665\ufe0f Sahre and Follow for your sweet feed upgrade! \ud83d\ude18\u2728\n\n#Juanababes #Juan365 #AllInJuanSaSaya #Juan365livestream #JuanaBabeSena #fbreels #reelsph #thirstt",
+          "post_type": "Videos",
+          "publish_time": "2025-12-25T10:00:37+0000",
+          "permalink": "https://www.facebook.com/reel/1959100684640063/",
+          "reactions": 55,
+          "comments": 2,
+          "shares": 1,
+          "engagement": 58,
+          "pes": 62.0
+        }
       ]
     }
   },
   "posts": [
+    {
+      "post_id": "807965705726273_122117061603012033",
+      "page_id": "807965705726273",
+      "page_name": null,
+      "title": "I\u2019ve been thinking. _ \ud83e\udd2d Hulaan mo Juanabies!\n\nDrop your guess sa comments + \u2665\ufe0f right answer may sorpresa sakin \ud83d\ude18\n\n#GuessGame #PlayfulVibes #CommentYourGuess #TapTheHeart #ReelsPH #TrendingPH\n#Juan365 ",
+      "post_type": "Videos",
+      "publish_time": "2025-12-29T02:11:46+0000",
+      "permalink": "https://www.facebook.com/reel/870844629140670/",
+      "reactions": 6,
+      "comments": 3,
+      "shares": 0,
+      "views": 0,
+      "reach": 0,
+      "engagement": 9,
+      "pes": 12.0
+    },
+    {
+      "post_id": "731608473377029_122117447805013186",
+      "page_id": "731608473377029",
+      "page_name": null,
+      "title": "Let's Hit the Floor Jammies, \nReady for more? Comment mo lang request mo dyan \ud83d\udc8b\n\n#JuanaBabeJam #Juanababes #Juan365 #AllInJuanSaSaya #Juan365livestream",
+      "post_type": "Videos",
+      "publish_time": "2025-12-28T23:52:03+0000",
+      "permalink": "https://www.facebook.com/reel/1585906775900636/",
+      "reactions": 14,
+      "comments": 3,
+      "shares": 1,
+      "views": 0,
+      "reach": 0,
+      "engagement": 18,
+      "pes": 23.0
+    },
+    {
+      "post_id": "747721128429855_122117973165023874",
+      "page_id": "747721128429855",
+      "page_name": null,
+      "title": "There's loving in your eyes that pulls me closer \ud83d\ude0d\n\npatingin nga ng beautiful eyes\ud83e\udd79\n\nFollow and like my FB page ka tinga\n\n#juanababe #juanbabeabi #Juan365 #Juan365livestream #dancechallenge #trendingr",
+      "post_type": "Videos",
+      "publish_time": "2025-12-28T22:10:17+0000",
+      "permalink": "https://www.facebook.com/reel/2129020961204954/",
+      "reactions": 13,
+      "comments": 3,
+      "shares": 0,
+      "views": 0,
+      "reach": 0,
+      "engagement": 16,
+      "pes": 19.0
+    },
+    {
+      "post_id": "748765068327821_122126086533011249",
+      "page_id": "748765068327821",
+      "page_name": null,
+      "title": "Your support means the world to me mga babes \ud83d\ude2d\ud83d\udc9e\n\n40K na tayo\ud83e\udd73 kaya don't forget to \u2665\ufe0f, comment, and share para mas mag grow pa tayo mga babes\ud83d\udc96\n\n#40K #LoveAndSupport #Appreciated #GrowingFam #JuanaBabe",
+      "post_type": "Photos",
+      "publish_time": "2025-12-28T14:11:03+0000",
+      "permalink": "https://www.facebook.com/122125581543011249/posts/122126086533011249",
+      "reactions": 78,
+      "comments": 15,
+      "shares": 10,
+      "views": 0,
+      "reach": 0,
+      "engagement": 103,
+      "pes": 138.0
+    },
+    {
+      "post_id": "747721128429855_122117872623023874",
+      "page_id": "747721128429855",
+      "page_name": null,
+      "title": "Juankada let's end the year with LOVE, JOY, HOPE!\n\nReady na ba ang new year's resolution mo?\n\n#juanababe #juanbabeabi #Juan365 #Juan365livestream #trendingreelsvideo #surprisegift  #fypviral\u30b7 #trendin",
+      "post_type": "Videos",
+      "publish_time": "2025-12-28T10:30:36+0000",
+      "permalink": "https://www.facebook.com/reel/1199551652373512/",
+      "reactions": 16,
+      "comments": 7,
+      "shares": 13,
+      "views": 0,
+      "reach": 0,
+      "engagement": 36,
+      "pes": 69.0
+    },
+    {
+      "post_id": "807965705726273_122116993053012033",
+      "page_id": "807965705726273",
+      "page_name": null,
+      "title": "On the way na sayo \ud83e\udee3\ud83d\udc96May idea ka ba kung saan?\n\nHit the \u2764\ufe0f at hulaan sa comments, Juanabies!\n\n#OnTheWay #GuessWhere #Juanabies #TapTheHeart #CommentYourGuess #ReelsPH #TrendingNow #ViralPH #FYP #ForYo",
+      "post_type": "Text",
+      "publish_time": "2025-12-28T10:00:16+0000",
+      "permalink": "https://www.facebook.com/122117062443012033/posts/122116993053012033",
+      "reactions": 19,
+      "comments": 7,
+      "shares": 2,
+      "views": 0,
+      "reach": 0,
+      "engagement": 28,
+      "pes": 39.0
+    },
+    {
+      "post_id": "731608473377029_122117372901013186",
+      "page_id": "731608473377029",
+      "page_name": null,
+      "title": "Ready to catch your hearts Jammies! \nBaka meron na nahulog dyaan ah \ud83d\udc40\n\nDrop \u2764\ufe0f below bago ako madrop sayo \ud83e\udd2d\n\n#JuanaBabeJam #Juanababes #Juan365 #AllInJuanSaSaya #Juan365livestream",
+      "post_type": "Videos",
+      "publish_time": "2025-12-28T07:49:36+0000",
+      "permalink": "https://www.facebook.com/reel/799908513106227/",
+      "reactions": 23,
+      "comments": 6,
+      "shares": 6,
+      "views": 0,
+      "reach": 0,
+      "engagement": 35,
+      "pes": 53.0
+    },
+    {
+      "post_id": "748765068327821_122126008869011249",
+      "page_id": "748765068327821",
+      "page_name": null,
+      "title": "Kulitan tayo sa live mga babes \ud83e\udd17 make sure na kasama ko kayo ha December 28, 2025 3:30pm \u23f1\ufe0f\n\nHit \u2665\ufe0f and don't forget to share para makasama ko kayong lahat Live sa Juan365 Live Stream Page\ud83e\udd73\ud83e\udef6\ud83c\udffb\n\n#WatchM",
+      "post_type": "Videos",
+      "publish_time": "2025-12-28T07:31:54+0000",
+      "permalink": "https://www.facebook.com/122125581543011249/videos/3787346854735137",
+      "reactions": 394,
+      "comments": 13,
+      "shares": 10,
+      "views": 0,
+      "reach": 0,
+      "engagement": 417,
+      "pes": 450.0
+    },
+    {
+      "post_id": "747721128429855_122117872449023874",
+      "page_id": "747721128429855",
+      "page_name": null,
+      "title": "Anak ng Engkanto yan sya sa sobrang Dyosa\ud83d\ude06 Charrr!\n\nReact \u2764\ufe0f if pwede na kong pang dyosa\n\n#juanababe #juanbabeabi #Juan365 #Juan365livestream #trendingreelsvideo #surprisegift  #fypviral\u30b7 #trendingvid",
+      "post_type": "Videos",
+      "publish_time": "2025-12-28T07:30:14+0000",
+      "permalink": "https://www.facebook.com/reel/1421895379656362/",
+      "reactions": 22,
+      "comments": 7,
+      "shares": 5,
+      "views": 0,
+      "reach": 0,
+      "engagement": 34,
+      "pes": 51.0
+    },
+    {
+      "post_id": "807965705726273_122116976277012033",
+      "page_id": "807965705726273",
+      "page_name": null,
+      "title": "Doing my first crime\u2026 it\u2019s amazing \ud83d\ude0b How about you Juanabies!\n\nSmash that \u2665\ufe0f Comment mo na rin ang first crime mo!\ud83d\ude0f Follow me for more Videos! \ud83d\udc96\n\n#FlirtyVibes #SweetTrouble #SmileCheck #TapTheHeart #G",
+      "post_type": "Videos",
+      "publish_time": "2025-12-28T04:27:25+0000",
+      "permalink": "https://www.facebook.com/reel/945499368048022/",
+      "reactions": 42,
+      "comments": 9,
+      "shares": 7,
+      "views": 0,
+      "reach": 0,
+      "engagement": 58,
+      "pes": 81.0
+    },
+    {
+      "post_id": "807965705726273_122116967397012033",
+      "page_id": "807965705726273",
+      "page_name": null,
+      "title": "Feeling maangas? \ud83d\ude0f\u2728\nDrop your pic sa comments!\n\nLeave a \u2665\ufe0f at follow baka ikaw ang susunod kong makakasama \ud83d\udc96\n\n#MaangasVibes #FlirtyChallenge #Juankada #NextLevelFun #TapTheHeart #FollowForMore #Trendi",
+      "post_type": "Videos",
+      "publish_time": "2025-12-28T04:00:40+0000",
+      "permalink": "https://www.facebook.com/reel/1670352444373396/",
+      "reactions": 25,
+      "comments": 8,
+      "shares": 3,
+      "views": 0,
+      "reach": 0,
+      "engagement": 36,
+      "pes": 50.0
+    },
+    {
+      "post_id": "747721128429855_122117871813023874",
+      "page_id": "747721128429855",
+      "page_name": null,
+      "title": "I ain't tryna play! \npereng ang shikip shikip nyan\ud83d\ude01\n\nPusuan mo na Follow mo pa\n\n#juanababe #juanbabeabi #Juan365 #Juan365livestream #trendingreelsvideo #surprisegift  #fypviral\u30b7 #trendingvideo #trendi",
+      "post_type": "Videos",
+      "publish_time": "2025-12-28T02:19:37+0000",
+      "permalink": "https://www.facebook.com/reel/1879893705944937/",
+      "reactions": 42,
+      "comments": 11,
+      "shares": 7,
+      "views": 0,
+      "reach": 0,
+      "engagement": 60,
+      "pes": 85.0
+    },
+    {
+      "post_id": "807965705726273_122116871751012033",
+      "page_id": "807965705726273",
+      "page_name": null,
+      "title": "Kung nakangiti ka, sign na ito \ud83d\ude0b\n\nFollow, comment, at share na \ud83d\udc96\n\n#JuanababeSena #JuanaBies #FlirtyVibes #FBReelsPH #TrendingNow #FYP #ViralPH #PinoyVibes #ForYouPH",
+      "post_type": "Videos",
+      "publish_time": "2025-12-28T01:00:07+0000",
+      "permalink": "https://www.facebook.com/reel/1589382162250842/",
+      "reactions": 35,
+      "comments": 7,
+      "shares": 0,
+      "views": 0,
+      "reach": 0,
+      "engagement": 42,
+      "pes": 49.0
+    },
     {
       "post_id": "122117372901013186",
       "page_id": "61580395595183",
@@ -5623,7 +7169,7 @@
       "views": 3698,
       "reach": 3108,
       "engagement": 411,
-      "pes": 442.0
+      "pes": 457.0
     },
     {
       "post_id": "122117872449023874",
@@ -5639,7 +7185,7 @@
       "views": 282,
       "reach": 169,
       "engagement": 34,
-      "pes": 51.0
+      "pes": 52.0
     },
     {
       "post_id": "122126006127011249",
@@ -5655,7 +7201,7 @@
       "views": 6063,
       "reach": 4645,
       "engagement": 815,
-      "pes": 864.0
+      "pes": 878.0
     },
     {
       "post_id": "122116976277012033",
@@ -5671,7 +7217,7 @@
       "views": 369,
       "reach": 256,
       "engagement": 58,
-      "pes": 82.0
+      "pes": 84.0
     },
     {
       "post_id": "122116967397012033",
@@ -5703,7 +7249,7 @@
       "views": 467,
       "reach": 184,
       "engagement": 70,
-      "pes": 101.0
+      "pes": 102.0
     },
     {
       "post_id": "122116871751012033",
@@ -5722,6 +7268,38 @@
       "pes": 53.0
     },
     {
+      "post_id": "807965705726273_122116870947012033",
+      "page_id": "807965705726273",
+      "page_name": null,
+      "title": "Hindi na biro to seryosohan na baby. \ud83e\udd0d\n\nTap the \u2665\ufe0f, mag-comment, at follow para di ka mahuli.\n\n#LikeCommentFollow #TapTheHeart #EngageNow #SeriousVibes #LovePH #TrendingPH #Juanabies #Juan365 #AllInJu",
+      "post_type": "Videos",
+      "publish_time": "2025-12-27T12:00:55+0000",
+      "permalink": "https://www.facebook.com/reel/1399696341825113/",
+      "reactions": 19,
+      "comments": 5,
+      "shares": 4,
+      "views": 0,
+      "reach": 0,
+      "engagement": 28,
+      "pes": 41.0
+    },
+    {
+      "post_id": "807965705726273_122116868973012033",
+      "page_id": "807965705726273",
+      "page_name": null,
+      "title": "Ang laki ng bibig!! \ud83d\ude33\ud83d\ude02\n\nDouble tap \u2665\ufe0f, comment \u2018HAHA' at follow for more laughs!\n\n#Juanabies #LaughTrip #FunnyPH #DoubleTap #FollowForMore #ViralReels #Juanabies #Juan365 #AllInJuanSaSaya #Juan365live",
+      "post_type": "Videos",
+      "publish_time": "2025-12-27T09:01:28+0000",
+      "permalink": "https://www.facebook.com/reel/1518703562725403/",
+      "reactions": 50,
+      "comments": 20,
+      "shares": 6,
+      "views": 0,
+      "reach": 0,
+      "engagement": 76,
+      "pes": 108.0
+    },
+    {
       "post_id": "122125878411011249",
       "page_id": "61580337497087",
       "page_name": "Juana Babe Ashley",
@@ -5735,7 +7313,39 @@
       "views": 16990,
       "reach": 13336,
       "engagement": 1665,
-      "pes": 1725.0
+      "pes": 1743.0
+    },
+    {
+      "post_id": "807965705726273_122116842645012033",
+      "page_id": "807965705726273",
+      "page_name": null,
+      "title": "Road to 20k Followers na tayo juanabies thank you sa love \u2665\ufe0f\n\nLeave a \u2665\ufe0f and Follow for your sweet feed upgrade! \ud83d\ude18 \n\n#juanabies #Juan365 #AllInJuanSaSaya #Juan365livestream #juanababesena #juanabies #",
+      "post_type": "Text",
+      "publish_time": "2025-12-27T04:56:53+0000",
+      "permalink": "https://www.facebook.com/122117062443012033/posts/122116842645012033",
+      "reactions": 24,
+      "comments": 9,
+      "shares": 5,
+      "views": 0,
+      "reach": 0,
+      "engagement": 38,
+      "pes": 57.0
+    },
+    {
+      "post_id": "747721128429855_122117775075023874",
+      "page_id": "747721128429855",
+      "page_name": null,
+      "title": "Araw naman ng bigayan hindi pa pinag bigyan eh!\ud83e\udd79\n\nAnong pamagat nitong episode?\ud83d\ude06\n\nheart and follow for more content like this! \ud83e\udd70\n\n#juanababe #juanbabeabi #Juan365 #Juan365livestream #lasthug #trending",
+      "post_type": "Videos",
+      "publish_time": "2025-12-27T04:15:50+0000",
+      "permalink": "https://www.facebook.com/reel/25393647486945051/",
+      "reactions": 80,
+      "comments": 30,
+      "shares": 13,
+      "views": 0,
+      "reach": 0,
+      "engagement": 123,
+      "pes": 179.0
     },
     {
       "post_id": "122116870947012033",
@@ -5754,6 +7364,38 @@
       "pes": 41.0
     },
     {
+      "post_id": "747721128429855_122117758437023874",
+      "page_id": "747721128429855",
+      "page_name": null,
+      "title": "1k and counting na tayo mga Tinga!\ud83e\udd73\nSalamat sa patuloy na suporta, sana hindi kayo mag sawang sumama hanggang sa mga susunod na taon pa! \ud83d\ude0d\n\nFollow, Share and invite more friends\n\n#juanababe #juanbabea",
+      "post_type": "Photos",
+      "publish_time": "2025-12-27T03:00:12+0000",
+      "permalink": "https://www.facebook.com/122117663979023874/posts/122117758437023874",
+      "reactions": 41,
+      "comments": 16,
+      "shares": 9,
+      "views": 0,
+      "reach": 0,
+      "engagement": 66,
+      "pes": 100.0
+    },
+    {
+      "post_id": "807965705726273_122116822257012033",
+      "page_id": "807965705726273",
+      "page_name": null,
+      "title": "Sa susunod na punta ko. baka ikaw na ang hanapin ko \ud83e\udd70\n\nDrop a \u2665\ufe0f if you like a little sweetness with spice \ud83d\ude0f Follow me \ud83d\udc81\ud83c\udffb\u200d\u2640\ufe0f\ud83d\udc96\n\n#SweetWithSpice #FlirtyVibes #GoodVibesOnly #TapTheHeart #FollowForMore #",
+      "post_type": "Videos",
+      "publish_time": "2025-12-27T02:21:01+0000",
+      "permalink": "https://www.facebook.com/reel/796579030102484/",
+      "reactions": 37,
+      "comments": 11,
+      "shares": 6,
+      "views": 0,
+      "reach": 0,
+      "engagement": 54,
+      "pes": 77.0
+    },
+    {
       "post_id": "122125825005011249",
       "page_id": "61580337497087",
       "page_name": "Juana Babe Ashley",
@@ -5767,7 +7409,39 @@
       "views": 16136,
       "reach": 12445,
       "engagement": 1717,
-      "pes": 1771.0
+      "pes": 1792.0
+    },
+    {
+      "post_id": "754416584427163_122117330637015980",
+      "page_id": "754416584427163",
+      "page_name": null,
+      "title": "City of Dreams by day, your dreams by night \ud83d\udc96\n\n Dreams or reality? Follow and Comment \"Catch\" to make your dreams real babes \ud83d\udc8b\n\n#juanababezell #juanababes #Juan365livestream #AllInJuanSaSaya #Juan365P",
+      "post_type": "Videos",
+      "publish_time": "2025-12-27T02:01:16+0000",
+      "permalink": "https://www.facebook.com/reel/1163607459273000/",
+      "reactions": 52,
+      "comments": 15,
+      "shares": 10,
+      "views": 0,
+      "reach": 0,
+      "engagement": 77,
+      "pes": 112.0
+    },
+    {
+      "post_id": "731608473377029_122117242779013186",
+      "page_id": "731608473377029",
+      "page_name": null,
+      "title": "Good morning Juankada! Attendance check muna tayo!\ud83e\udd70\n\nIsang \u2764\ufe0f react at ingay naman ng mga solid Juankada dyan!\ud83e\udd73\n\n#JuanaBabeJam #Juanababes\n#Juan365 #AllInJuanSaSaya #Juan365livestream",
+      "post_type": "Videos",
+      "publish_time": "2025-12-27T01:33:37+0000",
+      "permalink": "https://www.facebook.com/reel/843268438584561/",
+      "reactions": 50,
+      "comments": 17,
+      "shares": 15,
+      "views": 0,
+      "reach": 0,
+      "engagement": 82,
+      "pes": 129.0
     },
     {
       "post_id": "122116868973012033",
@@ -5783,7 +7457,23 @@
       "views": 661,
       "reach": 353,
       "engagement": 82,
-      "pes": 117.0
+      "pes": 118.0
+    },
+    {
+      "post_id": "747721128429855_122117758101023874",
+      "page_id": "747721128429855",
+      "page_name": null,
+      "title": "Parang mga Tinga hahahaha Buhay na ba ang lahat! \ud83d\ude06\n\nIkaw ilang shots ba ang kinaya mo?\n\n#juanababe #juanbabeabi #Juan365 #Juan365livestream  #TagAFriend #Followme #AllInJuanSaSaya \n#fyp\u30b7 #trend  #danc",
+      "post_type": "Videos",
+      "publish_time": "2025-12-26T23:22:52+0000",
+      "permalink": "https://www.facebook.com/reel/950827887599817/",
+      "reactions": 32,
+      "comments": 10,
+      "shares": 5,
+      "views": 0,
+      "reach": 0,
+      "engagement": 47,
+      "pes": 67.0
     },
     {
       "post_id": "122116842645012033",
@@ -5831,7 +7521,7 @@
       "views": 9144,
       "reach": 7287,
       "engagement": 1055,
-      "pes": 1101.0
+      "pes": 1106.0
     },
     {
       "post_id": "122117758437023874",
@@ -5864,6 +7554,22 @@
       "reach": 221,
       "engagement": 61,
       "pes": 91.0
+    },
+    {
+      "post_id": "754416584427163_122117297271015980",
+      "page_id": "754416584427163",
+      "page_name": null,
+      "title": "She has that kind of magic \u2728\nOne look at her, and it\u2019s game over\n\nDon\u2019t just scroll, follow now, discover and  Tap \"\u2764\ufe0f\" to find out why \ud83d\ude09\n\n#juanababezell #juanababes #Juan365livestream #AllInJuanSaSay",
+      "post_type": "Videos",
+      "publish_time": "2025-12-26T18:11:24+0000",
+      "permalink": "https://www.facebook.com/reel/1528348351618244/",
+      "reactions": 35,
+      "comments": 10,
+      "shares": 7,
+      "views": 0,
+      "reach": 0,
+      "engagement": 52,
+      "pes": 76.0
     },
     {
       "post_id": "122117330637015980",
@@ -5914,6 +7620,38 @@
       "pes": 110.0
     },
     {
+      "post_id": "807965705726273_122116726341012033",
+      "page_id": "807965705726273",
+      "page_name": null,
+      "title": "Juanabies \ud83e\udd0d Let\u2019s dance, slow and easy \u2728\nStay, follow, and vibe with me \ud83d\udc96\n\n#JuanababeSena #JuanaBies #SoftVibes #FBReelsPH #ForYouPH #ViralPH #FYP",
+      "post_type": "Videos",
+      "publish_time": "2025-12-26T12:00:56+0000",
+      "permalink": "https://www.facebook.com/reel/1941162723474894/",
+      "reactions": 60,
+      "comments": 8,
+      "shares": 3,
+      "views": 0,
+      "reach": 0,
+      "engagement": 71,
+      "pes": 85.0
+    },
+    {
+      "post_id": "747721128429855_122117651607023874",
+      "page_id": "747721128429855",
+      "page_name": null,
+      "title": "Pereng tinga pa kiss lang eh\ud83d\ude06\n\nKamusta naman ang Christmas day mo Juankada?\n\n#juanababe #juanbabeabi #Juan365 #Juan365livestream #Christmasiscoming #TagAFriend #Followme #AllInJuanSaSaya \n#fyp\u30b7 #trend",
+      "post_type": "Videos",
+      "publish_time": "2025-12-26T10:30:20+0000",
+      "permalink": "https://www.facebook.com/reel/1624583805375660/",
+      "reactions": 23,
+      "comments": 4,
+      "shares": 3,
+      "views": 0,
+      "reach": 0,
+      "engagement": 30,
+      "pes": 40.0
+    },
+    {
       "post_id": "122117297271015980",
       "page_id": "61580479407070",
       "page_name": "Juana Babe Zell",
@@ -5930,6 +7668,86 @@
       "pes": 76.0
     },
     {
+      "post_id": "748765068327821_122125633209011249",
+      "page_id": "748765068327821",
+      "page_name": null,
+      "title": "OMG! Mga babes, we reached 35K right after Christmas Day\ud83e\udd79\ud83e\udef6\ud83c\udffb\n\nPress \u2665\ufe0f and share mo sa hindi pa natin ka-babes then comment done para aking mapusuan \ud83e\udee0\ud83e\udd2d\n\n#GrowingFam #MoreFollowers #35K #Beauty #JuanaBa",
+      "post_type": "Photos",
+      "publish_time": "2025-12-26T09:31:54+0000",
+      "permalink": "https://www.facebook.com/122125581543011249/posts/122125633209011249",
+      "reactions": 86,
+      "comments": 37,
+      "shares": 18,
+      "views": 0,
+      "reach": 0,
+      "engagement": 141,
+      "pes": 214.0
+    },
+    {
+      "post_id": "807965705726273_122116726287012033",
+      "page_id": "807965705726273",
+      "page_name": null,
+      "title": "Hi baby!! \ud83e\udd70\nDrop a \u2764\ufe0f, comment, at share \u2728\n\n#JuanababeSena #JuanaBies #FBReelsPH #ForYouPH #ViralPH #FYP #KiligVibes",
+      "post_type": "Videos",
+      "publish_time": "2025-12-26T08:00:23+0000",
+      "permalink": "https://www.facebook.com/reel/735685529588815/",
+      "reactions": 31,
+      "comments": 7,
+      "shares": 4,
+      "views": 0,
+      "reach": 0,
+      "engagement": 42,
+      "pes": 57.0
+    },
+    {
+      "post_id": "731608473377029_122117165301013186",
+      "page_id": "731608473377029",
+      "page_name": null,
+      "title": "TGIF feels, ready na ulit mag weekends kahit kaka-holiday lang \u2764\ufe0f\n\nTag mo yung Friend mo Excited Pag Friday \ud83d\ude01\n\n#JuanaBabeJam #Juanababes\n#Juan365 #AllInJuanSaSaya #Juan365livestream",
+      "post_type": "Videos",
+      "publish_time": "2025-12-26T07:18:26+0000",
+      "permalink": "https://www.facebook.com/reel/718058334367823/",
+      "reactions": 35,
+      "comments": 14,
+      "shares": 8,
+      "views": 0,
+      "reach": 0,
+      "engagement": 57,
+      "pes": 87.0
+    },
+    {
+      "post_id": "747721128429855_122117651451023874",
+      "page_id": "747721128429855",
+      "page_name": null,
+      "title": "Trabaho! nanaman, Aariba nanaman tayo mga tinga\ud83d\ude06\n\nMarami ka na bang nakuhang regalo or ikaw ang namigay ng regalo Juankada?\ud83d\ude01\n\n#juanababe #juanbabeabi #Juan365 #Juan365livestream #Christmasiscoming #Ta",
+      "post_type": "Videos",
+      "publish_time": "2025-12-26T07:00:28+0000",
+      "permalink": "https://www.facebook.com/reel/1360756638561093/",
+      "reactions": 28,
+      "comments": 11,
+      "shares": 6,
+      "views": 0,
+      "reach": 0,
+      "engagement": 45,
+      "pes": 68.0
+    },
+    {
+      "post_id": "807965705726273_122116715277012033",
+      "page_id": "807965705726273",
+      "page_name": null,
+      "title": "Hi Juanabies! \ud83d\udc96\nMas bagay ba may filter o wala? \ud83d\udc40\nComment down below \u2b07\ufe0f at follow the page \u2728\n\n#JuanababeSena #JuanaBies #FBReelsPH #ForYouPH #TrendingNow #ViralPH #PinoyVibes #FYP #EngagementPost #Ree",
+      "post_type": "Videos",
+      "publish_time": "2025-12-26T04:00:27+0000",
+      "permalink": "https://www.facebook.com/reel/1412370173942556/",
+      "reactions": 57,
+      "comments": 12,
+      "shares": 5,
+      "views": 0,
+      "reach": 0,
+      "engagement": 74,
+      "pes": 96.0
+    },
+    {
       "post_id": "122116726341012033",
       "page_id": "61580361006776",
       "page_name": "Juana Babe Sena",
@@ -5944,6 +7762,22 @@
       "reach": 408,
       "engagement": 77,
       "pes": 94.0
+    },
+    {
+      "post_id": "807965705726273_122116720425012033",
+      "page_id": "807965705726273",
+      "page_name": null,
+      "title": "See you!! \ud83e\udef6\ud83c\udffb\ud83e\udd79",
+      "post_type": "Photos",
+      "publish_time": "2025-12-26T03:48:17+0000",
+      "permalink": "https://www.facebook.com/122117062443012033/posts/122116720425012033",
+      "reactions": 18,
+      "comments": 5,
+      "shares": 1,
+      "views": 0,
+      "reach": 0,
+      "engagement": 24,
+      "pes": 31.0
     },
     {
       "post_id": "122117651607023874",
@@ -5978,6 +7812,22 @@
       "pes": 242.0
     },
     {
+      "post_id": "807965705726273_122116715235012033",
+      "page_id": "807965705726273",
+      "page_name": null,
+      "title": "Need your love, JuanaBies \ud83e\udd0d\nDrop a \u2764\ufe0f, follow the page, and stay with me \u2728\n\n#JuanababeSena #JuanaBies #FBReelsPH #ForYouPH #TrendingNow #ViralPH #SoftVibes #FYP",
+      "post_type": "Videos",
+      "publish_time": "2025-12-26T01:27:05+0000",
+      "permalink": "https://www.facebook.com/reel/25016338688048543/",
+      "reactions": 68,
+      "comments": 4,
+      "shares": 0,
+      "views": 0,
+      "reach": 0,
+      "engagement": 72,
+      "pes": 76.0
+    },
+    {
       "post_id": "122125629351011249",
       "page_id": "61580337497087",
       "page_name": "Juana Babe Ashley",
@@ -5991,7 +7841,23 @@
       "views": 13620,
       "reach": 10145,
       "engagement": 1503,
-      "pes": 1572.0
+      "pes": 1581.0
+    },
+    {
+      "post_id": "747721128429855_122117644959023874",
+      "page_id": "747721128429855",
+      "page_name": null,
+      "title": "Mowie wowie na pauwi sa sobrang traffic! sinusubok talaga ako nito eh\ud83d\ude06\n\nPauwi na ba ang lahat\ud83d\ude06 san ka manggagaling Juankada?\n\n#juanababe #juanbabeabi #Juan365 #Juan365livestream #Christmasiscoming #Ta",
+      "post_type": "Videos",
+      "publish_time": "2025-12-26T00:40:52+0000",
+      "permalink": "https://www.facebook.com/reel/25499687206309515/",
+      "reactions": 35,
+      "comments": 12,
+      "shares": 7,
+      "views": 0,
+      "reach": 0,
+      "engagement": 54,
+      "pes": 80.0
     },
     {
       "post_id": "122116726287012033",
@@ -6087,7 +7953,7 @@
       "views": 28823,
       "reach": 23338,
       "engagement": 2168,
-      "pes": 2225.0
+      "pes": 2236.0
     },
     {
       "post_id": "122116715235012033",
@@ -6122,6 +7988,102 @@
       "pes": 82.0
     },
     {
+      "post_id": "747721128429855_122117496165023874",
+      "page_id": "747721128429855",
+      "page_name": null,
+      "title": "Ganda na may konting meryenda Charr!\ud83d\ude06 tara dito samahan mo na lang ako\n\nAnong handa natin jan?\ud83d\ude01\n\n#juanababe #juanbabeabi #Juan365 #Juan365livestream #Christmasiscoming #TagAFriend #Followme #AllInJuan",
+      "post_type": "Videos",
+      "publish_time": "2025-12-25T11:06:26+0000",
+      "permalink": "https://www.facebook.com/reel/1622996402396749/",
+      "reactions": 31,
+      "comments": 10,
+      "shares": 4,
+      "views": 0,
+      "reach": 0,
+      "engagement": 45,
+      "pes": 63.0
+    },
+    {
+      "post_id": "807965705726273_122116631493012033",
+      "page_id": "807965705726273",
+      "page_name": null,
+      "title": "Let's dance Juanabies! kaya mo ba!? \ud83d\ude09\ud83d\udcab \n\nLeave a \u2665\ufe0f Sahre and Follow for your sweet feed upgrade! \ud83d\ude18\u2728\n\n#Juanababes #Juan365 #AllInJuanSaSaya #Juan365livestream #JuanaBabeSena #fbreels #reelsph #thirstt",
+      "post_type": "Videos",
+      "publish_time": "2025-12-25T10:00:37+0000",
+      "permalink": "https://www.facebook.com/reel/1959100684640063/",
+      "reactions": 55,
+      "comments": 2,
+      "shares": 1,
+      "views": 0,
+      "reach": 0,
+      "engagement": 58,
+      "pes": 62.0
+    },
+    {
+      "post_id": "754416584427163_122117116995015980",
+      "page_id": "754416584427163",
+      "page_name": null,
+      "title": "Soft start, strong finish \ud83d\ude0f \n\nStay till the end! You ready? Watch this and tell me what you think \ud83d\udc47\n\n#juanababezell #juanababes #Juan365livestream #AllInJuanSaSaya #Juan365PH #JuanKada #Juan365 #juana",
+      "post_type": "Videos",
+      "publish_time": "2025-12-25T08:53:11+0000",
+      "permalink": "https://www.facebook.com/reel/1377964980737584/",
+      "reactions": 44,
+      "comments": 15,
+      "shares": 9,
+      "views": 0,
+      "reach": 0,
+      "engagement": 68,
+      "pes": 101.0
+    },
+    {
+      "post_id": "747721128429855_122117495943023874",
+      "page_id": "747721128429855",
+      "page_name": null,
+      "title": "Mini exchange gifts with simple lunch out with the Team, salamat sa gift na TV with dryer\ud83d\ude06\n\nAnong kwentong exchange gift mo Juankada?\n\n#juanababe #juanbabeabi #Juan365 #Juan365livestream #Christmasisc",
+      "post_type": "Videos",
+      "publish_time": "2025-12-25T06:00:36+0000",
+      "permalink": "https://www.facebook.com/reel/1228978292416892/",
+      "reactions": 14,
+      "comments": 1,
+      "shares": 1,
+      "views": 0,
+      "reach": 0,
+      "engagement": 16,
+      "pes": 19.0
+    },
+    {
+      "post_id": "807965705726273_122116625511012033",
+      "page_id": "807965705726273",
+      "page_name": null,
+      "title": "Relax, feel the vibe \ud83d\ude0e\n\nGusto mo pa? Follow Me!!! \ud83d\udc96\nShare at comment mo na ang move mo!\n\n#JuanababeSena #JuanaBies #ChillMoves #TrendingPH #FBReels #ForYouPH #FYP #ViralPH #PinoyVibes #DanceChallenge",
+      "post_type": "Videos",
+      "publish_time": "2025-12-25T04:00:20+0000",
+      "permalink": "https://www.facebook.com/reel/860822533025453/",
+      "reactions": 27,
+      "comments": 4,
+      "shares": 2,
+      "views": 0,
+      "reach": 0,
+      "engagement": 33,
+      "pes": 41.0
+    },
+    {
+      "post_id": "731608473377029_122117054757013186",
+      "page_id": "731608473377029",
+      "page_name": null,
+      "title": "Good morning juankada! \u2764\ufe0f     \n     MERRY CHRISTMAS\n\n Kung nabusog ka kagabi, comment \u201cBlessed\u201d\ud83d\ude07\n\n#JuanaBabeJam #Juanababes\n#Juan365 #AllInJuanSaSaya #Juan365livestream",
+      "post_type": "Text",
+      "publish_time": "2025-12-25T03:26:30+0000",
+      "permalink": "https://www.facebook.com/122117157621013186/posts/122117054757013186",
+      "reactions": 48,
+      "comments": 18,
+      "shares": 13,
+      "views": 0,
+      "reach": 0,
+      "engagement": 79,
+      "pes": 123.0
+    },
+    {
       "post_id": "122117496165023874",
       "page_id": "61580716220863",
       "page_name": "Juana Babe Abi",
@@ -6154,6 +8116,38 @@
       "pes": 65.0
     },
     {
+      "post_id": "748765068327821_122125354827011249",
+      "page_id": "748765068327821",
+      "page_name": null,
+      "title": "",
+      "post_type": "Text",
+      "publish_time": "2025-12-25T01:19:21+0000",
+      "permalink": "https://www.facebook.com/122125581543011249/posts/122125354827011249",
+      "reactions": 13,
+      "comments": 2,
+      "shares": 1,
+      "views": 0,
+      "reach": 0,
+      "engagement": 16,
+      "pes": 20.0
+    },
+    {
+      "post_id": "807965705726273_122116625415012033",
+      "page_id": "807965705726273",
+      "page_name": null,
+      "title": "Can we talk now!? \ud83e\udd70\n\nComment ka na at i-follow para lagi kang updated!\n\n#JuanababeSena #JuanaBies #TrendingReels #FYP #FBAlgorithm #PinoyVibes #SoftClassy #ViralPH #ForYouPH #ChillMood",
+      "post_type": "Videos",
+      "publish_time": "2025-12-25T01:14:56+0000",
+      "permalink": "https://www.facebook.com/reel/876583175334078/",
+      "reactions": 37,
+      "comments": 3,
+      "shares": 1,
+      "views": 0,
+      "reach": 0,
+      "engagement": 41,
+      "pes": 46.0
+    },
+    {
       "post_id": "122117116995015980",
       "page_id": "61580479407070",
       "page_name": "Juana Babe Zell",
@@ -6170,6 +8164,22 @@
       "pes": 111.0
     },
     {
+      "post_id": "747721128429855_122117495655023874",
+      "page_id": "747721128429855",
+      "page_name": null,
+      "title": "Ganda lang muna mabibigay ni Ninang mga inaanak\ud83d\ude06\n\nIkaw Juankada anong ibibigay mo sa inaanak mo?\n\n#juanababe #juanbabeabi #Juan365 #Juan365livestream #Christmasiscoming #TagAFriend #Followme #AllInJua",
+      "post_type": "Videos",
+      "publish_time": "2025-12-24T23:00:42+0000",
+      "permalink": "https://www.facebook.com/reel/872659655245773/",
+      "reactions": 25,
+      "comments": 9,
+      "shares": 1,
+      "views": 0,
+      "reach": 0,
+      "engagement": 35,
+      "pes": 46.0
+    },
+    {
       "post_id": "122125393581011249",
       "page_id": "61580337497087",
       "page_name": "Juana Babe Ashley",
@@ -6183,7 +8193,7 @@
       "views": 169818,
       "reach": 137977,
       "engagement": 14694,
-      "pes": 14980.0
+      "pes": 14985.0
     },
     {
       "post_id": "122117495943023874",
@@ -6247,7 +8257,7 @@
       "views": 89646,
       "reach": 71857,
       "engagement": 8227,
-      "pes": 8500.0
+      "pes": 8514.0
     },
     {
       "post_id": "122125354827011249",
@@ -6282,6 +8292,22 @@
       "pes": 47.0
     },
     {
+      "post_id": "754416584427163_122117020047015980",
+      "page_id": "754416584427163",
+      "page_name": null,
+      "title": "MERRY CHRISTMAS EVERYONE \ud83c\udf81\ud83c\udf84",
+      "post_type": "Text",
+      "publish_time": "2025-12-24T16:14:15+0000",
+      "permalink": "https://www.facebook.com/122117576505015980/posts/122117020047015980",
+      "reactions": 26,
+      "comments": 11,
+      "shares": 4,
+      "views": 0,
+      "reach": 0,
+      "engagement": 41,
+      "pes": 60.0
+    },
+    {
       "post_id": "122117495655023874",
       "page_id": "61580716220863",
       "page_name": "Juana Babe Abi",
@@ -6296,6 +8322,102 @@
       "reach": 187,
       "engagement": 35,
       "pes": 46.0
+    },
+    {
+      "post_id": "731608473377029_122116992615013186",
+      "page_id": "731608473377029",
+      "page_name": null,
+      "title": "Ngayong Pasko, kahit simpleng gift, may meaning. Ano ang pinaka-heartwarming na natanggap mong pamasko \ud83e\udd70\n\n#JuanaBabeJam#Juanababes\n#Juan365#AllInJuanSaSaya#Juan365live",
+      "post_type": "Videos",
+      "publish_time": "2025-12-24T13:36:51+0000",
+      "permalink": "https://www.facebook.com/reel/2146179399242349/",
+      "reactions": 43,
+      "comments": 16,
+      "shares": 3,
+      "views": 0,
+      "reach": 0,
+      "engagement": 62,
+      "pes": 84.0
+    },
+    {
+      "post_id": "754416584427163_122116999041015980",
+      "page_id": "754416584427163",
+      "page_name": null,
+      "title": "Let\u2019s start the countdown, babes! \nMerry Christmas everyJuan \ud83d\udc9d\n\nShare this with someone who loves Christmas as much as you do \ud83c\udf84\n\n#juanababezell #juanababes #Juan365livestream #AllInJuanSaSaya #Juan365",
+      "post_type": "Videos",
+      "publish_time": "2025-12-24T12:29:35+0000",
+      "permalink": "https://www.facebook.com/reel/1218499400190755/",
+      "reactions": 39,
+      "comments": 14,
+      "shares": 12,
+      "views": 0,
+      "reach": 0,
+      "engagement": 65,
+      "pes": 103.0
+    },
+    {
+      "post_id": "748765068327821_122125257519011249",
+      "page_id": "748765068327821",
+      "page_name": null,
+      "title": "Magpapaskong _?\ud83e\udee3\n\nHit \u2665\ufe0f and hulaan nyo sa comment mga babes kung magpapasko akong what?\ud83e\udd23\ud83d\udc9e\n\n#Charming #Cute #Simple #JuanaBabeAshley #CommentYourThoughts #TagAFriend #Followme #Juanababes #Juan365 #Al",
+      "post_type": "Photos",
+      "publish_time": "2025-12-24T12:26:05+0000",
+      "permalink": "https://www.facebook.com/122125581543011249/posts/122125257519011249",
+      "reactions": 271,
+      "comments": 40,
+      "shares": 4,
+      "views": 0,
+      "reach": 0,
+      "engagement": 315,
+      "pes": 363.0
+    },
+    {
+      "post_id": "807965705726273_122116552251012033",
+      "page_id": "807965705726273",
+      "page_name": null,
+      "title": "Shake the booty, JuanaBies! \ud83c\udf51\u2728\nKung napangiti ka, alam mo na \ud83d\ude09\nFollow for more good vibes \ud83d\udc96\n\n#JuanaBies #DanceVibes #FBReels #FYP #Juanababes #Juan365 #AllInJuanSaSaya #Juan365livestream #JuanaBabeSen",
+      "post_type": "Videos",
+      "publish_time": "2025-12-24T12:00:44+0000",
+      "permalink": "https://www.facebook.com/reel/1222419319761489/",
+      "reactions": 23,
+      "comments": 2,
+      "shares": 0,
+      "views": 0,
+      "reach": 0,
+      "engagement": 25,
+      "pes": 27.0
+    },
+    {
+      "post_id": "747721128429855_122117419731023874",
+      "page_id": "747721128429855",
+      "page_name": null,
+      "title": "Sayawan ko na to! \ud83d\ude02 Isang araw na lang pasko na!\n\nAnong pag hahanda ang gagawin mo?\n\n#juanababe #juanbabeabi #Juan365 #Juan365livestream #Christmasiscoming #TagAFriend #Followme #AllInJuanSaSaya \n#fyp",
+      "post_type": "Videos",
+      "publish_time": "2025-12-24T11:00:06+0000",
+      "permalink": "https://www.facebook.com/reel/908411562361395/",
+      "reactions": 36,
+      "comments": 12,
+      "shares": 0,
+      "views": 0,
+      "reach": 0,
+      "engagement": 48,
+      "pes": 60.0
+    },
+    {
+      "post_id": "807965705726273_122116560339012033",
+      "page_id": "807965705726273",
+      "page_name": null,
+      "title": "",
+      "post_type": "Text",
+      "publish_time": "2025-12-24T10:15:04+0000",
+      "permalink": "https://www.facebook.com/122117062443012033/posts/122116560339012033",
+      "reactions": 9,
+      "comments": 0,
+      "shares": 3,
+      "views": 0,
+      "reach": 0,
+      "engagement": 12,
+      "pes": 18.0
     },
     {
       "post_id": "122117020047015980",
@@ -6314,6 +8436,22 @@
       "pes": 68.0
     },
     {
+      "post_id": "747721128429855_122117418027023874",
+      "page_id": "747721128429855",
+      "page_name": null,
+      "title": "Pere nemen kasing tinga ikaw lang nemen kasi!!\ud83d\ude44\n\nMention mo na si crush baka ikaw lang hinihintay nyan\ud83e\udee3\ud83d\udc47\ud83c\udffb\n\n#juanababe #juanbabeabi #Juan365 #Juan365livestream\n#fyp\u30b7 #trend  #dance  #foryopage",
+      "post_type": "Videos",
+      "publish_time": "2025-12-24T07:00:58+0000",
+      "permalink": "https://www.facebook.com/reel/1570538987494280/",
+      "reactions": 22,
+      "comments": 5,
+      "shares": 0,
+      "views": 0,
+      "reach": 0,
+      "engagement": 27,
+      "pes": 32.0
+    },
+    {
       "post_id": "122116992615013186",
       "page_id": "61580395595183",
       "page_name": "Juana Babe Jam",
@@ -6328,6 +8466,38 @@
       "reach": 268,
       "engagement": 67,
       "pes": 92.0
+    },
+    {
+      "post_id": "807965705726273_122116544889012033",
+      "page_id": "807965705726273",
+      "page_name": null,
+      "title": "",
+      "post_type": "Text",
+      "publish_time": "2025-12-24T05:05:28+0000",
+      "permalink": "https://www.facebook.com/122117062443012033/posts/122116544889012033",
+      "reactions": 9,
+      "comments": 0,
+      "shares": 1,
+      "views": 0,
+      "reach": 0,
+      "engagement": 10,
+      "pes": 12.0
+    },
+    {
+      "post_id": "807965705726273_122116528563012033",
+      "page_id": "807965705726273",
+      "page_name": null,
+      "title": "Ilang oras na lang bago ang Pasko\u2026\nAno ang wish mo, JuanaBies? \ud83e\udd0d\u2728\n\n#JuanaBies #ChristmasCountdown #SoftVibes #ReelsPH #Juankadasena",
+      "post_type": "Videos",
+      "publish_time": "2025-12-24T05:00:02+0000",
+      "permalink": "https://www.facebook.com/reel/2024573701669067/",
+      "reactions": 48,
+      "comments": 6,
+      "shares": 6,
+      "views": 0,
+      "reach": 0,
+      "engagement": 60,
+      "pes": 78.0
     },
     {
       "post_id": "122116999041015980",
@@ -6362,6 +8532,22 @@
       "pes": 386.0
     },
     {
+      "post_id": "754416584427163_122116960419015980",
+      "page_id": "754416584427163",
+      "page_name": null,
+      "title": "Need pa ba magpakilala babes? \nYou know me more than I do \ud83d\ude09\n\nReact \ud83d\udc96 , Follow and invite your friends to know more about me\n\n#juanababezell #juanababes #Juan365livestream #AllInJuanSaSaya #Juan365PH #",
+      "post_type": "Videos",
+      "publish_time": "2025-12-24T04:00:38+0000",
+      "permalink": "https://www.facebook.com/reel/1211597861039328/",
+      "reactions": 30,
+      "comments": 8,
+      "shares": 13,
+      "views": 0,
+      "reach": 0,
+      "engagement": 51,
+      "pes": 85.0
+    },
+    {
       "post_id": "122116552251012033",
       "page_id": "61580361006776",
       "page_name": "Juana Babe Sena",
@@ -6376,6 +8562,22 @@
       "reach": 194,
       "engagement": 27,
       "pes": 29.0
+    },
+    {
+      "post_id": "731608473377029_122116949595013186",
+      "page_id": "731608473377029",
+      "page_name": null,
+      "title": "Grabe ang mga hablutan, \nBardagulan na may konting exchange gift ahahahah \ud83c\udf81\n\nNakapag exchange gifts na ba ang lahat???\ud83e\udd70\n\n#JuanaBabeJam#Juanababes\n#Juan365#AllInJuanSaSaya#Juan365livestream",
+      "post_type": "Videos",
+      "publish_time": "2025-12-24T03:03:21+0000",
+      "permalink": "https://www.facebook.com/reel/801426342945921/",
+      "reactions": 24,
+      "comments": 3,
+      "shares": 1,
+      "views": 0,
+      "reach": 0,
+      "engagement": 28,
+      "pes": 33.0
     },
     {
       "post_id": "122117419731023874",
@@ -6394,13 +8596,29 @@
       "pes": 63.0
     },
     {
+      "post_id": "731608473377029_122116947165013186",
+      "page_id": "731608473377029",
+      "page_name": null,
+      "title": "Grabe talaga ang lakas ng dating ng isang Juana Babe Jam \ud83e\udd29\n\nMention mo yung kaibigan mong mas malakas yun dating \ud83d\ude01\n\n#JuanaBabeJam#Juanababes\n#Juan365#AllInJuanSaSaya#Juan365livestream",
+      "post_type": "Videos",
+      "publish_time": "2025-12-24T02:17:30+0000",
+      "permalink": "https://www.facebook.com/reel/2064304141091091/",
+      "reactions": 20,
+      "comments": 5,
+      "shares": 1,
+      "views": 0,
+      "reach": 0,
+      "engagement": 26,
+      "pes": 33.0
+    },
+    {
       "post_id": "122116560339012033",
       "page_id": "61580361006776",
       "page_name": "Juana Babe Sena",
       "title": "",
       "post_type": "Videos",
       "publish_time": "2025-12-24T02:15:00",
-      "permalink": "https://www.facebook.com/JuanababeSena/posts/pfbid02BDiZQcP7Dd4Q21byyi1uoXRru1njBLB77CVFk3GX7PCLMGxAzhbsBujAMphd7eYdl",
+      "permalink": "https://www.facebook.com/JuanababeSena/posts/pfbid07g5NVSkkNMrbRGyTc2W6WwLstPxBqjFPuGq5NrNWDMxKLnhTiG8jQQsM2puXqvmml",
       "reactions": 9,
       "comments": 0,
       "shares": 0,
@@ -6408,6 +8626,54 @@
       "reach": 80,
       "engagement": 9,
       "pes": 9.0
+    },
+    {
+      "post_id": "747721128429855_122117417529023874",
+      "page_id": "747721128429855",
+      "page_name": null,
+      "title": "Careful\u2026 I might make you fall in love..\n\ndrop a \u2764\ufe0fkung nagustuhan mo ang vibe na to and tag your friends na hindi pa naka follow\n\n#juanababe #juanbabeabi #Juan365 #Juan365livestream #CommentYourThoug",
+      "post_type": "Videos",
+      "publish_time": "2025-12-24T01:42:20+0000",
+      "permalink": "https://www.facebook.com/reel/2411670942603364/",
+      "reactions": 24,
+      "comments": 6,
+      "shares": 3,
+      "views": 0,
+      "reach": 0,
+      "engagement": 33,
+      "pes": 45.0
+    },
+    {
+      "post_id": "807965705726273_122116501749012033",
+      "page_id": "807965705726273",
+      "page_name": null,
+      "title": "May cause obsession, ma-heart eyes ka \ud83d\udc96\n\nDrop a \u2665\ufe0f if you\u2019re ready for more adorable content! Don\u2019t forget to Follow! \ud83e\udd70\n\n#CatchTheseEyes #VibesOnly #EyesOnMe #fbreels #reelsph #thirsttrapph #genzvibes",
+      "post_type": "Videos",
+      "publish_time": "2025-12-24T00:00:25+0000",
+      "permalink": "https://www.facebook.com/reel/2280806469106368/",
+      "reactions": 45,
+      "comments": 11,
+      "shares": 2,
+      "views": 0,
+      "reach": 0,
+      "engagement": 58,
+      "pes": 73.0
+    },
+    {
+      "post_id": "754416584427163_122116944435015980",
+      "page_id": "754416584427163",
+      "page_name": null,
+      "title": "Christimas vibe is giving, but in my hot snz era \ud83d\udd25\n\nChristmas season? Or Hot Season? Comment your vibes now \ud83d\udc47\ud83d\udc96\n\n#juanababezell #juanababes #Juan365livestream #AllInJuanSaSaya #Juan365PH #JuanKada #Jua",
+      "post_type": "Videos",
+      "publish_time": "2025-12-23T23:55:34+0000",
+      "permalink": "https://www.facebook.com/reel/2105155870257516/",
+      "reactions": 39,
+      "comments": 7,
+      "shares": 14,
+      "views": 0,
+      "reach": 0,
+      "engagement": 60,
+      "pes": 95.0
     },
     {
       "post_id": "122125205307011249",
@@ -6423,7 +8689,7 @@
       "views": 100415,
       "reach": 69654,
       "engagement": 8636,
-      "pes": 8826.0
+      "pes": 8832.0
     },
     {
       "post_id": "122117418027023874",
@@ -6503,7 +8769,7 @@
       "views": 45234,
       "reach": 36159,
       "engagement": 3967,
-      "pes": 4087.0
+      "pes": 4094.0
     },
     {
       "post_id": "122116949595013186",
@@ -6602,6 +8868,134 @@
       "pes": 119.0
     },
     {
+      "post_id": "747721128429855_122117375685023874",
+      "page_id": "747721128429855",
+      "page_name": null,
+      "title": "Enjoy the season of joy ,Merry Christmas Juankada!\ud83e\udd73\n\n#Juanbabes #Juan365livestream #JuanababeAbi",
+      "post_type": "Photos",
+      "publish_time": "2025-12-23T14:34:45+0000",
+      "permalink": "https://www.facebook.com/122117663979023874/posts/122117375685023874?substory_index=2357660148067615",
+      "reactions": 39,
+      "comments": 16,
+      "shares": 5,
+      "views": 0,
+      "reach": 0,
+      "engagement": 60,
+      "pes": 86.0
+    },
+    {
+      "post_id": "748765068327821_122125038939011249",
+      "page_id": "748765068327821",
+      "page_name": null,
+      "title": "Merry Christmas mga babes\ud83d\udcab   Hope your holidays are bright\n\n#Juanbabes #Juan365livestream #JuanababeAshley",
+      "post_type": "Photos",
+      "publish_time": "2025-12-23T14:31:26+0000",
+      "permalink": "https://www.facebook.com/122125581543011249/posts/122125038939011249?substory_index=1283930990417929",
+      "reactions": 95,
+      "comments": 14,
+      "shares": 3,
+      "views": 0,
+      "reach": 0,
+      "engagement": 112,
+      "pes": 132.0
+    },
+    {
+      "post_id": "807965705726273_122116493349012033",
+      "page_id": "807965705726273",
+      "page_name": null,
+      "title": "Warm Christmas wishes to you, Juanabies! \ud83c\udf81 Enjoy the festive season!\n\n#Juanababes #Juan365 #Juan365livestream #JuanaBabeSena",
+      "post_type": "Photos",
+      "publish_time": "2025-12-23T14:25:55+0000",
+      "permalink": "https://www.facebook.com/122117062443012033/posts/122116493349012033?substory_index=1383894653370510",
+      "reactions": 49,
+      "comments": 17,
+      "shares": 2,
+      "views": 0,
+      "reach": 0,
+      "engagement": 68,
+      "pes": 89.0
+    },
+    {
+      "post_id": "731608473377029_122116902117013186",
+      "page_id": "731608473377029",
+      "page_name": null,
+      "title": "Sending Christmas cheer your way, Juankada \ud83c\udf81",
+      "post_type": "Photos",
+      "publish_time": "2025-12-23T14:23:03+0000",
+      "permalink": "https://www.facebook.com/122117157621013186/posts/122116902117013186?substory_index=1200069855384493",
+      "reactions": 50,
+      "comments": 13,
+      "shares": 2,
+      "views": 0,
+      "reach": 0,
+      "engagement": 65,
+      "pes": 82.0
+    },
+    {
+      "post_id": "754416584427163_122116906965015980",
+      "page_id": "754416584427163",
+      "page_name": null,
+      "title": "Sending Christmas cheer your way, Juanababies\u2728\n\n#juanbabes #Juan365livestream #juanababeszell",
+      "post_type": "Photos",
+      "publish_time": "2025-12-23T14:21:20+0000",
+      "permalink": "https://www.facebook.com/122117576505015980/posts/122116906965015980?substory_index=1251644906790960",
+      "reactions": 54,
+      "comments": 13,
+      "shares": 3,
+      "views": 0,
+      "reach": 0,
+      "engagement": 70,
+      "pes": 89.0
+    },
+    {
+      "post_id": "807965705726273_122116465149012033",
+      "page_id": "807965705726273",
+      "page_name": null,
+      "title": "Flirty, classy, at konting sassy \ud83d\ude0e\ud83d\udc96 \n\n\u2665\ufe0f me and Follow, let\u2019s make your feed more fun \ud83d\udc81\ud83c\udffb\u200d\u2640\ufe0f\n\n#Juanababes #Juan365 #AllInJuanSaSaya #Juan365livestream #JuanaBabeSena #JuanabiesVibes #FlirtyMood #FBReel",
+      "post_type": "Videos",
+      "publish_time": "2025-12-23T10:00:53+0000",
+      "permalink": "https://www.facebook.com/reel/762421609481554/",
+      "reactions": 55,
+      "comments": 13,
+      "shares": 3,
+      "views": 0,
+      "reach": 0,
+      "engagement": 71,
+      "pes": 90.0
+    },
+    {
+      "post_id": "747721128429855_122117342307023874",
+      "page_id": "747721128429855",
+      "page_name": null,
+      "title": "Let me show you what you're missing\ud83d\ude1c\n\nReact \u2764\ufe0f at ishare ang thoughts mo Juankada\n\n#juanababe #juanbabeabi #Juan365 #Juan365livestream #CommentYourThoughts #TagAFriend #Followme #AllInJuanSaSaya #sexy",
+      "post_type": "Videos",
+      "publish_time": "2025-12-23T08:00:34+0000",
+      "permalink": "https://www.facebook.com/reel/837910092546991/",
+      "reactions": 38,
+      "comments": 13,
+      "shares": 5,
+      "views": 0,
+      "reach": 0,
+      "engagement": 56,
+      "pes": 79.0
+    },
+    {
+      "post_id": "754416584427163_122116860951015980",
+      "page_id": "754416584427163",
+      "page_name": null,
+      "title": "kamusta kayo today juanababies?\ud83e\udd7a\n\nnot at my best today pero ang gaan ng pakiramdam ko dahil sainyo \n\nmag-comment lang kayo para alam ko kung okay kayo \ud83e\udd0d\n\n#juanababezell #juanababes #Juan365livestream ",
+      "post_type": "Videos",
+      "publish_time": "2025-12-23T06:44:38+0000",
+      "permalink": "https://www.facebook.com/reel/788107600953748/",
+      "reactions": 36,
+      "comments": 12,
+      "shares": 4,
+      "views": 0,
+      "reach": 0,
+      "engagement": 52,
+      "pes": 72.0
+    },
+    {
       "post_id": "122117375685023874",
       "page_id": "61580716220863",
       "page_name": "Juana Babe Abi",
@@ -6695,7 +9089,39 @@
       "views": 15793,
       "reach": 12555,
       "engagement": 1261,
-      "pes": 1311.0
+      "pes": 1313.0
+    },
+    {
+      "post_id": "747721128429855_122117330181023874",
+      "page_id": "747721128429855",
+      "page_name": null,
+      "title": "Lakwatsera yan sya! tara sumama ka samin\ud83d\ude06\n\nSaan tayo next pupunta Juankada?\n\n#juanababe #juanbabeabi #Juan365 #juan365livestrea #CommentYourThoughts #tagafriend #followme #AllInJuanSaSaya \n#fypviral\u30b7 ",
+      "post_type": "Videos",
+      "publish_time": "2025-12-23T04:43:43+0000",
+      "permalink": "https://www.facebook.com/reel/851150837893563/",
+      "reactions": 40,
+      "comments": 21,
+      "shares": 7,
+      "views": 0,
+      "reach": 0,
+      "engagement": 68,
+      "pes": 103.0
+    },
+    {
+      "post_id": "807965705726273_122116442055012033",
+      "page_id": "807965705726273",
+      "page_name": null,
+      "title": "Serving looks and food \ud83d\ude18\ud83c\udf73\n\nShow some love \u2665\ufe0f and Follow for your daily dose of sweetness! \ud83d\udc95\n\n#CookingVlog #MiniVlogLife #FlirtyFun #TastyTreats #FoodieVibes #fbreels #reelsph #thirsttrapph #genzvibes ",
+      "post_type": "Videos",
+      "publish_time": "2025-12-23T04:00:09+0000",
+      "permalink": "https://www.facebook.com/reel/1173777101593952/",
+      "reactions": 39,
+      "comments": 16,
+      "shares": 5,
+      "views": 0,
+      "reach": 0,
+      "engagement": 60,
+      "pes": 86.0
     },
     {
       "post_id": "122116465149012033",
@@ -6727,7 +9153,7 @@
       "views": 31294,
       "reach": 13922,
       "engagement": 1782,
-      "pes": 1864.0
+      "pes": 1869.0
     },
     {
       "post_id": "122124969759011249",
@@ -6743,7 +9169,23 @@
       "views": 63000,
       "reach": 48914,
       "engagement": 4393,
-      "pes": 4575.0
+      "pes": 4576.0
+    },
+    {
+      "post_id": "807965705726273_122116387491012033",
+      "page_id": "807965705726273",
+      "page_name": null,
+      "title": "Merry everything and a little bit of sparkle too \u2728\ud83c\udf85\n\nServing charm 24/7 top \u2665\ufe0f  Tag someone para spread and vibes!!\n\n#ThirstTrapVibes #FBTrending #LookAtMe #fbreels #reelsph #thirsttrapph #genzvibes #",
+      "post_type": "Videos",
+      "publish_time": "2025-12-23T00:00:37+0000",
+      "permalink": "https://www.facebook.com/reel/1191048522563631/",
+      "reactions": 30,
+      "comments": 10,
+      "shares": 9,
+      "views": 0,
+      "reach": 0,
+      "engagement": 49,
+      "pes": 77.0
     },
     {
       "post_id": "122117342307023874",
@@ -6776,6 +9218,22 @@
       "reach": 221,
       "engagement": 53,
       "pes": 74.0
+    },
+    {
+      "post_id": "748765068327821_122124864699011249",
+      "page_id": "748765068327821",
+      "page_name": null,
+      "title": "\ud83c\udf89 10K followers na tayo mga babes!\ud83c\udf89\n\nThank you so muchie sa lahat ng sumusuporta at non-stop na love mga babes\ud83d\ude2d\ud83e\udef6\ud83c\udffb\n\nDon't forget to share and comment para sa tuloy-tuloy na pag grow\ud83d\udc99\n\n#Juan365Studios\n#",
+      "post_type": "Photos",
+      "publish_time": "2025-12-22T21:17:37+0000",
+      "permalink": "https://www.facebook.com/122125581543011249/posts/122124864699011249",
+      "reactions": 117,
+      "comments": 79,
+      "shares": 13,
+      "views": 0,
+      "reach": 0,
+      "engagement": 209,
+      "pes": 314.0
     },
     {
       "post_id": "122117330181023874",
@@ -6858,20 +9316,164 @@
       "pes": 336.0
     },
     {
-      "post_id": "122124783429011249",
-      "page_id": "61580337497087",
-      "page_name": "Juana Babe Ashley",
+      "post_id": "754416584427163_122116769547015980",
+      "page_id": "754416584427163",
+      "page_name": null,
+      "title": "LIVE na LIVE ang saya! \nClassic game na pwede mo na laruin everytime and everywhere \ud83d\ude0d\n\nAbang abang na Jaunkada mamayang 2AM na yan \ud83e\udd29\n\nI-like at i-follow ang Juan365 Studios, huwag palampasin ang lahat",
+      "post_type": "Photos",
+      "publish_time": "2025-12-22T13:00:47+0000",
+      "permalink": "https://www.facebook.com/122117576505015980/posts/122116769547015980",
+      "reactions": 46,
+      "comments": 12,
+      "shares": 9,
+      "views": 0,
+      "reach": 0,
+      "engagement": 67,
+      "pes": 97.0
+    },
+    {
+      "post_id": "807965705726273_122116387047012033",
+      "page_id": "807965705726273",
+      "page_name": null,
+      "title": "Juankada! wag ka ng magpapigil!! \ud83d\ude0c\ud83c\udfb2\nRoll na, trust the color at hayaan mong swerte ang lumapit sayo tulad ko \ud83d\udc96\n\n\u23f0 LIVE mamayang 2AM!\n\n#Juan365 #Juan365livestream #Juan365Studio #AllInJuanSaSaya #Juank",
+      "post_type": "Photos",
+      "publish_time": "2025-12-22T13:00:32+0000",
+      "permalink": "https://www.facebook.com/122117062443012033/posts/122116387047012033",
+      "reactions": 26,
+      "comments": 11,
+      "shares": 6,
+      "views": 0,
+      "reach": 0,
+      "engagement": 43,
+      "pes": 66.0
+    },
+    {
+      "post_id": "747721128429855_122117263473023874",
+      "page_id": "747721128429855",
+      "page_name": null,
+      "title": "Juankada!! game ka na ba? \ud83d\ude0f\ud83c\udfb2\nRoll the dice, follow your color at maging next winner! plus konting kilig sa side! \ud83d\udc96\n\n\u23f0 LIVE mamayang 2AM!\n\n#Juan365 #Juan365livestream #Juan365Studio #AllInJuanSaSaya #J",
+      "post_type": "Photos",
+      "publish_time": "2025-12-22T13:00:13+0000",
+      "permalink": "https://www.facebook.com/122117663979023874/posts/122117263473023874",
+      "reactions": 43,
+      "comments": 18,
+      "shares": 9,
+      "views": 0,
+      "reach": 0,
+      "engagement": 70,
+      "pes": 106.0
+    },
+    {
+      "post_id": "731608473377029_122116797885013186",
+      "page_id": "731608473377029",
+      "page_name": null,
+      "title": "Ready ka na, Juankada?\nRoll the dice, trust the color! \ud83c\udfb2\ud83c\udfa8\nMasaya, easy, at siguradong may panalo!\n\n\u23f0 LIVE mamayang 2AM na to'\n#Juan365 #Juan365livestream #Juan365Studio #AllInJuanSaSaya #Juankada",
+      "post_type": "Photos",
+      "publish_time": "2025-12-22T13:00:09+0000",
+      "permalink": "https://www.facebook.com/122117157621013186/posts/122116797885013186",
+      "reactions": 28,
+      "comments": 7,
+      "shares": 7,
+      "views": 0,
+      "reach": 0,
+      "engagement": 42,
+      "pes": 63.0
+    },
+    {
+      "post_id": "748765068327821_122124783429011249",
+      "page_id": "748765068327821",
+      "page_name": null,
       "title": "Lights on, colors ready! \ud83c\udfa8\nabangan Live mamayang 2AM! \ud83d\udd25\n\nLike and follow Juan365 Studios and don't miss the fun\ud83e\udd29\n\n#Juan365Studios #ColorsAndFun  #JuanaBabeAshley #CommentYourThoughts #TagAFriend #Foll",
       "post_type": "Photos",
-      "publish_time": "2025-12-22T05:00:00",
-      "permalink": "https://www.facebook.com/JuanababeAshley/posts/pfbid0qLnaaHHUGAWcQH7YqXpu8yX2MfcVvfLKthp4k7CgCgoE6nPRkUxiRp2EbnVXTZaVl",
-      "reactions": 33,
+      "publish_time": "2025-12-22T13:00:09+0000",
+      "permalink": "https://www.facebook.com/122125581543011249/posts/122124783429011249",
+      "reactions": 26,
       "comments": 6,
       "shares": 6,
-      "views": 1445,
-      "reach": 803,
-      "engagement": 45,
-      "pes": 63.0
+      "views": 0,
+      "reach": 0,
+      "engagement": 38,
+      "pes": 56.0
+    },
+    {
+      "post_id": "807965705726273_122116374291012033",
+      "page_id": "807965705726273",
+      "page_name": null,
+      "title": "Your daily dose of sweetness \ud83d\ude18\n\nSmash that \u2665\ufe0f if I made you smile, follow me for more little surprises \ud83d\udc95\n\n#Juanababes #Juan365 #AllInJuanSaSaya #Juan365livestream #JuanaBabeSena #Juanabies #BabyGirlSe",
+      "post_type": "Videos",
+      "publish_time": "2025-12-22T11:00:14+0000",
+      "permalink": "https://www.facebook.com/reel/1208247467959481/",
+      "reactions": 37,
+      "comments": 5,
+      "shares": 1,
+      "views": 0,
+      "reach": 0,
+      "engagement": 43,
+      "pes": 50.0
+    },
+    {
+      "post_id": "747721128429855_122117249097023874",
+      "page_id": "747721128429855",
+      "page_name": null,
+      "title": "Sarreh na Bhiee! hatian na lang kita sa 10M \ud83d\ude02\n\nIkaw Juankada 10M o Friendship?\ud83d\ude06\n\n#juanababe #juanbabeabi #Juan365 #Juan365livestream #CommentYourThoughts #tagafriend #followmeonfacebook #AllInJuanSaSa",
+      "post_type": "Videos",
+      "publish_time": "2025-12-22T10:00:22+0000",
+      "permalink": "https://www.facebook.com/reel/1226447649405369/",
+      "reactions": 35,
+      "comments": 13,
+      "shares": 6,
+      "views": 0,
+      "reach": 0,
+      "engagement": 54,
+      "pes": 79.0
+    },
+    {
+      "post_id": "807965705726273_122116370379012033",
+      "page_id": "807965705726273",
+      "page_name": null,
+      "title": "Feeling bold today? \u2665\ufe0f Then Follow me\u2026 I\u2019ll make your feed a little hotter \ud83d\ude0f\ud83d\udcab\n\nTag someone who needs to see this! \n\n#Juanababes #Juan365 #AllInJuanSaSaya #Juan365livestream #JuanaBabeSena #JuanabiesVi",
+      "post_type": "Videos",
+      "publish_time": "2025-12-22T08:25:38+0000",
+      "permalink": "https://www.facebook.com/reel/1406202987540492/",
+      "reactions": 24,
+      "comments": 4,
+      "shares": 3,
+      "views": 0,
+      "reach": 0,
+      "engagement": 31,
+      "pes": 41.0
+    },
+    {
+      "post_id": "747721128429855_122117229429023874",
+      "page_id": "747721128429855",
+      "page_name": null,
+      "title": "\ud835\udc09\ud835\udc14\ud835\udc00\ud835\udc0d\ud835\udc0a\ud835\udc00\ud835\udc03\ud835\udc00 \ud835\udc13\ud835\udc0e\ud835\udc13\ud835\udc0e\ud835\udc0e \ud835\udc00\ud835\udc0d\ud835\udc06 \ud835\udc01\ud835\udc00\ud835\udc0b\ud835\udc08\ud835\udc13\ud835\udc00! \u203c\ufe0f\ud83d\udce2\n\ud835\udc01\ud835\udc14\ud835\udc0a\ud835\udc00\ud835\udc12 \ud835\udc0d\ud835\udc00 ang pinaka-\ud835\udc0c\ud835\udc00\ud835\udc12\ud835\udc00\ud835\udc18\ud835\udc00, pinaka-\ud835\udc04\ud835\udc0f\ud835\udc08\ud835\udc02, at pinaka-\ud835\udc02\ud835\udc0e\ud835\udc0b\ud835\udc0e\ud835\udc11\ud835\udc05\ud835\udc14\ud835\udc0b na \ud835\udc02\ud835\udc0e\ud835\udc0b\ud835\udc0e\ud835\udc11 \ud835\udc06\ud835\udc00\ud835\udc0c\ud835\udc04 dito lang yan \ud835\udc09\ud835\udc2e\ud835\udc1a\ud835\udc27\ud835\udfd1\ud835\udfd4\ud835\udfd3 \ud835\udc12\ud835\udc2d\ud835\udc2e\ud835\udc1d\ud835\udc22\ud835\udc28\ud835\udc2c! \ud83d\udca5",
+      "post_type": "Text",
+      "publish_time": "2025-12-22T07:52:52+0000",
+      "permalink": "https://www.facebook.com/122117663979023874/posts/122117229429023874",
+      "reactions": 10,
+      "comments": 0,
+      "shares": 0,
+      "views": 0,
+      "reach": 0,
+      "engagement": 10,
+      "pes": 10.0
+    },
+    {
+      "post_id": "754416584427163_122116743699015980",
+      "page_id": "754416584427163",
+      "page_name": null,
+      "title": "\ud835\udc09\ud835\udc14\ud835\udc00\ud835\udc0d\ud835\udc0a\ud835\udc00\ud835\udc03\ud835\udc00 \ud835\udc13\ud835\udc0e\ud835\udc13\ud835\udc0e\ud835\udc0e \ud835\udc00\ud835\udc0d\ud835\udc06 \ud835\udc01\ud835\udc00\ud835\udc0b\ud835\udc08\ud835\udc13\ud835\udc00! \u203c\ufe0f\ud83d\udce2\n\ud835\udc01\ud835\udc14\ud835\udc0a\ud835\udc00\ud835\udc12 \ud835\udc0d\ud835\udc00 ang pinaka-\ud835\udc0c\ud835\udc00\ud835\udc12\ud835\udc00\ud835\udc18\ud835\udc00, pinaka-\ud835\udc04\ud835\udc0f\ud835\udc08\ud835\udc02, at pinaka-\ud835\udc02\ud835\udc0e\ud835\udc0b\ud835\udc0e\ud835\udc11\ud835\udc05\ud835\udc14\ud835\udc0b na \ud835\udc02\ud835\udc0e\ud835\udc0b\ud835\udc0e\ud835\udc11 \ud835\udc06\ud835\udc00\ud835\udc0c\ud835\udc04 dito lang yan \ud835\udc09\ud835\udc2e\ud835\udc1a\ud835\udc27\ud835\udfd1\ud835\udfd4\ud835\udfd3 \ud835\udc12\ud835\udc2d\ud835\udc2e\ud835\udc1d\ud835\udc22\ud835\udc28\ud835\udc2c! \ud83d\udca5\nComment \u201c\ud835\udc06\ud835\udc00\ud835\udc0c\ud835\udc04 \ud835\udc0d\ud835\udc00!\u201d kung ready ka ng mapapasigaw sa saya at I-t",
+      "post_type": "Text",
+      "publish_time": "2025-12-22T07:52:37+0000",
+      "permalink": "https://www.facebook.com/122117576505015980/posts/122116743699015980",
+      "reactions": 16,
+      "comments": 5,
+      "shares": 4,
+      "views": 0,
+      "reach": 0,
+      "engagement": 25,
+      "pes": 38.0
     },
     {
       "post_id": "122116769547015980",
@@ -6922,13 +9524,29 @@
       "pes": 64.0
     },
     {
+      "post_id": "122124783429011249",
+      "page_id": "61580337497087",
+      "page_name": "Juana Babe Ashley",
+      "title": "Lights on, colors ready! \ud83c\udfa8\nabangan Live mamayang 2AM! \ud83d\udd25\n\nLike and follow Juan365 Studios and don't miss the fun\ud83e\udd29\n\n#Juan365Studios #ColorsAndFun  #JuanaBabeAshley #CommentYourThoughts #TagAFriend #Foll",
+      "post_type": "Photos",
+      "publish_time": "2025-12-22T05:00:00",
+      "permalink": "https://www.facebook.com/JuanababeAshley/posts/pfbid0qLnaaHHUGAWcQH7YqXpu8yX2MfcVvfLKthp4k7CgCgoE6nPRkUxiRp2EbnVXTZaVl",
+      "reactions": 33,
+      "comments": 6,
+      "shares": 6,
+      "views": 1445,
+      "reach": 803,
+      "engagement": 45,
+      "pes": 63.0
+    },
+    {
       "post_id": "122117263473023874",
       "page_id": "61580716220863",
       "page_name": "Juana Babe Abi",
       "title": "Juankada!! game ka na ba? \ud83d\ude0f\ud83c\udfb2\nRoll the dice, follow your color at maging next winner! plus konting kilig sa side! \ud83d\udc96\n\n\u23f0 LIVE mamayang 2AM!\n\n#Juan365 #Juan365livestream #Juan365Studio #AllInJuanSaSaya #J",
       "post_type": "Photos",
       "publish_time": "2025-12-22T05:00:00",
-      "permalink": "https://www.facebook.com/JuanababeAbi/posts/pfbid02pprvnHwxcaJGLCnhDqVbGNFRJ4FZrwKAB7NveH3fQXsVhnQ3t1WddKgo1FSC8gG9l",
+      "permalink": "https://www.facebook.com/JuanababeAbi/posts/pfbid0mHDjs8KbmXdNFiqoSnEujeYsUCCk1dyixSZpAZDx2W5cHEajotAB4PCjNcU4B8Mvl",
       "reactions": 45,
       "comments": 18,
       "shares": 9,
@@ -6936,6 +9554,54 @@
       "reach": 254,
       "engagement": 72,
       "pes": 108.0
+    },
+    {
+      "post_id": "754416584427163_122116728243015980",
+      "page_id": "754416584427163",
+      "page_name": null,
+      "title": "Good Aftieee Juankada! \ud83d\ude18\n\nSaan nyo ako gusto makita sa susunod? Comment mo lang \ud83d\udc40\ud83d\ude0d \n\n#juanababezell #juanababes #Juan365livestream #AllInJuanSaSaya #Juan365PH #JuanKada #Juan365 #seeyousoon",
+      "post_type": "Videos",
+      "publish_time": "2025-12-22T04:28:08+0000",
+      "permalink": "https://www.facebook.com/reel/1226721996004133/",
+      "reactions": 46,
+      "comments": 17,
+      "shares": 7,
+      "views": 0,
+      "reach": 0,
+      "engagement": 70,
+      "pes": 101.0
+    },
+    {
+      "post_id": "747721128429855_122117215407023874",
+      "page_id": "747721128429855",
+      "page_name": null,
+      "title": "Nag away yung nag sabing \"Walang sila\"\ud83d\udc40\nLuh? parang dapat Pop Corn hawak namin\ud83e\udd23\n\nAnong kwentong marites mo ka tinga?\n\n#juanababe #juanbabeabi #Juan365 #Juan365livestream #CommentYourThoughts #tagafrie",
+      "post_type": "Videos",
+      "publish_time": "2025-12-22T04:19:11+0000",
+      "permalink": "https://www.facebook.com/reel/4412477322317238/",
+      "reactions": 40,
+      "comments": 15,
+      "shares": 4,
+      "views": 0,
+      "reach": 0,
+      "engagement": 59,
+      "pes": 82.0
+    },
+    {
+      "post_id": "807965705726273_122116270887012033",
+      "page_id": "807965705726273",
+      "page_name": null,
+      "title": "Sneak peek lang ng new obsession mo Juanabies!!\ud83d\ude09\ud83d\udcab \n\nReact & comment your favorite part! then share this post!! \u2764\ufe0f\n\n#EyesOnMe #ThirstTrapVibes #TrendingOnFB #ReelQueen #Juanababes #Juan365 #AllInJuanSa",
+      "post_type": "Videos",
+      "publish_time": "2025-12-22T04:00:04+0000",
+      "permalink": "https://www.facebook.com/reel/2081155632630830/",
+      "reactions": 30,
+      "comments": 11,
+      "shares": 6,
+      "views": 0,
+      "reach": 0,
+      "engagement": 47,
+      "pes": 70.0
     },
     {
       "post_id": "122116374291012033",
@@ -6999,7 +9665,7 @@
       "views": 19269,
       "reach": 15356,
       "engagement": 1544,
-      "pes": 1621.0
+      "pes": 1629.0
     },
     {
       "post_id": "122116743699015980",
@@ -7111,7 +9777,7 @@
       "views": 10572,
       "reach": 8664,
       "engagement": 898,
-      "pes": 948.0
+      "pes": 968.0
     },
     {
       "post_id": "122117195157023874",
@@ -7207,7 +9873,7 @@
       "views": 22370,
       "reach": 14941,
       "engagement": 1293,
-      "pes": 1358.0
+      "pes": 1368.0
     },
     {
       "post_id": "122117108385023874",
@@ -7303,7 +9969,7 @@
       "views": 74453,
       "reach": 59654,
       "engagement": 5412,
-      "pes": 5611.0
+      "pes": 5616.0
     },
     {
       "post_id": "122124318441011249",
@@ -7399,7 +10065,7 @@
       "views": 24398,
       "reach": 22131,
       "engagement": 1345,
-      "pes": 1410.0
+      "pes": 1419.0
     },
     {
       "post_id": "122117002137023874",
@@ -7447,7 +10113,7 @@
       "views": 12384,
       "reach": 8637,
       "engagement": 732,
-      "pes": 793.0
+      "pes": 795.0
     },
     {
       "post_id": "122116132047012033",
@@ -7511,7 +10177,7 @@
       "views": 13015,
       "reach": 11018,
       "engagement": 907,
-      "pes": 944.0
+      "pes": 948.0
     },
     {
       "post_id": "122116517949013186",
@@ -7568,7 +10234,7 @@
       "title": "Elegance in every detail na para bang princess siya\ud83e\udd2d\u2728\n\nDon't forget to like, comment, and follow for more fabulous moments, babes!\ud83d\udc96\n\n#TagAFriend #Followme #Juanababes #Juan365 #AllInJuanSaSaya #Juan36",
       "post_type": "Photos",
       "publish_time": "2025-12-19T01:03:00",
-      "permalink": "https://www.facebook.com/JuanababeAshley/posts/pfbid033suWPBmg58nHJGxy6Bj2ZPbG6aRWHzRYxsCoNWuvfKtVr8zh2rRuFkoRYPvgS1o8l",
+      "permalink": "https://www.facebook.com/JuanababeAshley/posts/pfbid0zLGKU29KE5Q5gDhLewCb4ZyxKAkEcwVu6CC6NKLoXqY4TTMT4euqyhMv85n5ybtzl",
       "reactions": 79,
       "comments": 11,
       "shares": 9,
@@ -7576,22 +10242,6 @@
       "reach": 963,
       "engagement": 99,
       "pes": 128.0
-    },
-    {
-      "post_id": "122124028143011249",
-      "page_id": "61580337497087",
-      "page_name": "Juana Babe Ashley",
-      "title": "Do you mind kahit ganito ka-close mga babes?\ud83e\udee2\n\nI'm just trynna get to know yah, babes. Hit \u2764\ufe0f and follow for more!\ud83d\ude1a\n#Gettoknowmemore #Tooclose #JuanaBies #TagAFriend #Followme #Juanababes #Juan365 #Al",
-      "post_type": "Reels",
-      "publish_time": "2025-12-18T23:00:00",
-      "permalink": "https://www.facebook.com/reel/1369351254670357/",
-      "reactions": 6672,
-      "comments": 142,
-      "shares": 98,
-      "views": 124939,
-      "reach": 81707,
-      "engagement": 6912,
-      "pes": 7250.0
     },
     {
       "post_id": "122116401639015980",
@@ -7608,6 +10258,22 @@
       "reach": 341,
       "engagement": 126,
       "pes": 195.0
+    },
+    {
+      "post_id": "122124028143011249",
+      "page_id": "61580337497087",
+      "page_name": "Juana Babe Ashley",
+      "title": "Do you mind kahit ganito ka-close mga babes?\ud83e\udee2\n\nI'm just trynna get to know yah, babes. Hit \u2764\ufe0f and follow for more!\ud83d\ude1a\n#Gettoknowmemore #Tooclose #JuanaBies #TagAFriend #Followme #Juanababes #Juan365 #Al",
+      "post_type": "Reels",
+      "publish_time": "2025-12-18T23:00:00",
+      "permalink": "https://www.facebook.com/reel/1369351254670357/",
+      "reactions": 6672,
+      "comments": 142,
+      "shares": 98,
+      "views": 124939,
+      "reach": 81707,
+      "engagement": 6912,
+      "pes": 7259.0
     },
     {
       "post_id": "122116036635012033",
@@ -7815,7 +10481,7 @@
       "views": 6786,
       "reach": 5321,
       "engagement": 339,
-      "pes": 381.0
+      "pes": 382.0
     },
     {
       "post_id": "122123415921011249",
@@ -7831,7 +10497,7 @@
       "views": 7955,
       "reach": 6243,
       "engagement": 762,
-      "pes": 825.0
+      "pes": 827.0
     },
     {
       "post_id": "122123396343011249",
@@ -7879,7 +10545,7 @@
       "views": 3665,
       "reach": 2225,
       "engagement": 417,
-      "pes": 644.0
+      "pes": 645.0
     },
     {
       "post_id": "122116057557015980",
@@ -7920,7 +10586,7 @@
       "title": "Hi, JuanaBies! \ud83d\udc96\nIt\u2019s your baby girl Sena! I\u2019m with Juan G and another Juan G \ud83d\udc40\u2728\nHmm\u2026 may aabangan kayong bago\ud83d\udc4c\ud83c\udffb\ud83d\udd25\n\nStay tuned, comment if excited kayo, at follow the page para di ma-miss! \ud83d\udc47\n\n#JuanaBie",
       "post_type": "Photos",
       "publish_time": "2025-12-15T17:03:00",
-      "permalink": "https://www.facebook.com/JuanababeSena/posts/pfbid0LYrWg3zYivvd3grgZZU6wgyNjgM9aTtfxwgDczpEdGk5JAew2nL1a4hdZzjSv3eSl",
+      "permalink": "https://www.facebook.com/JuanababeSena/posts/pfbid02QQJDrivNaF1jRT2QVUpoZVAhz882c2ebYdpoBn7f8iQvqMsVj1dfWanAEf2CVCQMl",
       "reactions": 84,
       "comments": 20,
       "shares": 12,
@@ -8039,7 +10705,7 @@
       "views": 5750,
       "reach": 4607,
       "engagement": 422,
-      "pes": 473.0
+      "pes": 477.0
     },
     {
       "post_id": "122122865169011249",
@@ -8055,23 +10721,7 @@
       "views": 6199,
       "reach": 5430,
       "engagement": 545,
-      "pes": 587.0
-    },
-    {
-      "post_id": "122122844337011249",
-      "page_id": "61580337497087",
-      "page_name": "Juana Babe Ashley",
-      "title": "Kinikilig ako sa support niyo, mga babes! \ud83e\udd70\u2728\nRoad to 1K na tayo\u2014salamat sa solid love \ud83d\udc96\n\nShare this, comment down, at i-tag niyo na ang friends niyo!\nFollow niyo na rin ako ha \ud83d\udc40\ud83d\udcac\n\n#Juanababes #Juan365",
-      "post_type": "Videos",
-      "publish_time": "2025-12-13T16:00:00",
-      "permalink": "https://www.facebook.com/JuanababeAshley/videos/1781890169178961/",
-      "reactions": 270,
-      "comments": 17,
-      "shares": 33,
-      "views": 4508,
-      "reach": 3391,
-      "engagement": 320,
-      "pes": 403.0
+      "pes": 588.0
     },
     {
       "post_id": "122115358473012033",
@@ -8088,6 +10738,22 @@
       "reach": 1159,
       "engagement": 244,
       "pes": 360.0
+    },
+    {
+      "post_id": "122122844337011249",
+      "page_id": "61580337497087",
+      "page_name": "Juana Babe Ashley",
+      "title": "Kinikilig ako sa support niyo, mga babes! \ud83e\udd70\u2728\nRoad to 1K na tayo\u2014salamat sa solid love \ud83d\udc96\n\nShare this, comment down, at i-tag niyo na ang friends niyo!\nFollow niyo na rin ako ha \ud83d\udc40\ud83d\udcac\n\n#Juanababes #Juan365",
+      "post_type": "Videos",
+      "publish_time": "2025-12-13T16:00:00",
+      "permalink": "https://www.facebook.com/JuanababeAshley/videos/1781890169178961/",
+      "reactions": 270,
+      "comments": 17,
+      "shares": 33,
+      "views": 4508,
+      "reach": 3391,
+      "engagement": 320,
+      "pes": 404.0
     },
     {
       "post_id": "122115358545012033",
@@ -8138,22 +10804,6 @@
       "pes": 141.0
     },
     {
-      "post_id": "122122677711011249",
-      "page_id": "61580337497087",
-      "page_name": "Juana Babe Ashley",
-      "title": "Ashley is here! \ud83d\udc96\nMga babes, sino ba ang pinag-seselosan mo? \ud83d\udc40\ud83d\udd25\nComment mo na yan at i-tag ang kaibigan mo!\nFollow our page for more good vibes \u2728\ud83d\udcac\n\n#Juanababes #Juan365 #AllInJuanSaSaya #Juan365livest",
-      "post_type": "Videos",
-      "publish_time": "2025-12-12T23:00:00",
-      "permalink": "https://www.facebook.com/JuanababeAshley/videos/1390764329441871/",
-      "reactions": 675,
-      "comments": 26,
-      "shares": 20,
-      "views": 6860,
-      "reach": 5648,
-      "engagement": 721,
-      "pes": 787.0
-    },
-    {
       "post_id": "122115337131012033",
       "page_id": "61580361006776",
       "page_name": "Juana Babe Sena",
@@ -8168,6 +10818,22 @@
       "reach": 1039,
       "engagement": 79,
       "pes": 112.0
+    },
+    {
+      "post_id": "122122677711011249",
+      "page_id": "61580337497087",
+      "page_name": "Juana Babe Ashley",
+      "title": "Ashley is here! \ud83d\udc96\nMga babes, sino ba ang pinag-seselosan mo? \ud83d\udc40\ud83d\udd25\nComment mo na yan at i-tag ang kaibigan mo!\nFollow our page for more good vibes \u2728\ud83d\udcac\n\n#Juanababes #Juan365 #AllInJuanSaSaya #Juan365livest",
+      "post_type": "Videos",
+      "publish_time": "2025-12-12T23:00:00",
+      "permalink": "https://www.facebook.com/JuanababeAshley/videos/1390764329441871/",
+      "reactions": 675,
+      "comments": 26,
+      "shares": 20,
+      "views": 6860,
+      "reach": 5648,
+      "engagement": 721,
+      "pes": 793.0
     },
     {
       "post_id": "122115336957012033",
@@ -8295,7 +10961,7 @@
       "views": 1570,
       "reach": 1054,
       "engagement": 251,
-      "pes": 409.0
+      "pes": 410.0
     },
     {
       "post_id": "122115143847012033",
@@ -8455,7 +11121,7 @@
       "views": 79328,
       "reach": 59822,
       "engagement": 9739,
-      "pes": 9860.0
+      "pes": 9864.0
     },
     {
       "post_id": "122114923737012033",
@@ -8535,7 +11201,7 @@
       "views": 5604,
       "reach": 4157,
       "engagement": 589,
-      "pes": 671.0
+      "pes": 679.0
     },
     {
       "post_id": "122114826729012033",
@@ -8951,7 +11617,7 @@
       "views": 7938,
       "reach": 7006,
       "engagement": 884,
-      "pes": 920.0
+      "pes": 922.0
     },
     {
       "post_id": "122115184269013186",
@@ -9031,7 +11697,7 @@
       "views": 4860,
       "reach": 3355,
       "engagement": 470,
-      "pes": 516.0
+      "pes": 519.0
     },
     {
       "post_id": "122114528433012033",
@@ -9351,7 +12017,7 @@
       "views": 4036,
       "reach": 2788,
       "engagement": 366,
-      "pes": 434.0
+      "pes": 436.0
     },
     {
       "post_id": "122114237133012033",
@@ -9447,7 +12113,7 @@
       "views": 9320,
       "reach": 6975,
       "engagement": 874,
-      "pes": 945.0
+      "pes": 958.0
     },
     {
       "post_id": "122120133423011249",
@@ -15679,15 +18345,15 @@
     "monthly": [
       {
         "month": "2025-12",
-        "posts": 249,
-        "reactions": 110117,
-        "comments": 5342,
-        "shares": 2694,
+        "posts": 332,
+        "reactions": 113758,
+        "comments": 6269,
+        "shares": 3122,
         "views": 1384767,
         "reach": 1025423,
-        "engagement": 118153,
-        "avg_engagement": 474.5,
-        "mom_change": 455.1
+        "engagement": 123149,
+        "avg_engagement": 370.9,
+        "mom_change": 478.6
       },
       {
         "month": "2025-11",
@@ -15716,18 +18382,32 @@
     ],
     "weekly": [
       {
+        "week": "2025-52",
+        "week_start": "2025-12-29",
+        "week_end": "2025-12-29",
+        "posts": 1,
+        "reactions": 6,
+        "comments": 3,
+        "shares": 0,
+        "views": 0,
+        "reach": 0,
+        "engagement": 9,
+        "avg_engagement": 9.0,
+        "wow_change": -100.0
+      },
+      {
         "week": "2025-51",
         "week_start": "2025-12-22",
-        "week_end": "2025-12-27",
-        "posts": 88,
-        "reactions": 56434,
-        "comments": 1650,
-        "shares": 844,
+        "week_end": "2025-12-28",
+        "posts": 170,
+        "reactions": 60069,
+        "comments": 2574,
+        "shares": 1272,
         "views": 691640,
         "reach": 520052,
-        "engagement": 58928,
-        "avg_engagement": 669.6,
-        "wow_change": 155.3
+        "engagement": 63915,
+        "avg_engagement": 376.0,
+        "wow_change": 177.0
       },
       {
         "week": "2025-50",
@@ -15755,20 +18435,6 @@
         "reach": 114908,
         "engagement": 16996,
         "avg_engagement": 361.6,
-        "wow_change": -11.3
-      },
-      {
-        "week": "2025-48",
-        "week_start": "2025-12-01",
-        "week_end": "2025-12-07",
-        "posts": 55,
-        "reactions": 17355,
-        "comments": 1224,
-        "shares": 572,
-        "views": 179878,
-        "reach": 141807,
-        "engagement": 19151,
-        "avg_engagement": 348.2,
         "wow_change": null
       }
     ],
@@ -15776,9 +18442,9 @@
       {
         "day": "Sun",
         "day_num": 0,
-        "posts": 87,
-        "total_engagement": 8925,
-        "avg_engagement": 102.6,
+        "posts": 99,
+        "total_engagement": 9808,
+        "avg_engagement": 99.1,
         "views": 87204,
         "reach": 54753,
         "is_best": false
@@ -15786,9 +18452,9 @@
       {
         "day": "Mon",
         "day_num": 1,
-        "posts": 81,
-        "total_engagement": 10471,
-        "avg_engagement": 129.3,
+        "posts": 96,
+        "total_engagement": 11288,
+        "avg_engagement": 117.6,
         "views": 113239,
         "reach": 73609,
         "is_best": false
@@ -15796,9 +18462,9 @@
       {
         "day": "Tue",
         "day_num": 2,
-        "posts": 96,
-        "total_engagement": 39644,
-        "avg_engagement": 413.0,
+        "posts": 108,
+        "total_engagement": 40435,
+        "avg_engagement": 374.4,
         "views": 540835,
         "reach": 369928,
         "is_best": false
@@ -15806,9 +18472,9 @@
       {
         "day": "Wed",
         "day_num": 3,
-        "posts": 80,
-        "total_engagement": 40651,
-        "avg_engagement": 508.1,
+        "posts": 96,
+        "total_engagement": 41547,
+        "avg_engagement": 432.8,
         "views": 403637,
         "reach": 305418,
         "is_best": true
@@ -15816,9 +18482,9 @@
       {
         "day": "Thu",
         "day_num": 4,
-        "posts": 83,
-        "total_engagement": 17848,
-        "avg_engagement": 215.0,
+        "posts": 91,
+        "total_engagement": 18204,
+        "avg_engagement": 200.0,
         "views": 227565,
         "reach": 145488,
         "is_best": false
@@ -15826,9 +18492,9 @@
       {
         "day": "Fri",
         "day_num": 5,
-        "posts": 108,
-        "total_engagement": 14591,
-        "avg_engagement": 135.1,
+        "posts": 120,
+        "total_engagement": 15300,
+        "avg_engagement": 127.5,
         "views": 157023,
         "reach": 111271,
         "is_best": false
@@ -15836,9 +18502,9 @@
       {
         "day": "Sat",
         "day_num": 6,
-        "posts": 95,
-        "total_engagement": 32523,
-        "avg_engagement": 342.3,
+        "posts": 103,
+        "total_engagement": 33067,
+        "avg_engagement": 321.0,
         "views": 334607,
         "reach": 254235,
         "is_best": false
@@ -15908,30 +18574,30 @@
       },
       {
         "type": "Videos",
-        "count": 296,
+        "count": 354,
         "views": 521361,
         "reach": 370194,
-        "engagement": 61019,
-        "avg_engagement": 206.1,
-        "avg_views": 1761.4
+        "engagement": 64263,
+        "avg_engagement": 181.5,
+        "avg_views": 1472.8
       },
       {
         "type": "Photos",
-        "count": 217,
+        "count": 233,
         "views": 186136,
         "reach": 84820,
-        "engagement": 16499,
-        "avg_engagement": 76.0,
-        "avg_views": 857.8
+        "engagement": 17992,
+        "avg_engagement": 77.2,
+        "avg_views": 798.9
       },
       {
         "type": "Text",
-        "count": 68,
+        "count": 77,
         "views": 7236,
         "reach": 11788,
-        "engagement": 3084,
-        "avg_engagement": 45.4,
-        "avg_views": 106.4
+        "engagement": 3343,
+        "avg_engagement": 43.4,
+        "avg_views": 94.0
       },
       {
         "type": "Live",
@@ -15947,12 +18613,12 @@
       {
         "type": "trend_up",
         "title": "Engagement Growing",
-        "text": "Engagement increased 455.1% from 2025-11 to 2025-12"
+        "text": "Engagement increased 478.6% from 2025-11 to 2025-12"
       },
       {
         "type": "best_day",
         "title": "Wed is Best",
-        "text": "Wed generates 508 avg engagement - \ud83d\udcc8 optimal for posting"
+        "text": "Wed generates 433 avg engagement - \ud83d\udcc8 optimal for posting"
       },
       {
         "type": "content_type",
@@ -15963,21 +18629,16 @@
         "type": "top_page",
         "title": "Ashley Leads",
         "text": "Top performer with 93,863 total engagement (763/post)"
-      },
-      {
-        "type": "momentum",
-        "title": "Strong Week",
-        "text": "This week up 155.3% vs last week - keep the momentum!"
       }
     ]
   },
   "commentAnalysis": {
     "summary": {
-      "total_posts_with_comments": 605,
-      "posts_analyzed": 605,
+      "total_posts_with_comments": 685,
+      "posts_analyzed": 685,
       "posts_with_self_comment": 0,
       "total_self_comments": 0,
-      "total_organic_comments": 13996,
+      "total_organic_comments": 14923,
       "self_comment_rate": 0.0,
       "posts_with_self_pct": 0.0
     },
@@ -16026,14 +18687,59 @@
         "organic_comments": 3332,
         "posts_with_self": 0,
         "self_rate": 0.0
+      },
+      {
+        "page_name": null,
+        "page_id": "731608473377029",
+        "posts_with_comments": 10,
+        "self_comments": 0,
+        "organic_comments": 102,
+        "posts_with_self": 0,
+        "self_rate": 0.0
+      },
+      {
+        "page_name": null,
+        "page_id": "747721128429855",
+        "posts_with_comments": 22,
+        "self_comments": 0,
+        "organic_comments": 250,
+        "posts_with_self": 0,
+        "self_rate": 0.0
+      },
+      {
+        "page_name": null,
+        "page_id": "748765068327821",
+        "posts_with_comments": 8,
+        "self_comments": 0,
+        "organic_comments": 206,
+        "posts_with_self": 0,
+        "self_rate": 0.0
+      },
+      {
+        "page_name": null,
+        "page_id": "754416584427163",
+        "posts_with_comments": 12,
+        "self_comments": 0,
+        "organic_comments": 139,
+        "posts_with_self": 0,
+        "self_rate": 0.0
+      },
+      {
+        "page_name": null,
+        "page_id": "807965705726273",
+        "posts_with_comments": 28,
+        "self_comments": 0,
+        "organic_comments": 230,
+        "posts_with_self": 0,
+        "self_rate": 0.0
       }
     ],
     "effectivity": {
       "avg_engagement_with_self": 0,
-      "avg_engagement_without_self": 271.7,
+      "avg_engagement_without_self": 247.2,
       "engagement_boost_pct": -100.0,
       "avg_reactions_with": 0,
-      "avg_reactions_without": 235.8
+      "avg_reactions_without": 213.5
     },
     "topSelfCommented": []
   },
@@ -16051,7 +18757,7 @@
         "reactions": 90240,
         "comments": 2286,
         "shares": 1337,
-        "avg_pes": 778.1,
+        "avg_pes": 779.9,
         "rank": 1,
         "engagement_share": 57.0
       },
@@ -16067,7 +18773,7 @@
         "reactions": 36105,
         "comments": 4003,
         "shares": 2073,
-        "avg_pes": 193.6,
+        "avg_pes": 193.7,
         "rank": 2,
         "engagement_share": 25.6
       },
@@ -16083,7 +18789,7 @@
         "reactions": 6860,
         "comments": 3332,
         "shares": 1680,
-        "avg_pes": 160.0,
+        "avg_pes": 160.1,
         "rank": 3,
         "engagement_share": 7.2
       },
@@ -16262,6 +18968,106 @@
           "engagement": 22,
           "avg_engagement": 22.0
         }
+      ],
+      "731608473377029": [
+        {
+          "type": "Videos",
+          "count": 7,
+          "engagement": 308,
+          "avg_engagement": 44.0
+        },
+        {
+          "type": "Photos",
+          "count": 2,
+          "engagement": 107,
+          "avg_engagement": 53.5
+        },
+        {
+          "type": "Text",
+          "count": 1,
+          "engagement": 79,
+          "avg_engagement": 79.0
+        }
+      ],
+      "747721128429855": [
+        {
+          "type": "Videos",
+          "count": 19,
+          "engagement": 886,
+          "avg_engagement": 46.6
+        },
+        {
+          "type": "Photos",
+          "count": 3,
+          "engagement": 196,
+          "avg_engagement": 65.3
+        },
+        {
+          "type": "Text",
+          "count": 2,
+          "engagement": 10,
+          "avg_engagement": 5.0
+        }
+      ],
+      "748765068327821": [
+        {
+          "type": "Photos",
+          "count": 6,
+          "engagement": 918,
+          "avg_engagement": 153.0
+        },
+        {
+          "type": "Videos",
+          "count": 1,
+          "engagement": 417,
+          "avg_engagement": 417.0
+        },
+        {
+          "type": "Text",
+          "count": 1,
+          "engagement": 16,
+          "avg_engagement": 16.0
+        }
+      ],
+      "754416584427163": [
+        {
+          "type": "Videos",
+          "count": 8,
+          "engagement": 495,
+          "avg_engagement": 61.9
+        },
+        {
+          "type": "Text",
+          "count": 2,
+          "engagement": 66,
+          "avg_engagement": 33.0
+        },
+        {
+          "type": "Photos",
+          "count": 2,
+          "engagement": 137,
+          "avg_engagement": 68.5
+        }
+      ],
+      "807965705726273": [
+        {
+          "type": "Videos",
+          "count": 23,
+          "engagement": 1138,
+          "avg_engagement": 49.5
+        },
+        {
+          "type": "Text",
+          "count": 4,
+          "engagement": 88,
+          "avg_engagement": 22.0
+        },
+        {
+          "type": "Photos",
+          "count": 3,
+          "engagement": 135,
+          "avg_engagement": 45.0
+        }
       ]
     },
     "dominantTypes": {
@@ -16284,6 +19090,26 @@
       "61580716220863": {
         "type": "Videos",
         "percentage": 53.4
+      },
+      "731608473377029": {
+        "type": "Videos",
+        "percentage": 70.0
+      },
+      "747721128429855": {
+        "type": "Videos",
+        "percentage": 79.2
+      },
+      "748765068327821": {
+        "type": "Photos",
+        "percentage": 75.0
+      },
+      "754416584427163": {
+        "type": "Videos",
+        "percentage": 66.7
+      },
+      "807965705726273": {
+        "type": "Videos",
+        "percentage": 76.7
       }
     }
   }
