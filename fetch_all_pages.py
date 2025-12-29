@@ -94,7 +94,8 @@ def init_database():
 def fetch_page_posts(token, page_id, days_back=90):
     """Fetch all posts from a page."""
     since_date = datetime.now() - timedelta(days=days_back)
-    fields = "id,message,created_time,permalink_url,shares,type,status_type"
+    # Note: 'shares' is deprecated, we get it separately in process_post
+    fields = "id,message,created_time,permalink_url,type,status_type"
 
     all_posts = []
     url = f"https://graph.facebook.com/v21.0/{page_id}/posts"
@@ -134,23 +135,24 @@ def fetch_page_posts(token, page_id, days_back=90):
 
 
 def process_post(token, post, page_id):
-    """Process a single post to get reactions/comments."""
+    """Process a single post to get reactions/comments/shares."""
     post_id = post["id"]
-    shares_count = post.get("shares", {}).get("count", 0)
 
     try:
         url = f"https://graph.facebook.com/v21.0/{post_id}"
         params = {
             "access_token": token,
-            "fields": "reactions.summary(total_count),comments.summary(total_count)"
+            "fields": "reactions.summary(total_count),comments.summary(total_count),shares"
         }
         resp = requests.get(url, params=params)
         data = resp.json()
         total_reactions = data.get("reactions", {}).get("summary", {}).get("total_count", 0)
         comments_count = data.get("comments", {}).get("summary", {}).get("total_count", 0)
+        shares_count = data.get("shares", {}).get("count", 0)
     except:
         total_reactions = 0
         comments_count = 0
+        shares_count = 0
 
     reactions = {"like": total_reactions, "love": 0, "haha": 0, "wow": 0, "sad": 0, "angry": 0}
     post_type = classify_post_type(post)
