@@ -387,7 +387,18 @@
   "daily": {
     "all": [
       {
-        "date": "0-01-20-5-",
+        "date": "2025-09-30",
+        "posts": 10,
+        "reactions": 213,
+        "comments": 69,
+        "shares": 55,
+        "engagement": 337,
+        "pes": 516.0,
+        "views": 0,
+        "reach": 0
+      },
+      {
+        "date": "2025-10-01",
         "posts": 3,
         "reactions": 72,
         "comments": 18,
@@ -398,7 +409,7 @@
         "reach": 0
       },
       {
-        "date": "0-02-20-5-",
+        "date": "2025-10-02",
         "posts": 4,
         "reactions": 341,
         "comments": 231,
@@ -409,7 +420,7 @@
         "reach": 0
       },
       {
-        "date": "0-03-20-5-",
+        "date": "2025-10-03",
         "posts": 3,
         "reactions": 115,
         "comments": 36,
@@ -420,7 +431,7 @@
         "reach": 0
       },
       {
-        "date": "0-04-20-5-",
+        "date": "2025-10-04",
         "posts": 5,
         "reactions": 149,
         "comments": 55,
@@ -431,7 +442,7 @@
         "reach": 0
       },
       {
-        "date": "0-05-20-5-",
+        "date": "2025-10-05",
         "posts": 10,
         "reactions": 341,
         "comments": 195,
@@ -442,7 +453,7 @@
         "reach": 0
       },
       {
-        "date": "0-06-20-5-",
+        "date": "2025-10-06",
         "posts": 4,
         "reactions": 185,
         "comments": 90,
@@ -453,7 +464,7 @@
         "reach": 0
       },
       {
-        "date": "0-07-20-5-",
+        "date": "2025-10-07",
         "posts": 5,
         "reactions": 201,
         "comments": 117,
@@ -464,7 +475,7 @@
         "reach": 0
       },
       {
-        "date": "0-08-20-5-",
+        "date": "2025-10-08",
         "posts": 3,
         "reactions": 112,
         "comments": 52,
@@ -475,7 +486,7 @@
         "reach": 0
       },
       {
-        "date": "0-09-20-5-",
+        "date": "2025-10-09",
         "posts": 4,
         "reactions": 337,
         "comments": 158,
@@ -486,7 +497,7 @@
         "reach": 0
       },
       {
-        "date": "0-10-20-5-",
+        "date": "2025-10-10",
         "posts": 6,
         "reactions": 228,
         "comments": 116,
@@ -497,7 +508,7 @@
         "reach": 0
       },
       {
-        "date": "0-11-20-5-",
+        "date": "2025-10-11",
         "posts": 5,
         "reactions": 162,
         "comments": 71,
@@ -508,7 +519,7 @@
         "reach": 0
       },
       {
-        "date": "0-12-20-5-",
+        "date": "2025-10-12",
         "posts": 12,
         "reactions": 640,
         "comments": 261,
@@ -519,7 +530,7 @@
         "reach": 0
       },
       {
-        "date": "0-13-20-5-",
+        "date": "2025-10-13",
         "posts": 5,
         "reactions": 175,
         "comments": 84,
@@ -530,7 +541,7 @@
         "reach": 0
       },
       {
-        "date": "0-14-20-5-",
+        "date": "2025-10-14",
         "posts": 13,
         "reactions": 554,
         "comments": 222,
@@ -541,7 +552,7 @@
         "reach": 0
       },
       {
-        "date": "0-15-20-5-",
+        "date": "2025-10-15",
         "posts": 10,
         "reactions": 518,
         "comments": 214,
@@ -552,7 +563,7 @@
         "reach": 0
       },
       {
-        "date": "0-16-20-5-",
+        "date": "2025-10-16",
         "posts": 6,
         "reactions": 333,
         "comments": 161,
@@ -563,7 +574,7 @@
         "reach": 0
       },
       {
-        "date": "0-17-20-5-",
+        "date": "2025-10-17",
         "posts": 12,
         "reactions": 374,
         "comments": 179,
@@ -574,7 +585,7 @@
         "reach": 0
       },
       {
-        "date": "0-18-20-5-",
+        "date": "2025-10-18",
         "posts": 7,
         "reactions": 222,
         "comments": 78,
@@ -585,7 +596,7 @@
         "reach": 0
       },
       {
-        "date": "0-19-20-5-",
+        "date": "2025-10-19",
         "posts": 7,
         "reactions": 345,
         "comments": 160,
@@ -596,7 +607,7 @@
         "reach": 0
       },
       {
-        "date": "0-20-20-5-",
+        "date": "2025-10-20",
         "posts": 8,
         "reactions": 325,
         "comments": 122,
@@ -607,7 +618,7 @@
         "reach": 0
       },
       {
-        "date": "0-21-20-5-",
+        "date": "2025-10-21",
         "posts": 12,
         "reactions": 574,
         "comments": 284,
@@ -618,7 +629,7 @@
         "reach": 0
       },
       {
-        "date": "0-22-20-5-",
+        "date": "2025-10-22",
         "posts": 4,
         "reactions": 230,
         "comments": 114,
@@ -629,7 +640,7 @@
         "reach": 0
       },
       {
-        "date": "0-23-20-5-",
+        "date": "2025-10-23",
         "posts": 10,
         "reactions": 681,
         "comments": 389,
@@ -640,7 +651,7 @@
         "reach": 0
       },
       {
-        "date": "0-24-20-5-",
+        "date": "2025-10-24",
         "posts": 9,
         "reactions": 359,
         "comments": 187,
@@ -651,7 +662,7 @@
         "reach": 0
       },
       {
-        "date": "0-25-20-5-",
+        "date": "2025-10-25",
         "posts": 4,
         "reactions": 119,
         "comments": 50,
@@ -662,7 +673,7 @@
         "reach": 0
       },
       {
-        "date": "0-26-20-5-",
+        "date": "2025-10-26",
         "posts": 5,
         "reactions": 159,
         "comments": 50,
@@ -673,7 +684,7 @@
         "reach": 0
       },
       {
-        "date": "0-27-20-5-",
+        "date": "2025-10-27",
         "posts": 3,
         "reactions": 78,
         "comments": 29,
@@ -684,7 +695,7 @@
         "reach": 0
       },
       {
-        "date": "0-28-20-5-",
+        "date": "2025-10-28",
         "posts": 4,
         "reactions": 201,
         "comments": 131,
@@ -695,7 +706,7 @@
         "reach": 0
       },
       {
-        "date": "0-29-20-5-",
+        "date": "2025-10-29",
         "posts": 7,
         "reactions": 236,
         "comments": 108,
@@ -706,7 +717,7 @@
         "reach": 0
       },
       {
-        "date": "0-30-20-5-",
+        "date": "2025-10-30",
         "posts": 13,
         "reactions": 466,
         "comments": 235,
@@ -717,7 +728,7 @@
         "reach": 0
       },
       {
-        "date": "0-31-20-5-",
+        "date": "2025-10-31",
         "posts": 5,
         "reactions": 133,
         "comments": 56,
@@ -728,7 +739,7 @@
         "reach": 0
       },
       {
-        "date": "1-01-20-5-",
+        "date": "2025-11-01",
         "posts": 5,
         "reactions": 164,
         "comments": 64,
@@ -739,7 +750,7 @@
         "reach": 0
       },
       {
-        "date": "1-02-20-5-",
+        "date": "2025-11-02",
         "posts": 6,
         "reactions": 340,
         "comments": 218,
@@ -750,7 +761,7 @@
         "reach": 0
       },
       {
-        "date": "1-03-20-5-",
+        "date": "2025-11-03",
         "posts": 4,
         "reactions": 180,
         "comments": 109,
@@ -761,7 +772,7 @@
         "reach": 0
       },
       {
-        "date": "1-04-20-5-",
+        "date": "2025-11-04",
         "posts": 5,
         "reactions": 119,
         "comments": 44,
@@ -772,7 +783,7 @@
         "reach": 0
       },
       {
-        "date": "1-05-20-5-",
+        "date": "2025-11-05",
         "posts": 5,
         "reactions": 279,
         "comments": 149,
@@ -783,7 +794,7 @@
         "reach": 0
       },
       {
-        "date": "1-06-20-5-",
+        "date": "2025-11-06",
         "posts": 3,
         "reactions": 101,
         "comments": 44,
@@ -794,7 +805,7 @@
         "reach": 0
       },
       {
-        "date": "1-07-20-5-",
+        "date": "2025-11-07",
         "posts": 9,
         "reactions": 441,
         "comments": 225,
@@ -805,7 +816,7 @@
         "reach": 0
       },
       {
-        "date": "1-08-20-5-",
+        "date": "2025-11-08",
         "posts": 8,
         "reactions": 189,
         "comments": 58,
@@ -816,7 +827,7 @@
         "reach": 0
       },
       {
-        "date": "1-09-20-5-",
+        "date": "2025-11-09",
         "posts": 9,
         "reactions": 265,
         "comments": 98,
@@ -827,7 +838,7 @@
         "reach": 0
       },
       {
-        "date": "1-10-20-5-",
+        "date": "2025-11-10",
         "posts": 3,
         "reactions": 175,
         "comments": 90,
@@ -838,7 +849,7 @@
         "reach": 0
       },
       {
-        "date": "1-11-20-5-",
+        "date": "2025-11-11",
         "posts": 7,
         "reactions": 305,
         "comments": 139,
@@ -849,7 +860,7 @@
         "reach": 0
       },
       {
-        "date": "1-12-20-5-",
+        "date": "2025-11-12",
         "posts": 7,
         "reactions": 384,
         "comments": 223,
@@ -860,7 +871,7 @@
         "reach": 0
       },
       {
-        "date": "1-13-20-5-",
+        "date": "2025-11-13",
         "posts": 3,
         "reactions": 244,
         "comments": 149,
@@ -871,7 +882,7 @@
         "reach": 0
       },
       {
-        "date": "1-14-20-5-",
+        "date": "2025-11-14",
         "posts": 1,
         "reactions": 98,
         "comments": 71,
@@ -882,7 +893,7 @@
         "reach": 0
       },
       {
-        "date": "1-15-20-5-",
+        "date": "2025-11-15",
         "posts": 4,
         "reactions": 187,
         "comments": 100,
@@ -893,7 +904,7 @@
         "reach": 0
       },
       {
-        "date": "1-16-20-5-",
+        "date": "2025-11-16",
         "posts": 6,
         "reactions": 111,
         "comments": 54,
@@ -904,7 +915,7 @@
         "reach": 0
       },
       {
-        "date": "1-17-20-5-",
+        "date": "2025-11-17",
         "posts": 1,
         "reactions": 24,
         "comments": 10,
@@ -915,7 +926,7 @@
         "reach": 0
       },
       {
-        "date": "1-18-20-5-",
+        "date": "2025-11-18",
         "posts": 7,
         "reactions": 446,
         "comments": 229,
@@ -926,7 +937,7 @@
         "reach": 0
       },
       {
-        "date": "1-19-20-5-",
+        "date": "2025-11-19",
         "posts": 2,
         "reactions": 68,
         "comments": 28,
@@ -937,7 +948,7 @@
         "reach": 0
       },
       {
-        "date": "1-20-20-5-",
+        "date": "2025-11-20",
         "posts": 8,
         "reactions": 323,
         "comments": 130,
@@ -948,7 +959,7 @@
         "reach": 0
       },
       {
-        "date": "1-21-20-5-",
+        "date": "2025-11-21",
         "posts": 5,
         "reactions": 257,
         "comments": 136,
@@ -959,7 +970,7 @@
         "reach": 0
       },
       {
-        "date": "1-22-20-5-",
+        "date": "2025-11-22",
         "posts": 3,
         "reactions": 114,
         "comments": 57,
@@ -970,7 +981,7 @@
         "reach": 0
       },
       {
-        "date": "1-23-20-5-",
+        "date": "2025-11-23",
         "posts": 3,
         "reactions": 85,
         "comments": 38,
@@ -981,7 +992,7 @@
         "reach": 0
       },
       {
-        "date": "1-24-20-5-",
+        "date": "2025-11-24",
         "posts": 5,
         "reactions": 231,
         "comments": 99,
@@ -992,7 +1003,7 @@
         "reach": 0
       },
       {
-        "date": "1-25-20-5-",
+        "date": "2025-11-25",
         "posts": 5,
         "reactions": 306,
         "comments": 76,
@@ -1003,7 +1014,7 @@
         "reach": 0
       },
       {
-        "date": "1-26-20-5-",
+        "date": "2025-11-26",
         "posts": 4,
         "reactions": 206,
         "comments": 73,
@@ -1014,7 +1025,7 @@
         "reach": 0
       },
       {
-        "date": "1-27-20-5-",
+        "date": "2025-11-27",
         "posts": 3,
         "reactions": 140,
         "comments": 62,
@@ -1025,7 +1036,7 @@
         "reach": 0
       },
       {
-        "date": "1-28-20-5-",
+        "date": "2025-11-28",
         "posts": 10,
         "reactions": 3873,
         "comments": 174,
@@ -1036,7 +1047,7 @@
         "reach": 0
       },
       {
-        "date": "1-29-20-5-",
+        "date": "2025-11-29",
         "posts": 12,
         "reactions": 972,
         "comments": 232,
@@ -1047,7 +1058,7 @@
         "reach": 0
       },
       {
-        "date": "1-30-20-5-",
+        "date": "2025-11-30",
         "posts": 12,
         "reactions": 587,
         "comments": 197,
@@ -1058,7 +1069,7 @@
         "reach": 0
       },
       {
-        "date": "2-01-20-5-",
+        "date": "2025-12-01",
         "posts": 5,
         "reactions": 382,
         "comments": 131,
@@ -1069,7 +1080,7 @@
         "reach": 0
       },
       {
-        "date": "2-02-20-5-",
+        "date": "2025-12-02",
         "posts": 8,
         "reactions": 1164,
         "comments": 146,
@@ -1080,7 +1091,7 @@
         "reach": 0
       },
       {
-        "date": "2-03-20-5-",
+        "date": "2025-12-03",
         "posts": 5,
         "reactions": 509,
         "comments": 101,
@@ -1091,7 +1102,7 @@
         "reach": 0
       },
       {
-        "date": "2-04-20-5-",
+        "date": "2025-12-04",
         "posts": 3,
         "reactions": 127,
         "comments": 36,
@@ -1102,7 +1113,7 @@
         "reach": 0
       },
       {
-        "date": "2-05-20-5-",
+        "date": "2025-12-05",
         "posts": 8,
         "reactions": 301,
         "comments": 67,
@@ -1113,7 +1124,7 @@
         "reach": 0
       },
       {
-        "date": "2-06-20-5-",
+        "date": "2025-12-06",
         "posts": 10,
         "reactions": 1058,
         "comments": 257,
@@ -1124,7 +1135,7 @@
         "reach": 0
       },
       {
-        "date": "2-07-20-5-",
+        "date": "2025-12-07",
         "posts": 7,
         "reactions": 12294,
         "comments": 162,
@@ -1135,7 +1146,7 @@
         "reach": 0
       },
       {
-        "date": "2-08-20-5-",
+        "date": "2025-12-08",
         "posts": 16,
         "reactions": 1026,
         "comments": 218,
@@ -1146,7 +1157,7 @@
         "reach": 0
       },
       {
-        "date": "2-09-20-5-",
+        "date": "2025-12-09",
         "posts": 6,
         "reactions": 971,
         "comments": 165,
@@ -1157,7 +1168,7 @@
         "reach": 0
       },
       {
-        "date": "2-10-20-5-",
+        "date": "2025-12-10",
         "posts": 6,
         "reactions": 9605,
         "comments": 131,
@@ -1168,7 +1179,7 @@
         "reach": 0
       },
       {
-        "date": "2-11-20-5-",
+        "date": "2025-12-11",
         "posts": 7,
         "reactions": 508,
         "comments": 86,
@@ -1179,7 +1190,7 @@
         "reach": 0
       },
       {
-        "date": "2-12-20-5-",
+        "date": "2025-12-12",
         "posts": 6,
         "reactions": 413,
         "comments": 165,
@@ -1190,7 +1201,7 @@
         "reach": 0
       },
       {
-        "date": "2-13-20-5-",
+        "date": "2025-12-13",
         "posts": 8,
         "reactions": 1089,
         "comments": 87,
@@ -1201,7 +1212,7 @@
         "reach": 0
       },
       {
-        "date": "2-14-20-5-",
+        "date": "2025-12-14",
         "posts": 6,
         "reactions": 1409,
         "comments": 85,
@@ -1212,7 +1223,7 @@
         "reach": 0
       },
       {
-        "date": "2-15-20-5-",
+        "date": "2025-12-15",
         "posts": 3,
         "reactions": 285,
         "comments": 41,
@@ -1223,7 +1234,7 @@
         "reach": 0
       },
       {
-        "date": "2-16-20-5-",
+        "date": "2025-12-16",
         "posts": 9,
         "reactions": 1607,
         "comments": 257,
@@ -1234,7 +1245,7 @@
         "reach": 0
       },
       {
-        "date": "2-17-20-5-",
+        "date": "2025-12-17",
         "posts": 1,
         "reactions": 68,
         "comments": 20,
@@ -1245,7 +1256,7 @@
         "reach": 0
       },
       {
-        "date": "2-18-20-5-",
+        "date": "2025-12-18",
         "posts": 5,
         "reactions": 277,
         "comments": 75,
@@ -1256,7 +1267,7 @@
         "reach": 0
       },
       {
-        "date": "2-19-20-5-",
+        "date": "2025-12-19",
         "posts": 12,
         "reactions": 626,
         "comments": 176,
@@ -1267,7 +1278,7 @@
         "reach": 0
       },
       {
-        "date": "2-20-20-5-",
+        "date": "2025-12-20",
         "posts": 9,
         "reactions": 421,
         "comments": 161,
@@ -1278,7 +1289,7 @@
         "reach": 0
       },
       {
-        "date": "2-21-20-5-",
+        "date": "2025-12-21",
         "posts": 9,
         "reactions": 377,
         "comments": 112,
@@ -1289,7 +1300,7 @@
         "reach": 0
       },
       {
-        "date": "2-22-20-5-",
+        "date": "2025-12-22",
         "posts": 17,
         "reactions": 1462,
         "comments": 238,
@@ -1300,7 +1311,7 @@
         "reach": 0
       },
       {
-        "date": "2-23-20-5-",
+        "date": "2025-12-23",
         "posts": 12,
         "reactions": 564,
         "comments": 165,
@@ -1311,7 +1322,7 @@
         "reach": 0
       },
       {
-        "date": "2-24-20-5-",
+        "date": "2025-12-24",
         "posts": 16,
         "reactions": 694,
         "comments": 148,
@@ -1322,7 +1333,7 @@
         "reach": 0
       },
       {
-        "date": "2-25-20-5-",
+        "date": "2025-12-25",
         "posts": 8,
         "reactions": 269,
         "comments": 55,
@@ -1333,7 +1344,7 @@
         "reach": 0
       },
       {
-        "date": "2-26-20-5-",
+        "date": "2025-12-26",
         "posts": 12,
         "reactions": 508,
         "comments": 134,
@@ -1344,7 +1355,7 @@
         "reach": 0
       },
       {
-        "date": "2-27-20-5-",
+        "date": "2025-12-27",
         "posts": 8,
         "reactions": 353,
         "comments": 123,
@@ -1355,7 +1366,7 @@
         "reach": 0
       },
       {
-        "date": "2-28-20-5-",
+        "date": "2025-12-28",
         "posts": 12,
         "reactions": 718,
         "comments": 96,
@@ -1366,7 +1377,7 @@
         "reach": 0
       },
       {
-        "date": "2-29-20-5-",
+        "date": "2025-12-29",
         "posts": 1,
         "reactions": 6,
         "comments": 2,
@@ -1375,23 +1386,23 @@
         "pes": 10.0,
         "views": 0,
         "reach": 0
-      },
-      {
-        "date": "9-30-20-5-",
-        "posts": 10,
-        "reactions": 213,
-        "comments": 69,
-        "shares": 55,
-        "engagement": 337,
-        "pes": 516.0,
-        "views": 0,
-        "reach": 0
       }
     ],
     "byPage": {
       "731608473377029": [
         {
-          "date": "0-02-20-5-",
+          "date": "2025-09-30",
+          "posts": 1,
+          "reactions": 57,
+          "comments": 11,
+          "shares": 18,
+          "engagement": 86,
+          "pes": 133.0,
+          "views": 0,
+          "reach": 0
+        },
+        {
+          "date": "2025-10-02",
           "posts": 1,
           "reactions": 120,
           "comments": 85,
@@ -1402,7 +1413,7 @@
           "reach": 0
         },
         {
-          "date": "0-05-20-5-",
+          "date": "2025-10-05",
           "posts": 1,
           "reactions": 40,
           "comments": 22,
@@ -1413,7 +1424,7 @@
           "reach": 0
         },
         {
-          "date": "0-09-20-5-",
+          "date": "2025-10-09",
           "posts": 1,
           "reactions": 76,
           "comments": 44,
@@ -1424,7 +1435,7 @@
           "reach": 0
         },
         {
-          "date": "0-10-20-5-",
+          "date": "2025-10-10",
           "posts": 1,
           "reactions": 67,
           "comments": 38,
@@ -1435,7 +1446,7 @@
           "reach": 0
         },
         {
-          "date": "0-12-20-5-",
+          "date": "2025-10-12",
           "posts": 1,
           "reactions": 80,
           "comments": 33,
@@ -1446,7 +1457,7 @@
           "reach": 0
         },
         {
-          "date": "0-13-20-5-",
+          "date": "2025-10-13",
           "posts": 1,
           "reactions": 42,
           "comments": 15,
@@ -1457,7 +1468,7 @@
           "reach": 0
         },
         {
-          "date": "0-14-20-5-",
+          "date": "2025-10-14",
           "posts": 3,
           "reactions": 106,
           "comments": 45,
@@ -1468,7 +1479,7 @@
           "reach": 0
         },
         {
-          "date": "0-15-20-5-",
+          "date": "2025-10-15",
           "posts": 2,
           "reactions": 106,
           "comments": 42,
@@ -1479,7 +1490,7 @@
           "reach": 0
         },
         {
-          "date": "0-17-20-5-",
+          "date": "2025-10-17",
           "posts": 4,
           "reactions": 160,
           "comments": 66,
@@ -1490,7 +1501,7 @@
           "reach": 0
         },
         {
-          "date": "0-18-20-5-",
+          "date": "2025-10-18",
           "posts": 1,
           "reactions": 62,
           "comments": 24,
@@ -1501,7 +1512,7 @@
           "reach": 0
         },
         {
-          "date": "0-19-20-5-",
+          "date": "2025-10-19",
           "posts": 1,
           "reactions": 69,
           "comments": 32,
@@ -1512,7 +1523,7 @@
           "reach": 0
         },
         {
-          "date": "0-21-20-5-",
+          "date": "2025-10-21",
           "posts": 3,
           "reactions": 129,
           "comments": 62,
@@ -1523,7 +1534,7 @@
           "reach": 0
         },
         {
-          "date": "0-23-20-5-",
+          "date": "2025-10-23",
           "posts": 2,
           "reactions": 164,
           "comments": 106,
@@ -1534,7 +1545,7 @@
           "reach": 0
         },
         {
-          "date": "0-24-20-5-",
+          "date": "2025-10-24",
           "posts": 2,
           "reactions": 149,
           "comments": 84,
@@ -1545,7 +1556,7 @@
           "reach": 0
         },
         {
-          "date": "0-30-20-5-",
+          "date": "2025-10-30",
           "posts": 3,
           "reactions": 173,
           "comments": 123,
@@ -1556,7 +1567,7 @@
           "reach": 0
         },
         {
-          "date": "1-02-20-5-",
+          "date": "2025-11-02",
           "posts": 1,
           "reactions": 38,
           "comments": 26,
@@ -1567,7 +1578,7 @@
           "reach": 0
         },
         {
-          "date": "1-07-20-5-",
+          "date": "2025-11-07",
           "posts": 2,
           "reactions": 121,
           "comments": 58,
@@ -1578,7 +1589,7 @@
           "reach": 0
         },
         {
-          "date": "1-08-20-5-",
+          "date": "2025-11-08",
           "posts": 2,
           "reactions": 59,
           "comments": 20,
@@ -1589,7 +1600,7 @@
           "reach": 0
         },
         {
-          "date": "1-09-20-5-",
+          "date": "2025-11-09",
           "posts": 3,
           "reactions": 106,
           "comments": 42,
@@ -1600,7 +1611,7 @@
           "reach": 0
         },
         {
-          "date": "1-11-20-5-",
+          "date": "2025-11-11",
           "posts": 2,
           "reactions": 108,
           "comments": 61,
@@ -1611,7 +1622,7 @@
           "reach": 0
         },
         {
-          "date": "1-12-20-5-",
+          "date": "2025-11-12",
           "posts": 1,
           "reactions": 80,
           "comments": 53,
@@ -1622,7 +1633,7 @@
           "reach": 0
         },
         {
-          "date": "1-15-20-5-",
+          "date": "2025-11-15",
           "posts": 1,
           "reactions": 71,
           "comments": 44,
@@ -1633,7 +1644,7 @@
           "reach": 0
         },
         {
-          "date": "1-18-20-5-",
+          "date": "2025-11-18",
           "posts": 1,
           "reactions": 67,
           "comments": 38,
@@ -1644,7 +1655,7 @@
           "reach": 0
         },
         {
-          "date": "1-20-20-5-",
+          "date": "2025-11-20",
           "posts": 2,
           "reactions": 100,
           "comments": 45,
@@ -1655,7 +1666,7 @@
           "reach": 0
         },
         {
-          "date": "1-21-20-5-",
+          "date": "2025-11-21",
           "posts": 2,
           "reactions": 153,
           "comments": 87,
@@ -1666,7 +1677,7 @@
           "reach": 0
         },
         {
-          "date": "1-24-20-5-",
+          "date": "2025-11-24",
           "posts": 1,
           "reactions": 93,
           "comments": 47,
@@ -1677,7 +1688,7 @@
           "reach": 0
         },
         {
-          "date": "1-29-20-5-",
+          "date": "2025-11-29",
           "posts": 1,
           "reactions": 72,
           "comments": 39,
@@ -1688,7 +1699,7 @@
           "reach": 0
         },
         {
-          "date": "1-30-20-5-",
+          "date": "2025-11-30",
           "posts": 2,
           "reactions": 217,
           "comments": 96,
@@ -1699,7 +1710,7 @@
           "reach": 0
         },
         {
-          "date": "2-05-20-5-",
+          "date": "2025-12-05",
           "posts": 1,
           "reactions": 27,
           "comments": 4,
@@ -1710,7 +1721,7 @@
           "reach": 0
         },
         {
-          "date": "2-07-20-5-",
+          "date": "2025-12-07",
           "posts": 1,
           "reactions": 76,
           "comments": 39,
@@ -1721,7 +1732,7 @@
           "reach": 0
         },
         {
-          "date": "2-08-20-5-",
+          "date": "2025-12-08",
           "posts": 3,
           "reactions": 295,
           "comments": 91,
@@ -1732,7 +1743,7 @@
           "reach": 0
         },
         {
-          "date": "2-18-20-5-",
+          "date": "2025-12-18",
           "posts": 1,
           "reactions": 88,
           "comments": 27,
@@ -1743,7 +1754,7 @@
           "reach": 0
         },
         {
-          "date": "2-19-20-5-",
+          "date": "2025-12-19",
           "posts": 2,
           "reactions": 94,
           "comments": 35,
@@ -1754,7 +1765,7 @@
           "reach": 0
         },
         {
-          "date": "2-21-20-5-",
+          "date": "2025-12-21",
           "posts": 1,
           "reactions": 52,
           "comments": 28,
@@ -1765,7 +1776,7 @@
           "reach": 0
         },
         {
-          "date": "2-22-20-5-",
+          "date": "2025-12-22",
           "posts": 1,
           "reactions": 28,
           "comments": 7,
@@ -1776,7 +1787,7 @@
           "reach": 0
         },
         {
-          "date": "2-23-20-5-",
+          "date": "2025-12-23",
           "posts": 1,
           "reactions": 50,
           "comments": 13,
@@ -1787,7 +1798,7 @@
           "reach": 0
         },
         {
-          "date": "2-24-20-5-",
+          "date": "2025-12-24",
           "posts": 3,
           "reactions": 87,
           "comments": 24,
@@ -1798,7 +1809,7 @@
           "reach": 0
         },
         {
-          "date": "2-25-20-5-",
+          "date": "2025-12-25",
           "posts": 1,
           "reactions": 48,
           "comments": 18,
@@ -1809,7 +1820,7 @@
           "reach": 0
         },
         {
-          "date": "2-26-20-5-",
+          "date": "2025-12-26",
           "posts": 1,
           "reactions": 35,
           "comments": 14,
@@ -1820,7 +1831,7 @@
           "reach": 0
         },
         {
-          "date": "2-27-20-5-",
+          "date": "2025-12-27",
           "posts": 1,
           "reactions": 50,
           "comments": 17,
@@ -1831,7 +1842,7 @@
           "reach": 0
         },
         {
-          "date": "2-28-20-5-",
+          "date": "2025-12-28",
           "posts": 2,
           "reactions": 37,
           "comments": 9,
@@ -1840,22 +1851,22 @@
           "pes": 76.0,
           "views": 0,
           "reach": 0
-        },
-        {
-          "date": "9-30-20-5-",
-          "posts": 1,
-          "reactions": 57,
-          "comments": 11,
-          "shares": 18,
-          "engagement": 86,
-          "pes": 133.0,
-          "views": 0,
-          "reach": 0
         }
       ],
       "747721128429855": [
         {
-          "date": "0-01-20-5-",
+          "date": "2025-09-30",
+          "posts": 2,
+          "reactions": 37,
+          "comments": 11,
+          "shares": 12,
+          "engagement": 60,
+          "pes": 95.0,
+          "views": 0,
+          "reach": 0
+        },
+        {
+          "date": "2025-10-01",
           "posts": 2,
           "reactions": 55,
           "comments": 14,
@@ -1866,7 +1877,7 @@
           "reach": 0
         },
         {
-          "date": "0-03-20-5-",
+          "date": "2025-10-03",
           "posts": 1,
           "reactions": 53,
           "comments": 16,
@@ -1877,7 +1888,7 @@
           "reach": 0
         },
         {
-          "date": "0-04-20-5-",
+          "date": "2025-10-04",
           "posts": 2,
           "reactions": 53,
           "comments": 16,
@@ -1888,7 +1899,7 @@
           "reach": 0
         },
         {
-          "date": "0-05-20-5-",
+          "date": "2025-10-05",
           "posts": 4,
           "reactions": 144,
           "comments": 90,
@@ -1899,7 +1910,7 @@
           "reach": 0
         },
         {
-          "date": "0-06-20-5-",
+          "date": "2025-10-06",
           "posts": 1,
           "reactions": 52,
           "comments": 32,
@@ -1910,7 +1921,7 @@
           "reach": 0
         },
         {
-          "date": "0-07-20-5-",
+          "date": "2025-10-07",
           "posts": 2,
           "reactions": 113,
           "comments": 76,
@@ -1921,7 +1932,7 @@
           "reach": 0
         },
         {
-          "date": "0-09-20-5-",
+          "date": "2025-10-09",
           "posts": 1,
           "reactions": 94,
           "comments": 65,
@@ -1932,7 +1943,7 @@
           "reach": 0
         },
         {
-          "date": "0-10-20-5-",
+          "date": "2025-10-10",
           "posts": 1,
           "reactions": 31,
           "comments": 12,
@@ -1943,7 +1954,7 @@
           "reach": 0
         },
         {
-          "date": "0-11-20-5-",
+          "date": "2025-10-11",
           "posts": 2,
           "reactions": 75,
           "comments": 34,
@@ -1954,7 +1965,7 @@
           "reach": 0
         },
         {
-          "date": "0-12-20-5-",
+          "date": "2025-10-12",
           "posts": 2,
           "reactions": 123,
           "comments": 76,
@@ -1965,7 +1976,7 @@
           "reach": 0
         },
         {
-          "date": "0-13-20-5-",
+          "date": "2025-10-13",
           "posts": 1,
           "reactions": 38,
           "comments": 14,
@@ -1976,7 +1987,7 @@
           "reach": 0
         },
         {
-          "date": "0-14-20-5-",
+          "date": "2025-10-14",
           "posts": 4,
           "reactions": 183,
           "comments": 74,
@@ -1987,7 +1998,7 @@
           "reach": 0
         },
         {
-          "date": "0-15-20-5-",
+          "date": "2025-10-15",
           "posts": 2,
           "reactions": 134,
           "comments": 52,
@@ -1998,7 +2009,7 @@
           "reach": 0
         },
         {
-          "date": "0-16-20-5-",
+          "date": "2025-10-16",
           "posts": 1,
           "reactions": 78,
           "comments": 40,
@@ -2009,7 +2020,7 @@
           "reach": 0
         },
         {
-          "date": "0-17-20-5-",
+          "date": "2025-10-17",
           "posts": 2,
           "reactions": 142,
           "comments": 81,
@@ -2020,7 +2031,7 @@
           "reach": 0
         },
         {
-          "date": "0-19-20-5-",
+          "date": "2025-10-19",
           "posts": 1,
           "reactions": 34,
           "comments": 18,
@@ -2031,7 +2042,7 @@
           "reach": 0
         },
         {
-          "date": "0-20-20-5-",
+          "date": "2025-10-20",
           "posts": 3,
           "reactions": 131,
           "comments": 67,
@@ -2042,7 +2053,7 @@
           "reach": 0
         },
         {
-          "date": "0-21-20-5-",
+          "date": "2025-10-21",
           "posts": 3,
           "reactions": 212,
           "comments": 136,
@@ -2053,7 +2064,7 @@
           "reach": 0
         },
         {
-          "date": "0-23-20-5-",
+          "date": "2025-10-23",
           "posts": 1,
           "reactions": 91,
           "comments": 52,
@@ -2064,7 +2075,7 @@
           "reach": 0
         },
         {
-          "date": "0-24-20-5-",
+          "date": "2025-10-24",
           "posts": 1,
           "reactions": 60,
           "comments": 44,
@@ -2075,7 +2086,7 @@
           "reach": 0
         },
         {
-          "date": "0-25-20-5-",
+          "date": "2025-10-25",
           "posts": 2,
           "reactions": 70,
           "comments": 37,
@@ -2086,7 +2097,7 @@
           "reach": 0
         },
         {
-          "date": "0-28-20-5-",
+          "date": "2025-10-28",
           "posts": 1,
           "reactions": 35,
           "comments": 10,
@@ -2097,7 +2108,7 @@
           "reach": 0
         },
         {
-          "date": "0-29-20-5-",
+          "date": "2025-10-29",
           "posts": 3,
           "reactions": 140,
           "comments": 69,
@@ -2108,7 +2119,7 @@
           "reach": 0
         },
         {
-          "date": "0-30-20-5-",
+          "date": "2025-10-30",
           "posts": 3,
           "reactions": 102,
           "comments": 40,
@@ -2119,7 +2130,7 @@
           "reach": 0
         },
         {
-          "date": "0-31-20-5-",
+          "date": "2025-10-31",
           "posts": 2,
           "reactions": 56,
           "comments": 29,
@@ -2130,7 +2141,7 @@
           "reach": 0
         },
         {
-          "date": "1-01-20-5-",
+          "date": "2025-11-01",
           "posts": 1,
           "reactions": 44,
           "comments": 27,
@@ -2141,7 +2152,7 @@
           "reach": 0
         },
         {
-          "date": "1-02-20-5-",
+          "date": "2025-11-02",
           "posts": 1,
           "reactions": 65,
           "comments": 51,
@@ -2152,7 +2163,7 @@
           "reach": 0
         },
         {
-          "date": "1-03-20-5-",
+          "date": "2025-11-03",
           "posts": 1,
           "reactions": 82,
           "comments": 59,
@@ -2163,7 +2174,7 @@
           "reach": 0
         },
         {
-          "date": "1-04-20-5-",
+          "date": "2025-11-04",
           "posts": 1,
           "reactions": 28,
           "comments": 8,
@@ -2174,7 +2185,7 @@
           "reach": 0
         },
         {
-          "date": "1-05-20-5-",
+          "date": "2025-11-05",
           "posts": 3,
           "reactions": 228,
           "comments": 121,
@@ -2185,7 +2196,7 @@
           "reach": 0
         },
         {
-          "date": "1-07-20-5-",
+          "date": "2025-11-07",
           "posts": 1,
           "reactions": 69,
           "comments": 38,
@@ -2196,7 +2207,7 @@
           "reach": 0
         },
         {
-          "date": "1-09-20-5-",
+          "date": "2025-11-09",
           "posts": 2,
           "reactions": 58,
           "comments": 24,
@@ -2207,7 +2218,7 @@
           "reach": 0
         },
         {
-          "date": "1-10-20-5-",
+          "date": "2025-11-10",
           "posts": 1,
           "reactions": 84,
           "comments": 59,
@@ -2218,7 +2229,7 @@
           "reach": 0
         },
         {
-          "date": "1-11-20-5-",
+          "date": "2025-11-11",
           "posts": 1,
           "reactions": 22,
           "comments": 4,
@@ -2229,7 +2240,7 @@
           "reach": 0
         },
         {
-          "date": "1-12-20-5-",
+          "date": "2025-11-12",
           "posts": 2,
           "reactions": 165,
           "comments": 113,
@@ -2240,7 +2251,7 @@
           "reach": 0
         },
         {
-          "date": "1-14-20-5-",
+          "date": "2025-11-14",
           "posts": 1,
           "reactions": 98,
           "comments": 71,
@@ -2251,7 +2262,7 @@
           "reach": 0
         },
         {
-          "date": "1-18-20-5-",
+          "date": "2025-11-18",
           "posts": 1,
           "reactions": 71,
           "comments": 50,
@@ -2262,7 +2273,7 @@
           "reach": 0
         },
         {
-          "date": "1-20-20-5-",
+          "date": "2025-11-20",
           "posts": 2,
           "reactions": 124,
           "comments": 65,
@@ -2273,7 +2284,7 @@
           "reach": 0
         },
         {
-          "date": "1-22-20-5-",
+          "date": "2025-11-22",
           "posts": 1,
           "reactions": 82,
           "comments": 50,
@@ -2284,7 +2295,7 @@
           "reach": 0
         },
         {
-          "date": "1-26-20-5-",
+          "date": "2025-11-26",
           "posts": 1,
           "reactions": 66,
           "comments": 29,
@@ -2295,7 +2306,7 @@
           "reach": 0
         },
         {
-          "date": "1-28-20-5-",
+          "date": "2025-11-28",
           "posts": 2,
           "reactions": 111,
           "comments": 54,
@@ -2306,7 +2317,7 @@
           "reach": 0
         },
         {
-          "date": "1-29-20-5-",
+          "date": "2025-11-29",
           "posts": 2,
           "reactions": 108,
           "comments": 32,
@@ -2317,7 +2328,7 @@
           "reach": 0
         },
         {
-          "date": "1-30-20-5-",
+          "date": "2025-11-30",
           "posts": 2,
           "reactions": 105,
           "comments": 43,
@@ -2328,7 +2339,7 @@
           "reach": 0
         },
         {
-          "date": "2-01-20-5-",
+          "date": "2025-12-01",
           "posts": 2,
           "reactions": 149,
           "comments": 89,
@@ -2339,7 +2350,7 @@
           "reach": 0
         },
         {
-          "date": "2-02-20-5-",
+          "date": "2025-12-02",
           "posts": 1,
           "reactions": 68,
           "comments": 40,
@@ -2350,7 +2361,7 @@
           "reach": 0
         },
         {
-          "date": "2-05-20-5-",
+          "date": "2025-12-05",
           "posts": 1,
           "reactions": 18,
           "comments": 3,
@@ -2361,7 +2372,7 @@
           "reach": 0
         },
         {
-          "date": "2-06-20-5-",
+          "date": "2025-12-06",
           "posts": 3,
           "reactions": 232,
           "comments": 134,
@@ -2372,7 +2383,7 @@
           "reach": 0
         },
         {
-          "date": "2-08-20-5-",
+          "date": "2025-12-08",
           "posts": 1,
           "reactions": 34,
           "comments": 5,
@@ -2383,7 +2394,7 @@
           "reach": 0
         },
         {
-          "date": "2-09-20-5-",
+          "date": "2025-12-09",
           "posts": 1,
           "reactions": 52,
           "comments": 29,
@@ -2394,7 +2405,7 @@
           "reach": 0
         },
         {
-          "date": "2-10-20-5-",
+          "date": "2025-12-10",
           "posts": 1,
           "reactions": 83,
           "comments": 53,
@@ -2405,7 +2416,7 @@
           "reach": 0
         },
         {
-          "date": "2-16-20-5-",
+          "date": "2025-12-16",
           "posts": 2,
           "reactions": 227,
           "comments": 101,
@@ -2416,7 +2427,7 @@
           "reach": 0
         },
         {
-          "date": "2-18-20-5-",
+          "date": "2025-12-18",
           "posts": 1,
           "reactions": 60,
           "comments": 21,
@@ -2427,7 +2438,7 @@
           "reach": 0
         },
         {
-          "date": "2-19-20-5-",
+          "date": "2025-12-19",
           "posts": 2,
           "reactions": 90,
           "comments": 32,
@@ -2438,7 +2449,7 @@
           "reach": 0
         },
         {
-          "date": "2-20-20-5-",
+          "date": "2025-12-20",
           "posts": 2,
           "reactions": 89,
           "comments": 53,
@@ -2449,7 +2460,7 @@
           "reach": 0
         },
         {
-          "date": "2-21-20-5-",
+          "date": "2025-12-21",
           "posts": 2,
           "reactions": 87,
           "comments": 26,
@@ -2460,7 +2471,7 @@
           "reach": 0
         },
         {
-          "date": "2-22-20-5-",
+          "date": "2025-12-22",
           "posts": 5,
           "reactions": 159,
           "comments": 53,
@@ -2471,7 +2482,7 @@
           "reach": 0
         },
         {
-          "date": "2-23-20-5-",
+          "date": "2025-12-23",
           "posts": 3,
           "reactions": 117,
           "comments": 50,
@@ -2482,7 +2493,7 @@
           "reach": 0
         },
         {
-          "date": "2-24-20-5-",
+          "date": "2025-12-24",
           "posts": 4,
           "reactions": 107,
           "comments": 32,
@@ -2493,7 +2504,7 @@
           "reach": 0
         },
         {
-          "date": "2-25-20-5-",
+          "date": "2025-12-25",
           "posts": 2,
           "reactions": 45,
           "comments": 11,
@@ -2504,7 +2515,7 @@
           "reach": 0
         },
         {
-          "date": "2-26-20-5-",
+          "date": "2025-12-26",
           "posts": 4,
           "reactions": 118,
           "comments": 37,
@@ -2515,7 +2526,7 @@
           "reach": 0
         },
         {
-          "date": "2-27-20-5-",
+          "date": "2025-12-27",
           "posts": 2,
           "reactions": 121,
           "comments": 46,
@@ -2526,7 +2537,7 @@
           "reach": 0
         },
         {
-          "date": "2-28-20-5-",
+          "date": "2025-12-28",
           "posts": 4,
           "reactions": 92,
           "comments": 28,
@@ -2535,22 +2546,11 @@
           "pes": 223.0,
           "views": 0,
           "reach": 0
-        },
-        {
-          "date": "9-30-20-5-",
-          "posts": 2,
-          "reactions": 37,
-          "comments": 11,
-          "shares": 12,
-          "engagement": 60,
-          "pes": 95.0,
-          "views": 0,
-          "reach": 0
         }
       ],
       "748765068327821": [
         {
-          "date": "0-10-20-5-",
+          "date": "2025-10-10",
           "posts": 1,
           "reactions": 16,
           "comments": 3,
@@ -2561,7 +2561,7 @@
           "reach": 0
         },
         {
-          "date": "0-11-20-5-",
+          "date": "2025-10-11",
           "posts": 1,
           "reactions": 8,
           "comments": 0,
@@ -2572,7 +2572,7 @@
           "reach": 0
         },
         {
-          "date": "0-12-20-5-",
+          "date": "2025-10-12",
           "posts": 2,
           "reactions": 54,
           "comments": 5,
@@ -2583,7 +2583,7 @@
           "reach": 0
         },
         {
-          "date": "0-14-20-5-",
+          "date": "2025-10-14",
           "posts": 2,
           "reactions": 30,
           "comments": 1,
@@ -2594,7 +2594,7 @@
           "reach": 0
         },
         {
-          "date": "0-15-20-5-",
+          "date": "2025-10-15",
           "posts": 2,
           "reactions": 56,
           "comments": 18,
@@ -2605,7 +2605,7 @@
           "reach": 0
         },
         {
-          "date": "0-18-20-5-",
+          "date": "2025-10-18",
           "posts": 2,
           "reactions": 15,
           "comments": 0,
@@ -2616,7 +2616,7 @@
           "reach": 0
         },
         {
-          "date": "0-19-20-5-",
+          "date": "2025-10-19",
           "posts": 1,
           "reactions": 16,
           "comments": 2,
@@ -2627,7 +2627,7 @@
           "reach": 0
         },
         {
-          "date": "0-20-20-5-",
+          "date": "2025-10-20",
           "posts": 2,
           "reactions": 69,
           "comments": 7,
@@ -2638,7 +2638,7 @@
           "reach": 0
         },
         {
-          "date": "0-21-20-5-",
+          "date": "2025-10-21",
           "posts": 1,
           "reactions": 13,
           "comments": 0,
@@ -2649,7 +2649,7 @@
           "reach": 0
         },
         {
-          "date": "0-22-20-5-",
+          "date": "2025-10-22",
           "posts": 2,
           "reactions": 51,
           "comments": 13,
@@ -2660,7 +2660,7 @@
           "reach": 0
         },
         {
-          "date": "0-23-20-5-",
+          "date": "2025-10-23",
           "posts": 2,
           "reactions": 65,
           "comments": 13,
@@ -2671,7 +2671,7 @@
           "reach": 0
         },
         {
-          "date": "0-24-20-5-",
+          "date": "2025-10-24",
           "posts": 3,
           "reactions": 35,
           "comments": 3,
@@ -2682,7 +2682,7 @@
           "reach": 0
         },
         {
-          "date": "0-25-20-5-",
+          "date": "2025-10-25",
           "posts": 1,
           "reactions": 11,
           "comments": 1,
@@ -2693,7 +2693,7 @@
           "reach": 0
         },
         {
-          "date": "0-26-20-5-",
+          "date": "2025-10-26",
           "posts": 2,
           "reactions": 52,
           "comments": 8,
@@ -2704,7 +2704,7 @@
           "reach": 0
         },
         {
-          "date": "0-27-20-5-",
+          "date": "2025-10-27",
           "posts": 1,
           "reactions": 18,
           "comments": 2,
@@ -2715,7 +2715,7 @@
           "reach": 0
         },
         {
-          "date": "0-28-20-5-",
+          "date": "2025-10-28",
           "posts": 1,
           "reactions": 18,
           "comments": 3,
@@ -2726,7 +2726,7 @@
           "reach": 0
         },
         {
-          "date": "0-29-20-5-",
+          "date": "2025-10-29",
           "posts": 1,
           "reactions": 11,
           "comments": 1,
@@ -2737,7 +2737,7 @@
           "reach": 0
         },
         {
-          "date": "0-30-20-5-",
+          "date": "2025-10-30",
           "posts": 3,
           "reactions": 81,
           "comments": 20,
@@ -2748,7 +2748,7 @@
           "reach": 0
         },
         {
-          "date": "1-02-20-5-",
+          "date": "2025-11-02",
           "posts": 1,
           "reactions": 8,
           "comments": 0,
@@ -2759,7 +2759,7 @@
           "reach": 0
         },
         {
-          "date": "1-03-20-5-",
+          "date": "2025-11-03",
           "posts": 1,
           "reactions": 11,
           "comments": 1,
@@ -2770,7 +2770,7 @@
           "reach": 0
         },
         {
-          "date": "1-04-20-5-",
+          "date": "2025-11-04",
           "posts": 3,
           "reactions": 39,
           "comments": 5,
@@ -2781,7 +2781,7 @@
           "reach": 0
         },
         {
-          "date": "1-07-20-5-",
+          "date": "2025-11-07",
           "posts": 1,
           "reactions": 28,
           "comments": 1,
@@ -2792,7 +2792,7 @@
           "reach": 0
         },
         {
-          "date": "1-08-20-5-",
+          "date": "2025-11-08",
           "posts": 3,
           "reactions": 60,
           "comments": 13,
@@ -2803,7 +2803,7 @@
           "reach": 0
         },
         {
-          "date": "1-09-20-5-",
+          "date": "2025-11-09",
           "posts": 1,
           "reactions": 11,
           "comments": 2,
@@ -2814,7 +2814,7 @@
           "reach": 0
         },
         {
-          "date": "1-16-20-5-",
+          "date": "2025-11-16",
           "posts": 1,
           "reactions": 9,
           "comments": 2,
@@ -2825,7 +2825,7 @@
           "reach": 0
         },
         {
-          "date": "1-20-20-5-",
+          "date": "2025-11-20",
           "posts": 1,
           "reactions": 8,
           "comments": 0,
@@ -2836,7 +2836,7 @@
           "reach": 0
         },
         {
-          "date": "1-25-20-5-",
+          "date": "2025-11-25",
           "posts": 1,
           "reactions": 55,
           "comments": 12,
@@ -2847,7 +2847,7 @@
           "reach": 0
         },
         {
-          "date": "1-28-20-5-",
+          "date": "2025-11-28",
           "posts": 3,
           "reactions": 3472,
           "comments": 39,
@@ -2858,7 +2858,7 @@
           "reach": 0
         },
         {
-          "date": "1-29-20-5-",
+          "date": "2025-11-29",
           "posts": 3,
           "reactions": 493,
           "comments": 44,
@@ -2869,7 +2869,7 @@
           "reach": 0
         },
         {
-          "date": "1-30-20-5-",
+          "date": "2025-11-30",
           "posts": 4,
           "reactions": 76,
           "comments": 14,
@@ -2880,7 +2880,7 @@
           "reach": 0
         },
         {
-          "date": "2-02-20-5-",
+          "date": "2025-12-02",
           "posts": 3,
           "reactions": 933,
           "comments": 62,
@@ -2891,7 +2891,7 @@
           "reach": 0
         },
         {
-          "date": "2-03-20-5-",
+          "date": "2025-12-03",
           "posts": 2,
           "reactions": 334,
           "comments": 37,
@@ -2902,7 +2902,7 @@
           "reach": 0
         },
         {
-          "date": "2-05-20-5-",
+          "date": "2025-12-05",
           "posts": 2,
           "reactions": 66,
           "comments": 19,
@@ -2913,7 +2913,7 @@
           "reach": 0
         },
         {
-          "date": "2-06-20-5-",
+          "date": "2025-12-06",
           "posts": 3,
           "reactions": 562,
           "comments": 48,
@@ -2924,7 +2924,7 @@
           "reach": 0
         },
         {
-          "date": "2-07-20-5-",
+          "date": "2025-12-07",
           "posts": 2,
           "reactions": 84,
           "comments": 49,
@@ -2935,7 +2935,7 @@
           "reach": 0
         },
         {
-          "date": "2-08-20-5-",
+          "date": "2025-12-08",
           "posts": 3,
           "reactions": 71,
           "comments": 8,
@@ -2946,7 +2946,7 @@
           "reach": 0
         },
         {
-          "date": "2-09-20-5-",
+          "date": "2025-12-09",
           "posts": 1,
           "reactions": 498,
           "comments": 45,
@@ -2957,7 +2957,7 @@
           "reach": 0
         },
         {
-          "date": "2-12-20-5-",
+          "date": "2025-12-12",
           "posts": 1,
           "reactions": 31,
           "comments": 4,
@@ -2968,7 +2968,7 @@
           "reach": 0
         },
         {
-          "date": "2-13-20-5-",
+          "date": "2025-12-13",
           "posts": 1,
           "reactions": 659,
           "comments": 25,
@@ -2979,7 +2979,7 @@
           "reach": 0
         },
         {
-          "date": "2-14-20-5-",
+          "date": "2025-12-14",
           "posts": 3,
           "reactions": 1142,
           "comments": 53,
@@ -2990,7 +2990,7 @@
           "reach": 0
         },
         {
-          "date": "2-16-20-5-",
+          "date": "2025-12-16",
           "posts": 3,
           "reactions": 1132,
           "comments": 71,
@@ -3001,7 +3001,7 @@
           "reach": 0
         },
         {
-          "date": "2-19-20-5-",
+          "date": "2025-12-19",
           "posts": 1,
           "reactions": 57,
           "comments": 9,
@@ -3012,7 +3012,7 @@
           "reach": 0
         },
         {
-          "date": "2-20-20-5-",
+          "date": "2025-12-20",
           "posts": 1,
           "reactions": 63,
           "comments": 24,
@@ -3023,7 +3023,7 @@
           "reach": 0
         },
         {
-          "date": "2-22-20-5-",
+          "date": "2025-12-22",
           "posts": 3,
           "reactions": 201,
           "comments": 97,
@@ -3034,7 +3034,7 @@
           "reach": 0
         },
         {
-          "date": "2-23-20-5-",
+          "date": "2025-12-23",
           "posts": 1,
           "reactions": 95,
           "comments": 14,
@@ -3045,7 +3045,7 @@
           "reach": 0
         },
         {
-          "date": "2-24-20-5-",
+          "date": "2025-12-24",
           "posts": 1,
           "reactions": 271,
           "comments": 40,
@@ -3056,7 +3056,7 @@
           "reach": 0
         },
         {
-          "date": "2-25-20-5-",
+          "date": "2025-12-25",
           "posts": 1,
           "reactions": 13,
           "comments": 2,
@@ -3067,7 +3067,7 @@
           "reach": 0
         },
         {
-          "date": "2-26-20-5-",
+          "date": "2025-12-26",
           "posts": 1,
           "reactions": 86,
           "comments": 37,
@@ -3078,7 +3078,7 @@
           "reach": 0
         },
         {
-          "date": "2-28-20-5-",
+          "date": "2025-12-28",
           "posts": 2,
           "reactions": 469,
           "comments": 28,
@@ -3091,7 +3091,7 @@
       ],
       "754416584427163": [
         {
-          "date": "0-02-20-5-",
+          "date": "2025-10-02",
           "posts": 2,
           "reactions": 178,
           "comments": 119,
@@ -3102,7 +3102,7 @@
           "reach": 0
         },
         {
-          "date": "0-04-20-5-",
+          "date": "2025-10-04",
           "posts": 1,
           "reactions": 41,
           "comments": 19,
@@ -3113,7 +3113,7 @@
           "reach": 0
         },
         {
-          "date": "0-05-20-5-",
+          "date": "2025-10-05",
           "posts": 1,
           "reactions": 39,
           "comments": 16,
@@ -3124,7 +3124,7 @@
           "reach": 0
         },
         {
-          "date": "0-06-20-5-",
+          "date": "2025-10-06",
           "posts": 1,
           "reactions": 63,
           "comments": 25,
@@ -3135,7 +3135,7 @@
           "reach": 0
         },
         {
-          "date": "0-12-20-5-",
+          "date": "2025-10-12",
           "posts": 4,
           "reactions": 274,
           "comments": 104,
@@ -3146,7 +3146,7 @@
           "reach": 0
         },
         {
-          "date": "0-14-20-5-",
+          "date": "2025-10-14",
           "posts": 2,
           "reactions": 128,
           "comments": 49,
@@ -3157,7 +3157,7 @@
           "reach": 0
         },
         {
-          "date": "0-15-20-5-",
+          "date": "2025-10-15",
           "posts": 1,
           "reactions": 97,
           "comments": 54,
@@ -3168,7 +3168,7 @@
           "reach": 0
         },
         {
-          "date": "0-16-20-5-",
+          "date": "2025-10-16",
           "posts": 1,
           "reactions": 110,
           "comments": 67,
@@ -3179,7 +3179,7 @@
           "reach": 0
         },
         {
-          "date": "0-19-20-5-",
+          "date": "2025-10-19",
           "posts": 1,
           "reactions": 96,
           "comments": 58,
@@ -3190,7 +3190,7 @@
           "reach": 0
         },
         {
-          "date": "0-21-20-5-",
+          "date": "2025-10-21",
           "posts": 2,
           "reactions": 84,
           "comments": 20,
@@ -3201,7 +3201,7 @@
           "reach": 0
         },
         {
-          "date": "0-22-20-5-",
+          "date": "2025-10-22",
           "posts": 1,
           "reactions": 114,
           "comments": 72,
@@ -3212,7 +3212,7 @@
           "reach": 0
         },
         {
-          "date": "0-23-20-5-",
+          "date": "2025-10-23",
           "posts": 2,
           "reactions": 237,
           "comments": 167,
@@ -3223,7 +3223,7 @@
           "reach": 0
         },
         {
-          "date": "0-28-20-5-",
+          "date": "2025-10-28",
           "posts": 1,
           "reactions": 104,
           "comments": 84,
@@ -3234,7 +3234,7 @@
           "reach": 0
         },
         {
-          "date": "0-30-20-5-",
+          "date": "2025-10-30",
           "posts": 1,
           "reactions": 33,
           "comments": 16,
@@ -3245,7 +3245,7 @@
           "reach": 0
         },
         {
-          "date": "1-02-20-5-",
+          "date": "2025-11-02",
           "posts": 1,
           "reactions": 132,
           "comments": 91,
@@ -3256,7 +3256,7 @@
           "reach": 0
         },
         {
-          "date": "1-07-20-5-",
+          "date": "2025-11-07",
           "posts": 1,
           "reactions": 89,
           "comments": 76,
@@ -3267,7 +3267,7 @@
           "reach": 0
         },
         {
-          "date": "1-09-20-5-",
+          "date": "2025-11-09",
           "posts": 1,
           "reactions": 28,
           "comments": 10,
@@ -3278,7 +3278,7 @@
           "reach": 0
         },
         {
-          "date": "1-11-20-5-",
+          "date": "2025-11-11",
           "posts": 2,
           "reactions": 59,
           "comments": 17,
@@ -3289,7 +3289,7 @@
           "reach": 0
         },
         {
-          "date": "1-12-20-5-",
+          "date": "2025-11-12",
           "posts": 1,
           "reactions": 24,
           "comments": 3,
@@ -3300,7 +3300,7 @@
           "reach": 0
         },
         {
-          "date": "1-13-20-5-",
+          "date": "2025-11-13",
           "posts": 2,
           "reactions": 187,
           "comments": 121,
@@ -3311,7 +3311,7 @@
           "reach": 0
         },
         {
-          "date": "1-18-20-5-",
+          "date": "2025-11-18",
           "posts": 2,
           "reactions": 182,
           "comments": 105,
@@ -3322,7 +3322,7 @@
           "reach": 0
         },
         {
-          "date": "1-20-20-5-",
+          "date": "2025-11-20",
           "posts": 1,
           "reactions": 34,
           "comments": 4,
@@ -3333,7 +3333,7 @@
           "reach": 0
         },
         {
-          "date": "1-25-20-5-",
+          "date": "2025-11-25",
           "posts": 1,
           "reactions": 67,
           "comments": 25,
@@ -3344,7 +3344,7 @@
           "reach": 0
         },
         {
-          "date": "1-26-20-5-",
+          "date": "2025-11-26",
           "posts": 1,
           "reactions": 65,
           "comments": 21,
@@ -3355,7 +3355,7 @@
           "reach": 0
         },
         {
-          "date": "1-27-20-5-",
+          "date": "2025-11-27",
           "posts": 2,
           "reactions": 112,
           "comments": 52,
@@ -3366,7 +3366,7 @@
           "reach": 0
         },
         {
-          "date": "1-28-20-5-",
+          "date": "2025-11-28",
           "posts": 2,
           "reactions": 111,
           "comments": 36,
@@ -3377,7 +3377,7 @@
           "reach": 0
         },
         {
-          "date": "1-29-20-5-",
+          "date": "2025-11-29",
           "posts": 2,
           "reactions": 154,
           "comments": 73,
@@ -3388,7 +3388,7 @@
           "reach": 0
         },
         {
-          "date": "2-03-20-5-",
+          "date": "2025-12-03",
           "posts": 1,
           "reactions": 73,
           "comments": 37,
@@ -3399,7 +3399,7 @@
           "reach": 0
         },
         {
-          "date": "2-05-20-5-",
+          "date": "2025-12-05",
           "posts": 1,
           "reactions": 26,
           "comments": 4,
@@ -3410,7 +3410,7 @@
           "reach": 0
         },
         {
-          "date": "2-06-20-5-",
+          "date": "2025-12-06",
           "posts": 1,
           "reactions": 107,
           "comments": 32,
@@ -3421,7 +3421,7 @@
           "reach": 0
         },
         {
-          "date": "2-08-20-5-",
+          "date": "2025-12-08",
           "posts": 3,
           "reactions": 120,
           "comments": 27,
@@ -3432,7 +3432,7 @@
           "reach": 0
         },
         {
-          "date": "2-09-20-5-",
+          "date": "2025-12-09",
           "posts": 1,
           "reactions": 77,
           "comments": 33,
@@ -3443,7 +3443,7 @@
           "reach": 0
         },
         {
-          "date": "2-10-20-5-",
+          "date": "2025-12-10",
           "posts": 2,
           "reactions": 88,
           "comments": 25,
@@ -3454,7 +3454,7 @@
           "reach": 0
         },
         {
-          "date": "2-11-20-5-",
+          "date": "2025-12-11",
           "posts": 2,
           "reactions": 183,
           "comments": 51,
@@ -3465,7 +3465,7 @@
           "reach": 0
         },
         {
-          "date": "2-13-20-5-",
+          "date": "2025-12-13",
           "posts": 1,
           "reactions": 63,
           "comments": 6,
@@ -3476,7 +3476,7 @@
           "reach": 0
         },
         {
-          "date": "2-14-20-5-",
+          "date": "2025-12-14",
           "posts": 1,
           "reactions": 32,
           "comments": 11,
@@ -3487,7 +3487,7 @@
           "reach": 0
         },
         {
-          "date": "2-15-20-5-",
+          "date": "2025-12-15",
           "posts": 1,
           "reactions": 60,
           "comments": 19,
@@ -3498,7 +3498,7 @@
           "reach": 0
         },
         {
-          "date": "2-16-20-5-",
+          "date": "2025-12-16",
           "posts": 1,
           "reactions": 85,
           "comments": 30,
@@ -3509,7 +3509,7 @@
           "reach": 0
         },
         {
-          "date": "2-17-20-5-",
+          "date": "2025-12-17",
           "posts": 1,
           "reactions": 68,
           "comments": 20,
@@ -3520,7 +3520,7 @@
           "reach": 0
         },
         {
-          "date": "2-19-20-5-",
+          "date": "2025-12-19",
           "posts": 3,
           "reactions": 211,
           "comments": 62,
@@ -3531,7 +3531,7 @@
           "reach": 0
         },
         {
-          "date": "2-20-20-5-",
+          "date": "2025-12-20",
           "posts": 2,
           "reactions": 105,
           "comments": 39,
@@ -3542,7 +3542,7 @@
           "reach": 0
         },
         {
-          "date": "2-21-20-5-",
+          "date": "2025-12-21",
           "posts": 1,
           "reactions": 49,
           "comments": 14,
@@ -3553,7 +3553,7 @@
           "reach": 0
         },
         {
-          "date": "2-22-20-5-",
+          "date": "2025-12-22",
           "posts": 3,
           "reactions": 108,
           "comments": 34,
@@ -3564,7 +3564,7 @@
           "reach": 0
         },
         {
-          "date": "2-23-20-5-",
+          "date": "2025-12-23",
           "posts": 3,
           "reactions": 129,
           "comments": 32,
@@ -3575,7 +3575,7 @@
           "reach": 0
         },
         {
-          "date": "2-24-20-5-",
+          "date": "2025-12-24",
           "posts": 3,
           "reactions": 95,
           "comments": 33,
@@ -3586,7 +3586,7 @@
           "reach": 0
         },
         {
-          "date": "2-25-20-5-",
+          "date": "2025-12-25",
           "posts": 1,
           "reactions": 44,
           "comments": 15,
@@ -3597,7 +3597,7 @@
           "reach": 0
         },
         {
-          "date": "2-26-20-5-",
+          "date": "2025-12-26",
           "posts": 1,
           "reactions": 35,
           "comments": 10,
@@ -3608,7 +3608,7 @@
           "reach": 0
         },
         {
-          "date": "2-27-20-5-",
+          "date": "2025-12-27",
           "posts": 1,
           "reactions": 52,
           "comments": 15,
@@ -3621,7 +3621,18 @@
       ],
       "807965705726273": [
         {
-          "date": "0-01-20-5-",
+          "date": "2025-09-30",
+          "posts": 7,
+          "reactions": 119,
+          "comments": 47,
+          "shares": 25,
+          "engagement": 191,
+          "pes": 288.0,
+          "views": 0,
+          "reach": 0
+        },
+        {
+          "date": "2025-10-01",
           "posts": 1,
           "reactions": 17,
           "comments": 4,
@@ -3632,7 +3643,7 @@
           "reach": 0
         },
         {
-          "date": "0-02-20-5-",
+          "date": "2025-10-02",
           "posts": 1,
           "reactions": 43,
           "comments": 27,
@@ -3643,7 +3654,7 @@
           "reach": 0
         },
         {
-          "date": "0-03-20-5-",
+          "date": "2025-10-03",
           "posts": 2,
           "reactions": 62,
           "comments": 20,
@@ -3654,7 +3665,7 @@
           "reach": 0
         },
         {
-          "date": "0-04-20-5-",
+          "date": "2025-10-04",
           "posts": 2,
           "reactions": 55,
           "comments": 20,
@@ -3665,7 +3676,7 @@
           "reach": 0
         },
         {
-          "date": "0-05-20-5-",
+          "date": "2025-10-05",
           "posts": 4,
           "reactions": 118,
           "comments": 67,
@@ -3676,7 +3687,7 @@
           "reach": 0
         },
         {
-          "date": "0-06-20-5-",
+          "date": "2025-10-06",
           "posts": 2,
           "reactions": 70,
           "comments": 33,
@@ -3687,7 +3698,7 @@
           "reach": 0
         },
         {
-          "date": "0-07-20-5-",
+          "date": "2025-10-07",
           "posts": 3,
           "reactions": 88,
           "comments": 41,
@@ -3698,7 +3709,7 @@
           "reach": 0
         },
         {
-          "date": "0-08-20-5-",
+          "date": "2025-10-08",
           "posts": 3,
           "reactions": 112,
           "comments": 52,
@@ -3709,7 +3720,7 @@
           "reach": 0
         },
         {
-          "date": "0-09-20-5-",
+          "date": "2025-10-09",
           "posts": 2,
           "reactions": 167,
           "comments": 49,
@@ -3720,7 +3731,7 @@
           "reach": 0
         },
         {
-          "date": "0-10-20-5-",
+          "date": "2025-10-10",
           "posts": 3,
           "reactions": 114,
           "comments": 63,
@@ -3731,7 +3742,7 @@
           "reach": 0
         },
         {
-          "date": "0-11-20-5-",
+          "date": "2025-10-11",
           "posts": 2,
           "reactions": 79,
           "comments": 37,
@@ -3742,7 +3753,7 @@
           "reach": 0
         },
         {
-          "date": "0-12-20-5-",
+          "date": "2025-10-12",
           "posts": 3,
           "reactions": 109,
           "comments": 43,
@@ -3753,7 +3764,7 @@
           "reach": 0
         },
         {
-          "date": "0-13-20-5-",
+          "date": "2025-10-13",
           "posts": 3,
           "reactions": 95,
           "comments": 55,
@@ -3764,7 +3775,7 @@
           "reach": 0
         },
         {
-          "date": "0-14-20-5-",
+          "date": "2025-10-14",
           "posts": 2,
           "reactions": 107,
           "comments": 53,
@@ -3775,7 +3786,7 @@
           "reach": 0
         },
         {
-          "date": "0-15-20-5-",
+          "date": "2025-10-15",
           "posts": 3,
           "reactions": 125,
           "comments": 48,
@@ -3786,7 +3797,7 @@
           "reach": 0
         },
         {
-          "date": "0-16-20-5-",
+          "date": "2025-10-16",
           "posts": 4,
           "reactions": 145,
           "comments": 54,
@@ -3797,7 +3808,7 @@
           "reach": 0
         },
         {
-          "date": "0-17-20-5-",
+          "date": "2025-10-17",
           "posts": 6,
           "reactions": 72,
           "comments": 32,
@@ -3808,7 +3819,7 @@
           "reach": 0
         },
         {
-          "date": "0-18-20-5-",
+          "date": "2025-10-18",
           "posts": 4,
           "reactions": 145,
           "comments": 54,
@@ -3819,7 +3830,7 @@
           "reach": 0
         },
         {
-          "date": "0-19-20-5-",
+          "date": "2025-10-19",
           "posts": 3,
           "reactions": 130,
           "comments": 50,
@@ -3830,7 +3841,7 @@
           "reach": 0
         },
         {
-          "date": "0-20-20-5-",
+          "date": "2025-10-20",
           "posts": 3,
           "reactions": 125,
           "comments": 48,
@@ -3841,7 +3852,7 @@
           "reach": 0
         },
         {
-          "date": "0-21-20-5-",
+          "date": "2025-10-21",
           "posts": 3,
           "reactions": 136,
           "comments": 66,
@@ -3852,7 +3863,7 @@
           "reach": 0
         },
         {
-          "date": "0-22-20-5-",
+          "date": "2025-10-22",
           "posts": 1,
           "reactions": 65,
           "comments": 29,
@@ -3863,7 +3874,7 @@
           "reach": 0
         },
         {
-          "date": "0-23-20-5-",
+          "date": "2025-10-23",
           "posts": 3,
           "reactions": 124,
           "comments": 51,
@@ -3874,7 +3885,7 @@
           "reach": 0
         },
         {
-          "date": "0-24-20-5-",
+          "date": "2025-10-24",
           "posts": 3,
           "reactions": 115,
           "comments": 56,
@@ -3885,7 +3896,7 @@
           "reach": 0
         },
         {
-          "date": "0-25-20-5-",
+          "date": "2025-10-25",
           "posts": 1,
           "reactions": 38,
           "comments": 12,
@@ -3896,7 +3907,7 @@
           "reach": 0
         },
         {
-          "date": "0-26-20-5-",
+          "date": "2025-10-26",
           "posts": 3,
           "reactions": 107,
           "comments": 42,
@@ -3907,7 +3918,7 @@
           "reach": 0
         },
         {
-          "date": "0-27-20-5-",
+          "date": "2025-10-27",
           "posts": 2,
           "reactions": 60,
           "comments": 27,
@@ -3918,7 +3929,7 @@
           "reach": 0
         },
         {
-          "date": "0-28-20-5-",
+          "date": "2025-10-28",
           "posts": 1,
           "reactions": 44,
           "comments": 34,
@@ -3929,7 +3940,7 @@
           "reach": 0
         },
         {
-          "date": "0-29-20-5-",
+          "date": "2025-10-29",
           "posts": 3,
           "reactions": 85,
           "comments": 38,
@@ -3940,7 +3951,7 @@
           "reach": 0
         },
         {
-          "date": "0-30-20-5-",
+          "date": "2025-10-30",
           "posts": 3,
           "reactions": 77,
           "comments": 36,
@@ -3951,7 +3962,7 @@
           "reach": 0
         },
         {
-          "date": "0-31-20-5-",
+          "date": "2025-10-31",
           "posts": 3,
           "reactions": 77,
           "comments": 27,
@@ -3962,7 +3973,7 @@
           "reach": 0
         },
         {
-          "date": "1-01-20-5-",
+          "date": "2025-11-01",
           "posts": 4,
           "reactions": 120,
           "comments": 37,
@@ -3973,7 +3984,7 @@
           "reach": 0
         },
         {
-          "date": "1-02-20-5-",
+          "date": "2025-11-02",
           "posts": 2,
           "reactions": 97,
           "comments": 50,
@@ -3984,7 +3995,7 @@
           "reach": 0
         },
         {
-          "date": "1-03-20-5-",
+          "date": "2025-11-03",
           "posts": 2,
           "reactions": 87,
           "comments": 49,
@@ -3995,7 +4006,7 @@
           "reach": 0
         },
         {
-          "date": "1-04-20-5-",
+          "date": "2025-11-04",
           "posts": 1,
           "reactions": 52,
           "comments": 31,
@@ -4006,7 +4017,7 @@
           "reach": 0
         },
         {
-          "date": "1-05-20-5-",
+          "date": "2025-11-05",
           "posts": 2,
           "reactions": 51,
           "comments": 28,
@@ -4017,7 +4028,7 @@
           "reach": 0
         },
         {
-          "date": "1-06-20-5-",
+          "date": "2025-11-06",
           "posts": 3,
           "reactions": 101,
           "comments": 44,
@@ -4028,7 +4039,7 @@
           "reach": 0
         },
         {
-          "date": "1-07-20-5-",
+          "date": "2025-11-07",
           "posts": 4,
           "reactions": 134,
           "comments": 52,
@@ -4039,7 +4050,7 @@
           "reach": 0
         },
         {
-          "date": "1-08-20-5-",
+          "date": "2025-11-08",
           "posts": 3,
           "reactions": 70,
           "comments": 25,
@@ -4050,7 +4061,7 @@
           "reach": 0
         },
         {
-          "date": "1-09-20-5-",
+          "date": "2025-11-09",
           "posts": 2,
           "reactions": 62,
           "comments": 20,
@@ -4061,7 +4072,7 @@
           "reach": 0
         },
         {
-          "date": "1-10-20-5-",
+          "date": "2025-11-10",
           "posts": 2,
           "reactions": 91,
           "comments": 31,
@@ -4072,7 +4083,7 @@
           "reach": 0
         },
         {
-          "date": "1-11-20-5-",
+          "date": "2025-11-11",
           "posts": 2,
           "reactions": 116,
           "comments": 57,
@@ -4083,7 +4094,7 @@
           "reach": 0
         },
         {
-          "date": "1-12-20-5-",
+          "date": "2025-11-12",
           "posts": 3,
           "reactions": 115,
           "comments": 54,
@@ -4094,7 +4105,7 @@
           "reach": 0
         },
         {
-          "date": "1-13-20-5-",
+          "date": "2025-11-13",
           "posts": 1,
           "reactions": 57,
           "comments": 28,
@@ -4105,7 +4116,7 @@
           "reach": 0
         },
         {
-          "date": "1-15-20-5-",
+          "date": "2025-11-15",
           "posts": 3,
           "reactions": 116,
           "comments": 56,
@@ -4116,7 +4127,7 @@
           "reach": 0
         },
         {
-          "date": "1-16-20-5-",
+          "date": "2025-11-16",
           "posts": 5,
           "reactions": 102,
           "comments": 52,
@@ -4127,7 +4138,7 @@
           "reach": 0
         },
         {
-          "date": "1-17-20-5-",
+          "date": "2025-11-17",
           "posts": 1,
           "reactions": 24,
           "comments": 10,
@@ -4138,7 +4149,7 @@
           "reach": 0
         },
         {
-          "date": "1-18-20-5-",
+          "date": "2025-11-18",
           "posts": 3,
           "reactions": 126,
           "comments": 36,
@@ -4149,7 +4160,7 @@
           "reach": 0
         },
         {
-          "date": "1-19-20-5-",
+          "date": "2025-11-19",
           "posts": 2,
           "reactions": 68,
           "comments": 28,
@@ -4160,7 +4171,7 @@
           "reach": 0
         },
         {
-          "date": "1-20-20-5-",
+          "date": "2025-11-20",
           "posts": 2,
           "reactions": 57,
           "comments": 16,
@@ -4171,7 +4182,7 @@
           "reach": 0
         },
         {
-          "date": "1-21-20-5-",
+          "date": "2025-11-21",
           "posts": 3,
           "reactions": 104,
           "comments": 49,
@@ -4182,7 +4193,7 @@
           "reach": 0
         },
         {
-          "date": "1-22-20-5-",
+          "date": "2025-11-22",
           "posts": 2,
           "reactions": 32,
           "comments": 7,
@@ -4193,7 +4204,7 @@
           "reach": 0
         },
         {
-          "date": "1-23-20-5-",
+          "date": "2025-11-23",
           "posts": 3,
           "reactions": 85,
           "comments": 38,
@@ -4204,7 +4215,7 @@
           "reach": 0
         },
         {
-          "date": "1-24-20-5-",
+          "date": "2025-11-24",
           "posts": 4,
           "reactions": 138,
           "comments": 52,
@@ -4215,7 +4226,7 @@
           "reach": 0
         },
         {
-          "date": "1-25-20-5-",
+          "date": "2025-11-25",
           "posts": 3,
           "reactions": 184,
           "comments": 39,
@@ -4226,7 +4237,7 @@
           "reach": 0
         },
         {
-          "date": "1-26-20-5-",
+          "date": "2025-11-26",
           "posts": 2,
           "reactions": 75,
           "comments": 23,
@@ -4237,7 +4248,7 @@
           "reach": 0
         },
         {
-          "date": "1-27-20-5-",
+          "date": "2025-11-27",
           "posts": 1,
           "reactions": 28,
           "comments": 10,
@@ -4248,7 +4259,7 @@
           "reach": 0
         },
         {
-          "date": "1-28-20-5-",
+          "date": "2025-11-28",
           "posts": 3,
           "reactions": 179,
           "comments": 45,
@@ -4259,7 +4270,7 @@
           "reach": 0
         },
         {
-          "date": "1-29-20-5-",
+          "date": "2025-11-29",
           "posts": 4,
           "reactions": 145,
           "comments": 44,
@@ -4270,7 +4281,7 @@
           "reach": 0
         },
         {
-          "date": "1-30-20-5-",
+          "date": "2025-11-30",
           "posts": 4,
           "reactions": 189,
           "comments": 44,
@@ -4281,7 +4292,7 @@
           "reach": 0
         },
         {
-          "date": "2-01-20-5-",
+          "date": "2025-12-01",
           "posts": 3,
           "reactions": 233,
           "comments": 42,
@@ -4292,7 +4303,7 @@
           "reach": 0
         },
         {
-          "date": "2-02-20-5-",
+          "date": "2025-12-02",
           "posts": 4,
           "reactions": 163,
           "comments": 44,
@@ -4303,7 +4314,7 @@
           "reach": 0
         },
         {
-          "date": "2-03-20-5-",
+          "date": "2025-12-03",
           "posts": 2,
           "reactions": 102,
           "comments": 27,
@@ -4314,7 +4325,7 @@
           "reach": 0
         },
         {
-          "date": "2-04-20-5-",
+          "date": "2025-12-04",
           "posts": 3,
           "reactions": 127,
           "comments": 36,
@@ -4325,7 +4336,7 @@
           "reach": 0
         },
         {
-          "date": "2-05-20-5-",
+          "date": "2025-12-05",
           "posts": 3,
           "reactions": 164,
           "comments": 37,
@@ -4336,7 +4347,7 @@
           "reach": 0
         },
         {
-          "date": "2-06-20-5-",
+          "date": "2025-12-06",
           "posts": 3,
           "reactions": 157,
           "comments": 43,
@@ -4347,7 +4358,7 @@
           "reach": 0
         },
         {
-          "date": "2-07-20-5-",
+          "date": "2025-12-07",
           "posts": 4,
           "reactions": 12134,
           "comments": 74,
@@ -4358,7 +4369,7 @@
           "reach": 0
         },
         {
-          "date": "2-08-20-5-",
+          "date": "2025-12-08",
           "posts": 6,
           "reactions": 506,
           "comments": 87,
@@ -4369,7 +4380,7 @@
           "reach": 0
         },
         {
-          "date": "2-09-20-5-",
+          "date": "2025-12-09",
           "posts": 3,
           "reactions": 344,
           "comments": 58,
@@ -4380,7 +4391,7 @@
           "reach": 0
         },
         {
-          "date": "2-10-20-5-",
+          "date": "2025-12-10",
           "posts": 3,
           "reactions": 9434,
           "comments": 53,
@@ -4391,7 +4402,7 @@
           "reach": 0
         },
         {
-          "date": "2-11-20-5-",
+          "date": "2025-12-11",
           "posts": 5,
           "reactions": 325,
           "comments": 35,
@@ -4402,7 +4413,7 @@
           "reach": 0
         },
         {
-          "date": "2-12-20-5-",
+          "date": "2025-12-12",
           "posts": 5,
           "reactions": 382,
           "comments": 161,
@@ -4413,7 +4424,7 @@
           "reach": 0
         },
         {
-          "date": "2-13-20-5-",
+          "date": "2025-12-13",
           "posts": 6,
           "reactions": 367,
           "comments": 56,
@@ -4424,7 +4435,7 @@
           "reach": 0
         },
         {
-          "date": "2-14-20-5-",
+          "date": "2025-12-14",
           "posts": 2,
           "reactions": 235,
           "comments": 21,
@@ -4435,7 +4446,7 @@
           "reach": 0
         },
         {
-          "date": "2-15-20-5-",
+          "date": "2025-12-15",
           "posts": 2,
           "reactions": 225,
           "comments": 22,
@@ -4446,7 +4457,7 @@
           "reach": 0
         },
         {
-          "date": "2-16-20-5-",
+          "date": "2025-12-16",
           "posts": 3,
           "reactions": 163,
           "comments": 55,
@@ -4457,7 +4468,7 @@
           "reach": 0
         },
         {
-          "date": "2-18-20-5-",
+          "date": "2025-12-18",
           "posts": 3,
           "reactions": 129,
           "comments": 27,
@@ -4468,7 +4479,7 @@
           "reach": 0
         },
         {
-          "date": "2-19-20-5-",
+          "date": "2025-12-19",
           "posts": 4,
           "reactions": 174,
           "comments": 38,
@@ -4479,7 +4490,7 @@
           "reach": 0
         },
         {
-          "date": "2-20-20-5-",
+          "date": "2025-12-20",
           "posts": 4,
           "reactions": 164,
           "comments": 45,
@@ -4490,7 +4501,7 @@
           "reach": 0
         },
         {
-          "date": "2-21-20-5-",
+          "date": "2025-12-21",
           "posts": 5,
           "reactions": 189,
           "comments": 44,
@@ -4501,7 +4512,7 @@
           "reach": 0
         },
         {
-          "date": "2-22-20-5-",
+          "date": "2025-12-22",
           "posts": 5,
           "reactions": 966,
           "comments": 47,
@@ -4512,7 +4523,7 @@
           "reach": 0
         },
         {
-          "date": "2-23-20-5-",
+          "date": "2025-12-23",
           "posts": 4,
           "reactions": 173,
           "comments": 56,
@@ -4523,7 +4534,7 @@
           "reach": 0
         },
         {
-          "date": "2-24-20-5-",
+          "date": "2025-12-24",
           "posts": 5,
           "reactions": 134,
           "comments": 19,
@@ -4534,7 +4545,7 @@
           "reach": 0
         },
         {
-          "date": "2-25-20-5-",
+          "date": "2025-12-25",
           "posts": 3,
           "reactions": 119,
           "comments": 9,
@@ -4545,7 +4556,7 @@
           "reach": 0
         },
         {
-          "date": "2-26-20-5-",
+          "date": "2025-12-26",
           "posts": 5,
           "reactions": 234,
           "comments": 36,
@@ -4556,7 +4567,7 @@
           "reach": 0
         },
         {
-          "date": "2-27-20-5-",
+          "date": "2025-12-27",
           "posts": 4,
           "reactions": 130,
           "comments": 45,
@@ -4567,7 +4578,7 @@
           "reach": 0
         },
         {
-          "date": "2-28-20-5-",
+          "date": "2025-12-28",
           "posts": 4,
           "reactions": 120,
           "comments": 31,
@@ -4578,24 +4589,13 @@
           "reach": 0
         },
         {
-          "date": "2-29-20-5-",
+          "date": "2025-12-29",
           "posts": 1,
           "reactions": 6,
           "comments": 2,
           "shares": 0,
           "engagement": 8,
           "pes": 10.0,
-          "views": 0,
-          "reach": 0
-        },
-        {
-          "date": "9-30-20-5-",
-          "posts": 7,
-          "reactions": 119,
-          "comments": 47,
-          "shares": 25,
-          "engagement": 191,
-          "pes": 288.0,
           "views": 0,
           "reach": 0
         }
@@ -15352,7 +15352,43 @@
   "timeSeries": {
     "monthly": [
       {
-        "month": "9-30-20",
+        "month": "2025-12",
+        "posts": 235,
+        "reactions": 39091,
+        "comments": 3640,
+        "shares": 2072,
+        "views": 0,
+        "reach": 0,
+        "engagement": 44803,
+        "avg_engagement": 190.7,
+        "mom_change": 172.8
+      },
+      {
+        "month": "2025-11",
+        "posts": 165,
+        "reactions": 11214,
+        "comments": 3376,
+        "shares": 1836,
+        "views": 0,
+        "reach": 0,
+        "engagement": 16426,
+        "avg_engagement": 99.6,
+        "mom_change": 1.7
+      },
+      {
+        "month": "2025-10",
+        "posts": 208,
+        "reactions": 8965,
+        "comments": 4253,
+        "shares": 2939,
+        "views": 0,
+        "reach": 0,
+        "engagement": 16157,
+        "avg_engagement": 77.7,
+        "mom_change": 4694.4
+      },
+      {
+        "month": "2025-09",
         "posts": 10,
         "reactions": 213,
         "comments": 69,
@@ -15361,10 +15397,14 @@
         "reach": 0,
         "engagement": 337,
         "avg_engagement": 33.7,
-        "mom_change": 4112.5
-      },
+        "mom_change": null
+      }
+    ],
+    "weekly": [
       {
-        "month": "2-29-20",
+        "week": "2025-52",
+        "week_start": "2025-12-29",
+        "week_end": "2025-12-29",
         "posts": 1,
         "reactions": 6,
         "comments": 2,
@@ -15373,83 +15413,121 @@
         "reach": 0,
         "engagement": 8,
         "avg_engagement": 8.0,
-        "mom_change": -99.1
+        "wow_change": -99.9
       },
       {
-        "month": "2-28-20",
-        "posts": 12,
-        "reactions": 718,
-        "comments": 96,
-        "shares": 64,
+        "week": "2025-51",
+        "week_start": "2025-12-22",
+        "week_end": "2025-12-28",
+        "posts": 85,
+        "reactions": 4568,
+        "comments": 959,
+        "shares": 452,
         "views": 0,
         "reach": 0,
-        "engagement": 878,
-        "avg_engagement": 73.2,
-        "mom_change": 61.4
+        "engagement": 5979,
+        "avg_engagement": 70.3,
+        "wow_change": 20.4
       },
       {
-        "month": "2-27-20",
-        "posts": 8,
-        "reactions": 353,
-        "comments": 123,
-        "shares": 68,
+        "week": "2025-50",
+        "week_start": "2025-12-15",
+        "week_end": "2025-12-21",
+        "posts": 48,
+        "reactions": 3661,
+        "comments": 842,
+        "shares": 464,
         "views": 0,
         "reach": 0,
-        "engagement": 544,
-        "avg_engagement": 68.0,
-        "mom_change": -23.3
+        "engagement": 4967,
+        "avg_engagement": 103.5,
+        "wow_change": -70.1
       },
       {
-        "month": "2-26-20",
-        "posts": 12,
-        "reactions": 508,
-        "comments": 134,
-        "shares": 67,
+        "week": "2025-49",
+        "week_start": "2025-12-08",
+        "week_end": "2025-12-14",
+        "posts": 55,
+        "reactions": 15021,
+        "comments": 937,
+        "shares": 642,
         "views": 0,
         "reach": 0,
-        "engagement": 709,
-        "avg_engagement": 59.1,
-        "mom_change": 99.2
-      },
-      {
-        "month": "2-25-20",
-        "posts": 8,
-        "reactions": 269,
-        "comments": 55,
-        "shares": 32,
-        "views": 0,
-        "reach": 0,
-        "engagement": 356,
-        "avg_engagement": 44.5,
-        "mom_change": null
-      }
-    ],
-    "weekly": [
-      {
-        "week": null,
-        "week_start": "9-30-20-5-",
-        "week_end": "9-30-20-5-",
-        "posts": 10,
-        "reactions": 213,
-        "comments": 69,
-        "shares": 55,
-        "views": 0,
-        "reach": 0,
-        "engagement": 337,
-        "avg_engagement": 33.7,
+        "engagement": 16600,
+        "avg_engagement": 301.8,
         "wow_change": null
       }
     ],
     "dayOfWeek": [
       {
-        "day": null,
-        "day_num": null,
-        "posts": 618,
-        "total_engagement": 77723,
-        "avg_engagement": 125.8,
+        "day": "Sun",
+        "day_num": 0,
+        "posts": 104,
+        "total_engagement": 20592,
+        "avg_engagement": 198.0,
+        "views": 0,
+        "reach": 0,
+        "is_best": false
+      },
+      {
+        "day": "Mon",
+        "day_num": 1,
+        "posts": 75,
+        "total_engagement": 6473,
+        "avg_engagement": 86.3,
+        "views": 0,
+        "reach": 0,
+        "is_best": false
+      },
+      {
+        "day": "Tue",
+        "day_num": 2,
+        "posts": 103,
+        "total_engagement": 10451,
+        "avg_engagement": 101.5,
+        "views": 0,
+        "reach": 0,
+        "is_best": false
+      },
+      {
+        "day": "Wed",
+        "day_num": 3,
+        "posts": 73,
+        "total_engagement": 15213,
+        "avg_engagement": 208.4,
         "views": 0,
         "reach": 0,
         "is_best": true
+      },
+      {
+        "day": "Thu",
+        "day_num": 4,
+        "posts": 77,
+        "total_engagement": 7165,
+        "avg_engagement": 93.1,
+        "views": 0,
+        "reach": 0,
+        "is_best": false
+      },
+      {
+        "day": "Fri",
+        "day_num": 5,
+        "posts": 98,
+        "total_engagement": 10447,
+        "avg_engagement": 106.6,
+        "views": 0,
+        "reach": 0,
+        "is_best": false
+      },
+      {
+        "day": "Sat",
+        "day_num": 6,
+        "posts": 88,
+        "total_engagement": 7382,
+        "avg_engagement": 83.9,
+        "views": 0,
+        "reach": 0,
+        "is_best": false
       }
     ],
     "pageRankings": [
@@ -15537,12 +15615,12 @@
       {
         "type": "trend_up",
         "title": "Engagement Growing",
-        "text": "Engagement increased 4112.5% from 2-29-20 to 9-30-20"
+        "text": "Engagement increased 172.8% from 2025-11 to 2025-12"
       },
       {
         "type": "best_day",
-        "title": "None is Best",
-        "text": "None generates 126 avg engagement - \ud83d\udcc8 optimal for posting"
+        "title": "Wed is Best",
+        "text": "Wed generates 208 avg engagement - \ud83d\udcc8 optimal for posting"
       },
       {
         "type": "content_type",

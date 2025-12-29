@@ -275,9 +275,13 @@ def export_daily():
     cursor.execute("SELECT DISTINCT page_id FROM posts WHERE reactions_total > 0")
     page_ids = [row[0] for row in cursor.fetchall()]
 
-    # Convert MM/DD/YYYY to YYYY-MM-DD for proper sorting
-    # publish_time format: "10/01/2025 00:01" -> "2025-10-01"
-    date_expr = "substr(publish_time, 7, 4) || '-' || substr(publish_time, 1, 2) || '-' || substr(publish_time, 4, 2)"
+    # Handle both ISO format (2025-09-30T...) and CSV format (10/01/2025 00:01)
+    # ISO: first 10 chars = "2025-09-30"
+    # CSV: need to rearrange MM/DD/YYYY -> YYYY-MM-DD
+    date_expr = """CASE
+        WHEN publish_time LIKE '____-__-__%' THEN substr(publish_time, 1, 10)
+        ELSE substr(publish_time, 7, 4) || '-' || substr(publish_time, 1, 2) || '-' || substr(publish_time, 4, 2)
+    END"""
 
     # Aggregate daily data
     cursor.execute(f"""
@@ -357,10 +361,15 @@ def export_time_series():
     conn = get_conn()
     cursor = conn.cursor()
 
-    # Convert MM/DD/YYYY to YYYY-MM-DD for proper date handling
-    # publish_time format: "10/01/2025 00:01" -> "2025-10-01"
-    date_expr = "substr(publish_time, 7, 4) || '-' || substr(publish_time, 1, 2) || '-' || substr(publish_time, 4, 2)"
-    month_expr = "substr(publish_time, 7, 4) || '-' || substr(publish_time, 1, 2)"
+    # Handle both ISO format (2025-09-30T...) and CSV format (10/01/2025 00:01)
+    date_expr = """CASE
+        WHEN publish_time LIKE '____-__-__%' THEN substr(publish_time, 1, 10)
+        ELSE substr(publish_time, 7, 4) || '-' || substr(publish_time, 1, 2) || '-' || substr(publish_time, 4, 2)
+    END"""
+    month_expr = """CASE
+        WHEN publish_time LIKE '____-__-__%' THEN substr(publish_time, 1, 7)
+        ELSE substr(publish_time, 7, 4) || '-' || substr(publish_time, 1, 2)
+    END"""
 
     # Monthly data
     cursor.execute(f"""
