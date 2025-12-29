@@ -1,64 +1,97 @@
 @echo off
+title JuanBabes - Update Data
+color 0A
+cd /d C:\Users\us\Desktop\juanbabes_project
+
+:MENU
+echo.
 echo ============================================================
 echo JuanBabes Data Update Tool
 echo ============================================================
 echo.
-echo Workflow: CSV data is PRIORITY (has views/reach)
-echo           FB API fills gaps for missing dates
+echo   [1] CSV Import (Meta exports) + Export + Push
+echo   [2] API Fetch (posts + comments) + Export + Push
+echo   [3] Exit
+echo.
+set /p choice="Enter choice (1-3): "
+
+if "%choice%"=="1" goto CSV_UPDATE
+if "%choice%"=="2" goto API_UPDATE
+if "%choice%"=="3" goto END
+echo Invalid choice. Try again.
+goto MENU
+
+:CSV_UPDATE
+echo.
 echo ============================================================
-echo.
-
-cd /d "%~dp0"
-
-echo [1/5] Importing posts from CSV (priority data)...
-echo.
+echo [1/3] CSV IMPORT - Importing from manual exports...
+echo ============================================================
 dir /b "exports\from content manual Export\*.csv" 2>nul
 echo.
 python import_manual_exports.py
 if errorlevel 1 (
     echo ERROR: CSV import failed
     pause
-    exit /b 1
+    goto MENU
 )
-echo Done.
-echo.
 
-echo [2/5] Fetching missing posts from FB API (fills gaps)...
-python fetch_missing_posts.py
-if errorlevel 1 (
-    echo WARNING: Missing posts fetch failed (tokens may be expired)
-)
-echo Done.
 echo.
-
-echo [3/5] Fetching comment analysis from FB API...
-python fetch_comments.py
-if errorlevel 1 (
-    echo WARNING: Comment fetch failed (tokens may be expired)
-)
-echo Done.
-echo.
-
-echo [4/5] Exporting analytics to JSON...
+echo ============================================================
+echo [2/3] EXPORT - Generating JSON for frontend...
+echo ============================================================
 python export_static_data.py
-if errorlevel 1 (
-    echo ERROR: Export failed
-    pause
-    exit /b 1
-)
-echo Done.
-echo.
 
-echo [5/5] Committing and pushing to GitHub...
+echo.
+echo ============================================================
+echo [3/3] PUSH - Committing and pushing to GitHub...
+echo ============================================================
 set GIT="C:\Users\us\AppData\Local\Programs\Git\bin\git.exe"
-%GIT% add frontend/public/data/analytics.json
-%GIT% commit -m "Update analytics data - %date%"
+%GIT% add -A
+%GIT% commit -m "CSV update - %date%"
 %GIT% push origin main
-echo Done.
-echo.
 
-echo ============================================================
-echo SUCCESS! Data has been updated and deployed.
-echo ============================================================
 echo.
+echo ============================================================
+echo DONE! CSV update complete.
+echo ============================================================
 pause
+goto MENU
+
+:API_UPDATE
+echo.
+echo ============================================================
+echo [1/4] API FETCH - Fetching missing posts...
+echo ============================================================
+python fetch_missing_posts.py
+
+echo.
+echo ============================================================
+echo [2/4] API FETCH - Fetching comments (10 workers)...
+echo ============================================================
+python fetch_comments.py --workers 10
+
+echo.
+echo ============================================================
+echo [3/4] EXPORT - Generating JSON for frontend...
+echo ============================================================
+python export_static_data.py
+
+echo.
+echo ============================================================
+echo [4/4] PUSH - Committing and pushing to GitHub...
+echo ============================================================
+set GIT="C:\Users\us\AppData\Local\Programs\Git\bin\git.exe"
+%GIT% add -A
+%GIT% commit -m "API update - %date%"
+%GIT% push origin main
+
+echo.
+echo ============================================================
+echo DONE! API update complete.
+echo ============================================================
+pause
+goto MENU
+
+:END
+echo Goodbye!
+exit /b
