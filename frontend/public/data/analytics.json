@@ -1,20 +1,20 @@
 {
   "stats": {
     "all": {
-      "total_posts": 600,
+      "total_posts": 601,
       "total_pages": 5,
       "all_pages": 5,
-      "total_reactions": 142289,
-      "total_comments": 13643,
-      "total_shares": 7822,
-      "total_engagement": 163754,
-      "total_pes": 193295.0,
+      "total_reactions": 142296,
+      "total_comments": 13644,
+      "total_shares": 7823,
+      "total_engagement": 163763,
+      "total_pes": 193307.0,
       "total_views": 1864110,
       "total_reach": 1305825,
-      "avg_engagement": 272.9,
-      "avg_pes": 322.2,
-      "avg_views": 3106.8,
-      "avg_reach": 2176.4,
+      "avg_engagement": 272.5,
+      "avg_pes": 321.6,
+      "avg_views": 3101.7,
+      "avg_reach": 2172.8,
       "date_range_start": "2025-10-01",
       "date_range_end": "2025-12-30"
     },
@@ -74,22 +74,22 @@
         "date_range_end": "2025-12-30"
       },
       "61580479407070": {
-        "total_posts": 70,
+        "total_posts": 71,
         "total_pages": 1,
         "all_pages": 1,
-        "total_reactions": 5090,
-        "total_comments": 2336,
-        "total_shares": 1662,
-        "total_engagement": 9088,
-        "total_pes": 14748.0,
+        "total_reactions": 5097,
+        "total_comments": 2337,
+        "total_shares": 1663,
+        "total_engagement": 9097,
+        "total_pes": 14760.0,
         "total_views": 48015,
         "total_reach": 23547,
-        "avg_engagement": 129.8,
-        "avg_pes": 210.7,
-        "avg_views": 685.9,
-        "avg_reach": 336.4,
+        "avg_engagement": 128.1,
+        "avg_pes": 207.9,
+        "avg_views": 676.3,
+        "avg_reach": 331.6,
         "date_range_start": "2025-10-02",
-        "date_range_end": "2025-12-29"
+        "date_range_end": "2025-12-30"
       },
       "61580716220863": {
         "total_posts": 111,
@@ -162,13 +162,13 @@
       "page_name": "Juana Babe Zell",
       "fan_count": null,
       "followers_count": null,
-      "post_count": 70,
-      "total_reactions": 5090,
-      "total_comments": 2336,
-      "total_shares": 1662,
-      "total_engagement": 9088,
-      "avg_engagement": 129.8,
-      "avg_pes": 210.7,
+      "post_count": 71,
+      "total_reactions": 5097,
+      "total_comments": 2337,
+      "total_shares": 1663,
+      "total_engagement": 9097,
+      "avg_engagement": 128.1,
+      "avg_pes": 207.9,
       "total_views": 48015,
       "total_reach": 23547
     },
@@ -192,13 +192,13 @@
     "all": [
       {
         "post_type": "Videos",
-        "count": 300,
-        "reactions": 49008,
-        "comments": 7895,
-        "shares": 4408,
-        "total_engagement": 61311,
-        "avg_engagement": 204.4,
-        "avg_pes": 260.4
+        "count": 301,
+        "reactions": 49015,
+        "comments": 7896,
+        "shares": 4409,
+        "total_engagement": 61320,
+        "avg_engagement": 203.7,
+        "avg_pes": 259.5
       },
       {
         "post_type": "Photos",
@@ -341,13 +341,13 @@
       "61580479407070": [
         {
           "post_type": "Videos",
-          "count": 37,
-          "reactions": 3056,
-          "comments": 1546,
-          "shares": 1169,
-          "total_engagement": 5771,
-          "avg_engagement": 156.0,
-          "avg_pes": 260.9
+          "count": 38,
+          "reactions": 3063,
+          "comments": 1547,
+          "shares": 1170,
+          "total_engagement": 5780,
+          "avg_engagement": 152.1,
+          "avg_pes": 254.4
         },
         {
           "post_type": "Photos",
@@ -1408,12 +1408,12 @@
       },
       {
         "date": "2025-12-30",
-        "posts": 3,
-        "reactions": 9,
-        "comments": 3,
-        "shares": 1,
-        "engagement": 13,
-        "pes": 18.0,
+        "posts": 4,
+        "reactions": 16,
+        "comments": 4,
+        "shares": 2,
+        "engagement": 22,
+        "pes": 30.0,
         "views": 0,
         "reach": 0
       }
@@ -4032,6 +4032,17 @@
           "pes": 3.0,
           "views": 0,
           "reach": 0
+        },
+        {
+          "date": "2025-12-30",
+          "posts": 1,
+          "reactions": 7,
+          "comments": 1,
+          "shares": 1,
+          "engagement": 9,
+          "pes": 12.0,
+          "views": 0,
+          "reach": 0
         }
       ],
       "61580716220863": [
@@ -5566,6 +5577,22 @@
     }
   },
   "posts": [
+    {
+      "post_id": "754416584427163_122117697813015980",
+      "page_id": "61580479407070",
+      "page_name": "Juana Babe Zell",
+      "title": "Christmas is already done pero all I want pa din is kayo babes! \ud83e\udd70\n\nTap \u201c\u2764\ufe0f\u201d follow and share mo na din kung same tayoo~\n\n#juanababezell #juanababes #Juan365livestream #AllInJuanSaSaya #Juan365PH #Juan",
+      "post_type": "Videos",
+      "publish_time": "2025-12-30T02:38:56+0000",
+      "permalink": "https://www.facebook.com/reel/1552399482466692/",
+      "reactions": 7,
+      "comments": 1,
+      "shares": 1,
+      "views": 0,
+      "reach": 0,
+      "engagement": 9,
+      "pes": 12.0
+    },
     {
       "post_id": "731608473377029_122117542431013186",
       "page_id": "61580395595183",
@@ -15172,14 +15199,14 @@
     "monthly": [
       {
         "month": "2025-12",
-        "posts": 259,
-        "reactions": 110669,
-        "comments": 5411,
-        "shares": 2776,
+        "posts": 260,
+        "reactions": 110676,
+        "comments": 5412,
+        "shares": 2777,
         "views": 1384767,
         "reach": 1022376,
-        "engagement": 118856,
-        "avg_engagement": 458.9,
+        "engagement": 118865,
+        "avg_engagement": 457.2,
         "mom_change": 473.1
       },
       {
@@ -15212,14 +15239,14 @@
         "week": "2025-52",
         "week_start": "2025-12-29",
         "week_end": "2025-12-30",
-        "posts": 15,
-        "reactions": 110,
-        "comments": 30,
-        "shares": 18,
+        "posts": 16,
+        "reactions": 117,
+        "comments": 31,
+        "shares": 19,
         "views": 0,
         "reach": 0,
-        "engagement": 158,
-        "avg_engagement": 10.5,
+        "engagement": 167,
+        "avg_engagement": 10.4,
         "wow_change": -99.7
       },
       {
@@ -15289,9 +15316,9 @@
       {
         "day": "Tue",
         "day_num": 2,
-        "posts": 92,
-        "total_engagement": 39412,
-        "avg_engagement": 428.4,
+        "posts": 93,
+        "total_engagement": 39421,
+        "avg_engagement": 423.9,
         "views": 540835,
         "reach": 368955,
         "is_best": false
@@ -15372,11 +15399,11 @@
         "rank": 4,
         "page_id": "61580479407070",
         "page_name": "Juana Babe Zell",
-        "posts": 70,
+        "posts": 71,
         "views": 48015,
         "reach": 23547,
-        "engagement": 9088,
-        "avg_engagement": 129.8
+        "engagement": 9097,
+        "avg_engagement": 128.1
       },
       {
         "rank": 5,
@@ -15401,12 +15428,12 @@
       },
       {
         "type": "Videos",
-        "count": 300,
+        "count": 301,
         "views": 521361,
         "reach": 367731,
-        "engagement": 61311,
-        "avg_engagement": 204.4,
-        "avg_views": 1737.9
+        "engagement": 61320,
+        "avg_engagement": 203.7,
+        "avg_views": 1732.1
       },
       {
         "type": "Photos",
@@ -15452,11 +15479,11 @@
   },
   "commentAnalysis": {
     "summary": {
-      "total_posts_with_comments": 579,
-      "posts_analyzed": 579,
+      "total_posts_with_comments": 580,
+      "posts_analyzed": 580,
       "posts_with_self_comment": 0,
       "total_self_comments": 0,
-      "total_organic_comments": 13643,
+      "total_organic_comments": 13644,
       "self_comment_rate": 0.0,
       "posts_with_self_pct": 0.0
     },
@@ -15491,9 +15518,9 @@
       {
         "page_name": "Juana Babe Zell",
         "page_id": "61580479407070",
-        "posts_with_comments": 69,
+        "posts_with_comments": 70,
         "self_comments": 0,
-        "organic_comments": 2336,
+        "organic_comments": 2337,
         "posts_with_self": 0,
         "self_rate": 0.0
       },
@@ -15509,10 +15536,10 @@
     ],
     "effectivity": {
       "avg_engagement_with_self": 0,
-      "avg_engagement_without_self": 282.5,
+      "avg_engagement_without_self": 282.0,
       "engagement_boost_pct": -100.0,
       "avg_reactions_with": 0,
-      "avg_reactions_without": 245.5
+      "avg_reactions_without": 245.0
     },
     "topSelfCommented": []
   },
@@ -15564,23 +15591,23 @@
         "shares": 1684,
         "avg_pes": 162.0,
         "rank": 3,
-        "engagement_share": 7.1
+        "engagement_share": 7.0
       },
       {
         "page_id": "61580479407070",
         "page_name": "Juana Babe Zell",
         "fan_count": null,
-        "posts": 70,
-        "engagement": 9088,
-        "avg_engagement": 129.8,
+        "posts": 71,
+        "engagement": 9097,
+        "avg_engagement": 128.1,
         "views": 48015,
         "reach": 23547,
-        "reactions": 5090,
-        "comments": 2336,
-        "shares": 1662,
-        "avg_pes": 210.7,
+        "reactions": 5097,
+        "comments": 2337,
+        "shares": 1663,
+        "avg_pes": 207.9,
         "rank": 4,
-        "engagement_share": 5.5
+        "engagement_share": 5.6
       },
       {
         "page_id": "61580395595183",
@@ -15669,9 +15696,9 @@
       "61580479407070": [
         {
           "type": "Videos",
-          "count": 37,
-          "engagement": 5771,
-          "avg_engagement": 156.0
+          "count": 38,
+          "engagement": 5780,
+          "avg_engagement": 152.1
         },
         {
           "type": "Photos",
@@ -15728,7 +15755,7 @@
       },
       "61580479407070": {
         "type": "Videos",
-        "percentage": 52.9
+        "percentage": 53.5
       },
       "61580716220863": {
         "type": "Videos",
