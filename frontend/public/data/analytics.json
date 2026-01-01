@@ -4,11 +4,11 @@
       "total_posts": 711,
       "total_pages": 5,
       "all_pages": 5,
-      "total_reactions": 154776,
+      "total_reactions": 154783,
       "total_comments": 14798,
       "total_shares": 8187,
-      "total_engagement": 177761,
-      "total_pes": 214220.0,
+      "total_engagement": 177768,
+      "total_pes": 214227.0,
       "total_views": 1983830,
       "total_reach": 1405836,
       "avg_engagement": 250.0,
@@ -23,15 +23,15 @@
         "total_posts": 139,
         "total_pages": 1,
         "all_pages": 1,
-        "total_reactions": 99946,
+        "total_reactions": 99953,
         "total_comments": 2533,
         "total_shares": 1483,
-        "total_engagement": 103962,
-        "total_pes": 113858.0,
+        "total_engagement": 103969,
+        "total_pes": 113865.0,
         "total_views": 1390341,
         "total_reach": 1020745,
-        "avg_engagement": 747.9,
-        "avg_pes": 819.1,
+        "avg_engagement": 748.0,
+        "avg_pes": 819.2,
         "avg_views": 10002.5,
         "avg_reach": 7343.5,
         "date_range_start": "2025-10-09",
@@ -116,15 +116,15 @@
       "page_id": "61580337497087",
       "name": "Juana Babe Ashley",
       "page_name": "Juana Babe Ashley",
-      "fan_count": 45097,
-      "followers_count": 45097,
+      "fan_count": 45125,
+      "followers_count": 45125,
       "post_count": 139,
-      "total_reactions": 99946,
+      "total_reactions": 99953,
       "total_comments": 2533,
       "total_shares": 1483,
-      "total_engagement": 103962,
-      "avg_engagement": 747.9,
-      "avg_pes": 819.1,
+      "total_engagement": 103969,
+      "avg_engagement": 748.0,
+      "avg_pes": 819.2,
       "total_views": 1390341,
       "total_reach": 1020745
     },
@@ -132,8 +132,8 @@
       "page_id": "61580361006776",
       "name": "Juana Babe Sena",
       "page_name": "Juana Babe Sena",
-      "fan_count": 16552,
-      "followers_count": 16552,
+      "fan_count": 16560,
+      "followers_count": 16560,
       "post_count": 277,
       "total_reactions": 37224,
       "total_comments": 4248,
@@ -149,7 +149,7 @@
       "name": "Juana Babe Abi",
       "page_name": "Juana Babe Abi",
       "fan_count": 898,
-      "followers_count": 1150,
+      "followers_count": 1152,
       "post_count": 136,
       "total_reactions": 7452,
       "total_comments": 3525,
@@ -208,10 +208,10 @@
       {
         "post_type": "Photos",
         "count": 229,
-        "reactions": 10997,
+        "reactions": 11004,
         "comments": 4079,
         "shares": 2215,
-        "total_engagement": 17291,
+        "total_engagement": 17298,
         "avg_engagement": 75.5,
         "avg_pes": 112.8
       },
@@ -251,12 +251,12 @@
         {
           "post_type": "Photos",
           "count": 57,
-          "reactions": 2436,
+          "reactions": 2443,
           "comments": 564,
           "shares": 214,
-          "total_engagement": 3214,
-          "avg_engagement": 56.4,
-          "avg_pes": 74.1
+          "total_engagement": 3221,
+          "avg_engagement": 56.5,
+          "avg_pes": 74.2
         },
         {
           "post_type": "Reels",
@@ -1496,11 +1496,11 @@
       {
         "date": "2026-01-01",
         "posts": 8,
-        "reactions": 206,
+        "reactions": 213,
         "comments": 54,
         "shares": 42,
-        "engagement": 302,
-        "pes": 440.0,
+        "engagement": 309,
+        "pes": 447.0,
         "views": 0,
         "reach": 0
       }
@@ -2159,11 +2159,11 @@
         {
           "date": "2026-01-01",
           "posts": 1,
-          "reactions": 49,
+          "reactions": 56,
           "comments": 6,
           "shares": 2,
-          "engagement": 57,
-          "pes": 67.0,
+          "engagement": 64,
+          "pes": 74.0,
           "views": 0,
           "reach": 0
         }
@@ -5908,13 +5908,13 @@
       "post_type": "Photos",
       "publish_time": "2026-01-01T14:00:46+0000",
       "permalink": "https://www.facebook.com/122125581543011249/posts/122126779887011249",
-      "reactions": 49,
+      "reactions": 56,
       "comments": 6,
       "shares": 2,
       "views": 0,
       "reach": 0,
-      "engagement": 57,
-      "pes": 67.0
+      "engagement": 64,
+      "pes": 74.0
     },
     {
       "post_id": "747721128429855_122118572403023874",
@@ -17267,13 +17267,13 @@
       {
         "month": "2026-01",
         "posts": 8,
-        "reactions": 206,
+        "reactions": 213,
         "comments": 54,
         "shares": 42,
         "views": 0,
         "reach": 0,
-        "engagement": 302,
-        "avg_engagement": 37.8,
+        "engagement": 309,
+        "avg_engagement": 38.6,
         "mom_change": -99.8
       },
       {
@@ -17319,14 +17319,14 @@
         "week_start": "2026-01-01",
         "week_end": "2026-01-01",
         "posts": 8,
-        "reactions": 206,
+        "reactions": 213,
         "comments": 54,
         "shares": 42,
         "views": 0,
         "reach": 0,
-        "engagement": 302,
-        "avg_engagement": 37.8,
-        "wow_change": -93.9
+        "engagement": 309,
+        "avg_engagement": 38.6,
+        "wow_change": -93.8
       },
       {
         "week": "2025-52",
@@ -17416,7 +17416,7 @@
         "day": "Thu",
         "day_num": 4,
         "posts": 91,
-        "total_engagement": 18150,
+        "total_engagement": 18157,
         "avg_engagement": 199.5,
         "views": 227565,
         "reach": 145488,
@@ -17452,8 +17452,8 @@
         "posts": 139,
         "views": 1390341,
         "reach": 1020745,
-        "engagement": 103962,
-        "avg_engagement": 747.9
+        "engagement": 103969,
+        "avg_engagement": 748.0
       },
       {
         "rank": 2,
@@ -17524,7 +17524,7 @@
         "count": 229,
         "views": 198857,
         "reach": 90793,
-        "engagement": 17291,
+        "engagement": 17298,
         "avg_engagement": 75.5,
         "avg_views": 868.4
       },
@@ -17566,7 +17566,7 @@
       {
         "type": "top_page",
         "title": "Ashley Leads",
-        "text": "Top performer with 103,962 total engagement (748/post)"
+        "text": "Top performer with 103,969 total engagement (748/post)"
       }
     ]
   },
@@ -17733,16 +17733,16 @@
         "page_id": "61580337497087",
         "name": "Juana Babe Ashley",
         "page_name": "Juana Babe Ashley",
-        "fan_count": 45097,
+        "fan_count": 45125,
         "posts": 143,
-        "engagement": 103962,
-        "avg_engagement": 727.0,
+        "engagement": 103969,
+        "avg_engagement": 727.1,
         "views": 1390341,
         "reach": 1020745,
-        "reactions": 99946,
+        "reactions": 99953,
         "comments": 2533,
         "shares": 1483,
-        "avg_pes": 796.2,
+        "avg_pes": 796.3,
         "rank": 1,
         "engagement_share": 58.5
       },
@@ -17750,7 +17750,7 @@
         "page_id": "61580361006776",
         "name": "Juana Babe Sena",
         "page_name": "Juana Babe Sena",
-        "fan_count": 16552,
+        "fan_count": 16560,
         "posts": 284,
         "engagement": 43664,
         "avg_engagement": 153.7,
@@ -17820,8 +17820,8 @@
         {
           "type": "Photos",
           "count": 57,
-          "engagement": 3214,
-          "avg_engagement": 56.4
+          "engagement": 3221,
+          "avg_engagement": 56.5
         },
         {
           "type": "Reels",
