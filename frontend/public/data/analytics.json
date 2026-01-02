@@ -4,11 +4,11 @@
       "total_posts": 733,
       "total_pages": 5,
       "all_pages": 5,
-      "total_reactions": 159451,
+      "total_reactions": 159452,
       "total_comments": 15160,
       "total_shares": 8335,
-      "total_engagement": 182946,
-      "total_pes": 224095.0,
+      "total_engagement": 182947,
+      "total_pes": 224096.0,
       "total_views": 2041275,
       "total_reach": 1447862,
       "avg_engagement": 249.6,
@@ -23,11 +23,11 @@
         "total_posts": 145,
         "total_pages": 1,
         "all_pages": 1,
-        "total_reactions": 103963,
+        "total_reactions": 103964,
         "total_comments": 2691,
         "total_shares": 1527,
-        "total_engagement": 108181,
-        "total_pes": 121141.0,
+        "total_engagement": 108182,
+        "total_pes": 121142.0,
         "total_views": 1443106,
         "total_reach": 1059982,
         "avg_engagement": 746.1,
@@ -116,13 +116,13 @@
       "page_id": "61580337497087",
       "name": "Juana Babe Ashley",
       "page_name": "Juana Babe Ashley",
-      "fan_count": 46469,
-      "followers_count": 46469,
+      "fan_count": 46500,
+      "followers_count": 46500,
       "post_count": 145,
-      "total_reactions": 103963,
+      "total_reactions": 103964,
       "total_comments": 2691,
       "total_shares": 1527,
-      "total_engagement": 108181,
+      "total_engagement": 108182,
       "avg_engagement": 746.1,
       "avg_pes": 835.5,
       "total_views": 1443106,
@@ -218,10 +218,10 @@
       {
         "post_type": "Text",
         "count": 78,
-        "reactions": 2586,
+        "reactions": 2587,
         "comments": 843,
         "shares": 328,
-        "total_engagement": 3757,
+        "total_engagement": 3758,
         "avg_engagement": 48.2,
         "avg_pes": 67.5
       },
@@ -281,11 +281,11 @@
         {
           "post_type": "Text",
           "count": 12,
-          "reactions": 458,
+          "reactions": 459,
           "comments": 74,
           "shares": 13,
-          "total_engagement": 545,
-          "avg_engagement": 45.4,
+          "total_engagement": 546,
+          "avg_engagement": 45.5,
           "avg_pes": 53.8
         },
         {
@@ -1507,11 +1507,11 @@
       {
         "date": "2026-01-02",
         "posts": 13,
-        "reactions": 434,
+        "reactions": 435,
         "comments": 113,
         "shares": 67,
-        "engagement": 614,
-        "pes": 861.0,
+        "engagement": 615,
+        "pes": 862.0,
         "views": 0,
         "reach": 0
       }
@@ -2192,11 +2192,11 @@
         {
           "date": "2026-01-02",
           "posts": 2,
-          "reactions": 135,
+          "reactions": 136,
           "comments": 15,
           "shares": 4,
-          "engagement": 154,
-          "pes": 177.0,
+          "engagement": 155,
+          "pes": 178.0,
           "views": 0,
           "reach": 0
         }
@@ -6049,13 +6049,13 @@
       "post_type": "Text",
       "publish_time": "2026-01-02T11:01:01+0000",
       "permalink": "https://www.facebook.com/122125581543011249/posts/122126932377011249",
-      "reactions": 128,
+      "reactions": 129,
       "comments": 15,
       "shares": 3,
       "views": 0,
       "reach": 0,
-      "engagement": 146,
-      "pes": 167.0
+      "engagement": 147,
+      "pes": 168.0
     },
     {
       "post_id": "807965705726273_122117631927012033",
@@ -17696,13 +17696,13 @@
       {
         "month": "2026-01",
         "posts": 21,
-        "reactions": 749,
+        "reactions": 750,
         "comments": 203,
         "shares": 134,
         "views": 0,
         "reach": 0,
-        "engagement": 1086,
-        "avg_engagement": 51.7,
+        "engagement": 1087,
+        "avg_engagement": 51.8,
         "mom_change": -99.2
       },
       {
@@ -17748,13 +17748,13 @@
         "week_start": "2026-01-01",
         "week_end": "2026-01-02",
         "posts": 21,
-        "reactions": 749,
+        "reactions": 750,
         "comments": 203,
         "shares": 134,
         "views": 0,
         "reach": 0,
-        "engagement": 1086,
-        "avg_engagement": 51.7,
+        "engagement": 1087,
+        "avg_engagement": 51.8,
         "wow_change": -88.1
       },
       {
@@ -17855,7 +17855,7 @@
         "day": "Fri",
         "day_num": 5,
         "posts": 121,
-        "total_engagement": 15205,
+        "total_engagement": 15206,
         "avg_engagement": 125.7,
         "views": 157023,
         "reach": 111271,
@@ -17881,7 +17881,7 @@
         "posts": 145,
         "views": 1443106,
         "reach": 1059982,
-        "engagement": 108181,
+        "engagement": 108182,
         "avg_engagement": 746.1
       },
       {
@@ -17962,7 +17962,7 @@
         "count": 78,
         "views": 7236,
         "reach": 11788,
-        "engagement": 3757,
+        "engagement": 3758,
         "avg_engagement": 48.2,
         "avg_views": 92.8
       },
@@ -17995,7 +17995,7 @@
       {
         "type": "top_page",
         "title": "Ashley Leads",
-        "text": "Top performer with 108,181 total engagement (746/post)"
+        "text": "Top performer with 108,182 total engagement (746/post)"
       }
     ]
   },
@@ -18058,7 +18058,7 @@
     ],
     "effectivity": {
       "avg_engagement_with_self": 0,
-      "avg_engagement_without_self": 261.6,
+      "avg_engagement_without_self": 261.7,
       "engagement_boost_pct": -100.0,
       "avg_reactions_with": 0,
       "avg_reactions_without": 228.0
@@ -18071,13 +18071,13 @@
         "page_id": "61580337497087",
         "name": "Juana Babe Ashley",
         "page_name": "Juana Babe Ashley",
-        "fan_count": 46469,
+        "fan_count": 46500,
         "posts": 149,
-        "engagement": 108181,
-        "avg_engagement": 726.0,
+        "engagement": 108182,
+        "avg_engagement": 726.1,
         "views": 1443106,
         "reach": 1059982,
-        "reactions": 103963,
+        "reactions": 103964,
         "comments": 2691,
         "shares": 1527,
         "avg_pes": 813.0,
@@ -18176,7 +18176,7 @@
         {
           "type": "Text",
           "count": 16,
-          "engagement": 545,
+          "engagement": 546,
           "avg_engagement": 34.1
         },
         {
