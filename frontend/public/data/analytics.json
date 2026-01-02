@@ -116,8 +116,8 @@
       "page_id": "61580337497087",
       "name": "Juana Babe Ashley",
       "page_name": "Juana Babe Ashley",
-      "fan_count": 45262,
-      "followers_count": 45262,
+      "fan_count": null,
+      "followers_count": null,
       "post_count": 139,
       "total_reactions": 99968,
       "total_comments": 2534,
@@ -132,8 +132,8 @@
       "page_id": "61580361006776",
       "name": "Juana Babe Sena",
       "page_name": "Juana Babe Sena",
-      "fan_count": 16587,
-      "followers_count": 16587,
+      "fan_count": null,
+      "followers_count": null,
       "post_count": 277,
       "total_reactions": 37232,
       "total_comments": 4251,
@@ -148,8 +148,8 @@
       "page_id": "61580716220863",
       "name": "Juana Babe Abi",
       "page_name": "Juana Babe Abi",
-      "fan_count": 899,
-      "followers_count": 1164,
+      "fan_count": null,
+      "followers_count": null,
       "post_count": 136,
       "total_reactions": 7457,
       "total_comments": 3526,
@@ -164,8 +164,8 @@
       "page_id": "61580479407070",
       "name": "Juana Babe Zell",
       "page_name": "Juana Babe Zell",
-      "fan_count": 2220,
-      "followers_count": 2220,
+      "fan_count": null,
+      "followers_count": null,
       "post_count": 80,
       "total_reactions": 5365,
       "total_comments": 2410,
@@ -180,8 +180,8 @@
       "page_id": "61580395595183",
       "name": "Juana Babe Jam",
       "page_name": "Juana Babe Jam",
-      "fan_count": 1997,
-      "followers_count": 1997,
+      "fan_count": null,
+      "followers_count": null,
       "post_count": 79,
       "total_reactions": 4790,
       "total_comments": 2082,
@@ -17574,48 +17574,30 @@
     "summary": {
       "total_posts_with_comments": 679,
       "posts_analyzed": 679,
-      "posts_with_self_comment": 88,
-      "total_self_comments": 115,
-      "total_organic_comments": 14688,
-      "self_comment_rate": 0.8,
-      "posts_with_self_pct": 13.0
+      "posts_with_self_comment": 0,
+      "total_self_comments": 0,
+      "total_organic_comments": 14803,
+      "self_comment_rate": 0.0,
+      "posts_with_self_pct": 0.0
     },
     "byPage": [
-      {
-        "page_name": "Juana Babe Sena",
-        "page_id": "61580361006776",
-        "posts_with_comments": 266,
-        "self_comments": 69,
-        "organic_comments": 4182,
-        "posts_with_self": 49,
-        "self_rate": 1.6
-      },
-      {
-        "page_name": "Juana Babe Zell",
-        "page_id": "61580479407070",
-        "posts_with_comments": 80,
-        "self_comments": 24,
-        "organic_comments": 2386,
-        "posts_with_self": 20,
-        "self_rate": 1.0
-      },
       {
         "page_name": "Juana Babe Ashley",
         "page_id": "61580337497087",
         "posts_with_comments": 122,
-        "self_comments": 13,
-        "organic_comments": 2521,
-        "posts_with_self": 11,
-        "self_rate": 0.5
+        "self_comments": 0,
+        "organic_comments": 2534,
+        "posts_with_self": 0,
+        "self_rate": 0.0
       },
       {
-        "page_name": "Juana Babe Abi",
-        "page_id": "61580716220863",
-        "posts_with_comments": 134,
-        "self_comments": 9,
-        "organic_comments": 3517,
-        "posts_with_self": 8,
-        "self_rate": 0.3
+        "page_name": "Juana Babe Sena",
+        "page_id": "61580361006776",
+        "posts_with_comments": 266,
+        "self_comments": 0,
+        "organic_comments": 4251,
+        "posts_with_self": 0,
+        "self_rate": 0.0
       },
       {
         "page_name": "Juana Babe Jam",
@@ -17625,107 +17607,34 @@
         "organic_comments": 2082,
         "posts_with_self": 0,
         "self_rate": 0.0
+      },
+      {
+        "page_name": "Juana Babe Zell",
+        "page_id": "61580479407070",
+        "posts_with_comments": 80,
+        "self_comments": 0,
+        "organic_comments": 2410,
+        "posts_with_self": 0,
+        "self_rate": 0.0
+      },
+      {
+        "page_name": "Juana Babe Abi",
+        "page_id": "61580716220863",
+        "posts_with_comments": 134,
+        "self_comments": 0,
+        "organic_comments": 3526,
+        "posts_with_self": 0,
+        "self_rate": 0.0
       }
     ],
     "effectivity": {
-      "avg_engagement_with_self": 509.1,
-      "avg_engagement_without_self": 224.6,
-      "engagement_boost_pct": 126.7,
-      "avg_reactions_with": 465.4,
-      "avg_reactions_without": 192.2
+      "avg_engagement_with_self": 0,
+      "avg_engagement_without_self": 261.4,
+      "engagement_boost_pct": -100.0,
+      "avg_reactions_with": 0,
+      "avg_reactions_without": 227.6
     },
-    "topSelfCommented": [
-      {
-        "post_id": "122116249551012033",
-        "page_name": "Juana Babe Sena",
-        "title": "Not everyone can handle this energy \ud83d\ude0e\ud83d\udc96 \n\nHit that ",
-        "self_comments": 4,
-        "total_comments": 26,
-        "engagement": 898,
-        "permalink": "https://www.facebook.com/reel/3893103360820750/"
-      },
-      {
-        "post_id": "122114528937012033",
-        "page_name": "Juana Babe Sena",
-        "title": "Hi JuanaBies! \ud83d\ude0e Where you at?\n\nComment na at let\u2019s",
-        "self_comments": 3,
-        "total_comments": 53,
-        "engagement": 11792,
-        "permalink": "https://www.facebook.com/reel/722181097592929/"
-      },
-      {
-        "post_id": "122114938605012033",
-        "page_name": "Juana Babe Sena",
-        "title": "Just chill, moves muna, JuanaBies! \ud83d\udc99\n\nReact \u2764\ufe0f, co",
-        "self_comments": 3,
-        "total_comments": 43,
-        "engagement": 9739,
-        "permalink": "https://www.facebook.com/reel/1586305679353916/"
-      },
-      {
-        "post_id": "122116238553012033",
-        "page_name": "Juana Babe Sena",
-        "title": "FIRST PRANK ITO, JUANBIES! \ud83d\ude02\ud83d\udd25\nHindi kayo handa sa ",
-        "self_comments": 3,
-        "total_comments": 31,
-        "engagement": 136,
-        "permalink": "https://www.facebook.com/reel/1925738694955636/"
-      },
-      {
-        "post_id": "122117061603012033",
-        "page_name": "Juana Babe Sena",
-        "title": "I\u2019ve been thinking. _ \ud83e\udd2d Hulaan mo Juanabies!\n\nDrop",
-        "self_comments": 3,
-        "total_comments": 19,
-        "engagement": 148,
-        "permalink": "https://www.facebook.com/reel/870844629140670/"
-      },
-      {
-        "post_id": "122111437635015980",
-        "page_name": "Juana Babe Zell",
-        "title": "Hi\ud83e\udd70\n#juanababezell\n#Juan365PH\n#juan365livestream",
-        "self_comments": 2,
-        "total_comments": 81,
-        "engagement": 264,
-        "permalink": "https://www.facebook.com/JuanababeZell/posts/pfbid0VMJQAP4kZfCBGxEqYQx3micVVMcRRYixRHPL9G6DPPoAzTZRS7QTb6zfqoW4EM7Wl"
-      },
-      {
-        "post_id": "122117775075023874",
-        "page_name": "Juana Babe Abi",
-        "title": "Araw naman ng bigayan hindi pa pinag bigyan eh!\ud83e\udd79\n\n",
-        "self_comments": 2,
-        "total_comments": 41,
-        "engagement": 177,
-        "permalink": "https://www.facebook.com/reel/25393647486945051/"
-      },
-      {
-        "post_id": "122126335527011249",
-        "page_name": "Juana Babe Ashley",
-        "title": "Walang pilitan dito, diba mga babes? \ud83d\ude1a\n\nDrop \u2665\ufe0f an",
-        "self_comments": 2,
-        "total_comments": 27,
-        "engagement": 825,
-        "permalink": "https://www.facebook.com/reel/872356958823895/"
-      },
-      {
-        "post_id": "122125257519011249",
-        "page_name": "Juana Babe Ashley",
-        "title": "Magpapaskong _?\ud83e\udee3\n\nHit \u2665\ufe0f and hulaan nyo sa comment",
-        "self_comments": 2,
-        "total_comments": 46,
-        "engagement": 332,
-        "permalink": "https://www.facebook.com/JuanababeAshley/posts/pfbid02sfLK2T8x6ewguzaMFkLd6aqgMqYdgtMb1Hk8cdVwSFf5udEY9CpbHMJrjyL6mAdVl"
-      },
-      {
-        "post_id": "122114218755012033",
-        "page_name": "Juana Babe Sena",
-        "title": "Good morning, Juanabies! \ud83c\udf1e\ud83d\udc96\nSpread love and good v",
-        "self_comments": 2,
-        "total_comments": 13,
-        "engagement": 75,
-        "permalink": "https://www.facebook.com/reel/719878300819247/"
-      }
-    ]
+    "topSelfCommented": []
   },
   "pageComparison": {
     "pages": [
@@ -17733,7 +17642,7 @@
         "page_id": "61580337497087",
         "name": "Juana Babe Ashley",
         "page_name": "Juana Babe Ashley",
-        "fan_count": 45262,
+        "fan_count": null,
         "posts": 143,
         "engagement": 103985,
         "avg_engagement": 727.2,
@@ -17750,7 +17659,7 @@
         "page_id": "61580361006776",
         "name": "Juana Babe Sena",
         "page_name": "Juana Babe Sena",
-        "fan_count": 16587,
+        "fan_count": null,
         "posts": 284,
         "engagement": 43675,
         "avg_engagement": 153.8,
@@ -17767,7 +17676,7 @@
         "page_id": "61580716220863",
         "name": "Juana Babe Abi",
         "page_name": "Juana Babe Abi",
-        "fan_count": 899,
+        "fan_count": null,
         "posts": 139,
         "engagement": 12770,
         "avg_engagement": 91.9,
@@ -17784,7 +17693,7 @@
         "page_id": "61580479407070",
         "name": "Juana Babe Zell",
         "page_name": "Juana Babe Zell",
-        "fan_count": 2220,
+        "fan_count": null,
         "posts": 81,
         "engagement": 9447,
         "avg_engagement": 116.6,
@@ -17801,7 +17710,7 @@
         "page_id": "61580395595183",
         "name": "Juana Babe Jam",
         "page_name": "Juana Babe Jam",
-        "fan_count": 1997,
+        "fan_count": null,
         "posts": 79,
         "engagement": 7925,
         "avg_engagement": 100.3,
