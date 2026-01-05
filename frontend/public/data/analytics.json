@@ -116,8 +116,8 @@
       "page_id": "61580337497087",
       "name": "Juana Babe Ashley",
       "page_name": "Juana Babe Ashley",
-      "fan_count": 47161,
-      "followers_count": 47161,
+      "fan_count": 47168,
+      "followers_count": 47168,
       "post_count": 169,
       "total_reactions": 123452,
       "total_comments": 3340,
@@ -132,8 +132,8 @@
       "page_id": "61580361006776",
       "name": "Juana Babe Sena",
       "page_name": "Juana Babe Sena",
-      "fan_count": 18950,
-      "followers_count": 18950,
+      "fan_count": 18990,
+      "followers_count": 18990,
       "post_count": 320,
       "total_reactions": 41304,
       "total_comments": 4793,
@@ -19853,21 +19853,21 @@
     "summary": {
       "total_posts_with_comments": 797,
       "posts_analyzed": 797,
-      "posts_with_self_comment": 97,
-      "total_self_comments": 126,
-      "total_organic_comments": 17009,
-      "self_comment_rate": 0.7,
-      "posts_with_self_pct": 12.2
+      "posts_with_self_comment": 102,
+      "total_self_comments": 131,
+      "total_organic_comments": 17004,
+      "self_comment_rate": 0.8,
+      "posts_with_self_pct": 12.8
     },
     "byPage": [
       {
         "page_name": "Juana Babe Sena",
         "page_id": "61580361006776",
         "posts_with_comments": 309,
-        "self_comments": 77,
-        "organic_comments": 4716,
-        "posts_with_self": 55,
-        "self_rate": 1.6
+        "self_comments": 81,
+        "organic_comments": 4712,
+        "posts_with_self": 59,
+        "self_rate": 1.7
       },
       {
         "page_name": "Juana Babe Zell",
@@ -19882,9 +19882,9 @@
         "page_name": "Juana Babe Ashley",
         "page_id": "61580337497087",
         "posts_with_comments": 148,
-        "self_comments": 14,
-        "organic_comments": 3326,
-        "posts_with_self": 12,
+        "self_comments": 15,
+        "organic_comments": 3325,
+        "posts_with_self": 13,
         "self_rate": 0.4
       },
       {
@@ -19907,11 +19907,11 @@
       }
     ],
     "effectivity": {
-      "avg_engagement_with_self": 505.0,
-      "avg_engagement_without_self": 231.3,
-      "engagement_boost_pct": 118.4,
-      "avg_reactions_with": 461.3,
-      "avg_reactions_without": 199.4
+      "avg_engagement_with_self": 485.8,
+      "avg_engagement_without_self": 232.1,
+      "engagement_boost_pct": 109.3,
+      "avg_reactions_with": 443.6,
+      "avg_reactions_without": 200.2
     },
     "topSelfCommented": [
       {
@@ -20012,7 +20012,7 @@
         "page_id": "61580337497087",
         "name": "Juana Babe Ashley",
         "page_name": "Juana Babe Ashley",
-        "fan_count": 47161,
+        "fan_count": 47168,
         "posts": 174,
         "engagement": 128587,
         "avg_engagement": 739.0,
@@ -20029,7 +20029,7 @@
         "page_id": "61580361006776",
         "name": "Juana Babe Sena",
         "page_name": "Juana Babe Sena",
-        "fan_count": 18950,
+        "fan_count": 18990,
         "posts": 329,
         "engagement": 48500,
         "avg_engagement": 147.4,
