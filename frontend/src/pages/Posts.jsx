@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import { getPosts, getPages } from '../services/api';
+import { getPosts, getPages, getDateBoundaries } from '../services/api';
+import DateFilter from '../components/DateFilter';
 
 export default function Posts() {
   const [posts, setPosts] = useState([]);
@@ -10,14 +11,20 @@ export default function Posts() {
   const [hasNext, setHasNext] = useState(false);
   const [filter, setFilter] = useState({ post_type: '', page_id: '', search: '' });
   const [searchInput, setSearchInput] = useState('');
+  const [dateRange, setDateRange] = useState({ startDate: null, endDate: null });
+  const [dateBoundaries, setDateBoundaries] = useState({ minDate: null, maxDate: null });
 
-  // Load pages for filter dropdown
+  // Load pages and date boundaries on mount
   useEffect(() => {
-    async function fetchPages() {
-      const pageData = await getPages();
+    async function fetchInitialData() {
+      const [pageData, boundaries] = await Promise.all([
+        getPages(),
+        getDateBoundaries()
+      ]);
       setPages(pageData);
+      setDateBoundaries(boundaries);
     }
-    fetchPages();
+    fetchInitialData();
   }, []);
 
   useEffect(() => {
@@ -28,7 +35,7 @@ export default function Posts() {
         if (filter.post_type) params.post_type = filter.post_type;
         if (filter.page_id) params.page_id = filter.page_id;
         if (filter.search) params.search = filter.search;
-        const data = await getPosts(params);
+        const data = await getPosts(params, dateRange);
         setPosts(data.results || data);
         setTotalCount(data.count || 0);
         setHasNext(!!data.next);
@@ -39,7 +46,7 @@ export default function Posts() {
       }
     }
     fetchPosts();
-  }, [page, filter]);
+  }, [page, filter, dateRange]);
 
   const formatDate = (date) => {
     if (!date) return 'N/A';
@@ -69,9 +76,23 @@ export default function Posts() {
             Showing {posts.length} of {totalCount.toLocaleString()} posts
           </p>
         </div>
+      </div>
 
-        {/* Filters Row */}
-        <div className="flex flex-wrap gap-3">
+      {/* Date Filter */}
+      <div className="bg-white rounded-lg shadow p-4">
+        <DateFilter
+          onDateChange={(range) => {
+            setDateRange(range);
+            setPage(1); // Reset pagination
+          }}
+          defaultDays={0}
+          minDate={dateBoundaries.minDate}
+          maxDate={dateBoundaries.maxDate}
+        />
+      </div>
+
+      {/* Filters Row */}
+      <div className="flex flex-wrap gap-3">
           {/* Search */}
           <form onSubmit={handleSearch} className="flex">
             <input
@@ -116,7 +137,6 @@ export default function Posts() {
             <option value="Live">Live</option>
             <option value="Text">Text</option>
           </select>
-        </div>
       </div>
 
       <div className="bg-white rounded-lg shadow overflow-hidden">

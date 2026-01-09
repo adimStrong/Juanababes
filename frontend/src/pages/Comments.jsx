@@ -3,7 +3,8 @@ import {
   PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis, CartesianGrid,
   Tooltip, ResponsiveContainer, Legend
 } from 'recharts';
-import { getPages, getPostTypeStats, getTopPosts, getCommentAnalysis } from '../services/api';
+import { getPages, getPostTypeStats, getTopPosts, getCommentAnalysis, getDateBoundaries } from '../services/api';
+import DateFilter from '../components/DateFilter';
 
 const COLORS = ['#6366f1', '#22c55e', '#f59e0b', '#ef4444', '#8b5cf6'];
 
@@ -13,12 +14,20 @@ export default function Comments() {
   const [topCommented, setTopCommented] = useState([]);
   const [commentAnalysis, setCommentAnalysis] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [dateRange, setDateRange] = useState({ startDate: null, endDate: null });
+  const [dateBoundaries, setDateBoundaries] = useState({ minDate: null, maxDate: null });
+
+  // Fetch date boundaries on mount
+  useEffect(() => {
+    getDateBoundaries().then(setDateBoundaries);
+  }, []);
 
   useEffect(() => {
     async function fetchData() {
+      setLoading(true);
       try {
         const [pageData, postTypeData, topPostsData, analysisData] = await Promise.all([
-          getPages(),
+          getPages(dateRange),
           getPostTypeStats(),
           getTopPosts(20, 'engagement'),
           getCommentAnalysis(),
@@ -36,7 +45,7 @@ export default function Comments() {
       }
     }
     fetchData();
-  }, []);
+  }, [dateRange]);
 
   if (loading) {
     return (
@@ -77,6 +86,16 @@ export default function Comments() {
           <h1 className="text-2xl font-bold text-gray-900">Comment Analysis</h1>
           <p className="text-sm text-gray-500">Analyze comment distribution across pages and post types</p>
         </div>
+      </div>
+
+      {/* Date Filter */}
+      <div className="bg-white rounded-lg shadow p-4">
+        <DateFilter
+          onDateChange={setDateRange}
+          defaultDays={0}
+          minDate={dateBoundaries.minDate}
+          maxDate={dateBoundaries.maxDate}
+        />
       </div>
 
       {/* Summary Stats */}

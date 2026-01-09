@@ -2,22 +2,34 @@
 """
 Fetch missing posts from FB API that aren't in CSV data.
 CSV data is prioritized (has views/reach), API ONLY fills gaps for dates NOT in CSV.
+
+Usage:
+    python fetch_missing_posts.py              # With notifications
+    python fetch_missing_posts.py --no-notify  # Silent mode (no Telegram)
 """
 
 import json
 import sqlite3
 import requests
 import time
+import sys
 from datetime import datetime, timedelta
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
+# Check for --no-notify flag
+SILENT_MODE = "--no-notify" in sys.argv or "--silent" in sys.argv
+
 # Telegram notifications
-try:
-    from telegram_notifier import send_new_post_alert
-    TELEGRAM_ENABLED = True
-except ImportError:
+if SILENT_MODE:
     TELEGRAM_ENABLED = False
-    print("Warning: telegram_notifier not found, notifications disabled")
+    print("Silent mode: Telegram notifications disabled")
+else:
+    try:
+        from telegram_notifier import send_new_post_alert
+        TELEGRAM_ENABLED = True
+    except ImportError:
+        TELEGRAM_ENABLED = False
+        print("Warning: telegram_notifier not found, notifications disabled")
 
 DATABASE_PATH = "data/juanbabes_analytics.db"
 
@@ -43,6 +55,21 @@ def get_api_to_csv_mapping():
     return mapping
 
 
+def normalize_date(date_str):
+    """Convert date to YYYY-MM-DD format."""
+    if not date_str:
+        return None
+    # If already YYYY-MM-DD format
+    if len(date_str) >= 10 and date_str[4] == '-':
+        return date_str[:10]
+    # If MM/DD/YYYY format
+    if '/' in date_str:
+        parts = date_str.split('/')
+        if len(parts) >= 3:
+            month, day, year = parts[0], parts[1], parts[2][:4]
+            return f"{year}-{month.zfill(2)}-{day.zfill(2)}"
+    return date_str[:10]
+
 def get_csv_dates():
     """Get all dates that have CSV data (posts with views)."""
     conn = sqlite3.connect(DATABASE_PATH)
@@ -52,7 +79,11 @@ def get_csv_dates():
         FROM posts
         WHERE views_count > 0
     """)
-    dates = set(row[0] for row in cursor.fetchall())
+    dates = set()
+    for row in cursor.fetchall():
+        normalized = normalize_date(row[0])
+        if normalized:
+            dates.add(normalized)
     conn.close()
     return dates
 
