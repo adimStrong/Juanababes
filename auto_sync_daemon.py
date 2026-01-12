@@ -51,10 +51,10 @@ def run_sync():
 
         # Step 2: Update follower counts
         print("\n[2/5] Updating follower counts...")
-        if os.path.exists('update_fan_counts.py'):
-            subprocess.run(['python', 'update_fan_counts.py'], check=True)
+        if os.path.exists('update_followers.py'):
+            subprocess.run(['python', 'update_followers.py'], check=True)
         else:
-            print("   (update_fan_counts.py not found, skipping)")
+            print("   (update_followers.py not found, skipping)")
 
         # Step 3: Fetch comment data
         print("\n[3/5] Fetching comment data (self-comments)...")
