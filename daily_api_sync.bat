@@ -8,7 +8,7 @@ echo.
 
 REM Step 1: Sync from Facebook API
 echo [1/3] Fetching from Facebook API...
-python scheduled_sync.py
+python fetch_missing_posts.py --no-notify
 
 REM Step 2: Export static data
 echo [2/3] Exporting analytics...
