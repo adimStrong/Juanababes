@@ -32,3 +32,8 @@ short_lived_tokens.json
 # Logs
 *.log
 nul
+
+.vercel
+.env*.local
+tmpclaude-*
+.env.local
