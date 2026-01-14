@@ -3,15 +3,15 @@
     "all": {
       "total_posts": 841,
       "total_pages": 10,
-      "all_pages": 8,
-      "total_reactions": 210040,
-      "total_comments": 17867,
-      "total_shares": 9712,
-      "total_engagement": 237619,
-      "total_pes": 274504.0,
+      "all_pages": 10,
+      "total_reactions": 210045,
+      "total_comments": 17870,
+      "total_shares": 9715,
+      "total_engagement": 237630,
+      "total_pes": 274524.0,
       "total_views": 2696643,
       "total_reach": 1967106,
-      "avg_engagement": 282.5,
+      "avg_engagement": 282.6,
       "avg_pes": 326.4,
       "avg_views": 3206.5,
       "avg_reach": 2339.0,
@@ -113,14 +113,14 @@
         "total_posts": 42,
         "total_pages": 1,
         "all_pages": 1,
-        "total_reactions": 1954,
-        "total_comments": 659,
+        "total_reactions": 1955,
+        "total_comments": 660,
         "total_shares": 328,
-        "total_engagement": 2941,
-        "total_pes": 3942.0,
+        "total_engagement": 2943,
+        "total_pes": 3945.0,
         "total_views": 18748,
         "total_reach": 11212,
-        "avg_engagement": 70.0,
+        "avg_engagement": 70.1,
         "avg_pes": 93.9,
         "avg_views": 446.4,
         "avg_reach": 267.0,
@@ -131,15 +131,15 @@
         "total_posts": 9,
         "total_pages": 1,
         "all_pages": 1,
-        "total_reactions": 311,
-        "total_comments": 111,
-        "total_shares": 110,
-        "total_engagement": 532,
-        "total_pes": 863.0,
+        "total_reactions": 313,
+        "total_comments": 112,
+        "total_shares": 111,
+        "total_engagement": 536,
+        "total_pes": 870.0,
         "total_views": 0,
         "total_reach": 0,
-        "avg_engagement": 59.1,
-        "avg_pes": 95.9,
+        "avg_engagement": 59.6,
+        "avg_pes": 96.7,
         "avg_views": 0.0,
         "avg_reach": 0.0,
         "date_range_start": "2026-01-10",
@@ -185,15 +185,15 @@
         "total_posts": 19,
         "total_pages": 1,
         "all_pages": 1,
-        "total_reactions": 1189,
-        "total_comments": 406,
-        "total_shares": 124,
-        "total_engagement": 1719,
-        "total_pes": 2373.0,
+        "total_reactions": 1191,
+        "total_comments": 407,
+        "total_shares": 126,
+        "total_engagement": 1724,
+        "total_pes": 2383.0,
         "total_views": 0,
         "total_reach": 0,
-        "avg_engagement": 90.5,
-        "avg_pes": 124.9,
+        "avg_engagement": 90.7,
+        "avg_pes": 125.4,
         "avg_views": 0.0,
         "avg_reach": 0.0,
         "date_range_start": "2026-01-10",
@@ -305,11 +305,11 @@
       "fan_count": null,
       "followers_count": null,
       "post_count": 42,
-      "total_reactions": 1954,
-      "total_comments": 659,
+      "total_reactions": 1955,
+      "total_comments": 660,
       "total_shares": 328,
-      "total_engagement": 2941,
-      "avg_engagement": 70.0,
+      "total_engagement": 2943,
+      "avg_engagement": 70.1,
       "avg_pes": 93.9,
       "total_views": 18748,
       "total_reach": 11212
@@ -329,6 +329,38 @@
       "avg_pes": 93.4,
       "total_views": 14119,
       "total_reach": 8583
+    },
+    {
+      "page_id": "807965705726273",
+      "name": "Juankada Sena",
+      "page_name": "Juankada Sena",
+      "fan_count": null,
+      "followers_count": null,
+      "post_count": 19,
+      "total_reactions": 1191,
+      "total_comments": 407,
+      "total_shares": 126,
+      "total_engagement": 1724,
+      "avg_engagement": 90.7,
+      "avg_pes": 125.4,
+      "total_views": 0,
+      "total_reach": 0
+    },
+    {
+      "page_id": "747721128429855",
+      "name": "Juankada Abi",
+      "page_name": "Juankada Abi",
+      "fan_count": null,
+      "followers_count": null,
+      "post_count": 9,
+      "total_reactions": 313,
+      "total_comments": 112,
+      "total_shares": 111,
+      "total_engagement": 536,
+      "avg_engagement": 59.6,
+      "avg_pes": 96.7,
+      "total_views": 0,
+      "total_reach": 0
     }
   ],
   "postTypes": {
@@ -336,10 +368,10 @@
       {
         "post_type": "Videos",
         "count": 435,
-        "reactions": 69597,
-        "comments": 10292,
-        "shares": 5484,
-        "total_engagement": 85373,
+        "reactions": 69600,
+        "comments": 10294,
+        "shares": 5486,
+        "total_engagement": 85380,
         "avg_engagement": 196.3,
         "avg_pes": 265.9
       },
@@ -356,12 +388,12 @@
       {
         "post_type": "Text",
         "count": 102,
-        "reactions": 5391,
-        "comments": 1165,
-        "shares": 592,
-        "total_engagement": 7148,
+        "reactions": 5393,
+        "comments": 1166,
+        "shares": 593,
+        "total_engagement": 7152,
         "avg_engagement": 70.1,
-        "avg_pes": 87.1
+        "avg_pes": 87.2
       },
       {
         "post_type": "Reels",
@@ -599,10 +631,10 @@
         {
           "post_type": "Videos",
           "count": 35,
-          "reactions": 1536,
-          "comments": 489,
+          "reactions": 1537,
+          "comments": 490,
           "shares": 231,
-          "total_engagement": 2256,
+          "total_engagement": 2258,
           "avg_engagement": 64.5,
           "avg_pes": 84.3
         },
@@ -641,12 +673,12 @@
         {
           "post_type": "Text",
           "count": 3,
-          "reactions": 67,
-          "comments": 17,
-          "shares": 21,
-          "total_engagement": 105,
-          "avg_engagement": 35.0,
-          "avg_pes": 54.7
+          "reactions": 69,
+          "comments": 18,
+          "shares": 22,
+          "total_engagement": 109,
+          "avg_engagement": 36.3,
+          "avg_pes": 57.0
         }
       ],
       "748765068327821": [
@@ -717,12 +749,12 @@
         {
           "post_type": "Videos",
           "count": 17,
-          "reactions": 1112,
-          "comments": 363,
-          "shares": 111,
-          "total_engagement": 1586,
-          "avg_engagement": 93.3,
-          "avg_pes": 127.7
+          "reactions": 1114,
+          "comments": 364,
+          "shares": 113,
+          "total_engagement": 1591,
+          "avg_engagement": 93.6,
+          "avg_pes": 128.3
         },
         {
           "post_type": "Text",
@@ -1896,11 +1928,11 @@
       {
         "date": "2026-01-13",
         "posts": 10,
-        "reactions": 311,
-        "comments": 68,
-        "shares": 65,
-        "engagement": 444,
-        "pes": 642.0,
+        "reactions": 316,
+        "comments": 71,
+        "shares": 68,
+        "engagement": 455,
+        "pes": 662.0,
         "views": 0,
         "reach": 0
       },
@@ -5616,11 +5648,11 @@
         {
           "date": "2026-01-13",
           "posts": 2,
-          "reactions": 41,
-          "comments": 8,
+          "reactions": 42,
+          "comments": 9,
           "shares": 4,
-          "engagement": 53,
-          "pes": 69.0,
+          "engagement": 55,
+          "pes": 72.0,
           "views": 0,
           "reach": 0
         }
@@ -5662,11 +5694,11 @@
         {
           "date": "2026-01-13",
           "posts": 3,
-          "reactions": 96,
-          "comments": 27,
-          "shares": 46,
-          "engagement": 169,
-          "pes": 288.0,
+          "reactions": 98,
+          "comments": 28,
+          "shares": 47,
+          "engagement": 173,
+          "pes": 295.0,
           "views": 0,
           "reach": 0
         },
@@ -6207,11 +6239,11 @@
         {
           "date": "2026-01-13",
           "posts": 4,
-          "reactions": 168,
-          "comments": 32,
-          "shares": 15,
-          "engagement": 215,
-          "pes": 277.0,
+          "reactions": 170,
+          "comments": 33,
+          "shares": 17,
+          "engagement": 220,
+          "pes": 287.0,
           "views": 0,
           "reach": 0
         },
@@ -7229,7 +7261,7 @@
         {
           "post_id": "122119946229023874",
           "page_id": "747721128429855",
-          "page_name": null,
+          "page_name": "Juankada Abi",
           "title": "bagong hobby na ba ito? \n\ncomment mo naman juankada kung may bago kang discovery sa sarili mo \ud83d\ude09 \n\n #juanababeabi  #Juan365livestream #Juan365PH #AllInJuanSaSaya  #LoveAndArt  #weekendvibes  #artist  #",
           "post_type": "Videos",
           "publish_time": "2026-01-11T13:27:30+0000",
@@ -7243,7 +7275,7 @@
         {
           "post_id": "122120046045023874",
           "page_id": "747721128429855",
-          "page_name": null,
+          "page_name": "Juankada Abi",
           "title": "pinalaki yan sila ng sexbomb? \n\nheart \"\u2764\ufe0f\" react mo juankada kung kilala mo din sila \n\n #JUANABABEABI  #Juan365livestream #Juan365PH  #sexbomb  #trendingvideo  #viralvideochallenge  #reelschallengeree",
           "post_type": "Videos",
           "publish_time": "2026-01-12T12:03:08+0000",
@@ -7257,7 +7289,7 @@
         {
           "post_id": "122119813503023874",
           "page_id": "747721128429855",
-          "page_name": null,
+          "page_name": "Juankada Abi",
           "title": "REST DAY cancelled, HANGOVER activated \ud83c\udf7b\n\nComment \u201csame\u201d kung naka relate ka rin!\n\n#Juanababe #juanbabeabi #Juan365 #Juan365livestream #trend #HangoverDiaries #AdultingPH #FunnyMoments #PagodPeroLaban",
           "post_type": "Videos",
           "publish_time": "2026-01-10T06:33:06+0000",
@@ -7271,7 +7303,7 @@
         {
           "post_id": "122120103567023874",
           "page_id": "747721128429855",
-          "page_name": null,
+          "page_name": "Juankada Abi",
           "title": "Peace looks good on me, like it\u2019s my favorite color \ud83e\udd0d\ud83c\udf43\n\nReact \u2764\ufe0f if you\u2019re choosing peace today\n\n #juanababeabi  #Juan365livestream #Juan365PH #SoftGirlEra #WhiteAesthetic #QuietMoments #SoftAesthetic",
           "post_type": "Text",
           "publish_time": "2026-01-13T00:09:44+0000",
@@ -7285,7 +7317,7 @@
         {
           "post_id": "122120148417023874",
           "page_id": "747721128429855",
-          "page_name": null,
+          "page_name": "Juankada Abi",
           "title": "Sunset looks extra beautiful today, doesn\u2019t it? \u2728\n\nPause for a moment and react \u2764\ufe0f if you feel it.\n\n#juanababeabi  #Juan365livestream\n#Juan365PH #SunsetMood #GoldenHourFeels  #PeacefulVibes  #Aestheti",
           "post_type": "Videos",
           "publish_time": "2026-01-13T09:10:20+0000",
@@ -7299,7 +7331,7 @@
         {
           "post_id": "122120215275023874",
           "page_id": "747721128429855",
-          "page_name": null,
+          "page_name": "Juankada Abi",
           "title": "AKO talaga yung NANALO dito eh!\ud83d\ude06\nhuyy charot lang ah!!\ud83d\ude02\n\nCONGRATULATIONS again po JUANKADA LOLITA ng TAYTAY RIZAL!\ud83e\udd73\n\n#Juanababeabi  #Juan365livestream #SupresaNiJuanWinner #winner #AllInJuanSaSaya \n#J",
           "post_type": "Videos",
           "publish_time": "2026-01-14T00:24:40+0000",
@@ -7313,21 +7345,21 @@
         {
           "post_id": "122120177883023874",
           "page_id": "747721128429855",
-          "page_name": null,
+          "page_name": "Juankada Abi",
           "title": "",
           "post_type": "Text",
           "publish_time": "2026-01-13T15:14:19+0000",
           "permalink": "https://www.facebook.com/122117663979023874/posts/122120177883023874",
-          "reactions": 14,
-          "comments": 2,
-          "shares": 1,
-          "engagement": 17,
-          "pes": 21.0
+          "reactions": 16,
+          "comments": 3,
+          "shares": 2,
+          "engagement": 21,
+          "pes": 28.0
         },
         {
           "post_id": "122119938315023874",
           "page_id": "747721128429855",
-          "page_name": null,
+          "page_name": "Juankada Abi",
           "title": "\ud835\udc13\ud835\udc1a\ud835\udc2b\ud835\udc1a \ud835\udc27\ud835\udc1a! \ud835\udc0c\ud835\udc1a\ud835\udc24\ud835\udc22-\ud835\udc2c\ud835\udc1a\ud835\udc32\ud835\udc1a \ud835\udc2c\ud835\udc1a Juan365 Live Stream\n\n#juanababe #TheResponsibleJuan #Juan365livestream #AllInJuanSaSaya #JuanKada #Juan365PH #juanababesena",
           "post_type": "Videos",
           "publish_time": "2026-01-11T12:03:34+0000",
@@ -7341,7 +7373,7 @@
         {
           "post_id": "122120234595023874",
           "page_id": "747721128429855",
-          "page_name": null,
+          "page_name": "Juankada Abi",
           "title": "oh my heart \ud83e\udd70",
           "post_type": "Text",
           "publish_time": "2026-01-14T04:31:16+0000",
@@ -7641,7 +7673,7 @@
         {
           "post_id": "1164917212516071",
           "page_id": "807965705726273",
-          "page_name": null,
+          "page_name": "Juankada Sena",
           "title": "\ud835\udc02\ud835\udc28\ud835\udc27\ud835\udc20\ud835\udc2b\ud835\udc1a\ud835\udc2d\ud835\udc2e\ud835\udc25\ud835\udc1a\ud835\udc2d\ud835\udc22\ud835\udc28\ud835\udc27\ud835\udc2c, \ud835\udfd0\ud835\udfd3 \ud835\udc09\ud835\udc2e\ud835\udc1a\ud835\udc27\ud835\udc1a\ud835\udc1b\ud835\udc22\ud835\udc1e\ud835\udc2c! Juan365 Live Stream\n\n#Juan365 #Juan365PH #AllInJuanSaSaya #JuanKada #JuanSports #25KFollowers #GratefulHeart",
           "post_type": "Videos",
           "publish_time": "2026-01-11T10:04:47+0000",
@@ -7655,7 +7687,7 @@
         {
           "post_id": "122118510057012033",
           "page_id": "807965705726273",
-          "page_name": null,
+          "page_name": "Juankada Sena",
           "title": "\ud835\udc04\ud835\udc2f\ud835\udc1e\ud835\udc2b\ud835\udc32\ud835\udc2d\ud835\udc21\ud835\udc22\ud835\udc27\ud835\udc20 \ud835\udc1f\ud835\udc2e\ud835\udc27 \ud835\udc30\ud835\udc22\ud835\udc2d\ud835\udc21 Juankada Sabbie \ud83e\udd70\n\n#JuanababeSena #Juanabies #Followme #TagAFriend #JuankadaSabbie #GoodVibesOnly",
           "post_type": "Videos",
           "publish_time": "2026-01-11T06:01:49+0000",
@@ -7669,7 +7701,7 @@
         {
           "post_id": "122118350793012033",
           "page_id": "807965705726273",
-          "page_name": null,
+          "page_name": "Juankada Sena",
           "title": "\ud835\udc12\ud835\udc25\ud835\udc1a\ud835\udc32 \ud835\udc2d\ud835\udc21\ud835\udc1e \ud835\udc1d\ud835\udc1a\ud835\udc32, \ud835\udc09\ud835\udc2e\ud835\udc1a\ud835\udc27\ud835\udc1a\ud835\udc1b\ud835\udc22\ud835\udc1e\ud835\udc2c\ud83d\udc96\n\n #JuanaBabeSena #CommentYourThoughts #TagAFriend #Followme #Juanababes #Juan365 #AllInJuanSaSaya #Juan365livestream #JuanaBies #SweetEnergy #DailyBeautyVibes #OOTD #FashionVi",
           "post_type": "Videos",
           "publish_time": "2026-01-10T11:00:23+0000",
@@ -7683,7 +7715,7 @@
         {
           "post_id": "122118392133012033",
           "page_id": "807965705726273",
-          "page_name": null,
+          "page_name": "Juankada Sena",
           "title": "\ud835\udc0b\ud835\udc1a\ud835\udc21\ud835\udc1a\ud835\udc2d \ud835\udc2c\ud835\udc22\ud835\udc25\ud835\udc1a \ud835\udc30\ud835\udc1a\ud835\udc25\ud835\udc1a \ud835\udc27\ud835\udc20...\ud83e\udd2d\ud83e\udd2d\n\n#JuanababeSena #Juanabies #Followme #TagAFriend #OopsMoment #KulitanLang",
           "post_type": "Videos",
           "publish_time": "2026-01-10T08:00:14+0000",
@@ -7697,7 +7729,7 @@
         {
           "post_id": "122118769329012033",
           "page_id": "807965705726273",
-          "page_name": null,
+          "page_name": "Juankada Sena",
           "title": "\ud835\udc09\ud835\udc14\ud835\udc00\ud835\udc0d\ud835\udc00\ud835\udc01\ud835\udc08\ud835\udc04\ud835\udc12, \ud835\udfd1\ud835\udfce\ud835\udc0a \ud835\udc0d\ud835\udc00 \ud835\udc13\ud835\udc00\ud835\udc18\ud835\udc0e!!! \ud83d\ude2d\ud83d\udd25\n\n#JuanababeSena #Juanabies #Followme #TagAFriend #30KStrong #RoadToMore",
           "post_type": "Photos",
           "publish_time": "2026-01-14T02:05:02+0000",
@@ -7711,7 +7743,7 @@
         {
           "post_id": "122118588807012033",
           "page_id": "807965705726273",
-          "page_name": null,
+          "page_name": "Juankada Sena",
           "title": "\ud835\udc0a\ud835\udc1a\ud835\udc24\ud835\udc1a\ud835\udc22\ud835\udc27 \ud835\udc1b\ud835\udc1a \ud835\udc28 \ud835\udc26\ud835\udc1a\ud835\udc24\ud835\udc22\ud835\udc24\ud835\udc22\ud835\udc29\ud835\udc1a\ud835\udc20 \ud835\udc1c\ud835\udc21\ud835\udc22\ud835\udc24\ud835\udc1a\ud835\udc21\ud835\udc1a\ud835\udc27? \ud83c\udf7d\n\n#JuanababeSena #Juanabies #Followme #TagAFriend #FoodTalk",
           "post_type": "Videos",
           "publish_time": "2026-01-12T05:06:52+0000",
@@ -7725,7 +7757,7 @@
         {
           "post_id": "122118522561012033",
           "page_id": "807965705726273",
-          "page_name": null,
+          "page_name": "Juankada Sena",
           "title": "\ud835\udc09\ud835\udc2e\ud835\udc1a\ud835\udc27\ud835\udc1a\ud835\udc1b\ud835\udc22\ud835\udc1e\ud835\udc2c, \ud835\udc1c\ud835\udc28\ud835\udc26\ud835\udc1e \ud835\udc21\ud835\udc1e\ud835\udc2b\ud835\udc1e! \ud835\udc13\ud835\udc1e\ud835\udc25\ud835\udc25 \ud835\udc26\ud835\udc1e, \ud835\udc1a\ud835\udc27\ud835\udc28\ud835\udc27\ud835\udc20 \ud835\udc27\ud835\udc1a\ud835\udc29\ud835\udc1a\ud835\udc27\ud835\udc2c\ud835\udc22\ud835\udc27 \ud835\udc27\ud835\udc22\ud835\udc32\ud835\udc28? \ud83d\udc96\n\n#JuanababeSena #Juanabies #Followme #TagAFriend #SpotItChallenge #FunVibes",
           "post_type": "Videos",
           "publish_time": "2026-01-11T14:00:19+0000",
@@ -7739,7 +7771,7 @@
         {
           "post_id": "122118589077012033",
           "page_id": "807965705726273",
-          "page_name": null,
+          "page_name": "Juankada Sena",
           "title": "\ud835\udc08\ud835\udc24\ud835\udc28\ud835\udc2d-\ud835\udc29\ud835\udc1a\ud835\udc27\ud835\udc22\ud835\udc27\ud835\udc20\ud835\udc22\ud835\udc27 \ud835\udc27\ud835\udc20 \ud835\udc04\ud835\udc00! \ud83d\udc40\ud83d\udd25\n\n#JuanababeSena #Juanabies #Followme #TagAFriend #IkotPaningin #NahuliKa",
           "post_type": "Videos",
           "publish_time": "2026-01-12T14:00:18+0000",
@@ -7753,7 +7785,7 @@
         {
           "post_id": "122118526491012033",
           "page_id": "807965705726273",
-          "page_name": null,
+          "page_name": "Juankada Sena",
           "title": "\ud835\udc04\ud835\udc1e\ud835\udc27\ud835\udc22\ud835\udc1e \ud835\udc0c\ud835\udc1e\ud835\udc1e\ud835\udc27\ud835\udc22\ud835\udc1e \ud835\udc30\ud835\udc22\ud835\udc2d\ud835\udc21 Juankada Evo \ud83d\ude0e\ud83d\udd25\n\n#JuanababeSena #Juanabies #Followme #TagAFriend #EenieMeenie #JuankadaEvo",
           "post_type": "Videos",
           "publish_time": "2026-01-12T00:00:33+0000",
@@ -7767,7 +7799,7 @@
         {
           "post_id": "122118495675012033",
           "page_id": "807965705726273",
-          "page_name": null,
+          "page_name": "Juankada Sena",
           "title": "\ud835\udc07\ud835\udc22\ud835\udc2c\ud835\udc2d\ud835\udc28\ud835\udc2b\ud835\udc32 \ud835\udc22\ud835\udc27 \ud835\udc02\ud835\udc21\ud835\udc22\ud835\udc27\ud835\udc1a\ud835\udc2d\ud835\udc28\ud835\udc30\ud835\udc27!\n\n#JuanababeSena #Juanabies #Followme #TagAFriend #Binondo #ChinatownManila",
           "post_type": "Videos",
           "publish_time": "2026-01-11T02:20:53+0000",
@@ -7785,7 +7817,7 @@
     {
       "post_id": "122118772107012033",
       "page_id": "807965705726273",
-      "page_name": null,
+      "page_name": "Juankada Sena",
       "title": "\ud835\udc09\ud835\udc2e\ud835\udc1a\ud835\udc27\ud835\udc1a\ud835\udc1b\ud835\udc22\ud835\udc1e\ud835\udc2c \ud835\udc2c\ud835\udc21\ud835\udc28\ud835\udc30 \ud835\udc2d\ud835\udc21\ud835\udc1e...\ud83d\ude0b\n\n#JuanababeSena #Juanabies #Followme #TagAFriend",
       "post_type": "Videos",
       "publish_time": "2026-01-14T05:00:27+0000",
@@ -7801,7 +7833,7 @@
     {
       "post_id": "122120234595023874",
       "page_id": "747721128429855",
-      "page_name": null,
+      "page_name": "Juankada Abi",
       "title": "oh my heart \ud83e\udd70",
       "post_type": "Text",
       "publish_time": "2026-01-14T04:31:16+0000",
@@ -7817,7 +7849,7 @@
     {
       "post_id": "122118769329012033",
       "page_id": "807965705726273",
-      "page_name": null,
+      "page_name": "Juankada Sena",
       "title": "\ud835\udc09\ud835\udc14\ud835\udc00\ud835\udc0d\ud835\udc00\ud835\udc01\ud835\udc08\ud835\udc04\ud835\udc12, \ud835\udfd1\ud835\udfce\ud835\udc0a \ud835\udc0d\ud835\udc00 \ud835\udc13\ud835\udc00\ud835\udc18\ud835\udc0e!!! \ud83d\ude2d\ud83d\udd25\n\n#JuanababeSena #Juanabies #Followme #TagAFriend #30KStrong #RoadToMore",
       "post_type": "Photos",
       "publish_time": "2026-01-14T02:05:02+0000",
@@ -7833,7 +7865,7 @@
     {
       "post_id": "122120215275023874",
       "page_id": "747721128429855",
-      "page_name": null,
+      "page_name": "Juankada Abi",
       "title": "AKO talaga yung NANALO dito eh!\ud83d\ude06\nhuyy charot lang ah!!\ud83d\ude02\n\nCONGRATULATIONS again po JUANKADA LOLITA ng TAYTAY RIZAL!\ud83e\udd73\n\n#Juanababeabi  #Juan365livestream #SupresaNiJuanWinner #winner #AllInJuanSaSaya \n#J",
       "post_type": "Videos",
       "publish_time": "2026-01-14T00:24:40+0000",
@@ -7854,45 +7886,45 @@
       "post_type": "Videos",
       "publish_time": "2026-01-13T16:26:49+0000",
       "permalink": "https://www.facebook.com/reel/1380314957455057/",
-      "reactions": 29,
-      "comments": 3,
+      "reactions": 30,
+      "comments": 4,
       "shares": 3,
       "views": 0,
       "reach": 0,
-      "engagement": 35,
-      "pes": 44.0
+      "engagement": 37,
+      "pes": 47.0
     },
     {
       "post_id": "122120177883023874",
       "page_id": "747721128429855",
-      "page_name": null,
+      "page_name": "Juankada Abi",
       "title": "",
       "post_type": "Text",
       "publish_time": "2026-01-13T15:14:19+0000",
       "permalink": "https://www.facebook.com/122117663979023874/posts/122120177883023874",
-      "reactions": 14,
-      "comments": 2,
-      "shares": 1,
+      "reactions": 16,
+      "comments": 3,
+      "shares": 2,
       "views": 0,
       "reach": 0,
-      "engagement": 17,
-      "pes": 21.0
+      "engagement": 21,
+      "pes": 28.0
     },
     {
       "post_id": "122118701865012033",
       "page_id": "807965705726273",
-      "page_name": null,
+      "page_name": "Juankada Sena",
       "title": "\ud835\udc03\ud835\udc1a\ud835\udc27\ud835\udc1c\ud835\udc1e\ud835\udc2b \ud835\udc1d\ud835\udc22\ud835\udc27 \ud835\udc29\ud835\udc1a\ud835\udc25\ud835\udc1a \ud835\udc2c\ud835\udc22 \ud835\udc0f\ud835\udc22\ud835\udc24\ud835\udc1a\ud835\udc1c\ud835\udc21\ud835\udc2e!\n\nTap \u2665\ufe0f at follow for more kulitan moments!\n\n#JuanaBabeSena #CommentYourThoughts #TagAFriend #Followme #Juan365 #AllInJuanSaSaya #Juan365livestream #JuanaBies #SweetEnergy ",
       "post_type": "Videos",
       "publish_time": "2026-01-13T14:00:45+0000",
       "permalink": "https://www.facebook.com/reel/769646368841197/",
-      "reactions": 36,
-      "comments": 1,
-      "shares": 0,
+      "reactions": 37,
+      "comments": 2,
+      "shares": 1,
       "views": 0,
       "reach": 0,
-      "engagement": 37,
-      "pes": 38.0
+      "engagement": 40,
+      "pes": 44.0
     },
     {
       "post_id": "122118982809013186",
@@ -7929,39 +7961,39 @@
     {
       "post_id": "122118701907012033",
       "page_id": "807965705726273",
-      "page_name": null,
+      "page_name": "Juankada Sena",
       "title": "\ud835\udc07\ud835\udc1a\ud835\udc25\ud835\udc22\ud835\udc24\ud835\udc1a \ud835\udc2b\ud835\udc22\ud835\udc2d\ud835\udc28 \ud835\udc2c\ud835\udc1a \ud835\udc2d\ud835\udc1a\ud835\udc1b\ud835\udc22 \ud835\udc24\ud835\udc28, \ud835\udc09\ud835\udc2e\ud835\udc1a\ud835\udc27\ud835\udc1a\ud835\udc1b\ud835\udc22\ud835\udc1e\ud835\udc2c! \ud83e\udd70\n\n#JuanababeSena #Juanabies #Followme #TagAFriend #ComeHere #CozyVibes",
       "post_type": "Videos",
       "publish_time": "2026-01-13T10:41:39+0000",
       "permalink": "https://www.facebook.com/reel/1385772063033863/",
-      "reactions": 56,
+      "reactions": 57,
       "comments": 6,
       "shares": 3,
       "views": 0,
       "reach": 0,
-      "engagement": 65,
-      "pes": 77.0
+      "engagement": 66,
+      "pes": 78.0
     },
     {
       "post_id": "858685950328307",
       "page_id": "807965705726273",
-      "page_name": null,
+      "page_name": "Juankada Sena",
       "title": "Live later juanabies 7pm\n\n#Juan365 #Juan365PH #AllInJuanSaSaya #JuanKada #JuanSports #25KFollowers #GratefulHeart",
       "post_type": "Videos",
       "publish_time": "2026-01-13T10:22:37+0000",
       "permalink": "https://www.facebook.com/122117062443012033/videos/858685950328307",
       "reactions": 28,
       "comments": 11,
-      "shares": 6,
+      "shares": 7,
       "views": 0,
       "reach": 0,
-      "engagement": 45,
-      "pes": 68.0
+      "engagement": 46,
+      "pes": 71.0
     },
     {
       "post_id": "122120148417023874",
       "page_id": "747721128429855",
-      "page_name": null,
+      "page_name": "Juankada Abi",
       "title": "Sunset looks extra beautiful today, doesn\u2019t it? \u2728\n\nPause for a moment and react \u2764\ufe0f if you feel it.\n\n#juanababeabi  #Juan365livestream\n#Juan365PH #SunsetMood #GoldenHourFeels  #PeacefulVibes  #Aestheti",
       "post_type": "Videos",
       "publish_time": "2026-01-13T09:10:20+0000",
@@ -7977,7 +8009,7 @@
     {
       "post_id": "122118619755012033",
       "page_id": "807965705726273",
-      "page_name": null,
+      "page_name": "Juankada Sena",
       "title": "\ud835\udc16\ud835\udc00\ud835\udc08\ud835\udc13!!!\n\n#JuanaBabeSena #CommentYourThoughts #TagAFriend #Followme #Juan365 #AllInJuanSaSaya #Juan365livestream #JuanaBies #SweetEnergy #DailyBeautyVibes",
       "post_type": "Videos",
       "publish_time": "2026-01-13T01:00:13+0000",
@@ -7993,7 +8025,7 @@
     {
       "post_id": "122120103567023874",
       "page_id": "747721128429855",
-      "page_name": null,
+      "page_name": "Juankada Abi",
       "title": "Peace looks good on me, like it\u2019s my favorite color \ud83e\udd0d\ud83c\udf43\n\nReact \u2764\ufe0f if you\u2019re choosing peace today\n\n #juanababeabi  #Juan365livestream #Juan365PH #SoftGirlEra #WhiteAesthetic #QuietMoments #SoftAesthetic",
       "post_type": "Text",
       "publish_time": "2026-01-13T00:09:44+0000",
@@ -8025,7 +8057,7 @@
     {
       "post_id": "122118589077012033",
       "page_id": "807965705726273",
-      "page_name": null,
+      "page_name": "Juankada Sena",
       "title": "\ud835\udc08\ud835\udc24\ud835\udc28\ud835\udc2d-\ud835\udc29\ud835\udc1a\ud835\udc27\ud835\udc22\ud835\udc27\ud835\udc20\ud835\udc22\ud835\udc27 \ud835\udc27\ud835\udc20 \ud835\udc04\ud835\udc00! \ud83d\udc40\ud83d\udd25\n\n#JuanababeSena #Juanabies #Followme #TagAFriend #IkotPaningin #NahuliKa",
       "post_type": "Videos",
       "publish_time": "2026-01-12T14:00:18+0000",
@@ -8041,7 +8073,7 @@
     {
       "post_id": "122120046045023874",
       "page_id": "747721128429855",
-      "page_name": null,
+      "page_name": "Juankada Abi",
       "title": "pinalaki yan sila ng sexbomb? \n\nheart \"\u2764\ufe0f\" react mo juankada kung kilala mo din sila \n\n #JUANABABEABI  #Juan365livestream #Juan365PH  #sexbomb  #trendingvideo  #viralvideochallenge  #reelschallengeree",
       "post_type": "Videos",
       "publish_time": "2026-01-12T12:03:08+0000",
@@ -8121,7 +8153,7 @@
     {
       "post_id": "122118589023012033",
       "page_id": "807965705726273",
-      "page_name": null,
+      "page_name": "Juankada Sena",
       "title": "\ud835\udc01\ud835\udc1e\ud835\udc21\ud835\udc22\ud835\udc27\ud835\udc1d \ud835\udc2d\ud835\udc21\ud835\udc1e \ud835\udc2c\ud835\udc1c\ud835\udc1e\ud835\udc27\ud835\udc1e \ud835\udc2f\ud835\udc22\ud835\udc1b\ud835\udc1e\ud835\udc2c \ud83c\udfa5\u2728\n\n#JuanababeSena #Juanabies #Followme #TagAFriend #JoinTheFun #BTSVibes",
       "post_type": "Videos",
       "publish_time": "2026-01-12T09:00:35+0000",
@@ -8137,7 +8169,7 @@
     {
       "post_id": "122118588807012033",
       "page_id": "807965705726273",
-      "page_name": null,
+      "page_name": "Juankada Sena",
       "title": "\ud835\udc0a\ud835\udc1a\ud835\udc24\ud835\udc1a\ud835\udc22\ud835\udc27 \ud835\udc1b\ud835\udc1a \ud835\udc28 \ud835\udc26\ud835\udc1a\ud835\udc24\ud835\udc22\ud835\udc24\ud835\udc22\ud835\udc29\ud835\udc1a\ud835\udc20 \ud835\udc1c\ud835\udc21\ud835\udc22\ud835\udc24\ud835\udc1a\ud835\udc21\ud835\udc1a\ud835\udc27? \ud83c\udf7d\n\n#JuanababeSena #Juanabies #Followme #TagAFriend #FoodTalk",
       "post_type": "Videos",
       "publish_time": "2026-01-12T05:06:52+0000",
@@ -8153,7 +8185,7 @@
     {
       "post_id": "122118526491012033",
       "page_id": "807965705726273",
-      "page_name": null,
+      "page_name": "Juankada Sena",
       "title": "\ud835\udc04\ud835\udc1e\ud835\udc27\ud835\udc22\ud835\udc1e \ud835\udc0c\ud835\udc1e\ud835\udc1e\ud835\udc27\ud835\udc22\ud835\udc1e \ud835\udc30\ud835\udc22\ud835\udc2d\ud835\udc21 Juankada Evo \ud83d\ude0e\ud83d\udd25\n\n#JuanababeSena #Juanabies #Followme #TagAFriend #EenieMeenie #JuankadaEvo",
       "post_type": "Videos",
       "publish_time": "2026-01-12T00:00:33+0000",
@@ -8169,7 +8201,7 @@
     {
       "post_id": "122118522561012033",
       "page_id": "807965705726273",
-      "page_name": null,
+      "page_name": "Juankada Sena",
       "title": "\ud835\udc09\ud835\udc2e\ud835\udc1a\ud835\udc27\ud835\udc1a\ud835\udc1b\ud835\udc22\ud835\udc1e\ud835\udc2c, \ud835\udc1c\ud835\udc28\ud835\udc26\ud835\udc1e \ud835\udc21\ud835\udc1e\ud835\udc2b\ud835\udc1e! \ud835\udc13\ud835\udc1e\ud835\udc25\ud835\udc25 \ud835\udc26\ud835\udc1e, \ud835\udc1a\ud835\udc27\ud835\udc28\ud835\udc27\ud835\udc20 \ud835\udc27\ud835\udc1a\ud835\udc29\ud835\udc1a\ud835\udc27\ud835\udc2c\ud835\udc22\ud835\udc27 \ud835\udc27\ud835\udc22\ud835\udc32\ud835\udc28? \ud83d\udc96\n\n#JuanababeSena #Juanabies #Followme #TagAFriend #SpotItChallenge #FunVibes",
       "post_type": "Videos",
       "publish_time": "2026-01-11T14:00:19+0000",
@@ -8185,7 +8217,7 @@
     {
       "post_id": "122119946229023874",
       "page_id": "747721128429855",
-      "page_name": null,
+      "page_name": "Juankada Abi",
       "title": "bagong hobby na ba ito? \n\ncomment mo naman juankada kung may bago kang discovery sa sarili mo \ud83d\ude09 \n\n #juanababeabi  #Juan365livestream #Juan365PH #AllInJuanSaSaya  #LoveAndArt  #weekendvibes  #artist  #",
       "post_type": "Videos",
       "publish_time": "2026-01-11T13:27:30+0000",
@@ -8217,7 +8249,7 @@
     {
       "post_id": "122119938315023874",
       "page_id": "747721128429855",
-      "page_name": null,
+      "page_name": "Juankada Abi",
       "title": "\ud835\udc13\ud835\udc1a\ud835\udc2b\ud835\udc1a \ud835\udc27\ud835\udc1a! \ud835\udc0c\ud835\udc1a\ud835\udc24\ud835\udc22-\ud835\udc2c\ud835\udc1a\ud835\udc32\ud835\udc1a \ud835\udc2c\ud835\udc1a Juan365 Live Stream\n\n#juanababe #TheResponsibleJuan #Juan365livestream #AllInJuanSaSaya #JuanKada #Juan365PH #juanababesena",
       "post_type": "Videos",
       "publish_time": "2026-01-11T12:03:34+0000",
@@ -8233,7 +8265,7 @@
     {
       "post_id": "122118533019012033",
       "page_id": "807965705726273",
-      "page_name": null,
+      "page_name": "Juankada Sena",
       "title": "\ud835\udc0b\ud835\udc1e\ud835\udc2d'\ud835\udc2c \ud835\udc20\ud835\udc28 \ud835\udc27\ud835\udc1a \ud835\udc09\ud835\udc2e\ud835\udc1a\ud835\udc27\ud835\udc1a\ud835\udc1b\ud835\udc22\ud835\udc1e\ud835\udc2c \ud835\udc2c\ud835\udc1a\ud835\udc26\ud835\udc1a\ud835\udc21\ud835\udc1a\ud835\udc27 \ud835\udc27\ud835\udc22\ud835\udc32\ud835\udc28 \ud835\udc27\ud835\udc1a \ud835\udc1a\ud835\udc24\ud835\udc28 \ud835\udc2c\ud835\udc1a \ud835\udc24\ud835\udc2e\ud835\udc25\ud835\udc22\ud835\udc2d\ud835\udc1a\ud835\udc27 \ud835\udc1a\ud835\udc2d \ud835\udc2d\ud835\udc1a\ud835\udc30\ud835\udc1a\ud835\udc27\ud835\udc1a\ud835\udc27!! \n\n#juanababesena #juanabies #followme\u30b7\u309a #TagAFriend",
       "post_type": "Videos",
       "publish_time": "2026-01-11T11:57:28+0000",
@@ -8281,7 +8313,7 @@
     {
       "post_id": "1164917212516071",
       "page_id": "807965705726273",
-      "page_name": null,
+      "page_name": "Juankada Sena",
       "title": "\ud835\udc02\ud835\udc28\ud835\udc27\ud835\udc20\ud835\udc2b\ud835\udc1a\ud835\udc2d\ud835\udc2e\ud835\udc25\ud835\udc1a\ud835\udc2d\ud835\udc22\ud835\udc28\ud835\udc27\ud835\udc2c, \ud835\udfd0\ud835\udfd3 \ud835\udc09\ud835\udc2e\ud835\udc1a\ud835\udc27\ud835\udc1a\ud835\udc1b\ud835\udc22\ud835\udc1e\ud835\udc2c! Juan365 Live Stream\n\n#Juan365 #Juan365PH #AllInJuanSaSaya #JuanKada #JuanSports #25KFollowers #GratefulHeart",
       "post_type": "Videos",
       "publish_time": "2026-01-11T10:04:47+0000",
@@ -8329,7 +8361,7 @@
     {
       "post_id": "122118510057012033",
       "page_id": "807965705726273",
-      "page_name": null,
+      "page_name": "Juankada Sena",
       "title": "\ud835\udc04\ud835\udc2f\ud835\udc1e\ud835\udc2b\ud835\udc32\ud835\udc2d\ud835\udc21\ud835\udc22\ud835\udc27\ud835\udc20 \ud835\udc1f\ud835\udc2e\ud835\udc27 \ud835\udc30\ud835\udc22\ud835\udc2d\ud835\udc21 Juankada Sabbie \ud83e\udd70\n\n#JuanababeSena #Juanabies #Followme #TagAFriend #JuankadaSabbie #GoodVibesOnly",
       "post_type": "Videos",
       "publish_time": "2026-01-11T06:01:49+0000",
@@ -8361,7 +8393,7 @@
     {
       "post_id": "122118495675012033",
       "page_id": "807965705726273",
-      "page_name": null,
+      "page_name": "Juankada Sena",
       "title": "\ud835\udc07\ud835\udc22\ud835\udc2c\ud835\udc2d\ud835\udc28\ud835\udc2b\ud835\udc32 \ud835\udc22\ud835\udc27 \ud835\udc02\ud835\udc21\ud835\udc22\ud835\udc27\ud835\udc1a\ud835\udc2d\ud835\udc28\ud835\udc30\ud835\udc27!\n\n#JuanababeSena #Juanabies #Followme #TagAFriend #Binondo #ChinatownManila",
       "post_type": "Videos",
       "publish_time": "2026-01-11T02:20:53+0000",
@@ -8377,7 +8409,7 @@
     {
       "post_id": "122118439491012033",
       "page_id": "807965705726273",
-      "page_name": null,
+      "page_name": "Juankada Sena",
       "title": "\ud835\udc11\ud835\udc0e\ud835\udc01\ud835\udc14\ud835\udc12\ud835\udc13 \ud835\udc0f\ud835\udc2b\ud835\udc1a\ud835\udc27\ud835\udc24!!\n\n#JuanababeSena #Juanabies #Followme #TagAFriend #ROBUSTPrank #PrankPH",
       "post_type": "Videos",
       "publish_time": "2026-01-10T14:01:18+0000",
@@ -8393,7 +8425,7 @@
     {
       "post_id": "122118350793012033",
       "page_id": "807965705726273",
-      "page_name": null,
+      "page_name": "Juankada Sena",
       "title": "\ud835\udc12\ud835\udc25\ud835\udc1a\ud835\udc32 \ud835\udc2d\ud835\udc21\ud835\udc1e \ud835\udc1d\ud835\udc1a\ud835\udc32, \ud835\udc09\ud835\udc2e\ud835\udc1a\ud835\udc27\ud835\udc1a\ud835\udc1b\ud835\udc22\ud835\udc1e\ud835\udc2c\ud83d\udc96\n\n #JuanaBabeSena #CommentYourThoughts #TagAFriend #Followme #Juanababes #Juan365 #AllInJuanSaSaya #Juan365livestream #JuanaBies #SweetEnergy #DailyBeautyVibes #OOTD #FashionVi",
       "post_type": "Videos",
       "publish_time": "2026-01-10T11:00:23+0000",
@@ -8441,7 +8473,7 @@
     {
       "post_id": "122118392133012033",
       "page_id": "807965705726273",
-      "page_name": null,
+      "page_name": "Juankada Sena",
       "title": "\ud835\udc0b\ud835\udc1a\ud835\udc21\ud835\udc1a\ud835\udc2d \ud835\udc2c\ud835\udc22\ud835\udc25\ud835\udc1a \ud835\udc30\ud835\udc1a\ud835\udc25\ud835\udc1a \ud835\udc27\ud835\udc20...\ud83e\udd2d\ud83e\udd2d\n\n#JuanababeSena #Juanabies #Followme #TagAFriend #OopsMoment #KulitanLang",
       "post_type": "Videos",
       "publish_time": "2026-01-10T08:00:14+0000",
@@ -8457,7 +8489,7 @@
     {
       "post_id": "122119813503023874",
       "page_id": "747721128429855",
-      "page_name": null,
+      "page_name": "Juankada Abi",
       "title": "REST DAY cancelled, HANGOVER activated \ud83c\udf7b\n\nComment \u201csame\u201d kung naka relate ka rin!\n\n#Juanababe #juanbabeabi #Juan365 #Juan365livestream #trend #HangoverDiaries #AdultingPH #FunnyMoments #PagodPeroLaban",
       "post_type": "Videos",
       "publish_time": "2026-01-10T06:33:06+0000",
@@ -8473,7 +8505,7 @@
     {
       "post_id": "122118369969012033",
       "page_id": "807965705726273",
-      "page_name": null,
+      "page_name": "Juankada Sena",
       "title": "\ud835\udc09\ud835\udc28\ud835\udc22\ud835\udc27 \ud835\udc27\ud835\udc1a \ud835\udc2c\ud835\udc1a \ud835\udc1f\ud835\udc2e\ud835\udc27, \ud835\udc09\ud835\udc2e\ud835\udc1a\ud835\udc27\ud835\udc1a\ud835\udc1b\ud835\udc22\ud835\udc1e\ud835\udc2c! \ud83d\udc96\n\n#juanababesena #juanabies #followme #tagafriend #JoinTheFun",
       "post_type": "Text",
       "publish_time": "2026-01-10T05:31:04+0000",
@@ -21245,13 +21277,13 @@
       {
         "month": "2026-01",
         "posts": 170,
-        "reactions": 27866,
-        "comments": 2992,
-        "shares": 1614,
+        "reactions": 27871,
+        "comments": 2995,
+        "shares": 1617,
         "views": 304745,
         "reach": 214866,
-        "engagement": 32472,
-        "avg_engagement": 191.0,
+        "engagement": 32483,
+        "avg_engagement": 191.1,
         "mom_change": -78.6
       },
       {
@@ -21297,14 +21329,14 @@
         "week_start": "2026-01-12",
         "week_end": "2026-01-14",
         "posts": 24,
-        "reactions": 947,
-        "comments": 288,
-        "shares": 147,
+        "reactions": 952,
+        "comments": 291,
+        "shares": 150,
         "views": 0,
         "reach": 0,
-        "engagement": 1382,
-        "avg_engagement": 57.6,
-        "wow_change": -91.4
+        "engagement": 1393,
+        "avg_engagement": 58.0,
+        "wow_change": -91.3
       },
       {
         "week": "2026-01",
@@ -21374,8 +21406,8 @@
         "day": "Tue",
         "day_num": 2,
         "posts": 132,
-        "total_engagement": 40733,
-        "avg_engagement": 308.6,
+        "total_engagement": 40744,
+        "avg_engagement": 308.7,
         "views": 558351,
         "reach": 387646,
         "is_best": false
@@ -21496,8 +21528,8 @@
         "posts": 42,
         "views": 18748,
         "reach": 11212,
-        "engagement": 2941,
-        "avg_engagement": 70.0
+        "engagement": 2943,
+        "avg_engagement": 70.1
       },
       {
         "rank": 8,
@@ -21509,6 +21541,28 @@
         "reach": 8583,
         "engagement": 2236,
         "avg_engagement": 63.9
+      },
+      {
+        "rank": 9,
+        "page_id": "807965705726273",
+        "name": "Juankada Sena",
+        "page_name": "Juankada Sena",
+        "posts": 19,
+        "views": 0,
+        "reach": 0,
+        "engagement": 1724,
+        "avg_engagement": 90.7
+      },
+      {
+        "rank": 10,
+        "page_id": "747721128429855",
+        "name": "Juankada Abi",
+        "page_name": "Juankada Abi",
+        "posts": 9,
+        "views": 0,
+        "reach": 0,
+        "engagement": 536,
+        "avg_engagement": 59.6
       }
     ],
     "postTypePerf": [
@@ -21526,7 +21580,7 @@
         "count": 435,
         "views": 777266,
         "reach": 551010,
-        "engagement": 85373,
+        "engagement": 85380,
         "avg_engagement": 196.3,
         "avg_views": 1786.8
       },
@@ -21544,7 +21598,7 @@
         "count": 102,
         "views": 39144,
         "reach": 28389,
-        "engagement": 7148,
+        "engagement": 7152,
         "avg_engagement": 70.1,
         "avg_views": 383.8
       },
@@ -21587,7 +21641,7 @@
       "posts_analyzed": 804,
       "posts_with_self_comment": 87,
       "total_self_comments": 113,
-      "total_organic_comments": 17754,
+      "total_organic_comments": 17757,
       "self_comment_rate": 0.6,
       "posts_with_self_pct": 10.8
     },
@@ -21642,16 +21696,16 @@
         "page_id": "731608473377029",
         "posts_with_comments": 39,
         "self_comments": 0,
-        "organic_comments": 659,
+        "organic_comments": 660,
         "posts_with_self": 0,
         "self_rate": 0.0
       },
       {
-        "page_name": null,
+        "page_name": "Juankada Abi",
         "page_id": "747721128429855",
         "posts_with_comments": 9,
         "self_comments": 0,
-        "organic_comments": 111,
+        "organic_comments": 112,
         "posts_with_self": 0,
         "self_rate": 0.0
       },
@@ -21674,11 +21728,11 @@
         "self_rate": 0.0
       },
       {
-        "page_name": null,
+        "page_name": "Juankada Sena",
         "page_id": "807965705726273",
         "posts_with_comments": 18,
         "self_comments": 0,
-        "organic_comments": 406,
+        "organic_comments": 407,
         "posts_with_self": 0,
         "self_rate": 0.0
       }
@@ -21800,7 +21854,7 @@
         "shares": 1744,
         "avg_pes": 957.7,
         "rank": 1,
-        "engagement_share": 59.5
+        "engagement_share": 58.9
       },
       {
         "page_id": "61580361006776",
@@ -21817,7 +21871,7 @@
         "shares": 2385,
         "avg_pes": 235.4,
         "rank": 2,
-        "engagement_share": 23.2
+        "engagement_share": 22.9
       },
       {
         "page_id": "61580716220863",
@@ -21851,7 +21905,7 @@
         "shares": 1396,
         "avg_pes": 224.7,
         "rank": 4,
-        "engagement_share": 3.2
+        "engagement_share": 3.1
       },
       {
         "page_id": "61580395595183",
@@ -21885,7 +21939,7 @@
         "shares": 219,
         "avg_pes": 191.8,
         "rank": 6,
-        "engagement_share": 2.4
+        "engagement_share": 2.3
       },
       {
         "page_id": "731608473377029",
@@ -21893,12 +21947,12 @@
         "page_name": "Juana Babe Jam",
         "fan_count": null,
         "posts": 43,
-        "engagement": 2941,
+        "engagement": 2943,
         "avg_engagement": 68.4,
         "views": 18748,
         "reach": 11212,
-        "reactions": 1954,
-        "comments": 659,
+        "reactions": 1955,
+        "comments": 660,
         "shares": 328,
         "avg_pes": 93.2,
         "rank": 7,
@@ -21919,7 +21973,41 @@
         "shares": 301,
         "avg_pes": 93.4,
         "rank": 8,
-        "engagement_share": 1.0
+        "engagement_share": 0.9
+      },
+      {
+        "page_id": "807965705726273",
+        "name": "Juankada Sena",
+        "page_name": "Juankada Sena",
+        "fan_count": null,
+        "posts": 19,
+        "engagement": 1724,
+        "avg_engagement": 90.7,
+        "views": 0,
+        "reach": 0,
+        "reactions": 1191,
+        "comments": 407,
+        "shares": 126,
+        "avg_pes": 125.4,
+        "rank": 9,
+        "engagement_share": 0.7
+      },
+      {
+        "page_id": "747721128429855",
+        "name": "Juankada Abi",
+        "page_name": "Juankada Abi",
+        "fan_count": null,
+        "posts": 9,
+        "engagement": 536,
+        "avg_engagement": 59.6,
+        "views": 0,
+        "reach": 0,
+        "reactions": 313,
+        "comments": 112,
+        "shares": 111,
+        "avg_pes": 96.7,
+        "rank": 10,
+        "engagement_share": 0.2
       }
     ],
     "postTypesByPage": {
@@ -22057,7 +22145,7 @@
         {
           "type": "Videos",
           "count": 35,
-          "engagement": 2256,
+          "engagement": 2258,
           "avg_engagement": 64.5
         },
         {
@@ -22083,8 +22171,8 @@
         {
           "type": "Text",
           "count": 3,
-          "engagement": 105,
-          "avg_engagement": 35.0
+          "engagement": 109,
+          "avg_engagement": 36.3
         }
       ],
       "748765068327821": [
@@ -22131,8 +22219,8 @@
         {
           "type": "Videos",
           "count": 17,
-          "engagement": 1586,
-          "avg_engagement": 93.3
+          "engagement": 1591,
+          "avg_engagement": 93.6
         },
         {
           "type": "Text",
