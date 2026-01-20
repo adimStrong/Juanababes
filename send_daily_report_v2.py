@@ -353,7 +353,12 @@ def load_page_tokens(project_dir: str) -> dict:
 
 
 def fetch_video_views(page_id: str, token: str, target_date: str) -> dict:
-    """Fetch video views for a page's videos on a specific date."""
+    """Fetch video views for a page's videos on a specific date.
+
+    Returns a dict mapping post_id (short form) -> views count.
+    The /videos endpoint returns a post_id field that matches the short form
+    of post IDs (the part after the underscore in pageid_postid format).
+    """
     video_views = {}
 
     try:
@@ -364,7 +369,7 @@ def fetch_video_views(page_id: str, token: str, target_date: str) -> dict:
         url = f"{GRAPH_API_BASE}/{page_id}/videos"
         params = {
             "access_token": token,
-            "fields": "id,created_time,views",
+            "fields": "id,created_time,views,post_id",
             "since": int(target_start_utc.timestamp()),
             "until": int(target_end_utc.timestamp()),
             "limit": 100
@@ -375,10 +380,11 @@ def fetch_video_views(page_id: str, token: str, target_date: str) -> dict:
 
         if "data" in data:
             for video in data["data"]:
-                video_id = video.get("id", "")
+                # Use post_id from video to match against posts
+                video_post_id = video.get("post_id", "")
                 views = video.get("views", 0)
-                if video_id and views:
-                    video_views[video_id] = views
+                if video_post_id and views:
+                    video_views[video_post_id] = views
     except Exception as e:
         pass
 
