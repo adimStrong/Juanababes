@@ -363,15 +363,17 @@ def fetch_video_views(page_id: str, token: str, target_date: str) -> dict:
 
     try:
         from datetime import timezone
-        target_start_utc = datetime.strptime(target_date, "%Y-%m-%d").replace(tzinfo=timezone.utc)
-        target_end_utc = target_start_utc + timedelta(days=1)
+        # Use Philippine timezone (UTC+8) for date range
+        PHT = timezone(timedelta(hours=8))
+        target_start_pht = datetime.strptime(target_date, "%Y-%m-%d").replace(tzinfo=PHT)
+        target_end_pht = target_start_pht + timedelta(days=1)
 
         url = f"{GRAPH_API_BASE}/{page_id}/videos"
         params = {
             "access_token": token,
             "fields": "id,created_time,views,post_id",
-            "since": int(target_start_utc.timestamp()),
-            "until": int(target_end_utc.timestamp()),
+            "since": int(target_start_pht.timestamp()),
+            "until": int(target_end_pht.timestamp()),
             "limit": 100
         }
 
@@ -392,13 +394,14 @@ def fetch_video_views(page_id: str, token: str, target_date: str) -> dict:
 
 
 def fetch_api_posts_for_date(tokens: dict, target_date: str) -> list:
-    """Fetch all posts from Facebook API for a specific date (UTC) with full data."""
+    """Fetch all posts from Facebook API for a specific date (PHT) with full data."""
     all_posts = []
 
-    # Use UTC timestamps - target_date is in UTC (matches how DB stores publish_time)
+    # Use Philippine timezone (UTC+8) - matches how users view posts locally
     from datetime import timezone
-    target_start_utc = datetime.strptime(target_date, "%Y-%m-%d").replace(tzinfo=timezone.utc)
-    target_end_utc = target_start_utc + timedelta(days=1)
+    PHT = timezone(timedelta(hours=8))
+    target_start_pht = datetime.strptime(target_date, "%Y-%m-%d").replace(tzinfo=PHT)
+    target_end_pht = target_start_pht + timedelta(days=1)
 
     # Extended fields to get full engagement data
     fields = [
@@ -420,8 +423,8 @@ def fetch_api_posts_for_date(tokens: dict, target_date: str) -> list:
         params = {
             "access_token": token,
             "fields": ",".join(fields),
-            "since": int(target_start_utc.timestamp()),
-            "until": int(target_end_utc.timestamp()),
+            "since": int(target_start_pht.timestamp()),
+            "until": int(target_end_pht.timestamp()),
             "limit": 100
         }
 
@@ -435,7 +438,15 @@ def fetch_api_posts_for_date(tokens: dict, target_date: str) -> list:
 
             posts = data.get("data", [])
             for post in posts:
-                created = post.get("created_time", "")[:10]
+                # Convert created_time from UTC to PHT for date comparison
+                created_utc = post.get("created_time", "")
+                if created_utc:
+                    # Parse UTC time and convert to PHT
+                    utc_dt = datetime.strptime(created_utc, "%Y-%m-%dT%H:%M:%S%z")
+                    pht_dt = utc_dt.astimezone(PHT)
+                    created = pht_dt.strftime("%Y-%m-%d")
+                else:
+                    created = ""
                 if created == target_date:
                     # Extract post_id (API returns "pageid_postid" format)
                     full_id = post.get("id", "")
@@ -468,7 +479,7 @@ def fetch_api_posts_for_date(tokens: dict, target_date: str) -> list:
                         "title": (post.get("message", "") or "")[:200],
                         "permalink": post.get("permalink_url", ""),
                         "post_type": post_type,
-                        "publish_time": post.get("created_time", ""),
+                        "publish_time": pht_dt.strftime("%Y-%m-%d %H:%M:%S"),  # Store in PHT
                         "reactions_total": reactions,
                         "comments_count": comments,
                         "shares_count": shares,
