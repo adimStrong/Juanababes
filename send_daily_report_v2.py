@@ -298,9 +298,8 @@ Posts: {monthly_avg['avg_posts']:.1f}/day | Engagement: {monthly_avg['avg_engage
     # Follower counts
     if follower_counts:
         total_followers = sum(p["followers"] for p in follower_counts)
-        message += f"\n\n<b>FOLLOWERS</b> (Total: {total_followers:,})\n"
+        message += f"\n\n<b>FOLLOWERS</b> ({total_followers:,} total)\n"
         for page in follower_counts:
-            # Shorten page name for display
             name = page["name"].replace("Juan365 ", "").replace("JuanKada ", "").replace("Juana Babe ", "")
             message += f"• {name}: {page['followers']:,}\n"
 
@@ -830,6 +829,10 @@ Engagement: {yesterday_stats['engagement']:,}
             month_top_posts,
             follower_counts
         )
+
+    # Add dashboard link
+    dashboard_url = f"https://{config['url']}"
+    message += f"\n\n<b>Dashboard:</b> <a href=\"{dashboard_url}\">{dashboard_url}</a>"
 
     # Add mentions if configured
     mentions = config.get("mentions", [])
