@@ -59,7 +59,7 @@ def save_post(page_id, post_data):
         page_id,
         post_data.get("message", "")[:200],
         post_data.get("permalink"),
-        post_data.get("post_type", "TEXT"),
+        post_data.get("post_type", "Text"),
         post_data.get("created_time"),
         post_data.get("reactions", 0),
         post_data.get("comments", 0),
@@ -77,13 +77,13 @@ def save_post(page_id, post_data):
 def classify_post(message):
     """Simple post type classification."""
     if not message:
-        return "TEXT"
+        return "Text"
     msg_lower = message.lower()
     if "video" in msg_lower or "watch" in msg_lower:
-        return "VIDEO"
+        return "Videos"
     elif "photo" in msg_lower or "pic" in msg_lower:
-        return "IMAGE"
-    return "TEXT"
+        return "Photos"
+    return "Text"
 
 
 def fetch_page(page_label):

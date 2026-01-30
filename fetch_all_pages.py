@@ -17,20 +17,22 @@ def classify_post_type(post):
 
     if post_type == "video":
         if "reel" in status_type:
-            return "REEL"
-        return "VIDEO"
+            return "Reels"
+        if "live" in status_type:
+            return "Live"
+        return "Videos"
     elif post_type == "photo":
-        return "IMAGE"
+        return "Photos"
     elif post_type == "link":
-        return "LINK"
+        return "Link"
     elif status_type == "added_photos":
-        return "IMAGE"
+        return "Photos"
     elif status_type == "added_video":
-        return "VIDEO"
+        return "Videos"
     elif status_type == "shared_story":
-        return "SHARE"
+        return "Share"
     else:
-        return "TEXT"
+        return "Text"
 
 
 # Load page tokens

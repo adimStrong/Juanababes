@@ -20,6 +20,31 @@ from models import ImportResult
 from config import COLUMN_MAPPING, EXPORTS_DIR, CSV_DOWNLOADS_DIR
 
 
+def normalize_post_type(post_type: str) -> str:
+    """Normalize post type to consistent format."""
+    if not post_type:
+        return 'Unknown'
+
+    # Map variations to standard names
+    mapping = {
+        'TEXT': 'Text',
+        'text': 'Text',
+        'VIDEO': 'Videos',
+        'video': 'Videos',
+        'videos': 'Videos',
+        'IMAGE': 'Photos',
+        'image': 'Photos',
+        'photo': 'Photos',
+        'photos': 'Photos',
+        'REEL': 'Reels',
+        'reel': 'Reels',
+        'LIVE': 'Live',
+        'live': 'Live',
+    }
+
+    return mapping.get(post_type, post_type)
+
+
 # Column name variations that Meta might use
 COLUMN_ALIASES = {
     'post_id': ['Post ID', 'PostID', 'post_id', 'id'],
@@ -247,7 +272,7 @@ def import_csv(
                                 page_id=page_id,
                                 title=get_cell(row, column_map, 'title'),
                                 description=get_cell(row, column_map, 'description'),
-                                post_type=get_cell(row, column_map, 'post_type'),
+                                post_type=normalize_post_type(get_cell(row, column_map, 'post_type')),
                                 publish_time=publish_time,
                                 permalink=get_cell(row, column_map, 'permalink'),
                                 is_crosspost=parse_bool(get_cell(row, column_map, 'is_crosspost', False)),
