@@ -4,8 +4,8 @@ Fetch missing posts from FB API that aren't in CSV data.
 CSV data is prioritized (has views/reach), API ONLY fills gaps for dates NOT in CSV.
 
 Usage:
-    python fetch_missing_posts.py              # With notifications
-    python fetch_missing_posts.py --no-notify  # Silent mode (no Telegram)
+    python fetch_missing_posts.py           # Normal mode (sends notifications)
+    python fetch_missing_posts.py --silent  # Silent mode (no notifications)
 """
 
 import json
@@ -16,20 +16,26 @@ import sys
 from datetime import datetime, timedelta
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-# Check for --no-notify flag
-SILENT_MODE = "--no-notify" in sys.argv or "--silent" in sys.argv
+# Import database function for duplicate prevention
+try:
+    from database import get_page_by_name
+except ImportError:
+    get_page_by_name = None
 
-# Telegram notifications
-if SILENT_MODE:
+# Telegram notifications - can be disabled with --silent flag
+TELEGRAM_ENABLED = "--silent" not in sys.argv and "--no-notify" not in sys.argv
+try:
+    from telegram_notifier import send_new_post_alert
+except ImportError:
     TELEGRAM_ENABLED = False
-    print("Silent mode: Telegram notifications disabled")
-else:
-    try:
-        from telegram_notifier import send_new_post_alert
-        TELEGRAM_ENABLED = True
-    except ImportError:
-        TELEGRAM_ENABLED = False
-        print("Warning: telegram_notifier not found, notifications disabled")
+
+
+def normalize_post_id(post_id):
+    """Extract pure post ID, stripping page ID prefix if present."""
+    post_id_str = str(post_id)
+    if '_' in post_id_str:
+        return post_id_str.split('_')[-1]
+    return post_id_str
 
 DATABASE_PATH = "data/juanbabes_analytics.db"
 
@@ -48,39 +54,6 @@ def get_db_page_ids():
     return page_ids
 
 
-def normalize_date(date_str):
-    """Convert date to YYYY-MM-DD format."""
-    if not date_str:
-        return None
-    # If already YYYY-MM-DD format
-    if len(date_str) >= 10 and date_str[4] == '-':
-        return date_str[:10]
-    # If MM/DD/YYYY format
-    if '/' in date_str:
-        parts = date_str.split('/')
-        if len(parts) >= 3:
-            month, day, year = parts[0], parts[1], parts[2][:4]
-            return f"{year}-{month.zfill(2)}-{day.zfill(2)}"
-    return date_str[:10]
-
-def get_csv_dates():
-    """Get all dates that have CSV data (posts with views)."""
-    conn = sqlite3.connect(DATABASE_PATH)
-    cursor = conn.cursor()
-    cursor.execute("""
-        SELECT DISTINCT substr(publish_time, 1, 10) as date
-        FROM posts
-        WHERE views_count > 0
-    """)
-    dates = set()
-    for row in cursor.fetchall():
-        normalized = normalize_date(row[0])
-        if normalized:
-            dates.add(normalized)
-    conn.close()
-    return dates
-
-
 def get_existing_post_ids():
     """Get all post IDs already in database."""
     conn = sqlite3.connect(DATABASE_PATH)
@@ -91,18 +64,18 @@ def get_existing_post_ids():
     return ids
 
 
-def fetch_posts_from_api(token, page_id, page_name, days_back=7):
+def fetch_posts_from_api(token, page_id, page_name, days_back=14):
     """Fetch recent posts from FB API."""
     since_date = datetime.now() - timedelta(days=days_back)
-    fields = "id,message,created_time,permalink_url"
+    fields = "id,message,created_time,permalink_url,reactions.summary(total_count),comments.summary(total_count),shares"
 
     all_posts = []
     url = f"https://graph.facebook.com/v21.0/{page_id}/posts"
+    # Use smaller limit to avoid "reduce data" API errors
     params = {
         "access_token": token,
         "fields": fields,
-        "limit": 100,
-        "since": int(since_date.timestamp())
+        "limit": 25
     }
 
     while True:
@@ -134,13 +107,30 @@ def fetch_posts_from_api(token, page_id, page_name, days_back=7):
     return all_posts
 
 
+def extract_post_details(post):
+    """Extract reactions, comments, shares, post_type from post data."""
+    reactions = post.get("reactions", {}).get("summary", {}).get("total_count", 0)
+    comments = post.get("comments", {}).get("summary", {}).get("total_count", 0)
+    shares = post.get("shares", {}).get("count", 0)
+    # Default to Videos since most content is video - attachments field removed due to API issues
+    post_type = "Videos"
+    return reactions, comments, shares, post_type
+
+
 def get_post_details(token, post_id):
-    """Get reactions, comments, shares for a post."""
+    """DEPRECATED - Returns zeros. Use extract_post_details instead."""
+    # This function no longer works due to API permission issues
+    # Kept for backwards compatibility but returns zeros
+    return 0, 0, 0, "Videos"
+
+
+def _old_get_post_details(token, post_id):
+    """Old implementation - kept for reference only."""
     try:
         url = f"https://graph.facebook.com/v21.0/{post_id}"
         params = {
             "access_token": token,
-            "fields": "reactions.summary(total_count),comments.summary(total_count),shares,attachments{media_type}"
+            "fields": "reactions.summary(total_count),comments.summary(total_count),shares"
         }
         resp = requests.get(url, params=params)
         data = resp.json()
@@ -223,14 +213,7 @@ def update_post_engagement(conn, post_id, reactions, comments, shares):
 def main():
     print("=" * 60)
     print("Fetching Missing Posts from FB API")
-    print("(API ONLY for dates NOT in CSV)")
     print("=" * 60)
-
-    # Get dates that have CSV data
-    csv_dates = get_csv_dates()
-    print(f"\nDates with CSV data: {len(csv_dates)}")
-    if csv_dates:
-        print(f"  CSV range: {min(csv_dates)} to {max(csv_dates)}")
 
     # Get existing post IDs
     existing_ids = get_existing_post_ids()
@@ -241,8 +224,8 @@ def main():
     print(f"Pages in database: {len(db_page_ids)}")
 
     conn = sqlite3.connect(DATABASE_PATH)
+    conn.row_factory = sqlite3.Row
     total_new = 0
-    total_skipped = 0
 
     for label, data in PAGE_TOKENS.items():
         page_id = data.get("page_id")
@@ -260,28 +243,23 @@ def main():
         posts = fetch_posts_from_api(token, page_id, page_name, days_back=7)
         print(f"  Found {len(posts)} posts from API")
 
-        # Filter to only new posts NOT in database
-        new_posts = [p for p in posts if p["id"] not in existing_ids]
+        # Filter to only new posts NOT in database (normalize IDs for comparison)
+        new_posts = [p for p in posts if normalize_post_id(p["id"]) not in existing_ids]
         print(f"  New posts not in database: {len(new_posts)}")
 
-        # Save only posts from dates NOT in CSV
+        # Save new posts (only skip if post already exists in DB)
         page_new = 0
-        page_skipped = 0
         for post in new_posts:
-            post_id = post["id"]
+            full_post_id = post["id"]
+            normalized_id = normalize_post_id(full_post_id)
             created_time = post.get("created_time", "")
             post_date = created_time[:10] if created_time else ""
 
-            # SKIP if this date has CSV data
-            if post_date in csv_dates:
-                page_skipped += 1
-                continue
+            reactions, comments, shares, post_type = extract_post_details(post)
 
-            reactions, comments, shares, post_type = get_post_details(token, post_id)
-
-            if save_post(conn, db_page_id, post_id, post, reactions, comments, shares, post_type):
+            if save_post(conn, db_page_id, normalized_id, post, reactions, comments, shares, post_type):
                 page_new += 1
-                print(f"  + Added ({post_date}): {post_id[:25]}...")
+                print(f"  + Added ({post_date}): {normalized_id[:25]}...")
 
                 # Send Telegram notification for new post
                 if TELEGRAM_ENABLED:
@@ -297,32 +275,25 @@ def main():
                     except Exception as e:
                         print(f"  -> Telegram error: {e}")
 
-            time.sleep(0.2)
-
         # Update existing API posts (refresh engagement data)
-        existing_posts = [p for p in posts if p["id"] in existing_ids]
+        existing_posts = [p for p in posts if normalize_post_id(p["id"]) in existing_ids]
         page_updated = 0
         for post in existing_posts:
-            post_id = post["id"]
-            reactions, comments, shares, post_type = get_post_details(token, post_id)
-            if update_post_engagement(conn, post_id, reactions, comments, shares):
+            normalized_id = normalize_post_id(post["id"])
+            reactions, comments, shares, post_type = extract_post_details(post)
+            if update_post_engagement(conn, normalized_id, reactions, comments, shares):
                 page_updated += 1
-            time.sleep(0.1)
 
         if page_updated > 0:
             print(f"  ~ Updated {page_updated} existing posts")
 
         total_new += page_new
-        total_skipped += page_skipped
-        if page_skipped > 0:
-            print(f"  Skipped {page_skipped} posts (dates covered by CSV)")
 
     conn.commit()
     conn.close()
 
     print("\n" + "=" * 60)
     print(f"DONE! Added {total_new} new posts from API")
-    print(f"Skipped {total_skipped} posts (dates already in CSV)")
     print("=" * 60)
 
 

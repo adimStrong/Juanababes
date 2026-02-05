@@ -3,7 +3,7 @@
 Export static JSON data for Vercel deployment.
 
 Run this after importing new CSV data to update the Vercel deployment.
-The output goes to frontend/public/data/analytics.json
+The output goes to frontend/public/data/analytics-v2.json
 
 Usage:
     python export_static_data.py
@@ -11,15 +11,32 @@ Usage:
 
 import json
 import sqlite3
-from datetime import datetime
+import hashlib
+import glob
+import os
+from datetime import datetime, timedelta
 from database import sync_metrics_to_posts
 
 DATABASE_PATH = "data/juanbabes_analytics.db"
-OUTPUT_PATH = "frontend/public/data/analytics.json"
+OUTPUT_PATH = "frontend/public/data/analytics-v2.json"
 
 
 def get_conn():
     return sqlite3.connect(DATABASE_PATH)
+
+
+def normalize_post_type_sql():
+    """SQL CASE expression to normalize post types."""
+    return """CASE
+        WHEN UPPER(post_type) IN ('IMAGE', 'PHOTO', 'PHOTOS') THEN 'Photos'
+        WHEN UPPER(post_type) IN ('VIDEO', 'VIDEOS') THEN 'Videos'
+        WHEN UPPER(post_type) = 'TEXT' THEN 'Text'
+        WHEN UPPER(post_type) IN ('LINK', 'LINKS') THEN 'Links'
+        WHEN UPPER(post_type) = 'LIVE' THEN 'Live'
+        WHEN UPPER(post_type) IN ('EVENT', 'EVENTS') THEN 'Events'
+        WHEN post_type IS NULL OR post_type = '' THEN 'Unknown'
+        ELSE post_type
+    END"""
 
 
 def export_stats():
@@ -198,10 +215,13 @@ def export_post_types():
     cursor.execute("SELECT DISTINCT page_id FROM posts WHERE reactions_total > 0")
     page_ids = [row[0] for row in cursor.fetchall()]
 
+    # Normalize post types (combine IMAGE/Photos, VIDEO/Videos, etc.)
+    type_expr = normalize_post_type_sql()
+
     # Aggregate post types
-    cursor.execute("""
+    cursor.execute(f"""
         SELECT
-            COALESCE(post_type, 'Unknown') as post_type,
+            {type_expr} as post_type,
             COUNT(*) as count,
             COALESCE(SUM(reactions_total), 0) as reactions,
             COALESCE(SUM(comments_count), 0) as comments,
@@ -210,7 +230,7 @@ def export_post_types():
             COALESCE(AVG(pes), 0) as avg_pes
         FROM posts
         WHERE reactions_total > 0 OR comments_count > 0 OR shares_count > 0
-        GROUP BY post_type
+        GROUP BY {type_expr}
         ORDER BY count DESC
     """)
 
@@ -232,9 +252,9 @@ def export_post_types():
     # Per-page post types
     by_page = {}
     for page_id in page_ids:
-        cursor.execute("""
+        cursor.execute(f"""
             SELECT
-                COALESCE(post_type, 'Unknown') as post_type,
+                {type_expr} as post_type,
                 COUNT(*) as count,
                 COALESCE(SUM(reactions_total), 0) as reactions,
                 COALESCE(SUM(comments_count), 0) as comments,
@@ -243,7 +263,7 @@ def export_post_types():
                 COALESCE(AVG(pes), 0) as avg_pes
             FROM posts
             WHERE page_id = ? AND (reactions_total > 0 OR comments_count > 0 OR shares_count > 0)
-            GROUP BY post_type
+            GROUP BY {type_expr}
             ORDER BY count DESC
         """, (page_id,))
 
@@ -414,54 +434,70 @@ def export_time_series():
         })
         prev_engagement = engagement
 
-    # Weekly data (last 4 weeks)
-    # Week expression: use strftime on the converted ISO date
-    week_expr = f"strftime('%Y-%W', {date_expr})"
-    cursor.execute(f"""
-        SELECT
-            {week_expr} as week,
-            MIN({date_expr}) as week_start,
-            MAX({date_expr}) as week_end,
-            COUNT(*) as post_count,
-            COALESCE(SUM(reactions_total), 0) as reactions,
-            COALESCE(SUM(comments_count), 0) as comments,
-            COALESCE(SUM(shares_count), 0) as shares,
-            COALESCE(SUM(views_count), 0) as views,
-            COALESCE(SUM(reach_count), 0) as reach,
-            COALESCE(SUM(total_engagement), 0) as engagement,
-            COALESCE(AVG(total_engagement), 0) as avg_engagement
-        FROM posts
-        WHERE publish_time IS NOT NULL
-            AND {date_expr} >= DATE('now', '-28 days')
-            AND (reactions_total > 0 OR comments_count > 0 OR shares_count > 0)
-        GROUP BY {week_expr}
-        ORDER BY week DESC
-        LIMIT 4
-    """)
+    # Weekly data (last 4 weeks) - proper 7-day periods
+    # Calculate 4 complete weeks going backwards from yesterday (today may have incomplete data)
+    today = datetime.now().date()
+    # Start from yesterday to ensure we have complete data
+    end_date = today - timedelta(days=1)
 
     weekly = []
     prev_weekly_engagement = None
-    rows = list(cursor.fetchall())
-    for row in reversed(rows):  # Oldest first for WoW calculation
-        engagement = row[9]
-        wow_change = None
-        if prev_weekly_engagement and prev_weekly_engagement > 0:
-            wow_change = round(((engagement - prev_weekly_engagement) / prev_weekly_engagement) * 100, 1)
+
+    for week_num in range(4):
+        # Calculate week boundaries (7 days each)
+        week_end = end_date - timedelta(days=week_num * 7)
+        week_start = week_end - timedelta(days=6)
+
+        week_start_str = week_start.strftime('%Y-%m-%d')
+        week_end_str = week_end.strftime('%Y-%m-%d')
+
+        cursor.execute(f"""
+            SELECT
+                COUNT(*) as post_count,
+                COALESCE(SUM(reactions_total), 0) as reactions,
+                COALESCE(SUM(comments_count), 0) as comments,
+                COALESCE(SUM(shares_count), 0) as shares,
+                COALESCE(SUM(views_count), 0) as views,
+                COALESCE(SUM(reach_count), 0) as reach,
+                COALESCE(SUM(total_engagement), 0) as engagement,
+                COALESCE(AVG(total_engagement), 0) as avg_engagement
+            FROM posts
+            WHERE publish_time IS NOT NULL
+                AND {date_expr} >= ?
+                AND {date_expr} <= ?
+                AND (reactions_total > 0 OR comments_count > 0 OR shares_count > 0)
+        """, (week_start_str, week_end_str))
+
+        row = cursor.fetchone()
+        engagement = row[6]
+
         weekly.append({
-            "week": row[0],
-            "week_start": row[1],
-            "week_end": row[2],
-            "posts": row[3],
-            "reactions": row[4],
-            "comments": row[5],
-            "shares": row[6],
-            "views": row[7],
-            "reach": row[8],
+            "week": f"Week {4 - week_num}",
+            "week_start": week_start_str,
+            "week_end": week_end_str,
+            "posts": row[0],
+            "reactions": row[1],
+            "comments": row[2],
+            "shares": row[3],
+            "views": row[4],
+            "reach": row[5],
             "engagement": engagement,
-            "avg_engagement": round(row[10], 1),
-            "wow_change": wow_change
+            "avg_engagement": round(row[7], 1),
+            "wow_change": None  # Will be calculated after
         })
-        prev_weekly_engagement = engagement
+
+    # Reverse so oldest is first, then calculate WoW changes
+    weekly = list(reversed(weekly))
+
+    # Calculate WoW changes (week-over-week)
+    for i, week in enumerate(weekly):
+        if i > 0 and weekly[i-1]['engagement'] > 0:
+            prev_eng = weekly[i-1]['engagement']
+            curr_eng = week['engagement']
+            week['wow_change'] = round(((curr_eng - prev_eng) / prev_eng) * 100, 1)
+
+    # Reverse back so most recent is first
+    weekly = list(reversed(weekly))
 
     # Day of week analysis
     dow_expr = f"CAST(strftime('%w', {date_expr}) AS INTEGER)"
@@ -542,10 +578,11 @@ def export_time_series():
             "avg_engagement": round(row[6], 1)
         })
 
-    # Post type performance
-    cursor.execute("""
+    # Post type performance (with normalized types)
+    type_expr = normalize_post_type_sql()
+    cursor.execute(f"""
         SELECT
-            COALESCE(post_type, 'Unknown') as post_type,
+            {type_expr} as post_type,
             COUNT(*) as count,
             COALESCE(SUM(views_count), 0) as views,
             COALESCE(SUM(reach_count), 0) as reach,
@@ -554,7 +591,7 @@ def export_time_series():
             COALESCE(AVG(views_count), 0) as avg_views
         FROM posts
         WHERE reactions_total > 0 OR comments_count > 0 OR shares_count > 0
-        GROUP BY post_type
+        GROUP BY {type_expr}
         ORDER BY avg_engagement DESC
     """)
 
@@ -702,16 +739,17 @@ def export_page_comparison():
         page["rank"] = i + 1
         page["engagement_share"] = round((page["engagement"] / total_engagement) * 100, 1) if total_engagement > 0 else 0
 
-    # Get post type distribution by page
-    cursor.execute("""
+    # Get post type distribution by page (normalized)
+    type_expr = normalize_post_type_sql()
+    cursor.execute(f"""
         SELECT
             p.page_id,
-            COALESCE(p.post_type, 'Unknown') as post_type,
+            {type_expr.replace('post_type', 'p.post_type')} as post_type,
             COUNT(*) as count,
             COALESCE(SUM(p.total_engagement), 0) as engagement,
             COALESCE(AVG(p.total_engagement), 0) as avg_engagement
         FROM posts p
-        GROUP BY p.page_id, p.post_type
+        GROUP BY p.page_id, {type_expr.replace('post_type', 'p.post_type')}
         ORDER BY p.page_id, count DESC
     """)
 
@@ -885,13 +923,14 @@ def export_all_posts():
     conn = get_conn()
     cursor = conn.cursor()
 
-    cursor.execute("""
+    type_expr = normalize_post_type_sql().replace('post_type', 'p.post_type')
+    cursor.execute(f"""
         SELECT
             p.post_id,
             p.page_id,
             pg.page_name,
             p.title,
-            p.post_type,
+            {type_expr} as post_type,
             p.publish_time,
             p.permalink,
             COALESCE(p.reactions_total, 0) as reactions,
@@ -939,6 +978,8 @@ def export_top_posts(limit=10):
     cursor.execute("SELECT DISTINCT page_id FROM posts WHERE reactions_total > 0")
     page_ids = [row[0] for row in cursor.fetchall()]
 
+    type_expr = normalize_post_type_sql().replace('post_type', 'p.post_type')
+
     # All pages top posts
     cursor.execute(f"""
         SELECT
@@ -946,7 +987,7 @@ def export_top_posts(limit=10):
             p.page_id,
             pg.page_name,
             p.title,
-            p.post_type,
+            {type_expr} as post_type,
             p.publish_time,
             p.permalink,
             COALESCE(p.reactions_total, 0) as reactions,
@@ -987,7 +1028,7 @@ def export_top_posts(limit=10):
                 p.page_id,
                 pg.page_name,
                 p.title,
-                p.post_type,
+                {type_expr} as post_type,
                 p.publish_time,
                 p.permalink,
                 COALESCE(p.reactions_total, 0) as reactions,
@@ -1093,10 +1134,20 @@ def main():
         json.dump(data, f, indent=2)
 
     print(f"\n[OK] Exported to: {OUTPUT_PATH}")
-    print("\nTo update Vercel:")
-    print("  git add frontend/public/data/analytics.json")
-    print("  git commit -m 'Update analytics data'")
-    print("  git push")
+
+    # Run pre-deploy verification
+    print("\n--- Running pre-deploy verification ---")
+    import subprocess
+    import sys
+    result = subprocess.run([sys.executable, 'smart_verify.py', '--pre-deploy'])
+
+    if result.returncode != 0:
+        print("\n[ERROR] Verification failed - Review issues before deploying!")
+    else:
+        print("\nTo update Vercel:")
+        print("  git add frontend/public/data/analytics-v2.json")
+        print("  git commit -m 'Update analytics data'")
+        print("  git push")
 
 
 if __name__ == "__main__":
