@@ -8,7 +8,8 @@ let staticData = null;
 
 async function loadStaticData() {
   if (!staticData) {
-    const response = await fetch('/data/analytics-v2.json');
+    // Cache-bust to get fresh data
+    const response = await fetch('/data/analytics-v2.json?t=' + Date.now());
     staticData = await response.json();
   }
   return staticData;
@@ -78,6 +79,19 @@ function normalizePostType(post) {
     return { ...post, post_type: 'Videos/Reels' };
   }
   return post;
+}
+
+// Normalize post field names for display
+function normalizePostFields(p) {
+  return {
+    ...p,
+    comments: p.comments ?? p.comments_count ?? 0,
+    reactions: p.reactions ?? p.reactions_total ?? 0,
+    shares: p.shares ?? p.shares_count ?? 0,
+    engagement: p.engagement ?? p.total_engagement ?? 0,
+    views: p.views ?? p.views_count ?? 0,
+    reach: p.reach ?? p.reach_count ?? 0,
+  };
 }
 
 const api = axios.create({
@@ -162,16 +176,55 @@ export const getDailyEngagement = async (days = 30, pageId = null, dateRange = {
   return api.get(`/stats/daily/?${params}`).then(res => res.data);
 };
 
-export const getPostTypeStats = async (pageId = null) => {
+export const getPostTypeStats = async (pageId = null, dateRange = {}) => {
   if (IS_PRODUCTION) {
     const data = await loadStaticData();
-    // Support per-page post type filtering
-    let postTypes;
-    if (pageId && data.postTypes.byPage && data.postTypes.byPage[pageId]) {
-      postTypes = data.postTypes.byPage[pageId];
-    } else {
-      postTypes = data.postTypes.all || data.postTypes;
+    const { startDate, endDate } = dateRange;
+
+    // Calculate from posts to include comments
+    let posts = data.posts || [];
+    if (pageId) {
+      posts = posts.filter(p => p.page_id === pageId);
     }
+
+    // Apply date filter
+    if (startDate || endDate) {
+      posts = posts.filter(p => {
+        const postDate = normalizeDate(p.publish_time);
+        if (!postDate) return true;
+        if (startDate && postDate < startDate) return false;
+        if (endDate && postDate > endDate) return false;
+        return true;
+      });
+    }
+
+    // Aggregate by post type
+    const typeStats = {};
+    posts.forEach(p => {
+      const type = p.post_type || 'UNKNOWN';
+      if (!typeStats[type]) {
+        typeStats[type] = {
+          post_type: type,
+          count: 0,
+          reactions: 0,
+          comments: 0,
+          shares: 0,
+          total_engagement: 0,
+        };
+      }
+      typeStats[type].count++;
+      typeStats[type].reactions += p.reactions || p.reactions_total || 0;
+      typeStats[type].comments += p.comments || p.comments_count || 0;
+      typeStats[type].shares += p.shares || p.shares_count || 0;
+      typeStats[type].total_engagement += p.engagement || p.total_engagement || 0;
+    });
+
+    // Calculate averages
+    const postTypes = Object.values(typeStats).map(pt => ({
+      ...pt,
+      avg_engagement: pt.count > 0 ? Math.round(pt.total_engagement / pt.count) : 0,
+    })).sort((a, b) => b.total_engagement - a.total_engagement);
+
     // Merge Videos and Reels into single category
     return mergeVideoReels(postTypes);
   }
@@ -179,18 +232,44 @@ export const getPostTypeStats = async (pageId = null) => {
   return api.get(`/stats/post-types/${params}`).then(res => res.data);
 };
 
-export const getTopPosts = async (limit = 10, metric = 'engagement', pageId = null) => {
+export const getTopPosts = async (limit = 10, metric = 'engagement', pageId = null, dateRange = {}) => {
   if (IS_PRODUCTION) {
     const data = await loadStaticData();
-    // Support per-page top posts filtering
+    const { startDate, endDate } = dateRange;
+
+    // If date range specified, calculate from all posts
+    if (startDate || endDate) {
+      let posts = (data.posts || []).map(p => normalizePostFields(normalizePostType(p)));
+
+      // Filter by page if specified
+      if (pageId) {
+        posts = posts.filter(p => p.page_id === pageId);
+      }
+
+      // Apply date filter
+      posts = posts.filter(p => {
+        const postDate = normalizeDate(p.publish_time);
+        if (!postDate) return true;
+        if (startDate && postDate < startDate) return false;
+        if (endDate && postDate > endDate) return false;
+        return true;
+      });
+
+      // Sort by metric and return top N
+      const sortKey = metric === 'engagement' ? 'engagement' : metric;
+      posts.sort((a, b) => (b[sortKey] || 0) - (a[sortKey] || 0));
+      return posts.slice(0, limit);
+    }
+
+    // No date range - use pre-calculated top posts
     let posts;
     if (pageId && data.topPosts.byPage && data.topPosts.byPage[pageId]) {
       posts = data.topPosts.byPage[pageId];
     } else {
       posts = data.topPosts.all || data.topPosts;
     }
-    // Normalize post_type
-    return posts.slice(0, limit).map(normalizePostType);
+    // Normalize post_type and field names
+    return posts.slice(0, limit).map(p => normalizePostFields(normalizePostType(p)));
   }
   const params = new URLSearchParams({ limit, metric });
   if (pageId) params.append('page', pageId);
@@ -200,8 +279,8 @@ export const getTopPosts = async (limit = 10, metric = 'engagement', pageId = nu
 export const getPosts = async (params = {}, dateRange = {}) => {
   if (IS_PRODUCTION) {
     const data = await loadStaticData();
-    // Normalize post_type (Videos/Reels -> Videos/Reels)
-    let posts = (data.posts || []).map(normalizePostType);
+    // Normalize post_type and field names
+    let posts = (data.posts || []).map(p => normalizePostFields(normalizePostType(p)));
 
     // Apply date range filter
     const { startDate, endDate } = dateRange;
@@ -255,44 +334,59 @@ export const getPages = async (dateRange = {}) => {
     const data = await loadStaticData();
     const { startDate, endDate } = dateRange;
 
-    // If no date filter, return pages as-is
-    if (!startDate && !endDate) {
-      return data.pages;
+    // Always aggregate from posts to ensure total_comments is calculated
+    let posts = (data.posts || []);
+
+    // Apply date filter if specified
+    if (startDate || endDate) {
+      posts = posts.filter(p => {
+        const postDate = normalizeDate(p.publish_time);
+        if (!postDate) return true;
+        if (startDate && postDate < startDate) return false;
+        if (endDate && postDate > endDate) return false;
+        return true;
+      });
     }
 
-    // Filter posts by date and recalculate page stats
-    let posts = data.posts || [];
-    posts = posts.filter(p => {
-      const postDate = normalizeDate(p.publish_time);
-      if (!postDate) return true;
-      if (startDate && postDate < startDate) return false;
-      if (endDate && postDate > endDate) return false;
-      return true;
-    });
-
     // Aggregate by page
-    const pageMap = {};
-    posts.forEach(post => {
-      const pageId = post.page_id;
-      if (!pageMap[pageId]) {
-        pageMap[pageId] = {
-          page_id: pageId,
-          page_name: post.page_name,
+    const pageStats = {};
+    posts.forEach(p => {
+      const pid = p.page_id;
+      if (!pageStats[pid]) {
+        // Get base page info from data.pages
+        const basePage = (data.pages || []).find(pg => pg.page_id === pid) || {};
+        pageStats[pid] = {
+          page_id: pid,
+          page_name: p.page_name || basePage.page_name,
+          name: p.page_name || basePage.page_name,
+          fan_count: basePage.fan_count || 0,
+          followers_count: basePage.followers_count || 0,
           post_count: 0,
-          total_engagement: 0,
+          total_views: 0,
+          total_reach: 0,
           total_reactions: 0,
           total_comments: 0,
           total_shares: 0,
+          total_engagement: 0,
         };
       }
-      pageMap[pageId].post_count++;
-      pageMap[pageId].total_engagement += (post.reactions || 0) + (post.comments || 0) + (post.shares || 0);
-      pageMap[pageId].total_reactions += post.reactions || 0;
-      pageMap[pageId].total_comments += post.comments || 0;
-      pageMap[pageId].total_shares += post.shares || 0;
+      pageStats[pid].post_count++;
+      pageStats[pid].total_views += p.views || p.views_count || 0;
+      pageStats[pid].total_reach += p.reach || p.reach_count || 0;
+      pageStats[pid].total_reactions += p.reactions || p.reactions_total || 0;
+      pageStats[pid].total_comments += p.comments || p.comments_count || 0;
+      pageStats[pid].total_shares += p.shares || p.shares_count || 0;
+      pageStats[pid].total_engagement += p.engagement || p.total_engagement || 0;
     });
 
-    return Object.values(pageMap).sort((a, b) => b.total_engagement - a.total_engagement);
+    // Calculate averages and sort by engagement
+    return Object.values(pageStats)
+      .map(p => ({
+        ...p,
+        avg_engagement: p.post_count > 0 ? Math.round(p.total_engagement / p.post_count) : 0,
+        avg_reach: p.post_count > 0 ? Math.round(p.total_reach / p.post_count) : 0,
+      }))
+      .sort((a, b) => b.total_engagement - a.total_engagement);
   }
   return api.get('/pages/').then(res => res.data);
 };
@@ -307,21 +401,33 @@ export const getOverlaps = async () => {
   return api.get('/overlaps/').then(res => res.data);
 };
 
-export const getDailyByPage = async (days = 60) => {
+export const getDailyByPage = async (days = 60, dateRange = {}) => {
   const data = await loadStaticData();
+  const { startDate, endDate } = dateRange;
   const pages = data.pages || [];
   const byPage = data.daily.byPage || {};
-  const allDaily = data.daily.all || [];
+  let allDaily = data.daily.all || [];
 
-  // Create a map of all dates from the last N days (no T+2 filter)
+  // Apply date filter if specified
+  if (startDate || endDate) {
+    allDaily = filterByDateRange(allDaily, startDate, endDate);
+  } else {
+    allDaily = allDaily.slice(-days);
+  }
+
+  // Create a map of all dates
   const dateMap = {};
-  allDaily.slice(-days).forEach(entry => {
+  allDaily.forEach(entry => {
     dateMap[entry.date] = { date: entry.date };
   });
 
   // Add each page's posts to the date map
   pages.forEach(page => {
-    const pageDaily = byPage[page.page_id] || [];
+    let pageDaily = byPage[page.page_id] || [];
+    // Apply date filter to page data as well
+    if (startDate || endDate) {
+      pageDaily = filterByDateRange(pageDaily, startDate, endDate);
+    }
     pageDaily.forEach(entry => {
       if (dateMap[entry.date]) {
         // Use short page name (e.g., "Ashley" instead of "Juana Babe Ashley")
@@ -340,10 +446,11 @@ export const getDailyByPage = async (days = 60) => {
   return { data: result, pageNames };
 };
 
-export const getTimeSeries = async () => {
+export const getTimeSeries = async (dateRange = {}) => {
   if (IS_PRODUCTION) {
     const data = await loadStaticData();
-    return data.timeSeries || {
+    const { startDate, endDate } = dateRange;
+    const timeSeries = data.timeSeries || {
       monthly: [],
       weekly: [],
       dayOfWeek: [],
@@ -351,6 +458,17 @@ export const getTimeSeries = async () => {
       postTypePerf: [],
       insights: []
     };
+
+    // If date range specified, filter the time series data
+    if (startDate || endDate) {
+      return {
+        ...timeSeries,
+        monthly: filterByDateRange(timeSeries.monthly || [], startDate, endDate, 'month'),
+        weekly: filterByDateRange(timeSeries.weekly || [], startDate, endDate, 'week'),
+      };
+    }
+
+    return timeSeries;
   }
   // For dev, calculate from daily data (simplified)
   return api.get('/stats/time-series/').then(res => res.data);
@@ -374,65 +492,81 @@ export const getPageComparison = async (dateRange = {}) => {
     const data = await loadStaticData();
     const { startDate, endDate } = dateRange;
 
-    // If no date filter, return as-is
-    if (!startDate && !endDate) {
-      return data.pageComparison || {
-        pages: [],
-        postTypesByPage: {},
-        dominantTypes: {}
-      };
+    // Always calculate from posts to ensure data is available
+    let posts = (data.posts || []);
+
+    // Apply date filter if specified
+    if (startDate || endDate) {
+      posts = posts.filter(p => {
+        const postDate = normalizeDate(p.publish_time);
+        if (!postDate) return true;
+        if (startDate && postDate < startDate) return false;
+        if (endDate && postDate > endDate) return false;
+        return true;
+      });
     }
 
-    // Filter posts by date and recalculate comparison
-    let posts = data.posts || [];
-    posts = posts.filter(p => {
-      const postDate = normalizeDate(p.publish_time);
-      if (!postDate) return true;
-      if (startDate && postDate < startDate) return false;
-      if (endDate && postDate > endDate) return false;
-      return true;
-    });
-
     // Aggregate by page
-    const pageMap = {};
+    const pageStats = {};
     const postTypesByPage = {};
 
-    posts.forEach(post => {
-      const pageId = post.page_id;
-      const postType = post.post_type || 'Unknown';
-
-      if (!pageMap[pageId]) {
-        pageMap[pageId] = {
-          page_id: pageId,
-          page_name: post.page_name,
-          post_count: 0,
-          total_engagement: 0,
+    posts.forEach(p => {
+      const pid = p.page_id;
+      if (!pageStats[pid]) {
+        // Get base page info for fan_count
+        const basePage = (data.pages || []).find(pg => pg.page_id === pid) || {};
+        pageStats[pid] = {
+          page_id: pid,
+          page_name: p.page_name,
+          posts: 0,
+          views: 0,
+          reach: 0,
+          reactions: 0,
+          comments: 0,
+          shares: 0,
+          engagement: 0,
+          fan_count: basePage.fan_count || 0,
         };
-        postTypesByPage[pageId] = {};
+        postTypesByPage[pid] = {};
       }
+      pageStats[pid].posts++;
+      pageStats[pid].views += p.views_count || p.views || 0;
+      pageStats[pid].reach += p.reach_count || p.reach || 0;
+      pageStats[pid].reactions += p.reactions_total || p.reactions || 0;
+      pageStats[pid].comments += p.comments_count || p.comments || 0;
+      pageStats[pid].shares += p.shares_count || p.shares || 0;
+      pageStats[pid].engagement += p.total_engagement || p.engagement || 0;
 
-      pageMap[pageId].post_count++;
-      pageMap[pageId].total_engagement += (post.reactions || 0) + (post.comments || 0) + (post.shares || 0);
-
-      if (!postTypesByPage[pageId][postType]) {
-        postTypesByPage[pageId][postType] = 0;
+      // Track post types
+      const ptype = p.post_type || 'Unknown';
+      if (!postTypesByPage[pid][ptype]) {
+        postTypesByPage[pid][ptype] = { type: ptype, count: 0, engagement: 0 };
       }
-      postTypesByPage[pageId][postType]++;
+      postTypesByPage[pid][ptype].count++;
+      postTypesByPage[pid][ptype].engagement += p.total_engagement || p.engagement || 0;
     });
 
-    // Calculate dominant types
+    // Calculate averages, sort, and add rankings
+    const totalEngagement = Object.values(pageStats).reduce((sum, p) => sum + p.engagement, 0);
+    const pages = Object.values(pageStats)
+      .map(p => ({
+        ...p,
+        avg_engagement: p.posts > 0 ? Math.round(p.engagement / p.posts) : 0,
+        engagement_share: totalEngagement > 0 ? Math.round((p.engagement / totalEngagement) * 100) : 0,
+      }))
+      .sort((a, b) => b.engagement - a.engagement)
+      .map((p, idx) => ({ ...p, rank: idx + 1 }));
+
+    // Convert postTypesByPage to arrays and find dominant types
+    const postTypesResult = {};
     const dominantTypes = {};
-    Object.keys(postTypesByPage).forEach(pageId => {
-      const types = postTypesByPage[pageId];
-      const dominant = Object.entries(types).sort((a, b) => b[1] - a[1])[0];
-      dominantTypes[pageId] = dominant ? dominant[0] : 'Unknown';
+    Object.keys(postTypesByPage).forEach(pid => {
+      const types = Object.values(postTypesByPage[pid]).sort((a, b) => b.count - a.count);
+      postTypesResult[pid] = types;
+      dominantTypes[pid] = types[0] || { type: 'N/A' };
     });
 
-    return {
-      pages: Object.values(pageMap).sort((a, b) => b.total_engagement - a.total_engagement),
-      postTypesByPage,
-      dominantTypes
-    };
+    return { pages, postTypesByPage: postTypesResult, dominantTypes };
   }
   return api.get('/stats/page-comparison/').then(res => res.data);
 };
@@ -444,7 +578,7 @@ export const getDateBoundaries = async () => {
     if (posts.length === 0) return { minDate: null, maxDate: null };
 
     const dates = posts
-      .map(p => normalizeDate(p.publish_time))
+      .map(p => p.publish_time?.slice(0, 10))
       .filter(d => d)
       .sort();
 
@@ -453,7 +587,7 @@ export const getDateBoundaries = async () => {
       maxDate: dates[dates.length - 1]
     };
   }
-  return api.get('/stats/date-boundaries/').then(res => res.data);
+  return { minDate: null, maxDate: null };
 };
 
 export default api;
