@@ -12,6 +12,7 @@ API is the source of truth for post identity.
 import csv
 import sqlite3
 import os
+import hashlib
 from datetime import datetime, timedelta
 from glob import glob
 
@@ -59,7 +60,7 @@ def import_csv(filepath):
     cursor = conn.cursor()
 
     updated = 0
-    not_found = 0
+    created = 0
     skipped = 0
 
     # Build page_name -> page_id lookup from DB
@@ -82,13 +83,15 @@ def import_csv(filepath):
             # Resolve page_id by name (avoids E+ page_id issue)
             page_id = page_lookup.get(page_name.lower())
             if not page_id:
-                # Try partial match
+                # Try partial match (strip spaces for fuzzy compare)
+                csv_stripped = page_name.lower().replace(" ", "")
                 for name, pid in page_lookup.items():
-                    if page_name.lower() in name or name in page_name.lower():
+                    db_stripped = name.replace(" ", "")
+                    if csv_stripped in db_stripped or db_stripped in csv_stripped:
                         page_id = pid
                         break
             if not page_id:
-                not_found += 1
+                skipped += 1
                 continue
 
             # Parse time with +8h offset
@@ -114,12 +117,12 @@ def import_csv(filepath):
             """, (page_id, time_prefix))
             match = cursor.fetchone()
 
-            # Fallback: fuzzy time match (+/-3 minutes)
+            # Fallback: fuzzy time match (+/-10 minutes)
             if not match:
                 from datetime import datetime as dt2
                 try:
                     base = dt2.fromisoformat(publish_time)
-                    for offset_min in [-1, 1, -2, 2, -3, 3]:
+                    for offset_min in [-1, 1, -2, 2, -3, 3, -4, 4, -5, 5, -6, 6, -7, 7, -8, 8, -9, 9, -10, 10]:
                         tp = (base + timedelta(minutes=offset_min)).isoformat()[:16]
                         cursor.execute("""
                             SELECT post_id FROM posts
@@ -152,6 +155,37 @@ def import_csv(filepath):
                 """, (page_id, title))
                 match = cursor.fetchone()
 
+            # Fallback: closest time match on same date (within 60 min window)
+            if not match:
+                from datetime import datetime as dt2
+                try:
+                    base = dt2.fromisoformat(publish_time)
+                    date_part = publish_time[:10]
+                    cursor.execute("""
+                        SELECT post_id, publish_time FROM posts
+                        WHERE page_id = ? AND SUBSTR(publish_time, 1, 10) = ?
+                        AND post_id NOT IN (
+                            SELECT post_id FROM posts
+                            WHERE views_count > 0
+                        )
+                    """, (page_id, date_part))
+                    candidates = cursor.fetchall()
+                    best_match = None
+                    best_diff = 3600  # 60 min max
+                    for cand in candidates:
+                        try:
+                            cand_time = dt2.fromisoformat(cand['publish_time'].replace('+0000', ''))
+                            diff = abs((cand_time - base).total_seconds())
+                            if diff < best_diff:
+                                best_diff = diff
+                                best_match = cand
+                        except:
+                            pass
+                    if best_match:
+                        match = best_match
+                except:
+                    pass
+
             if match:
                 matched_post_id = match['post_id']
                 total_engagement = reactions + comments + shares
@@ -171,17 +205,58 @@ def import_csv(filepath):
                       total_engagement, pes, matched_post_id))
                 updated += 1
             else:
-                not_found += 1
+                # CREATE post from CSV data (for posts API can't reach)
+                # Generate deterministic post ID from page_id + publish_time
+                id_seed = f"{page_id}_{publish_time}"
+                synthetic_id = f"csv_{hashlib.md5(id_seed.encode()).hexdigest()[:12]}"
+
+                # Check if this synthetic ID already exists
+                cursor.execute("SELECT post_id FROM posts WHERE post_id = ?", (synthetic_id,))
+                if cursor.fetchone():
+                    # Already inserted from a previous CSV import run
+                    updated += 1
+                    cursor.execute("""
+                        UPDATE posts SET
+                            views_count = MAX(COALESCE(views_count, 0), ?),
+                            reach_count = MAX(COALESCE(reach_count, 0), ?),
+                            reactions_total = MAX(COALESCE(reactions_total, 0), ?),
+                            comments_count = MAX(COALESCE(comments_count, 0), ?),
+                            shares_count = MAX(COALESCE(shares_count, 0), ?),
+                            total_engagement = MAX(COALESCE(total_engagement, 0), ?),
+                            pes = MAX(COALESCE(pes, 0), ?)
+                        WHERE post_id = ?
+                    """, (views, reach, reactions, comments, shares,
+                          reactions + comments + shares,
+                          (reactions * 1.0) + (comments * 2.0) + (shares * 3.0),
+                          synthetic_id))
+                else:
+                    total_engagement = reactions + comments + shares
+                    pes = (reactions * 1.0) + (comments * 2.0) + (shares * 3.0)
+                    post_type = row.get("Type", "Videos")
+                    cursor.execute("""
+                        INSERT INTO posts
+                        (post_id, page_id, title, post_type, publish_time,
+                         views_count, reach_count,
+                         reactions_total, comments_count, shares_count,
+                         total_engagement, pes, fetched_at)
+                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    """, (
+                        synthetic_id, page_id, title, post_type,
+                        publish_time + "+0000" if "+0000" not in publish_time else publish_time,
+                        views, reach, reactions, comments, shares,
+                        total_engagement, pes, datetime.now().isoformat()
+                    ))
+                    created += 1
 
     conn.commit()
     conn.close()
 
     print(f"  Updated {updated} posts with views/reach data")
-    if not_found > 0:
-        print(f"  {not_found} CSV rows had no matching DB post (not yet fetched via API)")
+    if created > 0:
+        print(f"  Created {created} new posts from CSV (not in API)")
     if skipped > 0:
         print(f"  {skipped} rows skipped (missing data)")
-    return updated
+    return updated + created
 
 
 def main():
