@@ -4,17 +4,17 @@
       "total_posts": 1243,
       "total_pages": 5,
       "all_pages": 5,
-      "total_reactions": 320917,
-      "total_comments": 24375,
-      "total_shares": 13509,
-      "total_engagement": 358797,
-      "total_pes": 327519.0,
-      "total_views": 3972509,
-      "total_reach": 2938673,
-      "avg_engagement": 288.7,
-      "avg_pes": 263.5,
-      "avg_views": 3195.9,
-      "avg_reach": 2364.2,
+      "total_reactions": 321030,
+      "total_comments": 24425,
+      "total_shares": 13518,
+      "total_engagement": 358969,
+      "total_pes": 368511.0,
+      "total_views": 3978343,
+      "total_reach": 2943895,
+      "avg_engagement": 288.8,
+      "avg_pes": 296.5,
+      "avg_views": 3200.6,
+      "avg_reach": 2368.4,
       "date_range_start": "2025-09-08",
       "date_range_end": "2026-02-14"
     },
@@ -27,11 +27,11 @@
         "total_comments": 2469,
         "total_shares": 1697,
         "total_engagement": 9583,
-        "total_pes": 0.0,
+        "total_pes": 12796.0,
         "total_views": 50090,
         "total_reach": 25564,
         "avg_engagement": 124.5,
-        "avg_pes": 0.0,
+        "avg_pes": 166.2,
         "avg_views": 650.5,
         "avg_reach": 332.0,
         "date_range_start": "2025-10-02",
@@ -41,17 +41,17 @@
         "total_posts": 170,
         "total_pages": 1,
         "all_pages": 1,
-        "total_reactions": 10619,
-        "total_comments": 3216,
-        "total_shares": 1877,
-        "total_engagement": 15711,
-        "total_pes": 19324.0,
-        "total_views": 100549,
-        "total_reach": 58768,
-        "avg_engagement": 92.4,
-        "avg_pes": 113.7,
-        "avg_views": 591.5,
-        "avg_reach": 345.7,
+        "total_reactions": 10657,
+        "total_comments": 3219,
+        "total_shares": 1879,
+        "total_engagement": 15754,
+        "total_pes": 22817.0,
+        "total_views": 102063,
+        "total_reach": 60208,
+        "avg_engagement": 92.7,
+        "avg_pes": 134.2,
+        "avg_views": 600.4,
+        "avg_reach": 354.2,
         "date_range_start": "2025-09-08",
         "date_range_end": "2026-02-14"
       },
@@ -59,17 +59,17 @@
         "total_posts": 263,
         "total_pages": 1,
         "all_pages": 1,
-        "total_reactions": 16113,
-        "total_comments": 6046,
+        "total_reactions": 16138,
+        "total_comments": 6079,
         "total_shares": 3173,
-        "total_engagement": 25331,
-        "total_pes": 33128.0,
-        "total_views": 243516,
-        "total_reach": 114909,
-        "avg_engagement": 96.3,
-        "avg_pes": 126.0,
-        "avg_views": 925.9,
-        "avg_reach": 436.9,
+        "total_engagement": 25388,
+        "total_pes": 37858.0,
+        "total_views": 246949,
+        "total_reach": 118075,
+        "avg_engagement": 96.5,
+        "avg_pes": 143.9,
+        "avg_views": 939.0,
+        "avg_reach": 449.0,
         "date_range_start": "2025-09-08",
         "date_range_end": "2026-02-13"
       },
@@ -81,11 +81,11 @@
         "total_comments": 5004,
         "total_shares": 2553,
         "total_engagement": 158543,
-        "total_pes": 148404.0,
+        "total_pes": 168269.0,
         "total_views": 2060782,
         "total_reach": 1536869,
         "avg_engagement": 587.2,
-        "avg_pes": 549.6,
+        "avg_pes": 623.2,
         "avg_views": 7632.5,
         "avg_reach": 5692.1,
         "date_range_start": "2025-09-12",
@@ -95,17 +95,17 @@
         "total_posts": 463,
         "total_pages": 1,
         "all_pages": 1,
-        "total_reactions": 137781,
-        "total_comments": 7640,
-        "total_shares": 4209,
-        "total_engagement": 149629,
-        "total_pes": 126663.0,
-        "total_views": 1517572,
-        "total_reach": 1202563,
-        "avg_engagement": 323.2,
-        "avg_pes": 273.6,
-        "avg_views": 3277.7,
-        "avg_reach": 2597.3,
+        "total_reactions": 137831,
+        "total_comments": 7654,
+        "total_shares": 4216,
+        "total_engagement": 149701,
+        "total_pes": 126771.0,
+        "total_views": 1518459,
+        "total_reach": 1203179,
+        "avg_engagement": 323.3,
+        "avg_pes": 273.8,
+        "avg_views": 3279.6,
+        "avg_reach": 2598.7,
         "date_range_start": "2025-09-09",
         "date_range_end": "2026-02-14"
       }
@@ -124,7 +124,7 @@
       "total_shares": 2553,
       "total_engagement": 158543,
       "avg_engagement": 587.2,
-      "avg_pes": 549.6,
+      "avg_pes": 623.2,
       "total_views": 2060782,
       "total_reach": 1536869
     },
@@ -135,14 +135,14 @@
       "fan_count": 59023,
       "followers_count": 59023,
       "post_count": 463,
-      "total_reactions": 137781,
-      "total_comments": 7640,
-      "total_shares": 4209,
-      "total_engagement": 149629,
-      "avg_engagement": 323.2,
-      "avg_pes": 273.6,
-      "total_views": 1517572,
-      "total_reach": 1202563
+      "total_reactions": 137831,
+      "total_comments": 7654,
+      "total_shares": 4216,
+      "total_engagement": 149701,
+      "avg_engagement": 323.3,
+      "avg_pes": 273.8,
+      "total_views": 1518459,
+      "total_reach": 1203179
     },
     {
       "page_id": "747721128429855",
@@ -151,14 +151,14 @@
       "fan_count": 1360,
       "followers_count": 4972,
       "post_count": 263,
-      "total_reactions": 16113,
-      "total_comments": 6046,
+      "total_reactions": 16138,
+      "total_comments": 6079,
       "total_shares": 3173,
-      "total_engagement": 25331,
-      "avg_engagement": 96.3,
-      "avg_pes": 126.0,
-      "total_views": 243516,
-      "total_reach": 114909
+      "total_engagement": 25388,
+      "avg_engagement": 96.5,
+      "avg_pes": 143.9,
+      "total_views": 246949,
+      "total_reach": 118075
     },
     {
       "page_id": "731608473377029",
@@ -167,14 +167,14 @@
       "fan_count": 4178,
       "followers_count": 4178,
       "post_count": 170,
-      "total_reactions": 10619,
-      "total_comments": 3216,
-      "total_shares": 1877,
-      "total_engagement": 15711,
-      "avg_engagement": 92.4,
-      "avg_pes": 113.7,
-      "total_views": 100549,
-      "total_reach": 58768
+      "total_reactions": 10657,
+      "total_comments": 3219,
+      "total_shares": 1879,
+      "total_engagement": 15754,
+      "avg_engagement": 92.7,
+      "avg_pes": 134.2,
+      "total_views": 102063,
+      "total_reach": 60208
     },
     {
       "page_id": "61580479407070",
@@ -188,7 +188,7 @@
       "total_shares": 1697,
       "total_engagement": 9583,
       "avg_engagement": 124.5,
-      "avg_pes": 0.0,
+      "avg_pes": 166.2,
       "total_views": 50090,
       "total_reach": 25564
     }
@@ -198,12 +198,12 @@
       {
         "post_type": "Videos",
         "count": 700,
-        "reactions": 167017,
-        "comments": 14604,
-        "shares": 8429,
-        "total_engagement": 190047,
-        "avg_engagement": 271.5,
-        "avg_pes": 241.0
+        "reactions": 167130,
+        "comments": 14654,
+        "shares": 8438,
+        "total_engagement": 190219,
+        "avg_engagement": 271.7,
+        "avg_pes": 260.1
       },
       {
         "post_type": "Photos",
@@ -213,7 +213,7 @@
         "shares": 2878,
         "total_engagement": 26275,
         "avg_engagement": 92.2,
-        "avg_pes": 96.1
+        "avg_pes": 125.8
       },
       {
         "post_type": "Reels",
@@ -223,7 +223,7 @@
         "shares": 1786,
         "total_engagement": 135318,
         "avg_engagement": 1127.7,
-        "avg_pes": 1037.7
+        "avg_pes": 1181.7
       },
       {
         "post_type": "Text",
@@ -233,7 +233,7 @@
         "shares": 314,
         "total_engagement": 3806,
         "avg_engagement": 37.3,
-        "avg_pes": 45.6
+        "avg_pes": 54.5
       },
       {
         "post_type": "Live",
@@ -243,7 +243,7 @@
         "shares": 102,
         "total_engagement": 3351,
         "avg_engagement": 93.1,
-        "avg_pes": 61.8
+        "avg_pes": 90.2
       }
     ],
     "byPage": {
@@ -256,7 +256,7 @@
           "shares": 1198,
           "total_engagement": 6029,
           "avg_engagement": 154.6,
-          "avg_pes": 0.0
+          "avg_pes": 213.8
         },
         {
           "post_type": "Photos",
@@ -266,7 +266,7 @@
           "shares": 407,
           "total_engagement": 2845,
           "avg_engagement": 105.4,
-          "avg_pes": 0.0
+          "avg_pes": 134.1
         },
         {
           "post_type": "Text",
@@ -276,7 +276,7 @@
           "shares": 92,
           "total_engagement": 702,
           "avg_engagement": 70.2,
-          "avg_pes": 0.0
+          "avg_pes": 82.9
         },
         {
           "post_type": "Live",
@@ -286,19 +286,19 @@
           "shares": 0,
           "total_engagement": 7,
           "avg_engagement": 7.0,
-          "avg_pes": 0.0
+          "avg_pes": 8.0
         }
       ],
       "731608473377029": [
         {
           "post_type": "Videos",
           "count": 122,
-          "reactions": 7122,
-          "comments": 2522,
-          "shares": 1430,
-          "total_engagement": 11073,
-          "avg_engagement": 90.8,
-          "avg_pes": 126.0
+          "reactions": 7160,
+          "comments": 2525,
+          "shares": 1432,
+          "total_engagement": 11116,
+          "avg_engagement": 91.1,
+          "avg_pes": 136.1
         },
         {
           "post_type": "Photos",
@@ -308,7 +308,7 @@
           "shares": 366,
           "total_engagement": 3397,
           "avg_engagement": 154.4,
-          "avg_pes": 110.0
+          "avg_pes": 207.5
         },
         {
           "post_type": "Text",
@@ -328,19 +328,19 @@
           "shares": 13,
           "total_engagement": 672,
           "avg_engagement": 56.0,
-          "avg_pes": 51.0
+          "avg_pes": 60.6
         }
       ],
       "747721128429855": [
         {
           "post_type": "Videos",
           "count": 185,
-          "reactions": 10721,
-          "comments": 4352,
+          "reactions": 10746,
+          "comments": 4385,
           "shares": 2232,
-          "total_engagement": 17304,
-          "avg_engagement": 93.5,
-          "avg_pes": 122.2
+          "total_engagement": 17361,
+          "avg_engagement": 93.8,
+          "avg_pes": 141.7
         },
         {
           "post_type": "Photos",
@@ -350,7 +350,7 @@
           "shares": 793,
           "total_engagement": 6486,
           "avg_engagement": 141.0,
-          "avg_pes": 176.5
+          "avg_pes": 200.2
         },
         {
           "post_type": "Text",
@@ -360,7 +360,7 @@
           "shares": 123,
           "total_engagement": 1358,
           "avg_engagement": 50.3,
-          "avg_pes": 79.0
+          "avg_pes": 79.1
         },
         {
           "post_type": "Live",
@@ -370,7 +370,7 @@
           "shares": 0,
           "total_engagement": 49,
           "avg_engagement": 12.2,
-          "avg_pes": 16.8
+          "avg_pes": 21.5
         },
         {
           "post_type": "Reels",
@@ -392,7 +392,7 @@
           "shares": 1761,
           "total_engagement": 135184,
           "avg_engagement": 1136.0,
-          "avg_pes": 1044.6
+          "avg_pes": 1189.8
         },
         {
           "post_type": "Photos",
@@ -402,7 +402,7 @@
           "shares": 317,
           "total_engagement": 6064,
           "avg_engagement": 77.7,
-          "avg_pes": 75.5
+          "avg_pes": 95.8
         },
         {
           "post_type": "Videos",
@@ -412,7 +412,7 @@
           "shares": 436,
           "total_engagement": 15341,
           "avg_engagement": 393.4,
-          "avg_pes": 431.8
+          "avg_pes": 432.9
         },
         {
           "post_type": "Text",
@@ -422,7 +422,7 @@
           "shares": 11,
           "total_engagement": 501,
           "avg_engagement": 21.8,
-          "avg_pes": 22.4
+          "avg_pes": 25.5
         },
         {
           "post_type": "Live",
@@ -432,19 +432,19 @@
           "shares": 28,
           "total_engagement": 1453,
           "avg_engagement": 132.1,
-          "avg_pes": 77.8
+          "avg_pes": 157.7
         }
       ],
       "807965705726273": [
         {
           "post_type": "Videos",
           "count": 315,
-          "reactions": 131748,
-          "comments": 5420,
-          "shares": 3133,
-          "total_engagement": 140300,
-          "avg_engagement": 445.4,
-          "avg_pes": 361.6
+          "reactions": 131798,
+          "comments": 5434,
+          "shares": 3140,
+          "total_engagement": 140372,
+          "avg_engagement": 445.6,
+          "avg_pes": 361.9
         },
         {
           "post_type": "Photos",
@@ -741,7 +741,7 @@
         "comments": 181,
         "shares": 129,
         "engagement": 592,
-        "pes": 160.0,
+        "pes": 1031.0,
         "views": 2803,
         "reach": 1161
       },
@@ -763,7 +763,7 @@
         "comments": 64,
         "shares": 29,
         "engagement": 286,
-        "pes": 278.0,
+        "pes": 408.0,
         "views": 2156,
         "reach": 1185
       },
@@ -774,7 +774,7 @@
         "comments": 198,
         "shares": 142,
         "engagement": 783,
-        "pes": 1133.0,
+        "pes": 1265.0,
         "views": 3671,
         "reach": 2445
       },
@@ -785,7 +785,7 @@
         "comments": 100,
         "shares": 63,
         "engagement": 383,
-        "pes": 402.0,
+        "pes": 609.0,
         "views": 1857,
         "reach": 1122
       },
@@ -851,7 +851,7 @@
         "comments": 251,
         "shares": 104,
         "engagement": 1503,
-        "pes": 1251.0,
+        "pes": 1792.0,
         "views": 10582,
         "reach": 6358
       },
@@ -873,7 +873,7 @@
         "comments": 250,
         "shares": 179,
         "engagement": 1104,
-        "pes": 1300.0,
+        "pes": 1547.0,
         "views": 6034,
         "reach": 3709
       },
@@ -884,7 +884,7 @@
         "comments": 266,
         "shares": 131,
         "engagement": 1111,
-        "pes": 1290.0,
+        "pes": 1639.0,
         "views": 6846,
         "reach": 3307
       },
@@ -895,7 +895,7 @@
         "comments": 202,
         "shares": 149,
         "engagement": 1032,
-        "pes": 1055.0,
+        "pes": 1532.0,
         "views": 7563,
         "reach": 3832
       },
@@ -928,7 +928,7 @@
         "comments": 169,
         "shares": 114,
         "engagement": 742,
-        "pes": 786.0,
+        "pes": 1153.0,
         "views": 3630,
         "reach": 2119
       },
@@ -950,7 +950,7 @@
         "comments": 413,
         "shares": 341,
         "engagement": 6228,
-        "pes": 7100.0,
+        "pes": 7323.0,
         "views": 125049,
         "reach": 73921
       },
@@ -961,7 +961,7 @@
         "comments": 131,
         "shares": 86,
         "engagement": 571,
-        "pes": 422.0,
+        "pes": 874.0,
         "views": 3820,
         "reach": 2230
       },
@@ -972,7 +972,7 @@
         "comments": 427,
         "shares": 303,
         "engagement": 1533,
-        "pes": 1562.0,
+        "pes": 2660.0,
         "views": 7394,
         "reach": 3327
       },
@@ -1027,7 +1027,7 @@
         "comments": 142,
         "shares": 93,
         "engagement": 454,
-        "pes": 288.0,
+        "pes": 782.0,
         "views": 1989,
         "reach": 919
       },
@@ -1049,7 +1049,7 @@
         "comments": 254,
         "shares": 127,
         "engagement": 982,
-        "pes": 1390.0,
+        "pes": 1490.0,
         "views": 6936,
         "reach": 3596
       },
@@ -1082,7 +1082,7 @@
         "comments": 248,
         "shares": 149,
         "engagement": 1307,
-        "pes": 1347.0,
+        "pes": 1912.0,
         "views": 21567,
         "reach": 20760
       },
@@ -1137,7 +1137,7 @@
         "comments": 252,
         "shares": 122,
         "engagement": 1081,
-        "pes": 1133.0,
+        "pes": 1577.0,
         "views": 10356,
         "reach": 6475
       },
@@ -1159,7 +1159,7 @@
         "comments": 128,
         "shares": 39,
         "engagement": 1216,
-        "pes": 1374.0,
+        "pes": 1456.0,
         "views": 11542,
         "reach": 7936
       },
@@ -1181,7 +1181,7 @@
         "comments": 142,
         "shares": 91,
         "engagement": 567,
-        "pes": 779.0,
+        "pes": 891.0,
         "views": 4151,
         "reach": 3107
       },
@@ -1192,7 +1192,7 @@
         "comments": 240,
         "shares": 112,
         "engagement": 1098,
-        "pes": 1526.0,
+        "pes": 1562.0,
         "views": 7882,
         "reach": 5204
       },
@@ -1203,7 +1203,7 @@
         "comments": 92,
         "shares": 30,
         "engagement": 289,
-        "pes": 159.0,
+        "pes": 441.0,
         "views": 2687,
         "reach": 1299
       },
@@ -1258,7 +1258,7 @@
         "comments": 250,
         "shares": 96,
         "engagement": 1047,
-        "pes": 886.0,
+        "pes": 1490.0,
         "views": 9892,
         "reach": 6080
       },
@@ -1276,13 +1276,13 @@
       {
         "date": "2025-11-20",
         "posts": 13,
-        "reactions": 595,
-        "comments": 166,
-        "shares": 78,
-        "engagement": 838,
-        "pes": 1109.0,
-        "views": 6179,
-        "reach": 3947
+        "reactions": 645,
+        "comments": 180,
+        "shares": 85,
+        "engagement": 910,
+        "pes": 1260.0,
+        "views": 7066,
+        "reach": 4563
       },
       {
         "date": "2025-11-21",
@@ -1335,7 +1335,7 @@
         "comments": 134,
         "shares": 128,
         "engagement": 5046,
-        "pes": 5186.0,
+        "pes": 5436.0,
         "views": 78968,
         "reach": 60604
       },
@@ -1346,7 +1346,7 @@
         "comments": 117,
         "shares": 103,
         "engagement": 2358,
-        "pes": 2447.0,
+        "pes": 2681.0,
         "views": 42371,
         "reach": 44955
       },
@@ -1357,7 +1357,7 @@
         "comments": 83,
         "shares": 76,
         "engagement": 306,
-        "pes": 63.0,
+        "pes": 304.0,
         "views": 1865,
         "reach": 969
       },
@@ -1368,7 +1368,7 @@
         "comments": 211,
         "shares": 122,
         "engagement": 4935,
-        "pes": 5036.0,
+        "pes": 5390.0,
         "views": 74788,
         "reach": 57176
       },
@@ -1379,7 +1379,7 @@
         "comments": 295,
         "shares": 232,
         "engagement": 1860,
-        "pes": 1863.0,
+        "pes": 2283.0,
         "views": 16337,
         "reach": 9645
       },
@@ -1412,7 +1412,7 @@
         "comments": 208,
         "shares": 87,
         "engagement": 1887,
-        "pes": 2136.0,
+        "pes": 2269.0,
         "views": 20022,
         "reach": 14570
       },
@@ -1423,7 +1423,7 @@
         "comments": 186,
         "shares": 85,
         "engagement": 1018,
-        "pes": 1082.0,
+        "pes": 1374.0,
         "views": 10406,
         "reach": 6244
       },
@@ -1456,7 +1456,7 @@
         "comments": 350,
         "shares": 141,
         "engagement": 2020,
-        "pes": 2337.0,
+        "pes": 2661.0,
         "views": 24469,
         "reach": 16365
       },
@@ -1478,7 +1478,7 @@
         "comments": 286,
         "shares": 154,
         "engagement": 1827,
-        "pes": 2144.0,
+        "pes": 2394.0,
         "views": 18926,
         "reach": 10931
       },
@@ -1500,7 +1500,7 @@
         "comments": 176,
         "shares": 134,
         "engagement": 13924,
-        "pes": 14084.0,
+        "pes": 14163.0,
         "views": 113355,
         "reach": 83451
       },
@@ -1566,7 +1566,7 @@
         "comments": 373,
         "shares": 143,
         "engagement": 2630,
-        "pes": 3090.0,
+        "pes": 3303.0,
         "views": 37984,
         "reach": 24237
       },
@@ -1577,7 +1577,7 @@
         "comments": 27,
         "shares": 6,
         "engagement": 105,
-        "pes": 0.0,
+        "pes": 144.0,
         "views": 1070,
         "reach": 387
       },
@@ -1588,7 +1588,7 @@
         "comments": 89,
         "shares": 42,
         "engagement": 444,
-        "pes": 599.0,
+        "pes": 617.0,
         "views": 4518,
         "reach": 2381
       },
@@ -1599,7 +1599,7 @@
         "comments": 390,
         "shares": 243,
         "engagement": 9758,
-        "pes": 10005.0,
+        "pes": 10634.0,
         "views": 159236,
         "reach": 106002
       },
@@ -1610,7 +1610,7 @@
         "comments": 343,
         "shares": 165,
         "engagement": 8845,
-        "pes": 9215.0,
+        "pes": 9518.0,
         "views": 127460,
         "reach": 100107
       },
@@ -1621,7 +1621,7 @@
         "comments": 172,
         "shares": 68,
         "engagement": 2161,
-        "pes": 2389.0,
+        "pes": 2477.0,
         "views": 32259,
         "reach": 21354
       },
@@ -1632,7 +1632,7 @@
         "comments": 330,
         "shares": 132,
         "engagement": 4934,
-        "pes": 5226.0,
+        "pes": 5397.0,
         "views": 66763,
         "reach": 53447
       },
@@ -1643,7 +1643,7 @@
         "comments": 322,
         "shares": 172,
         "engagement": 9338,
-        "pes": 9710.0,
+        "pes": 9929.0,
         "views": 136175,
         "reach": 93661
       },
@@ -1654,7 +1654,7 @@
         "comments": 325,
         "shares": 156,
         "engagement": 15026,
-        "pes": 15406.0,
+        "pes": 15725.0,
         "views": 173507,
         "reach": 125614
       },
@@ -1665,7 +1665,7 @@
         "comments": 289,
         "shares": 219,
         "engagement": 24139,
-        "pes": 24714.0,
+        "pes": 24724.0,
         "views": 276090,
         "reach": 222422
       },
@@ -1676,7 +1676,7 @@
         "comments": 227,
         "shares": 108,
         "engagement": 5101,
-        "pes": 5385.0,
+        "pes": 5544.0,
         "views": 64116,
         "reach": 46491
       },
@@ -1687,7 +1687,7 @@
         "comments": 268,
         "shares": 116,
         "engagement": 6625,
-        "pes": 6956.0,
+        "pes": 7133.0,
         "views": 67289,
         "reach": 51486
       },
@@ -1698,7 +1698,7 @@
         "comments": 166,
         "shares": 89,
         "engagement": 2694,
-        "pes": 3020.0,
+        "pes": 3022.0,
         "views": 28846,
         "reach": 21054
       },
@@ -1709,7 +1709,7 @@
         "comments": 234,
         "shares": 123,
         "engagement": 8808,
-        "pes": 9177.0,
+        "pes": 9280.0,
         "views": 111559,
         "reach": 88892
       },
@@ -1720,7 +1720,7 @@
         "comments": 287,
         "shares": 115,
         "engagement": 5922,
-        "pes": 6213.0,
+        "pes": 6440.0,
         "views": 75832,
         "reach": 65774
       },
@@ -1731,7 +1731,7 @@
         "comments": 164,
         "shares": 27,
         "engagement": 2007,
-        "pes": 2168.0,
+        "pes": 2203.0,
         "views": 23611,
         "reach": 15899
       },
@@ -1742,7 +1742,7 @@
         "comments": 200,
         "shares": 120,
         "engagement": 4324,
-        "pes": 4589.0,
+        "pes": 4661.0,
         "views": 65383,
         "reach": 54158
       },
@@ -1753,7 +1753,7 @@
         "comments": 205,
         "shares": 113,
         "engagement": 2421,
-        "pes": 2684.0,
+        "pes": 2787.0,
         "views": 28174,
         "reach": 21257
       },
@@ -1764,7 +1764,7 @@
         "comments": 276,
         "shares": 115,
         "engagement": 3645,
-        "pes": 3812.0,
+        "pes": 4023.0,
         "views": 46313,
         "reach": 32040
       },
@@ -1775,7 +1775,7 @@
         "comments": 365,
         "shares": 180,
         "engagement": 6430,
-        "pes": 5142.0,
+        "pes": 5605.0,
         "views": 153221,
         "reach": 162342
       },
@@ -1786,7 +1786,7 @@
         "comments": 279,
         "shares": 121,
         "engagement": 6536,
-        "pes": 2856.0,
+        "pes": 5897.0,
         "views": 70455,
         "reach": 56838
       },
@@ -1797,7 +1797,7 @@
         "comments": 124,
         "shares": 85,
         "engagement": 3947,
-        "pes": 639.0,
+        "pes": 4248.0,
         "views": 45988,
         "reach": 31407
       },
@@ -1808,7 +1808,7 @@
         "comments": 291,
         "shares": 159,
         "engagement": 1806,
-        "pes": 1442.0,
+        "pes": 2196.0,
         "views": 29164,
         "reach": 14802
       },
@@ -1819,7 +1819,7 @@
         "comments": 184,
         "shares": 222,
         "engagement": 2891,
-        "pes": 2363.0,
+        "pes": 3472.0,
         "views": 16235,
         "reach": 11587
       },
@@ -1830,7 +1830,7 @@
         "comments": 448,
         "shares": 202,
         "engagement": 9859,
-        "pes": 9432.0,
+        "pes": 9811.0,
         "views": 146053,
         "reach": 104517
       },
@@ -1841,7 +1841,7 @@
         "comments": 173,
         "shares": 68,
         "engagement": 1144,
-        "pes": 1189.0,
+        "pes": 1410.0,
         "views": 20151,
         "reach": 14685
       },
@@ -1852,7 +1852,7 @@
         "comments": 428,
         "shares": 123,
         "engagement": 1693,
-        "pes": 1689.0,
+        "pes": 2083.0,
         "views": 16864,
         "reach": 11817
       },
@@ -1863,7 +1863,7 @@
         "comments": 271,
         "shares": 78,
         "engagement": 1400,
-        "pes": 1165.0,
+        "pes": 1591.0,
         "views": 16027,
         "reach": 11086
       },
@@ -1874,7 +1874,7 @@
         "comments": 198,
         "shares": 107,
         "engagement": 1198,
-        "pes": 804.0,
+        "pes": 1491.0,
         "views": 11276,
         "reach": 7998
       },
@@ -1885,7 +1885,7 @@
         "comments": 299,
         "shares": 200,
         "engagement": 2802,
-        "pes": 1339.0,
+        "pes": 1851.0,
         "views": 26601,
         "reach": 20447
       },
@@ -1896,7 +1896,7 @@
         "comments": 280,
         "shares": 101,
         "engagement": 1663,
-        "pes": 715.0,
+        "pes": 1532.0,
         "views": 15065,
         "reach": 12064
       },
@@ -1907,7 +1907,7 @@
         "comments": 189,
         "shares": 69,
         "engagement": 7187,
-        "pes": 469.0,
+        "pes": 903.0,
         "views": 65824,
         "reach": 53514
       },
@@ -1918,7 +1918,7 @@
         "comments": 158,
         "shares": 75,
         "engagement": 946,
-        "pes": 851.0,
+        "pes": 1199.0,
         "views": 13499,
         "reach": 8617
       },
@@ -1929,7 +1929,7 @@
         "comments": 248,
         "shares": 97,
         "engagement": 1483,
-        "pes": 1121.0,
+        "pes": 1595.0,
         "views": 17695,
         "reach": 12264
       },
@@ -1940,7 +1940,7 @@
         "comments": 248,
         "shares": 122,
         "engagement": 10694,
-        "pes": 411.0,
+        "pes": 1261.0,
         "views": 109207,
         "reach": 80033
       },
@@ -1951,7 +1951,7 @@
         "comments": 171,
         "shares": 68,
         "engagement": 1193,
-        "pes": 541.0,
+        "pes": 860.0,
         "views": 23522,
         "reach": 15439
       },
@@ -1962,7 +1962,7 @@
         "comments": 168,
         "shares": 42,
         "engagement": 1021,
-        "pes": 620.0,
+        "pes": 1193.0,
         "views": 15426,
         "reach": 9363
       },
@@ -1973,7 +1973,7 @@
         "comments": 121,
         "shares": 19,
         "engagement": 717,
-        "pes": 497.0,
+        "pes": 775.0,
         "views": 7563,
         "reach": 5108
       },
@@ -1984,7 +1984,7 @@
         "comments": 106,
         "shares": 37,
         "engagement": 744,
-        "pes": 73.0,
+        "pes": 755.0,
         "views": 12246,
         "reach": 6593
       },
@@ -1995,7 +1995,7 @@
         "comments": 47,
         "shares": 15,
         "engagement": 632,
-        "pes": 0.0,
+        "pes": 396.0,
         "views": 12943,
         "reach": 9533
       },
@@ -2006,7 +2006,7 @@
         "comments": 63,
         "shares": 42,
         "engagement": 9758,
-        "pes": 374.0,
+        "pes": 412.0,
         "views": 71931,
         "reach": 59545
       },
@@ -2017,7 +2017,7 @@
         "comments": 199,
         "shares": 32,
         "engagement": 1069,
-        "pes": 0.0,
+        "pes": 702.0,
         "views": 13749,
         "reach": 10195
       },
@@ -2028,7 +2028,7 @@
         "comments": 230,
         "shares": 100,
         "engagement": 14246,
-        "pes": 0.0,
+        "pes": 455.0,
         "views": 127099,
         "reach": 97284
       },
@@ -2039,7 +2039,7 @@
         "comments": 69,
         "shares": 49,
         "engagement": 879,
-        "pes": 0.0,
+        "pes": 818.0,
         "views": 11351,
         "reach": 8255
       },
@@ -2050,7 +2050,7 @@
         "comments": 99,
         "shares": 182,
         "engagement": 2871,
-        "pes": 21.0,
+        "pes": 2425.0,
         "views": 18177,
         "reach": 9718
       },
@@ -2061,7 +2061,7 @@
         "comments": 113,
         "shares": 40,
         "engagement": 1490,
-        "pes": 483.0,
+        "pes": 1385.0,
         "views": 20405,
         "reach": 12824
       },
@@ -2072,7 +2072,7 @@
         "comments": 232,
         "shares": 164,
         "engagement": 26076,
-        "pes": 25112.0,
+        "pes": 25860.0,
         "views": 175935,
         "reach": 141706
       },
@@ -2083,7 +2083,7 @@
         "comments": 226,
         "shares": 74,
         "engagement": 1978,
-        "pes": 688.0,
+        "pes": 2327.0,
         "views": 22335,
         "reach": 12107
       },
@@ -2094,7 +2094,7 @@
         "comments": 239,
         "shares": 216,
         "engagement": 2417,
-        "pes": 1640.0,
+        "pes": 3021.0,
         "views": 18109,
         "reach": 10592
       },
@@ -2105,20 +2105,20 @@
         "comments": 265,
         "shares": 58,
         "engagement": 1714,
-        "pes": 906.0,
+        "pes": 1992.0,
         "views": 17210,
         "reach": 11083
       },
       {
         "date": "2026-02-04",
         "posts": 7,
-        "reactions": 875,
-        "comments": 325,
-        "shares": 384,
-        "engagement": 1584,
-        "pes": 2372.0,
-        "views": 12408,
-        "reach": 6519
+        "reactions": 910,
+        "comments": 326,
+        "shares": 386,
+        "engagement": 1622,
+        "pes": 2586.0,
+        "views": 12735,
+        "reach": 7209
       },
       {
         "date": "2026-02-05",
@@ -2134,13 +2134,13 @@
       {
         "date": "2026-02-06",
         "posts": 8,
-        "reactions": 914,
-        "comments": 114,
+        "reactions": 931,
+        "comments": 128,
         "shares": 177,
-        "engagement": 1205,
-        "pes": 1673.0,
-        "views": 18088,
-        "reach": 6646
+        "engagement": 1236,
+        "pes": 1718.0,
+        "views": 18271,
+        "reach": 7767
       },
       {
         "date": "2026-02-07",
@@ -2156,13 +2156,13 @@
       {
         "date": "2026-02-08",
         "posts": 10,
-        "reactions": 1218,
-        "comments": 287,
+        "reactions": 1221,
+        "comments": 289,
         "shares": 81,
-        "engagement": 1585,
-        "pes": 2032.0,
-        "views": 11949,
-        "reach": 6101
+        "engagement": 1590,
+        "pes": 2039.0,
+        "views": 13136,
+        "reach": 6851
       },
       {
         "date": "2026-02-09",
@@ -2200,13 +2200,13 @@
       {
         "date": "2026-02-12",
         "posts": 7,
-        "reactions": 714,
-        "comments": 84,
+        "reactions": 722,
+        "comments": 103,
         "shares": 18,
-        "engagement": 816,
-        "pes": 936.0,
-        "views": 4137,
-        "reach": 2293
+        "engagement": 842,
+        "pes": 979.0,
+        "views": 7387,
+        "reach": 4338
       },
       {
         "date": "2026-02-13",
@@ -2240,7 +2240,7 @@
           "comments": 153,
           "shares": 112,
           "engagement": 494,
-          "pes": 0.0,
+          "pes": 871.0,
           "views": 2349,
           "reach": 933
         },
@@ -2251,7 +2251,7 @@
           "comments": 20,
           "shares": 11,
           "engagement": 88,
-          "pes": 0.0,
+          "pes": 130.0,
           "views": 561,
           "reach": 291
         },
@@ -2262,7 +2262,7 @@
           "comments": 16,
           "shares": 16,
           "engagement": 84,
-          "pes": 0.0,
+          "pes": 132.0,
           "views": 15,
           "reach": 223
         },
@@ -2273,7 +2273,7 @@
           "comments": 27,
           "shares": 25,
           "engagement": 130,
-          "pes": 0.0,
+          "pes": 207.0,
           "views": 15,
           "reach": 250
         },
@@ -2284,7 +2284,7 @@
           "comments": 129,
           "shares": 46,
           "engagement": 490,
-          "pes": 0.0,
+          "pes": 541.0,
           "views": 1210,
           "reach": 945
         },
@@ -2295,7 +2295,7 @@
           "comments": 60,
           "shares": 47,
           "engagement": 258,
-          "pes": 0.0,
+          "pes": 247.0,
           "views": 831,
           "reach": 447
         },
@@ -2306,7 +2306,7 @@
           "comments": 59,
           "shares": 40,
           "engagement": 210,
-          "pes": 0.0,
+          "pes": 349.0,
           "views": 552,
           "reach": 293
         },
@@ -2317,7 +2317,7 @@
           "comments": 77,
           "shares": 56,
           "engagement": 288,
-          "pes": 0.0,
+          "pes": 477.0,
           "views": 907,
           "reach": 367
         },
@@ -2328,7 +2328,7 @@
           "comments": 60,
           "shares": 43,
           "engagement": 221,
-          "pes": 0.0,
+          "pes": 367.0,
           "views": 601,
           "reach": 331
         },
@@ -2339,7 +2339,7 @@
           "comments": 22,
           "shares": 25,
           "engagement": 151,
-          "pes": 0.0,
+          "pes": 223.0,
           "views": 36,
           "reach": 187
         },
@@ -2350,7 +2350,7 @@
           "comments": 76,
           "shares": 54,
           "engagement": 268,
-          "pes": 0.0,
+          "pes": 452.0,
           "views": 695,
           "reach": 381
         },
@@ -2361,7 +2361,7 @@
           "comments": 187,
           "shares": 140,
           "engagement": 598,
-          "pes": 0.0,
+          "pes": 1065.0,
           "views": 1937,
           "reach": 749
         },
@@ -2372,7 +2372,7 @@
           "comments": 98,
           "shares": 58,
           "engagement": 280,
-          "pes": 0.0,
+          "pes": 494.0,
           "views": 842,
           "reach": 316
         },
@@ -2383,7 +2383,7 @@
           "comments": 16,
           "shares": 11,
           "engagement": 62,
-          "pes": 0.0,
+          "pes": 100.0,
           "views": 11,
           "reach": 203
         },
@@ -2394,7 +2394,7 @@
           "comments": 100,
           "shares": 71,
           "engagement": 323,
-          "pes": 0.0,
+          "pes": 565.0,
           "views": 2471,
           "reach": 772
         },
@@ -2405,7 +2405,7 @@
           "comments": 81,
           "shares": 49,
           "engagement": 265,
-          "pes": 0.0,
+          "pes": 444.0,
           "views": 1995,
           "reach": 850
         },
@@ -2416,7 +2416,7 @@
           "comments": 12,
           "shares": 9,
           "engagement": 52,
-          "pes": 0.0,
+          "pes": 82.0,
           "views": 406,
           "reach": 176
         },
@@ -2427,7 +2427,7 @@
           "comments": 17,
           "shares": 6,
           "engagement": 83,
-          "pes": 0.0,
+          "pes": 112.0,
           "views": 563,
           "reach": 482
         },
@@ -2438,7 +2438,7 @@
           "comments": 3,
           "shares": 2,
           "engagement": 29,
-          "pes": 0.0,
+          "pes": 36.0,
           "views": 0,
           "reach": 179
         },
@@ -2449,7 +2449,7 @@
           "comments": 63,
           "shares": 17,
           "engagement": 185,
-          "pes": 0.0,
+          "pes": 282.0,
           "views": 1616,
           "reach": 728
         },
@@ -2460,7 +2460,7 @@
           "comments": 114,
           "shares": 54,
           "engagement": 382,
-          "pes": 0.0,
+          "pes": 604.0,
           "views": 2151,
           "reach": 854
         },
@@ -2471,7 +2471,7 @@
           "comments": 4,
           "shares": 2,
           "engagement": 43,
-          "pes": 0.0,
+          "pes": 51.0,
           "views": 2,
           "reach": 2
         },
@@ -2482,7 +2482,7 @@
           "comments": 26,
           "shares": 42,
           "engagement": 140,
-          "pes": 0.0,
+          "pes": 250.0,
           "views": 610,
           "reach": 277
         },
@@ -2493,7 +2493,7 @@
           "comments": 24,
           "shares": 37,
           "engagement": 136,
-          "pes": 0.0,
+          "pes": 234.0,
           "views": 759,
           "reach": 286
         },
@@ -2504,7 +2504,7 @@
           "comments": 72,
           "shares": 72,
           "engagement": 262,
-          "pes": 0.0,
+          "pes": 241.0,
           "views": 1199,
           "reach": 562
         },
@@ -2515,7 +2515,7 @@
           "comments": 43,
           "shares": 43,
           "engagement": 225,
-          "pes": 0.0,
+          "pes": 354.0,
           "views": 1768,
           "reach": 623
         },
@@ -2526,7 +2526,7 @@
           "comments": 86,
           "shares": 133,
           "engagement": 404,
-          "pes": 0.0,
+          "pes": 420.0,
           "views": 1811,
           "reach": 806
         },
@@ -2537,7 +2537,7 @@
           "comments": 42,
           "shares": 0,
           "engagement": 91,
-          "pes": 0.0,
+          "pes": 133.0,
           "views": 467,
           "reach": 240
         },
@@ -2548,7 +2548,7 @@
           "comments": 48,
           "shares": 39,
           "engagement": 166,
-          "pes": 0.0,
+          "pes": 292.0,
           "views": 814,
           "reach": 609
         },
@@ -2570,7 +2570,7 @@
           "comments": 46,
           "shares": 34,
           "engagement": 210,
-          "pes": 0.0,
+          "pes": 324.0,
           "views": 1767,
           "reach": 709
         },
@@ -2581,7 +2581,7 @@
           "comments": 45,
           "shares": 19,
           "engagement": 201,
-          "pes": 0.0,
+          "pes": 250.0,
           "views": 1156,
           "reach": 509
         },
@@ -2603,7 +2603,7 @@
           "comments": 37,
           "shares": 37,
           "engagement": 173,
-          "pes": 0.0,
+          "pes": 79.0,
           "views": 1226,
           "reach": 574
         },
@@ -2658,7 +2658,7 @@
           "comments": 31,
           "shares": 12,
           "engagement": 134,
-          "pes": 0.0,
+          "pes": 189.0,
           "views": 769,
           "reach": 531
         },
@@ -2669,7 +2669,7 @@
           "comments": 27,
           "shares": 6,
           "engagement": 105,
-          "pes": 0.0,
+          "pes": 144.0,
           "views": 1070,
           "reach": 387
         },
@@ -2680,7 +2680,7 @@
           "comments": 90,
           "shares": 59,
           "engagement": 374,
-          "pes": 0.0,
+          "pes": 582.0,
           "views": 2458,
           "reach": 1302
         },
@@ -2691,7 +2691,7 @@
           "comments": 55,
           "shares": 19,
           "engagement": 189,
-          "pes": 0.0,
+          "pes": 282.0,
           "views": 1534,
           "reach": 866
         },
@@ -2702,7 +2702,7 @@
           "comments": 16,
           "shares": 2,
           "engagement": 68,
-          "pes": 0.0,
+          "pes": 88.0,
           "views": 706,
           "reach": 341
         },
@@ -2713,7 +2713,7 @@
           "comments": 38,
           "shares": 16,
           "engagement": 164,
-          "pes": 0.0,
+          "pes": 103.0,
           "views": 1075,
           "reach": 631
         },
@@ -2724,7 +2724,7 @@
           "comments": 44,
           "shares": 21,
           "engagement": 197,
-          "pes": 0.0,
+          "pes": 208.0,
           "views": 1515,
           "reach": 876
         },
@@ -2735,7 +2735,7 @@
           "comments": 44,
           "shares": 29,
           "engagement": 177,
-          "pes": 0.0,
+          "pes": 279.0,
           "views": 979,
           "reach": 602
         },
@@ -2757,7 +2757,7 @@
           "comments": 16,
           "shares": 11,
           "engagement": 72,
-          "pes": 0.0,
+          "pes": 110.0,
           "views": 651,
           "reach": 436
         },
@@ -2768,7 +2768,7 @@
           "comments": 29,
           "shares": 15,
           "engagement": 109,
-          "pes": 0.0,
+          "pes": 168.0,
           "views": 976,
           "reach": 647
         },
@@ -2779,7 +2779,7 @@
           "comments": 1,
           "shares": 0,
           "engagement": 7,
-          "pes": 0.0,
+          "pes": 8.0,
           "views": 0,
           "reach": 88
         },
@@ -2790,7 +2790,7 @@
           "comments": 41,
           "shares": 18,
           "engagement": 150,
-          "pes": 0.0,
+          "pes": 227.0,
           "views": 766,
           "reach": 569
         }
@@ -3122,7 +3122,7 @@
           "comments": 113,
           "shares": 77,
           "engagement": 381,
-          "pes": 630.0,
+          "pes": 648.0,
           "views": 1521,
           "reach": 706
         },
@@ -3331,7 +3331,7 @@
           "comments": 29,
           "shares": 18,
           "engagement": 148,
-          "pes": 195.0,
+          "pes": 213.0,
           "views": 1296,
           "reach": 630
         },
@@ -3342,7 +3342,7 @@
           "comments": 43,
           "shares": 16,
           "engagement": 155,
-          "pes": 212.0,
+          "pes": 230.0,
           "views": 1039,
           "reach": 561
         },
@@ -3364,7 +3364,7 @@
           "comments": 7,
           "shares": 7,
           "engagement": 43,
-          "pes": 60.0,
+          "pes": 64.0,
           "views": 484,
           "reach": 234
         },
@@ -3375,7 +3375,7 @@
           "comments": 14,
           "shares": 2,
           "engagement": 66,
-          "pes": 82.0,
+          "pes": 84.0,
           "views": 567,
           "reach": 243
         },
@@ -3386,7 +3386,7 @@
           "comments": 28,
           "shares": 5,
           "engagement": 126,
-          "pes": 150.0,
+          "pes": 160.0,
           "views": 1083,
           "reach": 796
         },
@@ -3397,7 +3397,7 @@
           "comments": 22,
           "shares": 13,
           "engagement": 86,
-          "pes": 124.0,
+          "pes": 134.0,
           "views": 976,
           "reach": 450
         },
@@ -3408,7 +3408,7 @@
           "comments": 16,
           "shares": 8,
           "engagement": 61,
-          "pes": 86.0,
+          "pes": 93.0,
           "views": 495,
           "reach": 352
         },
@@ -3419,7 +3419,7 @@
           "comments": 21,
           "shares": 15,
           "engagement": 91,
-          "pes": 133.0,
+          "pes": 142.0,
           "views": 653,
           "reach": 346
         },
@@ -3430,7 +3430,7 @@
           "comments": 13,
           "shares": 9,
           "engagement": 77,
-          "pes": 110.0,
+          "pes": 112.0,
           "views": 566,
           "reach": 454
         },
@@ -3441,7 +3441,7 @@
           "comments": 45,
           "shares": 14,
           "engagement": 206,
-          "pes": 182.0,
+          "pes": 277.0,
           "views": 4682,
           "reach": 2181
         },
@@ -3463,7 +3463,7 @@
           "comments": 14,
           "shares": 4,
           "engagement": 69,
-          "pes": 88.0,
+          "pes": 92.0,
           "views": 497,
           "reach": 326
         },
@@ -3474,7 +3474,7 @@
           "comments": 16,
           "shares": 6,
           "engagement": 67,
-          "pes": 91.0,
+          "pes": 97.0,
           "views": 846,
           "reach": 418
         },
@@ -3485,7 +3485,7 @@
           "comments": 0,
           "shares": 0,
           "engagement": 8,
-          "pes": 7.0,
+          "pes": 8.0,
           "views": 0,
           "reach": 162
         },
@@ -3496,7 +3496,7 @@
           "comments": 54,
           "shares": 20,
           "engagement": 174,
-          "pes": 250.0,
+          "pes": 265.0,
           "views": 921,
           "reach": 787
         },
@@ -3518,7 +3518,7 @@
           "comments": 46,
           "shares": 28,
           "engagement": 153,
-          "pes": 242.0,
+          "pes": 255.0,
           "views": 782,
           "reach": 517
         },
@@ -3540,7 +3540,7 @@
           "comments": 25,
           "shares": 11,
           "engagement": 98,
-          "pes": 144.0,
+          "pes": 148.0,
           "views": 753,
           "reach": 604
         },
@@ -3573,7 +3573,7 @@
           "comments": 44,
           "shares": 16,
           "engagement": 190,
-          "pes": 287.0,
+          "pes": 290.0,
           "views": 1818,
           "reach": 1253
         },
@@ -3584,7 +3584,7 @@
           "comments": 58,
           "shares": 18,
           "engagement": 189,
-          "pes": 316.0,
+          "pes": 332.0,
           "views": 1233,
           "reach": 910
         },
@@ -3595,7 +3595,7 @@
           "comments": 44,
           "shares": 15,
           "engagement": 153,
-          "pes": 213.0,
+          "pes": 214.0,
           "views": 801,
           "reach": 630
         },
@@ -3617,7 +3617,7 @@
           "comments": 82,
           "shares": 23,
           "engagement": 275,
-          "pes": 393.0,
+          "pes": 407.0,
           "views": 2069,
           "reach": 1521
         },
@@ -3628,7 +3628,7 @@
           "comments": 75,
           "shares": 31,
           "engagement": 250,
-          "pes": 367.0,
+          "pes": 379.0,
           "views": 1569,
           "reach": 1287
         },
@@ -3639,7 +3639,7 @@
           "comments": 40,
           "shares": 17,
           "engagement": 212,
-          "pes": 266.0,
+          "pes": 355.0,
           "views": 3498,
           "reach": 1577
         },
@@ -3650,7 +3650,7 @@
           "comments": 14,
           "shares": 1,
           "engagement": 69,
-          "pes": 72.0,
+          "pes": 85.0,
           "views": 680,
           "reach": 373
         },
@@ -3661,7 +3661,7 @@
           "comments": 6,
           "shares": 19,
           "engagement": 103,
-          "pes": 22.0,
+          "pes": 163.0,
           "views": 1068,
           "reach": 832
         },
@@ -3672,7 +3672,7 @@
           "comments": 1,
           "shares": 1,
           "engagement": 42,
-          "pes": 0.0,
+          "pes": 46.0,
           "views": 614,
           "reach": 463
         },
@@ -3683,7 +3683,7 @@
           "comments": 21,
           "shares": 7,
           "engagement": 181,
-          "pes": 0.0,
+          "pes": 216.0,
           "views": 2858,
           "reach": 617
         },
@@ -3694,7 +3694,7 @@
           "comments": 21,
           "shares": 2,
           "engagement": 89,
-          "pes": 0.0,
+          "pes": 114.0,
           "views": 538,
           "reach": 478
         },
@@ -3705,7 +3705,7 @@
           "comments": 19,
           "shares": 129,
           "engagement": 1453,
-          "pes": 0.0,
+          "pes": 1731.0,
           "views": 5986,
           "reach": 2623
         },
@@ -3716,7 +3716,7 @@
           "comments": 10,
           "shares": 1,
           "engagement": 120,
-          "pes": 0.0,
+          "pes": 134.0,
           "views": 1097,
           "reach": 907
         },
@@ -3727,7 +3727,7 @@
           "comments": 9,
           "shares": 3,
           "engagement": 226,
-          "pes": 0.0,
+          "pes": 243.0,
           "views": 903,
           "reach": 724
         },
@@ -3738,7 +3738,7 @@
           "comments": 19,
           "shares": 5,
           "engagement": 179,
-          "pes": 0.0,
+          "pes": 210.0,
           "views": 1482,
           "reach": 867
         },
@@ -3749,7 +3749,7 @@
           "comments": 11,
           "shares": 1,
           "engagement": 142,
-          "pes": 25.0,
+          "pes": 143.0,
           "views": 1024,
           "reach": 802
         },
@@ -3760,20 +3760,20 @@
           "comments": 5,
           "shares": 5,
           "engagement": 71,
-          "pes": 0.0,
+          "pes": 95.0,
           "views": 1472,
           "reach": 929
         },
         {
           "date": "2026-02-04",
           "posts": 2,
-          "reactions": 209,
-          "comments": 8,
-          "shares": 113,
-          "engagement": 330,
-          "pes": 563.0,
-          "views": 1540,
-          "reach": 463
+          "reactions": 244,
+          "comments": 9,
+          "shares": 115,
+          "engagement": 368,
+          "pes": 617.0,
+          "views": 1867,
+          "reach": 1153
         },
         {
           "date": "2026-02-05",
@@ -3811,13 +3811,13 @@
         {
           "date": "2026-02-08",
           "posts": 2,
-          "reactions": 89,
-          "comments": 12,
+          "reactions": 92,
+          "comments": 14,
           "shares": 2,
-          "engagement": 103,
-          "pes": 119.0,
-          "views": 1154,
-          "reach": 599
+          "engagement": 108,
+          "pes": 126.0,
+          "views": 2341,
+          "reach": 1349
         },
         {
           "date": "2026-02-09",
@@ -4235,7 +4235,7 @@
           "comments": 58,
           "shares": 49,
           "engagement": 216,
-          "pes": 357.0,
+          "pes": 372.0,
           "views": 1776,
           "reach": 822
         },
@@ -4664,7 +4664,7 @@
           "comments": 36,
           "shares": 4,
           "engagement": 179,
-          "pes": 222.0,
+          "pes": 223.0,
           "views": 1306,
           "reach": 819
         },
@@ -4741,7 +4741,7 @@
           "comments": 25,
           "shares": 0,
           "engagement": 77,
-          "pes": 102.0,
+          "pes": 103.0,
           "views": 664,
           "reach": 423
         },
@@ -4752,7 +4752,7 @@
           "comments": 83,
           "shares": 56,
           "engagement": 271,
-          "pes": 366.0,
+          "pes": 380.0,
           "views": 1970,
           "reach": 893
         },
@@ -4763,7 +4763,7 @@
           "comments": 58,
           "shares": 60,
           "engagement": 326,
-          "pes": 436.0,
+          "pes": 492.0,
           "views": 4712,
           "reach": 2630
         },
@@ -4774,7 +4774,7 @@
           "comments": 79,
           "shares": 35,
           "engagement": 306,
-          "pes": 391.0,
+          "pes": 455.0,
           "views": 8824,
           "reach": 2411
         },
@@ -4785,7 +4785,7 @@
           "comments": 70,
           "shares": 71,
           "engagement": 267,
-          "pes": 429.0,
+          "pes": 479.0,
           "views": 7106,
           "reach": 1061
         },
@@ -4796,7 +4796,7 @@
           "comments": 49,
           "shares": 18,
           "engagement": 178,
-          "pes": 236.0,
+          "pes": 245.0,
           "views": 1916,
           "reach": 929
         },
@@ -4807,7 +4807,7 @@
           "comments": 20,
           "shares": 24,
           "engagement": 98,
-          "pes": 170.0,
+          "pes": 189.0,
           "views": 5885,
           "reach": 491
         },
@@ -4818,7 +4818,7 @@
           "comments": 84,
           "shares": 89,
           "engagement": 378,
-          "pes": 595.0,
+          "pes": 613.0,
           "views": 8735,
           "reach": 1912
         },
@@ -4829,7 +4829,7 @@
           "comments": 48,
           "shares": 168,
           "engagement": 1999,
-          "pes": 1804.0,
+          "pes": 2383.0,
           "views": 1976,
           "reach": 960
         },
@@ -4840,7 +4840,7 @@
           "comments": 39,
           "shares": 17,
           "engagement": 191,
-          "pes": 237.0,
+          "pes": 265.0,
           "views": 2265,
           "reach": 1180
         },
@@ -4851,7 +4851,7 @@
           "comments": 61,
           "shares": 22,
           "engagement": 212,
-          "pes": 334.0,
+          "pes": 349.0,
           "views": 2271,
           "reach": 1220
         },
@@ -4862,7 +4862,7 @@
           "comments": 82,
           "shares": 34,
           "engagement": 203,
-          "pes": 238.0,
+          "pes": 356.0,
           "views": 1479,
           "reach": 720
         },
@@ -4873,7 +4873,7 @@
           "comments": 33,
           "shares": 10,
           "engagement": 119,
-          "pes": 134.0,
+          "pes": 173.0,
           "views": 1391,
           "reach": 669
         },
@@ -4884,7 +4884,7 @@
           "comments": 38,
           "shares": 42,
           "engagement": 199,
-          "pes": 304.0,
+          "pes": 327.0,
           "views": 1858,
           "reach": 886
         },
@@ -4895,7 +4895,7 @@
           "comments": 107,
           "shares": 29,
           "engagement": 353,
-          "pes": 440.0,
+          "pes": 534.0,
           "views": 3384,
           "reach": 1843
         },
@@ -4906,7 +4906,7 @@
           "comments": 62,
           "shares": 17,
           "engagement": 258,
-          "pes": 289.0,
+          "pes": 355.0,
           "views": 2272,
           "reach": 1535
         },
@@ -4917,7 +4917,7 @@
           "comments": 83,
           "shares": 12,
           "engagement": 275,
-          "pes": 291.0,
+          "pes": 387.0,
           "views": 3235,
           "reach": 2056
         },
@@ -4928,7 +4928,7 @@
           "comments": 54,
           "shares": 18,
           "engagement": 204,
-          "pes": 261.0,
+          "pes": 294.0,
           "views": 2195,
           "reach": 1213
         },
@@ -4939,7 +4939,7 @@
           "comments": 65,
           "shares": 23,
           "engagement": 263,
-          "pes": 308.0,
+          "pes": 374.0,
           "views": 3538,
           "reach": 1931
         },
@@ -4950,7 +4950,7 @@
           "comments": 97,
           "shares": 28,
           "engagement": 400,
-          "pes": 396.0,
+          "pes": 553.0,
           "views": 9465,
           "reach": 3783
         },
@@ -4961,7 +4961,7 @@
           "comments": 71,
           "shares": 30,
           "engagement": 258,
-          "pes": 307.0,
+          "pes": 390.0,
           "views": 5344,
           "reach": 2433
         },
@@ -4972,7 +4972,7 @@
           "comments": 30,
           "shares": 5,
           "engagement": 102,
-          "pes": 90.0,
+          "pes": 142.0,
           "views": 2849,
           "reach": 1177
         },
@@ -4983,7 +4983,7 @@
           "comments": 48,
           "shares": 9,
           "engagement": 184,
-          "pes": 197.0,
+          "pes": 250.0,
           "views": 2131,
           "reach": 948
         },
@@ -4994,7 +4994,7 @@
           "comments": 13,
           "shares": 4,
           "engagement": 65,
-          "pes": 28.0,
+          "pes": 86.0,
           "views": 846,
           "reach": 548
         },
@@ -5005,7 +5005,7 @@
           "comments": 21,
           "shares": 8,
           "engagement": 184,
-          "pes": 0.0,
+          "pes": 224.0,
           "views": 5200,
           "reach": 3242
         },
@@ -5016,7 +5016,7 @@
           "comments": 15,
           "shares": 5,
           "engagement": 86,
-          "pes": 74.0,
+          "pes": 112.0,
           "views": 1639,
           "reach": 813
         },
@@ -5027,7 +5027,7 @@
           "comments": 31,
           "shares": 7,
           "engagement": 196,
-          "pes": 0.0,
+          "pes": 244.0,
           "views": 3418,
           "reach": 1954
         },
@@ -5038,7 +5038,7 @@
           "comments": 8,
           "shares": 0,
           "engagement": 55,
-          "pes": 0.0,
+          "pes": 63.0,
           "views": 1560,
           "reach": 1314
         },
@@ -5049,7 +5049,7 @@
           "comments": 5,
           "shares": 26,
           "engagement": 199,
-          "pes": 0.0,
+          "pes": 256.0,
           "views": 1163,
           "reach": 611
         },
@@ -5060,7 +5060,7 @@
           "comments": 30,
           "shares": 17,
           "engagement": 152,
-          "pes": 0.0,
+          "pes": 216.0,
           "views": 1593,
           "reach": 740
         },
@@ -5071,7 +5071,7 @@
           "comments": 57,
           "shares": 13,
           "engagement": 265,
-          "pes": 0.0,
+          "pes": 227.0,
           "views": 3671,
           "reach": 1917
         },
@@ -5082,7 +5082,7 @@
           "comments": 22,
           "shares": 1,
           "engagement": 122,
-          "pes": 0.0,
+          "pes": 206.0,
           "views": 1507,
           "reach": 1005
         },
@@ -5093,7 +5093,7 @@
           "comments": 91,
           "shares": 18,
           "engagement": 528,
-          "pes": 0.0,
+          "pes": 658.0,
           "views": 8978,
           "reach": 4761
         },
@@ -5104,7 +5104,7 @@
           "comments": 69,
           "shares": 6,
           "engagement": 242,
-          "pes": 21.0,
+          "pes": 305.0,
           "views": 3324,
           "reach": 1894
         },
@@ -5115,7 +5115,7 @@
           "comments": 85,
           "shares": 4,
           "engagement": 206,
-          "pes": 0.0,
+          "pes": 314.0,
           "views": 3173,
           "reach": 2006
         },
@@ -5126,7 +5126,7 @@
           "comments": 38,
           "shares": 110,
           "engagement": 389,
-          "pes": 559.0,
+          "pes": 664.0,
           "views": 5169,
           "reach": 3212
         },
@@ -5144,13 +5144,13 @@
         {
           "date": "2026-02-06",
           "posts": 2,
-          "reactions": 117,
-          "comments": 50,
+          "reactions": 134,
+          "comments": 64,
           "shares": 5,
-          "engagement": 172,
-          "pes": 232.0,
-          "views": 3433,
-          "reach": 813
+          "engagement": 203,
+          "pes": 277.0,
+          "views": 3616,
+          "reach": 1934
         },
         {
           "date": "2026-02-07",
@@ -5210,13 +5210,13 @@
         {
           "date": "2026-02-12",
           "posts": 3,
-          "reactions": 183,
-          "comments": 50,
+          "reactions": 191,
+          "comments": 69,
           "shares": 8,
-          "engagement": 241,
-          "pes": 307.0,
-          "views": 1662,
-          "reach": 844
+          "engagement": 267,
+          "pes": 350.0,
+          "views": 4912,
+          "reach": 2889
         },
         {
           "date": "2026-02-13",
@@ -5755,7 +5755,7 @@
           "comments": 84,
           "shares": 34,
           "engagement": 1595,
-          "pes": 1737.0,
+          "pes": 1761.0,
           "views": 21651,
           "reach": 16955
         },
@@ -5766,7 +5766,7 @@
           "comments": 181,
           "shares": 134,
           "engagement": 8834,
-          "pes": 9254.0,
+          "pes": 9283.0,
           "views": 150534,
           "reach": 101140
         },
@@ -5777,7 +5777,7 @@
           "comments": 164,
           "shares": 116,
           "engagement": 8210,
-          "pes": 8585.0,
+          "pes": 8606.0,
           "views": 120392,
           "reach": 96430
         },
@@ -5799,7 +5799,7 @@
           "comments": 152,
           "shares": 55,
           "engagement": 2269,
-          "pes": 2467.0,
+          "pes": 2531.0,
           "views": 38432,
           "reach": 30841
         },
@@ -5810,7 +5810,7 @@
           "comments": 150,
           "shares": 115,
           "engagement": 8598,
-          "pes": 8969.0,
+          "pes": 8978.0,
           "views": 130175,
           "reach": 90115
         },
@@ -5821,7 +5821,7 @@
           "comments": 191,
           "shares": 106,
           "engagement": 14332,
-          "pes": 14706.0,
+          "pes": 14735.0,
           "views": 168186,
           "reach": 121867
         },
@@ -5843,7 +5843,7 @@
           "comments": 101,
           "shares": 55,
           "engagement": 4399,
-          "pes": 4568.0,
+          "pes": 4610.0,
           "views": 55461,
           "reach": 41474
         },
@@ -5898,7 +5898,7 @@
           "comments": 98,
           "shares": 17,
           "engagement": 1735,
-          "pes": 1813.0,
+          "pes": 1843.0,
           "views": 20686,
           "reach": 14154
         },
@@ -5909,7 +5909,7 @@
           "comments": 86,
           "shares": 51,
           "engagement": 3863,
-          "pes": 3995.0,
+          "pes": 4039.0,
           "views": 59353,
           "reach": 50729
         },
@@ -5920,7 +5920,7 @@
           "comments": 44,
           "shares": 32,
           "engagement": 1684,
-          "pes": 1750.0,
+          "pes": 1796.0,
           "views": 16808,
           "reach": 13175
         },
@@ -5931,7 +5931,7 @@
           "comments": 84,
           "shares": 42,
           "engagement": 2791,
-          "pes": 2785.0,
+          "pes": 2917.0,
           "views": 29419,
           "reach": 22588
         },
@@ -5942,7 +5942,7 @@
           "comments": 179,
           "shares": 34,
           "engagement": 2378,
-          "pes": 2040.0,
+          "pes": 2453.0,
           "views": 21406,
           "reach": 15501
         },
@@ -5953,7 +5953,7 @@
           "comments": 99,
           "shares": 44,
           "engagement": 3221,
-          "pes": 399.0,
+          "pes": 3418.0,
           "views": 30822,
           "reach": 23138
         },
@@ -5964,7 +5964,7 @@
           "comments": 58,
           "shares": 38,
           "engagement": 3454,
-          "pes": 30.0,
+          "pes": 3620.0,
           "views": 28343,
           "reach": 21075
         },
@@ -5975,7 +5975,7 @@
           "comments": 110,
           "shares": 35,
           "engagement": 734,
-          "pes": 142.0,
+          "pes": 878.0,
           "views": 7626,
           "reach": 3836
         },
@@ -5986,7 +5986,7 @@
           "comments": 49,
           "shares": 20,
           "engagement": 436,
-          "pes": 0.0,
+          "pes": 526.0,
           "views": 3658,
           "reach": 2163
         },
@@ -5997,7 +5997,7 @@
           "comments": 51,
           "shares": 10,
           "engagement": 278,
-          "pes": 0.0,
+          "pes": 351.0,
           "views": 4059,
           "reach": 1565
         },
@@ -6008,7 +6008,7 @@
           "comments": 57,
           "shares": 24,
           "engagement": 373,
-          "pes": 272.0,
+          "pes": 478.0,
           "views": 3464,
           "reach": 1895
         },
@@ -6019,7 +6019,7 @@
           "comments": 42,
           "shares": 19,
           "engagement": 377,
-          "pes": 183.0,
+          "pes": 456.0,
           "views": 4373,
           "reach": 2367
         },
@@ -6030,7 +6030,7 @@
           "comments": 118,
           "shares": 29,
           "engagement": 712,
-          "pes": 284.0,
+          "pes": 655.0,
           "views": 6568,
           "reach": 3762
         },
@@ -6041,7 +6041,7 @@
           "comments": 74,
           "shares": 33,
           "engagement": 522,
-          "pes": 0.0,
+          "pes": 663.0,
           "views": 2984,
           "reach": 1786
         },
@@ -6052,7 +6052,7 @@
           "comments": 23,
           "shares": 13,
           "engagement": 321,
-          "pes": 0.0,
+          "pes": 418.0,
           "views": 3028,
           "reach": 1680
         },
@@ -6063,7 +6063,7 @@
           "comments": 77,
           "shares": 24,
           "engagement": 611,
-          "pes": 0.0,
+          "pes": 737.0,
           "views": 3017,
           "reach": 2232
         },
@@ -6074,7 +6074,7 @@
           "comments": 32,
           "shares": 9,
           "engagement": 324,
-          "pes": 41.0,
+          "pes": 379.0,
           "views": 2059,
           "reach": 1499
         },
@@ -6085,7 +6085,7 @@
           "comments": 48,
           "shares": 23,
           "engagement": 407,
-          "pes": 178.0,
+          "pes": 493.0,
           "views": 5613,
           "reach": 2826
         },
@@ -6096,7 +6096,7 @@
           "comments": 49,
           "shares": 23,
           "engagement": 543,
-          "pes": 242.0,
+          "pes": 638.0,
           "views": 5344,
           "reach": 3083
         },
@@ -6107,7 +6107,7 @@
           "comments": 56,
           "shares": 27,
           "engagement": 594,
-          "pes": 15.0,
+          "pes": 708.0,
           "views": 6654,
           "reach": 3571
         },
@@ -6118,7 +6118,7 @@
           "comments": 45,
           "shares": 19,
           "engagement": 387,
-          "pes": 234.0,
+          "pes": 470.0,
           "views": 4433,
           "reach": 2409
         },
@@ -6129,7 +6129,7 @@
           "comments": 45,
           "shares": 10,
           "engagement": 450,
-          "pes": 82.0,
+          "pes": 514.0,
           "views": 3547,
           "reach": 2318
         },
@@ -6140,7 +6140,7 @@
           "comments": 34,
           "shares": 6,
           "engagement": 323,
-          "pes": 126.0,
+          "pes": 338.0,
           "views": 1921,
           "reach": 1574
         },
@@ -6151,7 +6151,7 @@
           "comments": 70,
           "shares": 9,
           "engagement": 406,
-          "pes": 12.0,
+          "pes": 495.0,
           "views": 7004,
           "reach": 2300
         },
@@ -6162,7 +6162,7 @@
           "comments": 7,
           "shares": 2,
           "engagement": 114,
-          "pes": 0.0,
+          "pes": 126.0,
           "views": 773,
           "reach": 486
         },
@@ -6173,7 +6173,7 @@
           "comments": 81,
           "shares": 6,
           "engagement": 485,
-          "pes": 0.0,
+          "pes": 458.0,
           "views": 4202,
           "reach": 2567
         },
@@ -6184,7 +6184,7 @@
           "comments": 17,
           "shares": 4,
           "engagement": 147,
-          "pes": 0.0,
+          "pes": 176.0,
           "views": 1506,
           "reach": 812
         },
@@ -6195,7 +6195,7 @@
           "comments": 37,
           "shares": 11,
           "engagement": 386,
-          "pes": 0.0,
+          "pes": 448.0,
           "views": 3836,
           "reach": 2073
         },
@@ -6206,7 +6206,7 @@
           "comments": 30,
           "shares": 6,
           "engagement": 423,
-          "pes": 21.0,
+          "pes": 478.0,
           "views": 4815,
           "reach": 2435
         },
@@ -6217,7 +6217,7 @@
           "comments": 37,
           "shares": 16,
           "engagement": 465,
-          "pes": 0.0,
+          "pes": 541.0,
           "views": 7454,
           "reach": 2936
         },
@@ -6228,7 +6228,7 @@
           "comments": 23,
           "shares": 8,
           "engagement": 275,
-          "pes": 0.0,
+          "pes": 299.0,
           "views": 2290,
           "reach": 1464
         },
@@ -6239,7 +6239,7 @@
           "comments": 61,
           "shares": 17,
           "engagement": 664,
-          "pes": 0.0,
+          "pes": 771.0,
           "views": 6105,
           "reach": 2868
         },
@@ -6250,7 +6250,7 @@
           "comments": 63,
           "shares": 89,
           "engagement": 780,
-          "pes": 39.0,
+          "pes": 1018.0,
           "views": 3947,
           "reach": 2182
         },
@@ -6261,7 +6261,7 @@
           "comments": 58,
           "shares": 9,
           "engagement": 564,
-          "pes": 0.0,
+          "pes": 677.0,
           "views": 5938,
           "reach": 3186
         },
@@ -6272,7 +6272,7 @@
           "comments": 17,
           "shares": 2,
           "engagement": 167,
-          "pes": 156.0,
+          "pes": 211.0,
           "views": 2415,
           "reach": 1048
         },
@@ -7117,13 +7117,13 @@
         {
           "date": "2025-11-20",
           "posts": 3,
-          "reactions": 71,
-          "comments": 17,
-          "shares": 12,
-          "engagement": 99,
-          "pes": 140.0,
-          "views": 887,
-          "reach": 619
+          "reactions": 121,
+          "comments": 31,
+          "shares": 19,
+          "engagement": 171,
+          "pes": 240.0,
+          "views": 1774,
+          "reach": 1235
         },
         {
           "date": "2025-11-21",
@@ -7572,7 +7572,7 @@
           "comments": 15,
           "shares": 7,
           "engagement": 123,
-          "pes": 137.0,
+          "pes": 145.0,
           "views": 3214,
           "reach": 2118
         },
@@ -8220,7 +8220,7 @@
           "comments": 132,
           "shares": 98,
           "engagement": 407,
-          "pes": 0.0
+          "pes": 735.0
         },
         {
           "post_id": "122110751763015980",
@@ -8234,7 +8234,7 @@
           "comments": 100,
           "shares": 71,
           "engagement": 323,
-          "pes": 0.0
+          "pes": 565.0
         },
         {
           "post_id": "122109333867015980",
@@ -8248,7 +8248,7 @@
           "comments": 96,
           "shares": 81,
           "engagement": 317,
-          "pes": 0.0
+          "pes": 575.0
         },
         {
           "post_id": "122108332011015980",
@@ -8262,7 +8262,7 @@
           "comments": 77,
           "shares": 56,
           "engagement": 288,
-          "pes": 0.0
+          "pes": 477.0
         },
         {
           "post_id": "122109312783015980",
@@ -8276,7 +8276,7 @@
           "comments": 91,
           "shares": 59,
           "engagement": 281,
-          "pes": 0.0
+          "pes": 490.0
         },
         {
           "post_id": "122110099425015980",
@@ -8290,7 +8290,7 @@
           "comments": 98,
           "shares": 58,
           "engagement": 280,
-          "pes": 0.0
+          "pes": 494.0
         },
         {
           "post_id": "122109149817015980",
@@ -8304,7 +8304,7 @@
           "comments": 76,
           "shares": 54,
           "engagement": 268,
-          "pes": 0.0
+          "pes": 452.0
         },
         {
           "post_id": "122111437635015980",
@@ -8318,7 +8318,7 @@
           "comments": 81,
           "shares": 49,
           "engagement": 265,
-          "pes": 0.0
+          "pes": 444.0
         },
         {
           "post_id": "122115397197015980",
@@ -8346,7 +8346,7 @@
           "comments": 55,
           "shares": 68,
           "engagement": 229,
-          "pes": 0.0
+          "pes": 420.0
         }
       ],
       "731608473377029": [
@@ -8362,7 +8362,7 @@
           "comments": 19,
           "shares": 129,
           "engagement": 1453,
-          "pes": 0.0
+          "pes": 1731.0
         },
         {
           "post_id": "1767587543912422",
@@ -8435,6 +8435,20 @@
           "pes": 579.0
         },
         {
+          "post_id": "122120916939013186",
+          "page_id": "731608473377029",
+          "page_name": "Juana Babe Jam",
+          "title": "Ngumiti lang naman \ud83e\udd79\ud83e\udee3 see you sa live juankada!! \n\n#JUANABABEJAM #jambolicious #Juan365PH",
+          "post_type": "Videos",
+          "publish_time": "2026-02-04T10:53:04+0000",
+          "permalink": "https://www.facebook.com/reel/1214164204197583/",
+          "reactions": 187,
+          "comments": 6,
+          "shares": 107,
+          "engagement": 300,
+          "pes": 520.0
+        },
+        {
           "post_id": "122114508303013186",
           "page_id": "731608473377029",
           "page_name": "Juana Babe Jam",
@@ -8447,20 +8461,6 @@
           "shares": 23,
           "engagement": 269,
           "pes": 384.0
-        },
-        {
-          "post_id": "122120916939013186",
-          "page_id": "731608473377029",
-          "page_name": "Juana Babe Jam",
-          "title": "Ngumiti lang naman \ud83e\udd79\ud83e\udee3 see you sa live juankada!! \n\n#JUANABABEJAM #jambolicious #Juan365PH",
-          "post_type": "Videos",
-          "publish_time": "2026-02-04T10:53:04+0000",
-          "permalink": "https://www.facebook.com/reel/1214164204197583/",
-          "reactions": 152,
-          "comments": 5,
-          "shares": 105,
-          "engagement": 262,
-          "pes": 477.0
         },
         {
           "post_id": "122110681251013186",
@@ -8488,7 +8488,7 @@
           "comments": 62,
           "shares": 50,
           "engagement": 215,
-          "pes": 359.0
+          "pes": 377.0
         }
       ],
       "747721128429855": [
@@ -8504,7 +8504,7 @@
           "comments": 34,
           "shares": 122,
           "engagement": 1887,
-          "pes": 1623.0
+          "pes": 2165.0
         },
         {
           "post_id": "122122778559023874",
@@ -8574,7 +8574,7 @@
           "comments": 25,
           "shares": 108,
           "engagement": 323,
-          "pes": 497.0
+          "pes": 574.0
         },
         {
           "post_id": "122107116969023874",
@@ -9088,13 +9088,13 @@
       "post_type": "Videos",
       "publish_time": "2026-02-12T22:08:16+0000",
       "permalink": "https://www.facebook.com/reel/1588337558953869/",
-      "reactions": 74,
-      "comments": 20,
+      "reactions": 77,
+      "comments": 30,
       "shares": 4,
-      "views": 0,
-      "reach": 0,
-      "engagement": 98,
-      "pes": 126.0
+      "views": 1860,
+      "reach": 1147,
+      "engagement": 110,
+      "pes": 146.0
     },
     {
       "post_id": "122136118611011249",
@@ -9184,13 +9184,13 @@
       "post_type": "Videos",
       "publish_time": "2026-02-12T00:04:13+0000",
       "permalink": "https://www.facebook.com/reel/1439969047612465/",
-      "reactions": 46,
-      "comments": 8,
+      "reactions": 51,
+      "comments": 17,
       "shares": 3,
-      "views": 0,
-      "reach": 0,
-      "engagement": 57,
-      "pes": 71.0
+      "views": 1390,
+      "reach": 898,
+      "engagement": 71,
+      "pes": 94.0
     },
     {
       "post_id": "122121553065013186",
@@ -9568,13 +9568,13 @@
       "post_type": "Videos",
       "publish_time": "2026-02-08T04:20:01+0000",
       "permalink": "https://www.facebook.com/reel/1259349282771890/",
-      "reactions": 52,
-      "comments": 10,
+      "reactions": 55,
+      "comments": 12,
       "shares": 1,
-      "views": 0,
-      "reach": 0,
-      "engagement": 63,
-      "pes": 75.0
+      "views": 1187,
+      "reach": 750,
+      "engagement": 68,
+      "pes": 82.0
     },
     {
       "post_id": "122135168715011249",
@@ -9856,13 +9856,13 @@
       "post_type": "Videos",
       "publish_time": "2026-02-06T01:33:07+0000",
       "permalink": "https://www.facebook.com/reel/1500592885409229/",
-      "reactions": 34,
-      "comments": 7,
+      "reactions": 51,
+      "comments": 21,
       "shares": 0,
-      "views": 1415,
-      "reach": 0,
-      "engagement": 41,
-      "pes": 48.0
+      "views": 1598,
+      "reach": 1121,
+      "engagement": 72,
+      "pes": 93.0
     },
     {
       "post_id": "122121017205013186",
@@ -9968,13 +9968,13 @@
       "post_type": "Videos",
       "publish_time": "2026-02-04T10:53:04+0000",
       "permalink": "https://www.facebook.com/reel/1214164204197583/",
-      "reactions": 152,
-      "comments": 5,
-      "shares": 105,
-      "views": 992,
-      "reach": 0,
-      "engagement": 262,
-      "pes": 477.0
+      "reactions": 187,
+      "comments": 6,
+      "shares": 107,
+      "views": 1319,
+      "reach": 690,
+      "engagement": 300,
+      "pes": 520.0
     },
     {
       "post_id": "122117780289145396",
@@ -10022,7 +10022,7 @@
       "views": 548,
       "reach": 463,
       "engagement": 68,
-      "pes": 86.0
+      "pes": 97.0
     },
     {
       "post_id": "122134389309011249",
@@ -10038,7 +10038,7 @@
       "views": 2415,
       "reach": 1048,
       "engagement": 167,
-      "pes": 156.0
+      "pes": 211.0
     },
     {
       "post_id": "122122285365023874",
@@ -10054,7 +10054,7 @@
       "views": 2140,
       "reach": 1357,
       "engagement": 66,
-      "pes": 62.0
+      "pes": 90.0
     },
     {
       "post_id": "122122305627023874",
@@ -10070,7 +10070,7 @@
       "views": 3029,
       "reach": 1855,
       "engagement": 323,
-      "pes": 497.0
+      "pes": 574.0
     },
     {
       "post_id": "122120746305012033",
@@ -10134,7 +10134,7 @@
       "views": 1004,
       "reach": 504,
       "engagement": 55,
-      "pes": 0.0
+      "pes": 75.0
     },
     {
       "post_id": "122120834295013186",
@@ -10150,7 +10150,7 @@
       "views": 468,
       "reach": 425,
       "engagement": 16,
-      "pes": 0.0
+      "pes": 20.0
     },
     {
       "post_id": "122134141209011249",
@@ -10166,7 +10166,7 @@
       "views": 2353,
       "reach": 1353,
       "engagement": 138,
-      "pes": 0.0
+      "pes": 158.0
     },
     {
       "post_id": "122134177401011249",
@@ -10182,7 +10182,7 @@
       "views": 522,
       "reach": 415,
       "engagement": 106,
-      "pes": 0.0
+      "pes": 121.0
     },
     {
       "post_id": "122134228119011249",
@@ -10198,7 +10198,7 @@
       "views": 660,
       "reach": 436,
       "engagement": 121,
-      "pes": 0.0
+      "pes": 155.0
     },
     {
       "post_id": "1313126654180995",
@@ -10214,7 +10214,7 @@
       "views": 2403,
       "reach": 982,
       "engagement": 199,
-      "pes": 0.0
+      "pes": 243.0
     },
     {
       "post_id": "122122187223023874",
@@ -10230,7 +10230,7 @@
       "views": 1390,
       "reach": 795,
       "engagement": 68,
-      "pes": 0.0
+      "pes": 99.0
     },
     {
       "post_id": "122122217151023874",
@@ -10246,7 +10246,7 @@
       "views": 562,
       "reach": 373,
       "engagement": 46,
-      "pes": 0.0
+      "pes": 67.0
     },
     {
       "post_id": "122122238589023874",
@@ -10262,7 +10262,7 @@
       "views": 1221,
       "reach": 838,
       "engagement": 92,
-      "pes": 0.0
+      "pes": 148.0
     },
     {
       "post_id": "122120666043012033",
@@ -10406,7 +10406,7 @@
       "views": 278,
       "reach": 204,
       "engagement": 30,
-      "pes": 0.0
+      "pes": 38.0
     },
     {
       "post_id": "122120767203013186",
@@ -10422,7 +10422,7 @@
       "views": 212,
       "reach": 152,
       "engagement": 14,
-      "pes": 0.0
+      "pes": 19.0
     },
     {
       "post_id": "122120773149013186",
@@ -10438,7 +10438,7 @@
       "views": 532,
       "reach": 444,
       "engagement": 51,
-      "pes": 0.0
+      "pes": 61.0
     },
     {
       "post_id": "122133968307011249",
@@ -10470,7 +10470,7 @@
       "views": 1160,
       "reach": 565,
       "engagement": 167,
-      "pes": 0.0
+      "pes": 212.0
     },
     {
       "post_id": "122134008669011249",
@@ -10486,7 +10486,7 @@
       "views": 1782,
       "reach": 1091,
       "engagement": 389,
-      "pes": 0.0
+      "pes": 581.0
     },
     {
       "post_id": "122134051107011249",
@@ -10502,7 +10502,7 @@
       "views": 979,
       "reach": 512,
       "engagement": 153,
-      "pes": 0.0
+      "pes": 186.0
     },
     {
       "post_id": "122122094235023874",
@@ -10518,7 +10518,7 @@
       "views": 1449,
       "reach": 843,
       "engagement": 75,
-      "pes": 0.0
+      "pes": 102.0
     },
     {
       "post_id": "122122109919023874",
@@ -10550,7 +10550,7 @@
       "views": 1250,
       "reach": 751,
       "engagement": 77,
-      "pes": 0.0
+      "pes": 110.0
     },
     {
       "post_id": "122122142025023874",
@@ -10566,7 +10566,7 @@
       "views": 621,
       "reach": 296,
       "engagement": 51,
-      "pes": 0.0
+      "pes": 72.0
     },
     {
       "post_id": "122120512239012033",
@@ -10614,7 +10614,7 @@
       "views": 877,
       "reach": 404,
       "engagement": 96,
-      "pes": 0.0
+      "pes": 115.0
     },
     {
       "post_id": "122120659743013186",
@@ -10630,7 +10630,7 @@
       "views": 279,
       "reach": 232,
       "engagement": 41,
-      "pes": 0.0
+      "pes": 45.0
     },
     {
       "post_id": "122120686761013186",
@@ -10646,7 +10646,7 @@
       "views": 326,
       "reach": 231,
       "engagement": 42,
-      "pes": 0.0
+      "pes": 50.0
     },
     {
       "post_id": "122133739695011249",
@@ -10662,7 +10662,7 @@
       "views": 1870,
       "reach": 850,
       "engagement": 255,
-      "pes": 0.0
+      "pes": 295.0
     },
     {
       "post_id": "122133744921011249",
@@ -10678,7 +10678,7 @@
       "views": 1060,
       "reach": 563,
       "engagement": 163,
-      "pes": 0.0
+      "pes": 184.0
     },
     {
       "post_id": "122133801447011249",
@@ -10694,7 +10694,7 @@
       "views": 2498,
       "reach": 1043,
       "engagement": 137,
-      "pes": 0.0
+      "pes": 159.0
     },
     {
       "post_id": "122133847299011249",
@@ -10710,7 +10710,7 @@
       "views": 677,
       "reach": 412,
       "engagement": 109,
-      "pes": 0.0
+      "pes": 133.0
     },
     {
       "post_id": "122121987861023874",
@@ -10726,7 +10726,7 @@
       "views": 2469,
       "reach": 1376,
       "engagement": 77,
-      "pes": 0.0
+      "pes": 97.0
     },
     {
       "post_id": "122121994005023874",
@@ -10742,7 +10742,7 @@
       "views": 2099,
       "reach": 693,
       "engagement": 195,
-      "pes": 0.0
+      "pes": 272.0
     },
     {
       "post_id": "122122017087023874",
@@ -10758,7 +10758,7 @@
       "views": 1670,
       "reach": 792,
       "engagement": 149,
-      "pes": 0.0
+      "pes": 167.0
     },
     {
       "post_id": "122122038537023874",
@@ -10774,7 +10774,7 @@
       "views": 2740,
       "reach": 1900,
       "engagement": 107,
-      "pes": 0.0
+      "pes": 122.0
     },
     {
       "post_id": "1548819442898598",
@@ -10838,7 +10838,7 @@
       "views": 492,
       "reach": 337,
       "engagement": 133,
-      "pes": 0.0
+      "pes": 140.0
     },
     {
       "post_id": "122120586303013186",
@@ -10854,7 +10854,7 @@
       "views": 411,
       "reach": 387,
       "engagement": 93,
-      "pes": 0.0
+      "pes": 103.0
     },
     {
       "post_id": "122133562593011249",
@@ -10870,7 +10870,7 @@
       "views": 748,
       "reach": 453,
       "engagement": 101,
-      "pes": 0.0
+      "pes": 114.0
     },
     {
       "post_id": "122133603741011249",
@@ -10886,7 +10886,7 @@
       "views": 1169,
       "reach": 685,
       "engagement": 149,
-      "pes": 0.0
+      "pes": 185.0
     },
     {
       "post_id": "122133617307011249",
@@ -10918,7 +10918,7 @@
       "views": 735,
       "reach": 459,
       "engagement": 70,
-      "pes": 0.0
+      "pes": 84.0
     },
     {
       "post_id": "122121939147023874",
@@ -10934,7 +10934,7 @@
       "views": 772,
       "reach": 546,
       "engagement": 52,
-      "pes": 0.0
+      "pes": 122.0
     },
     {
       "post_id": "122120336847012033",
@@ -10966,7 +10966,7 @@
       "views": 471,
       "reach": 438,
       "engagement": 65,
-      "pes": 0.0
+      "pes": 71.0
     },
     {
       "post_id": "828672643538548",
@@ -10982,7 +10982,7 @@
       "views": 4017,
       "reach": 969,
       "engagement": 126,
-      "pes": 0.0
+      "pes": 146.0
     },
     {
       "post_id": "122133446271011249",
@@ -10998,7 +10998,7 @@
       "views": 2172,
       "reach": 1161,
       "engagement": 115,
-      "pes": 0.0
+      "pes": 128.0
     },
     {
       "post_id": "122133460695011249",
@@ -11014,7 +11014,7 @@
       "views": 531,
       "reach": 377,
       "engagement": 77,
-      "pes": 0.0
+      "pes": 89.0
     },
     {
       "post_id": "122121817005023874",
@@ -11030,7 +11030,7 @@
       "views": 530,
       "reach": 308,
       "engagement": 58,
-      "pes": 0.0
+      "pes": 76.0
     },
     {
       "post_id": "122121866835023874",
@@ -11078,7 +11078,7 @@
       "views": 734,
       "reach": 429,
       "engagement": 147,
-      "pes": 0.0
+      "pes": 178.0
     },
     {
       "post_id": "122121787389023874",
@@ -11094,7 +11094,7 @@
       "views": 659,
       "reach": 453,
       "engagement": 54,
-      "pes": 0.0
+      "pes": 70.0
     },
     {
       "post_id": "122120470773013186",
@@ -11110,7 +11110,7 @@
       "views": 626,
       "reach": 469,
       "engagement": 55,
-      "pes": 0.0
+      "pes": 63.0
     },
     {
       "post_id": "122121768165023874",
@@ -11126,7 +11126,7 @@
       "views": 714,
       "reach": 498,
       "engagement": 58,
-      "pes": 0.0
+      "pes": 81.0
     },
     {
       "post_id": "748765068327821_122133147045011249",
@@ -11174,7 +11174,7 @@
       "views": 5986,
       "reach": 2623,
       "engagement": 1453,
-      "pes": 0.0
+      "pes": 1731.0
     },
     {
       "post_id": "122133188109011249",
@@ -11190,7 +11190,7 @@
       "views": 648,
       "reach": 380,
       "engagement": 87,
-      "pes": 0.0
+      "pes": 100.0
     },
     {
       "post_id": "122133206547011249",
@@ -11206,7 +11206,7 @@
       "views": 3988,
       "reach": 1842,
       "engagement": 315,
-      "pes": 0.0
+      "pes": 357.0
     },
     {
       "post_id": "122121700125023874",
@@ -11222,7 +11222,7 @@
       "views": 849,
       "reach": 400,
       "engagement": 54,
-      "pes": 0.0
+      "pes": 78.0
     },
     {
       "post_id": "122121661251023874",
@@ -11238,7 +11238,7 @@
       "views": 744,
       "reach": 340,
       "engagement": 98,
-      "pes": 0.0
+      "pes": 138.0
     },
     {
       "post_id": "122120147391012033",
@@ -11286,7 +11286,7 @@
       "views": 538,
       "reach": 478,
       "engagement": 89,
-      "pes": 0.0
+      "pes": 114.0
     },
     {
       "post_id": "122132917011011249",
@@ -11302,7 +11302,7 @@
       "views": 2158,
       "reach": 998,
       "engagement": 157,
-      "pes": 0.0
+      "pes": 180.0
     },
     {
       "post_id": "122132943351011249",
@@ -11318,7 +11318,7 @@
       "views": 483,
       "reach": 349,
       "engagement": 72,
-      "pes": 0.0
+      "pes": 80.0
     },
     {
       "post_id": "122132990367011249",
@@ -11334,7 +11334,7 @@
       "views": 1195,
       "reach": 726,
       "engagement": 157,
-      "pes": 0.0
+      "pes": 188.0
     },
     {
       "post_id": "122121556539023874",
@@ -11350,7 +11350,7 @@
       "views": 1163,
       "reach": 611,
       "engagement": 199,
-      "pes": 0.0
+      "pes": 256.0
     },
     {
       "post_id": "122120037387012033",
@@ -11414,7 +11414,7 @@
       "views": 2858,
       "reach": 617,
       "engagement": 181,
-      "pes": 0.0
+      "pes": 216.0
     },
     {
       "post_id": "122132512035011249",
@@ -11430,7 +11430,7 @@
       "views": 522,
       "reach": 283,
       "engagement": 16,
-      "pes": 0.0
+      "pes": 20.0
     },
     {
       "post_id": "122132729301011249",
@@ -11446,7 +11446,7 @@
       "views": 984,
       "reach": 529,
       "engagement": 131,
-      "pes": 0.0
+      "pes": 156.0
     },
     {
       "post_id": "122121480351023874",
@@ -11462,7 +11462,7 @@
       "views": 1560,
       "reach": 1314,
       "engagement": 55,
-      "pes": 0.0
+      "pes": 63.0
     },
     {
       "post_id": "1394722385252429",
@@ -11526,7 +11526,7 @@
       "views": 858,
       "reach": 434,
       "engagement": 49,
-      "pes": 0.0
+      "pes": 62.0
     },
     {
       "post_id": "907206738953471",
@@ -11542,7 +11542,7 @@
       "views": 1412,
       "reach": 886,
       "engagement": 159,
-      "pes": 0.0
+      "pes": 205.0
     },
     {
       "post_id": "122132560617011249",
@@ -11558,7 +11558,7 @@
       "views": 1216,
       "reach": 744,
       "engagement": 172,
-      "pes": 0.0
+      "pes": 191.0
     },
     {
       "post_id": "122121450423023874",
@@ -11574,7 +11574,7 @@
       "views": 691,
       "reach": 400,
       "engagement": 49,
-      "pes": 0.0
+      "pes": 58.0
     },
     {
       "post_id": "122121395217023874",
@@ -11590,7 +11590,7 @@
       "views": 1208,
       "reach": 696,
       "engagement": 77,
-      "pes": 0.0
+      "pes": 89.0
     },
     {
       "post_id": "122121360501023874",
@@ -11606,7 +11606,7 @@
       "views": 1519,
       "reach": 858,
       "engagement": 70,
-      "pes": 0.0
+      "pes": 97.0
     },
     {
       "post_id": "122119848951012033",
@@ -11670,7 +11670,7 @@
       "views": 719,
       "reach": 446,
       "engagement": 46,
-      "pes": 35.0
+      "pes": 56.0
     },
     {
       "post_id": "122121285345023874",
@@ -11686,7 +11686,7 @@
       "views": 920,
       "reach": 367,
       "engagement": 40,
-      "pes": 39.0
+      "pes": 56.0
     },
     {
       "post_id": "122119695471012033",
@@ -11750,7 +11750,7 @@
       "views": 614,
       "reach": 463,
       "engagement": 42,
-      "pes": 0.0
+      "pes": 46.0
     },
     {
       "post_id": "122132063295011249",
@@ -11766,7 +11766,7 @@
       "views": 773,
       "reach": 486,
       "engagement": 114,
-      "pes": 0.0
+      "pes": 126.0
     },
     {
       "post_id": "122121218475023874",
@@ -11782,7 +11782,7 @@
       "views": 1478,
       "reach": 620,
       "engagement": 57,
-      "pes": 0.0
+      "pes": 68.0
     },
     {
       "post_id": "122121196461023874",
@@ -11798,7 +11798,7 @@
       "views": 238,
       "reach": 134,
       "engagement": 14,
-      "pes": 0.0
+      "pes": 19.0
     },
     {
       "post_id": "122121180231023874",
@@ -11814,7 +11814,7 @@
       "views": 2182,
       "reach": 1679,
       "engagement": 42,
-      "pes": 0.0
+      "pes": 53.0
     },
     {
       "post_id": "122121160443023874",
@@ -11830,7 +11830,7 @@
       "views": 1302,
       "reach": 809,
       "engagement": 71,
-      "pes": 0.0
+      "pes": 84.0
     },
     {
       "post_id": "748765068327821_122131929531011249",
@@ -11926,7 +11926,7 @@
       "views": 1068,
       "reach": 704,
       "engagement": 97,
-      "pes": 0.0
+      "pes": 141.0
     },
     {
       "post_id": "122131893105011249",
@@ -11942,7 +11942,7 @@
       "views": 482,
       "reach": 255,
       "engagement": 27,
-      "pes": 0.0
+      "pes": 29.0
     },
     {
       "post_id": "122131900125011249",
@@ -11958,7 +11958,7 @@
       "views": 696,
       "reach": 478,
       "engagement": 124,
-      "pes": 0.0
+      "pes": 134.0
     },
     {
       "post_id": "2004480417152921",
@@ -11974,7 +11974,7 @@
       "views": 5156,
       "reach": 1090,
       "engagement": 224,
-      "pes": 0.0
+      "pes": 285.0
     },
     {
       "post_id": "122131919499011249",
@@ -11990,7 +11990,7 @@
       "views": 670,
       "reach": 305,
       "engagement": 24,
-      "pes": 0.0
+      "pes": 35.0
     },
     {
       "post_id": "122121093873023874",
@@ -12006,7 +12006,7 @@
       "views": 383,
       "reach": 220,
       "engagement": 27,
-      "pes": 0.0
+      "pes": 32.0
     },
     {
       "post_id": "122121079143023874",
@@ -12022,7 +12022,7 @@
       "views": 463,
       "reach": 260,
       "engagement": 36,
-      "pes": 24.0
+      "pes": 50.0
     },
     {
       "post_id": "122131725705011249",
@@ -12038,7 +12038,7 @@
       "views": 79,
       "reach": 159,
       "engagement": 22,
-      "pes": 19.0
+      "pes": 24.0
     },
     {
       "post_id": "122131745097011249",
@@ -12086,7 +12086,7 @@
       "views": 680,
       "reach": 373,
       "engagement": 69,
-      "pes": 72.0
+      "pes": 85.0
     },
     {
       "post_id": "122131685445011249",
@@ -12102,7 +12102,7 @@
       "views": 1038,
       "reach": 906,
       "engagement": 179,
-      "pes": 0.0
+      "pes": 207.0
     },
     {
       "post_id": "122121000585023874",
@@ -12118,7 +12118,7 @@
       "views": 736,
       "reach": 433,
       "engagement": 83,
-      "pes": 95.0
+      "pes": 117.0
     },
     {
       "post_id": "122120981403023874",
@@ -12134,7 +12134,7 @@
       "views": 1395,
       "reach": 515,
       "engagement": 101,
-      "pes": 102.0
+      "pes": 133.0
     },
     {
       "post_id": "122119675749013186",
@@ -12182,7 +12182,7 @@
       "views": 1059,
       "reach": 728,
       "engagement": 178,
-      "pes": 0.0
+      "pes": 200.0
     },
     {
       "post_id": "122131526727011249",
@@ -12198,7 +12198,7 @@
       "views": 757,
       "reach": 567,
       "engagement": 120,
-      "pes": 0.0
+      "pes": 133.0
     },
     {
       "post_id": "122131547097011249",
@@ -12214,7 +12214,7 @@
       "views": 627,
       "reach": 453,
       "engagement": 87,
-      "pes": 0.0
+      "pes": 99.0
     },
     {
       "post_id": "122119513269012033",
@@ -12262,7 +12262,7 @@
       "views": 3263,
       "reach": 1370,
       "engagement": 203,
-      "pes": 186.0
+      "pes": 275.0
     },
     {
       "post_id": "122131465311011249",
@@ -12294,7 +12294,7 @@
       "views": 2849,
       "reach": 1177,
       "engagement": 102,
-      "pes": 90.0
+      "pes": 142.0
     },
     {
       "post_id": "122119405593012033",
@@ -12342,7 +12342,7 @@
       "views": 3383,
       "reach": 1599,
       "engagement": 201,
-      "pes": 234.0
+      "pes": 247.0
     },
     {
       "post_id": "122131248867011249",
@@ -12358,7 +12358,7 @@
       "views": 1050,
       "reach": 810,
       "engagement": 186,
-      "pes": 0.0
+      "pes": 223.0
     },
     {
       "post_id": "122120818353023874",
@@ -12374,7 +12374,7 @@
       "views": 2822,
       "reach": 1122,
       "engagement": 107,
-      "pes": 122.0
+      "pes": 176.0
     },
     {
       "post_id": "122120851647023874",
@@ -12390,7 +12390,7 @@
       "views": 1476,
       "reach": 900,
       "engagement": 88,
-      "pes": 107.0
+      "pes": 124.0
     },
     {
       "post_id": "122120890365023874",
@@ -12406,7 +12406,7 @@
       "views": 1046,
       "reach": 411,
       "engagement": 63,
-      "pes": 78.0
+      "pes": 90.0
     },
     {
       "post_id": "748765068327821_122131084149011249",
@@ -12486,7 +12486,7 @@
       "views": 3850,
       "reach": 1565,
       "engagement": 216,
-      "pes": 0.0
+      "pes": 265.0
     },
     {
       "post_id": "122131081563011249",
@@ -12502,7 +12502,7 @@
       "views": 636,
       "reach": 398,
       "engagement": 81,
-      "pes": 0.0
+      "pes": 109.0
     },
     {
       "post_id": "122120713491023874",
@@ -12518,7 +12518,7 @@
       "views": 1004,
       "reach": 461,
       "engagement": 74,
-      "pes": 97.0
+      "pes": 109.0
     },
     {
       "post_id": "122120762439023874",
@@ -12534,7 +12534,7 @@
       "views": 662,
       "reach": 412,
       "engagement": 63,
-      "pes": 77.0
+      "pes": 89.0
     },
     {
       "post_id": "122120796873023874",
@@ -12550,7 +12550,7 @@
       "views": 4805,
       "reach": 1735,
       "engagement": 136,
-      "pes": 104.0
+      "pes": 186.0
     },
     {
       "post_id": "122131004349011249",
@@ -12566,7 +12566,7 @@
       "views": 1155,
       "reach": 797,
       "engagement": 161,
-      "pes": 0.0
+      "pes": 180.0
     },
     {
       "post_id": "122131044039011249",
@@ -12582,7 +12582,7 @@
       "views": 765,
       "reach": 575,
       "engagement": 123,
-      "pes": 0.0
+      "pes": 139.0
     },
     {
       "post_id": "122120732859023874",
@@ -12598,7 +12598,7 @@
       "views": 2994,
       "reach": 1175,
       "engagement": 127,
-      "pes": 118.0
+      "pes": 169.0
     },
     {
       "post_id": "731608473377029_122119425123013186",
@@ -12710,7 +12710,7 @@
       "views": 775,
       "reach": 669,
       "engagement": 137,
-      "pes": 193.0
+      "pes": 205.0
     },
     {
       "post_id": "122130796515011249",
@@ -12726,7 +12726,7 @@
       "views": 1035,
       "reach": 763,
       "engagement": 177,
-      "pes": 0.0
+      "pes": 206.0
     },
     {
       "post_id": "122130858555011249",
@@ -12742,7 +12742,7 @@
       "views": 1301,
       "reach": 895,
       "engagement": 143,
-      "pes": 0.0
+      "pes": 169.0
     },
     {
       "post_id": "122119258533012033",
@@ -12790,7 +12790,7 @@
       "views": 788,
       "reach": 597,
       "engagement": 70,
-      "pes": 95.0
+      "pes": 102.0
     },
     {
       "post_id": "122120645223023874",
@@ -12806,7 +12806,7 @@
       "views": 1512,
       "reach": 692,
       "engagement": 81,
-      "pes": 91.0
+      "pes": 110.0
     },
     {
       "post_id": "122120664657023874",
@@ -12822,7 +12822,7 @@
       "views": 1238,
       "reach": 642,
       "engagement": 112,
-      "pes": 122.0
+      "pes": 162.0
     },
     {
       "post_id": "122130879063011249",
@@ -12838,7 +12838,7 @@
       "views": 2813,
       "reach": 1216,
       "engagement": 219,
-      "pes": 238.0
+      "pes": 259.0
     },
     {
       "post_id": "122119184469012033",
@@ -12902,7 +12902,7 @@
       "views": 538,
       "reach": 344,
       "engagement": 57,
-      "pes": 0.0
+      "pes": 76.0
     },
     {
       "post_id": "122130703155011249",
@@ -12918,7 +12918,7 @@
       "views": 1808,
       "reach": 766,
       "engagement": 197,
-      "pes": 0.0
+      "pes": 239.0
     },
     {
       "post_id": "122119150611012033",
@@ -12998,7 +12998,7 @@
       "views": 580,
       "reach": 344,
       "engagement": 67,
-      "pes": 83.0
+      "pes": 93.0
     },
     {
       "post_id": "122120546685023874",
@@ -13030,7 +13030,7 @@
       "views": 928,
       "reach": 488,
       "engagement": 86,
-      "pes": 108.0
+      "pes": 131.0
     },
     {
       "post_id": "122130548061011249",
@@ -13142,7 +13142,7 @@
       "views": 828,
       "reach": 662,
       "engagement": 177,
-      "pes": 0.0
+      "pes": 203.0
     },
     {
       "post_id": "122119086225012033",
@@ -13190,7 +13190,7 @@
       "views": 1254,
       "reach": 791,
       "engagement": 120,
-      "pes": 115.0
+      "pes": 170.0
     },
     {
       "post_id": "122120485749023874",
@@ -13206,7 +13206,7 @@
       "views": 1159,
       "reach": 516,
       "engagement": 84,
-      "pes": 94.0
+      "pes": 120.0
     },
     {
       "post_id": "122130341991011249",
@@ -13222,7 +13222,7 @@
       "views": 600,
       "reach": 435,
       "engagement": 112,
-      "pes": 0.0
+      "pes": 135.0
     },
     {
       "post_id": "122120445687023874",
@@ -13238,7 +13238,7 @@
       "views": 822,
       "reach": 749,
       "engagement": 71,
-      "pes": 82.0
+      "pes": 97.0
     },
     {
       "post_id": "122119153209013186",
@@ -13334,7 +13334,7 @@
       "views": 886,
       "reach": 625,
       "engagement": 129,
-      "pes": 182.0
+      "pes": 196.0
     },
     {
       "post_id": "122130111519011249",
@@ -13350,7 +13350,7 @@
       "views": 1125,
       "reach": 720,
       "engagement": 196,
-      "pes": 0.0
+      "pes": 248.0
     },
     {
       "post_id": "122130130161011249",
@@ -13366,7 +13366,7 @@
       "views": 1010,
       "reach": 838,
       "engagement": 224,
-      "pes": 0.0
+      "pes": 273.0
     },
     {
       "post_id": "122130169329011249",
@@ -13382,7 +13382,7 @@
       "views": 882,
       "reach": 674,
       "engagement": 191,
-      "pes": 0.0
+      "pes": 216.0
     },
     {
       "post_id": "122118819861012033",
@@ -13414,7 +13414,7 @@
       "views": 926,
       "reach": 948,
       "engagement": 98,
-      "pes": 122.0
+      "pes": 138.0
     },
     {
       "post_id": "122120364411023874",
@@ -13446,7 +13446,7 @@
       "views": 990,
       "reach": 409,
       "engagement": 130,
-      "pes": 133.0
+      "pes": 183.0
     },
     {
       "post_id": "122120234595023874",
@@ -13510,7 +13510,7 @@
       "views": 761,
       "reach": 542,
       "engagement": 148,
-      "pes": 0.0
+      "pes": 167.0
     },
     {
       "post_id": "122130014685011249",
@@ -13526,7 +13526,7 @@
       "views": 2267,
       "reach": 1138,
       "engagement": 173,
-      "pes": 0.0
+      "pes": 251.0
     },
     {
       "post_id": "122118772173012033",
@@ -13606,7 +13606,7 @@
       "views": 850,
       "reach": 525,
       "engagement": 89,
-      "pes": 122.0
+      "pes": 130.0
     },
     {
       "post_id": "122118769329012033",
@@ -13638,7 +13638,7 @@
       "views": 1827,
       "reach": 863,
       "engagement": 129,
-      "pes": 105.0
+      "pes": 191.0
     },
     {
       "post_id": "122120177883023874",
@@ -13670,7 +13670,7 @@
       "views": 781,
       "reach": 529,
       "engagement": 171,
-      "pes": 0.0
+      "pes": 217.0
     },
     {
       "post_id": "122129727393011249",
@@ -13686,7 +13686,7 @@
       "views": 1189,
       "reach": 674,
       "engagement": 183,
-      "pes": 0.0
+      "pes": 231.0
     },
     {
       "post_id": "122129813229011249",
@@ -13702,7 +13702,7 @@
       "views": 1014,
       "reach": 583,
       "engagement": 168,
-      "pes": 0.0
+      "pes": 215.0
     },
     {
       "post_id": "122118619755012033",
@@ -13782,7 +13782,7 @@
       "views": 1268,
       "reach": 493,
       "engagement": 99,
-      "pes": 134.0
+      "pes": 157.0
     },
     {
       "post_id": "122120148417023874",
@@ -13814,7 +13814,7 @@
       "views": 219,
       "reach": 197,
       "engagement": 23,
-      "pes": 29.0
+      "pes": 30.0
     },
     {
       "post_id": "122119003665013186",
@@ -13862,7 +13862,7 @@
       "views": 1058,
       "reach": 642,
       "engagement": 172,
-      "pes": 0.0
+      "pes": 214.0
     },
     {
       "post_id": "122129491311011249",
@@ -13878,7 +13878,7 @@
       "views": 1702,
       "reach": 947,
       "engagement": 130,
-      "pes": 0.0
+      "pes": 157.0
     },
     {
       "post_id": "122129515071011249",
@@ -13974,7 +13974,7 @@
       "views": 1391,
       "reach": 669,
       "engagement": 119,
-      "pes": 134.0
+      "pes": 173.0
     },
     {
       "post_id": "122118871419013186",
@@ -13990,7 +13990,7 @@
       "views": 524,
       "reach": 368,
       "engagement": 79,
-      "pes": 111.0
+      "pes": 113.0
     },
     {
       "post_id": "122118891363013186",
@@ -14006,7 +14006,7 @@
       "views": 459,
       "reach": 323,
       "engagement": 96,
-      "pes": 136.0
+      "pes": 150.0
     },
     {
       "post_id": "1321404336414977",
@@ -14102,7 +14102,7 @@
       "views": 920,
       "reach": 503,
       "engagement": 105,
-      "pes": 0.0
+      "pes": 127.0
     },
     {
       "post_id": "122129256633011249",
@@ -14118,7 +14118,7 @@
       "views": 874,
       "reach": 609,
       "engagement": 111,
-      "pes": 0.0
+      "pes": 134.0
     },
     {
       "post_id": "122118495675012033",
@@ -14198,7 +14198,7 @@
       "views": 1316,
       "reach": 577,
       "engagement": 190,
-      "pes": 219.0
+      "pes": 337.0
     },
     {
       "post_id": "122118788481013186",
@@ -14214,7 +14214,7 @@
       "views": 1010,
       "reach": 640,
       "engagement": 96,
-      "pes": 127.0
+      "pes": 130.0
     },
     {
       "post_id": "122129161677011249",
@@ -14246,7 +14246,7 @@
       "views": 2082,
       "reach": 971,
       "engagement": 139,
-      "pes": 158.0
+      "pes": 170.0
     },
     {
       "post_id": "122128999857011249",
@@ -14262,7 +14262,7 @@
       "views": 1125,
       "reach": 689,
       "engagement": 163,
-      "pes": 0.0
+      "pes": 203.0
     },
     {
       "post_id": "122118369969012033",
@@ -14342,7 +14342,7 @@
       "views": 899,
       "reach": 571,
       "engagement": 85,
-      "pes": 129.0
+      "pes": 133.0
     },
     {
       "post_id": "122118669291013186",
@@ -14374,7 +14374,7 @@
       "views": 1630,
       "reach": 700,
       "engagement": 106,
-      "pes": 142.0
+      "pes": 143.0
     },
     {
       "post_id": "122128863777011249",
@@ -14390,7 +14390,7 @@
       "views": 709,
       "reach": 506,
       "engagement": 104,
-      "pes": 130.0
+      "pes": 132.0
     },
     {
       "post_id": "122118349785012033",
@@ -14422,7 +14422,7 @@
       "views": 1234,
       "reach": 509,
       "engagement": 89,
-      "pes": 120.0
+      "pes": 131.0
     },
     {
       "post_id": "122119795185023874",
@@ -14534,7 +14534,7 @@
       "views": 1551,
       "reach": 798,
       "engagement": 124,
-      "pes": 0.0
+      "pes": 167.0
     },
     {
       "post_id": "122119741497023874",
@@ -14550,7 +14550,7 @@
       "views": 735,
       "reach": 322,
       "engagement": 58,
-      "pes": 73.0
+      "pes": 83.0
     },
     {
       "post_id": "122118259365012033",
@@ -14598,7 +14598,7 @@
       "views": 2508,
       "reach": 767,
       "engagement": 154,
-      "pes": 0.0
+      "pes": 184.0
     },
     {
       "post_id": "122119703877023874",
@@ -14614,7 +14614,7 @@
       "views": 690,
       "reach": 443,
       "engagement": 75,
-      "pes": 97.0
+      "pes": 102.0
     },
     {
       "post_id": "122119682703023874",
@@ -14630,7 +14630,7 @@
       "views": 840,
       "reach": 415,
       "engagement": 58,
-      "pes": 67.0
+      "pes": 80.0
     },
     {
       "post_id": "122118446331013186",
@@ -14646,7 +14646,7 @@
       "views": 548,
       "reach": 412,
       "engagement": 86,
-      "pes": 125.0
+      "pes": 129.0
     },
     {
       "post_id": "122118475173013186",
@@ -14726,7 +14726,7 @@
       "views": 1108,
       "reach": 676,
       "engagement": 129,
-      "pes": 0.0
+      "pes": 155.0
     },
     {
       "post_id": "122128447905011249",
@@ -14742,7 +14742,7 @@
       "views": 1238,
       "reach": 800,
       "engagement": 159,
-      "pes": 0.0
+      "pes": 183.0
     },
     {
       "post_id": "122128381077011249",
@@ -14758,7 +14758,7 @@
       "views": 1312,
       "reach": 687,
       "engagement": 148,
-      "pes": 0.0
+      "pes": 188.0
     },
     {
       "post_id": "122119636677023874",
@@ -14774,7 +14774,7 @@
       "views": 860,
       "reach": 581,
       "engagement": 112,
-      "pes": 181.0
+      "pes": 218.0
     },
     {
       "post_id": "122119597227023874",
@@ -14790,7 +14790,7 @@
       "views": 1116,
       "reach": 379,
       "engagement": 1887,
-      "pes": 1623.0
+      "pes": 2165.0
     },
     {
       "post_id": "122118375321013186",
@@ -14886,7 +14886,7 @@
       "views": 609,
       "reach": 391,
       "engagement": 64,
-      "pes": 101.0
+      "pes": 102.0
     },
     {
       "post_id": "122118043911012033",
@@ -14934,7 +14934,7 @@
       "views": 2437,
       "reach": 1307,
       "engagement": 224,
-      "pes": 0.0
+      "pes": 269.0
     },
     {
       "post_id": "122128164699011249",
@@ -14950,7 +14950,7 @@
       "views": 729,
       "reach": 529,
       "engagement": 147,
-      "pes": 0.0
+      "pes": 178.0
     },
     {
       "post_id": "122128164801011249",
@@ -14966,7 +14966,7 @@
       "views": 1233,
       "reach": 789,
       "engagement": 226,
-      "pes": 0.0
+      "pes": 289.0
     },
     {
       "post_id": "122119505733023874",
@@ -14982,7 +14982,7 @@
       "views": 1058,
       "reach": 613,
       "engagement": 94,
-      "pes": 141.0
+      "pes": 149.0
     },
     {
       "post_id": "122119492185023874",
@@ -14998,7 +14998,7 @@
       "views": 5563,
       "reach": 285,
       "engagement": 125,
-      "pes": 234.0
+      "pes": 243.0
     },
     {
       "post_id": "122127933231011249",
@@ -15094,7 +15094,7 @@
       "views": 21499,
       "reach": 16326,
       "engagement": 2771,
-      "pes": 0.0
+      "pes": 2895.0
     },
     {
       "post_id": "122127898809011249",
@@ -15110,7 +15110,7 @@
       "views": 6078,
       "reach": 4399,
       "engagement": 656,
-      "pes": 0.0
+      "pes": 695.0
     },
     {
       "post_id": "122119427727023874",
@@ -15142,7 +15142,7 @@
       "views": 5624,
       "reach": 326,
       "engagement": 82,
-      "pes": 128.0
+      "pes": 147.0
     },
     {
       "post_id": "122118146163013186",
@@ -15158,7 +15158,7 @@
       "views": 782,
       "reach": 517,
       "engagement": 153,
-      "pes": 242.0
+      "pes": 255.0
     },
     {
       "post_id": "122127628539011249",
@@ -15222,7 +15222,7 @@
       "views": 13720,
       "reach": 11067,
       "engagement": 1305,
-      "pes": 0.0
+      "pes": 1372.0
     },
     {
       "post_id": "122127809799011249",
@@ -15238,7 +15238,7 @@
       "views": 10505,
       "reach": 7030,
       "engagement": 1037,
-      "pes": 0.0
+      "pes": 1105.0
     },
     {
       "post_id": "122119371075023874",
@@ -15334,7 +15334,7 @@
       "views": 5737,
       "reach": 4307,
       "engagement": 793,
-      "pes": 297.0
+      "pes": 839.0
     },
     {
       "post_id": "122119294461023874",
@@ -15350,7 +15350,7 @@
       "views": 861,
       "reach": 362,
       "engagement": 74,
-      "pes": 103.0
+      "pes": 112.0
     },
     {
       "post_id": "731608473377029_122118078369013186",
@@ -15510,7 +15510,7 @@
       "views": 5709,
       "reach": 4417,
       "engagement": 692,
-      "pes": 626.0
+      "pes": 723.0
     },
     {
       "post_id": "122127434535011249",
@@ -15542,7 +15542,7 @@
       "views": 6201,
       "reach": 5372,
       "engagement": 769,
-      "pes": 492.0
+      "pes": 808.0
     },
     {
       "post_id": "122119283367023874",
@@ -15558,7 +15558,7 @@
       "views": 776,
       "reach": 425,
       "engagement": 63,
-      "pes": 79.0
+      "pes": 95.0
     },
     {
       "post_id": "122119210995023874",
@@ -15574,7 +15574,7 @@
       "views": 5718,
       "reach": 316,
       "engagement": 116,
-      "pes": 232.0
+      "pes": 240.0
     },
     {
       "post_id": "122119194513023874",
@@ -15590,7 +15590,7 @@
       "views": 612,
       "reach": 320,
       "engagement": 88,
-      "pes": 118.0
+      "pes": 144.0
     },
     {
       "post_id": "122117944263013186",
@@ -15622,7 +15622,7 @@
       "views": 488,
       "reach": 307,
       "engagement": 95,
-      "pes": 139.0
+      "pes": 154.0
     },
     {
       "post_id": "122117970507013186",
@@ -15734,7 +15734,7 @@
       "views": 9483,
       "reach": 6640,
       "engagement": 758,
-      "pes": 757.0
+      "pes": 824.0
     },
     {
       "post_id": "122127158847011249",
@@ -15750,7 +15750,7 @@
       "views": 13786,
       "reach": 10857,
       "engagement": 1403,
-      "pes": 1396.0
+      "pes": 1461.0
     },
     {
       "post_id": "122127198105011249",
@@ -15782,7 +15782,7 @@
       "views": 6883,
       "reach": 1262,
       "engagement": 96,
-      "pes": 112.0
+      "pes": 147.0
     },
     {
       "post_id": "122119057551023874",
@@ -15798,7 +15798,7 @@
       "views": 0,
       "reach": 105,
       "engagement": 10,
-      "pes": 8.0
+      "pes": 11.0
     },
     {
       "post_id": "122119029333023874",
@@ -15814,7 +15814,7 @@
       "views": 553,
       "reach": 316,
       "engagement": 83,
-      "pes": 117.0
+      "pes": 128.0
     },
     {
       "post_id": "122118958455023874",
@@ -15830,7 +15830,7 @@
       "views": 735,
       "reach": 445,
       "engagement": 65,
-      "pes": 88.0
+      "pes": 94.0
     },
     {
       "post_id": "122118929169023874",
@@ -15846,7 +15846,7 @@
       "views": 653,
       "reach": 283,
       "engagement": 52,
-      "pes": 66.0
+      "pes": 75.0
     },
     {
       "post_id": "122117883009013186",
@@ -15862,7 +15862,7 @@
       "views": 0,
       "reach": 162,
       "engagement": 8,
-      "pes": 7.0
+      "pes": 8.0
     },
     {
       "post_id": "122126932377011249",
@@ -15878,7 +15878,7 @@
       "views": 3286,
       "reach": 1599,
       "engagement": 208,
-      "pes": 232.0
+      "pes": 244.0
     },
     {
       "post_id": "122126944623011249",
@@ -16070,7 +16070,7 @@
       "views": 13522,
       "reach": 11187,
       "engagement": 1468,
-      "pes": 1508.0
+      "pes": 1542.0
     },
     {
       "post_id": "122118839175023874",
@@ -16086,7 +16086,7 @@
       "views": 564,
       "reach": 363,
       "engagement": 67,
-      "pes": 86.0
+      "pes": 96.0
     },
     {
       "post_id": "122118788781023874",
@@ -16102,7 +16102,7 @@
       "views": 2415,
       "reach": 1162,
       "engagement": 157,
-      "pes": 226.0
+      "pes": 272.0
     },
     {
       "post_id": "122118709527023874",
@@ -16134,7 +16134,7 @@
       "views": 846,
       "reach": 418,
       "engagement": 67,
-      "pes": 91.0
+      "pes": 97.0
     },
     {
       "post_id": "122126779887011249",
@@ -16214,7 +16214,7 @@
       "views": 393,
       "reach": 218,
       "engagement": 52,
-      "pes": 62.0
+      "pes": 76.0
     },
     {
       "post_id": "122117515935012033",
@@ -16230,7 +16230,7 @@
       "views": 1626,
       "reach": 813,
       "engagement": 57,
-      "pes": 66.0
+      "pes": 74.0
     },
     {
       "post_id": "122126671065011249",
@@ -16246,7 +16246,7 @@
       "views": 13365,
       "reach": 6123,
       "engagement": 879,
-      "pes": 936.0
+      "pes": 980.0
     },
     {
       "post_id": "122118541701023874",
@@ -16294,7 +16294,7 @@
       "views": 497,
       "reach": 326,
       "engagement": 69,
-      "pes": 88.0
+      "pes": 92.0
     },
     {
       "post_id": "122126542125011249",
@@ -16342,7 +16342,7 @@
       "views": 2938,
       "reach": 1723,
       "engagement": 80,
-      "pes": 100.0
+      "pes": 103.0
     },
     {
       "post_id": "122117373843012033",
@@ -16390,7 +16390,7 @@
       "views": 13092,
       "reach": 10209,
       "engagement": 1423,
-      "pes": 1478.0
+      "pes": 1505.0
     },
     {
       "post_id": "122118265269023874",
@@ -16422,7 +16422,7 @@
       "views": 384,
       "reach": 244,
       "engagement": 37,
-      "pes": 49.0
+      "pes": 50.0
     },
     {
       "post_id": "122117697813015980",
@@ -16438,7 +16438,7 @@
       "views": 344,
       "reach": 245,
       "engagement": 65,
-      "pes": 0.0
+      "pes": 98.0
     },
     {
       "post_id": "122117713011015980",
@@ -16454,7 +16454,7 @@
       "views": 422,
       "reach": 324,
       "engagement": 85,
-      "pes": 0.0
+      "pes": 129.0
     },
     {
       "post_id": "122117542431013186",
@@ -16678,7 +16678,7 @@
       "views": 0,
       "reach": 88,
       "engagement": 7,
-      "pes": 0.0
+      "pes": 8.0
     },
     {
       "post_id": "122117467827013186",
@@ -16726,7 +16726,7 @@
       "views": 4341,
       "reach": 1803,
       "engagement": 151,
-      "pes": 117.0
+      "pes": 212.0
     },
     {
       "post_id": "122126242257011249",
@@ -16918,7 +16918,7 @@
       "views": 277,
       "reach": 241,
       "engagement": 43,
-      "pes": 60.0
+      "pes": 62.0
     },
     {
       "post_id": "122117447805013186",
@@ -17126,7 +17126,7 @@
       "views": 976,
       "reach": 647,
       "engagement": 109,
-      "pes": 0.0
+      "pes": 168.0
     },
     {
       "post_id": "122117242779013186",
@@ -17142,7 +17142,7 @@
       "views": 653,
       "reach": 346,
       "engagement": 91,
-      "pes": 133.0
+      "pes": 142.0
     },
     {
       "post_id": "122116822257012033",
@@ -17302,7 +17302,7 @@
       "views": 651,
       "reach": 436,
       "engagement": 72,
-      "pes": 0.0
+      "pes": 110.0
     },
     {
       "post_id": "122117165301013186",
@@ -17318,7 +17318,7 @@
       "views": 495,
       "reach": 352,
       "engagement": 61,
-      "pes": 86.0
+      "pes": 93.0
     },
     {
       "post_id": "122125633209011249",
@@ -17334,7 +17334,7 @@
       "views": 5064,
       "reach": 2507,
       "engagement": 172,
-      "pes": 207.0
+      "pes": 249.0
     },
     {
       "post_id": "122116715235012033",
@@ -17542,7 +17542,7 @@
       "views": 976,
       "reach": 450,
       "engagement": 86,
-      "pes": 124.0
+      "pes": 134.0
     },
     {
       "post_id": "122125354827011249",
@@ -17718,7 +17718,7 @@
       "views": 301,
       "reach": 181,
       "engagement": 55,
-      "pes": 0.0
+      "pes": 89.0
     },
     {
       "post_id": "122116999041015980",
@@ -17734,7 +17734,7 @@
       "views": 198,
       "reach": 218,
       "engagement": 74,
-      "pes": 0.0
+      "pes": 116.0
     },
     {
       "post_id": "122117020047015980",
@@ -17750,7 +17750,7 @@
       "views": 480,
       "reach": 203,
       "engagement": 48,
-      "pes": 0.0
+      "pes": 74.0
     },
     {
       "post_id": "122116947165013186",
@@ -17766,7 +17766,7 @@
       "views": 216,
       "reach": 162,
       "engagement": 27,
-      "pes": 33.0
+      "pes": 35.0
     },
     {
       "post_id": "122116949595013186",
@@ -17798,7 +17798,7 @@
       "views": 473,
       "reach": 286,
       "engagement": 68,
-      "pes": 85.0
+      "pes": 93.0
     },
     {
       "post_id": "122125257519011249",
@@ -17814,7 +17814,7 @@
       "views": 6433,
       "reach": 3423,
       "engagement": 335,
-      "pes": 360.0
+      "pes": 389.0
     },
     {
       "post_id": "122116501749012033",
@@ -17926,7 +17926,7 @@
       "views": 0,
       "reach": 107,
       "engagement": 13,
-      "pes": 13.0
+      "pes": 14.0
     },
     {
       "post_id": "122117418027023874",
@@ -18006,7 +18006,7 @@
       "views": 594,
       "reach": 260,
       "engagement": 70,
-      "pes": 0.0
+      "pes": 89.0
     },
     {
       "post_id": "122116944435015980",
@@ -18022,7 +18022,7 @@
       "views": 571,
       "reach": 383,
       "engagement": 73,
-      "pes": 0.0
+      "pes": 119.0
     },
     {
       "post_id": "122116902117013186",
@@ -18038,7 +18038,7 @@
       "views": 567,
       "reach": 243,
       "engagement": 66,
-      "pes": 82.0
+      "pes": 84.0
     },
     {
       "post_id": "122125038939011249",
@@ -18054,7 +18054,7 @@
       "views": 2125,
       "reach": 1096,
       "engagement": 125,
-      "pes": 139.0
+      "pes": 148.0
     },
     {
       "post_id": "122116387491012033",
@@ -18278,7 +18278,7 @@
       "views": 455,
       "reach": 194,
       "engagement": 71,
-      "pes": 0.0
+      "pes": 103.0
     },
     {
       "post_id": "122116797885013186",
@@ -18294,7 +18294,7 @@
       "views": 484,
       "reach": 234,
       "engagement": 43,
-      "pes": 60.0
+      "pes": 64.0
     },
     {
       "post_id": "122124670809011249",
@@ -18310,7 +18310,7 @@
       "views": 3070,
       "reach": 1412,
       "engagement": 88,
-      "pes": 97.0
+      "pes": 119.0
     },
     {
       "post_id": "122124783429011249",
@@ -18326,7 +18326,7 @@
       "views": 1478,
       "reach": 822,
       "engagement": 46,
-      "pes": 55.0
+      "pes": 64.0
     },
     {
       "post_id": "122124864699011249",
@@ -18342,7 +18342,7 @@
       "views": 6578,
       "reach": 3696,
       "engagement": 230,
-      "pes": 312.0
+      "pes": 345.0
     },
     {
       "post_id": "122116249551012033",
@@ -18534,7 +18534,7 @@
       "views": 706,
       "reach": 341,
       "engagement": 68,
-      "pes": 0.0
+      "pes": 88.0
     },
     {
       "post_id": "122116667547013186",
@@ -18694,7 +18694,7 @@
       "views": 1003,
       "reach": 547,
       "engagement": 110,
-      "pes": 0.0
+      "pes": 175.0
     },
     {
       "post_id": "122116529853015980",
@@ -18710,7 +18710,7 @@
       "views": 531,
       "reach": 319,
       "engagement": 79,
-      "pes": 0.0
+      "pes": 107.0
     },
     {
       "post_id": "122124318441011249",
@@ -18726,7 +18726,7 @@
       "views": 2048,
       "reach": 892,
       "engagement": 115,
-      "pes": 146.0
+      "pes": 167.0
     },
     {
       "post_id": "122116132047012033",
@@ -18886,7 +18886,7 @@
       "views": 844,
       "reach": 511,
       "engagement": 103,
-      "pes": 0.0
+      "pes": 162.0
     },
     {
       "post_id": "122116387683015980",
@@ -18902,7 +18902,7 @@
       "views": 754,
       "reach": 448,
       "engagement": 146,
-      "pes": 0.0
+      "pes": 228.0
     },
     {
       "post_id": "122116401639015980",
@@ -18918,7 +18918,7 @@
       "views": 860,
       "reach": 343,
       "engagement": 125,
-      "pes": 0.0
+      "pes": 192.0
     },
     {
       "post_id": "122116517949013186",
@@ -18934,7 +18934,7 @@
       "views": 543,
       "reach": 288,
       "engagement": 72,
-      "pes": 103.0
+      "pes": 109.0
     },
     {
       "post_id": "122116528701013186",
@@ -18950,7 +18950,7 @@
       "views": 496,
       "reach": 273,
       "engagement": 83,
-      "pes": 109.0
+      "pes": 121.0
     },
     {
       "post_id": "122124054387011249",
@@ -18966,7 +18966,7 @@
       "views": 2481,
       "reach": 988,
       "engagement": 99,
-      "pes": 99.0
+      "pes": 128.0
     },
     {
       "post_id": "122116017891012033",
@@ -19110,7 +19110,7 @@
       "views": 1296,
       "reach": 630,
       "engagement": 148,
-      "pes": 195.0
+      "pes": 213.0
     },
     {
       "post_id": "122115905553012033",
@@ -19190,7 +19190,7 @@
       "views": 1070,
       "reach": 387,
       "engagement": 105,
-      "pes": 0.0
+      "pes": 144.0
     },
     {
       "post_id": "122116057557015980",
@@ -19206,7 +19206,7 @@
       "views": 769,
       "reach": 531,
       "engagement": 134,
-      "pes": 0.0
+      "pes": 189.0
     },
     {
       "post_id": "122123396343011249",
@@ -19222,7 +19222,7 @@
       "views": 4723,
       "reach": 4010,
       "engagement": 199,
-      "pes": 233.0
+      "pes": 239.0
     },
     {
       "post_id": "122123415921011249",
@@ -19238,7 +19238,7 @@
       "views": 9385,
       "reach": 7228,
       "engagement": 996,
-      "pes": 1047.0
+      "pes": 1065.0
     },
     {
       "post_id": "122123421447011249",
@@ -19846,7 +19846,7 @@
       "views": 563,
       "reach": 246,
       "engagement": 55,
-      "pes": 0.0
+      "pes": 79.0
     },
     {
       "post_id": "122114914347012033",
@@ -20086,7 +20086,7 @@
       "views": 419,
       "reach": 205,
       "engagement": 40,
-      "pes": 0.0
+      "pes": 51.0
     },
     {
       "post_id": "122115029967015980",
@@ -20118,7 +20118,7 @@
       "views": 733,
       "reach": 299,
       "engagement": 128,
-      "pes": 0.0
+      "pes": 199.0
     },
     {
       "post_id": "122114692377012033",
@@ -20454,7 +20454,7 @@
       "views": 1767,
       "reach": 709,
       "engagement": 210,
-      "pes": 0.0
+      "pes": 324.0
     },
     {
       "post_id": "122114513097012033",
@@ -20806,7 +20806,7 @@
       "views": 814,
       "reach": 609,
       "engagement": 166,
-      "pes": 0.0
+      "pes": 292.0
     },
     {
       "post_id": "122114218755012033",
@@ -20886,7 +20886,7 @@
       "views": 467,
       "reach": 240,
       "engagement": 91,
-      "pes": 0.0
+      "pes": 133.0
     },
     {
       "post_id": "122114088663012033",
@@ -21302,7 +21302,7 @@
       "views": 1036,
       "reach": 413,
       "engagement": 229,
-      "pes": 0.0
+      "pes": 420.0
     },
     {
       "post_id": "122113573167012033",
@@ -21478,7 +21478,7 @@
       "views": 454,
       "reach": 201,
       "engagement": 33,
-      "pes": 0.0
+      "pes": 43.0
     },
     {
       "post_id": "122114018031015980",
@@ -21494,7 +21494,7 @@
       "views": 1314,
       "reach": 422,
       "engagement": 192,
-      "pes": 0.0
+      "pes": 311.0
     },
     {
       "post_id": "122113410747012033",
@@ -21638,7 +21638,7 @@
       "views": 680,
       "reach": 316,
       "engagement": 136,
-      "pes": 0.0
+      "pes": 241.0
     },
     {
       "post_id": "122113894953015980",
@@ -21686,7 +21686,7 @@
       "views": 759,
       "reach": 286,
       "engagement": 136,
-      "pes": 0.0
+      "pes": 234.0
     },
     {
       "post_id": "122113129341012033",
@@ -21766,7 +21766,7 @@
       "views": 610,
       "reach": 277,
       "engagement": 140,
-      "pes": 0.0
+      "pes": 250.0
     },
     {
       "post_id": "122112971055012033",
@@ -22144,13 +22144,13 @@
       "post_type": "Videos",
       "publish_time": "2025-11-20T07:59:18+0000",
       "permalink": "https://www.facebook.com/122120350503012033/posts/1898210641079037?substory_index=1898210641079037",
-      "reactions": 7,
-      "comments": 1,
-      "shares": 2,
-      "views": 0,
-      "reach": 1,
-      "engagement": 9,
-      "pes": 14.0
+      "reactions": 57,
+      "comments": 15,
+      "shares": 9,
+      "views": 887,
+      "reach": 617,
+      "engagement": 81,
+      "pes": 114.0
     },
     {
       "post_id": "1174014644116421",
@@ -22198,7 +22198,7 @@
       "views": 2,
       "reach": 2,
       "engagement": 43,
-      "pes": 0.0
+      "pes": 51.0
     },
     {
       "post_id": "122112377811012033",
@@ -22374,7 +22374,7 @@
       "views": 814,
       "reach": 346,
       "engagement": 158,
-      "pes": 0.0
+      "pes": 238.0
     },
     {
       "post_id": "122112836931015980",
@@ -22390,7 +22390,7 @@
       "views": 1337,
       "reach": 508,
       "engagement": 224,
-      "pes": 0.0
+      "pes": 366.0
     },
     {
       "post_id": "122112144789012033",
@@ -22694,7 +22694,7 @@
       "views": 1616,
       "reach": 728,
       "engagement": 185,
-      "pes": 0.0
+      "pes": 282.0
     },
     {
       "post_id": "122111633013012033",
@@ -22726,7 +22726,7 @@
       "views": 0,
       "reach": 179,
       "engagement": 29,
-      "pes": 0.0
+      "pes": 36.0
     },
     {
       "post_id": "122111511429012033",
@@ -22854,7 +22854,7 @@
       "views": 563,
       "reach": 308,
       "engagement": 45,
-      "pes": 0.0
+      "pes": 60.0
     },
     {
       "post_id": "122111887965015980",
@@ -22870,7 +22870,7 @@
       "views": 0,
       "reach": 174,
       "engagement": 38,
-      "pes": 0.0
+      "pes": 52.0
     },
     {
       "post_id": "122111388525012033",
@@ -22998,7 +22998,7 @@
       "views": 406,
       "reach": 176,
       "engagement": 52,
-      "pes": 0.0
+      "pes": 82.0
     },
     {
       "post_id": "122111124333012033",
@@ -23286,7 +23286,7 @@
       "views": 1995,
       "reach": 850,
       "engagement": 265,
-      "pes": 0.0
+      "pes": 444.0
     },
     {
       "post_id": "122110904205012033",
@@ -23750,7 +23750,7 @@
       "views": 2471,
       "reach": 772,
       "engagement": 323,
-      "pes": 0.0
+      "pes": 565.0
     },
     {
       "post_id": "122110244607012033",
@@ -24022,7 +24022,7 @@
       "views": 11,
       "reach": 203,
       "engagement": 62,
-      "pes": 0.0
+      "pes": 100.0
     },
     {
       "post_id": "122109893505012033",
@@ -24342,7 +24342,7 @@
       "views": 842,
       "reach": 316,
       "engagement": 280,
-      "pes": 0.0
+      "pes": 494.0
     },
     {
       "post_id": "122109636153012033",
@@ -24726,7 +24726,7 @@
       "views": 840,
       "reach": 335,
       "engagement": 281,
-      "pes": 0.0
+      "pes": 490.0
     },
     {
       "post_id": "122109333867015980",
@@ -24742,7 +24742,7 @@
       "views": 1097,
       "reach": 414,
       "engagement": 317,
-      "pes": 0.0
+      "pes": 575.0
     },
     {
       "post_id": "122109667347013186",
@@ -24758,7 +24758,7 @@
       "views": 921,
       "reach": 368,
       "engagement": 215,
-      "pes": 359.0
+      "pes": 377.0
     },
     {
       "post_id": "122112238893011249",
@@ -24870,7 +24870,7 @@
       "views": 1776,
       "reach": 822,
       "engagement": 216,
-      "pes": 357.0
+      "pes": 372.0
     },
     {
       "post_id": "122109149817015980",
@@ -24886,7 +24886,7 @@
       "views": 695,
       "reach": 381,
       "engagement": 268,
-      "pes": 0.0
+      "pes": 452.0
     },
     {
       "post_id": "122108988435012033",
@@ -25014,7 +25014,7 @@
       "views": 18,
       "reach": 174,
       "engagement": 74,
-      "pes": 0.0
+      "pes": 116.0
     },
     {
       "post_id": "122109051831015980",
@@ -25030,7 +25030,7 @@
       "views": 18,
       "reach": 13,
       "engagement": 77,
-      "pes": 0.0
+      "pes": 107.0
     },
     {
       "post_id": "122108837157012033",
@@ -25334,7 +25334,7 @@
       "views": 601,
       "reach": 331,
       "engagement": 221,
-      "pes": 0.0
+      "pes": 367.0
     },
     {
       "post_id": "122108587335012033",
@@ -25718,7 +25718,7 @@
       "views": 907,
       "reach": 367,
       "engagement": 288,
-      "pes": 0.0
+      "pes": 477.0
     },
     {
       "post_id": "122108193579012033",
@@ -25830,7 +25830,7 @@
       "views": 552,
       "reach": 293,
       "engagement": 210,
-      "pes": 0.0
+      "pes": 349.0
     },
     {
       "post_id": "122108048361012033",
@@ -26006,7 +26006,7 @@
       "views": 439,
       "reach": 260,
       "engagement": 156,
-      "pes": 0.0
+      "pes": 247.0
     },
     {
       "post_id": "122107926303012033",
@@ -26310,7 +26310,7 @@
       "views": 772,
       "reach": 322,
       "engagement": 138,
-      "pes": 0.0
+      "pes": 200.0
     },
     {
       "post_id": "122107590537015980",
@@ -26326,7 +26326,7 @@
       "views": 423,
       "reach": 225,
       "engagement": 147,
-      "pes": 0.0
+      "pes": 229.0
     },
     {
       "post_id": "122107593285015980",
@@ -26358,7 +26358,7 @@
       "views": 15,
       "reach": 198,
       "engagement": 77,
-      "pes": 0.0
+      "pes": 112.0
     },
     {
       "post_id": "122107653309012033",
@@ -26806,7 +26806,7 @@
       "views": 15,
       "reach": 250,
       "engagement": 130,
-      "pes": 0.0
+      "pes": 207.0
     },
     {
       "post_id": "122106829695012033",
@@ -26870,7 +26870,7 @@
       "views": 15,
       "reach": 223,
       "engagement": 84,
-      "pes": 0.0
+      "pes": 132.0
     },
     {
       "post_id": "122106663411012033",
@@ -27030,7 +27030,7 @@
       "views": 561,
       "reach": 291,
       "engagement": 88,
-      "pes": 0.0
+      "pes": 130.0
     },
     {
       "post_id": "122106514107012033",
@@ -27174,7 +27174,7 @@
       "views": 504,
       "reach": 224,
       "engagement": 87,
-      "pes": 0.0
+      "pes": 136.0
     },
     {
       "post_id": "122105825343015980",
@@ -27190,7 +27190,7 @@
       "views": 1845,
       "reach": 709,
       "engagement": 407,
-      "pes": 0.0
+      "pes": 735.0
     },
     {
       "post_id": "122106191241012033",
@@ -28815,13 +28815,13 @@
       {
         "month": "2026-02",
         "posts": 116,
-        "reactions": 13398,
-        "comments": 2344,
-        "shares": 1720,
-        "views": 153044,
-        "reach": 77825,
-        "engagement": 17461,
-        "avg_engagement": 150.5,
+        "reactions": 13461,
+        "comments": 2380,
+        "shares": 1722,
+        "views": 157991,
+        "reach": 82431,
+        "engagement": 17561,
+        "avg_engagement": 151.4,
         "mom_change": -86.8
       },
       {
@@ -28846,19 +28846,19 @@
         "reach": 1340574,
         "engagement": 152047,
         "avg_engagement": 505.1,
-        "mom_change": 424.3
+        "mom_change": 423.0
       },
       {
         "month": "2025-11",
         "posts": 177,
-        "reactions": 23006,
-        "comments": 3892,
-        "shares": 2101,
-        "views": 362937,
-        "reach": 273469,
-        "engagement": 28998,
-        "avg_engagement": 163.8,
-        "mom_change": 14.4
+        "reactions": 23056,
+        "comments": 3906,
+        "shares": 2108,
+        "views": 363824,
+        "reach": 274085,
+        "engagement": 29070,
+        "avg_engagement": 164.2,
+        "mom_change": 14.7
       },
       {
         "month": "2025-10",
@@ -28919,27 +28919,27 @@
         "week_start": "2026-01-31",
         "week_end": "2026-02-06",
         "posts": 75,
-        "reactions": 33004,
-        "comments": 1468,
-        "shares": 1130,
-        "views": 266651,
-        "reach": 190095,
-        "engagement": 35602,
-        "avg_engagement": 474.7,
-        "wow_change": 15.0
+        "reactions": 33056,
+        "comments": 1483,
+        "shares": 1132,
+        "views": 267161,
+        "reach": 191906,
+        "engagement": 35671,
+        "avg_engagement": 475.6,
+        "wow_change": 15.3
       },
       {
         "week": "Week 4",
         "week_start": "2026-02-07",
         "week_end": "2026-02-13",
         "posts": 47,
-        "reactions": 5874,
-        "comments": 1062,
+        "reactions": 5885,
+        "comments": 1083,
         "shares": 747,
-        "views": 61102,
-        "reach": 28809,
-        "engagement": 7682,
-        "avg_engagement": 163.4,
+        "views": 65539,
+        "reach": 31604,
+        "engagement": 7713,
+        "avg_engagement": 164.1,
         "wow_change": -78.4
       }
     ],
@@ -28948,10 +28948,10 @@
         "day": "Sun",
         "day_num": 0,
         "posts": 188,
-        "total_engagement": 51840,
-        "avg_engagement": 275.7,
-        "views": 579808,
-        "reach": 484417,
+        "total_engagement": 51845,
+        "avg_engagement": 275.8,
+        "views": 580995,
+        "reach": 485167,
         "is_best": false
       },
       {
@@ -28978,30 +28978,30 @@
         "day": "Wed",
         "day_num": 3,
         "posts": 158,
-        "total_engagement": 49377,
-        "avg_engagement": 312.5,
-        "views": 510423,
-        "reach": 365901,
+        "total_engagement": 49415,
+        "avg_engagement": 312.8,
+        "views": 510750,
+        "reach": 366591,
         "is_best": false
       },
       {
         "day": "Thu",
         "day_num": 4,
         "posts": 154,
-        "total_engagement": 46299,
-        "avg_engagement": 300.6,
-        "views": 462923,
-        "reach": 349167,
+        "total_engagement": 46397,
+        "avg_engagement": 301.3,
+        "views": 467060,
+        "reach": 351828,
         "is_best": false
       },
       {
         "day": "Fri",
         "day_num": 5,
         "posts": 195,
-        "total_engagement": 48985,
-        "avg_engagement": 251.2,
-        "views": 629103,
-        "reach": 440849,
+        "total_engagement": 49016,
+        "avg_engagement": 251.4,
+        "views": 629286,
+        "reach": 441970,
         "is_best": false
       },
       {
@@ -29033,10 +29033,10 @@
         "name": "Juana Babe Sena",
         "page_name": "Juana Babe Sena",
         "posts": 463,
-        "views": 1517572,
-        "reach": 1202563,
-        "engagement": 149629,
-        "avg_engagement": 323.2
+        "views": 1518459,
+        "reach": 1203179,
+        "engagement": 149701,
+        "avg_engagement": 323.3
       },
       {
         "rank": 3,
@@ -29044,10 +29044,10 @@
         "name": "Juana Babe Abi",
         "page_name": "Juana Babe Abi",
         "posts": 263,
-        "views": 243516,
-        "reach": 114909,
-        "engagement": 25331,
-        "avg_engagement": 96.3
+        "views": 246949,
+        "reach": 118075,
+        "engagement": 25388,
+        "avg_engagement": 96.5
       },
       {
         "rank": 4,
@@ -29055,10 +29055,10 @@
         "name": "Juana Babe Jam",
         "page_name": "Juana Babe Jam",
         "posts": 170,
-        "views": 100549,
-        "reach": 58768,
-        "engagement": 15711,
-        "avg_engagement": 92.4
+        "views": 102063,
+        "reach": 60208,
+        "engagement": 15754,
+        "avg_engagement": 92.7
       },
       {
         "rank": 5,
@@ -29085,11 +29085,11 @@
       {
         "type": "Videos",
         "count": 700,
-        "views": 1881659,
-        "reach": 1426214,
-        "engagement": 190047,
-        "avg_engagement": 271.5,
-        "avg_views": 2688.1
+        "views": 1887493,
+        "reach": 1431436,
+        "engagement": 190219,
+        "avg_engagement": 271.7,
+        "avg_views": 2696.4
       },
       {
         "type": "Live",
@@ -29148,7 +29148,7 @@
       "posts_analyzed": 1159,
       "posts_with_self_comment": 223,
       "total_self_comments": 322,
-      "total_organic_comments": 24053,
+      "total_organic_comments": 24103,
       "self_comment_rate": 1.3,
       "posts_with_self_pct": 19.2
     },
@@ -29158,7 +29158,7 @@
         "page_id": "807965705726273",
         "posts_with_comments": 433,
         "self_comments": 231,
-        "organic_comments": 7409,
+        "organic_comments": 7423,
         "posts_with_self": 145,
         "self_rate": 3.0
       },
@@ -29176,7 +29176,7 @@
         "page_id": "747721128429855",
         "posts_with_comments": 253,
         "self_comments": 20,
-        "organic_comments": 6026,
+        "organic_comments": 6059,
         "posts_with_self": 19,
         "self_rate": 0.3
       },
@@ -29185,7 +29185,7 @@
         "page_id": "731608473377029",
         "posts_with_comments": 153,
         "self_comments": 1,
-        "organic_comments": 3215,
+        "organic_comments": 3218,
         "posts_with_self": 1,
         "self_rate": 0.0
       },
@@ -29201,10 +29201,10 @@
     ],
     "effectivity": {
       "avg_engagement_with_self": 694.2,
-      "avg_engagement_without_self": 217.1,
-      "engagement_boost_pct": 219.7,
+      "avg_engagement_without_self": 217.3,
+      "engagement_boost_pct": 219.5,
       "avg_reactions_with": 656.0,
-      "avg_reactions_without": 185.8
+      "avg_reactions_without": 185.9
     },
     "topSelfCommented": [
       {
@@ -29314,7 +29314,7 @@
         "reactions": 150987,
         "comments": 5004,
         "shares": 2553,
-        "avg_pes": 542.1,
+        "avg_pes": 614.6,
         "rank": 1,
         "engagement_share": 44.2
       },
@@ -29324,14 +29324,14 @@
         "page_name": "Juana Babe Sena",
         "fan_count": 59023,
         "posts": 471,
-        "engagement": 149629,
-        "avg_engagement": 317.7,
-        "views": 1517584,
-        "reach": 1202564,
-        "reactions": 137781,
-        "comments": 7640,
-        "shares": 4209,
-        "avg_pes": 269.9,
+        "engagement": 149701,
+        "avg_engagement": 317.8,
+        "views": 1518471,
+        "reach": 1203180,
+        "reactions": 137831,
+        "comments": 7654,
+        "shares": 4216,
+        "avg_pes": 270.1,
         "rank": 2,
         "engagement_share": 41.7
       },
@@ -29341,14 +29341,14 @@
         "page_name": "Juana Babe Abi",
         "fan_count": 1360,
         "posts": 265,
-        "engagement": 25331,
-        "avg_engagement": 95.6,
-        "views": 243516,
-        "reach": 114909,
-        "reactions": 16113,
-        "comments": 6046,
+        "engagement": 25388,
+        "avg_engagement": 95.8,
+        "views": 246949,
+        "reach": 118075,
+        "reactions": 16138,
+        "comments": 6079,
         "shares": 3173,
-        "avg_pes": 126.1,
+        "avg_pes": 144.0,
         "rank": 3,
         "engagement_share": 7.1
       },
@@ -29358,14 +29358,14 @@
         "page_name": "Juana Babe Jam",
         "fan_count": 4178,
         "posts": 170,
-        "engagement": 15711,
-        "avg_engagement": 92.4,
-        "views": 100549,
-        "reach": 58768,
-        "reactions": 10619,
-        "comments": 3216,
-        "shares": 1877,
-        "avg_pes": 113.7,
+        "engagement": 15754,
+        "avg_engagement": 92.7,
+        "views": 102063,
+        "reach": 60208,
+        "reactions": 10657,
+        "comments": 3219,
+        "shares": 1879,
+        "avg_pes": 134.2,
         "rank": 4,
         "engagement_share": 4.4
       },
@@ -29382,7 +29382,7 @@
         "reactions": 5417,
         "comments": 2469,
         "shares": 1697,
-        "avg_pes": 0.0,
+        "avg_pes": 164.1,
         "rank": 5,
         "engagement_share": 2.7
       }
@@ -29418,8 +29418,8 @@
         {
           "type": "Videos",
           "count": 122,
-          "engagement": 11073,
-          "avg_engagement": 90.8
+          "engagement": 11116,
+          "avg_engagement": 91.1
         },
         {
           "type": "Photos",
@@ -29444,8 +29444,8 @@
         {
           "type": "Videos",
           "count": 185,
-          "engagement": 17304,
-          "avg_engagement": 93.5
+          "engagement": 17361,
+          "avg_engagement": 93.8
         },
         {
           "type": "Photos",
@@ -29508,8 +29508,8 @@
         {
           "type": "Videos",
           "count": 316,
-          "engagement": 140300,
-          "avg_engagement": 444.0
+          "engagement": 140372,
+          "avg_engagement": 444.2
         },
         {
           "type": "Photos",

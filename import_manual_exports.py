@@ -105,6 +105,7 @@ def import_csv(filepath):
 
             # Match by page_id + publish_time (truncated to minute)
             time_prefix = publish_time[:16] if publish_time else ""
+            title = (row.get("Title", "") or "")[:100].strip()
 
             cursor.execute("""
                 SELECT post_id FROM posts
@@ -112,6 +113,44 @@ def import_csv(filepath):
                 LIMIT 1
             """, (page_id, time_prefix))
             match = cursor.fetchone()
+
+            # Fallback: fuzzy time match (+/-3 minutes)
+            if not match:
+                from datetime import datetime as dt2
+                try:
+                    base = dt2.fromisoformat(publish_time)
+                    for offset_min in [-1, 1, -2, 2, -3, 3]:
+                        tp = (base + timedelta(minutes=offset_min)).isoformat()[:16]
+                        cursor.execute("""
+                            SELECT post_id FROM posts
+                            WHERE page_id = ? AND SUBSTR(publish_time, 1, 16) = ?
+                            LIMIT 1
+                        """, (page_id, tp))
+                        match = cursor.fetchone()
+                        if match:
+                            break
+                except:
+                    pass
+
+            # Fallback: match by title on same date (for midnight-timestamp posts)
+            if not match and title:
+                date_part = publish_time[:10] if publish_time else ""
+                cursor.execute("""
+                    SELECT post_id FROM posts
+                    WHERE page_id = ? AND SUBSTR(publish_time, 1, 10) = ?
+                    AND LOWER(SUBSTR(title, 1, 100)) = LOWER(?)
+                    LIMIT 1
+                """, (page_id, date_part, title))
+                match = cursor.fetchone()
+
+            # Fallback: match by title on ANY date (midnight posts may be off by a day)
+            if not match and title and len(title) > 20:
+                cursor.execute("""
+                    SELECT post_id FROM posts
+                    WHERE page_id = ? AND LOWER(SUBSTR(title, 1, 100)) = LOWER(?)
+                    LIMIT 1
+                """, (page_id, title))
+                match = cursor.fetchone()
 
             if match:
                 matched_post_id = match['post_id']
