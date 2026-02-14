@@ -31,8 +31,13 @@ except ImportError:
 
 
 def normalize_post_id(post_id):
-    """Extract pure post ID, stripping page ID prefix if present."""
-    post_id_str = str(post_id)
+    """Extract pure post ID, stripping page prefix and fixing E+ notation."""
+    post_id_str = str(post_id).strip()
+    if 'E+' in post_id_str or 'e+' in post_id_str:
+        try:
+            post_id_str = str(int(float(post_id_str)))
+        except (ValueError, OverflowError):
+            pass
     if '_' in post_id_str:
         return post_id_str.split('_')[-1]
     return post_id_str

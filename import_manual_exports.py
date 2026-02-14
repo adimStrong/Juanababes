@@ -1,10 +1,18 @@
 #!/usr/bin/env python3
-"""Import manually exported CSV files from Meta Business Suite."""
+"""Import manually exported CSV files from Meta Business Suite.
+
+IMPORTANT: Meta CSV exports Post IDs and Page IDs in scientific notation
+(e.g. 1.22187E+17, 6.15804E+13) which causes precision loss.
+
+Strategy: IGNORE CSV Post ID entirely. Match CSV rows to existing DB posts
+by (page_name + publish_time). Only UPDATE views/reach on matched posts.
+API is the source of truth for post identity.
+"""
 
 import csv
 import sqlite3
 import os
-from datetime import datetime
+from datetime import datetime, timedelta
 from glob import glob
 
 DATABASE_PATH = "data/juanbabes_analytics.db"
@@ -12,16 +20,23 @@ EXPORTS_FOLDER = "exports/from content manual Export"
 
 
 def get_conn():
-    return sqlite3.connect(DATABASE_PATH)
+    conn = sqlite3.connect(DATABASE_PATH)
+    conn.row_factory = sqlite3.Row
+    return conn
 
 
-def parse_datetime(dt_str):
-    """Parse datetime from CSV format."""
+def parse_datetime_with_offset(dt_str):
+    """Parse CSV datetime and add 8h offset to match DB times.
+
+    CSV times are UTC. DB (from API) stores PHT (UTC+8) labeled as +0000.
+    CSV_time + 8h = DB_time.
+    """
     if not dt_str:
         return None
     try:
-        # Format: 10/01/2025 04:34
-        return datetime.strptime(dt_str, "%m/%d/%Y %H:%M").isoformat()
+        dt = datetime.strptime(dt_str.strip(), "%m/%d/%Y %H:%M")
+        dt_adjusted = dt + timedelta(hours=8)
+        return dt_adjusted.isoformat()
     except:
         return dt_str
 
@@ -37,90 +52,104 @@ def safe_int(val):
 
 
 def import_csv(filepath):
-    """Import a single CSV file."""
+    """Import a single CSV file by matching to existing DB posts."""
     print(f"\nImporting: {os.path.basename(filepath)}")
 
     conn = get_conn()
     cursor = conn.cursor()
 
-    imported = 0
-    pages_seen = set()
+    updated = 0
+    not_found = 0
+    skipped = 0
+
+    # Build page_name -> page_id lookup from DB
+    cursor.execute("SELECT page_id, page_name FROM pages")
+    page_lookup = {}
+    for row in cursor.fetchall():
+        page_lookup[row['page_name'].lower()] = row['page_id']
 
     with open(filepath, "r", encoding="utf-8-sig") as f:
         reader = csv.DictReader(f)
 
         for row in reader:
-            page_id = row.get("Page ID", "")
             page_name = row.get("Page name", "")
-            post_id = row.get("Post ID", "")
+            post_id_raw = row.get("Post ID", "")
 
-            if not post_id or not page_id:
+            if not post_id_raw or not page_name:
+                skipped += 1
                 continue
 
-            # Track pages
-            if page_id not in pages_seen:
-                pages_seen.add(page_id)
-                # Save/update page info (use REPLACE to ensure page_name is updated)
-                cursor.execute("""
-                    INSERT OR REPLACE INTO pages (page_id, page_name, created_at, updated_at)
-                    VALUES (?, ?, COALESCE((SELECT created_at FROM pages WHERE page_id = ?), ?), ?)
-                """, (page_id, page_name, page_id, datetime.now().isoformat(), datetime.now().isoformat()))
+            # Resolve page_id by name (avoids E+ page_id issue)
+            page_id = page_lookup.get(page_name.lower())
+            if not page_id:
+                # Try partial match
+                for name, pid in page_lookup.items():
+                    if page_name.lower() in name or name in page_name.lower():
+                        page_id = pid
+                        break
+            if not page_id:
+                not_found += 1
+                continue
 
-            # Parse post data
-            title = row.get("Title", "")[:200] if row.get("Title") else ""
-            permalink = row.get("Permalink", "")
-            post_type = row.get("Post type", "TEXT")
-            publish_time = parse_datetime(row.get("Publish time", ""))
+            # Parse time with +8h offset
+            publish_time = parse_datetime_with_offset(row.get("Publish time", ""))
+            if not publish_time:
+                skipped += 1
+                continue
 
+            views = safe_int(row.get("Views", 0))
+            reach = safe_int(row.get("Reach", 0))
             reactions = safe_int(row.get("Reactions", 0))
             comments = safe_int(row.get("Comments", 0))
             shares = safe_int(row.get("Shares", 0))
-            views = safe_int(row.get("Views", 0))
-            reach = safe_int(row.get("Reach", 0))
 
-            # Calculate engagement metrics
-            total_engagement = reactions + comments + shares
-            pes = (reactions * 1.0) + (comments * 2.0) + (shares * 3.0)
+            # Match by page_id + publish_time (truncated to minute)
+            time_prefix = publish_time[:16] if publish_time else ""
 
-            # Insert or update post
             cursor.execute("""
-                INSERT OR REPLACE INTO posts
-                (post_id, page_id, title, permalink, post_type, publish_time,
-                 reactions_total, comments_count, shares_count, views_count, reach_count,
-                 pes, total_engagement, fetched_at)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-            """, (
-                post_id,
-                page_id,
-                title,
-                permalink,
-                post_type,
-                publish_time,
-                reactions,
-                comments,
-                shares,
-                views,
-                reach,
-                pes,
-                total_engagement,
-                datetime.now().isoformat()
-            ))
+                SELECT post_id FROM posts
+                WHERE page_id = ? AND SUBSTR(publish_time, 1, 16) = ?
+                LIMIT 1
+            """, (page_id, time_prefix))
+            match = cursor.fetchone()
 
-            imported += 1
+            if match:
+                matched_post_id = match['post_id']
+                total_engagement = reactions + comments + shares
+                pes = (reactions * 1.0) + (comments * 2.0) + (shares * 3.0)
+
+                cursor.execute("""
+                    UPDATE posts SET
+                        views_count = MAX(COALESCE(views_count, 0), ?),
+                        reach_count = MAX(COALESCE(reach_count, 0), ?),
+                        reactions_total = MAX(COALESCE(reactions_total, 0), ?),
+                        comments_count = MAX(COALESCE(comments_count, 0), ?),
+                        shares_count = MAX(COALESCE(shares_count, 0), ?),
+                        total_engagement = MAX(COALESCE(total_engagement, 0), ?),
+                        pes = MAX(COALESCE(pes, 0), ?)
+                    WHERE post_id = ?
+                """, (views, reach, reactions, comments, shares,
+                      total_engagement, pes, matched_post_id))
+                updated += 1
+            else:
+                not_found += 1
 
     conn.commit()
     conn.close()
 
-    print(f"  Imported {imported} posts from {len(pages_seen)} pages")
-    return imported, pages_seen
+    print(f"  Updated {updated} posts with views/reach data")
+    if not_found > 0:
+        print(f"  {not_found} CSV rows had no matching DB post (not yet fetched via API)")
+    if skipped > 0:
+        print(f"  {skipped} rows skipped (missing data)")
+    return updated
 
 
 def main():
     print("=" * 60)
-    print("Importing Manual CSV Exports")
+    print("Importing Manual CSV Exports (views/reach update only)")
     print("=" * 60)
 
-    # Find all CSV files
     csv_files = glob(os.path.join(EXPORTS_FOLDER, "*.csv"))
 
     if not csv_files:
@@ -129,28 +158,21 @@ def main():
 
     print(f"Found {len(csv_files)} CSV files")
 
-    total_posts = 0
-    all_pages = set()
-
+    total_updated = 0
     for csv_file in sorted(csv_files):
-        count, pages = import_csv(csv_file)
-        total_posts += count
-        all_pages.update(pages)
+        count = import_csv(csv_file)
+        total_updated += count
 
     print("\n" + "=" * 60)
     print("SUMMARY")
     print("=" * 60)
-    print(f"Total posts imported: {total_posts}")
-    print(f"Total pages: {len(all_pages)}")
+    print(f"Total posts updated: {total_updated}")
 
-    # Show page summary
     conn = get_conn()
     cursor = conn.cursor()
     cursor.execute("""
         SELECT p.page_name, COUNT(po.post_id) as post_count,
                SUM(po.reactions_total) as total_reactions,
-               SUM(po.comments_count) as total_comments,
-               SUM(po.shares_count) as total_shares,
                SUM(po.views_count) as total_views,
                SUM(po.reach_count) as total_reach
         FROM pages p
@@ -161,8 +183,8 @@ def main():
 
     print("\nPage breakdown:")
     for row in cursor.fetchall():
-        name, posts, reactions, comments, shares, views, reach = row
-        print(f"  {name}: {posts} posts, {reactions or 0} reactions, {views or 0} views, {reach or 0} reach")
+        print(f"  {row['page_name']}: {row['post_count']} posts, "
+              f"{row['total_reactions'] or 0} reactions, {row['total_views'] or 0} views")
 
     conn.close()
 
