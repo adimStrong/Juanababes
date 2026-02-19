@@ -89,7 +89,12 @@ def fetch_posts_from_api(token, page_id, page_name, days_back=14):
             data = resp.json()
 
             if "error" in data:
-                print(f"  [{page_name}] API Error: {data['error'].get('message', 'Unknown')}")
+                error_msg = data['error'].get('message', 'Unknown')
+                if "reduce the amount of data" in error_msg and params.get("limit", 25) > 5:
+                    params["limit"] = max(5, params.get("limit", 25) // 2)
+                    print(f"  [{page_name}] Reducing limit to {params['limit']} and retrying...")
+                    continue
+                print(f"  [{page_name}] API Error: {error_msg}")
                 break
 
             posts = data.get("data", [])

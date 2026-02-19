@@ -16,7 +16,7 @@ if not exist "exports\from content manual Export" (
 )
 
 echo Importing CSV data...
-python csv_importer.py import-all "exports\from content manual Export"
+python import_manual_exports.py
 
 echo.
 echo ============================================================
