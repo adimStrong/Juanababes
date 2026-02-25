@@ -34114,20 +34114,20 @@
     "summary": {
       "total_posts_with_comments": 1420,
       "posts_analyzed": 1420,
-      "posts_with_self_comment": 236,
-      "total_self_comments": 347,
-      "total_organic_comments": 30057,
-      "self_comment_rate": 1.1,
-      "posts_with_self_pct": 16.6
+      "posts_with_self_comment": 239,
+      "total_self_comments": 351,
+      "total_organic_comments": 30053,
+      "self_comment_rate": 1.2,
+      "posts_with_self_pct": 16.8
     },
     "byPage": [
       {
         "page_name": "Juana Babe Sena",
         "page_id": "807965705726273",
         "posts_with_comments": 540,
-        "self_comments": 252,
-        "organic_comments": 9834,
-        "posts_with_self": 155,
+        "self_comments": 256,
+        "organic_comments": 9830,
+        "posts_with_self": 158,
         "self_rate": 2.5
       },
       {
@@ -34168,11 +34168,11 @@
       }
     ],
     "effectivity": {
-      "avg_engagement_with_self": 877.2,
-      "avg_engagement_without_self": 235.5,
-      "engagement_boost_pct": 272.5,
-      "avg_reactions_with": 836.0,
-      "avg_reactions_without": 203.6
+      "avg_engagement_with_self": 890.6,
+      "avg_engagement_without_self": 231.2,
+      "engagement_boost_pct": 285.2,
+      "avg_reactions_with": 849.3,
+      "avg_reactions_without": 199.2
     },
     "topSelfCommented": [
       {
