@@ -97,6 +97,14 @@ python refresh_engagement.py --month  # Refresh current month only
 - Frontend: `MonthlyReport.jsx` uses `useMemo` for reactive date filtering (no re-fetch on filter change)
 - Features: summary cards, engagement trend bar chart, clickable monthly table, per-page horizontal bar chart + table
 
+## Bug Fixes
+
+### Mar 2, 2026: DateFilter UTC shift — This Month/Last Month missing last day (FIXED)
+- `toISOString().split('T')[0]` converts to UTC, shifting PHT midnight dates back 1 day
+- "Last Month" end date (e.g. Feb 28 00:00 PHT) → `"2026-02-27"` in UTC → Feb 28 excluded
+- **Fix**: Added `formatLocalDate()` using `getFullYear()/getMonth()/getDate()` (local timezone)
+- JuanStudio already had this fix (`toLocalDateStr`), only JuanBabes was affected
+
 ## Key Metrics
 - **PES** = Reactions×1 + Comments×2 + Shares×3
 - **Engagement** = Reactions + Comments + Shares
