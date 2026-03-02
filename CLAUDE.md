@@ -83,6 +83,20 @@ python refresh_engagement.py --month  # Refresh current month only
 - Page tokens expire every 60 days
 - Update `page_tokens.json` with fresh tokens
 
+## Frontend Pages (7 total)
+1. Dashboard (`/`) - overview stats, daily charts, top posts
+2. Posts (`/posts`) - browse/search all posts
+3. Pages (`/pages`) - page comparison
+4. Comments (`/comments`) - self-comment analysis
+5. Imports (`/imports`) - CSV import history
+6. Comparison (`/overlap`) - page audience overlap
+7. Monthly Report (`/monthly`) - monthly averages + per-page breakdown (added Mar 2, 2026)
+
+### Monthly Report Details
+- Backend: `export_static_data.py` exports `timeSeries.monthlyByPage` (per-page monthly data with MoM)
+- Frontend: `MonthlyReport.jsx` uses `useMemo` for reactive date filtering (no re-fetch on filter change)
+- Features: summary cards, engagement trend bar chart, clickable monthly table, per-page horizontal bar chart + table
+
 ## Key Metrics
 - **PES** = Reactions×1 + Comments×2 + Shares×3
 - **Engagement** = Reactions + Comments + Shares
