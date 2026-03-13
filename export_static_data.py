@@ -1128,6 +1128,129 @@ def export_top_posts(limit=10):
     return {"all": all_posts, "byPage": by_page}
 
 
+def export_livestream():
+    """Export livestream (TikTok + Bigo) data if tables exist."""
+    conn = get_conn()
+    cursor = conn.cursor()
+
+    # Check if livestream tables exist
+    cursor.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='livestream_daily'")
+    if not cursor.fetchone():
+        conn.close()
+        return None
+
+    # Daily data per agent
+    cursor.execute("""
+        SELECT date, agent, tk_views, tk_unique_viewers, tk_likes, tk_comments,
+               tk_shares, tk_gifters, tk_new_followers, tk_eng_rate,
+               bg_viewers, bg_engaged, bg_eng_rate, bg_beans, bg_new_fans, bg_gifts,
+               total_engagement, total_reach
+        FROM livestream_daily ORDER BY date, agent
+    """)
+    daily = []
+    for r in cursor.fetchall():
+        daily.append({
+            "date": r[0], "agent": r[1],
+            "tk_views": r[2], "tk_unique": r[3], "tk_likes": r[4], "tk_comments": r[5],
+            "tk_shares": r[6], "tk_gifters": r[7], "tk_new_followers": r[8], "tk_eng_rate": r[9],
+            "bg_viewers": r[10], "bg_engaged": r[11], "bg_eng_rate": r[12], "bg_beans": r[13],
+            "bg_new_fans": r[14], "bg_gifts": r[15],
+            "total_engagement": r[16], "total_reach": r[17],
+        })
+
+    # Daily aggregated (all agents combined)
+    cursor.execute("""
+        SELECT date,
+               SUM(tk_views), SUM(tk_unique_viewers), SUM(tk_likes), SUM(tk_comments),
+               SUM(tk_shares), SUM(tk_gifters), SUM(tk_new_followers),
+               SUM(bg_viewers), SUM(bg_engaged), SUM(bg_beans), SUM(bg_new_fans), SUM(bg_gifts),
+               SUM(total_engagement), SUM(total_reach)
+        FROM livestream_daily GROUP BY date ORDER BY date
+    """)
+    daily_all = []
+    for r in cursor.fetchall():
+        daily_all.append({
+            "date": r[0],
+            "tk_views": r[1], "tk_unique": r[2], "tk_likes": r[3], "tk_comments": r[4],
+            "tk_shares": r[5], "tk_gifters": r[6], "tk_new_followers": r[7],
+            "bg_viewers": r[8], "bg_engaged": r[9], "bg_beans": r[10],
+            "bg_new_fans": r[11], "bg_gifts": r[12],
+            "total_engagement": r[13], "total_reach": r[14],
+        })
+
+    # Per-agent totals
+    cursor.execute("""
+        SELECT agent, COUNT(*) as days,
+               SUM(tk_views), SUM(tk_likes), SUM(tk_comments), SUM(tk_shares),
+               SUM(tk_gifters), SUM(tk_new_followers), SUM(tk_unique_viewers),
+               SUM(bg_viewers), SUM(bg_engaged), SUM(bg_beans), SUM(bg_new_fans), SUM(bg_gifts),
+               SUM(total_engagement), SUM(total_reach)
+        FROM livestream_daily GROUP BY agent ORDER BY SUM(total_engagement) DESC
+    """)
+    agent_summaries = {}
+    for r in cursor.fetchall():
+        agent_summaries[r[0]] = {
+            "agent": r[0], "days": r[1],
+            "tk_views": r[2], "tk_likes": r[3], "tk_comments": r[4], "tk_shares": r[5],
+            "tk_gifters": r[6], "tk_new_followers": r[7], "tk_unique": r[8],
+            "bg_viewers": r[9], "bg_engaged": r[10], "bg_beans": r[11],
+            "bg_new_fans": r[12], "bg_gifts": r[13],
+            "total_engagement": r[14], "total_reach": r[15],
+        }
+
+    # Schedule
+    cursor.execute("SELECT date, time, streamer, platform, content, other_task, moderator FROM livestream_schedule ORDER BY date, time")
+    schedule = [{"date": r[0], "time": r[1], "streamer": r[2], "platform": r[3],
+                 "content": r[4], "other_task": r[5], "moderator": r[6]} for r in cursor.fetchall()]
+
+    # Promo codes
+    cursor.execute("SELECT agent, code, status FROM livestream_promo ORDER BY agent, code")
+    promo_raw = {}
+    for r in cursor.fetchall():
+        agent = r[0]
+        if agent not in promo_raw:
+            promo_raw[agent] = {"codes": [], "used": 0, "unused": 0, "expired": 0, "total": 0}
+        promo_raw[agent]["codes"].append({"code": r[1], "status": r[2]})
+        promo_raw[agent]["total"] += 1
+        if r[2] == "USED":
+            promo_raw[agent]["used"] += 1
+        elif r[2] == "EXPIRED":
+            promo_raw[agent]["expired"] += 1
+        else:
+            promo_raw[agent]["unused"] += 1
+    for a in promo_raw:
+        t = promo_raw[a]["total"]
+        promo_raw[a]["usage_rate"] = round(promo_raw[a]["used"] / t * 100, 1) if t > 0 else 0
+
+    # Overall totals
+    cursor.execute("""
+        SELECT SUM(tk_views), SUM(tk_likes), SUM(tk_comments), SUM(tk_shares),
+               SUM(tk_gifters), SUM(tk_new_followers), SUM(tk_unique_viewers),
+               SUM(bg_viewers), SUM(bg_engaged), SUM(bg_beans), SUM(bg_new_fans), SUM(bg_gifts),
+               SUM(total_engagement), SUM(total_reach), COUNT(DISTINCT date)
+        FROM livestream_daily
+    """)
+    r = cursor.fetchone()
+    totals = {
+        "tk_views": r[0] or 0, "tk_likes": r[1] or 0, "tk_comments": r[2] or 0,
+        "tk_shares": r[3] or 0, "tk_gifters": r[4] or 0, "tk_new_followers": r[5] or 0,
+        "tk_unique": r[6] or 0, "bg_viewers": r[7] or 0, "bg_engaged": r[8] or 0,
+        "bg_beans": r[9] or 0, "bg_new_fans": r[10] or 0, "bg_gifts": r[11] or 0,
+        "total_engagement": r[12] or 0, "total_reach": r[13] or 0, "days": r[14] or 0,
+    }
+
+    conn.close()
+    return {
+        "daily": daily,
+        "dailyAll": daily_all,
+        "agentSummaries": agent_summaries,
+        "totals": totals,
+        "schedule": schedule,
+        "promo": promo_raw,
+        "agents": ["SENA", "ASHLEY", "ABI", "JAM"],
+    }
+
+
 def main():
     print("=" * 60)
     print("Exporting Static Data for Vercel")
@@ -1144,6 +1267,7 @@ def main():
     time_series_data = export_time_series()
     comment_analysis_data = export_comment_analysis()
     page_comparison_data = export_page_comparison()
+    livestream_data = export_livestream()
 
     data = {
         "stats": stats_data,
@@ -1155,7 +1279,8 @@ def main():
         "overlaps": [],  # Empty for now, prevents errors
         "timeSeries": time_series_data,
         "commentAnalysis": comment_analysis_data,
-        "pageComparison": page_comparison_data
+        "pageComparison": page_comparison_data,
+        "liveStreaming": livestream_data,
     }
 
     # Pretty print summary
@@ -1189,6 +1314,18 @@ def main():
     print(f"  Self-comment rate: {ca['self_comment_rate']}%")
     eff = comment_analysis_data['effectivity']
     print(f"  Engagement boost from self-comment: {eff['engagement_boost_pct']}%")
+
+    if livestream_data:
+        lt = livestream_data["totals"]
+        print(f"\nLive Streaming (TikTok + Bigo):")
+        print(f"  Days: {lt['days']}")
+        print(f"  TikTok Views: {lt['tk_views']:,}")
+        print(f"  Bigo Viewers: {lt['bg_viewers']:,}")
+        print(f"  Total Engagement: {lt['total_engagement']:,}")
+        print(f"  Schedule entries: {len(livestream_data['schedule'])}")
+        print(f"  Promo codes: {sum(p['total'] for p in livestream_data['promo'].values())}")
+    else:
+        print(f"\nLive Streaming: No data (run fetch_livestream.py first)")
 
     # Save to file
     with open(OUTPUT_PATH, 'w') as f:

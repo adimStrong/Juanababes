@@ -9,6 +9,7 @@ const navItems = [
   { path: '/overlap', label: 'Comparison', icon: '📈' },
   { path: '/monthly', label: 'Monthly', icon: '📅' },
   { path: '/daily', label: 'Daily', icon: '📆' },
+  { path: '/livestreaming', label: 'Live Streaming', icon: '🎥' },
 ];
 
 export default function Layout() {

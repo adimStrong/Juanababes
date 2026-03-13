@@ -8,6 +8,7 @@ import Imports from './pages/Imports';
 import Overlap from './pages/Overlap';
 import MonthlyReport from './pages/MonthlyReport';
 import DailyAnalysis from './pages/DailyAnalysis';
+import LiveStreaming from './pages/LiveStreaming';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="overlap" element={<Overlap />} />
           <Route path="monthly" element={<MonthlyReport />} />
           <Route path="daily" element={<DailyAnalysis />} />
+          <Route path="livestreaming" element={<LiveStreaming />} />
         </Route>
       </Routes>
     </BrowserRouter>

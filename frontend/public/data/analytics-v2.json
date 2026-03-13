@@ -4,16 +4,16 @@
       "total_posts": 1601,
       "total_pages": 5,
       "all_pages": 5,
-      "total_reactions": 541136,
-      "total_comments": 32058,
+      "total_reactions": 541055,
+      "total_comments": 32040,
       "total_shares": 20625,
-      "total_engagement": 593452,
-      "total_pes": 658667.0,
-      "total_views": 6433163,
+      "total_engagement": 593353,
+      "total_pes": 658550.0,
+      "total_views": 6433914,
       "total_reach": 4868227,
-      "avg_engagement": 370.7,
-      "avg_pes": 411.4,
-      "avg_views": 4018.2,
+      "avg_engagement": 370.6,
+      "avg_pes": 411.3,
+      "avg_views": 4018.7,
       "avg_reach": 3040.7,
       "date_range_start": "2025-09-08",
       "date_range_end": "2026-03-08"
@@ -41,15 +41,15 @@
         "total_posts": 205,
         "total_pages": 1,
         "all_pages": 1,
-        "total_reactions": 13967,
-        "total_comments": 3916,
+        "total_reactions": 13953,
+        "total_comments": 3915,
         "total_shares": 3234,
-        "total_engagement": 21084,
-        "total_pes": 30832.0,
-        "total_views": 149339,
+        "total_engagement": 21069,
+        "total_pes": 30816.0,
+        "total_views": 149346,
         "total_reach": 86669,
         "avg_engagement": 102.8,
-        "avg_pes": 150.4,
+        "avg_pes": 150.3,
         "avg_views": 728.5,
         "avg_reach": 422.8,
         "date_range_start": "2025-09-08",
@@ -59,15 +59,15 @@
         "total_posts": 314,
         "total_pages": 1,
         "all_pages": 1,
-        "total_reactions": 20816,
-        "total_comments": 7778,
+        "total_reactions": 20801,
+        "total_comments": 7777,
         "total_shares": 4668,
-        "total_engagement": 33183,
-        "total_pes": 49578.0,
-        "total_views": 330014,
+        "total_engagement": 33167,
+        "total_pes": 49561.0,
+        "total_views": 330021,
         "total_reach": 161684,
-        "avg_engagement": 105.7,
-        "avg_pes": 157.9,
+        "avg_engagement": 105.6,
+        "avg_pes": 157.8,
         "avg_views": 1051.0,
         "avg_reach": 514.9,
         "date_range_start": "2025-09-08",
@@ -77,16 +77,16 @@
         "total_posts": 391,
         "total_pages": 1,
         "all_pages": 1,
-        "total_reactions": 181579,
-        "total_comments": 6856,
+        "total_reactions": 181549,
+        "total_comments": 6841,
         "total_shares": 3816,
-        "total_engagement": 192161,
-        "total_pes": 205569.0,
-        "total_views": 2397100,
+        "total_engagement": 192116,
+        "total_pes": 205509.0,
+        "total_views": 2397823,
         "total_reach": 1780406,
-        "avg_engagement": 491.5,
-        "avg_pes": 525.8,
-        "avg_views": 6130.7,
+        "avg_engagement": 491.3,
+        "avg_pes": 525.6,
+        "avg_views": 6132.5,
         "avg_reach": 4553.5,
         "date_range_start": "2025-09-12",
         "date_range_end": "2026-03-08"
@@ -95,14 +95,14 @@
         "total_posts": 597,
         "total_pages": 1,
         "all_pages": 1,
-        "total_reactions": 318341,
-        "total_comments": 10669,
+        "total_reactions": 318319,
+        "total_comments": 10668,
         "total_shares": 6897,
-        "total_engagement": 335742,
-        "total_pes": 357197.0,
-        "total_views": 3496958,
+        "total_engagement": 335719,
+        "total_pes": 357173.0,
+        "total_views": 3496972,
         "total_reach": 2808393,
-        "avg_engagement": 562.4,
+        "avg_engagement": 562.3,
         "avg_pes": 598.3,
         "avg_views": 5857.6,
         "avg_reach": 4704.2,
@@ -116,32 +116,32 @@
       "page_id": "807965705726273",
       "name": "Juana Babe Sena",
       "page_name": "Juana Babe Sena",
-      "fan_count": 89736,
-      "followers_count": 89736,
+      "fan_count": 89740,
+      "followers_count": 89740,
       "post_count": 597,
-      "total_reactions": 318341,
-      "total_comments": 10669,
+      "total_reactions": 318319,
+      "total_comments": 10668,
       "total_shares": 6897,
-      "total_engagement": 335742,
-      "avg_engagement": 562.4,
+      "total_engagement": 335719,
+      "avg_engagement": 562.3,
       "avg_pes": 598.3,
-      "total_views": 3496958,
+      "total_views": 3496972,
       "total_reach": 2808393
     },
     {
       "page_id": "748765068327821",
       "name": "Juana Babe Ashley",
       "page_name": "Juana Babe Ashley",
-      "fan_count": 47995,
-      "followers_count": 47995,
+      "fan_count": 47996,
+      "followers_count": 47996,
       "post_count": 391,
-      "total_reactions": 181579,
-      "total_comments": 6856,
+      "total_reactions": 181549,
+      "total_comments": 6841,
       "total_shares": 3816,
-      "total_engagement": 192161,
-      "avg_engagement": 491.5,
-      "avg_pes": 525.8,
-      "total_views": 2397100,
+      "total_engagement": 192116,
+      "avg_engagement": 491.3,
+      "avg_pes": 525.6,
+      "total_views": 2397823,
       "total_reach": 1780406
     },
     {
@@ -151,13 +151,13 @@
       "fan_count": 1561,
       "followers_count": 5180,
       "post_count": 314,
-      "total_reactions": 20816,
-      "total_comments": 7778,
+      "total_reactions": 20801,
+      "total_comments": 7777,
       "total_shares": 4668,
-      "total_engagement": 33183,
-      "avg_engagement": 105.7,
-      "avg_pes": 157.9,
-      "total_views": 330014,
+      "total_engagement": 33167,
+      "avg_engagement": 105.6,
+      "avg_pes": 157.8,
+      "total_views": 330021,
       "total_reach": 161684
     },
     {
@@ -167,13 +167,13 @@
       "fan_count": 4406,
       "followers_count": 4406,
       "post_count": 205,
-      "total_reactions": 13967,
-      "total_comments": 3916,
+      "total_reactions": 13953,
+      "total_comments": 3915,
       "total_shares": 3234,
-      "total_engagement": 21084,
+      "total_engagement": 21069,
       "avg_engagement": 102.8,
-      "avg_pes": 150.4,
-      "total_views": 149339,
+      "avg_pes": 150.3,
+      "total_views": 149346,
       "total_reach": 86669
     },
     {
@@ -198,12 +198,12 @@
       {
         "post_type": "Videos",
         "count": 1045,
-        "reactions": 375412,
-        "comments": 22080,
+        "reactions": 375331,
+        "comments": 22062,
         "shares": 14924,
-        "total_engagement": 412173,
-        "avg_engagement": 394.4,
-        "avg_pes": 439.8
+        "total_engagement": 412074,
+        "avg_engagement": 394.3,
+        "avg_pes": 439.7
       },
       {
         "post_type": "Photos",
@@ -293,12 +293,12 @@
         {
           "post_type": "Videos",
           "count": 157,
-          "reactions": 10529,
-          "comments": 3221,
+          "reactions": 10515,
+          "comments": 3220,
           "shares": 2666,
-          "total_engagement": 16401,
-          "avg_engagement": 104.5,
-          "avg_pes": 157.2
+          "total_engagement": 16386,
+          "avg_engagement": 104.4,
+          "avg_pes": 157.1
         },
         {
           "post_type": "Photos",
@@ -335,12 +335,12 @@
         {
           "post_type": "Videos",
           "count": 234,
-          "reactions": 15423,
-          "comments": 6037,
+          "reactions": 15408,
+          "comments": 6036,
           "shares": 3588,
-          "total_engagement": 25006,
-          "avg_engagement": 106.9,
-          "avg_pes": 161.2
+          "total_engagement": 24990,
+          "avg_engagement": 106.8,
+          "avg_pes": 161.1
         },
         {
           "post_type": "Photos",
@@ -387,12 +387,12 @@
         {
           "post_type": "Videos",
           "count": 156,
-          "reactions": 39287,
-          "comments": 2477,
+          "reactions": 39257,
+          "comments": 2462,
           "shares": 1572,
-          "total_engagement": 43299,
-          "avg_engagement": 277.6,
-          "avg_pes": 313.0
+          "total_engagement": 43254,
+          "avg_engagement": 277.3,
+          "avg_pes": 312.6
         },
         {
           "post_type": "Reels",
@@ -439,10 +439,10 @@
         {
           "post_type": "Videos",
           "count": 442,
-          "reactions": 305961,
-          "comments": 8356,
+          "reactions": 305939,
+          "comments": 8355,
           "shares": 5596,
-          "total_engagement": 319764,
+          "total_engagement": 319741,
           "avg_engagement": 723.4,
           "avg_pes": 763.2
         },
@@ -2453,12 +2453,12 @@
       {
         "date": "2026-03-07",
         "posts": 9,
-        "reactions": 1313,
-        "comments": 64,
+        "reactions": 1232,
+        "comments": 46,
         "shares": 417,
-        "engagement": 1794,
-        "pes": 2692.0,
-        "views": 8478,
+        "engagement": 1695,
+        "pes": 2575.0,
+        "views": 9229,
         "reach": 5807
       },
       {
@@ -4350,12 +4350,12 @@
         {
           "date": "2026-03-07",
           "posts": 1,
-          "reactions": 165,
-          "comments": 2,
+          "reactions": 151,
+          "comments": 1,
           "shares": 99,
-          "engagement": 266,
-          "pes": 466.0,
-          "views": 800,
+          "engagement": 251,
+          "pes": 450.0,
+          "views": 807,
           "reach": 424
         }
       ],
@@ -5903,12 +5903,12 @@
         {
           "date": "2026-03-07",
           "posts": 2,
-          "reactions": 177,
-          "comments": 5,
+          "reactions": 162,
+          "comments": 4,
           "shares": 98,
-          "engagement": 280,
-          "pes": 481.0,
-          "views": 1339,
+          "engagement": 264,
+          "pes": 464.0,
+          "views": 1346,
           "reach": 769
         }
       ],
@@ -7269,12 +7269,12 @@
         {
           "date": "2026-03-07",
           "posts": 4,
-          "reactions": 610,
-          "comments": 48,
+          "reactions": 580,
+          "comments": 33,
           "shares": 105,
-          "engagement": 763,
-          "pes": 1021.0,
-          "views": 3783,
+          "engagement": 718,
+          "pes": 961.0,
+          "views": 4506,
           "reach": 2613
         },
         {
@@ -9229,12 +9229,12 @@
         {
           "date": "2026-03-07",
           "posts": 2,
-          "reactions": 361,
-          "comments": 9,
+          "reactions": 339,
+          "comments": 8,
           "shares": 115,
-          "engagement": 485,
-          "pes": 724.0,
-          "views": 2556,
+          "engagement": 462,
+          "pes": 700.0,
+          "views": 2570,
           "reach": 2001
         },
         {
@@ -10151,7 +10151,7 @@
       "reactions": 106,
       "comments": 12,
       "shares": 2,
-      "views": 0,
+      "views": 652,
       "reach": 0,
       "engagement": 120,
       "pes": 136.0
@@ -10212,13 +10212,13 @@
       "post_type": "Videos",
       "publish_time": "2026-03-07T07:55:31+0000",
       "permalink": "https://www.facebook.com/reel/900080089323313/",
-      "reactions": 170,
-      "comments": 5,
+      "reactions": 155,
+      "comments": 4,
       "shares": 94,
-      "views": 1339,
+      "views": 1346,
       "reach": 769,
-      "engagement": 269,
-      "pes": 462.0
+      "engagement": 253,
+      "pes": 445.0
     },
     {
       "post_id": "122123788239013186",
@@ -10228,13 +10228,13 @@
       "post_type": "Videos",
       "publish_time": "2026-03-07T07:43:35+0000",
       "permalink": "https://www.facebook.com/reel/894964506702794/",
-      "reactions": 165,
-      "comments": 2,
+      "reactions": 151,
+      "comments": 1,
       "shares": 99,
-      "views": 800,
+      "views": 807,
       "reach": 424,
-      "engagement": 266,
-      "pes": 466.0
+      "engagement": 251,
+      "pes": 450.0
     },
     {
       "post_id": "122140015701011249",
@@ -10244,13 +10244,13 @@
       "post_type": "Videos",
       "publish_time": "2026-03-07T07:01:03+0000",
       "permalink": "https://www.facebook.com/reel/1248074984200967/",
-      "reactions": 261,
+      "reactions": 240,
       "comments": 4,
       "shares": 92,
-      "views": 1567,
+      "views": 1623,
       "reach": 915,
-      "engagement": 357,
-      "pes": 545.0
+      "engagement": 336,
+      "pes": 524.0
     },
     {
       "post_id": "122139992841011249",
@@ -10260,13 +10260,13 @@
       "post_type": "Videos",
       "publish_time": "2026-03-07T03:12:29+0000",
       "permalink": "https://www.facebook.com/reel/923230503791072/",
-      "reactions": 239,
-      "comments": 32,
+      "reactions": 230,
+      "comments": 17,
       "shares": 7,
-      "views": 2216,
+      "views": 2231,
       "reach": 1698,
-      "engagement": 278,
-      "pes": 324.0
+      "engagement": 254,
+      "pes": 285.0
     },
     {
       "post_id": "122123788335012033",
@@ -10276,13 +10276,13 @@
       "post_type": "Videos",
       "publish_time": "2026-03-07T01:48:03+0000",
       "permalink": "https://www.facebook.com/reel/2087276691834401/",
-      "reactions": 336,
-      "comments": 8,
+      "reactions": 314,
+      "comments": 7,
       "shares": 104,
-      "views": 2556,
+      "views": 2570,
       "reach": 2001,
-      "engagement": 448,
-      "pes": 664.0
+      "engagement": 425,
+      "pes": 640.0
     },
     {
       "post_id": "122139906537011249",
@@ -35731,14 +35731,14 @@
       {
         "month": "2026-03",
         "posts": 61,
-        "reactions": 51608,
-        "comments": 813,
+        "reactions": 51527,
+        "comments": 795,
         "shares": 1435,
-        "views": 579882,
+        "views": 580633,
         "reach": 458160,
-        "engagement": 53855,
-        "avg_engagement": 882.9,
-        "mom_change": -46.1
+        "engagement": 53756,
+        "avg_engagement": 881.2,
+        "mom_change": -46.2
       },
       {
         "month": "2026-02",
@@ -35808,13 +35808,13 @@
           {
             "month": "2026-03",
             "posts": 18,
-            "reactions": 45733,
-            "comments": 252,
+            "reactions": 45711,
+            "comments": 251,
             "shares": 525,
-            "views": 524758,
+            "views": 524772,
             "reach": 423569,
-            "engagement": 46509,
-            "avg_engagement": 2583.8,
+            "engagement": 46486,
+            "avg_engagement": 2582.6,
             "mom_change": -37.4
           },
           {
@@ -35885,14 +35885,14 @@
           {
             "month": "2026-03",
             "posts": 24,
-            "reactions": 4183,
-            "comments": 396,
+            "reactions": 4153,
+            "comments": 381,
             "shares": 269,
-            "views": 37058,
+            "views": 37781,
             "reach": 24034,
-            "engagement": 4848,
-            "avg_engagement": 202.0,
-            "mom_change": -59.2
+            "engagement": 4803,
+            "avg_engagement": 200.1,
+            "mom_change": -59.6
           },
           {
             "month": "2026-02",
@@ -35962,14 +35962,14 @@
           {
             "month": "2026-03",
             "posts": 10,
-            "reactions": 959,
-            "comments": 125,
+            "reactions": 944,
+            "comments": 124,
             "shares": 321,
-            "views": 12710,
+            "views": 12717,
             "reach": 7277,
-            "engagement": 1405,
-            "avg_engagement": 140.5,
-            "mom_change": -83.7
+            "engagement": 1389,
+            "avg_engagement": 138.9,
+            "mom_change": -83.9
           },
           {
             "month": "2026-02",
@@ -36039,14 +36039,14 @@
           {
             "month": "2026-03",
             "posts": 9,
-            "reactions": 733,
-            "comments": 40,
+            "reactions": 719,
+            "comments": 39,
             "shares": 320,
-            "views": 5356,
+            "views": 5363,
             "reach": 3280,
-            "engagement": 1093,
-            "avg_engagement": 121.4,
-            "mom_change": -78.8
+            "engagement": 1078,
+            "avg_engagement": 119.8,
+            "mom_change": -79.1
           },
           {
             "month": "2026-02",
@@ -36155,59 +36155,59 @@
     "weekly": [
       {
         "week": "Week 1",
-        "week_start": "2026-02-08",
-        "week_end": "2026-02-14",
-        "posts": 60,
-        "reactions": 9308,
-        "comments": 1615,
-        "shares": 649,
-        "views": 159281,
-        "reach": 109856,
-        "engagement": 11566,
-        "avg_engagement": 192.8,
+        "week_start": "2026-02-13",
+        "week_end": "2026-02-19",
+        "posts": 46,
+        "reactions": 9546,
+        "comments": 1583,
+        "shares": 727,
+        "views": 173431,
+        "reach": 116186,
+        "engagement": 11844,
+        "avg_engagement": 257.5,
         "wow_change": null
       },
       {
         "week": "Week 2",
-        "week_start": "2026-02-15",
-        "week_end": "2026-02-21",
-        "posts": 40,
-        "reactions": 23054,
-        "comments": 1625,
-        "shares": 1042,
-        "views": 324628,
-        "reach": 229857,
-        "engagement": 25709,
-        "avg_engagement": 642.7,
-        "wow_change": 122.3
+        "week_start": "2026-02-20",
+        "week_end": "2026-02-26",
+        "posts": 42,
+        "reactions": 57020,
+        "comments": 1395,
+        "shares": 1431,
+        "views": 640097,
+        "reach": 475446,
+        "engagement": 59838,
+        "avg_engagement": 1424.7,
+        "wow_change": 405.2
       },
       {
         "week": "Week 3",
-        "week_start": "2026-02-22",
-        "week_end": "2026-02-28",
-        "posts": 42,
-        "reactions": 43903,
-        "comments": 1106,
-        "shares": 1694,
-        "views": 489868,
-        "reach": 364006,
-        "engagement": 46693,
-        "avg_engagement": 1111.7,
-        "wow_change": 81.6
+        "week_start": "2026-02-27",
+        "week_end": "2026-03-05",
+        "posts": 56,
+        "reactions": 52438,
+        "comments": 825,
+        "shares": 1673,
+        "views": 609770,
+        "reach": 481115,
+        "engagement": 54933,
+        "avg_engagement": 980.9,
+        "wow_change": -8.2
       },
       {
         "week": "Week 4",
-        "week_start": "2026-03-01",
-        "week_end": "2026-03-07",
-        "posts": 59,
-        "reactions": 51494,
-        "comments": 797,
-        "shares": 1434,
-        "views": 579882,
-        "reach": 458160,
-        "engagement": 53724,
-        "avg_engagement": 910.6,
-        "wow_change": 15.1
+        "week_start": "2026-03-06",
+        "week_end": "2026-03-12",
+        "posts": 16,
+        "reactions": 2108,
+        "comments": 141,
+        "shares": 453,
+        "views": 20803,
+        "reach": 14135,
+        "engagement": 2702,
+        "avg_engagement": 168.9,
+        "wow_change": -95.1
       }
     ],
     "dayOfWeek": [
@@ -36275,9 +36275,9 @@
         "day": "Sat",
         "day_num": 6,
         "posts": 234,
-        "total_engagement": 93751,
-        "avg_engagement": 400.6,
-        "views": 887589,
+        "total_engagement": 93652,
+        "avg_engagement": 400.2,
+        "views": 888340,
         "reach": 658335,
         "is_best": false
       }
@@ -36289,10 +36289,10 @@
         "name": "Juana Babe Sena",
         "page_name": "Juana Babe Sena",
         "posts": 597,
-        "views": 3496958,
+        "views": 3496972,
         "reach": 2808393,
-        "engagement": 335742,
-        "avg_engagement": 562.4
+        "engagement": 335719,
+        "avg_engagement": 562.3
       },
       {
         "rank": 2,
@@ -36300,10 +36300,10 @@
         "name": "Juana Babe Ashley",
         "page_name": "Juana Babe Ashley",
         "posts": 391,
-        "views": 2397100,
+        "views": 2397823,
         "reach": 1780406,
-        "engagement": 192161,
-        "avg_engagement": 491.5
+        "engagement": 192116,
+        "avg_engagement": 491.3
       },
       {
         "rank": 3,
@@ -36311,10 +36311,10 @@
         "name": "Juana Babe Abi",
         "page_name": "Juana Babe Abi",
         "posts": 314,
-        "views": 330014,
+        "views": 330021,
         "reach": 161684,
-        "engagement": 33183,
-        "avg_engagement": 105.7
+        "engagement": 33167,
+        "avg_engagement": 105.6
       },
       {
         "rank": 4,
@@ -36322,9 +36322,9 @@
         "name": "Juana Babe Jam",
         "page_name": "Juana Babe Jam",
         "posts": 205,
-        "views": 149339,
+        "views": 149346,
         "reach": 86669,
-        "engagement": 21084,
+        "engagement": 21069,
         "avg_engagement": 102.8
       },
       {
@@ -36352,11 +36352,11 @@
       {
         "type": "Videos",
         "count": 1045,
-        "views": 4276085,
+        "views": 4276836,
         "reach": 3304523,
-        "engagement": 412173,
-        "avg_engagement": 394.4,
-        "avg_views": 4091.9
+        "engagement": 412074,
+        "avg_engagement": 394.3,
+        "avg_views": 4092.7
       },
       {
         "type": "Live",
@@ -36390,7 +36390,7 @@
       {
         "type": "trend_down",
         "title": "Engagement Declining",
-        "text": "Engagement dropped 46.1% - consider increasing content quality"
+        "text": "Engagement dropped 46.2% - consider increasing content quality"
       },
       {
         "type": "best_day",
@@ -36405,7 +36405,7 @@
       {
         "type": "top_page",
         "title": "Sena Leads",
-        "text": "Top performer with 335,742 total engagement (562/post)"
+        "text": "Top performer with 335,719 total engagement (562/post)"
       }
     ]
   },
@@ -36415,7 +36415,7 @@
       "posts_analyzed": 1500,
       "posts_with_self_comment": 250,
       "total_self_comments": 363,
-      "total_organic_comments": 31695,
+      "total_organic_comments": 31677,
       "self_comment_rate": 1.1,
       "posts_with_self_pct": 16.7
     },
@@ -36425,7 +36425,7 @@
         "page_id": "807965705726273",
         "posts_with_comments": 564,
         "self_comments": 262,
-        "organic_comments": 10407,
+        "organic_comments": 10406,
         "posts_with_self": 164,
         "self_rate": 2.5
       },
@@ -36434,7 +36434,7 @@
         "page_id": "748765068327821",
         "posts_with_comments": 353,
         "self_comments": 80,
-        "organic_comments": 6776,
+        "organic_comments": 6761,
         "posts_with_self": 66,
         "self_rate": 1.2
       },
@@ -36443,7 +36443,7 @@
         "page_id": "747721128429855",
         "posts_with_comments": 301,
         "self_comments": 20,
-        "organic_comments": 7758,
+        "organic_comments": 7757,
         "posts_with_self": 19,
         "self_rate": 0.3
       },
@@ -36452,7 +36452,7 @@
         "page_id": "731608473377029",
         "posts_with_comments": 188,
         "self_comments": 1,
-        "organic_comments": 3915,
+        "organic_comments": 3914,
         "posts_with_self": 1,
         "self_rate": 0.0
       },
@@ -36468,8 +36468,8 @@
     ],
     "effectivity": {
       "avg_engagement_with_self": 1167.3,
-      "avg_engagement_without_self": 240.6,
-      "engagement_boost_pct": 385.2,
+      "avg_engagement_without_self": 240.5,
+      "engagement_boost_pct": 385.4,
       "avg_reactions_with": 1123.5,
       "avg_reactions_without": 207.5
     },
@@ -36572,16 +36572,16 @@
         "page_id": "807965705726273",
         "name": "Juana Babe Sena",
         "page_name": "Juana Babe Sena",
-        "fan_count": 89736,
+        "fan_count": 89740,
         "posts": 604,
-        "engagement": 335742,
-        "avg_engagement": 555.9,
-        "views": 3496970,
+        "engagement": 335719,
+        "avg_engagement": 555.8,
+        "views": 3496984,
         "reach": 2808394,
-        "reactions": 318341,
-        "comments": 10669,
+        "reactions": 318319,
+        "comments": 10668,
         "shares": 6897,
-        "avg_pes": 591.4,
+        "avg_pes": 591.3,
         "rank": 1,
         "engagement_share": 56.6
       },
@@ -36589,16 +36589,16 @@
         "page_id": "748765068327821",
         "name": "Juana Babe Ashley",
         "page_name": "Juana Babe Ashley",
-        "fan_count": 47995,
+        "fan_count": 47996,
         "posts": 394,
-        "engagement": 192161,
-        "avg_engagement": 487.7,
-        "views": 2397100,
+        "engagement": 192116,
+        "avg_engagement": 487.6,
+        "views": 2397823,
         "reach": 1780406,
-        "reactions": 181579,
-        "comments": 6856,
+        "reactions": 181549,
+        "comments": 6841,
         "shares": 3816,
-        "avg_pes": 521.7,
+        "avg_pes": 521.6,
         "rank": 2,
         "engagement_share": 32.4
       },
@@ -36608,14 +36608,14 @@
         "page_name": "Juana Babe Abi",
         "fan_count": 1561,
         "posts": 314,
-        "engagement": 33183,
-        "avg_engagement": 105.7,
-        "views": 330014,
+        "engagement": 33167,
+        "avg_engagement": 105.6,
+        "views": 330021,
         "reach": 161684,
-        "reactions": 20816,
-        "comments": 7778,
+        "reactions": 20801,
+        "comments": 7777,
         "shares": 4668,
-        "avg_pes": 157.9,
+        "avg_pes": 157.8,
         "rank": 3,
         "engagement_share": 5.6
       },
@@ -36625,14 +36625,14 @@
         "page_name": "Juana Babe Jam",
         "fan_count": 4406,
         "posts": 205,
-        "engagement": 21084,
+        "engagement": 21069,
         "avg_engagement": 102.8,
-        "views": 149339,
+        "views": 149346,
         "reach": 86669,
-        "reactions": 13967,
-        "comments": 3916,
+        "reactions": 13953,
+        "comments": 3915,
         "shares": 3234,
-        "avg_pes": 150.4,
+        "avg_pes": 150.3,
         "rank": 4,
         "engagement_share": 3.6
       },
@@ -36685,8 +36685,8 @@
         {
           "type": "Videos",
           "count": 157,
-          "engagement": 16401,
-          "avg_engagement": 104.5
+          "engagement": 16386,
+          "avg_engagement": 104.4
         },
         {
           "type": "Photos",
@@ -36711,8 +36711,8 @@
         {
           "type": "Videos",
           "count": 234,
-          "engagement": 25006,
-          "avg_engagement": 106.9
+          "engagement": 24990,
+          "avg_engagement": 106.8
         },
         {
           "type": "Photos",
@@ -36743,8 +36743,8 @@
         {
           "type": "Videos",
           "count": 159,
-          "engagement": 43299,
-          "avg_engagement": 272.3
+          "engagement": 43254,
+          "avg_engagement": 272.0
         },
         {
           "type": "Reels",
@@ -36775,8 +36775,8 @@
         {
           "type": "Videos",
           "count": 449,
-          "engagement": 319764,
-          "avg_engagement": 712.2
+          "engagement": 319741,
+          "avg_engagement": 712.1
         },
         {
           "type": "Photos",
@@ -36820,5 +36820,1478 @@
         "percentage": 74.3
       }
     }
+  },
+  "liveStreaming": {
+    "daily": [
+      {
+        "date": "2026-03-14",
+        "agent": "ABI",
+        "tk_views": 0,
+        "tk_unique": 0,
+        "tk_likes": 0,
+        "tk_comments": 0,
+        "tk_shares": 0,
+        "tk_gifters": 0,
+        "tk_new_followers": 0,
+        "tk_eng_rate": 0.0,
+        "bg_viewers": 0,
+        "bg_engaged": 0,
+        "bg_eng_rate": 0.0,
+        "bg_beans": 0.0,
+        "bg_new_fans": 0,
+        "bg_gifts": 0,
+        "total_engagement": 0,
+        "total_reach": 0
+      },
+      {
+        "date": "2026-03-14",
+        "agent": "ASHLEY",
+        "tk_views": 0,
+        "tk_unique": 0,
+        "tk_likes": 0,
+        "tk_comments": 0,
+        "tk_shares": 0,
+        "tk_gifters": 0,
+        "tk_new_followers": 0,
+        "tk_eng_rate": 0.0,
+        "bg_viewers": 231,
+        "bg_engaged": 0,
+        "bg_eng_rate": 0.0,
+        "bg_beans": 0.0,
+        "bg_new_fans": 6,
+        "bg_gifts": 0,
+        "total_engagement": 0,
+        "total_reach": 231
+      },
+      {
+        "date": "2026-03-14",
+        "agent": "JAM",
+        "tk_views": 0,
+        "tk_unique": 0,
+        "tk_likes": 0,
+        "tk_comments": 0,
+        "tk_shares": 0,
+        "tk_gifters": 0,
+        "tk_new_followers": 0,
+        "tk_eng_rate": 0.0,
+        "bg_viewers": 255,
+        "bg_engaged": 2,
+        "bg_eng_rate": 0.8,
+        "bg_beans": 2.0,
+        "bg_new_fans": 5,
+        "bg_gifts": 1,
+        "total_engagement": 2,
+        "total_reach": 255
+      },
+      {
+        "date": "2026-03-14",
+        "agent": "SENA",
+        "tk_views": 623,
+        "tk_unique": 538,
+        "tk_likes": 6200,
+        "tk_comments": 206,
+        "tk_shares": 3,
+        "tk_gifters": 0,
+        "tk_new_followers": 9,
+        "tk_eng_rate": 1028.7,
+        "bg_viewers": 0,
+        "bg_engaged": 0,
+        "bg_eng_rate": 0.0,
+        "bg_beans": 0.0,
+        "bg_new_fans": 0,
+        "bg_gifts": 0,
+        "total_engagement": 6409,
+        "total_reach": 623
+      }
+    ],
+    "dailyAll": [
+      {
+        "date": "2026-03-14",
+        "tk_views": 623,
+        "tk_unique": 538,
+        "tk_likes": 6200,
+        "tk_comments": 206,
+        "tk_shares": 3,
+        "tk_gifters": 0,
+        "tk_new_followers": 9,
+        "bg_viewers": 486,
+        "bg_engaged": 2,
+        "bg_beans": 2.0,
+        "bg_new_fans": 11,
+        "bg_gifts": 1,
+        "total_engagement": 6411,
+        "total_reach": 1109
+      }
+    ],
+    "agentSummaries": {
+      "SENA": {
+        "agent": "SENA",
+        "days": 1,
+        "tk_views": 623,
+        "tk_likes": 6200,
+        "tk_comments": 206,
+        "tk_shares": 3,
+        "tk_gifters": 0,
+        "tk_new_followers": 9,
+        "tk_unique": 538,
+        "bg_viewers": 0,
+        "bg_engaged": 0,
+        "bg_beans": 0.0,
+        "bg_new_fans": 0,
+        "bg_gifts": 0,
+        "total_engagement": 6409,
+        "total_reach": 623
+      },
+      "JAM": {
+        "agent": "JAM",
+        "days": 1,
+        "tk_views": 0,
+        "tk_likes": 0,
+        "tk_comments": 0,
+        "tk_shares": 0,
+        "tk_gifters": 0,
+        "tk_new_followers": 0,
+        "tk_unique": 0,
+        "bg_viewers": 255,
+        "bg_engaged": 2,
+        "bg_beans": 2.0,
+        "bg_new_fans": 5,
+        "bg_gifts": 1,
+        "total_engagement": 2,
+        "total_reach": 255
+      },
+      "ASHLEY": {
+        "agent": "ASHLEY",
+        "days": 1,
+        "tk_views": 0,
+        "tk_likes": 0,
+        "tk_comments": 0,
+        "tk_shares": 0,
+        "tk_gifters": 0,
+        "tk_new_followers": 0,
+        "tk_unique": 0,
+        "bg_viewers": 231,
+        "bg_engaged": 0,
+        "bg_beans": 0.0,
+        "bg_new_fans": 6,
+        "bg_gifts": 0,
+        "total_engagement": 0,
+        "total_reach": 231
+      },
+      "ABI": {
+        "agent": "ABI",
+        "days": 1,
+        "tk_views": 0,
+        "tk_likes": 0,
+        "tk_comments": 0,
+        "tk_shares": 0,
+        "tk_gifters": 0,
+        "tk_new_followers": 0,
+        "tk_unique": 0,
+        "bg_viewers": 0,
+        "bg_engaged": 0,
+        "bg_beans": 0.0,
+        "bg_new_fans": 0,
+        "bg_gifts": 0,
+        "total_engagement": 0,
+        "total_reach": 0
+      }
+    },
+    "totals": {
+      "tk_views": 623,
+      "tk_likes": 6200,
+      "tk_comments": 206,
+      "tk_shares": 3,
+      "tk_gifters": 0,
+      "tk_new_followers": 9,
+      "tk_unique": 538,
+      "bg_viewers": 486,
+      "bg_engaged": 2,
+      "bg_beans": 2.0,
+      "bg_new_fans": 11,
+      "bg_gifts": 1,
+      "total_engagement": 6411,
+      "total_reach": 1109,
+      "days": 1
+    },
+    "schedule": [
+      {
+        "date": "2026-03-13",
+        "time": "12:00 PM",
+        "streamer": "ASHLEY",
+        "platform": "TikTok",
+        "content": "SENA",
+        "other_task": "JAM+ABI CONTENT PLANNING",
+        "moderator": "REPLY/ENGAGE"
+      },
+      {
+        "date": "2026-03-13",
+        "time": "1:00 PM",
+        "streamer": "JAM",
+        "platform": "Bigo",
+        "content": "ABI",
+        "other_task": "SENA+ASH CONTENT PLANNING",
+        "moderator": "REPLY/ENGAGE"
+      },
+      {
+        "date": "2026-03-13",
+        "time": "2:00 PM",
+        "streamer": "SENA",
+        "platform": "TikTok",
+        "content": "ASHLEY",
+        "other_task": "JAM+ABI CONTENT PLANNING",
+        "moderator": "REPLY/ENGAGE"
+      },
+      {
+        "date": "2026-03-13",
+        "time": "3:00 PM",
+        "streamer": "ABI",
+        "platform": "Bigo",
+        "content": "JAM",
+        "other_task": "SENA+ASH BREAK",
+        "moderator": "REPLY/ENGAGE"
+      },
+      {
+        "date": "2026-03-13",
+        "time": "4:00 PM",
+        "streamer": "ASHLEY",
+        "platform": "Bigo",
+        "content": "SENA",
+        "other_task": "JAM+ABI BREAK",
+        "moderator": "REPLY/ENGAGE"
+      },
+      {
+        "date": "2026-03-13",
+        "time": "5:00 PM",
+        "streamer": "JAM",
+        "platform": "TikTok",
+        "content": "ABI",
+        "other_task": "SENA+ASH CONTENT PLANNING",
+        "moderator": "REPLY/ENGAGE"
+      },
+      {
+        "date": "2026-03-13",
+        "time": "6:00 PM",
+        "streamer": "SENA",
+        "platform": "Bigo",
+        "content": "ASHLEY",
+        "other_task": "JAM+ABI CONTENT PLANNING",
+        "moderator": "REPLY/ENGAGE"
+      },
+      {
+        "date": "2026-03-13",
+        "time": "7:00 PM",
+        "streamer": "ABI",
+        "platform": "TikTok",
+        "content": "JAM",
+        "other_task": "SENA+ASH FB LIVE",
+        "moderator": "REPLY/ENGAGE"
+      },
+      {
+        "date": "2026-03-13",
+        "time": "8:00 PM",
+        "streamer": "JAM & ABI",
+        "platform": "Facebook",
+        "content": "",
+        "other_task": "",
+        "moderator": "REPLY/ENGAGE"
+      },
+      {
+        "date": "2026-03-13",
+        "time": "9:00 PM",
+        "streamer": "JAM & ABI",
+        "platform": "Facebook",
+        "content": "",
+        "other_task": "",
+        "moderator": "REPLY/ENGAGE"
+      },
+      {
+        "date": "2026-03-13",
+        "time": "ABI",
+        "streamer": "4",
+        "platform": "",
+        "content": "",
+        "other_task": "",
+        "moderator": ""
+      },
+      {
+        "date": "2026-03-13",
+        "time": "ASHLEY",
+        "streamer": "2",
+        "platform": "",
+        "content": "",
+        "other_task": "",
+        "moderator": ""
+      },
+      {
+        "date": "2026-03-13",
+        "time": "HOURS/AGENT",
+        "streamer": "",
+        "platform": "",
+        "content": "",
+        "other_task": "",
+        "moderator": ""
+      },
+      {
+        "date": "2026-03-13",
+        "time": "JAM",
+        "streamer": "4",
+        "platform": "",
+        "content": "",
+        "other_task": "",
+        "moderator": ""
+      },
+      {
+        "date": "2026-03-13",
+        "time": "SENA",
+        "streamer": "2",
+        "platform": "",
+        "content": "",
+        "other_task": "",
+        "moderator": ""
+      },
+      {
+        "date": "2026-03-14",
+        "time": "12:00 PM",
+        "streamer": "ABI",
+        "platform": "TikTok",
+        "content": "JAM",
+        "other_task": "SENA+ASH CONTENT PLANNING",
+        "moderator": "REPLY/ENGAGE"
+      },
+      {
+        "date": "2026-03-14",
+        "time": "1:00 PM",
+        "streamer": "SENA",
+        "platform": "Bigo",
+        "content": "ASHLEY",
+        "other_task": "JAM+ABI CONTENT PLANNING",
+        "moderator": "REPLY/ENGAGE"
+      },
+      {
+        "date": "2026-03-14",
+        "time": "2:00 PM",
+        "streamer": "JAM",
+        "platform": "TikTok",
+        "content": "ABI",
+        "other_task": "SENA+ASH CONTENT PLANNING",
+        "moderator": "REPLY/ENGAGE"
+      },
+      {
+        "date": "2026-03-14",
+        "time": "3:00 PM",
+        "streamer": "ASHLEY",
+        "platform": "Bigo",
+        "content": "SENA",
+        "other_task": "JAM+ABI BREAK",
+        "moderator": "REPLY/ENGAGE"
+      },
+      {
+        "date": "2026-03-14",
+        "time": "4:00 PM",
+        "streamer": "ABI",
+        "platform": "Bigo",
+        "content": "JAM",
+        "other_task": "SENA+ASH BREAK",
+        "moderator": "REPLY/ENGAGE"
+      },
+      {
+        "date": "2026-03-14",
+        "time": "5:00 PM",
+        "streamer": "SENA",
+        "platform": "TikTok",
+        "content": "ASHLEY",
+        "other_task": "JAM+ABI CONTENT PLANNING",
+        "moderator": "REPLY/ENGAGE"
+      },
+      {
+        "date": "2026-03-14",
+        "time": "6:00 PM",
+        "streamer": "JAM",
+        "platform": "Bigo",
+        "content": "ABI",
+        "other_task": "SENA+ASH CONTENT PLANNING",
+        "moderator": "REPLY/ENGAGE"
+      },
+      {
+        "date": "2026-03-14",
+        "time": "7:00 PM",
+        "streamer": "ASHLEY",
+        "platform": "TikTok",
+        "content": "SENA",
+        "other_task": "JAM+ABI FB LIVE",
+        "moderator": "REPLY/ENGAGE"
+      },
+      {
+        "date": "2026-03-14",
+        "time": "8:00 PM",
+        "streamer": "SENA & ASHLEY",
+        "platform": "Facebook",
+        "content": "",
+        "other_task": "",
+        "moderator": "REPLY/ENGAGE"
+      },
+      {
+        "date": "2026-03-14",
+        "time": "9:00 PM",
+        "streamer": "SENA & ASHLEY",
+        "platform": "Facebook",
+        "content": "",
+        "other_task": "",
+        "moderator": "REPLY/ENGAGE"
+      },
+      {
+        "date": "2026-03-14",
+        "time": "ABI",
+        "streamer": "2",
+        "platform": "",
+        "content": "",
+        "other_task": "",
+        "moderator": ""
+      },
+      {
+        "date": "2026-03-14",
+        "time": "ASHLEY",
+        "streamer": "4",
+        "platform": "",
+        "content": "",
+        "other_task": "",
+        "moderator": ""
+      },
+      {
+        "date": "2026-03-14",
+        "time": "HOURS/AGENT",
+        "streamer": "",
+        "platform": "",
+        "content": "",
+        "other_task": "",
+        "moderator": ""
+      },
+      {
+        "date": "2026-03-14",
+        "time": "JAM",
+        "streamer": "2",
+        "platform": "",
+        "content": "",
+        "other_task": "",
+        "moderator": ""
+      },
+      {
+        "date": "2026-03-14",
+        "time": "SENA",
+        "streamer": "4",
+        "platform": "",
+        "content": "",
+        "other_task": "",
+        "moderator": ""
+      },
+      {
+        "date": "2026-03-15",
+        "time": "12:00 PM",
+        "streamer": "SENA",
+        "platform": "TikTok",
+        "content": "JAM",
+        "other_task": "ASH+ABI CONTENT PLANNING",
+        "moderator": "REPLY/ENGAGE"
+      },
+      {
+        "date": "2026-03-15",
+        "time": "1:00 PM",
+        "streamer": "ASHLEY",
+        "platform": "Bigo",
+        "content": "ABI",
+        "other_task": "SENA+JAM CONTENT PLANNING",
+        "moderator": "REPLY/ENGAGE"
+      },
+      {
+        "date": "2026-03-15",
+        "time": "2:00 PM",
+        "streamer": "JAM",
+        "platform": "TikTok",
+        "content": "SENA",
+        "other_task": "ASH+ABI CONTENT PLANNING",
+        "moderator": "REPLY/ENGAGE"
+      },
+      {
+        "date": "2026-03-15",
+        "time": "3:00 PM",
+        "streamer": "ABI",
+        "platform": "Bigo",
+        "content": "ASHLEY",
+        "other_task": "SENA+ABI BREAK",
+        "moderator": "REPLY/ENGAGE"
+      },
+      {
+        "date": "2026-03-15",
+        "time": "4:00 PM",
+        "streamer": "JAM",
+        "platform": "Bigo",
+        "content": "SENA",
+        "other_task": "ASH+ABI BREAK",
+        "moderator": "REPLY/ENGAGE"
+      },
+      {
+        "date": "2026-03-15",
+        "time": "5:00 PM",
+        "streamer": "ASHLEY",
+        "platform": "TikTok",
+        "content": "ABI",
+        "other_task": "SENA+JAM CONTENT PLANNING",
+        "moderator": "REPLY/ENGAGE"
+      },
+      {
+        "date": "2026-03-15",
+        "time": "6:00 PM",
+        "streamer": "SENA",
+        "platform": "Bigo",
+        "content": "JAM",
+        "other_task": "ASH+ABI CONTENT PLANNING",
+        "moderator": "REPLY/ENGAGE"
+      },
+      {
+        "date": "2026-03-15",
+        "time": "7:00 PM",
+        "streamer": "ABI",
+        "platform": "TikTok",
+        "content": "ASHLEY",
+        "other_task": "SENA+JAM FB LIVE",
+        "moderator": "REPLY/ENGAGE"
+      },
+      {
+        "date": "2026-03-15",
+        "time": "8:00 PM",
+        "streamer": "ABI & ASHLEY",
+        "platform": "Facebook",
+        "content": "",
+        "other_task": "",
+        "moderator": "REPLY/ENGAGE"
+      },
+      {
+        "date": "2026-03-15",
+        "time": "9:00 PM",
+        "streamer": "ABI & ASHLEY",
+        "platform": "Facebook",
+        "content": "",
+        "other_task": "",
+        "moderator": "REPLY/ENGAGE"
+      },
+      {
+        "date": "2026-03-15",
+        "time": "ABI",
+        "streamer": "4",
+        "platform": "",
+        "content": "",
+        "other_task": "",
+        "moderator": ""
+      },
+      {
+        "date": "2026-03-15",
+        "time": "ASHLEY",
+        "streamer": "4",
+        "platform": "",
+        "content": "",
+        "other_task": "",
+        "moderator": ""
+      },
+      {
+        "date": "2026-03-15",
+        "time": "HOURS/AGENT",
+        "streamer": "",
+        "platform": "",
+        "content": "",
+        "other_task": "",
+        "moderator": ""
+      },
+      {
+        "date": "2026-03-15",
+        "time": "JAM",
+        "streamer": "2",
+        "platform": "",
+        "content": "",
+        "other_task": "",
+        "moderator": ""
+      },
+      {
+        "date": "2026-03-15",
+        "time": "SENA",
+        "streamer": "2",
+        "platform": "",
+        "content": "",
+        "other_task": "",
+        "moderator": ""
+      }
+    ],
+    "promo": {
+      "ABI": {
+        "codes": [
+          {
+            "code": "ABI10",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ABI100",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ABI20",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ABI2026",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ABI30",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ABI50",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ABIBEST",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ABIBIGWIN",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ABIBONUS",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ABIBONUS10",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ABIBONUS20",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ABIBONUS2026",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ABIBONUS50",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ABIDEAL",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ABIELITE",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ABIELITE10",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ABIELITE20",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ABIELITE50",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ABIFAN",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ABIFAN2026",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ABIGAME",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ABIGAMER",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ABIGOLD",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ABIKING",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ABILOVE",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ABILUCK",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ABILUCKY",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ABIMASTER",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ABIMEGA",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ABIPLATINUM",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ABIPLAYER",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ABIPOWER",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ABIPOWER2026",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ABIPRO",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ABIPRO10",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ABIPRO20",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ABIPRO50",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ABIPROMO",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ABISAVE",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ABISAVE2026",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ABISILVER",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ABISPECIAL",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ABISTAR",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ABIVIP",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ABIVIP10",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ABIVIP20",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ABIWIN",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ABIWIN2026",
+            "status": "UNUSED"
+          },
+          {
+            "code": "TOTAL",
+            "status": "48"
+          },
+          {
+            "code": "USAGE %",
+            "status": "0.0%"
+          },
+          {
+            "code": "USED",
+            "status": "0"
+          }
+        ],
+        "used": 0,
+        "unused": 51,
+        "expired": 0,
+        "total": 51,
+        "usage_rate": 0.0
+      },
+      "ASHLEY": {
+        "codes": [
+          {
+            "code": "ASHLEY10",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ASHLEY100",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ASHLEY20",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ASHLEY2026",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ASHLEY30",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ASHLEY50",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ASHLEYBEST",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ASHLEYBIGWIN",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ASHLEYBONUS",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ASHLEYBONUS10",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ASHLEYBONUS20",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ASHLEYBONUS2026",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ASHLEYBONUS50",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ASHLEYDEAL",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ASHLEYELITE",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ASHLEYELITE10",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ASHLEYELITE20",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ASHLEYELITE50",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ASHLEYFAN",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ASHLEYFAN2026",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ASHLEYGAME",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ASHLEYGAMER",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ASHLEYGOLD",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ASHLEYKING",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ASHLEYLOVE",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ASHLEYLUCK",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ASHLEYLUCKY",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ASHLEYMASTER",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ASHLEYMEGA",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ASHLEYPLATINUM",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ASHLEYPLAYER",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ASHLEYPOWER",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ASHLEYPOWER2026",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ASHLEYPRO",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ASHLEYPRO10",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ASHLEYPRO20",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ASHLEYPRO50",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ASHLEYPROMO",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ASHLEYSAVE",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ASHLEYSAVE2026",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ASHLEYSILVER",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ASHLEYSPECIAL",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ASHLEYSTAR",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ASHLEYVIP",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ASHLEYVIP10",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ASHLEYVIP20",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ASHLEYVIP50",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ASHLEYWIN",
+            "status": "UNUSED"
+          },
+          {
+            "code": "ASHLEYWIN2026",
+            "status": "UNUSED"
+          },
+          {
+            "code": "TOTAL",
+            "status": "49"
+          },
+          {
+            "code": "USAGE %",
+            "status": "0.0%"
+          },
+          {
+            "code": "USED",
+            "status": "0"
+          }
+        ],
+        "used": 0,
+        "unused": 52,
+        "expired": 0,
+        "total": 52,
+        "usage_rate": 0.0
+      },
+      "JAM": {
+        "codes": [
+          {
+            "code": "JAM10",
+            "status": "UNUSED"
+          },
+          {
+            "code": "JAM100",
+            "status": "UNUSED"
+          },
+          {
+            "code": "JAM20",
+            "status": "UNUSED"
+          },
+          {
+            "code": "JAM2026",
+            "status": "UNUSED"
+          },
+          {
+            "code": "JAM30",
+            "status": "UNUSED"
+          },
+          {
+            "code": "JAM50",
+            "status": "UNUSED"
+          },
+          {
+            "code": "JAMBEST",
+            "status": "UNUSED"
+          },
+          {
+            "code": "JAMBIGWIN",
+            "status": "UNUSED"
+          },
+          {
+            "code": "JAMBONUS",
+            "status": "UNUSED"
+          },
+          {
+            "code": "JAMBONUS10",
+            "status": "UNUSED"
+          },
+          {
+            "code": "JAMBONUS20",
+            "status": "UNUSED"
+          },
+          {
+            "code": "JAMBONUS2026",
+            "status": "UNUSED"
+          },
+          {
+            "code": "JAMBONUS50",
+            "status": "UNUSED"
+          },
+          {
+            "code": "JAMDEAL",
+            "status": "UNUSED"
+          },
+          {
+            "code": "JAMELITE",
+            "status": "UNUSED"
+          },
+          {
+            "code": "JAMELITE10",
+            "status": "UNUSED"
+          },
+          {
+            "code": "JAMELITE20",
+            "status": "UNUSED"
+          },
+          {
+            "code": "JAMELITE50",
+            "status": "UNUSED"
+          },
+          {
+            "code": "JAMFAN",
+            "status": "UNUSED"
+          },
+          {
+            "code": "JAMFAN2026",
+            "status": "UNUSED"
+          },
+          {
+            "code": "JAMGAME",
+            "status": "UNUSED"
+          },
+          {
+            "code": "JAMGAMER",
+            "status": "UNUSED"
+          },
+          {
+            "code": "JAMGOLD",
+            "status": "UNUSED"
+          },
+          {
+            "code": "JAMKING",
+            "status": "UNUSED"
+          },
+          {
+            "code": "JAMLOVE",
+            "status": "UNUSED"
+          },
+          {
+            "code": "JAMLUCK",
+            "status": "UNUSED"
+          },
+          {
+            "code": "JAMLUCKY",
+            "status": "UNUSED"
+          },
+          {
+            "code": "JAMMASTER",
+            "status": "UNUSED"
+          },
+          {
+            "code": "JAMMEGA",
+            "status": "UNUSED"
+          },
+          {
+            "code": "JAMPLATINUM",
+            "status": "UNUSED"
+          },
+          {
+            "code": "JAMPLAYER",
+            "status": "UNUSED"
+          },
+          {
+            "code": "JAMPOWER",
+            "status": "UNUSED"
+          },
+          {
+            "code": "JAMPOWER2026",
+            "status": "UNUSED"
+          },
+          {
+            "code": "JAMPRO",
+            "status": "UNUSED"
+          },
+          {
+            "code": "JAMPRO10",
+            "status": "UNUSED"
+          },
+          {
+            "code": "JAMPRO20",
+            "status": "UNUSED"
+          },
+          {
+            "code": "JAMPRO50",
+            "status": "UNUSED"
+          },
+          {
+            "code": "JAMPROMO",
+            "status": "UNUSED"
+          },
+          {
+            "code": "JAMSAVE",
+            "status": "UNUSED"
+          },
+          {
+            "code": "JAMSAVE2026",
+            "status": "UNUSED"
+          },
+          {
+            "code": "JAMSILVER",
+            "status": "UNUSED"
+          },
+          {
+            "code": "JAMSPECIAL",
+            "status": "UNUSED"
+          },
+          {
+            "code": "JAMSTAR",
+            "status": "UNUSED"
+          },
+          {
+            "code": "JAMVIP",
+            "status": "UNUSED"
+          },
+          {
+            "code": "JAMVIP10",
+            "status": "UNUSED"
+          },
+          {
+            "code": "JAMVIP20",
+            "status": "UNUSED"
+          },
+          {
+            "code": "JAMVIP50",
+            "status": "UNUSED"
+          },
+          {
+            "code": "JAMWIN",
+            "status": "UNUSED"
+          },
+          {
+            "code": "JAMWIN2026",
+            "status": "UNUSED"
+          },
+          {
+            "code": "TOTAL",
+            "status": "49"
+          },
+          {
+            "code": "USAGE %",
+            "status": "0.0%"
+          },
+          {
+            "code": "USED",
+            "status": "0"
+          }
+        ],
+        "used": 0,
+        "unused": 52,
+        "expired": 0,
+        "total": 52,
+        "usage_rate": 0.0
+      },
+      "SENA": {
+        "codes": [
+          {
+            "code": "SENABET",
+            "status": "UNUSED"
+          },
+          {
+            "code": "SENABET10",
+            "status": "UNUSED"
+          },
+          {
+            "code": "SENABET20",
+            "status": "UNUSED"
+          },
+          {
+            "code": "SENABET50",
+            "status": "UNUSED"
+          },
+          {
+            "code": "SENABIGSPIN",
+            "status": "UNUSED"
+          },
+          {
+            "code": "SENABIGWIN",
+            "status": "UNUSED"
+          },
+          {
+            "code": "SENABONUS",
+            "status": "UNUSED"
+          },
+          {
+            "code": "SENABONUS10",
+            "status": "UNUSED"
+          },
+          {
+            "code": "SENABONUS20",
+            "status": "UNUSED"
+          },
+          {
+            "code": "SENABONUS50",
+            "status": "UNUSED"
+          },
+          {
+            "code": "SENACASH",
+            "status": "UNUSED"
+          },
+          {
+            "code": "SENACASH10",
+            "status": "UNUSED"
+          },
+          {
+            "code": "SENACASH20",
+            "status": "UNUSED"
+          },
+          {
+            "code": "SENACASH50",
+            "status": "UNUSED"
+          },
+          {
+            "code": "SENAJACKPOT",
+            "status": "UNUSED"
+          },
+          {
+            "code": "SENAJACKPOT10",
+            "status": "UNUSED"
+          },
+          {
+            "code": "SENAJACKPOT20",
+            "status": "UNUSED"
+          },
+          {
+            "code": "SENAJACKPOT50",
+            "status": "UNUSED"
+          },
+          {
+            "code": "SENALUCK",
+            "status": "UNUSED"
+          },
+          {
+            "code": "SENALUCK10",
+            "status": "UNUSED"
+          },
+          {
+            "code": "SENALUCK20",
+            "status": "UNUSED"
+          },
+          {
+            "code": "SENALUCK50",
+            "status": "UNUSED"
+          },
+          {
+            "code": "SENALUCKYBET",
+            "status": "UNUSED"
+          },
+          {
+            "code": "SENALUCKYBONUS",
+            "status": "UNUSED"
+          },
+          {
+            "code": "SENALUCKYCASH",
+            "status": "UNUSED"
+          },
+          {
+            "code": "SENALUCKYCASINO",
+            "status": "UNUSED"
+          },
+          {
+            "code": "SENALUCKYJACKPOT",
+            "status": "UNUSED"
+          },
+          {
+            "code": "SENALUCKYPRO",
+            "status": "UNUSED"
+          },
+          {
+            "code": "SENALUCKYSLOTS",
+            "status": "UNUSED"
+          },
+          {
+            "code": "SENALUCKYSPIN",
+            "status": "UNUSED"
+          },
+          {
+            "code": "SENALUCKYVIP",
+            "status": "UNUSED"
+          },
+          {
+            "code": "SENALUCKYWIN",
+            "status": "UNUSED"
+          },
+          {
+            "code": "SENASLOTBONUS",
+            "status": "UNUSED"
+          },
+          {
+            "code": "SENASLOTJACKPOT",
+            "status": "UNUSED"
+          },
+          {
+            "code": "SENASLOTKING",
+            "status": "UNUSED"
+          },
+          {
+            "code": "SENASLOTLUCK",
+            "status": "UNUSED"
+          },
+          {
+            "code": "SENASLOTMASTER",
+            "status": "UNUSED"
+          },
+          {
+            "code": "SENASLOTPRO",
+            "status": "UNUSED"
+          },
+          {
+            "code": "SENASLOTS",
+            "status": "UNUSED"
+          },
+          {
+            "code": "SENASLOTVIP",
+            "status": "UNUSED"
+          },
+          {
+            "code": "SENASLOTWIN",
+            "status": "UNUSED"
+          },
+          {
+            "code": "SENASPIN",
+            "status": "UNUSED"
+          },
+          {
+            "code": "SENASPIN10",
+            "status": "UNUSED"
+          },
+          {
+            "code": "SENASPIN20",
+            "status": "UNUSED"
+          },
+          {
+            "code": "SENASPIN50",
+            "status": "UNUSED"
+          },
+          {
+            "code": "SENAWIN",
+            "status": "UNUSED"
+          },
+          {
+            "code": "SENAWIN10",
+            "status": "UNUSED"
+          },
+          {
+            "code": "SENAWIN20",
+            "status": "UNUSED"
+          },
+          {
+            "code": "SENAWIN50",
+            "status": "UNUSED"
+          },
+          {
+            "code": "TOTAL",
+            "status": "49"
+          },
+          {
+            "code": "USAGE %",
+            "status": "0.0%"
+          },
+          {
+            "code": "USED",
+            "status": "0"
+          }
+        ],
+        "used": 0,
+        "unused": 52,
+        "expired": 0,
+        "total": 52,
+        "usage_rate": 0.0
+      }
+    },
+    "agents": [
+      "SENA",
+      "ASHLEY",
+      "ABI",
+      "JAM"
+    ]
   }
 }
